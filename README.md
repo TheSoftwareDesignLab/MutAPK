@@ -45,3 +45,7 @@ Mutation operators can be selected or deselected editing the ``operators.propert
 cd MutAPK
 java -jar target/MutAPK-1.0.0.jar libs4ast/ /tmp/AppFoo.apk android.AppFoo /tmp/mutants/ . true
 ```
+
+### Output
+The output directory will contain a log file that summarise the mutant generation process and a folder for each generated mutant. 
+The mutants folders are named with the corresponding mutant ID (i.e., numerical ID). The log file contains information about the mutation process as well as the type and location of each mutant generated.

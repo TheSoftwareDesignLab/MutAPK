@@ -34,7 +34,7 @@ public class MutAPK {
 		//		String mutantsFolder = args[3];
 		//		String operatorsDir = args[4];
 		//		boolean multithread = Boolean.parseBoolean(args[5]);
-		
+
 		System.out.println(apkPath);
 	}
 
