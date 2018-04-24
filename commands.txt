@@ -1,0 +1,1 @@
+mvn clean && mvn package && rm test/MutAPK-0.0.1.jar && rm -rf test/temp/ && cp target/MutAPK-0.0.1.jar test/ && cd test/ && java -jar MutAPK-0.0.1.jar io.github.hidroh.materialistic_75.apk materialistic mutantes libs && cd ..
