@@ -80,7 +80,18 @@ public class MutationLocation {
 		this.length = length;
 	}
 
-	
+	public static MutationLocation buildLocation( String path, int startLine, int endLine, int startCol, int endCol, int lineNum, int length, MutationType mType) {
+		MutationLocation location = new MutationLocation();
+		location.setFilePath(path);
+		location.setStartLine(startLine);
+		location.setEndLine(endLine);
+		location.setStartColumn(startCol);
+		location.setEndColumn(endCol);
+		location.setType(mType);
+		location.setLine(lineNum);
+		location.setLength(length);
+		return location;
+	}
 	
 	
 }

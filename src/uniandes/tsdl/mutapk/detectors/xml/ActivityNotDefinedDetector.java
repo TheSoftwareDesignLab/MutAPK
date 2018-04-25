@@ -8,14 +8,12 @@ import java.util.List;
 import java.util.Stack;
 
 import uniandes.tsdl.mutapk.detectors.TextBasedDetector;
+import uniandes.tsdl.mutapk.helper.Helper;
 import uniandes.tsdl.mutapk.model.MutationType;
 import uniandes.tsdl.mutapk.model.location.MutationLocation;
 
 public class ActivityNotDefinedDetector extends TextBasedDetector {
 
-	private static String MANIFEST = "AndroidManifest.xml";
-	
-	
 	public ActivityNotDefinedDetector(){
 		this.type = MutationType.ACTIVITY_NOT_DEFINED;
 	}
@@ -25,7 +23,7 @@ public class ActivityNotDefinedDetector extends TextBasedDetector {
 		Stack<String> stack = new Stack<>();
 		List<MutationLocation> locations = new ArrayList<MutationLocation>();
 	
-		String path = rootPath+File.separator+MANIFEST;
+		String path = rootPath+File.separator+Helper.MANIFEST;
 		BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
 		String line = null;
 		int startLine = 0;
@@ -49,7 +47,7 @@ public class ActivityNotDefinedDetector extends TextBasedDetector {
 			}
 			
 			if(isActivityTag && stack.isEmpty()){
-				locations.add(buildLocation(path, startLine, currentLine));
+				locations.add(MutationLocation.buildLocation(path, startLine, currentLine,-1,-1,-1,-1,this.getType()));
 				isActivityTag  = false;
 			}
 			
@@ -59,19 +57,4 @@ public class ActivityNotDefinedDetector extends TextBasedDetector {
 		
 		return locations;
 	}
-
-	private MutationLocation buildLocation( String path, int startLine, int currentLine) {
-
-		int endLine = currentLine;
-		
-		MutationLocation location = new MutationLocation();
-		location.setFilePath(path);
-		location.setStartLine(startLine);
-		location.setEndLine(endLine);
-		location.setType(this.getType());
-		return location;
-		
-		
-	}
-
 }
