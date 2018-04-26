@@ -44,7 +44,7 @@ public class MutationsProcessor {
 
 	}
 
-	public  void process(List<MutationLocation> locations, String libsFolder, String apkName) throws IOException{
+	public  void process(List<MutationLocation> locations, String extraPath, String apkName) throws IOException{
 		MutationOperatorFactory factory = MutationOperatorFactory.getInstance();
 		MutationOperator operator = null;
 		int mutantIndex  = 1;
@@ -65,7 +65,7 @@ public class MutationsProcessor {
 				mutationLocation.setFilePath(newMutationPath);
 				operator.performMutation(mutationLocation);
 				
-				APKToolWrapper.buildAPK(mutantRootFolder, libsFolder, apkName, true);
+				APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName, true);
 
 				writer.write("Mutant "+mutantIndex+": "+mutationLocation.getFilePath()+"; "+mutationLocation.getType().getName()+" in line "+(mutationLocation.getStartLine()+1));
 				writer.newLine();
@@ -81,7 +81,7 @@ public class MutationsProcessor {
 	}
 
 
-	public void processMultithreaded(List<MutationLocation> locations, final String libsFolder, final String apkName ) throws IOException{
+	public void processMultithreaded(List<MutationLocation> locations, final String extraPath, final String apkName ) throws IOException{
 
 		BufferedWriter writer = new BufferedWriter(new FileWriter(getMutantsRootFolder()+File.separator+getAppName()+"-mutants.log"));
 		final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
@@ -111,7 +111,7 @@ public class MutationsProcessor {
 
 						//Perform mutation
 						operator.performMutation(mutationLocation);
-						APKToolWrapper.buildAPK(mutantRootFolder, libsFolder, apkName,false);
+						APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName,false);
 
 					} catch (Exception e) {
 						Logger.getLogger(MutationsProcessor.class.getName()).warning("- Error generating mutant  "+currentMutationIndex);

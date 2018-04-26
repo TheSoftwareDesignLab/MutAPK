@@ -13,7 +13,7 @@
             "stopOnEntry": false,
             "mainClass": "uniandes.tsdl.mutapk.MutAPK",
             "projectName": "MutAPK",
-            "args": "io.github.hidroh.materialistic_75.apk materialistic mutantes libs"
+            "args": "io.github.hidroh.materialistic_75.apk materialistic mutantes extraPath"
         },
         {
             "type": "java",

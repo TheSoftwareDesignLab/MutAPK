@@ -8,11 +8,11 @@ import uniandes.tsdl.mutapk.helper.Helper;;
 
 public class APKToolWrapper {
 
-	public static void openAPK(String path, String libsPath) throws IOException, InterruptedException{
+	public static void openAPK(String path, String extraPath) throws IOException, InterruptedException{
 		String decodedPath = Helper.getInstance().getCurrentDirectory();
 		// Creates folder for decoded app
 		new File(decodedPath+"temp").mkdirs();
-		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",decodedPath+libsPath+"apktool.jar","d",decodedPath+path,"-o",decodedPath+"temp","-f"});
+		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",decodedPath+extraPath+"apktool.jar","d",decodedPath+path,"-o",decodedPath+"temp","-f"});
 		System.out.println("Trabajando con tu APK...");
 		ps.waitFor();
 		// InputStream es = ps.getErrorStream();
@@ -28,9 +28,9 @@ public class APKToolWrapper {
 		// System.out.println("Tu APK fue procesado exitosamente! YEI!");
 	}
 
-	public static void buildAPK(String path, String libsPath, String appName, boolean verbose) throws IOException, InterruptedException{
+	public static void buildAPK(String path, String extraPath, String appName, boolean verbose) throws IOException, InterruptedException{
 		String decodedPath = Helper.getInstance().getCurrentDirectory();
-		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",decodedPath+libsPath+"apktool.jar","b",decodedPath+path+File.separator+"src"+File.separator,"-o",decodedPath+path+appName,"-f"});
+		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",decodedPath+extraPath+"apktool.jar","b",decodedPath+path+File.separator+"src"+File.separator,"-o",decodedPath+path+appName,"-f"});
 		if(verbose){System.out.println("Compilando...");}
 		ps.waitFor();
 		if(verbose){System.out.println("APK generado :)");}

@@ -43,7 +43,7 @@ public class MutAPK {
 		String apkPath = args[0];
 		String appName = args[1];
 		String mutantsFolder = args[2];
-		String libsPath = args[3];
+		String extraPath = args[3];
 		String operatorsDir = args[4];
 		boolean multithread = Boolean.parseBoolean(args[5]);
 		
@@ -51,14 +51,14 @@ public class MutAPK {
 		String os = System.getProperty("os.name").toLowerCase();
 		if (os.indexOf("win") >= 0) {
 			mutantsFolder = mutantsFolder.replaceAll("/", "\\\\")+"\\";
-			libsPath = libsPath.replaceAll("/", "\\\\")+"\\";
+			extraPath = extraPath.replaceAll("/", "\\\\")+"\\";
 			apkPath = apkPath.replaceAll("/", "\\\\");
 			apkName = apkPath.substring(apkPath.lastIndexOf("\\"));
 		} else {
 			apkName = apkPath.substring(apkPath.lastIndexOf("/"));
 		}
 		// Decode the APK
-		APKToolWrapper.openAPK(apkPath, libsPath);
+		APKToolWrapper.openAPK(apkPath, extraPath);
 
 		//Read selected operators
 		OperatorBundle operatorBundle = new OperatorBundle(operatorsDir);
@@ -89,9 +89,9 @@ public class MutAPK {
 		MutationsProcessor mProcessor = new MutationsProcessor("temp", appName, mutantsFolder);
 
 		if(multithread) {
-			mProcessor.processMultithreaded(mutationLocationList, libsPath, apkName);
+			mProcessor.processMultithreaded(mutationLocationList, extraPath, apkName);
 		} else {
-			mProcessor.process(mutationLocationList, libsPath, apkName);
+			mProcessor.process(mutationLocationList, extraPath, apkName);
 		}
 	}
 
