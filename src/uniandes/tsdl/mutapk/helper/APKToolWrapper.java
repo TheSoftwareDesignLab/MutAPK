@@ -13,8 +13,9 @@ public class APKToolWrapper {
 		// Creates folder for decoded app
 		new File(decodedPath+"temp").mkdirs();
 		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",decodedPath+extraPath+"apktool.jar","d",decodedPath+path,"-o",decodedPath+"temp","-f"});
-		System.out.println("Trabajando con tu APK...");
+		System.out.println("Processing your APK...");
 		ps.waitFor();
+		System.out.println("Wow... that was an amazing APK to proccess!!! :D");
 		// InputStream es = ps.getErrorStream();
 		// byte e[] = new byte[es.available()];
 		// es.read(e,0,e.length);
@@ -24,16 +25,14 @@ public class APKToolWrapper {
 		// is.read(b,0,b.length);
 		// System.out.println("INFO: "+new String(b));
 		// System.out.println(decodedPath);
-		// Helper.getInstance().makeAppDebuggeable(decodedPath+"temp");
-		// System.out.println("Tu APK fue procesado exitosamente! YEI!");
 	}
 
-	public static void buildAPK(String path, String extraPath, String appName, boolean verbose) throws IOException, InterruptedException{
+	public static void buildAPK(String path, String extraPath, String appName, int mutantIndex) throws IOException, InterruptedException{
 		String decodedPath = Helper.getInstance().getCurrentDirectory();
 		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",decodedPath+extraPath+"apktool.jar","b",decodedPath+path+File.separator+"src"+File.separator,"-o",decodedPath+path+appName,"-f"});
-		if(verbose){System.out.println("Compilando...");}
+		System.out.println("Building mutant "+mutantIndex+"...");
 		ps.waitFor();
-		if(verbose){System.out.println("APK generado :)");}
+		System.out.println("The "+mutantIndex+" mutant APK has been generated.");
 		//		InputStream es = ps.getErrorStream();
 		//		byte e[] = new byte[es.available()];
 		//		es.read(e,0,e.length);

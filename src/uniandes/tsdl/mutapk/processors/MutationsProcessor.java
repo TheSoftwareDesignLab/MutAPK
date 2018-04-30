@@ -63,13 +63,9 @@ public class MutationsProcessor {
 				newMutationPath = mutationLocation.getFilePath().replace(appFolder,mutantFolder);
 				//System.out.println(newMutationPath);
 				mutationLocation.setFilePath(newMutationPath);
-				operator.performMutation(mutationLocation);
+				operator.performMutation(mutationLocation, writer, mutantIndex);
 				
-				APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName, true);
-
-				writer.write("Mutant "+mutantIndex+": "+mutationLocation.getFilePath()+"; "+mutationLocation.getType().getName()+" in line "+(mutationLocation.getStartLine()+1));
-				writer.newLine();
-				writer.flush();
+				APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName, mutantIndex);
 
 			} catch (Exception e) {
 				Logger.getLogger(MutationsProcessor.class.getName()).warning("- Error generating mutant  "+mutantIndex);
@@ -83,7 +79,7 @@ public class MutationsProcessor {
 
 	public void processMultithreaded(List<MutationLocation> locations, final String extraPath, final String apkName ) throws IOException{
 
-		BufferedWriter writer = new BufferedWriter(new FileWriter(getMutantsRootFolder()+File.separator+getAppName()+"-mutants.log"));
+		final BufferedWriter writer = new BufferedWriter(new FileWriter(getMutantsRootFolder()+File.separator+getAppName()+"-mutants.log"));
 		final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 		final List<Future<String>> results = new LinkedList<Future<String>>();
 
@@ -110,8 +106,8 @@ public class MutationsProcessor {
 						mutationLocation.setFilePath(newMutationPath);
 
 						//Perform mutation
-						operator.performMutation(mutationLocation);
-						APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName,false);
+						operator.performMutation(mutationLocation, writer, currentMutationIndex);
+						APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName, currentMutationIndex);
 
 					} catch (Exception e) {
 						Logger.getLogger(MutationsProcessor.class.getName()).warning("- Error generating mutant  "+currentMutationIndex);
@@ -121,11 +117,6 @@ public class MutationsProcessor {
 					return "";
 				}
 			}));
-
-			//Update log
-			writer.write("Mutant "+mutantIndex+": "+mutationLocation.getFilePath()+"; "+mutationLocation.getType().getName()+" in line "+(mutationLocation.getStartLine()+1));
-			writer.newLine();
-			writer.flush();
 		}
 
 		writer.close();

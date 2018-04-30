@@ -1,5 +1,7 @@
 package uniandes.tsdl.mutapk.operators.activity;
 
+import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +12,7 @@ import uniandes.tsdl.mutapk.operators.MutationOperator;
 public class ActivityNotDefined implements MutationOperator{
 
 	@Override
-	public boolean performMutation(MutationLocation location) {
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException {
 
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());
@@ -27,6 +29,14 @@ public class ActivityNotDefined implements MutationOperator{
 		}
 		
 		FileHelper.writeLines(location.getFilePath(), newLines);
+
+
+		writer.write("Mutant "+mutantIndex+": "+location.getFilePath()+"; "+location.getType().getName()+" in line "+(location.getStartLine()+1));
+		writer.newLine();
+		writer.flush();
+		writer.write("	For mutant "+mutantIndex+" the lines between "+(location.getStartLine()+1)+" and "+ (location.getEndLine()+1)+" have been deleted.");
+		writer.newLine();
+		writer.flush();
 		
 		return true;
 	}

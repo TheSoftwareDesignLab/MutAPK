@@ -41,7 +41,7 @@ public class Helper {
 				if(decodedPath.matches("/.:/.*")){
 					decodedPath = decodedPath.replaceAll("/", "\\\\").substring(1);
 				}
-				int pos = decodedPath.substring(1).indexOf("/")+1;
+				int pos = decodedPath.substring(1).indexOf("\\")+1;
 				decodedPath = decodedPath.replace(decodedPath.substring(0,pos), decodedPath.substring(0,pos-1).toLowerCase());
 			}
 			if (decodedPath.endsWith(".jar")) {
@@ -50,6 +50,14 @@ public class Helper {
 			currDirectory = decodedPath;
 		}
 		return currDirectory;
+	}
+	
+	public static boolean isWindows(){
+		String os = System.getProperty("os.name").toLowerCase();
+		if(os.indexOf("win")>=0){
+			return true;
+		}
+		return false;
 	}
 
 	public List<String> getActivities() throws ParserConfigurationException, SAXException, IOException{
