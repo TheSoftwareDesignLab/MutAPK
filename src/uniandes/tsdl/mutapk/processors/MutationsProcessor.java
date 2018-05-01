@@ -38,9 +38,11 @@ public class MutationsProcessor {
 	}
 
 
-	private void setupMutantFolder(int mutantIndex) throws IOException{
+	private String setupMutantFolder(int mutantIndex) throws IOException{
+		String path = getMutantsRootFolder()+File.separator+getAppName()+"-mutant"+mutantIndex;
 		FileUtils.copyDirectory(new File(getAppFolder()), 
-				new File(getMutantsRootFolder()+File.separator+getAppName()+"-mutant"+mutantIndex+File.separator+"src"));
+				new File(path+File.separator+"src"));
+		return path;
 
 	}
 
@@ -79,18 +81,18 @@ public class MutationsProcessor {
 
 	public void processMultithreaded(List<MutationLocation> locations, final String extraPath, final String apkName ) throws IOException{
 
-		final BufferedWriter writer = new BufferedWriter(new FileWriter(getMutantsRootFolder()+File.separator+getAppName()+"-mutants.log"));
 		final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 		final List<Future<String>> results = new LinkedList<Future<String>>();
-
-		writer.write("ThreadPool: "+Runtime.getRuntime().availableProcessors()+"\n");
+		
+		// writer.write("ThreadPool: "+Runtime.getRuntime().availableProcessors()+"\n");
 		int  mutantIndex  = 0;
-
+		
 		for (final MutationLocation mutationLocation : locations) {
 			mutantIndex++;
 			final int currentMutationIndex = mutantIndex;	
 			System.out.println("Mutant: "+currentMutationIndex+" - "+mutationLocation.getType().getName());
-			setupMutantFolder(currentMutationIndex);
+			String mutantPath = setupMutantFolder(currentMutationIndex);
+			final BufferedWriter writer = new BufferedWriter(new FileWriter(mutantPath+File.separator+getAppName()+"-mutants.log"));
 			results.add(executor.submit(new Callable<String>() {
 
 				public String call() {
@@ -108,6 +110,7 @@ public class MutationsProcessor {
 						//Perform mutation
 						operator.performMutation(mutationLocation, writer, currentMutationIndex);
 						APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName, currentMutationIndex);
+						writer.close();
 
 					} catch (Exception e) {
 						Logger.getLogger(MutationsProcessor.class.getName()).warning("- Error generating mutant  "+currentMutationIndex);
@@ -118,8 +121,6 @@ public class MutationsProcessor {
 				}
 			}));
 		}
-
-		writer.close();
 
 		
 		//If more output for single operator is needed
