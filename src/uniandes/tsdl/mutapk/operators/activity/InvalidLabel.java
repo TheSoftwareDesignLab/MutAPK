@@ -40,6 +40,8 @@ public class InvalidLabel implements MutationOperator{
 		}
 		
 		FileHelper.writeLines(location.getFilePath(), newLines);
+		System.out.println("Mutant "+mutantIndex+" has survived the mutation process. Now its source code has been modified.");
+		
 		writer.write("Mutant "+mutantIndex+": "+location.getFilePath()+"; "+location.getType().getName()+" in line "+(location.getStartLine()+1));
 		writer.newLine();
 		writer.flush();
