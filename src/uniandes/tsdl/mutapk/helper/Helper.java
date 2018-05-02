@@ -32,6 +32,7 @@ public class Helper {
 	public static final String TARGET_SDK_VERSION = "android:targetSdkVersion";
 	public static final String MAX_SDK_VERSION = "android:maxSdkVersion";
 	public static final String STRINGS = "strings.xml";
+	public static final String COLORS = "colors.xml";
 
 	public static Helper getInstance() {
 		if (instance == null) {

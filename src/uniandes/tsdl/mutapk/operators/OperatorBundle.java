@@ -10,6 +10,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.Set;
 
+import uniandes.tsdl.mutapk.detectors.xml.InvalidColorDetector;
 import uniandes.tsdl.mutapk.detectors.MutationLocationDetector;
 import uniandes.tsdl.mutapk.detectors.xml.ActivityNotDefinedDetector;
 import uniandes.tsdl.mutapk.detectors.xml.InvalidActivityNameDetector;
@@ -63,6 +64,8 @@ public class OperatorBundle {
 			textBasedDetectors.add(new SDKVersionDetector());
 		} if(bundle.containsKey(MutationType.WRONG_STRING_RESOURCE.getId()+"")) {
 			textBasedDetectors.add(new WrongStringResourceDetector());
+		} if(bundle.containsKey(MutationType.INVALID_COLOR.getId()+"")) {
+			textBasedDetectors.add(new InvalidColorDetector());
 		}
 
 		return textBasedDetectors;
