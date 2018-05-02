@@ -42,7 +42,7 @@ public class InvalidColor implements MutationOperator{
 		Helper.mutationSucces(mutantIndex);
 		Helper.writeBasicLogInfo(mutantIndex, mLocation.getFilePath(), mLocation.getType().getName(), mLocation.getStartLine(), writer);
 		
-		writer.write("	For mutant "+mutantIndex+" the value of the color named \""+mLocation.getColorName()+"\" at line "+(location.getStartLine()+1)+" has been changed from \""+mLocation.getOriginalColor()+"\" to \""+newColor+"\"");
+		writer.write("	For mutant "+mutantIndex+" the value of the color named \""+mLocation.getColorName()+"\" at line "+(location.getStartLine()+1)+" has been changed from \""+mLocation.getOriginalColor()+"\" to \"#"+newColor+"\"");
 		writer.newLine();
 		writer.flush();
 		

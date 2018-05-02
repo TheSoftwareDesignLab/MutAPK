@@ -46,8 +46,6 @@ public class InvalidColorDetector extends TextBasedDetector {
 		for (int i = 0; i < nodeList.getLength(); i++) {
 			Node node = nodeList.item(i);
 			String colorName = node.getAttributes().getNamedItem("name").getNodeValue();
-			System.out.println("colorName: "+colorName);
-			System.out.println("colorValue: "+node.getTextContent());
 			colorHex.add(new SimpleEntry<String,String>(colorName,node.getTextContent()));
  		}
 
