@@ -14,6 +14,7 @@ import uniandes.tsdl.mutapk.detectors.MutationLocationDetector;
 import uniandes.tsdl.mutapk.detectors.xml.ActivityNotDefinedDetector;
 import uniandes.tsdl.mutapk.detectors.xml.InvalidActivityNameDetector;
 import uniandes.tsdl.mutapk.detectors.xml.InvalidLabelDetector;
+import uniandes.tsdl.mutapk.detectors.xml.WrongMainActivityDetector;
 import uniandes.tsdl.mutapk.model.MutationType;
 
 public class OperatorBundle {
@@ -51,6 +52,8 @@ public class OperatorBundle {
 			textBasedDetectors.add(new InvalidActivityNameDetector());
 		} if(bundle.containsKey(MutationType.INVALID_LABEL.getId()+"")) {
 			textBasedDetectors.add(new InvalidLabelDetector());
+		} if(bundle.containsKey(MutationType.WRONG_MAIN_ACTIVITY.getId()+"")) {
+			textBasedDetectors.add(new WrongMainActivityDetector());
 		}
 
 		return textBasedDetectors;
