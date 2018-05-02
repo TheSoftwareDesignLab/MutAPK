@@ -17,6 +17,7 @@ import uniandes.tsdl.mutapk.detectors.xml.InvalidLabelDetector;
 import uniandes.tsdl.mutapk.detectors.xml.MissingPermissionDetector;
 import uniandes.tsdl.mutapk.detectors.xml.SDKVersionDetector;
 import uniandes.tsdl.mutapk.detectors.xml.WrongMainActivityDetector;
+import uniandes.tsdl.mutapk.detectors.xml.WrongStringResourceDetector;
 import uniandes.tsdl.mutapk.model.MutationType;
 
 public class OperatorBundle {
@@ -60,7 +61,9 @@ public class OperatorBundle {
 			textBasedDetectors.add(new MissingPermissionDetector());
 		} if(bundle.containsKey(MutationType.SDK_VERSION.getId()+"")) {
 			textBasedDetectors.add(new SDKVersionDetector());
-		} 
+		} if(bundle.containsKey(MutationType.WRONG_STRING_RESOURCE.getId()+"")) {
+			textBasedDetectors.add(new WrongStringResourceDetector());
+		}
 
 		return textBasedDetectors;
 	}
