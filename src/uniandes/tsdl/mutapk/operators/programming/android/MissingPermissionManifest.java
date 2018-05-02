@@ -1,6 +1,5 @@
 package uniandes.tsdl.mutapk.operators.programming.android;
 
-import java.awt.image.BufferedImage;
 import java.io.BufferedWriter;
 import java.util.ArrayList;
 import java.util.List;
