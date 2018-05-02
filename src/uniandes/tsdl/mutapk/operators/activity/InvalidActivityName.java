@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uniandes.tsdl.mutapk.helper.FileHelper;
+import uniandes.tsdl.mutapk.helper.Helper;
 import uniandes.tsdl.mutapk.helper.StringMutator;
 import uniandes.tsdl.mutapk.model.location.MutationLocation;
 import uniandes.tsdl.mutapk.operators.MutationOperator;
@@ -38,11 +39,8 @@ public class InvalidActivityName implements MutationOperator{
 		}
 		
 		FileHelper.writeLines(location.getFilePath(), newLines);
-		System.out.println("Mutant "+mutantIndex+" has survived the mutation process. Now its source code has been modified.");
-
-		writer.write("Mutant "+mutantIndex+": "+location.getFilePath()+"; "+location.getType().getName()+" in line "+(location.getStartLine()+1));
-		writer.newLine();
-		writer.flush();
+		Helper.mutationSucces(mutantIndex);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), location.getStartLine(), writer);
 		writer.write("	For mutant "+mutantIndex+" activity name at line "+location.getLine()+" has been change from \""+toMutate+"\" to \""+mutatedString+"\"");
 		writer.newLine();
 		writer.flush();

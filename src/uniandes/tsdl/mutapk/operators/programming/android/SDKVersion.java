@@ -59,11 +59,8 @@ public class SDKVersion implements MutationOperator {
 		}
 
 		FileHelper.writeLines(location.getFilePath(), newLines);
-		System.out.println("Mutant "+mutantIndex+" has survived the mutation process. Now its source code has been modified.");
-		
-		writer.write("Mutant "+mutantIndex+": "+location.getFilePath()+"; "+location.getType().getName()+" in line "+(location.getStartLine()+1));
-		writer.newLine();
-		writer.flush();
+		Helper.mutationSucces(mutantIndex);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), location.getStartLine(), writer);
 		writer.write("	For mutant "+mutantIndex+" the "+((isMinSDK)?"minSDKVersion":(isMaxSDK)?"maxSDKVersion":"targetSDKVersion")+" has been update from "+toMutate+" to "+newVersion);
 		writer.newLine();
 		writer.flush();
