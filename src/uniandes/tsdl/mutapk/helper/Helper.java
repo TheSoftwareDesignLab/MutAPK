@@ -1,5 +1,6 @@
 package uniandes.tsdl.mutapk.helper;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -30,6 +31,7 @@ public class Helper {
 	public static final String MIN_SDK_VERSION = "android:minSdkVersion";
 	public static final String TARGET_SDK_VERSION = "android:targetSdkVersion";
 	public static final String MAX_SDK_VERSION = "android:maxSdkVersion";
+	public static final String STRINGS = "strings.xml";
 
 	public static Helper getInstance() {
 		if (instance == null) {
@@ -122,5 +124,17 @@ public class Helper {
 		}
 
 		return false;
+	}
+
+	public static void mutationSucces(int mutantIndex) {
+		System.out.println("Mutant "+mutantIndex+" has survived the mutation process. Now its source code has been modified.");
+	}
+
+	public static void writeBasicLogInfo(int mutantIndex, String filePath, String name, int startLine,
+			BufferedWriter writer) throws IOException {
+				
+		writer.write("Mutant "+mutantIndex+": "+filePath+"; "+name+" in line "+(startLine+1));
+		writer.newLine();
+		writer.flush();
 	}
 }
