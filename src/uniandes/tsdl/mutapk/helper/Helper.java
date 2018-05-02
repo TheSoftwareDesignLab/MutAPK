@@ -25,6 +25,11 @@ public class Helper {
 	public static String mainActivity = "";
 	public final static String MANIFEST = "AndroidManifest.xml";
 	public final static String MAIN_ACTION = "android.intent.action.MAIN";
+	public static final int MIN_VERSION = 2;
+	public static final int MAX_VERSION = 27;
+	public static final String MIN_SDK_VERSION = "android:minSdkVersion";
+	public static final String TARGET_SDK_VERSION = "android:targetSdkVersion";
+	public static final String MAX_SDK_VERSION = "android:maxSdkVersion";
 
 	public static Helper getInstance() {
 		if (instance == null) {

@@ -20,8 +20,6 @@ public class WrongMainActivityDetector extends TextBasedDetector {
 	@Override
 	public List<MutationLocation> analyzeApp(String rootPath) throws Exception {
 		List<MutationLocation> locations = new ArrayList<MutationLocation>();
-
-		List<String> otherActivities = Helper.getInstance().getActivities();
 		String mainActivity = Helper.getInstance().getMainActivity();
 
 		String path = rootPath + File.separator + Helper.MANIFEST;
