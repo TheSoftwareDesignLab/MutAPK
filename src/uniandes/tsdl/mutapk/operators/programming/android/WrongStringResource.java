@@ -49,11 +49,8 @@ public class WrongStringResource implements MutationOperator{
 		String sub1 = linesToConsider.substring(0, start);
 		String toMutate = linesToConsider.substring(start,end);
 		String sub2 = linesToConsider.substring(end);
-		System.out.println(linesToConsider);
 		int strNameStart = linesToConsider.indexOf("name=\"")+6;
-		System.out.println(strNameStart);
 		int strNameEnd = linesToConsider.indexOf("\"",strNameStart);
-		System.out.println(strNameEnd);
 		String stringName = linesToConsider.substring(strNameStart,strNameEnd);
 
 		String randomString = StringGenerator.generateRandomString();
