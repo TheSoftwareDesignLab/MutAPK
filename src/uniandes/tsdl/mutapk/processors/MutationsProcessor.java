@@ -52,7 +52,7 @@ public class MutationsProcessor {
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-mutants.log"));
 		for (MutationLocation mutationLocation : locations) {
 			try {
-//				setupMutantFolder(mutantIndex);
+				setupMutantFolder(mutantIndex);
 				System.out.println("Mutant: " + mutantIndex + " - Type: " + mutationLocation.getType());
 				operator = factory.getOperator(mutationLocation.getType().getId());
 				mutantRootFolder = getMutantsRootFolder() + File.separator + getAppName() + "-mutant" + mutantIndex

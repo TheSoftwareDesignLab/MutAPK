@@ -53,27 +53,53 @@ public class DifferentActivityIntentDefinition  implements MutationOperator{
 			
 			String currLine = lines.get(i);
 			
-			if(i == realLine){
+			if(i == realLine-1){
 				//Apply mutation
-				String sub1 = currLine.substring(0, location.getStartColumn());
-				toMutate = currLine.substring(location.getStartColumn(), location.getEndColumn());
-				String sub2 = currLine.substring(location.getEndColumn());
-
-				//String mutatedString = StringMutator.performMutation(toMutate);
-				mutatedString = StringGenerator.generateRandomString();
-				currLine = sub1 + mutatedString + sub2;
+				
+				int startColumn = currLine.indexOf(toMutate);
+				String sub1 = currLine.substring(0, startColumn);
+				currLine = sub1 + mutatedString;
 			}
 			
 			newLines.add(currLine);
 		}
 		
 		FileHelper.writeLines(location.getFilePath(), newLines);
-		Helper.mutationSucces(mutantIndex);
-		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), location.getStartLine(), writer);
-		writer.write("	For mutant "+mutantIndex+" activity label at line "+location.getLine()+" has been change from \""+toMutate+"\" to \""+mutatedString+"\"");
+		Helper.mutationSuccess(mutantIndex);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), realLine, writer);
+		writer.write("	For mutant "+mutantIndex+" component name at line "+realLine+" has been change from \""+toMutate+"\" to \""+mutatedString+"\"");
 		writer.newLine();
 		writer.flush();
 		return true;
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

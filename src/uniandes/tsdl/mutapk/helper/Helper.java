@@ -127,7 +127,7 @@ public class Helper {
 		return false;
 	}
 
-	public static void mutationSucces(int mutantIndex) {
+	public static void mutationSuccess(int mutantIndex) {
 		System.out.println("Mutant "+mutantIndex+" has survived the mutation process. Now its source code has been modified.");
 	}
 
