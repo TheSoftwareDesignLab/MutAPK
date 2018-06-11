@@ -34,7 +34,9 @@ public class MutationsProcessor {
 	}
 
 	private String setupMutantFolder(int mutantIndex) throws IOException {
+		System.out.println("Creating folder for mutant "+ mutantIndex);
 		String path = getMutantsRootFolder() + File.separator + getAppName() + "-mutant" + mutantIndex;
+		System.out.println("Copying app information into mutant "+ mutantIndex+" folder");
 		FileUtils.copyDirectory(new File(getAppFolder()), new File(path + File.separator + "src"));
 		return path;
 

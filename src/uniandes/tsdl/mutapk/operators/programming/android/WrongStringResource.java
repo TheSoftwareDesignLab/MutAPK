@@ -66,7 +66,7 @@ public class WrongStringResource implements MutationOperator{
 
 
 		FileHelper.writeLines(location.getFilePath(), newLines);
-		Helper.mutationSucces(mutantIndex);
+		Helper.mutationSuccess(mutantIndex);
 		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), location.getStartLine(), writer);
 		
 		writer.write("	For mutant "+mutantIndex+" the value of the string named \""+stringName+"\" at line "+(location.getStartLine()+1)+" has been changed from \""+toMutate+"\" to \""+randomString+"\"");

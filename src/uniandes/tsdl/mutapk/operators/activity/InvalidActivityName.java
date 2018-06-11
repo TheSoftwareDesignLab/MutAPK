@@ -39,7 +39,7 @@ public class InvalidActivityName implements MutationOperator{
 		}
 		
 		FileHelper.writeLines(location.getFilePath(), newLines);
-		Helper.mutationSucces(mutantIndex);
+		Helper.mutationSuccess(mutantIndex);
 		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), location.getStartLine(), writer);
 		writer.write("	For mutant "+mutantIndex+" activity name at line "+location.getLine()+" has been change from \""+toMutate+"\" to \""+mutatedString+"\"");
 		writer.newLine();

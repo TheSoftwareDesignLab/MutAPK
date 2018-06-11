@@ -59,7 +59,7 @@ public class SDKVersion implements MutationOperator {
 		}
 
 		FileHelper.writeLines(location.getFilePath(), newLines);
-		Helper.mutationSucces(mutantIndex);
+		Helper.mutationSuccess(mutantIndex);
 		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), location.getStartLine(), writer);
 		writer.write("	For mutant "+mutantIndex+" the "+((isMinSDK)?"minSDKVersion":(isMaxSDK)?"maxSDKVersion":"targetSDKVersion")+" has been update from "+toMutate+" to "+newVersion);
 		writer.newLine();
