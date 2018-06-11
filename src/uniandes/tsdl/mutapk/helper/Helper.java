@@ -131,10 +131,15 @@ public class Helper {
 		System.out.println("Mutant "+mutantIndex+" has survived the mutation process. Now its source code has been modified.");
 	}
 
-	public static void writeBasicLogInfo(int mutantIndex, String filePath, String name, int startLine,
+	public static void writeBasicLogInfo(int mutantIndex, String filePath, String name, int[] startLine,
 			BufferedWriter writer) throws IOException {
-				
-		writer.write("Mutant "+mutantIndex+": "+filePath+"; "+name+" in line "+(startLine+1));
+		
+		String mutatedLines = "{ ";
+		for (int i = 0; i < startLine.length; i++) {
+			mutatedLines += startLine[i]+", ";
+		}
+		mutatedLines = mutatedLines.substring(0,mutatedLines.length()-2)+" }";
+		writer.write("Mutant "+mutantIndex+": "+filePath+"; "+name+" in "+((startLine.length>1)?"lines ":"line ")+mutatedLines);
 		writer.newLine();
 		writer.flush();
 	}

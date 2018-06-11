@@ -26,7 +26,7 @@ public class DifferentActivityIntentDefinition  implements MutationOperator{
 		Helper h = Helper.getInstance();
 		List<String> activities = h.getActivities();
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
-		List hijos = parent.getChildren();
+		List hijos = (List<CommonTree>)parent.getChildren();
 		boolean founded = false;
 		String toMutate = "";
 		String mutatedString = "";
@@ -66,7 +66,7 @@ public class DifferentActivityIntentDefinition  implements MutationOperator{
 		
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
-		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), realLine, writer);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {realLine}, writer);
 		writer.write("	For mutant "+mutantIndex+" component name at line "+realLine+" has been change from \""+toMutate+"\" to \""+mutatedString+"\"");
 		writer.newLine();
 		writer.flush();

@@ -42,7 +42,7 @@ public class InvalidLabel implements MutationOperator{
 		
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
-		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), location.getStartLine(), writer);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {location.getStartLine()}, writer);
 		writer.write("	For mutant "+mutantIndex+" activity label at line "+location.getLine()+" has been change from \""+toMutate+"\" to \""+mutatedString+"\"");
 		writer.newLine();
 		writer.flush();
