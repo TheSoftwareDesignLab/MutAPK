@@ -37,7 +37,7 @@ public class WrongMainActivity  implements MutationOperator{
 		
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
-		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), location.getStartLine(), writer);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {location.getStartLine()}, writer);
 		writer.write("	For mutant "+mutantIndex+" activity \""+mainActivity+"\" at line "+location.getStartLine()+" has been replaced as main activity by \""+otherActivity+"\" at line "+(otherActivityIndex+1));
 		writer.newLine();
 		writer.flush();

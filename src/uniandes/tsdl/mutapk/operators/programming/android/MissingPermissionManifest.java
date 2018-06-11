@@ -30,7 +30,7 @@ public class MissingPermissionManifest implements MutationOperator{
 		
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
-		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), location.getStartLine(), writer);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {location.getStartLine()}, writer);
 		writer.write("	For mutant "+mutantIndex+" the lines between "+(location.getStartLine()+1)+" and "+ (location.getEndLine()+1)+" have been deleted.");
 		writer.newLine();
 		writer.flush();
