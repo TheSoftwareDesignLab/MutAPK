@@ -1,0 +1,14 @@
+/* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+}
+
+.row {
+  margin: 30px 0px;
+}
