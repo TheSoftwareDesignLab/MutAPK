@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="img/droidpool.ico">
+
+  <title>MutAPK</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/navbar-top-fixed.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/MutAPK_name_logo_oscuro.png" alt="TESDLA" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MutAPK</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#purpose">Purpose</a>
+            <a class="dropdown-item" href="#video">Video Demonstration</a>
+            <a class="dropdown-item" href="#publications">Publications</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Mutation Operators</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown02">
+            <a class="dropdown-item" href="#activitiesIntents">Activities - Intents</a>
+            <a class="dropdown-item" href="#androidProgramming">Android Programming</a>
+            <a class="dropdown-item" href="#backEndServices">Back-End Services</a>
+            <a class="dropdown-item" href="#connectivity">Connectivity</a>
+            <a class="dropdown-item" href="#data">Data</a>
+            <a class="dropdown-item" href="#database">Database</a>
+            <a class="dropdown-item" href="#generalProgramming">General Programming</a>
+            <a class="dropdown-item" href="#gui">GUI</a>
+            <a class="dropdown-item" href="#io">I/O</a>
+            <a class="dropdown-item" href="#nonFunctionalRequirements">Non-Functional Requirements</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-12" style="display:table-cell; vertical-align:middle; text-align:center">
+        <img src="img/droidpool.png" alt="MutAPKLogo" style="max-width: 30%; height: auto;">
+      </div>
+    </div>
+    <div class="jumbotron" style="background-color: white">
+      <h2 class="text-center">
+        <strong>
+          <i>Mut
+            <em style="color:red">APK</em>
+          </i>:</strong> Enabling Mutation Testing for Android Apps over APK files</h2>
+      <p class="lead text-center">Team Members:
+        <i>
+          <a href="http://caev03.github.io">Camilo Escobar-Velásquez</a>,
+          <a href="https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/">Mario Linares-Vásquez</a>
+        </i>
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h3 id="purpose" style="padding-top:4.5rem; margin-top:-4.5rem;">Purpose:</h3>
+        <div class="card">
+          <div class="card-body">
+            This project was created by
+            <a href="http://thesoftwaredesignlab.github.io">The Sofware Design Lab</a> at the Universidad de los Andes. The major goal of the MutAPK project is to enable
+            mutation testing over android application by third-party services that provide on-the-clod infraestructures.
+            This project uses APK files instead of source code to generate mutants. It is based on
+            <a href="http://android-mutation.com">MDroid+</a> project that generates mutants from source code. MutAPK provides the 38 Android-specific mutation
+            operators founded by MDroid+ researchers and add # new mutant operators that can be easily seeded into target
+            application due to working with compiled files.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h3 id="video" style="padding-top:4.5rem; margin-top:-4.5rem;">Video Demostration:</h3>
+        <div class="card">
+          <div class="card-body" style="display:table-cell; vertical-align:middle; text-align:center">
+            <img src="img/LogoLargo.png" alt="MutAPKLogoLargo" style="max-width: 80%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h3 id="publications" style="padding-top:4.5rem; margin-top:-4.5rem;">Publications:</h3>
+        <div class="card">
+          <div class="card-body">
+            <ul>
+              <li>
+                <strong>
+                  <i>Enabling Automated Software Engineering Tasks for Closed-Source Mobile Apps</i>
+                </strong>
+              </li>
+              <ul>
+                <li>Camilo Escobar-Velásquez, Mario Linares-Vásquez</li>
+                <li>
+                  <i>Submitted to 34th IEEE International Conference on Software Maintenance and Evolution (
+                    <a href="https://icsme2018.github.io/">ICSME</a> ), New Ideas and Emerging Results Track, Madrid, Spain, September 23 - 29</i>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h3 id="mutationOperators" style="padding-top:4.5rem; margin-top:-4.5rem;">Mutation Operators:</h3>
+        <p>Here we provide the list of all mutations operators that were defined for Mut
+          <em style="color: red">APK</em>.</p>
+      </div>
+    </div>
+    <div class="row" id="activitiesIntents" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            Activity/Intents
+          </div>
+          <div class="card-body">
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                Activity Not Defined
+                <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+              </div>
+              <div class="card-body">
+                <h5>Description:</h5>
+                <p>Delete an activity
+                  <android:name="Activity" /> entry in the Manifest file</p>
+                <h5>Code Example:</h5>
+                <p>Before:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"> < activity android:name=".ImportActivity" android:label="@string/title_import" / > </textarea>
+                <p>After:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"> </textarea>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                Different Activity Intent Definition
+                <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+              </div>
+              <div class="card-body">
+                <h5>Description:</h5>
+                <p>Replace the Activity.class argument in an Intent instantiation.</p>
+                <h5>Code Example:</h5>
+                <p>Before:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"> </textarea>
+                <p>After:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"> </textarea>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                Invalid Activity Name
+                <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+              </div>
+              <div class="card-body">
+                <h5>Description:</h5>
+                <p>Randomly insert typos in the path of an activity defined in the Manifest file.</p>
+                <h5>Code Example:</h5>
+                <p>Before:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"> < activity android:name=".AboutActivity" android:label="@string/title_about" / > </textarea>
+                <p>After:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"> < activity android:name=".AbutActivity" android:label="@string/title_about" / ></textarea>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                Invalid Label
+                <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+              </div>
+              <div class="card-body">
+                <h5>Description:</h5>
+                <p>Replace the attribute "android:label" in the Manifest file with a random string</p>
+                <h5>Code Example:</h5>
+                <p>Before:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"> <activity android:name=".VehicleActivity" android:label="@string/title_vehicle" /> </textarea>
+                <p>After:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"> <activity android:name=".VehicleActivity" android:label="ecab6839856b426fbdae3e6e8c46c38c" /></textarea>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                Null Intent
+                <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+              </div>
+              <div class="card-body">
+                <h5>Description:</h5>
+                <p>Replace an Intent instantiation with null</p>
+                <h5>Code Example:</h5>
+                <p>Before:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                <p>After:</p>
+                <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                Wrong Main Activity
+                <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+              </div>
+              <div class="card-body">
+                <h5>Description:</h5>
+                <p>Randomly replace the main activity definition with a different activity</p>
+                <h5>Code Example:</h5>
+                <p>Before:</p>
+                <textarea name="andBefore" id="andBefore" rows="1">
+<activity android:name=".Mileage" android:theme="@android:style/Theme.NoTitleBar">
+  <intent-filter>
+    <action android:name="android.intent.action.MAIN" />
+    <category android:name="android.intent.category.LAUNCHER" />
+  </intent-filter>
+</activity>
+...
+<activity android:name=".AboutActivity" android:label="@string/title_about" /></textarea>
+                <p>After:</p>
+                <textarea name="andBefore" id="andBefore" rows="1">
+<activity android:name=".AboutActivity" android:theme="@android:style/Theme.NoTitleBar">
+  <intent-filter>
+    <action android:name="android.intent.action.MAIN" />
+    <category android:name="android.intent.category.LAUNCHER" />
+  </intent-filter>
+</activity>
+...
+<activity android:name=".Mileage" android:label="@string/title_about" /></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="androidProgramming" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            Android Programming
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="backEndServices" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            Back-End Services
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="connectivity" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            Connectivity
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="data" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            Data
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="database" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            Database
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="generalProgramming" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            General Programming
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="gui" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            GUI
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="io" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            I/O
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="nonFunctionalRequirements" style="padding-top:4.5rem; margin-top:-4.5rem;">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            Non-Functional Requirements
+          </div>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/codemirror.js"></script>
+  <link rel="stylesheet" href="css/codemirror.css">
+  <script src="mode/xml.js"></script>
+  <script src="mode/clike.js"></script>
+  <script>
+    $("textarea").each(function (index, element) {
+      var myCodeMirror = CodeMirror.fromTextArea(element, { lineNumbers: true, mode: "xml" })
+    })
+  </script>
+</body>
+
+</html>
