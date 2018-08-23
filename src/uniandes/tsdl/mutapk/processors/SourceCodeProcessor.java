@@ -17,13 +17,12 @@ import java.util.logging.Logger;
 import org.antlr.runtime.tree.CommonTree;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
-import org.eclipse.jdt.core.ITypeRoot;
-import org.eclipse.jdt.core.compiler.IProblem;
 import org.eclipse.jdt.core.dom.CompilationUnit;
-import org.eclipse.jdt.core.dom.Type;
-import org.eclipse.jdt.core.dom.TypeDeclaration;
 
-import uniandes.tsdl.mutapk.detectors.code.visitors.*;
+import uniandes.tsdl.mutapk.detectors.code.visitors.APICallVO;
+import uniandes.tsdl.mutapk.detectors.code.visitors.MethodCallVO;
+import uniandes.tsdl.mutapk.detectors.code.visitors.MethodDeclarationVO;
+import uniandes.tsdl.mutapk.detectors.code.visitors.TreeVisitorInstance;
 import uniandes.tsdl.mutapk.helper.ASTHelper;
 import uniandes.tsdl.mutapk.helper.Helper;
 import uniandes.tsdl.mutapk.model.MutationType;

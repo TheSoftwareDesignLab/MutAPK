@@ -72,18 +72,16 @@ public class ASTHelper {
 	//
 		
 	public static int[] isValidLocation(CommonTree t){
+		
 		if(t.getType()==159 
 				&& t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
 				&& t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).toString().equals("Landroid/content/Intent;") 
 				&& t.getFirstChildWithType(smaliParser.SIMPLE_NAME).toString().equals("<init>")){
 			return new int[]{2,6};
+		} else if (t.getType()==191 && t.getText().equals("putExtra")){
+			return new int[]{4,7};
 		} 
-//		else if (t.getType()==159 
-//				&& t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
-//				&& t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).toString().equals("Landroid/content/Intent;") 
-//				&& t.getFirstChildWithType(smaliParser.SIMPLE_NAME).toString().equals("putExtra")){
-//			return new int[]{4,7};
-//		} else if(false){//HttpClient.execute
+//		else if(false){//HttpClient.execute
 //			return new int[]{13,20};
 //		} else if(false){//14 HttpConnectionParams.setConnectionTimeout
 //			return new int[]{14};
