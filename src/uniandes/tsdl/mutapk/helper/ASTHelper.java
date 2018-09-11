@@ -70,48 +70,50 @@ public class ASTHelper {
 	//		return mdVisitor.getDeclarations();
 	//	}
 	//
-		
+
 	public static int[] isValidLocation(CommonTree t){
-		
 		if(t.getType()==159 
 				&& t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
 				&& t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).toString().equals("Landroid/content/Intent;") 
 				&& t.getFirstChildWithType(smaliParser.SIMPLE_NAME).toString().equals("<init>")){
 			return new int[]{2,6};
-		} else if (t.getType()==191 && t.getText().equals("putExtra")){
-			return new int[]{4,7};
-		} 
-//		else if(false){//HttpClient.execute
-//			return new int[]{13,20};
-//		} else if(false){//14 HttpConnectionParams.setConnectionTimeout
-//			return new int[]{14};
-//		} else if(false){//BluetoothAdapter.isEnabled
-//			return new int[]{15};
-//		} else if(false){//BluetoothAdapter.getDefaultAdapter
-//			return new int[]{16};
-//		} else if(false){//URI.<init>
-//			return new int[]{17};
-//		} else if(false){//Location.<init>
-//			return new int[]{18};	
-//		} else if(false){//Date.<init>
-//			return new int[]{19};	
-//		} else if(false){//Cursor.close
-//			return new int[]{23};	
-//		} else if(false){//SQLiteDatabase.rawQuery
-//			return new int[]{24,25};	
-//		} else if(false){//Activity.findViewById
-//			return new int[]{26,27,31};	
-//		} else if(false){//View.OnClickListener
-//			return new int[]{30,36};	
-//		} else if(false){//File.<init>
-//			return new int[]{32};	
-//		} else if(false){//FileChannel.close,InputStream.close,BufferedInputStream.close,ByteArrayInputStream.close,DataInputStream.close,FilterInputStream.close,ObjectInputStream.close,PipedInputStream.close,SequenceInputStream.close,StringBufferInputStream.close
-//			return new int[]{33};	
-//		} else if(false){//Bitmap.createScaledBitmap
-//			return new int[]{35};	
-//		} else if(false){//OutputStream.close,ByteArrayOutputStream.close,FileOutputStream.close,FilterOutputStream.close,ObjectOutputStream.close,PipedOutputStream.close,BufferedOutputStream.close,PrintStream.close,DataOutputStream.close
-//			return new int[]{37};	
-//		}
+		} else if (t.getType()==191 && t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
+			return new int[]{4,7}; 
+		} else if (t.getType()==191 && t.getText().equals("findViewById")) {
+			return new int[]{26,27,31};	
+		}
+		//		} else if (t.) {
+		//			return new int[]{11};
+		//		}
+		//		else if(false){//HttpClient.execute
+		//			return new int[]{13,20};
+		//		} else if(false){//14 HttpConnectionParams.setConnectionTimeout
+		//			return new int[]{14};
+		//		} else if(false){//BluetoothAdapter.isEnabled
+		//			return new int[]{15};
+		//		} else if(false){//BluetoothAdapter.getDefaultAdapter
+		//			return new int[]{16};
+		//		} else if(false){//URI.<init>
+		//			return new int[]{17};
+		//		} else if(false){//Location.<init>
+		//			return new int[]{18};	
+		//		} else if(false){//Date.<init>
+		//			return new int[]{19};	
+		//		} else if(false){//Cursor.close
+		//			return new int[]{23};	
+		//		} else if(false){//SQLiteDatabase.rawQuery
+		//			return new int[]{24,25};	
+		//		} else if(false){//View.OnClickListener
+		//			return new int[]{30,36};	
+		//		} else if(false){//File.<init>
+		//			return new int[]{32};	
+		//		} else if(false){//FileChannel.close,InputStream.close,BufferedInputStream.close,ByteArrayInputStream.close,DataInputStream.close,FilterInputStream.close,ObjectInputStream.close,PipedInputStream.close,SequenceInputStream.close,StringBufferInputStream.close
+		//			return new int[]{33};	
+		//		} else if(false){//Bitmap.createScaledBitmap
+		//			return new int[]{35};	
+		//		} else if(false){//OutputStream.close,ByteArrayOutputStream.close,FileOutputStream.close,FilterOutputStream.close,ObjectOutputStream.close,PipedOutputStream.close,BufferedOutputStream.close,PrintStream.close,DataOutputStream.close
+		//			return new int[]{37};	
+		//		}
 		return new int[]{-1};
 	}
 
