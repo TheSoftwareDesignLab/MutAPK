@@ -31,7 +31,7 @@ public class InvalidColor implements MutationOperator{
 				String sub1 = currLine.substring(0, mLocation.getStartColumn());
 				String sub2 = currLine.substring(mLocation.getEndColumn());
 
-				newColor = HexadecimalGenerator.generateColor();
+				newColor = HexadecimalGenerator.generateRandomHexa();
 				currLine = sub1 + newColor + sub2;
 			}
 			
