@@ -21,8 +21,36 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
 		List<CommonTree> hijos = (List<CommonTree>)parent.getChildren();
 		String constVarName = hijos.get(1).getChild(1).getText();
-		int prevLine = parent.getParent().getChild(parent.getChildIndex()-1).getLine();
-		int lastLine = parent.getParent().getChild(parent.getChildIndex()+2).getLine();
+		List<CommonTree> uncles = (List<CommonTree>)((CommonTree)parent.getParent()).getChildren();
+		boolean founded = false;
+		int prevLine = -1;
+		for (int i = parent.getChildIndex()-1; i > 0 && !founded; i--) {
+			CommonTree tempUncle = uncles.get(i);
+			if(tempUncle.getType()==156 && tempUncle.getChild(1).toString().equals(constVarName)) {
+				founded = true;
+				prevLine = tempUncle.getLine();
+			}
+		}
+		boolean foundedd = false;
+		boolean casted = false;
+		int firstLastLine = -1;
+		int lastLine = -1;
+		for(int i = parent.getChildIndex()+1; i < parent.getChildIndex()+5 && (!foundedd || !casted); i++) {
+			CommonTree tempUncle = uncles.get(i);
+			System.out.println(tempUncle.toStringTree());
+			if(tempUncle.getType()==136 && tempUncle.getChild(0).toString().equals("move-result-object")) {
+				foundedd = true;
+				firstLastLine = tempUncle.getLine();
+			} else if (foundedd && tempUncle.getType()==142 && tempUncle.getChild(0).toString().equals("check-cast")) {
+				casted = true;
+				lastLine = tempUncle.getLine();
+			}
+			System.out.println(foundedd+" "+casted);
+		}
+		
+		System.out.println(founded);
+		System.out.println(foundedd);
+		System.out.println(casted);
 
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());
