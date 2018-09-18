@@ -94,7 +94,7 @@ public class ASTHelper {
 	//		return mdVisitor.getDeclarations();
 	//	}
 	//
-	public static int isViewComponentNotVisible(CommonTree t) {
+	public static CommonTree isViewComponentNotVisible(CommonTree t) {
 		CommonTree iput = getFirstUncleNamedOfType(smaliParser.I_STATEMENT_FORMAT22c_FIELD, "iput-object", t);
 		if(iput!=null && iput.getLine()-t.getLine()<7)
 		{
@@ -105,13 +105,13 @@ public class ASTHelper {
 			{
 				List<CommonTree> cousinss = (List<CommonTree>)iget.getChildren();
 				if(cousinss.get(4).toStringTree().equals(varName)){
-					return cousinss.get(4).getLine();
+					return iget;
 				} else {
 					iget = getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT22c_FIELD, "iget-object", iget);
 				}
 			}
 		}
-		return -1;
+		return null;
 	}
 
 	public static int[] isValidLocation(CommonTree t){
@@ -124,7 +124,7 @@ public class ASTHelper {
 			return new int[]{2,6};
 		} else if (t.getType()==191 && t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
 			return new int[]{4,7}; 
-		} else if (t.getType()==191 && t.getText().equals("findViewById") && isViewComponentNotVisible(t)!=-1) {
+		} else if (t.getType()==191 && t.getText().equals("findViewById") && isViewComponentNotVisible(t)!=null) {
 			return new int[]{26};
 		} else if (t.getType()==191 && t.getText().equals("findViewById")) {
 			return new int[]{27,31};	

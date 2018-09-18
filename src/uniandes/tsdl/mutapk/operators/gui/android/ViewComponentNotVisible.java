@@ -22,8 +22,9 @@ public class ViewComponentNotVisible implements MutationOperator {
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
 		List<CommonTree> hijos = (List<CommonTree>)parent.getChildren();
 		String constVarName = hijos.get(1).getChild(1).getText();
-		List<CommonTree> uncles = (List<CommonTree>)((CommonTree)parent.getParent()).getChildren();
-		int selLine = ASTHelper.isViewComponentNotVisible(mLocation.getTree());
+		CommonTree selTree = ASTHelper.isViewComponentNotVisible(mLocation.getTree());
+		int selLine = selTree.getLine();
+		String className = selTree.getChild(3).toString();
 		
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());
@@ -37,7 +38,7 @@ public class ViewComponentNotVisible implements MutationOperator {
 		newLines.add("");
 		newLines.add("    const/4 v9, 0x4");
 		newLines.add("");
-		newLines.add("    invoke-virtual {"+constVarName+", v9}, Landroid/support/design/widget/FloatingActionButton;->setVisibility(I)V");
+		newLines.add("    invoke-virtual {"+constVarName+", v9}, "+className+"->setVisibility(I)V");
 		newLines.add("");
 		
 		for(int i=selLine; i < lines.size() ; i++){
