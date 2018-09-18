@@ -56,6 +56,30 @@ public class ASTHelper {
 		}
 		return t;
 	}
+	
+	public static CommonTree getFirstUncleNamedOfType(int type, String name, CommonTree t) {
+		CommonTree parent = (CommonTree) t.getParent();
+		List<CommonTree> uncles = (List<CommonTree>)((CommonTree)parent.getParent()).getChildren();
+		for (int i = parent.getChildIndex()+1; i < uncles.size(); i++) {
+			CommonTree tempUncle = (CommonTree) uncles.get(i);
+			if(tempUncle.getType()==type && tempUncle.getChild(0).toStringTree().equals(name)) {
+				return tempUncle;
+			}
+		}
+		return null;
+	}
+	
+	public static CommonTree getFirstBrotherNamedOfType(int type, String name, CommonTree t) {
+		CommonTree parent = (CommonTree) t.getParent();
+		List<CommonTree> brothers = (List<CommonTree>)parent.getChildren();
+		for (int i = t.getChildIndex()+1; i < brothers.size(); i++) {
+			CommonTree tempBrother = (CommonTree) brothers.get(i);
+			if(tempBrother.getType()==type && tempBrother.getChild(0).toStringTree().equals(name)) {
+				return tempBrother;
+			}
+		}
+		return null;
+	}
 
 	//	public static HashSet<MethodCallVO> getMethodCallsFromCU(CompilationUnit cu, HashSet<String> targetCalls){
 	//		MethodCallVisitor mcVisitor = new MethodCallVisitor();
@@ -70,8 +94,29 @@ public class ASTHelper {
 	//		return mdVisitor.getDeclarations();
 	//	}
 	//
+	public static int isViewComponentNotVisible(CommonTree t) {
+		CommonTree iput = getFirstUncleNamedOfType(smaliParser.I_STATEMENT_FORMAT22c_FIELD, "iput-object", t);
+		if(iput!=null && iput.getLine()-t.getLine()<7)
+		{
+			List<CommonTree> cousins = (List<CommonTree>)iput.getChildren();
+			String varName = cousins.get(4).toStringTree();
+			CommonTree iget = getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT22c_FIELD, "iget-object", iput);
+			while(iget!=null)
+			{
+				List<CommonTree> cousinss = (List<CommonTree>)iget.getChildren();
+				if(cousinss.get(4).toStringTree().equals(varName)){
+					return cousinss.get(4).getLine();
+				} else {
+					iget = getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT22c_FIELD, "iget-object", iget);
+				}
+			}
+		}
+		return -1;
+	}
 
 	public static int[] isValidLocation(CommonTree t){
+//		System.out.println(t.toStringTree());
+//		System.out.println(t.getType());
 		if(t.getType()==159 
 				&& t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
 				&& t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).toString().equals("Landroid/content/Intent;") 
@@ -79,8 +124,10 @@ public class ASTHelper {
 			return new int[]{2,6};
 		} else if (t.getType()==191 && t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
 			return new int[]{4,7}; 
+		} else if (t.getType()==191 && t.getText().equals("findViewById") && isViewComponentNotVisible(t)!=-1) {
+			return new int[]{26};
 		} else if (t.getType()==191 && t.getText().equals("findViewById")) {
-			return new int[]{26,27,31};	
+			return new int[]{27,31};	
 		}
 		//		} else if (t.) {
 		//			return new int[]{11};

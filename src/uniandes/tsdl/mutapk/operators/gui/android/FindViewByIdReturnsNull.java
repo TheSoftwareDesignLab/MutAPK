@@ -41,16 +41,13 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 			if(tempUncle.getType()==136 && tempUncle.getChild(0).toString().equals("move-result-object")) {
 				foundedd = true;
 				firstLastLine = tempUncle.getLine();
+				lastLine = tempUncle.getLine();
 			} else if (foundedd && tempUncle.getType()==142 && tempUncle.getChild(0).toString().equals("check-cast")) {
 				casted = true;
 				lastLine = tempUncle.getLine();
 			}
 			System.out.println(foundedd+" "+casted);
 		}
-		
-		System.out.println(founded);
-		System.out.println(foundedd);
-		System.out.println(casted);
 
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());
@@ -71,7 +68,7 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
-		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {prevLine, mLocation.getLine(), mLocation.getLine()+2, lastLine}, writer);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {prevLine, mLocation.getLine(), firstLastLine, lastLine}, writer);
 		writer.write("	For mutant "+mutantIndex+" the element retrieved at line "+location.getStartLine()+" has been set to null");
 		writer.newLine();
 		writer.flush();
