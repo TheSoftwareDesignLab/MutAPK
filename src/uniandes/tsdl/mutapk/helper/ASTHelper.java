@@ -56,7 +56,7 @@ public class ASTHelper {
 		}
 		return t;
 	}
-	
+
 	public static CommonTree getFirstUncleNamedOfType(int type, String name, CommonTree t) {
 		CommonTree parent = (CommonTree) t.getParent();
 		List<CommonTree> uncles = (List<CommonTree>)((CommonTree)parent.getParent()).getChildren();
@@ -68,7 +68,7 @@ public class ASTHelper {
 		}
 		return null;
 	}
-	
+
 	public static CommonTree getFirstBrotherNamedOfType(int type, String name, CommonTree t) {
 		CommonTree parent = (CommonTree) t.getParent();
 		List<CommonTree> brothers = (List<CommonTree>)parent.getChildren();
@@ -128,6 +128,9 @@ public class ASTHelper {
 			return new int[]{26};
 		} else if (t.getType()==191 && t.getText().equals("findViewById")) {
 			return new int[]{27,31};	
+		} else if (t.getType()==159 && t.getChild(2).toStringTree().equals("Ljava/io/File;") 
+				&& t.getChild(4).getChild(1).toStringTree().equals("Ljava/lang/String;")){//File.<init>
+			return new int[]{32};	
 		}
 		//		} else if (t.) {
 		//			return new int[]{11};
@@ -152,8 +155,6 @@ public class ASTHelper {
 		//			return new int[]{24,25};	
 		//		} else if(false){//View.OnClickListener
 		//			return new int[]{30,36};	
-		//		} else if(false){//File.<init>
-		//			return new int[]{32};	
 		//		} else if(false){//FileChannel.close,InputStream.close,BufferedInputStream.close,ByteArrayInputStream.close,DataInputStream.close,FilterInputStream.close,ObjectInputStream.close,PipedInputStream.close,SequenceInputStream.close,StringBufferInputStream.close
 		//			return new int[]{33};	
 		//		} else if(false){//Bitmap.createScaledBitmap
