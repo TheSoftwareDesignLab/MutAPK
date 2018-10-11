@@ -22,7 +22,7 @@ public class ViewComponentNotVisible implements MutationOperator {
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
 		List<CommonTree> hijos = (List<CommonTree>)parent.getChildren();
 		String constVarName = hijos.get(1).getChild(1).getText();
-		CommonTree selTree = ASTHelper.isViewComponentNotVisible(mLocation.getTree());
+		CommonTree selTree = ASTHelper.hasIPutAndIGet(mLocation.getTree());
 		int selLine = selTree.getLine();
 		String className = selTree.getChild(3).toString();
 		
