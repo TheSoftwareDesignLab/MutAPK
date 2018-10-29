@@ -115,23 +115,41 @@ public class ASTHelper {
 	}
 
 	public static int[] isValidLocation(CommonTree t){
-//		System.out.println(t.toStringTree());
-//		System.out.println(t.getType());
-		if(t.getType()==159 
-				&& t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
-				&& t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).toString().equals("Landroid/content/Intent;") 
-				&& t.getFirstChildWithType(smaliParser.SIMPLE_NAME).toString().equals("<init>")){
-			return new int[]{2, 6};
-		} else if (t.getType()==191 && t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
-			return new int[]{4, 7}; 
-		} else if (t.getType()==191 && t.getText().equals("findViewById") && hasIPutAndIGet(t)!=null) {
-			return new int[]{26, 29};
-		} else if (t.getType()==191 && t.getText().equals("findViewById")) {
-			return new int[]{27, 31};	
-		} else if (t.getType()==159 && t.getChild(2).toStringTree().equals("Ljava/io/File;") 
-				&& t.getChild(4).getChild(1)!=null && t.getChild(4).getChild(1).toStringTree().equals("Ljava/lang/String;")){//File.<init>
-			return new int[]{32};	
+		//		if(t.getType()==159) {
+		//			System.out.println(t.toStringTree());
+		//			System.out.println(t.getType());
+		//			System.out.println(t.getChild(2));
+		//			System.out.println(t.getChild(3));
+		//			System.out.println(t.getChild(2).toStringTree().equals("Ljava/net/URI;") && t.getChild(3).toStringTree().equals("<init>") );
+		//		}
+
+		if(t.getType()==159) {
+			if(t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
+					&& t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).toString().equals("Landroid/content/Intent;") 
+					&& t.getFirstChildWithType(smaliParser.SIMPLE_NAME).toString().equals("<init>")) {
+				return new int[]{2, 6};
+			} else if(t.getChild(2).toStringTree().equals("Ljava/io/File;") 
+					&& t.getChild(4).getChild(1)!=null && t.getChild(4).getChild(1).toStringTree().equals("Ljava/lang/String;")) {
+				return new int[]{32};
+			} else if(t.getChild(2).toStringTree().equals("Ljava/net/URI;") 
+					&& t.getChild(3).toStringTree().equals("<init>")) {
+				return new int[]{17};
+			} else if(t.getChild(1).getChildCount() > 1 
+					&& t.getChild(2).toStringTree().equals("Ljava/util/Date;") 
+					&& t.getChild(3).toStringTree().equals("<init>")) {
+				return new int[]{19};
+			}
+		} else if(t.getType()==191) {
+			if(t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
+				return new int[]{4, 7}; 
+			} else if(t.getText().equals("findViewById") && hasIPutAndIGet(t)!=null) {
+				return new int[]{26, 29};
+			} else if (t.getText().equals("findViewById")) {
+				return new int[]{27, 31};	
+			}
 		}
+
+
 		//		} else if (t.) {
 		//			return new int[]{11};
 		//		}
@@ -143,12 +161,8 @@ public class ASTHelper {
 		//			return new int[]{15};
 		//		} else if(false){//BluetoothAdapter.getDefaultAdapter
 		//			return new int[]{16};
-		//		} else if(false){//URI.<init>
-		//			return new int[]{17};
 		//		} else if(false){//Location.<init>
 		//			return new int[]{18};	
-		//		} else if(false){//Date.<init>
-		//			return new int[]{19};	
 		//		} else if(false){//Cursor.close
 		//			return new int[]{23};	
 		//		} else if(false){//SQLiteDatabase.rawQuery
