@@ -19,5 +19,10 @@ public class HexadecimalGenerator {
 	    }
 	    return new String(s);
 	}
+	
+	public static String generateRandomHexaLong() {
+		String hexa = generateRandomHexa();
+		return hexa.substring(0, hexa.length()-1)+"L";
+	}
 
 }
