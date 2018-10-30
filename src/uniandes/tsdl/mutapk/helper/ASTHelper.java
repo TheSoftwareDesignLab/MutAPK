@@ -138,6 +138,10 @@ public class ASTHelper {
 					&& t.getChild(2).toStringTree().equals("Ljava/util/Date;") 
 					&& t.getChild(3).toStringTree().equals("<init>")) {
 				return new int[]{19};
+			} else if(t.getChild(2).toStringTree().equals("Landroid/bluetooth/BluetoothAdapter;")
+					&& t.getChild(3).toStringTree().equals("getDefaultAdapter")
+					&& t.getChild(4).getChild(0).getChild(0).toStringTree().equals("Landroid/bluetooth/BluetoothAdapter;")) {
+				return new int[]{16};
 			}
 		} else if(t.getType()==191) {
 			if(t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
