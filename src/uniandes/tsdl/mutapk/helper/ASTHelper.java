@@ -116,14 +116,14 @@ public class ASTHelper {
 
 	public static int[] isValidLocation(CommonTree t){
 		//		if(t.getType()==159) {
-		//			System.out.println(t.toStringTree());
-		//			System.out.println(t.getType());
+//		System.out.println(t.toStringTree());
+//		System.out.println(t.getType());
 		//			System.out.println(t.getChild(2));
 		//			System.out.println(t.getChild(3));
 		//			System.out.println(t.getChild(2).toStringTree().equals("Ljava/net/URI;") && t.getChild(3).toStringTree().equals("<init>") );
 		//		}
 
-		if(t.getType()==159) {
+		if(t.getType()==smaliParser.I_STATEMENT_FORMAT35c_METHOD) {
 			if(t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
 					&& t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).toString().equals("Landroid/content/Intent;") 
 					&& t.getFirstChildWithType(smaliParser.SIMPLE_NAME).toString().equals("<init>")) {
@@ -142,6 +142,8 @@ public class ASTHelper {
 					&& t.getChild(3).toStringTree().equals("getDefaultAdapter")
 					&& t.getChild(4).getChild(0).getChild(0).toStringTree().equals("Landroid/bluetooth/BluetoothAdapter;")) {
 				return new int[]{16};
+			} else if (isNullBackendServiceReturn(t)) {
+				return new int[] {20};
 			}
 		} else if(t.getType()==191) {
 			if(t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
@@ -157,6 +159,10 @@ public class ASTHelper {
 					&& getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT21t, "if-eqz", t) != null
 					&& getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT21t, "if-eqz", t).getLine()<(t.getLine()+5)) {
 				return new int[]{15};
+			}
+		} else if(t.getType() == smaliParser.I_LOCAL) {
+			if(t.getChild(2).toString().equals("Lorg/apache/http/HttpResponse;")) {
+				return new int[] {20};
 			}
 		}
 
@@ -188,6 +194,13 @@ public class ASTHelper {
 		//			return new int[]{37};	
 		//		}
 		return new int[]{-1};
+	}
+
+	private static boolean isNullBackendServiceReturn(CommonTree t) {
+		CommonTree tree = (CommonTree) t.getFirstChildWithType(smaliParser.I_METHOD_PROTOTYPE);
+		CommonTree treee = (CommonTree) tree.getFirstChildWithType(smaliParser.I_METHOD_RETURN_TYPE);
+		String classs = treee.getChild(0).toString();
+		return classs.equals("Lorg/apache/http/HttpResponse;");
 	}
 
 
