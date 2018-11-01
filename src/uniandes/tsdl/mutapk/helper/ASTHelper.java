@@ -161,9 +161,11 @@ public class ASTHelper {
 				return new int[]{15};
 			}
 		} else if(t.getType() == smaliParser.I_LOCAL) {
-			if(t.getChild(2).toString().equals("Lorg/apache/http/HttpResponse;")) {
+			if (t.getChild(2).toString().equals("Landroid/location/Location;")) {
+				return new int[] {18};
+			} else if(t.getChild(2).toString().equals("Lorg/apache/http/HttpResponse;")) {
 				return new int[] {20};
-			}
+			}  
 		}
 
 
