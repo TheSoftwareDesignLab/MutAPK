@@ -164,24 +164,12 @@ public class ASTHelper {
 			if (t.getChild(2).toString().equals("Landroid/location/Location;")) {
 				return new int[] {18};
 			} else if(t.getChild(2).toString().equals("Lorg/apache/http/HttpResponse;")) {
-				return new int[] {20};
+				return new int[] {13,20};
 			}  
 		}
-
-
-		//		} else if (t.) {
-		//			return new int[]{11};
-		//		}
-		//		else if(false){//HttpClient.execute
-		//			return new int[]{13,20};
+		
 		//		} else if(false){//14 HttpConnectionParams.setConnectionTimeout
 		//			return new int[]{14};
-		//		} else if(false){//BluetoothAdapter.isEnabled
-		//			return new int[]{15};
-		//		} else if(false){//BluetoothAdapter.getDefaultAdapter
-		//			return new int[]{16};
-		//		} else if(false){//Location.<init>
-		//			return new int[]{18};	
 		//		} else if(false){//Cursor.close
 		//			return new int[]{23};	
 		//		} else if(false){//SQLiteDatabase.rawQuery
