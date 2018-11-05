@@ -39,7 +39,7 @@ public class NullGPSLocation implements MutationOperator {
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
 		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {mLocation.getLine()}, writer);
-		writer.write("	For mutant "+mutantIndex+" HttpResponse object has been set to null");
+		writer.write("	For mutant "+mutantIndex+" GPS Location object has been set to null");
 		writer.newLine();
 		writer.flush();
 		return true;

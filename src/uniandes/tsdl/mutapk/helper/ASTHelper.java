@@ -81,19 +81,6 @@ public class ASTHelper {
 		return null;
 	}
 
-	//	public static HashSet<MethodCallVO> getMethodCallsFromCU(CompilationUnit cu, HashSet<String> targetCalls){
-	//		MethodCallVisitor mcVisitor = new MethodCallVisitor();
-	//		mcVisitor.setTargetCalls(targetCalls);
-	//		cu.accept(mcVisitor);
-	//		return  mcVisitor.getCalls();
-	//	}
-	//
-	//	public static HashSet<MethodDeclarationVO> getMethodDeclarationsFromCU(CompilationUnit cu, HashSet<String> targetDeclarations){
-	//		MethodDeclarationVisitor mdVisitor = new MethodDeclarationVisitor(targetDeclarations);
-	//		cu.accept(mdVisitor);
-	//		return mdVisitor.getDeclarations();
-	//	}
-	//
 	public static CommonTree hasIPutAndIGet(CommonTree t) {
 		CommonTree iput = getFirstUncleNamedOfType(smaliParser.I_STATEMENT_FORMAT22c_FIELD, "iput-object", t);
 		if(iput!=null && iput.getLine()-t.getLine()<7)
@@ -116,8 +103,8 @@ public class ASTHelper {
 
 	public static int[] isValidLocation(CommonTree t){
 		//		if(t.getType()==159) {
-//		System.out.println(t.toStringTree());
-//		System.out.println(t.getType());
+		//				System.out.println(t.toStringTree());
+		//				System.out.println(t.getType());
 		//			System.out.println(t.getChild(2));
 		//			System.out.println(t.getChild(3));
 		//			System.out.println(t.getChild(2).toStringTree().equals("Ljava/net/URI;") && t.getChild(3).toStringTree().equals("<init>") );
@@ -142,9 +129,21 @@ public class ASTHelper {
 					&& t.getChild(3).toStringTree().equals("getDefaultAdapter")
 					&& t.getChild(4).getChild(0).getChild(0).toStringTree().equals("Landroid/bluetooth/BluetoothAdapter;")) {
 				return new int[]{16};
+			} else if(t.getChild(2).toStringTree().equals("Lorg/apache/http/params/HttpConnectionParams;")
+					&& t.getChild(3).toStringTree().equals("setConnectionTimeout")) {
+				return new int[]{14};
 			} else if (isNullBackendServiceReturn(t)) {
 				return new int[] {20};
-			}
+			} else if(t.getChild(2).toStringTree().equals("Landroid/graphics/Bitmap;")
+					&& t.getChild(3).toStringTree().equals("createScaledBitmap")) {
+				return new int[]{35};
+			} else if(t.getChild(2).toStringTree().equals("Landroid/database/sqlite/SQLiteDatabase;")
+					&& t.getChild(3).toStringTree().equals("rawQuery")) {
+				return new int[]{24, 25};
+			} else if(t.getChild(2).toStringTree().equals("Landroid/database/Cursor;")
+					&& t.getChild(3).toStringTree().equals("close")) {
+				return new int[]{23};
+			} 
 		} else if(t.getType()==191) {
 			if(t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
 				return new int[]{4, 7}; 
@@ -164,34 +163,18 @@ public class ASTHelper {
 			if (t.getChild(2).toString().equals("Landroid/location/Location;")) {
 				return new int[] {18};
 			} else if(t.getChild(2).toString().equals("Lorg/apache/http/HttpResponse;")) {
-				return new int[] {20};
+				return new int[] {13,20};
 			}  
+		} else if(t.getType() == smaliParser.I_METHOD) {
+			if (isOnCreateMethod(t)) {
+				return new int[] {38};
+			}
 		}
 
-
-		//		} else if (t.) {
-		//			return new int[]{11};
-		//		}
-		//		else if(false){//HttpClient.execute
-		//			return new int[]{13,20};
-		//		} else if(false){//14 HttpConnectionParams.setConnectionTimeout
-		//			return new int[]{14};
-		//		} else if(false){//BluetoothAdapter.isEnabled
-		//			return new int[]{15};
-		//		} else if(false){//BluetoothAdapter.getDefaultAdapter
-		//			return new int[]{16};
-		//		} else if(false){//Location.<init>
-		//			return new int[]{18};	
-		//		} else if(false){//Cursor.close
-		//			return new int[]{23};	
-		//		} else if(false){//SQLiteDatabase.rawQuery
-		//			return new int[]{24,25};	
 		//		} else if(false){//View.OnClickListener
 		//			return new int[]{30,36};	
 		//		} else if(false){//FileChannel.close,InputStream.close,BufferedInputStream.close,ByteArrayInputStream.close,DataInputStream.close,FilterInputStream.close,ObjectInputStream.close,PipedInputStream.close,SequenceInputStream.close,StringBufferInputStream.close
 		//			return new int[]{33};	
-		//		} else if(false){//Bitmap.createScaledBitmap
-		//			return new int[]{35};	
 		//		} else if(false){//OutputStream.close,ByteArrayOutputStream.close,FileOutputStream.close,FilterOutputStream.close,ObjectOutputStream.close,PipedOutputStream.close,BufferedOutputStream.close,PrintStream.close,DataOutputStream.close
 		//			return new int[]{37};	
 		//		}
@@ -203,6 +186,18 @@ public class ASTHelper {
 		CommonTree treee = (CommonTree) tree.getFirstChildWithType(smaliParser.I_METHOD_RETURN_TYPE);
 		String classs = treee.getChild(0).toString();
 		return classs.equals("Lorg/apache/http/HttpResponse;");
+	}
+
+	private static boolean isOnCreateMethod(CommonTree t) {
+		boolean resp = t.getChild(0).toString().equals("onCreate");
+		if(resp) {
+			CommonTree mProt = (CommonTree) t.getFirstChildWithType(smaliParser.I_METHOD_PROTOTYPE);
+			resp = (mProt.getChildCount() == 2);
+			if(resp) {
+				resp = mProt.getChild(1).toString().equals("Landroid/os/Bundle;");
+			}
+		}
+		return resp;
 	}
 
 

@@ -44,7 +44,7 @@ public class InvalidDate implements MutationOperator {
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
 		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {mLocation.getLine()}, writer);
-		writer.write("	For mutant "+mutantIndex+" URI location has been set to  at line "+mLocation.getLine());
+		writer.write("	For mutant "+mutantIndex+" Date at line "+mLocation.getLine()+" has been updated to "+newVarValue);
 		writer.newLine();
 		writer.flush();
 		
