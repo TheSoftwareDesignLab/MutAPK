@@ -166,6 +166,10 @@ public class ASTHelper {
 			} else if(t.getChild(2).toString().equals("Lorg/apache/http/HttpResponse;")) {
 				return new int[] {13,20};
 			}  
+		} else if(t.getType() == smaliParser.I_METHOD) {
+			if (isOnCreateMethod(t)) {
+				return new int[] {38};
+			}
 		}
 		
 		//		} else if(false){//14 HttpConnectionParams.setConnectionTimeout
@@ -191,6 +195,18 @@ public class ASTHelper {
 		CommonTree treee = (CommonTree) tree.getFirstChildWithType(smaliParser.I_METHOD_RETURN_TYPE);
 		String classs = treee.getChild(0).toString();
 		return classs.equals("Lorg/apache/http/HttpResponse;");
+	}
+	
+	private static boolean isOnCreateMethod(CommonTree t) {
+		boolean resp = t.getChild(0).toString().equals("onCreate");
+		if(resp) {
+			CommonTree mProt = (CommonTree) t.getFirstChildWithType(smaliParser.I_METHOD_PROTOTYPE);
+			resp = (mProt.getChildCount() == 2);
+			if(resp) {
+				resp = mProt.getChild(1).toString().equals("Landroid/os/Bundle;");
+			}
+		}
+		return resp;
 	}
 
 
