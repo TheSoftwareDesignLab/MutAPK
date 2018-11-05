@@ -142,6 +142,9 @@ public class ASTHelper {
 					&& t.getChild(3).toStringTree().equals("getDefaultAdapter")
 					&& t.getChild(4).getChild(0).getChild(0).toStringTree().equals("Landroid/bluetooth/BluetoothAdapter;")) {
 				return new int[]{16};
+			} else if(t.getChild(2).toStringTree().equals("Lorg/apache/http/params/HttpConnectionParams;")
+					&& t.getChild(3).toStringTree().equals("setConnectionTimeout")) {
+				return new int[]{14};
 			} else if (isNullBackendServiceReturn(t)) {
 				return new int[] {20};
 			}
@@ -172,8 +175,6 @@ public class ASTHelper {
 			}
 		}
 		
-		//		} else if(false){//14 HttpConnectionParams.setConnectionTimeout
-		//			return new int[]{14};
 		//		} else if(false){//Cursor.close
 		//			return new int[]{23};	
 		//		} else if(false){//SQLiteDatabase.rawQuery
