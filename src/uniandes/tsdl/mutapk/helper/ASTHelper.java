@@ -116,8 +116,8 @@ public class ASTHelper {
 
 	public static int[] isValidLocation(CommonTree t){
 		//		if(t.getType()==159) {
-//		System.out.println(t.toStringTree());
-//		System.out.println(t.getType());
+		//		System.out.println(t.toStringTree());
+		//		System.out.println(t.getType());
 		//			System.out.println(t.getChild(2));
 		//			System.out.println(t.getChild(3));
 		//			System.out.println(t.getChild(2).toStringTree().equals("Ljava/net/URI;") && t.getChild(3).toStringTree().equals("<init>") );
@@ -147,7 +147,10 @@ public class ASTHelper {
 				return new int[]{14};
 			} else if (isNullBackendServiceReturn(t)) {
 				return new int[] {20};
-			}
+			} else if(t.getChild(2).toStringTree().equals("Landroid/graphics/Bitmap;")
+					&& t.getChild(3).toStringTree().equals("createScaledBitmap")) {
+				return new int[]{35};
+			} 
 		} else if(t.getType()==191) {
 			if(t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
 				return new int[]{4, 7}; 
@@ -174,7 +177,7 @@ public class ASTHelper {
 				return new int[] {38};
 			}
 		}
-		
+
 		//		} else if(false){//Cursor.close
 		//			return new int[]{23};	
 		//		} else if(false){//SQLiteDatabase.rawQuery
@@ -183,8 +186,6 @@ public class ASTHelper {
 		//			return new int[]{30,36};	
 		//		} else if(false){//FileChannel.close,InputStream.close,BufferedInputStream.close,ByteArrayInputStream.close,DataInputStream.close,FilterInputStream.close,ObjectInputStream.close,PipedInputStream.close,SequenceInputStream.close,StringBufferInputStream.close
 		//			return new int[]{33};	
-		//		} else if(false){//Bitmap.createScaledBitmap
-		//			return new int[]{35};	
 		//		} else if(false){//OutputStream.close,ByteArrayOutputStream.close,FileOutputStream.close,FilterOutputStream.close,ObjectOutputStream.close,PipedOutputStream.close,BufferedOutputStream.close,PrintStream.close,DataOutputStream.close
 		//			return new int[]{37};	
 		//		}
@@ -197,7 +198,7 @@ public class ASTHelper {
 		String classs = treee.getChild(0).toString();
 		return classs.equals("Lorg/apache/http/HttpResponse;");
 	}
-	
+
 	private static boolean isOnCreateMethod(CommonTree t) {
 		boolean resp = t.getChild(0).toString().equals("onCreate");
 		if(resp) {
