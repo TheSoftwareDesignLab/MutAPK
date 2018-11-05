@@ -80,7 +80,7 @@ public class ASTHelper {
 		}
 		return null;
 	}
-	
+
 	public static CommonTree hasIPutAndIGet(CommonTree t) {
 		CommonTree iput = getFirstUncleNamedOfType(smaliParser.I_STATEMENT_FORMAT22c_FIELD, "iput-object", t);
 		if(iput!=null && iput.getLine()-t.getLine()<7)
@@ -103,8 +103,8 @@ public class ASTHelper {
 
 	public static int[] isValidLocation(CommonTree t){
 		//		if(t.getType()==159) {
-//				System.out.println(t.toStringTree());
-//				System.out.println(t.getType());
+		//				System.out.println(t.toStringTree());
+		//				System.out.println(t.getType());
 		//			System.out.println(t.getChild(2));
 		//			System.out.println(t.getChild(3));
 		//			System.out.println(t.getChild(2).toStringTree().equals("Ljava/net/URI;") && t.getChild(3).toStringTree().equals("<init>") );
@@ -138,9 +138,12 @@ public class ASTHelper {
 					&& t.getChild(3).toStringTree().equals("createScaledBitmap")) {
 				return new int[]{35};
 			} else if(t.getChild(2).toStringTree().equals("Landroid/database/sqlite/SQLiteDatabase;")
-				&& t.getChild(3).toStringTree().equals("rawQuery")) {
-			return new int[]{24, 25};
-		} 
+					&& t.getChild(3).toStringTree().equals("rawQuery")) {
+				return new int[]{24, 25};
+			} else if(t.getChild(2).toStringTree().equals("Landroid/database/Cursor;")
+					&& t.getChild(3).toStringTree().equals("close")) {
+				return new int[]{23};
+			} 
 		} else if(t.getType()==191) {
 			if(t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
 				return new int[]{4, 7}; 
@@ -168,8 +171,6 @@ public class ASTHelper {
 			}
 		}
 
-		//		} else if(false){//Cursor.close
-		//			return new int[]{23};	
 		//		} else if(false){//View.OnClickListener
 		//			return new int[]{30,36};	
 		//		} else if(false){//FileChannel.close,InputStream.close,BufferedInputStream.close,ByteArrayInputStream.close,DataInputStream.close,FilterInputStream.close,ObjectInputStream.close,PipedInputStream.close,SequenceInputStream.close,StringBufferInputStream.close
