@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.TokenSource;
@@ -143,7 +144,11 @@ public class ASTHelper {
 			} else if(t.getChild(2).toStringTree().equals("Landroid/database/Cursor;")
 					&& t.getChild(3).toStringTree().equals("close")) {
 				return new int[]{23};
-			} 
+			} else if(isNullInputStream(t)) {
+				return new int[]{33};
+			} else if(isNullOutputStream(t)) {
+				return new int[] {37};
+			}
 		} else if(t.getType()==191) {
 			if(t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
 				return new int[]{4, 7}; 
@@ -173,12 +178,45 @@ public class ASTHelper {
 
 		//		} else if(false){//View.OnClickListener
 		//			return new int[]{30,36};	
-		//		} else if(false){//FileChannel.close,InputStream.close,BufferedInputStream.close,ByteArrayInputStream.close,DataInputStream.close,FilterInputStream.close,ObjectInputStream.close,PipedInputStream.close,SequenceInputStream.close,StringBufferInputStream.close
-		//			return new int[]{33};	
-		//		} else if(false){//OutputStream.close,ByteArrayOutputStream.close,FileOutputStream.close,FilterOutputStream.close,ObjectOutputStream.close,PipedOutputStream.close,BufferedOutputStream.close,PrintStream.close,DataOutputStream.close
+		//		} else if(false){//PipedOutputStream.close,BufferedOutputStream.close,PrintStream.close,DataOutputStream.close
 		//			return new int[]{37};	
 		//		}
 		return new int[]{-1};
+	}
+
+	private static boolean isNullOutputStream(CommonTree t) {
+		String apis = "#Ljava/io/OutputStream;"
+				+ "#Ljava/io/ByteArrayOutputStream;"
+				+ "#Ljava/io/FileOutputStream;"
+				+ "#Ljava/io/FilterOutputStream;"
+				+ "#Ljava/io/ObjectOutputStream;"
+				+ "#Ljava/io/PipedOutputStream;"
+				+ "#Ljava/io/BufferedOutputStream;"
+				+ "#Ljava/io/PrintStream;"
+				+ "#Ljava/io/DataOutputStream;";
+		if(apis.contains(t.getChild(2).toStringTree())
+				&& t.getChild(3).toStringTree().equals("close")) {
+			return true;
+		}
+		return false;
+	}
+
+	private static boolean isNullInputStream(CommonTree t) {
+		String apis = "#Ljava/nio/channels/FileChannel;"
+				+ "#Ljava/io/InputStream;"
+				+ "#Ljava/io/BufferedInputStream;"
+				+ "#Ljava/io/ByteArrayInputStream;"
+				+ "#Ljava/io/DataInputStream;"
+				+ "#Ljava/io/FilterInputStream;"
+				+ "#Ljava/io/ObjectInputStream;"
+				+ "#Ljava/io/PipedInputStream;"
+				+ "#Ljava/io/SequenceInputStream;"
+				+ "#Ljava/io/StringBufferInputStream;";
+		if(apis.contains("#"+t.getChild(2).toStringTree()+"#")
+				&& t.getChild(3).toStringTree().equals("close")) {
+			return true;
+		}
+		return false;
 	}
 
 	private static boolean isNullBackendServiceReturn(CommonTree t) {
