@@ -33,8 +33,8 @@
           <a class="nav-link dropdown-toggle" href="index.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MutAPK</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
             <a class="dropdown-item" href="#purpose">Purpose</a>
-            <a class="dropdown-item" href="#video">Video Demonstration</a>
-            <a class="dropdown-item" href="#publications">Publications</a>
+            <!-- <a class="dropdown-item" href="#video">Video Demonstration</a> -->
+            <!-- <a class="dropdown-item" href="#publications">Publications</a> -->
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -66,8 +66,7 @@
     <div class="jumbotron" style="background-color: white">
       <h2 class="text-center">
         <strong>
-          <i>Mut
-            <em style="color:red">APK</em>
+          <i>Mut<em style="color:red">APK</em>
           </i>:</strong> Enabling Mutation Testing for Android Apps over APK files</h2>
       <p class="lead text-center">Team Members:
         <i>
@@ -83,7 +82,7 @@
           <div class="card-body">
             This project was created by
             <a href="http://thesoftwaredesignlab.github.io">The Sofware Design Lab</a> at the Universidad de los Andes. The major goal of the MutAPK project is to enable
-            mutation testing over android application by third-party services that provide on-the-clod infraestructures.
+            mutation testing over android application by third-party services that provide on-the-cloud infraestructures.
             This project uses APK files instead of source code to generate mutants. It is based on
             <a href="http://android-mutation.com">MDroid+</a> project that generates mutants from source code. MutAPK provides the 38 Android-specific mutation
             operators founded by MDroid+ researchers and add # new mutant operators that can be easily seeded into target
@@ -92,7 +91,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <!--<div class="row">
       <div class="col-12">
         <h3 id="video" style="padding-top:4.5rem; margin-top:-4.5rem;">Video Demostration:</h3>
         <div class="card">
@@ -101,8 +100,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
+    </div>-->
+    <!-- <div class="row">
       <div class="col-12">
         <h3 id="publications" style="padding-top:4.5rem; margin-top:-4.5rem;">Publications:</h3>
         <div class="card">
@@ -124,12 +123,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="row">
       <div class="col-12">
         <h3 id="mutationOperators" style="padding-top:4.5rem; margin-top:-4.5rem;">Mutation Operators:</h3>
-        <p>Here we provide the list of all mutations operators that were defined for Mut
-          <em style="color: red">APK</em>.</p>
+        <p>Here we provide the list of all mutations operators that were defined for Mut<em style="color: red">APK</em>.</p>
       </div>
     </div>
     <div class="row" id="activitiesIntents" style="padding-top:4.5rem; margin-top:-4.5rem;">
@@ -167,9 +165,9 @@
                 <p>Replace the Activity.class argument in an Intent instantiation.</p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> </textarea>
+                <textarea name="andBefore" id="andBefore" rows="1"> const-class v1, Lcom/fsck/k9/activity/MessageCompose; </textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> </textarea>
+                <textarea name="andBefore" id="andBefore" rows="1"> const-class v1, Lcom/fsck/k9/activity/Accounts; </textarea>
               </div>
             </div>
             <div class="card">
@@ -215,9 +213,14 @@
                 <p>Replace an Intent instantiation with null</p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                <textarea name="andBefore" id="andBefore" rows="1">
+new-instance v0, Landroid/content/Intent;
+
+const-class v1, Lcom/fsck/k9/activity/MessageCompose;
+
+invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V</textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                <textarea name="andBefore" id="andBefore" rows="1"> const/4 v0, 0x0 </textarea>
               </div>
             </div>
             <div class="card">
@@ -252,6 +255,58 @@
 <activity android:name=".Mileage" android:label="@string/title_about" /></textarea>
               </div>
             </div>
+            <div class="card">
+                <div class="card-header" style="background-color: white;">
+                    Invalid Key Intent Put Extra
+                  <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                  <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                </div>
+                <div class="card-body">
+                  <h5>Description:</h5>
+                  <p>Randomly generate a different key in an Intent.putExtra(key, value) call </p>
+                  <h5>Code Example:</h5>
+                  <p>Before:</p>
+                  <textarea name="andBefore" id="andBefore" rows="1">const-string v1, "message_decryption_result"
+                    
+invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
+                  <p>After:</p>
+                  <textarea name="andBefore" id="andBefore" rows="1">const-string v1, "3a55422d7ac44b6aac475cc5122b992b"
+
+invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
+                </div>
+              </div>
+              <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                    INSERTE-NOMBRE-OPERADOR
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>INSERTE-DESCRIPCION</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" style="background-color: white;">
+                      INSERTE-NOMBRE-OPERADOR
+                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                      <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    </div>
+                    <div class="card-body">
+                      <h5>Description:</h5>
+                      <p>INSERTE-DESCRIPCION</p>
+                      <h5>Code Example:</h5>
+                      <p>Before:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                      <p>After:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    </div>
+                  </div>
           </div>
         </div>
       </div>
@@ -263,8 +318,77 @@
             Android Programming
           </div>
           <div class="card-body">
-
-          </div>
+              <div class="card">
+                <div class="card-header" style="background-color: white;">
+                    Missing Permission Manifest
+                  <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                  <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                </div>
+                <div class="card-body">
+                  <h5>Description:</h5>
+                  <p>Select and remove an &lt;uses-permission /&gt; entry in the Manifest file</p>
+                  <h5>Code Example:</h5>
+                  <p>Before:</p>
+                  <textarea name="andBefore" id="andBefore" rows="1"><uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /></textarea>
+                  <p>After:</p>
+                  <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+                <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                    SDK Version
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>Randomly mutate the integer values in the SdkVersion-related attributes</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"><uses-sdk android:minSdkVersion="4" android:targetSdkVersion="10"/> </textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"><uses-sdk android:minSdkVersion="7" android:targetSdkVersion="10"/> </textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                  <div class="card">
+                    <div class="card-header" style="background-color: white;">
+                        Wrong String Resource
+                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                      <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    </div>
+                    <div class="card-body">
+                      <h5>Description:</h5>
+                      <p>Select a &lt;string /&gt; entry in /res/values/strings.xml file and mutate the string value </p>
+                      <h5>Code Example:</h5>
+                      <p>Before:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"><string name="update_finished_importing">Import finished!</string> </textarea>
+                      <p>After:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"><string name="update_finished_importing">ecab6839856b426fbdae3e6e8c46c38c</string></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                      <div class="card-header" style="background-color: white;">
+                        INSERTE-NOMBRE-OPERADOR
+                        <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                        <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                      </div>
+                      <div class="card-body">
+                        <h5>Description:</h5>
+                        <p>INSERTE-DESCRIPCION</p>
+                        <h5>Code Example:</h5>
+                        <p>Before:</p>
+                        <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                        <p>After:</p>
+                        <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                      </div>
+                    </div>
+                  </div>
         </div>
       </div>
     </div>
@@ -275,7 +399,22 @@
             Back-End Services
           </div>
           <div class="card-body">
-
+              <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                    INSERTE-NOMBRE-OPERADOR
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>INSERTE-DESCRIPCION</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
@@ -287,7 +426,22 @@
             Connectivity
           </div>
           <div class="card-body">
-
+              <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                    INSERTE-NOMBRE-OPERADOR
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>INSERTE-DESCRIPCION</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
@@ -299,7 +453,22 @@
             Data
           </div>
           <div class="card-body">
-
+              <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                    INSERTE-NOMBRE-OPERADOR
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>INSERTE-DESCRIPCION</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
@@ -311,7 +480,22 @@
             Database
           </div>
           <div class="card-body">
-
+              <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                    INSERTE-NOMBRE-OPERADOR
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>INSERTE-DESCRIPCION</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
@@ -323,7 +507,22 @@
             General Programming
           </div>
           <div class="card-body">
-
+              <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                    INSERTE-NOMBRE-OPERADOR
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>INSERTE-DESCRIPCION</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
@@ -335,7 +534,38 @@
             GUI
           </div>
           <div class="card-body">
-
+              <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                      Invalid Color
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>Randomly change colors in layout files</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"><item name="red" type="color">#FFFF4444</item></textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"><item name="red" type="color">#FF669900</item></textarea>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" style="background-color: white;">
+                      INSERTE-NOMBRE-OPERADOR
+                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                      <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    </div>
+                    <div class="card-body">
+                      <h5>Description:</h5>
+                      <p>INSERTE-DESCRIPCION</p>
+                      <h5>Code Example:</h5>
+                      <p>Before:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                      <p>After:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    </div>
+                  </div>
           </div>
         </div>
       </div>
@@ -347,7 +577,22 @@
             I/O
           </div>
           <div class="card-body">
-
+              <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                    INSERTE-NOMBRE-OPERADOR
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>INSERTE-DESCRIPCION</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
@@ -359,7 +604,142 @@
             Non-Functional Requirements
           </div>
           <div class="card-body">
+              <div class="card">
+                  <div class="card-header" style="background-color: white;">
+                      Lengthy BackEnd Service
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>Inject large delay right-after a call to a back-end service </p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1">.local v14, "response":Lorg/apache/http/HttpResponse;</textarea>
+                    <p>After:</p>
+                    <textarea name="andBefore" id="andBefore" rows="1">.local v14, "response":Lorg/apache/http/HttpResponse;
+invoke-direct/range {p0 .. p0}, Lcom/fsck/k9/mail/store/webdav/WebDavFolder;->delay()V
 
+...
+
+.method private delay()V
+    .locals 2
+
+    .line 332
+    const-wide/16 v0, 0x2710
+
+    :try_start_0
+    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 335
+    goto :goto_0
+
+    .line 333
+    :catch_0
+    move-exception v0
+
+    .line 334
+    .local v0, "e":Ljava/lang/InterruptedException;
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    .line 336
+    .end local v0    # "e":Ljava/lang/InterruptedException;
+    :goto_0
+    return-void
+.end method</textarea>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" style="background-color: white;">
+                        Lengthy GUI Creation
+                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                      <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    </div>
+                    <div class="card-body">
+                      <h5>Description:</h5>
+                      <p>Insert a long delay (\ie Thread.sleep(..)) in the creation GUI thread</p>
+                      <h5>Code Example:</h5>
+                      <p>Before:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1">.method public onCreate(Landroid/os/Bundle;)V
+    .locals 1
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+    .line 107
+    invoke-super {p0, p1}, Lcom/fsck/k9/activity/K9Activity;->onCreate(Landroid/os/Bundle;)V</textarea>
+                      <p>After:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1">.method private delay()V
+    .locals 2
+
+    .line 332
+    const-wide/16 v0, 0x2710
+
+    :try_start_0
+    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 335
+    goto :goto_0
+
+    .line 333
+    :catch_0
+    move-exception v0
+
+    .line 334
+    .local v0, "e":Ljava/lang/InterruptedException;
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    .line 336
+    .end local v0    # "e":Ljava/lang/InterruptedException;
+    :goto_0
+    return-void
+.end method
+
+.method public onCreate(Landroid/os/Bundle;)V
+  .locals 1
+  .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+  .line 107
+  invoke-super {p0, p1}, Lcom/fsck/k9/activity/K9Activity;->onCreate(Landroid/os/Bundle;)V
+  invoke-direct {p0}, Lcom/fsck/k9/activity/UpgradeDatabases;->delay()V</textarea>
+                    </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header" style="background-color: white;">
+                        INSERTE-NOMBRE-OPERADOR
+                        <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                        <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                      </div>
+                      <div class="card-body">
+                        <h5>Description:</h5>
+                        <p>INSERTE-DESCRIPCION</p>
+                        <h5>Code Example:</h5>
+                        <p>Before:</p>
+                        <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                        <p>After:</p>
+                        <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" style="background-color: white;">
+                          OOM Large Image
+                          <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                          <span class="badge badge-pill badge-info" style="float: right;">AST</span>
+                        </div>
+                        <div class="card-body">
+                          <h5>Description:</h5>
+                          <p>Increase the size of bitmaps by explicitly setting large dimensions </p>
+                          <h5>Code Example:</h5>
+                          <p>Before:</p>
+                          <textarea name="andBefore" id="andBefore" rows="1">invoke-static {v8, v5, v6, v7}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;</textarea>
+                          <p>After:</p>
+                          <textarea name="andBefore" id="andBefore" rows="1">const v6, 0x186a0
+
+invoke-static {v8, v6, v6, v7}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;</textarea>
+                        </div>
+                      </div>
           </div>
         </div>
       </div>
