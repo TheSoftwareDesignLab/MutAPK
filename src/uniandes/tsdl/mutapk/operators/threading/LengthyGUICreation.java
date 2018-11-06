@@ -67,7 +67,7 @@ public class LengthyGUICreation implements MutationOperator {
 		for (int i = method.getLine()-1; i < lineToInsert; i++) {
 			newLines.add(lines.get(i));
 		}
-		newLines.add("    invoke-direct/range {p0 .. p0}, Lcom/fsck/k9/mail/store/webdav/WebDavFolder;->delay()V");
+		newLines.add("    invoke-direct/range {p0 .. p0}, "+classs+"->delay()V");
 
 		for(int i=lineToInsert; i < lines.size() ; i++){
 			newLines.add(lines.get(i));
