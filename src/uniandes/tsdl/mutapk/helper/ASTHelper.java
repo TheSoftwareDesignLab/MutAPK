@@ -173,14 +173,14 @@ public class ASTHelper {
 		} else if(t.getType() == smaliParser.I_METHOD) {
 			if (isOnCreateMethod(t)) {
 				return new int[] {38};
+			} else if(isOnClickMethod(t)) {
+				return new int[] {36};
 			}
 		}
 
 		//		} else if(false){//View.OnClickListener
-		//			return new int[]{30,36};	
-		//		} else if(false){//PipedOutputStream.close,BufferedOutputStream.close,PrintStream.close,DataOutputStream.close
-		//			return new int[]{37};	
-		//		}
+		//			return new int[]{30};	
+		//		} 
 		return new int[]{-1};
 	}
 
@@ -237,8 +237,17 @@ public class ASTHelper {
 		}
 		return resp;
 	}
-
-
-
+	
+	private static boolean isOnClickMethod(CommonTree t) {
+		boolean resp = t.getChild(0).toString().equals("onClick");
+		if(resp) {
+			CommonTree mProt = (CommonTree) t.getFirstChildWithType(smaliParser.I_METHOD_PROTOTYPE);
+			resp = (mProt.getChildCount() == 2);
+			if(resp) {
+				resp = mProt.getChild(1).toString().equals("Landroid/view/View;");
+			}
+		}
+		return resp;
+	}
 
 }

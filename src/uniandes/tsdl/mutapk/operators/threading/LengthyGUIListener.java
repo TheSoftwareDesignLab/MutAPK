@@ -13,29 +13,23 @@ import uniandes.tsdl.mutapk.model.location.ASTMutationLocation;
 import uniandes.tsdl.mutapk.model.location.MutationLocation;
 import uniandes.tsdl.mutapk.operators.MutationOperator;
 
-public class LengthyGUICreation implements MutationOperator {
+public class LengthyGUIListener implements MutationOperator {
 
 	@Override
 	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception {
-		
+
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		CommonTree method = mLocation.getTree();
 		CommonTree classs = (CommonTree) ((CommonTree) method.getAncestors().get(0)).getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR);
 		CommonTree methodContent = (CommonTree) method.getFirstChildWithType(smaliParser.I_ORDERED_METHOD_ITEMS);
-		CommonTree superCall = (CommonTree) methodContent.getFirstChildWithType(smaliParser.I_STATEMENT_FORMAT35c_METHOD);
-		int lineToInsert = 0;
-		if(superCall != null && superCall.getChildIndex()<3) {
-			lineToInsert = superCall.getLine();
-		} else {
-			lineToInsert = methodContent.getChild(0).getLine();
-		}
-		
+		int lineToInsert = methodContent.getChild(0).getLine();
+
 		for(int i=0; i < method.getLine()-1; i++){
 			newLines.add(lines.get(i));
 		}
-		
+
 		newLines.add(".method private delay()V");
 		newLines.add("    .locals 2");
 		newLines.add("");
@@ -63,7 +57,8 @@ public class LengthyGUICreation implements MutationOperator {
 		newLines.add("    :goto_0");
 		newLines.add("    return-void");
 		newLines.add(".end method");
-		
+		newLines.add("");
+
 		for (int i = method.getLine()-1; i < lineToInsert; i++) {
 			newLines.add(lines.get(i));
 		}
@@ -76,11 +71,11 @@ public class LengthyGUICreation implements MutationOperator {
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
 		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {location.getLine()}, writer);
-		writer.write("	For mutant "+mutantIndex+" a large delay has been injected after GUI Creation at line "+location.getLine());
+		writer.write("	For mutant "+mutantIndex+" a large delay has been injected after GUI Listener Creation at line "+location.getLine());
 		writer.newLine();
 		writer.flush();
 		return true;
-		
+
 	}
 
 }
