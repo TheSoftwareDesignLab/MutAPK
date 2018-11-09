@@ -17,6 +17,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import java.nio.file.Paths;
 
 public class Helper {
 
@@ -41,28 +42,35 @@ public class Helper {
 		return instance;
 	}
 
-	public String getCurrentDirectory() throws UnsupportedEncodingException {
-		if (currDirectory.equals("")) {
-			String currentDirectory = APKToolWrapper.class.getProtectionDomain().getCodeSource().getLocation()
-					.getPath();
-			String decodedPath = URLDecoder.decode(currentDirectory, "UTF-8");
-			// decodedPath = "C:\\Users\\caev0\\Documents\\2018-10\\Tesis1\\MAPK\\";
-			String os = System.getProperty("os.name").toLowerCase();
-			if (os.indexOf("win") >= 0) {
-				if (decodedPath.matches("/.:/.*")) {
-					decodedPath = decodedPath.replaceAll("/", "\\\\").substring(1);
-				}
-				int pos = decodedPath.substring(1).indexOf("\\") + 1;
-				decodedPath = decodedPath.replace(decodedPath.substring(0, pos),
-						decodedPath.substring(0, pos - 1).toLowerCase());
-			}
-			if (decodedPath.endsWith(".jar")) {
-				decodedPath = decodedPath.substring(0, decodedPath.lastIndexOf("/") + 1);
-			}
-			currDirectory = decodedPath;
-		}
-		return currDirectory;
-	}
+//	public String getCurrentDirectory() throws UnsupportedEncodingException {
+//		if (currDirectory.equals("")) {
+//			String currentDirectory = APKToolWrapper.class.getProtectionDomain().getCodeSource().getLocation()
+//					.getPath();
+//			String decodedPath = URLDecoder.decode(currentDirectory, "UTF-8");
+//			// decodedPath = "C:\\Users\\caev0\\Documents\\2018-10\\Tesis1\\MAPK\\";
+//			String os = System.getProperty("os.name").toLowerCase();
+//			if (os.indexOf("win") >= 0) {
+//				if (decodedPath.matches("/.:/.*")) {
+//					decodedPath = decodedPath.replaceAll("/", "\\\\").substring(1);
+//				}
+//				int pos = decodedPath.substring(1).indexOf("\\") + 1;
+//				decodedPath = decodedPath.replace(decodedPath.substring(0, pos),
+//						decodedPath.substring(0, pos - 1).toLowerCase());
+//			}
+//			if (decodedPath.endsWith(".jar")) {
+//				decodedPath = decodedPath.substring(0, decodedPath.lastIndexOf("/") + 1);
+//			}
+//			currDirectory = decodedPath;
+//		}
+//		return currDirectory;
+//	}
+public String getCurrentDirectory() throws UnsupportedEncodingException {
+
+	String dir = System.getProperty("user.dir");
+
+	return dir;
+
+}
 
 	public static boolean isWindows() {
 		String os = System.getProperty("os.name").toLowerCase();
@@ -75,7 +83,7 @@ public class Helper {
 	public List<String> getActivities() throws ParserConfigurationException, SAXException, IOException {
 		if (actNames.isEmpty()) {
 			List<String> activityNames = new ArrayList<String>();
-			File fXmlFile = new File(getCurrentDirectory() + "temp" + File.separator + MANIFEST);
+			File fXmlFile = new File(Paths.get(getCurrentDirectory(),"temp",MANIFEST).toAbsolutePath().toString());
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
