@@ -2,8 +2,8 @@ package uniandes.tsdl.mutapk.helper;
 
 import java.io.File;
 import java.io.IOException;
- import java.io.InputStream;
-import uniandes.tsdl.mutapk.helper.Helper;;
+import java.io.InputStream;
+import uniandes.tsdl.mutapk.helper.Helper;
 import java.nio.file.Paths;
 
 public class APKToolWrapper {
@@ -11,8 +11,12 @@ public class APKToolWrapper {
 	public static void openAPK(String path, String extraPath) throws IOException, InterruptedException{
 		String decodedPath = Helper.getInstance().getCurrentDirectory();
 		// Creates folder for decoded app
-System.out.println(decodedPath);		
-new File(decodedPath+File.separator+"temp").mkdirs();
+//		System.out.println(decodedPath);
+		File tempFolder = new File(decodedPath+File.separator+"temp");
+		if(tempFolder.exists()) {
+			tempFolder.delete();
+		}
+		tempFolder.mkdirs();
 		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",Paths.get(decodedPath,extraPath,"apktool.jar").toAbsolutePath().toString(),"d",Paths.get(decodedPath,path).toAbsolutePath().toString(),"-o",Paths.get(decodedPath,"temp").toAbsolutePath().toString(),"-f"});
 		System.out.println("Processing your APK...");
 		ps.waitFor();
@@ -34,14 +38,14 @@ new File(decodedPath+File.separator+"temp").mkdirs();
 		System.out.println("Building mutant "+mutantIndex+"...");
 		ps.waitFor();
 		System.out.println("The "+mutantIndex+" mutant APK has been generated.");
-				InputStream es = ps.getErrorStream();
-				byte e[] = new byte[es.available()];
-				es.read(e,0,e.length);
-				System.out.println("ERROR: "+ new String(e));
-				InputStream is = ps.getInputStream();
-				byte b[] = new byte[is.available()];
-				is.read(b,0,b.length);
-				System.out.println("INFO: "+new String(b));
+		//				InputStream es = ps.getErrorStream();
+		//				byte e[] = new byte[es.available()];
+		//				es.read(e,0,e.length);
+		//				System.out.println("ERROR: "+ new String(e));
+		//				InputStream is = ps.getInputStream();
+		//				byte b[] = new byte[is.available()];
+		//				is.read(b,0,b.length);
+		//				System.out.println("INFO: "+new String(b));
 	}
 }
 
