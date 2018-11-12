@@ -112,43 +112,61 @@ public class ASTHelper {
 		//		}
 
 		if(t.getType()==smaliParser.I_STATEMENT_FORMAT35c_METHOD) {
+			
+			ArrayList<Integer> resp = new ArrayList<Integer>();
 			if(t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
 					&& t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).toString().equals("Landroid/content/Intent;") 
 					&& t.getFirstChildWithType(smaliParser.SIMPLE_NAME).toString().equals("<init>")) {
-				return new int[]{2, 6};
+				resp.add(2);
+				resp.add(6);
 			} else if(t.getChild(2).toStringTree().equals("Ljava/io/File;") 
 					&& t.getChild(4).getChild(1)!=null && t.getChild(4).getChild(1).toStringTree().equals("Ljava/lang/String;")) {
-				return new int[]{32};
+				resp.add(32);
 			} else if(t.getChild(2).toStringTree().equals("Ljava/net/URI;") 
 					&& t.getChild(3).toStringTree().equals("<init>")) {
-				return new int[]{17};
+				resp.add(17);
 			} else if(t.getChild(1).getChildCount() > 1 
 					&& t.getChild(2).toStringTree().equals("Ljava/util/Date;") 
 					&& t.getChild(3).toStringTree().equals("<init>")) {
-				return new int[]{19};
+				resp.add(19);
 			} else if(t.getChild(2).toStringTree().equals("Landroid/bluetooth/BluetoothAdapter;")
 					&& t.getChild(3).toStringTree().equals("getDefaultAdapter")
 					&& t.getChild(4).getChild(0).getChild(0).toStringTree().equals("Landroid/bluetooth/BluetoothAdapter;")) {
-				return new int[]{16};
+				resp.add(16);
 			} else if(t.getChild(2).toStringTree().equals("Lorg/apache/http/params/HttpConnectionParams;")
 					&& t.getChild(3).toStringTree().equals("setConnectionTimeout")) {
-				return new int[]{14};
+				resp.add(14);
 			} else if (isNullBackendServiceReturn(t)) {
-				return new int[] {20};
+				resp.add(20);
 			} else if(t.getChild(2).toStringTree().equals("Landroid/graphics/Bitmap;")
 					&& t.getChild(3).toStringTree().equals("createScaledBitmap")) {
-				return new int[]{35};
+				resp.add(35);
 			} else if(t.getChild(2).toStringTree().equals("Landroid/database/sqlite/SQLiteDatabase;")
 					&& t.getChild(3).toStringTree().equals("rawQuery")) {
-				return new int[]{24, 25};
+				resp.add(24);
+				resp.add(25);
 			} else if(t.getChild(2).toStringTree().equals("Landroid/database/Cursor;")
 					&& t.getChild(3).toStringTree().equals("close")) {
-				return new int[]{23};
+				resp.add(23);
 			} else if(isNullInputStream(t)) {
-				return new int[]{33};
+				resp.add(33);
 			} else if(isNullOutputStream(t)) {
-				return new int[] {37};
+				resp.add(37);
+			} 
+			
+			if(t.getChild(1).getChildCount()>1) {
+				resp.add(22);
 			}
+			
+			if(resp.size()>1) {
+				int[] ret = new int[resp.size()];
+				for (int i=0; i < ret.length; i++)
+				{
+					ret[i] = resp.get(i).intValue();
+				}
+				return ret;				
+			}
+			
 		} else if(t.getType()==191) {
 			if(t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
 				return new int[]{4, 7}; 
