@@ -165,9 +165,13 @@
                 <p>Replace the Activity.class argument in an Intent instantiation.</p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> const-class v1, Lcom/fsck/k9/activity/MessageCompose; </textarea>
+                <textarea name="andBefore" id="andBefore" rows="1">const-class v3, Lcom/fsck/k9/activity/MessageCompose; 
+
+invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V</textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> const-class v1, Lcom/fsck/k9/activity/Accounts; </textarea>
+                <textarea name="andBefore" id="andBefore" rows="1">const-class v1, Lcom/fsck/k9/activity/Accounts; 
+
+invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V</textarea>
               </div>
             </div>
             <div class="card">
@@ -184,6 +188,26 @@
                 <textarea name="andBefore" id="andBefore" rows="1"> < activity android:name=".AboutActivity" android:label="@string/title_about" / > </textarea>
                 <p>After:</p>
                 <textarea name="andBefore" id="andBefore" rows="1"> < activity android:name=".AbutActivity" android:label="@string/title_about" / ></textarea>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                  Invalid Key Intent Put Extra
+                <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+              </div>
+              <div class="card-body">
+                <h5>Description:</h5>
+                <p>Randomly generate a different key in an Intent.putExtra(key, value) call </p>
+                <h5>Code Example:</h5>
+                <p>Before:</p>
+                <textarea name="andBefore" id="andBefore" rows="1">const-string v1, "message_decryption_result"
+                  
+invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
+                <p>After:</p>
+                <textarea name="andBefore" id="andBefore" rows="1">const-string v1, "3a55422d7ac44b6aac475cc5122b992b"
+
+invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
               </div>
             </div>
             <div class="card">
@@ -214,15 +238,35 @@
                 <h5>Code Example:</h5>
                 <p>Before:</p>
                 <textarea name="andBefore" id="andBefore" rows="1">
-new-instance v0, Landroid/content/Intent;
+new-instance v1, Landroid/content/Intent;
 
-const-class v1, Lcom/fsck/k9/activity/MessageCompose;
+iget-object v2, p0, Lio/github/hidroh/materialistic/accounts/AccountAuthenticator;->mContext:Landroid/content/Context;
 
-invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V</textarea>
+const-class v3, Lio/github/hidroh/materialistic/LoginActivity;
+
+invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V</textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> const/4 v0, 0x0 </textarea>
+                <textarea name="andBefore" id="andBefore" rows="1"> const/4 v1, 0x0 </textarea>
               </div>
             </div>
+            <div class="card">
+                <div class="card-header" style="background-color: white;">
+                  NULL VALUE INTENT PUT EXTRA
+                  <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                  <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                </div>
+                <div class="card-body">
+                  <h5>Description:</h5>
+                  <p>Replace the value argument in an Intent.putExtra(key, value) call with new Parcelable[0]</p>
+                  <h5>Code Example:</h5>
+                  <p>Before:</p>
+                  <textarea name="andBefore" id="andBefore" rows="1">invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;</textarea>
+                  <p>After:</p>
+                  <textarea name="andBefore" id="andBefore" rows="1">new-array v9, v9, [Landroid/os/Parcelable;
+
+invoke-virtual {v1, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
+                </div>
+              </div>
             <div class="card">
               <div class="card-header" style="background-color: white;">
                 Wrong Main Activity
@@ -254,59 +298,7 @@ invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Co
 ...
 <activity android:name=".Mileage" android:label="@string/title_about" /></textarea>
               </div>
-            </div>
-            <div class="card">
-                <div class="card-header" style="background-color: white;">
-                    Invalid Key Intent Put Extra
-                  <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                  <span class="badge badge-pill badge-info" style="float: right;">Text</span>
-                </div>
-                <div class="card-body">
-                  <h5>Description:</h5>
-                  <p>Randomly generate a different key in an Intent.putExtra(key, value) call </p>
-                  <h5>Code Example:</h5>
-                  <p>Before:</p>
-                  <textarea name="andBefore" id="andBefore" rows="1">const-string v1, "message_decryption_result"
-                    
-invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
-                  <p>After:</p>
-                  <textarea name="andBefore" id="andBefore" rows="1">const-string v1, "3a55422d7ac44b6aac475cc5122b992b"
-
-invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
-                </div>
-              </div>
-              <div class="card">
-                  <div class="card-header" style="background-color: white;">
-                    INSERTE-NOMBRE-OPERADOR
-                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
-                  </div>
-                  <div class="card-body">
-                    <h5>Description:</h5>
-                    <p>INSERTE-DESCRIPCION</p>
-                    <h5>Code Example:</h5>
-                    <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                    <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                  </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" style="background-color: white;">
-                      INSERTE-NOMBRE-OPERADOR
-                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                      <span class="badge badge-pill badge-info" style="float: right;">Text</span>
-                    </div>
-                    <div class="card-body">
-                      <h5>Description:</h5>
-                      <p>INSERTE-DESCRIPCION</p>
-                      <h5>Code Example:</h5>
-                      <p>Before:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                      <p>After:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                    </div>
-                  </div>
+            </div>                
           </div>
         </div>
       </div>
@@ -333,9 +325,23 @@ invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                   <p>After:</p>
                   <textarea name="andBefore" id="andBefore" rows="1"></textarea>
                 </div>
+                <div class="card">
+                    <div class="card-header" style="background-color: white;">
+                      INSERTE-NOMBRE-OPERADOR
+                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                      <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    </div>
+                    <div class="card-body">
+                      <h5>Description:</h5>
+                      <p>INSERTE-DESCRIPCION</p>
+                      <h5>Code Example:</h5>
+                      <p>Before:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                      <p>After:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    </div>
+                  </div>
               </div>
-            </div>
-            <div class="card-body">
                 <div class="card">
                   <div class="card-header" style="background-color: white;">
                     SDK Version
@@ -352,8 +358,6 @@ invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                     <textarea name="andBefore" id="andBefore" rows="1"><uses-sdk android:minSdkVersion="7" android:targetSdkVersion="10"/> </textarea>
                   </div>
                 </div>
-              </div>
-              <div class="card-body">
                   <div class="card">
                     <div class="card-header" style="background-color: white;">
                         Wrong String Resource
@@ -370,8 +374,6 @@ invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                       <textarea name="andBefore" id="andBefore" rows="1"><string name="update_finished_importing">ecab6839856b426fbdae3e6e8c46c38c</string></textarea>
                     </div>
                   </div>
-                </div>
-                <div class="card-body">
                     <div class="card">
                       <div class="card-header" style="background-color: white;">
                         INSERTE-NOMBRE-OPERADOR
@@ -389,7 +391,7 @@ invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                       </div>
                     </div>
                   </div>
-        </div>
+                </div>
       </div>
     </div>
     <div class="row" id="backEndServices" style="padding-top:4.5rem; margin-top:-4.5rem;">
