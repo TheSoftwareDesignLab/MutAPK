@@ -104,15 +104,14 @@ public class ASTHelper {
 
 	public static int[] isValidLocation(CommonTree t){
 		//		if(t.getType()==159) {
-		//				System.out.println(t.toStringTree());
-		//				System.out.println(t.getType());
+//						System.out.println(t.toStringTree());
+//						System.out.println(t.getType());
 		//			System.out.println(t.getChild(2));
 		//			System.out.println(t.getChild(3));
 		//			System.out.println(t.getChild(2).toStringTree().equals("Ljava/net/URI;") && t.getChild(3).toStringTree().equals("<init>") );
 		//		}
-
+						
 		if(t.getType()==smaliParser.I_STATEMENT_FORMAT35c_METHOD) {
-			
 			ArrayList<Integer> resp = new ArrayList<Integer>();
 			if(t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
 					&& t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).toString().equals("Landroid/content/Intent;") 
@@ -158,7 +157,7 @@ public class ASTHelper {
 				resp.add(22);
 			}
 			
-			if(resp.size()>1) {
+			if(resp.size()>0) {
 				int[] ret = new int[resp.size()];
 				for (int i=0; i < ret.length; i++)
 				{
