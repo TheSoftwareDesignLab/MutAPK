@@ -15,6 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/navbar-top-fixed.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -63,21 +64,26 @@
         <img src="img/droidpool.png" alt="MutAPKLogo" style="max-width: 30%; height: auto;">
       </div>
     </div>
-    <div class="jumbotron" style="background-color: white">
-      <h2 class="text-center">
-        <strong>
-          <i>Mut<em style="color:red">APK</em>
-          </i>:</strong> Enabling Mutation Testing for Android Apps over APK files</h2>
-      <p class="lead text-center">Team Members:
-        <i>
-          <a href="http://caev03.github.io">Camilo Escobar-Velásquez</a>,
-          <a href="https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/">Mario Linares-Vásquez</a>
-        </i>
-      </p>
-    </div>
     <div class="row">
       <div class="col-12">
-        <h3 id="purpose" style="padding-top:4.5rem; margin-top:-4.5rem;">Purpose:</h3>
+        <div class="jumbotron" style="background-color: white">
+          <h1 class="text-center">
+            <strong>
+              <i>Mut<em style="color:red">APK</em>
+              </i>:</strong> Enabling Mutation Testing for Android Apps over APK files</h1>
+          <h2 class="lead text-center">Team Members:
+            <i>
+              <a href="http://caev03.github.io">Camilo Escobar-Velásquez</a>,
+              <a href="https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/">Mario Linares-Vásquez</a>
+            </i>
+          </h2>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12">
+        <h2 id="purpose" style="padding-top:4.5rem; margin-top:-4.5rem;">Purpose:</h2>
         <div class="card">
           <div class="card-body">
             This project was created by
@@ -126,18 +132,18 @@
     </div> -->
     <div class="row">
       <div class="col-12">
-        <h3 id="mutationOperators" style="padding-top:4.5rem; margin-top:-4.5rem;">Mutation Operators:</h3>
+        <h2 id="mutationOperators" style="padding-top:4.5rem; margin-top:-4.5rem;">Mutation Operators:</h2>
         <p>Here we provide the list of all mutations operators that were defined for Mut<em style="color: red">APK</em>.</p>
       </div>
     </div>
     <div class="row" id="activitiesIntents" style="padding-top:4.5rem; margin-top:-4.5rem;">
       <div class="col-12">
-        <div class="card">
+        <div class="card category">
           <div class="card-header">
             Activity/Intents
           </div>
           <div class="card-body">
-            <div class="card">
+            <div class="card operator">
               <div class="card-header" style="background-color: white;">
                 Activity Not Defined
                 <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
@@ -149,12 +155,12 @@
                   <android:name="Activity" /> entry in the Manifest file</p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> < activity android:name=".ImportActivity" android:label="@string/title_import" / > </textarea>
+                <textarea class="xml" name="andBefore" id="andBefore" rows="1"> < activity android:name=".ImportActivity" android:label="@string/title_import" /> </textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> </textarea>
+                <textarea class="xml" name="andBefore" id="andBefore" rows="1"> </textarea>
               </div>
             </div>
-            <div class="card">
+            <div class="card operator">
               <div class="card-header" style="background-color: white;">
                 Different Activity Intent Definition
                 <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
@@ -165,16 +171,16 @@
                 <p>Replace the Activity.class argument in an Intent instantiation.</p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1">const-class v3, Lcom/fsck/k9/activity/MessageCompose; 
+                <textarea class="smali" name="andBefore" id="andBefore" rows="1">const-class v3, Lcom/fsck/k9/activity/MessageCompose; 
 
 invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V</textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1">const-class v1, Lcom/fsck/k9/activity/Accounts; 
+                <textarea class="smali" name="andBefore" id="andBefore" rows="1">const-class v1, Lcom/fsck/k9/activity/Accounts; 
 
 invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V</textarea>
               </div>
             </div>
-            <div class="card">
+            <div class="card operator">
               <div class="card-header" style="background-color: white;">
                 Invalid Activity Name
                 <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
@@ -185,35 +191,35 @@ invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Co
                 <p>Randomly insert typos in the path of an activity defined in the Manifest file.</p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> < activity android:name=".AboutActivity" android:label="@string/title_about" / > </textarea>
+                <textarea class="xml" name="andBefore" id="andBefore" rows="1"> < activity android:name=".AboutActivity" android:label="@string/title_about" /> </textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> < activity android:name=".AbutActivity" android:label="@string/title_about" / ></textarea>
+                <textarea class="xml" name="andBefore" id="andBefore" rows="1"> < activity android:name=".AbutActivity" android:label="@string/title_about" /></textarea>
               </div>
             </div>
-            <div class="card">
+            <div class="card operator">
               <div class="card-header" style="background-color: white;">
                   Invalid Key Intent Put Extra
                 <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                <span class="badge badge-pill badge-success" style="float: right;">AST</span>
               </div>
               <div class="card-body">
                 <h5>Description:</h5>
                 <p>Randomly generate a different key in an Intent.putExtra(key, value) call </p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1">const-string v1, "message_decryption_result"
+                <textarea class="smali" name="andBefore" id="andBefore" rows="1">const-string v1, "message_decryption_result"
                   
 invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1">const-string v1, "3a55422d7ac44b6aac475cc5122b992b"
+                <textarea class="smali" name="andBefore" id="andBefore" rows="1">const-string v1, "3a55422d7ac44b6aac475cc5122b992b"
 
 invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
               </div>
             </div>
-            <div class="card">
+            <div class="card operator">
               <div class="card-header" style="background-color: white;">
                 Invalid Label
-                <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span> 
                 <span class="badge badge-pill badge-info" style="float: right;">Text</span>
               </div>
               <div class="card-body">
@@ -221,12 +227,12 @@ invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                 <p>Replace the attribute "android:label" in the Manifest file with a random string</p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> <activity android:name=".VehicleActivity" android:label="@string/title_vehicle" /> </textarea>
+                <textarea class="xml" name="andBefore" id="andBefore" rows="1"> <activity android:name=".VehicleActivity" android:label="@string/title_vehicle" /> </textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> <activity android:name=".VehicleActivity" android:label="ecab6839856b426fbdae3e6e8c46c38c" /></textarea>
+                <textarea class="xml" name="andBefore" id="andBefore" rows="1"> <activity android:name=".VehicleActivity" android:label="ecab6839856b426fbdae3e6e8c46c38c" /></textarea>
               </div>
             </div>
-            <div class="card">
+            <div class="card operator">
               <div class="card-header" style="background-color: white;">
                 Null Intent
                 <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
@@ -237,7 +243,7 @@ invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                 <p>Replace an Intent instantiation with null</p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1">
+                <textarea class="smali" name="andBefore" id="andBefore" rows="1">
 new-instance v1, Landroid/content/Intent;
 
 iget-object v2, p0, Lio/github/hidroh/materialistic/accounts/AccountAuthenticator;->mContext:Landroid/content/Context;
@@ -246,28 +252,28 @@ const-class v3, Lio/github/hidroh/materialistic/LoginActivity;
 
 invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V</textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1"> const/4 v1, 0x0 </textarea>
+                <textarea class="smali" name="andBefore" id="andBefore" rows="1"> const/4 v1, 0x0 </textarea>
               </div>
             </div>
-            <div class="card">
+            <div class="card operator">
                 <div class="card-header" style="background-color: white;">
-                  NULL VALUE INTENT PUT EXTRA
+                  Null Value Intent Put Extra
                   <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                  <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                  <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                 </div>
                 <div class="card-body">
                   <h5>Description:</h5>
                   <p>Replace the value argument in an Intent.putExtra(key, value) call with new Parcelable[0]</p>
                   <h5>Code Example:</h5>
                   <p>Before:</p>
-                  <textarea name="andBefore" id="andBefore" rows="1">invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;</textarea>
+                  <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;</textarea>
                   <p>After:</p>
-                  <textarea name="andBefore" id="andBefore" rows="1">new-array v9, v9, [Landroid/os/Parcelable;
+                  <textarea class="smali" name="andBefore" id="andBefore" rows="1">new-array v9, v9, [Landroid/os/Parcelable;
 
 invoke-virtual {v1, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[Landroid/os/Parcelable;)Landroid/content/Intent;</textarea>
                 </div>
               </div>
-            <div class="card">
+            <div class="card operator">
               <div class="card-header" style="background-color: white;">
                 Wrong Main Activity
                 <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
@@ -278,7 +284,7 @@ invoke-virtual {v1, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                 <p>Randomly replace the main activity definition with a different activity</p>
                 <h5>Code Example:</h5>
                 <p>Before:</p>
-                <textarea name="andBefore" id="andBefore" rows="1">
+                <textarea class="xml" name="andBefore" id="andBefore" rows="1">
 <activity android:name=".Mileage" android:theme="@android:style/Theme.NoTitleBar">
   <intent-filter>
     <action android:name="android.intent.action.MAIN" />
@@ -288,7 +294,7 @@ invoke-virtual {v1, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
 ...
 <activity android:name=".AboutActivity" android:label="@string/title_about" /></textarea>
                 <p>After:</p>
-                <textarea name="andBefore" id="andBefore" rows="1">
+                <textarea class="xml" name="andBefore" id="andBefore" rows="1">
 <activity android:name=".AboutActivity" android:theme="@android:style/Theme.NoTitleBar">
   <intent-filter>
     <action android:name="android.intent.action.MAIN" />
@@ -305,12 +311,12 @@ invoke-virtual {v1, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
     </div>
     <div class="row" id="androidProgramming" style="padding-top:4.5rem; margin-top:-4.5rem;">
       <div class="col-12">
-        <div class="card">
+        <div class="card category">
           <div class="card-header">
             Android Programming
           </div>
           <div class="card-body">
-              <div class="card">
+              <div class="card operator">
                 <div class="card-header" style="background-color: white;">
                     Missing Permission Manifest
                   <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
@@ -321,44 +327,46 @@ invoke-virtual {v1, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                   <p>Select and remove an &lt;uses-permission /&gt; entry in the Manifest file</p>
                   <h5>Code Example:</h5>
                   <p>Before:</p>
-                  <textarea name="andBefore" id="andBefore" rows="1"><uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /></textarea>
+                  <textarea class="xml" name="andBefore" id="andBefore" rows="1"><uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /></textarea>
                   <p>After:</p>
-                  <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                  <textarea class="xml" name="andBefore" id="andBefore" rows="1"></textarea>
                 </div>
-                <div class="card">
-                    <div class="card-header" style="background-color: white;">
-                      INSERTE-NOMBRE-OPERADOR
-                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                      <span class="badge badge-pill badge-info" style="float: right;">Text</span>
-                    </div>
-                    <div class="card-body">
-                      <h5>Description:</h5>
-                      <p>INSERTE-DESCRIPCION</p>
-                      <h5>Code Example:</h5>
-                      <p>Before:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                      <p>After:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                    </div>
-                  </div>
               </div>
-                <div class="card">
-                  <div class="card-header" style="background-color: white;">
-                    SDK Version
-                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
-                  </div>
-                  <div class="card-body">
-                    <h5>Description:</h5>
-                    <p>Randomly mutate the integer values in the SdkVersion-related attributes</p>
-                    <h5>Code Example:</h5>
-                    <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"><uses-sdk android:minSdkVersion="4" android:targetSdkVersion="10"/> </textarea>
-                    <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"><uses-sdk android:minSdkVersion="7" android:targetSdkVersion="10"/> </textarea>
-                  </div>
+              <div class="card operator">
+                <div class="card-header" style="background-color: white;">
+                  Null GPS Location
+                  <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                  <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                 </div>
-                  <div class="card">
+                <div class="card-body">
+                  <h5>Description:</h5>
+                  <p>Inject a Null GPS location in the location services</p>
+                  <h5>Code Example:</h5>
+                  <p>Before:</p>
+                  <textarea class="smali" name="andBefore" id="andBefore" rows="1">.local v0, "location":Landroid/location/Location;</textarea>
+                  <p>After:</p>
+                  <textarea class="smali" name="andBefore" id="andBefore" rows="1">const/4 v0, 0x0
+                    
+.local v0, "location":Landroid/location/Location;</textarea>
+                </div>
+              </div>
+              <div class="card operator">
+                <div class="card-header" style="background-color: white;">
+                  SDK Version
+                  <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                  <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                </div>
+                <div class="card-body">
+                  <h5>Description:</h5>
+                  <p>Randomly mutate the integer values in the SdkVersion-related attributes</p>
+                  <h5>Code Example:</h5>
+                  <p>Before:</p>
+                  <textarea class="xml" name="andBefore" id="andBefore" rows="1"><uses-sdk android:minSdkVersion="4" android:targetSdkVersion="10"/> </textarea>
+                  <p>After:</p>
+                  <textarea class="xml" name="andBefore" id="andBefore" rows="1"><uses-sdk android:minSdkVersion="7" android:targetSdkVersion="10"/> </textarea>
+                </div>
+              </div>
+                  <div class="card operator">
                     <div class="card-header" style="background-color: white;">
                         Wrong String Resource
                       <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
@@ -369,106 +377,89 @@ invoke-virtual {v1, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                       <p>Select a &lt;string /&gt; entry in /res/values/strings.xml file and mutate the string value </p>
                       <h5>Code Example:</h5>
                       <p>Before:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1"><string name="update_finished_importing">Import finished!</string> </textarea>
+                      <textarea class="xml" name="andBefore" id="andBefore" rows="1"><string name="update_finished_importing">Import finished!</string> </textarea>
                       <p>After:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1"><string name="update_finished_importing">ecab6839856b426fbdae3e6e8c46c38c</string></textarea>
+                      <textarea class="xml" name="andBefore" id="andBefore" rows="1"><string name="update_finished_importing">ecab6839856b426fbdae3e6e8c46c38c</string></textarea>
                     </div>
                   </div>
-                    <div class="card">
-                      <div class="card-header" style="background-color: white;">
-                        INSERTE-NOMBRE-OPERADOR
-                        <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                        <span class="badge badge-pill badge-info" style="float: right;">Text</span>
-                      </div>
-                      <div class="card-body">
-                        <h5>Description:</h5>
-                        <p>INSERTE-DESCRIPCION</p>
-                        <h5>Code Example:</h5>
-                        <p>Before:</p>
-                        <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                        <p>After:</p>
-                        <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                      </div>
-                    </div>
                   </div>
                 </div>
-      </div>
-    </div>
-    <div class="row" id="backEndServices" style="padding-top:4.5rem; margin-top:-4.5rem;">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-header">
-            Back-End Services
-          </div>
-          <div class="card-body">
-              <div class="card">
-                  <div class="card-header" style="background-color: white;">
-                    INSERTE-NOMBRE-OPERADOR
-                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
-                  </div>
-                  <div class="card-body">
-                    <h5>Description:</h5>
-                    <p>INSERTE-DESCRIPCION</p>
-                    <h5>Code Example:</h5>
-                    <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                    <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                  </div>
-                </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="row" id="connectivity" style="padding-top:4.5rem; margin-top:-4.5rem;">
       <div class="col-12">
-        <div class="card">
+        <div class="card category">
           <div class="card-header">
             Connectivity
           </div>
           <div class="card-body">
-              <div class="card">
-                  <div class="card-header" style="background-color: white;">
-                    INSERTE-NOMBRE-OPERADOR
-                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
-                  </div>
-                  <div class="card-body">
-                    <h5>Description:</h5>
-                    <p>INSERTE-DESCRIPCION</p>
-                    <h5>Code Example:</h5>
-                    <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                    <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
-                  </div>
+              <div class="card operator">
+                <div class="card-header" style="background-color: white;">
+                  Bluetooth Adapter Always Enabled
+                  <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                  <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                 </div>
+                <div class="card-body">
+                  <h5>Description:</h5>
+                  <p>Replace a BluethootAdapter.isEnabled() call with "true"</p>
+                  <h5>Code Example:</h5>
+                  <p>Before:</p>
+                  <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual/range {v19 .. v19}, Landroid/bluetooth/BluetoothAdapter;->isEnabled()Z
+
+move-result v3
+                  
+if-eqz v3, :cond_13</textarea>
+                  <p>After:</p>
+                  <textarea class="smali" name="andBefore" id="andBefore" rows="1"></textarea>
+                </div>
+              </div>
+              <div class="card operator">
+                <div class="card-header" style="background-color: white;">
+                  Null Bluetooth Adapter
+                  <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                  <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                </div>
+                <div class="card-body">
+                  <h5>Description:</h5>
+                  <p>Replace a BluetoothAdapter instance with null</p>
+                  <h5>Code Example:</h5>
+                  <p>Before:</p>
+                  <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
+
+move-result-object v10</textarea>
+                  <p>After:</p>
+                  <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
+                      
+const/16 v10, 0x0</textarea>
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row" id="data" style="padding-top:4.5rem; margin-top:-4.5rem;">
       <div class="col-12">
-        <div class="card">
+        <div class="card category">
           <div class="card-header">
             Data
           </div>
           <div class="card-body">
-              <div class="card">
+              <div class="card operator">
                   <div class="card-header" style="background-color: white;">
-                    INSERTE-NOMBRE-OPERADOR
+                    Invalid URI
                     <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                   </div>
                   <div class="card-body">
                     <h5>Description:</h5>
-                    <p>INSERTE-DESCRIPCION</p>
+                    <p>If URI are used internally, randomly mutate the URIs</p>
                     <h5>Code Example:</h5>
                     <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-direct {v3, v0}, Ljava/net/URI;-><init>(Ljava/lang/String;)V</textarea>
                     <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">const-string v2, "7e2cd5897951414db37193f8018a753c"
+
+invoke-direct {v3, v2}, Ljava/net/URI;-><init>(Ljava/lang/String;)V</textarea>
                   </div>
                 </div>
           </div>
@@ -477,66 +468,146 @@ invoke-virtual {v1, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
     </div>
     <div class="row" id="database" style="padding-top:4.5rem; margin-top:-4.5rem;">
       <div class="col-12">
-        <div class="card">
+        <div class="card category">
           <div class="card-header">
             Database
           </div>
           <div class="card-body">
-              <div class="card">
+              <div class="card operator">
                   <div class="card-header" style="background-color: white;">
-                    INSERTE-NOMBRE-OPERADOR
+                    Closing Null Cursor
                     <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                   </div>
                   <div class="card-body">
                     <h5>Description:</h5>
-                    <p>INSERTE-DESCRIPCION</p>
+                    <p>Assign a cursor to null before it is closed</p>
                     <h5>Code Example:</h5>
                     <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-interface {v3}, Landroid/database/Cursor;->close()V</textarea>
                     <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">const/4 v3, 0x0
+
+invoke-interface {v3}, Landroid/database/Cursor;->close()V</textarea>
                   </div>
                 </div>
+                <div class="card operator">
+                    <div class="card-header" style="background-color: white;">
+                      Invalid Index Query Parameter
+                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                      <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                    </div>
+                    <div class="card-body">
+                      <h5>Description:</h5>
+                      <p>Changes the query parameter array for an empty array</p>
+                      <h5>Code Example:</h5>
+                      <p>Before:</p>
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {v5, v7, v4}, Landroid/database/sqlite/SQLiteDatabase;->
+                                    rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;</textarea>
+                      <p>After:</p>
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">const/4 v1, 0x0
+
+new-array v4, v1, [Ljava/lang/String;
+                      
+invoke-virtual {v5, v7, v4}, Landroid/database/sqlite/SQLiteDatabase;->
+                                    rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;</textarea>
+                    </div>
+                  </div>
+                  <div class="card operator">
+                      <div class="card-header" style="background-color: white;">
+                        Invalid SQL Query
+                        <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                        <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                      </div>
+                      <div class="card-body">
+                        <h5>Description:</h5>
+                        <p>Randomly mutate a SQL query</p>
+                        <h5>Code Example:</h5>
+                        <p>Before:</p>
+                        <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {v5, v7, v4}, Landroid/database/sqlite/SQLiteDatabase;->
+                                      rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;</textarea>
+                        <p>After:</p>
+                        <textarea class="smali" name="andBefore" id="andBefore" rows="1">const-string v7, "9e220601a5ff474caad7d5495b14af75"
+
+invoke-virtual {v5, v7, v4}, Landroid/database/sqlite/SQLiteDatabase;->
+                                      rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;</textarea>
+                      </div>
+                    </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row" id="generalProgramming" style="padding-top:4.5rem; margin-top:-4.5rem;">
       <div class="col-12">
-        <div class="card">
+        <div class="card category">
           <div class="card-header">
             General Programming
           </div>
           <div class="card-body">
-              <div class="card">
+              <div class="card operator">
                   <div class="card-header" style="background-color: white;">
-                    INSERTE-NOMBRE-OPERADOR
+                    Invalid Date
                     <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                   </div>
                   <div class="card-body">
                     <h5>Description:</h5>
-                    <p>INSERTE-DESCRIPCION</p>
+                    <p>Set a random Date to a date object</p>
                     <h5>Code Example:</h5>
                     <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-direct {v6, v1, v2}, Ljava/util/Date;-><init>(J)V</textarea>
                     <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">const-wide v1, 0xeb34dd0L
+
+invoke-direct {v6, v1, v2}, Ljava/util/Date;-><init>(J)V</textarea>
                   </div>
                 </div>
+                <div class="card operator">
+                    <div class="card-header" style="background-color: white;">
+                      Null Method Call Argument
+                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                      <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                    </div>
+                    <div class="card-body">
+                      <h5>Description:</h5>
+                      <p>Set null to a method call argument</p>
+                      <h5>Code Example:</h5>
+                      <p>Before:</p>
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-direct {v0, v1, v5}, Lcom/fsck/k9/Account$FolderMode;-><init>(Ljava/lang/String;I)V</textarea>
+                      <p>After:</p>
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">const/4 v1, 0x0
+
+invoke-direct {v0, v1, v5}, Lcom/fsck/k9/Account$FolderMode;-><init>(Ljava/lang/String;I)V</textarea>
+                    </div>
+                  </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row" id="gui" style="padding-top:4.5rem; margin-top:-4.5rem;">
       <div class="col-12">
-        <div class="card">
+        <div class="card category">
           <div class="card-header">
             GUI
           </div>
           <div class="card-body">
-              <div class="card">
+              <!-- <div class="card operator">
+                  <div class="card-header" style="background-color: white;">
+                    Find View By ID Returns Null
+                    <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                    <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p>Assign a variable (returned by Activity.findViewById) to null</p>
+                    <h5>Code Example:</h5>
+                    <p>Before:</p>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1"></textarea>
+                    <p>After:</p>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1"></textarea>
+                  </div>
+                </div> -->
+              <div class="card operator">
                   <div class="card-header" style="background-color: white;">
                       Invalid Color
                     <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
@@ -547,79 +618,191 @@ invoke-virtual {v1, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/Strin
                     <p>Randomly change colors in layout files</p>
                     <h5>Code Example:</h5>
                     <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"><item name="red" type="color">#FFFF4444</item></textarea>
+                    <textarea class="xml" name="andBefore" id="andBefore" rows="1"><item name="red" type="color">#FFFF4444</item></textarea>
                     <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"><item name="red" type="color">#FF669900</item></textarea>
+                    <textarea class="xml" name="andBefore" id="andBefore" rows="1"><item name="red" type="color">#FF669900</item></textarea>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card operator">
                     <div class="card-header" style="background-color: white;">
-                      INSERTE-NOMBRE-OPERADOR
+                      Invalid ID Find View
                       <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                      <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                      <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                     </div>
                     <div class="card-body">
                       <h5>Description:</h5>
-                      <p>INSERTE-DESCRIPCION</p>
+                      <p>Replace the id argument in an Activity.findViewById call</p>
                       <h5>Code Example:</h5>
                       <p>Before:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">const v5, 0x7f0d007d
+
+invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;</textarea>
                       <p>After:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">const/16 v5, 0x99abad00
+
+invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;</textarea>
                     </div>
                   </div>
+                  <div class="card operator">
+                      <div class="card-header" style="background-color: white;">
+                        Invalid View Focus
+                        <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                        <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                      </div>
+                      <div class="card-body">
+                        <h5>Description:</h5>
+                        <p>Randomly focus a GUI component</p>
+                        <h5>Code Example:</h5>
+                        <p>Before:</p>
+                        <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {p0, v1}, Lcom/fsck/k9/view/ClientCertificateSpinner;->findViewById(I)Landroid/view/View;
+
+move-result-object v1
+
+check-cast v1, Landroid/widget/Button;
+
+iput-object v1, p0, Lcom/fsck/k9/view/ClientCertificateSpinner;->mSelection:Landroid/widget/Button;</textarea>
+                        <p>After:</p>
+                        <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {p0, v1}, Lcom/fsck/k9/view/ClientCertificateSpinner;->findViewById(I)Landroid/view/View;
+
+move-result-object v1
+                        
+check-cast v1, Landroid/widget/Button;
+                        
+iput-object v1, p0, Lcom/fsck/k9/view/ClientCertificateSpinner;->mSelection:Landroid/widget/Button;
+                        
+iget-object v1, p0, Lcom/fsck/k9/view/ClientCertificateSpinner;->mSelection:Landroid/widget/Button;
+                        
+invoke-virtual {v1}, Landroid/widget/Button;->requestFocus()Z</textarea>
+                      </div>
+                    </div>
+                    <div class="card operator">
+                        <div class="card-header" style="background-color: white;">
+                          View Component Not Visible
+                          <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                          <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                        </div>
+                        <div class="card-body">
+                          <h5>Description:</h5>
+                          <p>Set visible attribute (from a View) to false</p>
+                          <h5>Code Example:</h5>
+                          <p>Before:</p>
+                          <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {p0, v1}, Lcom/fsck/k9/view/ClientCertificateSpinner;->findViewById(I)Landroid/view/View;
+
+move-result-object v1
+
+check-cast v1, Landroid/widget/ImageButton;
+
+iput-object v1, p0, Lcom/fsck/k9/view/ClientCertificateSpinner;->mDeleteButton:Landroid/widget/ImageButton;
+
+.line 58
+iget-object v1, p0, Lcom/fsck/k9/view/ClientCertificateSpinner;->mDeleteButton:Landroid/widget/ImageButton;</textarea>
+                          <p>After:</p>
+                          <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {p0, v1}, Lcom/fsck/k9/view/ClientCertificateSpinner;->findViewById(I)Landroid/view/View;
+
+move-result-object v1
+
+check-cast v1, Landroid/widget/ImageButton;
+
+iput-object v1, p0, Lcom/fsck/k9/view/ClientCertificateSpinner;->mDeleteButton:Landroid/widget/ImageButton;
+
+.line 58
+iget-object v1, p0, Lcom/fsck/k9/view/ClientCertificateSpinner;->mDeleteButton:Landroid/widget/ImageButton;
+
+const/4 v9, 0x4
+
+invoke-virtual {v1, v9}, Lcom/fsck/k9/view/ClientCertificateSpinner;->setVisibility(I)V</textarea>
+                        </div>
+                      </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row" id="io" style="padding-top:4.5rem; margin-top:-4.5rem;">
       <div class="col-12">
-        <div class="card">
+        <div class="card category">
           <div class="card-header">
             I/O
           </div>
           <div class="card-body">
-              <div class="card">
+              <div class="card operator">
                   <div class="card-header" style="background-color: white;">
-                    INSERTE-NOMBRE-OPERADOR
+                    Invalid File Path
                     <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                   </div>
                   <div class="card-body">
                     <h5>Description:</h5>
-                    <p>INSERTE-DESCRIPCION</p>
+                    <p>Randomly mutate paths to files</p>
                     <h5>Code Example:</h5>
                     <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V</textarea>
                     <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">const-string v9, "e03044246cea40e195e920cd2eb9840f"
+
+invoke-direct {v0, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V</textarea>
                   </div>
                 </div>
+                <div class="card operator">
+                    <div class="card-header" style="background-color: white;">
+                      Null Input Stream
+                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                      <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                    </div>
+                    <div class="card-body">
+                      <h5>Description:</h5>
+                      <p>Assign an input stream to null before it is closed</p>
+                      <h5>Code Example:</h5>
+                      <p>Before:</p>
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {v0}, Ljava/io/InputStream;->close()V</textarea>
+                      <p>After:</p>
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">const/4 v0, 0x0
+
+invoke-virtual {v0}, Ljava/io/InputStream;->close()V</textarea>
+                    </div>
+                  </div>
+                  <div class="card operator">
+                      <div class="card-header" style="background-color: white;">
+                        Null Output Stream
+                        <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                        <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                      </div>
+                      <div class="card-body">
+                        <h5>Description:</h5>
+                        <p>Assign an output stream to null before it is closed</p>
+                        <h5>Code Example:</h5>
+                        <p>Before:</p>
+                        <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {v0}, Ljava/io/OutputStream;->close()V</textarea>
+                      <p>After:</p>
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">const/4 v0, 0x0
+
+invoke-virtual {v0}, Ljava/io/OutputStream;->close()V</textarea>
+                      </div>
+                    </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row" id="nonFunctionalRequirements" style="padding-top:4.5rem; margin-top:-4.5rem;">
       <div class="col-12">
-        <div class="card">
+        <div class="card category">
           <div class="card-header">
             Non-Functional Requirements
           </div>
           <div class="card-body">
-              <div class="card">
+              <div class="card operator">
                   <div class="card-header" style="background-color: white;">
                       Lengthy BackEnd Service
                     <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                    <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                    <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                   </div>
                   <div class="card-body">
                     <h5>Description:</h5>
                     <p>Inject large delay right-after a call to a back-end service </p>
                     <h5>Code Example:</h5>
                     <p>Before:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1">.local v14, "response":Lorg/apache/http/HttpResponse;</textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">.local v14, "response":Lorg/apache/http/HttpResponse;</textarea>
                     <p>After:</p>
-                    <textarea name="andBefore" id="andBefore" rows="1">.local v14, "response":Lorg/apache/http/HttpResponse;
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">.local v14, "response":Lorg/apache/http/HttpResponse;
 invoke-direct/range {p0 .. p0}, Lcom/fsck/k9/mail/store/webdav/WebDavFolder;->delay()V
 
 ...
@@ -653,25 +836,35 @@ invoke-direct/range {p0 .. p0}, Lcom/fsck/k9/mail/store/webdav/WebDavFolder;->de
 .end method</textarea>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card operator">
                     <div class="card-header" style="background-color: white;">
                         Lengthy GUI Creation
                       <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                      <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                      <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                     </div>
                     <div class="card-body">
                       <h5>Description:</h5>
                       <p>Insert a long delay (\ie Thread.sleep(..)) in the creation GUI thread</p>
                       <h5>Code Example:</h5>
                       <p>Before:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1">.method public onCreate(Landroid/os/Bundle;)V
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">.method public onCreate(Landroid/os/Bundle;)V
     .locals 1
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .line 107
     invoke-super {p0, p1}, Lcom/fsck/k9/activity/K9Activity;->onCreate(Landroid/os/Bundle;)V</textarea>
                       <p>After:</p>
-                      <textarea name="andBefore" id="andBefore" rows="1">.method private delay()V
+                      <textarea class="smali" name="andBefore" id="andBefore" rows="1">.method public onCreate(Landroid/os/Bundle;)V
+  .locals 1
+  .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+  .line 107
+  invoke-super {p0, p1}, Lcom/fsck/k9/activity/K9Activity;->onCreate(Landroid/os/Bundle;)V
+  invoke-direct {p0}, Lcom/fsck/k9/activity/UpgradeDatabases;->delay()V
+
+...
+
+.method private delay()V
     .locals 2
 
     .line 332
@@ -697,47 +890,94 @@ invoke-direct/range {p0 .. p0}, Lcom/fsck/k9/mail/store/webdav/WebDavFolder;->de
     .end local v0    # "e":Ljava/lang/InterruptedException;
     :goto_0
     return-void
-.end method
-
-.method public onCreate(Landroid/os/Bundle;)V
-  .locals 1
-  .param p1, "savedInstanceState"    # Landroid/os/Bundle;
-
-  .line 107
-  invoke-super {p0, p1}, Lcom/fsck/k9/activity/K9Activity;->onCreate(Landroid/os/Bundle;)V
-  invoke-direct {p0}, Lcom/fsck/k9/activity/UpgradeDatabases;->delay()V</textarea>
+.end method</textarea>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card operator">
                       <div class="card-header" style="background-color: white;">
-                        INSERTE-NOMBRE-OPERADOR
+                        Lengthy GUI Listener
                         <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                        <span class="badge badge-pill badge-info" style="float: right;">Text</span>
+                        <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                       </div>
                       <div class="card-body">
                         <h5>Description:</h5>
-                        <p>INSERTE-DESCRIPCION</p>
+                        <p>Insert a long delay (i.e., Thread.sleep()) in a GUI Listener</p>
                         <h5>Code Example:</h5>
                         <p>Before:</p>
-                        <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                        <textarea class="smali" name="andBefore" id="andBefore" rows="1">.method public onClick(Landroid/view/View;)V
+    .locals 1
+    .param p1, "v"    # Landroid/view/View;</textarea>
                         <p>After:</p>
-                        <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                        <textarea class="smali" name="andBefore" id="andBefore" rows="1">.method public onClick(Landroid/view/View;)V
+    .locals 1
+    .param p1, "v"    # Landroid/view/View;
+
+    .line 53
+    invoke-direct/range {p0 .. p0}, Lcom/fsck/k9/view/ClientCertificateSpinner$1;->delay()V
+
+...
+
+.method private delay()V
+    .locals 2
+
+    .line 332
+    const-wide/16 v0, 0x2710
+
+    :try_start_0
+    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 335
+    goto :goto_0
+
+    .line 333
+    :catch_0
+    move-exception v0
+
+    .line 334
+    .local v0, "e":Ljava/lang/InterruptedException;
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    .line 336
+    .end local v0    # "e":Ljava/lang/InterruptedException;
+    :goto_0
+    return-void
+.end method</textarea>
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card operator">
+                        <div class="card-header" style="background-color: white;">
+                          Long Connection Timeout
+                          <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                          <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                        </div>
+                        <div class="card-body">
+                          <h5>Description:</h5>
+                          <p>Increase the time-out of connection to backend services</p>
+                          <h5>Code Example:</h5>
+                          <p>Before:</p>
+                          <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-static {v3, v4}, Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V</textarea>
+                          <p>After:</p>
+                          <textarea class="smali" name="andBefore" id="andBefore" rows="1">const v4, 0x186a0
+
+invoke-static {v3, v4}, Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V</textarea>
+                        </div>
+                      </div>
+                    <div class="card operator">
                         <div class="card-header" style="background-color: white;">
                           OOM Large Image
                           <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
-                          <span class="badge badge-pill badge-info" style="float: right;">AST</span>
+                          <span class="badge badge-pill badge-success" style="float: right;">AST</span>
                         </div>
                         <div class="card-body">
                           <h5>Description:</h5>
                           <p>Increase the size of bitmaps by explicitly setting large dimensions </p>
                           <h5>Code Example:</h5>
                           <p>Before:</p>
-                          <textarea name="andBefore" id="andBefore" rows="1">invoke-static {v8, v5, v6, v7}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;</textarea>
+                          <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-static {v8, v5, v6, v7}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;</textarea>
                           <p>After:</p>
-                          <textarea name="andBefore" id="andBefore" rows="1">const v6, 0x186a0
+                          <textarea class="smali" name="andBefore" id="andBefore" rows="1">const v6, 0x186a0
 
 invoke-static {v8, v6, v6, v7}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;</textarea>
                         </div>
@@ -746,6 +986,33 @@ invoke-static {v8, v6, v6, v7}, Landroid/graphics/Bitmap;->createScaledBitmap(La
         </div>
       </div>
     </div>
+    <!-- <div class="row" id="backEndServices" style="padding-top:4.5rem; margin-top:-4.5rem;">
+        <div class="col-12">
+          <div class="card category">
+            <div class="card-header">
+              Back-End Services
+            </div>
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-header" style="background-color: white;">
+                      Null Backend Service Return
+                      <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
+                      <span class="badge badge-pill badge-success" style="float: right;">AST</span>
+                    </div>
+                    <div class="card-body">
+                      <h5>Description:</h5>
+                      <p>Assign null to a response variable from a backend service</p>
+                      <h5>Code Example:</h5>
+                      <p>Before:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                      <p>After:</p>
+                      <textarea name="andBefore" id="andBefore" rows="1"></textarea>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
   </main>
 
   <!-- Bootstrap core JavaScript
@@ -761,8 +1028,11 @@ invoke-static {v8, v6, v6, v7}, Landroid/graphics/Bitmap;->createScaledBitmap(La
   <script src="mode/xml.js"></script>
   <script src="mode/clike.js"></script>
   <script>
-    $("textarea").each(function (index, element) {
-      var myCodeMirror = CodeMirror.fromTextArea(element, { lineNumbers: true, mode: "xml" })
+    $("textarea.xml").each(function (index, element) {
+      var myCodeMirror = CodeMirror.fromTextArea(element, { lineNumbers: true, mode: "xml"  })
+    })
+    $("textarea.smali").each(function (index, element) {
+      var myCodeMirror = CodeMirror.fromTextArea(element, { lineNumbers: true, mode: "clike"  })
     })
   </script>
 </body>
