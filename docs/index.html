@@ -591,7 +591,7 @@ invoke-direct {v0, v1, v5}, Lcom/fsck/k9/Account$FolderMode;-><init>(Ljava/lang/
             GUI
           </div>
           <div class="card-body">
-              <!-- <div class="card operator">
+              <div class="card operator">
                   <div class="card-header" style="background-color: white;">
                     Find View By ID Returns Null
                     <span class="badge badge-pill badge-secondary" style="float: right;">MDroid+</span>
@@ -602,11 +602,15 @@ invoke-direct {v0, v1, v5}, Lcom/fsck/k9/Account$FolderMode;-><init>(Ljava/lang/
                     <p>Assign a variable (returned by Activity.findViewById) to null</p>
                     <h5>Code Example:</h5>
                     <p>Before:</p>
-                    <textarea class="smali" name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">invoke-virtual {p0, p1}, Lio/github/hidroh/materialistic/AboutActivity;->findViewById(I)Landroid/view/View;
+
+move-result-object v0
+
+check-cast v0, Landroid/widget/TextView;</textarea>
                     <p>After:</p>
-                    <textarea class="smali" name="andBefore" id="andBefore" rows="1"></textarea>
+                    <textarea class="smali" name="andBefore" id="andBefore" rows="1">const/4 v0, 0x0</textarea>
                   </div>
-                </div> -->
+                </div>
               <div class="card operator">
                   <div class="card-header" style="background-color: white;">
                       Invalid Color
