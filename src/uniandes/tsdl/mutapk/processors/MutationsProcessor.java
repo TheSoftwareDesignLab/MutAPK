@@ -50,8 +50,14 @@ public class MutationsProcessor {
 		String newMutationPath = null;
 		BufferedWriter writer = new BufferedWriter(
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-mutants.log"));
+		BufferedWriter wwriter = new BufferedWriter(
+				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-times.csv"));
+		wwriter.write("mutantIndex;mutantType;mutationTime;buildingTime");
+		wwriter.newLine();
+		wwriter.flush();
 		for (MutationLocation mutationLocation : locations) {
 			try {
+				Long mutationIni = System.currentTimeMillis();
 				setupMutantFolder(mutantIndex);
 				System.out.println("Mutant: " + mutantIndex + " - Type: " + mutationLocation.getType());
 				operator = factory.getOperator(mutationLocation.getType().getId());
@@ -64,9 +70,20 @@ public class MutationsProcessor {
 				// System.out.println(newMutationPath);
 				mutationLocation.setFilePath(newMutationPath);
 				operator.performMutation(mutationLocation, writer, mutantIndex);
-
+				Long mutationEnd = System.currentTimeMillis();
 				APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName, mutantIndex);
-
+				File mutatedFile = new File(newMutationPath);
+				String fileName = (new File(newMutationPath)).getName();
+				File mutantRootFolderDir = new File(mutantRootFolder+fileName);
+				FileUtils.copyFile(mutatedFile, mutantRootFolderDir);
+				File srcFolder = new File(mutantFolder);
+				FileUtils.deleteDirectory(srcFolder);
+				Long buildEnd = System.currentTimeMillis();
+				Long mutationTime = mutationEnd-mutationIni;
+				Long buildingTime = buildEnd - mutationEnd;
+				wwriter.write(mutantIndex+";"+mutationLocation.getType().getId()+";"+mutationTime+";"+buildingTime);
+				wwriter.newLine();
+				wwriter.flush();
 			} catch (Exception e) {
 				Logger.getLogger(MutationsProcessor.class.getName())
 						.warning("- Error generating mutant  " + mutantIndex);
@@ -75,6 +92,7 @@ public class MutationsProcessor {
 			mutantIndex++;
 		}
 		writer.close();
+		wwriter.close();
 	}
 
 	public void processMultithreaded(List<MutationLocation> locations, final String extraPath, final String apkName)
@@ -82,6 +100,11 @@ public class MutationsProcessor {
 
 		final BufferedWriter writer = new BufferedWriter(
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-mutants.log"));
+		final BufferedWriter wwriter = new BufferedWriter(
+				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-times.csv"));
+		wwriter.write("mutantIndex;mutantType;copyingTime;mutationTime;buildingTime");
+		wwriter.newLine();
+		wwriter.flush();
 		final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 		final List<Future<String>> results = new LinkedList<Future<String>>();
 
@@ -91,13 +114,20 @@ public class MutationsProcessor {
 		for (final MutationLocation mutationLocation : locations) {
 			mutantIndex++;
 			final int currentMutationIndex = mutantIndex;
+			Long copyingIni = System.currentTimeMillis();
 			System.out.println("Mutant: " + currentMutationIndex + " - " + mutationLocation.getType().getName());
 			setupMutantFolder(currentMutationIndex);
+			Long copyingEnd = System.currentTimeMillis();
+			Long copyingTime = copyingEnd - copyingIni;
+			wwriter.write(currentMutationIndex+";"+mutationLocation.getType().getId()+";"+copyingTime+";0;0");
+			wwriter.newLine();
+			wwriter.flush();
 			results.add(executor.submit(new Callable<String>() {
 
 				public String call() {
 					try {
 						// Select operator
+						Long mutationIni = System.currentTimeMillis();
 						MutationOperatorFactory factory = MutationOperatorFactory.getInstance();
 						MutationOperator operator = factory.getOperator(mutationLocation.getType().getId());
 
@@ -110,7 +140,14 @@ public class MutationsProcessor {
 
 						// Perform mutation
 						operator.performMutation(mutationLocation, writer, currentMutationIndex);
+						Long mutationEnd = System.currentTimeMillis();
 						APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName, currentMutationIndex);
+						Long buildEnd = System.currentTimeMillis();
+						Long mutationTime = mutationEnd-mutationIni;
+						Long buildingTime = buildEnd - mutationEnd;
+						wwriter.write(currentMutationIndex+";"+mutationLocation.getType().getId()+";0;"+mutationTime+";"+buildingTime);
+						wwriter.newLine();
+						wwriter.flush();
 						// writer.close();
 
 					} catch (Exception e) {
