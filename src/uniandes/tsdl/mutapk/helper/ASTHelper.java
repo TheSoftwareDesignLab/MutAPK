@@ -69,6 +69,18 @@ public class ASTHelper {
 		}
 		return null;
 	}
+	
+	public static CommonTree getFirstBackUncleNamedOfType(int type, String name, CommonTree t) {
+		CommonTree parent = (CommonTree) t.getParent();
+		List<CommonTree> uncles = (List<CommonTree>)((CommonTree)parent.getParent()).getChildren();
+		for (int i = parent.getChildIndex(); i > -1; i--) {
+			CommonTree tempUncle = (CommonTree) uncles.get(i);
+			if(tempUncle.getType()==type && tempUncle.getChild(0).toStringTree().equals(name)) {
+				return tempUncle;
+			}
+		}
+		return null;
+	}
 
 	public static CommonTree getFirstBrotherNamedOfType(int type, String name, CommonTree t) {
 		CommonTree parent = (CommonTree) t.getParent();

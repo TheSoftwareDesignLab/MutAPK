@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.antlr.runtime.tree.CommonTree;
 
+import uniandes.tsdl.antlr.smaliParser;
+import uniandes.tsdl.mutapk.helper.ASTHelper;
 import uniandes.tsdl.mutapk.helper.FileHelper;
 import uniandes.tsdl.mutapk.helper.Helper;
 import uniandes.tsdl.mutapk.helper.HexadecimalGenerator;
@@ -20,7 +22,7 @@ public class InvalidIDFindView implements MutationOperator {
 		
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
-		CommonTree uncle = (CommonTree)parent.getParent().getChild(parent.getChildIndex()-1);
+		CommonTree uncle = ASTHelper.getFirstBackUncleNamedOfType(smaliParser.I_STATEMENT_FORMAT31i, "const", mLocation.getTree());
 		String constVarName = uncle.getChild(1).getText();
 		
 		List<String> newLines = new ArrayList<String>();
