@@ -33,7 +33,7 @@ public class InvalidIDFindView implements MutationOperator {
 		
 		//Apply mutation
 		newLines.add("");
-		newLines.add("    const/16 "+constVarName+", 0x"+HexadecimalGenerator.generateRandomHexa());
+		newLines.add("    const "+constVarName+", 0x"+HexadecimalGenerator.generateRandomHexa());
 		newLines.add("");
 		
 		for(int i=uncle.getLine(); i < lines.size() ; i++){

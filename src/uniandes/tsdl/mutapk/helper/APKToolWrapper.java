@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import uniandes.tsdl.mutapk.helper.Helper;
+
+import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class APKToolWrapper {
@@ -37,7 +39,11 @@ public class APKToolWrapper {
 		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",Paths.get(decodedPath,extraPath,"apktool.jar").toAbsolutePath().toString(),"b",Paths.get(decodedPath,path,"src").toAbsolutePath().toString(),"-o",Paths.get(decodedPath,path,appName).toAbsolutePath().toString(),"-f"});
 		System.out.println("Building mutant "+mutantIndex+"...");
 		ps.waitFor();
-		System.out.println("The "+mutantIndex+" mutant APK has been generated.");
+		if(Files.exists(Paths.get(decodedPath,path,appName).toAbsolutePath())) {
+			System.out.println("SUCCESS: The "+mutantIndex+" mutant APK has been generated.");			
+		} else {
+			System.out.println("ERROR: The "+mutantIndex+" mutant APK has not been generated.");
+		}
 		//				InputStream es = ps.getErrorStream();
 		//				byte e[] = new byte[es.available()];
 		//				es.read(e,0,e.length);
