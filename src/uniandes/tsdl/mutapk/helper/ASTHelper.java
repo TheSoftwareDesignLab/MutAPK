@@ -69,7 +69,7 @@ public class ASTHelper {
 		}
 		return null;
 	}
-	
+
 	public static CommonTree getFirstBackUncleNamedOfType(int type, String name, CommonTree t) {
 		CommonTree parent = (CommonTree) t.getParent();
 		List<CommonTree> uncles = (List<CommonTree>)((CommonTree)parent.getParent()).getChildren();
@@ -116,13 +116,13 @@ public class ASTHelper {
 
 	public static int[] isValidLocation(CommonTree t){
 		//		if(t.getType()==159) {
-//						System.out.println(t.toStringTree());
-//						System.out.println(t.getType());
+		//						System.out.println(t.toStringTree());
+		//						System.out.println(t.getType());
 		//			System.out.println(t.getChild(2));
 		//			System.out.println(t.getChild(3));
 		//			System.out.println(t.getChild(2).toStringTree().equals("Ljava/net/URI;") && t.getChild(3).toStringTree().equals("<init>") );
 		//		}
-						
+
 		if(t.getType()==smaliParser.I_STATEMENT_FORMAT35c_METHOD) {
 			ArrayList<Integer> resp = new ArrayList<Integer>();
 			if(t.getFirstChildWithType(smaliParser.I_REGISTER_LIST).getChildCount()==3 
@@ -164,11 +164,11 @@ public class ASTHelper {
 			} else if(isNullOutputStream(t)) {
 				resp.add(37);
 			} 
-			
+
 			if(t.getChild(1).getChildCount()>1) {
 				resp.add(22);
 			}
-			
+
 			if(resp.size()>0) {
 				int[] ret = new int[resp.size()];
 				for (int i=0; i < ret.length; i++)
@@ -177,15 +177,25 @@ public class ASTHelper {
 				}
 				return ret;				
 			}
-			
+
 		} else if(t.getType()==191) {
 			if(t.getText().equals("putExtra")){ //InvalidKeyIntentPutExtra && NullValueIntentPutExtra
 				return new int[]{4, 7}; 
-			} else if(t.getText().equals("findViewById") && hasIPutAndIGet(t)!=null) {
-				return new int[]{26, 29};
-			} else if (t.getText().equals("findViewById")) {
-				return new int[]{27, 31};	
-			}
+			} else if(t.getText().equals("findViewById")) {
+				ArrayList<Integer> resp = new ArrayList<Integer>();
+				resp.add(27);
+				resp.add(31);
+				if (hasIPutAndIGet(t)!=null) {
+					resp.add(26);
+					resp.add(29);
+				}
+				int[] ret = new int[resp.size()];
+				for (int i=0; i < ret.length; i++)
+				{
+					ret[i] = resp.get(i).intValue();
+				}
+				return ret;				
+			} 
 		} else if(t.getType()==161) {
 			if(t.getChild(2).toStringTree().equals("Landroid/bluetooth/BluetoothAdapter;")
 					&& t.getChild(3).toStringTree().equals("isEnabled")
@@ -266,7 +276,7 @@ public class ASTHelper {
 		}
 		return resp;
 	}
-	
+
 	private static boolean isOnClickMethod(CommonTree t) {
 		boolean resp = t.getChild(0).toString().equals("onClick");
 		if(resp) {
