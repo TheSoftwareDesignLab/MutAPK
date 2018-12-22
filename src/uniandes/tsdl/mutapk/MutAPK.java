@@ -1,7 +1,10 @@
 package uniandes.tsdl.mutapk;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.List;
@@ -111,6 +114,7 @@ public class MutAPK {
 		
 		//3. Build MutationLocation List
 		List<MutationLocation> mutationLocationList = MutationLocationListBuilder.buildList(locations);
+		printLocationList(mutationLocationList, mutantsFolder, appName);
 		System.out.println("Total Locations: "+mutationLocationList.size());
 
 		//3. Run mutation phase
@@ -122,6 +126,51 @@ public class MutAPK {
 			mProcessor.process(mutationLocationList, extraPath, apkName);
 		}
 
+	}
+
+	private static void printLocationList(List<MutationLocation> mutationLocationList, String mutantsFolder, String appName) {
+		
+		try {
+			BufferedWriter writer = new BufferedWriter(
+					new FileWriter(mutantsFolder + File.separator + appName + "-locations.json"));
+			writer.write("{");
+			writer.newLine();
+			writer.flush();
+			for (int i = 0; i < mutationLocationList.size(); i++) {
+				MutationLocation temp = mutationLocationList.get(i);
+				writer.write("	\""+(i+1)+"\":{");
+				writer.newLine();
+				writer.write("		\"mutationTypeID\":\""+temp.getType().getId()+"\",");
+				writer.newLine();
+				writer.write("		\"mutationTypeName\":\""+temp.getType().getName()+"\",");
+				writer.newLine();
+				writer.write("		\"filePath\":\""+temp.getFilePath()+"\",");
+				writer.newLine();
+				writer.write("		\"line\":\""+temp.getLine()+"\",");
+				writer.newLine();
+				writer.write("		\"startLine\":\""+temp.getStartLine()+"\",");
+				writer.newLine();
+				writer.write("		\"endLine\":\""+temp.getEndLine()+"\",");
+				writer.newLine();
+				writer.write("		\"startColumn\":\""+temp.getStartColumn()+"\",");
+				writer.newLine();
+				writer.write("		\"endColumn\":\""+temp.getEndColumn()+"\",");
+				writer.newLine();
+				writer.write("		\"length\":\""+temp.getLength()+"\"");
+				writer.newLine();
+				writer.write((i==mutationLocationList.size()-1)?"	}":"	},");
+				writer.newLine();
+				writer.flush();
+			}
+			writer.write("}");
+			writer.newLine();
+			writer.flush();
+			writer.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 }
