@@ -25,6 +25,7 @@ public class Helper {
 	public static String currDirectory = "";
 	public static List<String> actNames = new ArrayList<String>();
 	public static String mainActivity = "";
+	public static String packageName = "";
 	public final static String MANIFEST = "AndroidManifest.xml";
 	public final static String MAIN_ACTION = "android.intent.action.MAIN";
 	public static final int MIN_VERSION = 2;
@@ -41,6 +42,20 @@ public class Helper {
 		}
 		return instance;
 	}
+	
+	
+
+	public static String getPackageName() {
+		return packageName;
+	}
+
+
+
+	public static void setPackageName(String packageName) {
+		Helper.packageName = packageName;
+	}
+
+
 
 //	public String getCurrentDirectory() throws UnsupportedEncodingException {
 //		if (currDirectory.equals("")) {
