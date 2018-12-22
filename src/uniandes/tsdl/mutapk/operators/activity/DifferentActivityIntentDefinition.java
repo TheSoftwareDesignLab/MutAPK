@@ -39,9 +39,19 @@ public class DifferentActivityIntentDefinition  implements MutationOperator{
 				founded =true;
 				realLine = temp.getLine();
 				toMutate = hijoss.get(2).getText();
-				mutatedString = "L"+activities.get((int)Math.random()*activities.size()).replace(".", "/")+";";
+				String activityName =activities.get((int)(Math.random()*activities.size()));
+				if(!activityName.startsWith(Helper.getPackageName())) {
+					activityName=Helper.getPackageName()+"."+((activityName.startsWith("."))?activityName.substring(1):activityName);
+				}
+				activityName = activityName.replace(".", "/");
+				mutatedString = "L"+activityName+";";
 				while(mutatedString.equals(toMutate)){
-					mutatedString = "L"+activities.get((int)Math.random()*activities.size()).replace(".", "/")+";";
+					activityName =activities.get((int)(Math.random()*activities.size()));
+					if(!activityName.startsWith(Helper.getPackageName())) {
+						activityName=Helper.getPackageName()+"."+((activityName.startsWith("."))?activityName.substring(1):activityName);
+					}
+					activityName = activityName.replace(".", "/");
+					mutatedString = "L"+activityName+";";
 				}
 			}
 		}

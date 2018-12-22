@@ -19,6 +19,7 @@ import uniandes.tsdl.jflex.smaliFlexLexer;
 import uniandes.tsdl.mutapk.detectors.MutationLocationDetector;
 import uniandes.tsdl.mutapk.detectors.MutationLocationListBuilder;
 import uniandes.tsdl.mutapk.helper.APKToolWrapper;
+import uniandes.tsdl.mutapk.helper.Helper;
 import uniandes.tsdl.mutapk.model.MutationType;
 import uniandes.tsdl.mutapk.model.location.MutationLocation;
 import uniandes.tsdl.mutapk.operators.OperatorBundle;
@@ -78,8 +79,10 @@ public class MutAPK {
 		} else {
 			apkName = apkPath.substring(apkPath.lastIndexOf("/"));
 		}
+		Helper.getInstance();
+		Helper.setPackageName(appName);
 		// Decode the APK
-		APKToolWrapper.openAPK(apkPath, extraPath);
+		//APKToolWrapper.openAPK(apkPath, extraPath);
 
 		//Read selected operators
 		OperatorBundle operatorBundle = new OperatorBundle(operatorsDir);

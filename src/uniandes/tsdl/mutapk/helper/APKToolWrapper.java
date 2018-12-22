@@ -34,15 +34,17 @@ public class APKToolWrapper {
 		// System.out.println(decodedPath);
 	}
 
-	public static void buildAPK(String path, String extraPath, String appName, int mutantIndex) throws IOException, InterruptedException{
+	public static boolean buildAPK(String path, String extraPath, String appName, int mutantIndex) throws IOException, InterruptedException{
 		String decodedPath = Helper.getInstance().getCurrentDirectory();
 		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",Paths.get(decodedPath,extraPath,"apktool.jar").toAbsolutePath().toString(),"b",Paths.get(decodedPath,path,"src").toAbsolutePath().toString(),"-o",Paths.get(decodedPath,path,appName).toAbsolutePath().toString(),"-f"});
 		System.out.println("Building mutant "+mutantIndex+"...");
 		ps.waitFor();
 		if(Files.exists(Paths.get(decodedPath,path,appName).toAbsolutePath())) {
-			System.out.println("SUCCESS: The "+mutantIndex+" mutant APK has been generated.");			
+			System.out.println("SUCCESS: The "+mutantIndex+" mutant APK has been generated.");
+			return true;
 		} else {
 			System.out.println("ERROR: The "+mutantIndex+" mutant APK has not been generated.");
+			return false;
 		}
 		//				InputStream es = ps.getErrorStream();
 		//				byte e[] = new byte[es.available()];
