@@ -25,15 +25,24 @@ public class InvalidKeyIntentPutExtra implements MutationOperator{
         String extraKeyVar = hijos.get(1).getChild(1).toString();
         CommonTree method = (CommonTree) parent.getParent();
         int putExtraPos = parent.getChildIndex();
-        int extraKeyValPos = 0;
+        int extraKeyValPos = -1;
         boolean finished = false;
         for (int i = putExtraPos; i >-1 && !finished; i--) {
         	CommonTree temp = (CommonTree) method.getChild(i);
+        	System.out.println(mutantIndex+" - "+temp.getType()+" - "+temp.toStringTree());
+        	if(temp.getType()==smaliParser.I_STATEMENT_FORMAT22x && temp.getChild(1).toString().equals(extraKeyVar)) {
+        		extraKeyVar=temp.getChild(2).toString();
+        	}
         	if(temp.getType()==smaliParser.I_STATEMENT_FORMAT21c_STRING && temp.getChild(1).toString().equals(extraKeyVar)) {
         		extraKeyValPos = temp.getLine();
         		finished = true;
         	}
 		}
+        
+        if (extraKeyValPos==-1) {
+			extraKeyValPos=mLocation.getLine()-1;
+		}
+        
         
         String newKey = StringGenerator.generateRandomString();
         
