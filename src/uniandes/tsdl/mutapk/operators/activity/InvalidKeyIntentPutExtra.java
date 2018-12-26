@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.antlr.runtime.tree.CommonTree;
 
+import uniandes.tsdl.antlr.smaliParser;
 import uniandes.tsdl.mutapk.helper.FileHelper;
 import uniandes.tsdl.mutapk.helper.Helper;
 import uniandes.tsdl.mutapk.helper.StringGenerator;
@@ -20,20 +21,29 @@ public class InvalidKeyIntentPutExtra implements MutationOperator{
 		
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
         CommonTree parent = (CommonTree) mLocation.getTree().getParent();
-//        System.out.println(parent.toStringTree());
         List<CommonTree> hijos = (List<CommonTree>)parent.getChildren();
         String extraKeyVar = hijos.get(1).getChild(1).toString();
         CommonTree method = (CommonTree) parent.getParent();
         int putExtraPos = parent.getChildIndex();
-        int extraKeyValPos = 0;
+        int extraKeyValPos = -1;
         boolean finished = false;
         for (int i = putExtraPos; i >-1 && !finished; i--) {
         	CommonTree temp = (CommonTree) method.getChild(i);
-        	if(temp.getType()==140 && temp.getChild(1).toString().equals(extraKeyVar)) {
+        	System.out.println(mutantIndex+" - "+temp.getType()+" - "+temp.toStringTree());
+        	if(temp.getType()==smaliParser.I_STATEMENT_FORMAT22x && temp.getChild(1).toString().equals(extraKeyVar)) {
+        		extraKeyVar=temp.getChild(2).toString();
+        	}
+        	if(temp.getType()==smaliParser.I_STATEMENT_FORMAT21c_STRING && temp.getChild(1).toString().equals(extraKeyVar)) {
         		extraKeyValPos = temp.getLine();
         		finished = true;
         	}
 		}
+        
+        if (extraKeyValPos==-1) {
+			extraKeyValPos=mLocation.getLine()-1;
+		}
+        
+        
         String newKey = StringGenerator.generateRandomString();
         
         List<String> newLines = new ArrayList<String>();

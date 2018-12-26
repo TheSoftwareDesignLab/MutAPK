@@ -32,13 +32,13 @@ public class InvalidURI implements MutationOperator {
 		for(int i=0; i < mLocation.getLine()-1; i++){
 			newLines.add(lines.get(i));
 		}
-		String newVarName = varName.substring(0, 1)+(Integer.parseInt(varName.substring(1))+2);
+		//String newVarName = varName.substring(0, 1)+(Integer.parseInt(varName.substring(1))+2);
 		String newVarValue = StringGenerator.generateRandomString();
 //		//Apply mutation
 		newLines.add("");
-		newLines.add("   const-string "+newVarName+", \""+newVarValue+"\"");
+		newLines.add("    const-string "+varName+", \""+newVarValue+"\"");
 		newLines.add("");
-		newLines.add(lines.get(mLocation.getLine()-1).replaceAll(varName, newVarName));
+		newLines.add(lines.get(mLocation.getLine()-1));
 		newLines.add("");
 		
 		for(int i=mLocation.getLine(); i < lines.size() ; i++){
