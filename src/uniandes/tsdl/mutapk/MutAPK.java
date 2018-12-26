@@ -82,7 +82,7 @@ public class MutAPK {
 		Helper.getInstance();
 		Helper.setPackageName(appName);
 		// Decode the APK
-		//APKToolWrapper.openAPK(apkPath, extraPath);
+		APKToolWrapper.openAPK(apkPath, extraPath);
 
 		//Read selected operators
 		OperatorBundle operatorBundle = new OperatorBundle(operatorsDir);
