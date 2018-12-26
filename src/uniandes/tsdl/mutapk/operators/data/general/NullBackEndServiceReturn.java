@@ -7,6 +7,7 @@ import java.util.List;
 import org.antlr.runtime.tree.CommonTree;
 
 import uniandes.tsdl.antlr.smaliParser;
+import uniandes.tsdl.mutapk.helper.ASTHelper;
 import uniandes.tsdl.mutapk.helper.FileHelper;
 import uniandes.tsdl.mutapk.helper.Helper;
 import uniandes.tsdl.mutapk.helper.HexadecimalGenerator;
@@ -60,8 +61,9 @@ public class NullBackEndServiceReturn implements MutationOperator {
 	private void performMutationParam(CommonTree tree, MutationLocation location, List<String> newLines, List<String> lines) {
 		// TODO Auto-generated method stub
 		
-		CommonTree brother = (CommonTree) tree.getParent().getChild(tree.getChildIndex()+1);
+		CommonTree brother = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT11x, "move-result-object", tree);
 		String varName = brother.getChild(1).toString();
+		
 		
 		for(int i=0; i < brother.getLine(); i++){
 			newLines.add(lines.get(i));
