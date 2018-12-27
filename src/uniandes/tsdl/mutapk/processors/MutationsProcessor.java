@@ -71,13 +71,13 @@ public class MutationsProcessor {
 				mutationLocation.setFilePath(newMutationPath);
 				operator.performMutation(mutationLocation, writer, mutantIndex);
 				Long mutationEnd = System.currentTimeMillis();
-				APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName, mutantIndex);
+				boolean result = APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName, mutantIndex);
 				File mutatedFile = new File(newMutationPath);
 				String fileName = (new File(newMutationPath)).getName();
 				File mutantRootFolderDir = new File(mutantRootFolder+fileName);
 				FileUtils.copyFile(mutatedFile, mutantRootFolderDir);
 				File srcFolder = new File(mutantFolder);
-				FileUtils.deleteDirectory(srcFolder);
+				if(result) {FileUtils.deleteDirectory(srcFolder);}
 				Long buildEnd = System.currentTimeMillis();
 				Long mutationTime = mutationEnd-mutationIni;
 				Long buildingTime = buildEnd - mutationEnd;
