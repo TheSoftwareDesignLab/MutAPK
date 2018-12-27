@@ -22,7 +22,16 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
 		CommonTree cast = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT21c_TYPE, "check-cast", parent);
-		String varName = cast.getChild(1).toString();
+		String varName = "";
+		int position = -1;
+		if(cast!=null && (cast.getLine()-parent.getLine()<5)) {
+			varName = cast.getChild(1).toString();
+			position = cast.getLine();
+		} else {
+			CommonTree moveResultObject = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT11x, "move-result-object", parent);
+			varName = moveResultObject.getChild(1).toString();
+			position = moveResultObject.getLine();
+		}
 		
 
 		List<String> newLines = new ArrayList<String>();
@@ -38,13 +47,13 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 		newLines.add("    const/4 "+varName+", 0x0");
 		newLines.add("");
 		
-		for(int i=cast.getLine(); i < lines.size() ; i++){
+		for(int i=position; i < lines.size() ; i++){
 			newLines.add(lines.get(i));
 		}
 
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
-		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {mLocation.getLine(), cast.getLine()}, writer);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {mLocation.getLine(), position}, writer);
 		writer.write("	For mutant "+mutantIndex+" the element retrieved at line "+location.getStartLine()+" has been set to null");
 		writer.newLine();
 		writer.flush();
