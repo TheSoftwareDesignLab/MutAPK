@@ -22,7 +22,13 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
 		CommonTree cast = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT21c_TYPE, "check-cast", parent);
-		String varName = cast.getChild(1).toString();
+		String varName = "";
+		if(cast!=null) {
+			varName = cast.getChild(1).toString();			
+		} else {
+			CommonTree moveResultObject = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT11x, "move-result-object", parent);
+			varName = moveResultObject.getChild(1).toString();
+		}
 		
 
 		List<String> newLines = new ArrayList<String>();
