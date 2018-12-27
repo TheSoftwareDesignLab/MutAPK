@@ -24,7 +24,7 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 		CommonTree cast = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT21c_TYPE, "check-cast", parent);
 		String varName = "";
 		int position = -1;
-		if(cast!=null) {
+		if(cast!=null && (cast.getLine()-parent.getLine()<5)) {
 			varName = cast.getChild(1).toString();
 			position = cast.getLine();
 		} else {
@@ -53,7 +53,7 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
-		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {mLocation.getLine(), cast.getLine()}, writer);
+		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {mLocation.getLine(), position}, writer);
 		writer.write("	For mutant "+mutantIndex+" the element retrieved at line "+location.getStartLine()+" has been set to null");
 		writer.newLine();
 		writer.flush();
