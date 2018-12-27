@@ -23,11 +23,14 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
 		CommonTree cast = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT21c_TYPE, "check-cast", parent);
 		String varName = "";
+		int position = -1;
 		if(cast!=null) {
-			varName = cast.getChild(1).toString();			
+			varName = cast.getChild(1).toString();
+			position = cast.getLine();
 		} else {
 			CommonTree moveResultObject = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT11x, "move-result-object", parent);
 			varName = moveResultObject.getChild(1).toString();
+			position = moveResultObject.getLine();
 		}
 		
 
@@ -44,7 +47,7 @@ public class FindViewByIdReturnsNull implements MutationOperator {
 		newLines.add("    const/4 "+varName+", 0x0");
 		newLines.add("");
 		
-		for(int i=cast.getLine(); i < lines.size() ; i++){
+		for(int i=position; i < lines.size() ; i++){
 			newLines.add(lines.get(i));
 		}
 
