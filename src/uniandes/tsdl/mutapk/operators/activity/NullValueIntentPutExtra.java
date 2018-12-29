@@ -37,9 +37,9 @@ public class NullValueIntentPutExtra implements MutationOperator{
 //		
 //		
 		//Apply mutation
-		newLines.add("    new-array v9, v9, [Landroid/os/Parcelable;");
+		newLines.add("    new-array "+extraNamePos+", "+extraNamePos+", [Landroid/os/Parcelable;");
 		newLines.add("");
-		String invoke = lines.get(location.getLine()-1).replace(extraNamePos, "v9");
+		String invoke = lines.get(location.getLine()-1);//.replace(extraNamePos, "v9");
 		String newInvoke = invoke.substring(0, extraTypePos)+"[Landroid/os/Parcelable;"+invoke.substring(extraTypePos+extraTypeText.length());
 //		System.out.println(newInvoke);
 		newLines.add(newInvoke);
