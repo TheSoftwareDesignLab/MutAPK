@@ -39,9 +39,9 @@ public class APKToolWrapper {
 		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",Paths.get(decodedPath,extraPath,"apktool.jar").toAbsolutePath().toString(),"b",Paths.get(decodedPath,path,"src").toAbsolutePath().toString(),"-o",Paths.get(decodedPath,path,appName).toAbsolutePath().toString(),"-f"});
 		System.out.println("Building mutant "+mutantIndex+"...");
 		ps.waitFor();
-		ps = Runtime.getRuntime().exec(new String[]{"java","-jar",Paths.get(decodedPath,extraPath,"uber-apk-signer.jar").toAbsolutePath().toString(),"-a",Paths.get(decodedPath,path).toAbsolutePath().toString()});
+		Process pss = Runtime.getRuntime().exec(new String[]{"java","-jar",Paths.get(decodedPath,extraPath,"uber-apk-signer.jar").toAbsolutePath().toString(),"-a",Paths.get(decodedPath,path).toAbsolutePath().toString(),"-o",Paths.get(decodedPath,path).toAbsolutePath().toString()});
 		System.out.println("Signing mutant "+mutantIndex+"...");
-		ps.waitFor();
+		pss.waitFor();
 		if(Files.exists(Paths.get(decodedPath,path,appName).toAbsolutePath())) {
 			System.out.println("SUCCESS: The "+mutantIndex+" mutant APK has been generated.");
 			return true;
@@ -59,5 +59,3 @@ public class APKToolWrapper {
 		//				System.out.println("INFO: "+new String(b));
 	}
 }
-
-
