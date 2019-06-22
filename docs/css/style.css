@@ -21,3 +21,7 @@
 .card.operator>.card-body{
     background-color: #ffffff !important;
 }
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
