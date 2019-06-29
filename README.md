@@ -28,7 +28,7 @@ The generated runnable jar can be found in: ``MutAPK/target/MutAPK-0.0.1.jar``
 # Usage
 To run MutAPK use the following command, specifying the required arguments:
 ```
-java -jar MutAPK-0.0.1.jar <APKPath> <AppPackage> <Output> <ExtraComponentFolder> <operatorsDir> <multithread>
+java -jar MutAPK-0.0.1.jar <APKPath> <AppPackage> <Output> <ExtraComponentFolder> <operatorsDir> <multithread> <amountMutants>?
 ```
 ### Arguments
 Provide the following list of required arguments when running MutAPK:
@@ -38,6 +38,7 @@ Provide the following list of required arguments when running MutAPK:
 4. ``ExtraCompFolder``:  relative path of the extra component folder (``MutAPK/extra/``);
 5. ``operatorsDir``: relative path to the folder containing the operators.properties.
 6. ``multithread`` : true or false, specifying whether the mutant generation should be multithreaded or not.
+7. ``amountOfMutants`` : Amount of mutants to be generated [OptionalParameter]
 
 Mutation operators can be selected or deselected editing the ``operators.properties`` file. To deselect an operator, either comment (#) or delete the corresponding line.
 ### Example
