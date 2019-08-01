@@ -1,12 +1,3 @@
----
-layout: default
----
-
-<!-- <p align="center">
-    <img src="https://raw.githubusercontent.com/ravelinx22/KrakenMobile/master/reporter/assets/images/kraken.png" alt="kraken logo" width="140" height="193">
-</p> -->
-
-<!-- <h3 align="center">Kraken Mobile</h3> -->
 # Purpose
 
 This project was created by The Sofware Design Lab at the Universidad de los Andes. The major goal of the MutAPK project is to enable mutation testing over android application by third-party services that provide on-the-cloud infraestructures. This project uses APK files instead of source code to generate mutants. It is based on MDroid+ project that generates mutants from source code. MutAPK provides the 38 Android-specific mutation operators founded by MDroid+ researchers that can be easily seeded into target application due to working with compiled files. 
