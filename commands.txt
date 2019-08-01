@@ -1,8 +1,0 @@
-WINDOWS:
-- mvn clean && mvn package && del test\MutAPK-0.0.1.jar && copy target\MutAPK-0.0.1.jar test
-- del test/temp/ && cp target/MutAPK-0.0.1.jar test/ && cd test/ && java -jar MutAPK-0.0.1.jar io.github.hidroh.materialistic_75.apk materialistic mutantes extra && cd ..
-- '/c/Program Files/Java/jdk1.8.0_77/bin/keytool.exe' -genkey -v -keystore materialistic.jks -keyalg RSA -keysize 2048 - validity 10000 -alias my-alias
-- cd test && c:\Users\caev0\AppData\Local\Android\sdk\build-tools\24.0.3\apksigner.bat sign -ks ..\materialistic.jks --out mutantes\materialistic-mutant2\signed-materialistic.apk mutantes\materialistic-mutant2\io.github.hidroh.materialistic_75.apk
-UNIX
-- mvn clean && mvn package && rm test/MutAPK-0.0.1.jar && cp target/MutAPK-0.0.1.jar
-- rm -rf test/temp/ && cp target/MutAPK-0.0.1.jar test/ && cd test/ && java -jar MutAPK-0.0.1.jar io.github.hidroh.materialistic_75.apk materialistic mutantes extra && cd ..
