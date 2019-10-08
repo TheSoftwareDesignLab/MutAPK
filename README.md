@@ -7,6 +7,10 @@ This project was created by The Sofware Design Lab at the Universidad de los And
 <p align="center">
 <iframe width="500" height="282" src="https://www.youtube.com/embed/Pa448bHXKxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
+# Publications
+
+- _"MutAPK: Source-Codeless Mutant Generation for Android Apps"_, [Camilo Escobar-Velásquez](https://caev03.github.io), [Michael Osorio-Riaño](https://MichaelOsorio2017.github.io), and  [Mario Linares-Vásquez](https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/), _he 34th IEEE/ACM International Conference on Automated Software Engineering ([ASE'19](https://2019.ase-conferences.org/))_, Demonstrations Track, San Diego, CA, USA, November 11th - 15th, 2019, to appear 4 pages (53.7% Acceptance Rate) [[pdf](/assets/pdfs/escobar2019mutapk.pdf)][[bibtex](/assets/pdfs/escobar2019mutapk.bib)]
+
 # Summary
 MutAPK is a mutation analysis framework for Android applications over APK Files.
 MutAPK implements 35 mutation operators specifically for Android apps, covering the following categories:
