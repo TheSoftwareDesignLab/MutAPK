@@ -1,0 +1,10 @@
+# 30	=	BuggyGUIListener
+# 15	=	BluetoothAdapterAlwaysEnabled
+# 31	=	InvalidIDFindView
+# 2	=	DifferentActivityIntentDefinition
+#4	=	InvalidKeyIntentPutExtra
+#17	=	InvalidURI
+#28	=	InvalidColor
+#20	=	NullBackEndServiceReturn
+#27	=	FindViewByIdReturnsNull
+6	=	NullIntent
