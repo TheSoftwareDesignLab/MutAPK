@@ -71,6 +71,10 @@ public class OperatorBundle {
 		return textBasedDetectors;
 	}
 	
+	public int getAmountOfSelectedOperators() {
+		return bundle.keySet().size();
+	}
+	
 	public String printSelectedOperators() {
 		
 		Set<String> ids = bundle.keySet();
