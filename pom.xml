@@ -1,22 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>MutAPK</groupId>
-	<artifactId>MutAPK</artifactId>
-	<version>0.0.1</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.uniandes.thesoftwaredesignlab</groupId>
+  <artifactId>MutAPK</artifactId>
+  <version>0.0.1</version>
 	<name>MutAPK</name>
 	<description>Android Application Mutation Testion over APK files</description>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>src</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
-		<plugins>
+  <plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
@@ -41,7 +31,7 @@
 								<!-- add Main-Class to manifest file -->
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>uniandes.tsdl.mutapk.MutAPK</mainClass>
+									<mainClass>edu.uniandes.tsdl.mutapk.MutAPK</mainClass>
 								</transformer>
 							</transformers>
 							<filters>
@@ -118,4 +108,5 @@
 		    <version>2.2.3</version>
 		</dependency>
 	</dependencies>
+  
 </project>
