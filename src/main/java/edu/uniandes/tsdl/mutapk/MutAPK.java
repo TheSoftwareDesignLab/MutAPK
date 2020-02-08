@@ -119,9 +119,11 @@ public class MutAPK {
 
 		Set<MutationType> keys = locations.keySet();
 		List<MutationLocation> list = null;
+		int totalMutants = 0;
 		System.out.println("Amount Mutants	Mutation Operator");
 		for (MutationType mutationType : keys) {
 			list = locations.get(mutationType);
+			totalMutants += list.size();
 			System.out.println(list.size()+"		"+mutationType);
 			//			for (MutationLocation mutationLocation : list) {
 			//				System.out.println("File: "+mutationLocation.getFilePath()+", start line:" + mutationLocation.getStartLine()+", end line: "+mutationLocation.getEndLine()+", start column"+mutationLocation.getStartColumn());
