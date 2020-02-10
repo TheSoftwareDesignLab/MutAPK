@@ -1,10 +1,10 @@
-package edu.uniandes.tsdl.mutapk.operators.selector;
+package edu.uniandes.tsdl.mutapk.selector;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import edu.uniandes.tsdl.mutapk.operators.selector.TargetPopulation;
+import edu.uniandes.tsdl.mutapk.selector.TargetPopulation;
 
 public class TargetPopulationTest {
 	

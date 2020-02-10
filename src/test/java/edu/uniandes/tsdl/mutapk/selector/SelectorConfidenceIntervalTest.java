@@ -1,4 +1,4 @@
-package edu.uniandes.tsdl.mutapk.operators.selector;
+package edu.uniandes.tsdl.mutapk.selector;
 
 import static org.junit.Assert.*;
 
@@ -10,6 +10,8 @@ import org.junit.Test;
 
 import edu.uniandes.tsdl.mutapk.model.MutationType;
 import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
+import edu.uniandes.tsdl.mutapk.selector.ConfidenceIntervalSelector;
+import edu.uniandes.tsdl.mutapk.selector.SelectorConfidenceInterval;
 
 public class SelectorConfidenceIntervalTest {
 
@@ -20,7 +22,7 @@ public class SelectorConfidenceIntervalTest {
 	 */
 
 	@Test
-	public void SelectorConfidenceIntervalIndividual100PS99CLP1MEP() {
+	public void SelectorConfidenceIntervalIndividual100PS99CLP1MEPTest() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(1, 100);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 100, true, 99, 1);
@@ -30,7 +32,7 @@ public class SelectorConfidenceIntervalTest {
 	}
 	
 	@Test
-	public void SelectorConfidenceIntervalIndividual10000PS99CLP10MEP() {
+	public void SelectorConfidenceIntervalIndividual10000PS99CLP10MEPTest() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(1, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 10000, true, 99, 10);
@@ -40,7 +42,7 @@ public class SelectorConfidenceIntervalTest {
 	}
 	
 	@Test
-	public void SelectorConfidenceIntervalIndividual1000PS90CLP10MEP() {
+	public void SelectorConfidenceIntervalIndividual1000PS90CLP10MEPTest() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(1, 1000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 1000, true, 90, 10);
@@ -50,7 +52,7 @@ public class SelectorConfidenceIntervalTest {
 	}
 	
 	@Test
-	public void SelectorConfidenceIntervalIndividual10000PS85CLP10MEP() {
+	public void SelectorConfidenceIntervalIndividual10000PS85CLP10MEPTest() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(1, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 10000, true, 85, 10);
@@ -60,7 +62,7 @@ public class SelectorConfidenceIntervalTest {
 	}
 	
 	@Test
-	public void SelectorConfidenceIntervalIndividual10000PS85CLP10MEP2Types() {
+	public void SelectorConfidenceIntervalIndividual10000PS85CLP10MEP2TypesTest() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(2, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 10000, true, 85, 10);
@@ -70,7 +72,7 @@ public class SelectorConfidenceIntervalTest {
 	}
 	
 	@Test
-	public void SelectorConfidenceIntervalIndividual1000PS90CLP10MEP3Types() {
+	public void SelectorConfidenceIntervalIndividual1000PS90CLP10MEP3TypesTest() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(3, 1000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 1000, true, 90, 10);
@@ -80,7 +82,7 @@ public class SelectorConfidenceIntervalTest {
 	}
 	
 	@Test
-	public void SelectorConfidenceIntervalAll100PS99CLP1MEP2Types() {
+	public void SelectorConfidenceIntervalAll100PS99CLP1MEP2TypesTest() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(2, 100);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 200, false, 99, 1);
@@ -91,7 +93,7 @@ public class SelectorConfidenceIntervalTest {
 	}
 	
 	@Test
-	public void SelectorConfidenceIntervalAll10000PS99CLP10MEP2Types() {
+	public void SelectorConfidenceIntervalAll10000PS99CLP10MEP2TypesTest() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(2, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 20000, false, 99, 10);
@@ -102,7 +104,7 @@ public class SelectorConfidenceIntervalTest {
 	}
 	
 	@Test
-	public void SelectorConfidenceIntervalIndividual10000PS85CLP10MEP5Types() {
+	public void SelectorConfidenceIntervalIndividual10000PS85CLP10MEP5TypesTest() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(5, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 50000, false, 85, 10);

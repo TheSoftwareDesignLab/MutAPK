@@ -1,4 +1,4 @@
-package edu.uniandes.tsdl.mutapk.operators.selector;
+package edu.uniandes.tsdl.mutapk.selector;
 
 import org.apache.commons.math3.distribution.NormalDistribution;
 

@@ -24,11 +24,11 @@ import edu.uniandes.tsdl.mutapk.helper.Helper;
 import edu.uniandes.tsdl.mutapk.model.MutationType;
 import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
 import edu.uniandes.tsdl.mutapk.operators.OperatorBundle;
-import edu.uniandes.tsdl.mutapk.operators.selector.ConfidenceIntervalSelector;
-import edu.uniandes.tsdl.mutapk.operators.selector.SelectorConfidenceInterval;
 import edu.uniandes.tsdl.mutapk.processors.MutationsProcessor;
 import edu.uniandes.tsdl.mutapk.processors.SourceCodeProcessor;
 import edu.uniandes.tsdl.mutapk.processors.TextBasedDetectionsProcessor;
+import edu.uniandes.tsdl.mutapk.selector.ConfidenceIntervalSelector;
+import edu.uniandes.tsdl.mutapk.selector.SelectorConfidenceInterval;
 import edu.uniandes.tsdl.smali.LexerErrorInterface;
 
 public class MutAPK {

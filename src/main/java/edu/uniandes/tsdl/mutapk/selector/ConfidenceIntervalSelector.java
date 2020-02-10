@@ -1,4 +1,4 @@
-package edu.uniandes.tsdl.mutapk.operators.selector;
+package edu.uniandes.tsdl.mutapk.selector;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -65,10 +65,14 @@ public class ConfidenceIntervalSelector implements Selector {
 
 	private List<MutationLocation> IndividualConfidenceInterval(List<MutationLocation> mutants, int sampleSize) {
 		List<MutationLocation> newMutants = new LinkedList<MutationLocation>();
-
-		// TODO Verificar o(n)
 		MutationLocation mutationLocation = null;
-		int size = sampleSize - 1;
+		int listSize = mutants.size();
+		int size = 0;
+		if (listSize < sampleSize) {
+			return mutants;
+		}else {
+			size = sampleSize - 1;
+		}
 		for (int i = 0; i < sampleSize; i++) {
 			int random = (int) Math.floor(Math.random() * (size + 1));
 			mutationLocation = mutants.remove(random);
