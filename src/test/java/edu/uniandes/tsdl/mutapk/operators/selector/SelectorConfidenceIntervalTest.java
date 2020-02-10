@@ -87,15 +87,7 @@ public class SelectorConfidenceIntervalTest {
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(198, newmutationLocation.size());
-		/**
-		 * A Veces cambia el orden
-		 */
-		for (int i = 0; i < 99; i++) {
-			assertEquals("DifferentActivityIntentDefinition", newmutationLocation.get(i).getType().getName());
-		}
-		for (int i = 99; i < 198; i++) {
-			assertEquals("ActivityNotDefined", newmutationLocation.get(i).getType().getName());
-		}
+
 	}
 	
 	@Test
@@ -107,12 +99,6 @@ public class SelectorConfidenceIntervalTest {
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(166, newmutationLocation.size());
 		
-		for (int i = 0; i < 83; i++) {
-			assertEquals("DifferentActivityIntentDefinition", newmutationLocation.get(i).getType().getName());
-		}
-		for (int i = 99; i < 166; i++) {
-			assertEquals("ActivityNotDefined", newmutationLocation.get(i).getType().getName());
-		}
 	}
 	
 	@Test
@@ -123,22 +109,6 @@ public class SelectorConfidenceIntervalTest {
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(50, newmutationLocation.size());
-		
-		for (int i = 0; i < 10; i++) {
-			assertEquals("InvalidLabel", newmutationLocation.get(i).getType().getName());
-		}
-		for (int i = 10; i < 20; i++) {
-			assertEquals("DifferentActivityIntentDefinition", newmutationLocation.get(i).getType().getName());
-		}
-		for (int i = 20; i < 30; i++) {
-			assertEquals("InvalidActivityPATH", newmutationLocation.get(i).getType().getName());
-		}
-		for (int i = 30; i < 40; i++) {
-			assertEquals("InvalidKeyIntentPutExtra", newmutationLocation.get(i).getType().getName());
-		}
-		for (int i = 40; i < 50; i++) {
-			assertEquals("ActivityNotDefined", newmutationLocation.get(i).getType().getName());
-		}
 	}
 	
 	private HashMap<MutationType, List<MutationLocation>> creationLocations(int numberTypes, int sampleSize) {
