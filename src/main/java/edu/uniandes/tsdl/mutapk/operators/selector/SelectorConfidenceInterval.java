@@ -4,7 +4,6 @@ package edu.uniandes.tsdl.mutapk.operators.selector;
 public class SelectorConfidenceInterval extends SelectorType {
 	
 	private final boolean isCIIndividual;
-	private final boolean isCIAll;
 	private final int confidenceLevel;
 	private final int marginError;
 
@@ -18,10 +17,9 @@ public class SelectorConfidenceInterval extends SelectorType {
 	 * @param confidenceLevel
 	 * @param marginError
 	 */
-	public SelectorConfidenceInterval(boolean isConfidenceInterval, boolean isAPK, int totalMutants, boolean isCIIndividual, boolean isCIAll, int confidenceLevel, int marginError) {
+	public SelectorConfidenceInterval(boolean isConfidenceInterval, boolean isAPK, int totalMutants, boolean isCIIndividual, int confidenceLevel, int marginError) {
 		super(isConfidenceInterval, isAPK, totalMutants);
 		this.isCIIndividual = isCIIndividual;
-		this.isCIAll = isCIAll;
 		this.confidenceLevel = confidenceLevel;
 		this.marginError = marginError;
 	}
@@ -29,10 +27,6 @@ public class SelectorConfidenceInterval extends SelectorType {
 
 	public boolean isCIIndividual() {
 		return isCIIndividual;
-	}
-
-	public boolean isCIAll() {
-		return isCIAll;
 	}
 
 	public int confidenceLevel() {

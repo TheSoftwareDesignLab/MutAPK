@@ -24,6 +24,8 @@ import edu.uniandes.tsdl.mutapk.helper.Helper;
 import edu.uniandes.tsdl.mutapk.model.MutationType;
 import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
 import edu.uniandes.tsdl.mutapk.operators.OperatorBundle;
+import edu.uniandes.tsdl.mutapk.operators.selector.ConfidenceIntervalSelector;
+import edu.uniandes.tsdl.mutapk.operators.selector.SelectorConfidenceInterval;
 import edu.uniandes.tsdl.mutapk.processors.MutationsProcessor;
 import edu.uniandes.tsdl.mutapk.processors.SourceCodeProcessor;
 import edu.uniandes.tsdl.mutapk.processors.TextBasedDetectionsProcessor;
@@ -59,7 +61,9 @@ public class MutAPK {
 			System.out.println("4. Binaries path");
 			System.out.println("5. Directory containing the operator.properties file");
 			System.out.println("6. Multithread generation (true/false)");
-			System.out.println("7. OPTIONAL Amount of mutants");
+			System.out.println("7. isCIALL (true/false)");
+			System.out.println("8. Value Confidence Level");
+			System.out.println("9. Value Margin error ");
 			return;
 		}
 
@@ -71,10 +75,15 @@ public class MutAPK {
 		String extraPath = args[3];
 		String operatorsDir = args[4];
 		boolean multithread = Boolean.parseBoolean(args[5]);
-		int amountMutants = -1;
-		if(args.length>6) {
-			amountMutants = Integer.parseInt(args[6]);
-		}
+		//TODO PRUEBA
+		boolean isCIALL = Boolean.parseBoolean(args[6]);
+		int confidenceLevel = Integer.parseInt(args[7]);
+		int marginError = Integer.parseInt(args[8]);
+		
+//		int amountMutants = -1;
+//		if(args.length>6) {
+//			amountMutants = Integer.parseInt(args[6]);
+//		}
 
 
 		// Fix params based in OS
@@ -91,9 +100,9 @@ public class MutAPK {
 		OperatorBundle operatorBundle = new OperatorBundle(operatorsDir);
 		System.out.println(operatorBundle.printSelectedOperators());
 
-		if(amountMutants>0 && operatorBundle.getAmountOfSelectedOperators()>amountMutants) {
-			throw new Exception("You must select as many mutants as selected operators, right now you select "+operatorBundle.getAmountOfSelectedOperators()+" operators but only ask for "+amountMutants+" mutants");
-		}
+//		if(amountmutants>0 && operatorbundle.getamountofselectedoperators()>amountmutants) {
+//			throw new exception("you must select as many mutants as selected operators, right now you select "+operatorbundle.getamountofselectedoperators()+" operators but only ask for "+amountmutants+" mutants");
+//		}
 
 		Helper.getInstance();
 		Helper.setPackageName(appName);
@@ -135,11 +144,16 @@ public class MutAPK {
 		printLocationList(mutationLocationList, mutantsFolder, appName);
 		System.out.println("Total Locations: "+mutationLocationList.size());
 
-		if(amountMutants>0) {
-			System.out.println("We have found: "+mutationLocationList.size()+" possible mutation points, we are going to select "+amountMutants+" of those");
-			mutationLocationList = selectMutants(amountMutants, locations);
-			System.out.println(mutationLocationList.size());
-		}
+		//4. Selector
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, totalMutants, isCIALL, confidenceLevel, marginError);
+		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
+		mutationLocationList = CIMS.mutantSelector(locations, selectorConfidenceInterval);
+		
+//		if(amountMutants>0) {
+//			System.out.println("We have found: "+mutationLocationList.size()+" possible mutation points, we are going to select "+amountMutants+" of those");
+//			mutationLocationList = selectMutants(amountMutants, locations);
+//			System.out.println(mutationLocationList.size());
+//		}
 
 		//3. Run mutation phase
 		MutationsProcessor mProcessor = new MutationsProcessor("temp", appName, mutantsFolder);

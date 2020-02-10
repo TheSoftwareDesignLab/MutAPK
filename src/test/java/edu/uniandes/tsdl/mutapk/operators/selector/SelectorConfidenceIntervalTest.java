@@ -23,7 +23,7 @@ public class SelectorConfidenceIntervalTest {
 	public void SelectorConfidenceIntervalIndividual100PS99CLP1MEP() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(1, 100);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
-		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 100, true, false, 99, 1);
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 100, true, 99, 1);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(100, newmutationLocation.size());
@@ -33,7 +33,7 @@ public class SelectorConfidenceIntervalTest {
 	public void SelectorConfidenceIntervalIndividual10000PS99CLP10MEP() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(1, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
-		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 10000, true, false, 99, 10);
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 10000, true, 99, 10);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(164, newmutationLocation.size());
@@ -43,7 +43,7 @@ public class SelectorConfidenceIntervalTest {
 	public void SelectorConfidenceIntervalIndividual1000PS90CLP10MEP() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(1, 1000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
-		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 1000, true, false, 90, 10);
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 1000, true, 90, 10);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(64, newmutationLocation.size());
@@ -53,7 +53,7 @@ public class SelectorConfidenceIntervalTest {
 	public void SelectorConfidenceIntervalIndividual10000PS85CLP10MEP() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(1, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
-		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 10000, true, false, 85, 10);
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 10000, true, 85, 10);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(52, newmutationLocation.size());
@@ -63,7 +63,7 @@ public class SelectorConfidenceIntervalTest {
 	public void SelectorConfidenceIntervalIndividual10000PS85CLP10MEP2Types() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(2, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
-		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 10000, true, false, 85, 10);
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 10000, true, 85, 10);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(104, newmutationLocation.size());
@@ -73,7 +73,7 @@ public class SelectorConfidenceIntervalTest {
 	public void SelectorConfidenceIntervalIndividual1000PS90CLP10MEP3Types() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(3, 1000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
-		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 1000, true, false, 90, 10);
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 1000, true, 90, 10);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(192, newmutationLocation.size());
@@ -83,7 +83,7 @@ public class SelectorConfidenceIntervalTest {
 	public void SelectorConfidenceIntervalAll100PS99CLP1MEP2Types() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(2, 100);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
-		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 200, false, true, 99, 1);
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 200, false, 99, 1);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(198, newmutationLocation.size());
@@ -94,7 +94,7 @@ public class SelectorConfidenceIntervalTest {
 	public void SelectorConfidenceIntervalAll10000PS99CLP10MEP2Types() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(2, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
-		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 20000, false, true, 99, 10);
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 20000, false, 99, 10);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(166, newmutationLocation.size());
@@ -105,7 +105,7 @@ public class SelectorConfidenceIntervalTest {
 	public void SelectorConfidenceIntervalIndividual10000PS85CLP10MEP5Types() {
 		HashMap<MutationType, List<MutationLocation>> locations = creationLocations(5, 10000);
 		ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
-		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 50000, false, true, 85, 10);
+		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 50000, false, 85, 10);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 		assertEquals(50, newmutationLocation.size());
