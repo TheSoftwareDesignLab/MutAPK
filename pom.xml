@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.uniandes.thesoftwaredesignlab</groupId>
   <artifactId>MutAPK</artifactId>
-  <version>0.0.1</version>
+  <version>1.0.0</version>
 	<name>MutAPK</name>
 	<description>Android Application Mutation Testion over APK files</description>
 	<build>
@@ -52,7 +52,12 @@
 		</plugins>
 	</build>
 	<dependencies>
-	
+		<dependency>
+    		<groupId>junit</groupId>
+    		<artifactId>junit</artifactId>
+    		<version>4.12</version>
+    		<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-math3</artifactId>
