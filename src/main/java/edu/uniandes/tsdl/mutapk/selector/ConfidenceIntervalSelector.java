@@ -22,12 +22,14 @@ public class ConfidenceIntervalSelector implements Selector {
 			int confidenceLevel = selectorConfidenceInterval.confidenceLevel();
 			int marginError = selectorConfidenceInterval.marginError();
 			if(selectorConfidenceInterval.isCIIndividual()) {
+				System.out.println("El tipo de selector es de intervalo de confianza individual");
 				HashMap<MutationType, List<MutationLocation>> newListLocations = getNewListLocationsIndividual(locations,
 						confidenceLevel, marginError);
 				return MutationLocationListBuilder.buildList(newListLocations);
 			}else {
 				int totalMutants = selectorConfidenceInterval.getTotalMutants();
 				int allSampleSize = TargetPopulation.calculateSampleSize(totalMutants, confidenceLevel, marginError);
+				System.out.println("El tipo de selector es de intervalo de confianza general");
 				HashMap<MutationType, List<MutationLocation>> newListLocations = getNewListLocationAll(locations,
 						allSampleSize, totalMutants);
 				return MutationLocationListBuilder.buildList(newListLocations);
@@ -43,10 +45,16 @@ public class ConfidenceIntervalSelector implements Selector {
 		Set<MutationType> mutationKeys = locations.keySet();
 		List<MutationLocation> mutationsLocation = null;
 		int individualSampleSize = 0;
+		int mutationLocationSize = 0;
 		for (MutationType mutationKey : mutationKeys) {
 			mutationsLocation = locations.get(mutationKey);
-			individualSampleSize = (int) Math.round((double) (allSampleSize*mutationsLocation.size())/ totalMutants);
-			newListLocations.put(mutationKey, IndividualConfidenceInterval(mutationsLocation, individualSampleSize));
+			mutationLocationSize = mutationsLocation.size();
+			individualSampleSize =  (int) Math.ceil((double) (allSampleSize*mutationsLocation.size())/ totalMutants);
+			List<MutationLocation> mutations = IndividualConfidenceInterval(mutationsLocation, individualSampleSize);
+			newListLocations.put(mutationKey, mutations);
+			System.out.println("allsamplesize: "  + allSampleSize +  " mutationsLocationsSize: " + mutationsLocation.size() + " totalMutants: " + totalMutants); 
+			System.out.println("El Individual size es " + individualSampleSize);
+			System.out.println("Del tipo de mutación " +  mutationKey + ", se escogio " + mutations.size() + " mutaciones de un total de " + mutationLocationSize);
 		}
 		return newListLocations;
 	}
@@ -56,11 +64,16 @@ public class ConfidenceIntervalSelector implements Selector {
 		HashMap<MutationType, List<MutationLocation>> newListLocations = new HashMap<MutationType, List<MutationLocation>>();
 		Set<MutationType> mutationKeys = locations.keySet();
 		int sampleSize = 0;
+		int mutationLocationSize = 0;
 		List<MutationLocation> mutationsLocation = null;
 		for (MutationType mutationKey : mutationKeys) {
 			mutationsLocation = locations.get(mutationKey);
+			mutationLocationSize = mutationsLocation.size();
 			sampleSize = TargetPopulation.calculateSampleSize(mutationsLocation.size(), confidenceLevel, marginError);
-			newListLocations.put(mutationKey, IndividualConfidenceInterval(mutationsLocation, sampleSize));
+			List<MutationLocation> mutations = IndividualConfidenceInterval(mutationsLocation, sampleSize);
+			newListLocations.put(mutationKey, mutations);
+			System.out.println("IndividualSampleSize es: "  + sampleSize +  " mutationsLocationsSize: " + mutationsLocation.size());
+			System.out.println("Del tipo de mutación " +  mutationKey + ", se escogio " + mutations.size() + " mutaciones de un total de " + mutationLocationSize);
 		}
 		return newListLocations;
 	}
@@ -71,8 +84,6 @@ public class ConfidenceIntervalSelector implements Selector {
 		int size = sampleSize - 1;
 		for (int i = 0; i < sampleSize; i++) {
 			int random = (int) Math.floor(Math.random() * (size + 1));
-			System.out.println("sample size " + sampleSize);
-			System.out.println("size " + size + " Tamaño de lista " + mutants.size());
 			mutationLocation = mutants.remove(random);
 			size--;
 			newMutants.add(mutationLocation);
