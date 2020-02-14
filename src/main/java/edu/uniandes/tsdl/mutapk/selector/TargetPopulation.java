@@ -13,7 +13,7 @@ public class TargetPopulation {
 	}
 
 	public static int calculateSampleSize(int populationSize, int confidenceLevel, int marginError) {
-		if (populationSize <= 0) {
+		if (populationSize < 0) {
 			throw new IllegalArgumentException("The population size need to be a value bigger than 0");
 		}
 

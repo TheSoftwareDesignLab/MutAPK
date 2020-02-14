@@ -110,7 +110,7 @@ public class SelectorConfidenceIntervalTest {
 		SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false, 50000, false, 85, 10);
 	
 		List<MutationLocation> newmutationLocation = CIMS.mutantSelector(locations, selectorConfidenceInterval);
-		assertEquals(50, newmutationLocation.size());
+		assertEquals(55, newmutationLocation.size());
 	}
 	
 	private HashMap<MutationType, List<MutationLocation>> creationLocations(int numberTypes, int sampleSize) {

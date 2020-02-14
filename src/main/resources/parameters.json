@@ -1,0 +1,19 @@
+{
+	"APKPath": "test\apk\com.evancharlton.mileage_3110.apk",
+	"PackageName": "com.evancharlton.mileague",
+	"MutanPath": "test\mutants", 
+	"BinariesPath": "test\extra",
+	"DirectoryOfOperator.properties": "",
+	"MultithreadGeneration": "true",
+	"SelectorType": "ConfidenceLevel",
+	"AmountMutants":"1",
+	"ConfidenceLevel":{
+		"Individual":"true",
+		"ConfidenceLevel":"85",
+		"MarginError":"10"
+	}
+	"APKVersions":{
+		"OldAPKPath":"1",
+		"NewAPKPath":"1"
+	}
+}
