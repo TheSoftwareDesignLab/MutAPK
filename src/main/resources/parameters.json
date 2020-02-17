@@ -8,7 +8,7 @@
 	"SelectorType": "ConfidenceLevel",
 	"AmountMutants":"1",
 	"ConfidenceLevel":{
-		"Individual":"true",
+		"Individual":"false",
 		"ConfidenceLevel":"85",
 		"MarginError":"10"
 	}

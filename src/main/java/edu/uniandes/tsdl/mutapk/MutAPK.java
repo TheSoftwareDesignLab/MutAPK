@@ -212,6 +212,7 @@ public class MutAPK {
 		if (!"ALL".equals(selectorType)) {
 			if ("AmountMutants".equals(selectorType)) {
 				if (amountMutants > 0) {
+					System.out.println("Amount of mutants");
 					mutationLocationList = selectMutants(amountMutants, locations);
 				} else {
 					throw new IllegalArgumentException("Amount Mutants should be greater than 0 ");
@@ -229,9 +230,10 @@ public class MutAPK {
 				mutationLocationList = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 
 			} else if ("APKVersions".equals(selectorType)) {
+				//TODO
 				throw new UnsupportedOperationException("The " + selectorType + " is not implemented, yet");
 			} else {
-				throw new UnsupportedOperationException("The " + selectorType + " is not supported");
+				throw new UnsupportedOperationException("The " + selectorType + " is not recognized, the operators available are: ALL, ConfidenceLevel and APKVersions");
 			}
 		}
 

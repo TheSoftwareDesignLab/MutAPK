@@ -43,7 +43,7 @@ public class ConfidenceIntervalSelector implements Selector {
 		List<MutationLocation> mutationsLocationCopy = null;
 		int individualSampleSize = 0;
 		int totalSampleSize = 0;
-		System.out.println("Individual Sample Size		    Mutation Operator");
+		System.out.println("Individual Sample Size		Mutation Operator 1");
 		for (MutationType mutationKey : mutationKeys) {
 			mutationsLocation = locations.get(mutationKey);
 			individualSampleSize =  (int) Math.ceil((double) (allSampleSize*mutationsLocation.size())/ totalMutants);
@@ -64,7 +64,7 @@ public class ConfidenceIntervalSelector implements Selector {
 		int totalSampleSize = 0;
 		int sampleSize = 0;
 		List<MutationLocation> mutationsLocation = null;
-		System.out.println("Individual Sample Size		    Mutation Operator");
+		System.out.println("Individual Sample Size		    Mutation Operator 2");
 		for (MutationType mutationKey : mutationKeys) {
 			mutationsLocation = locations.get(mutationKey);
 			sampleSize = TargetPopulation.calculateSampleSize(mutationsLocation.size(), confidenceLevel, marginError);
