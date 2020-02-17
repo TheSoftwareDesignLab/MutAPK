@@ -85,11 +85,6 @@ public class TargetPopulationTest {
 		int size = TargetPopulation.calculateSampleSize(10000, 85, 10);
 		assertEquals(52, size);
 	}
-	
-	@Test(expected = IllegalArgumentException.class)
-	public void test0PS85CLP10MEP() {
-		TargetPopulation.calculateSampleSize(0, 85, 10);
-	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void test10000PSLess1CLP10MEP() {

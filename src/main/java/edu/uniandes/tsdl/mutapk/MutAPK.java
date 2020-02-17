@@ -3,6 +3,7 @@ package edu.uniandes.tsdl.mutapk;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -94,17 +95,15 @@ public class MutAPK {
 
 		JSONParser parser = new JSONParser();
 		try {
-			System.out.println("Path of json file");
-			//TODO
 			Object obj = parser
-					.parse(new FileReader("C:\\Users\\PERSONAL\\git\\MutAPK\\src\\main\\resources\\parameters.json"));
+					.parse(new FileReader(args[0]));
 			// A JSON object. Key value pairs are unordered. JSONObject supports
 			// java.util.Map interface.
 			JSONObject jsonObject = (JSONObject) obj;
 			apkPath = ".\\" + (String) jsonObject.get("APKPath");
 			appName = ".\\" + (String) jsonObject.get("PackageName");
 			mutantsFolder = ".\\" + (String) jsonObject.get("MutanPath");
-			extraPath = ".\\" + (String) jsonObject.get("BinariesPath") + "\\";
+			extraPath = ".\\" + (String) jsonObject.get("BinariesPath");
 			operatorsDir = ".\\" + (String) jsonObject.get("DirectoryOfOperator.properties");
 			multithread = Boolean.valueOf((String) jsonObject.get("MultithreadGeneration"));
 			selectorType = (String) jsonObject.get("SelectorType");
@@ -124,8 +123,10 @@ public class MutAPK {
 				}
 			}
 
-		} catch (Exception e) {
-			e.printStackTrace();
+		} catch (ArrayIndexOutOfBoundsException aib) {
+			System.out.println("Please write a path to the json file");
+		} catch (FileNotFoundException e) {
+			System.out.println(e.getMessage());
 		}
 		
 		System.out.println("Nombre		Valor");
