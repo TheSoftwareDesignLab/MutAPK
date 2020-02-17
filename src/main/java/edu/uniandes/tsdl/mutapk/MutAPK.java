@@ -280,7 +280,7 @@ public class MutAPK {
 
 		try {
 			BufferedWriter writer = new BufferedWriter(
-					new FileWriter(appName + "-locations.json"));
+					new FileWriter( mutantsFolder + File.separator + appName + "-locations.json"));
 			writer.write("{");
 			writer.newLine();
 			writer.flush();
