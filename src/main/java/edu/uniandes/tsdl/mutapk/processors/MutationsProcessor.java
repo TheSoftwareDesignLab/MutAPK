@@ -99,9 +99,11 @@ public class MutationsProcessor {
 			throws IOException {
 
 		final BufferedWriter writer = new BufferedWriter(
-				new FileWriter(getAppName() + "-mutants.log"));
+				new FileWriter(getMutantsRootFolder() 
+						+ File.separator + getAppName() + "-mutants.log"));
 		final BufferedWriter wwriter = new BufferedWriter(
-				new FileWriter(getAppName() + "-times.csv"));
+				new FileWriter(getMutantsRootFolder() 
+						+ File.separator + getAppName() + "-times.csv"));
 		wwriter.write("mutantIndex;mutantType;copyingTime;mutationTime;buildingTime");
 		wwriter.newLine();
 		wwriter.flush();
@@ -184,6 +186,7 @@ public class MutationsProcessor {
 		executor.shutdown();
 		if (executor.isTerminated()) {
 			writer.close();
+			wwriter.close();
 		}
 	}
 

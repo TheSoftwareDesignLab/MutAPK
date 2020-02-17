@@ -94,9 +94,10 @@ public class MutAPK {
 
 		JSONParser parser = new JSONParser();
 		try {
+			System.out.println("Path of json file");
+			//TODO
 			Object obj = parser
 					.parse(new FileReader("C:\\Users\\PERSONAL\\git\\MutAPK\\src\\main\\resources\\parameters.json"));
-
 			// A JSON object. Key value pairs are unordered. JSONObject supports
 			// java.util.Map interface.
 			JSONObject jsonObject = (JSONObject) obj;
