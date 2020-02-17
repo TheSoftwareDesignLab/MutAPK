@@ -31,7 +31,9 @@ import edu.uniandes.tsdl.mutapk.operators.OperatorBundle;
 import edu.uniandes.tsdl.mutapk.processors.MutationsProcessor;
 import edu.uniandes.tsdl.mutapk.processors.SourceCodeProcessor;
 import edu.uniandes.tsdl.mutapk.processors.TextBasedDetectionsProcessor;
-import edu.uniandes.tsdl.mutapk.selector.ConfidenceIntervalSelector;
+import edu.uniandes.tsdl.mutapk.selector.SelectorConfidenceIntervalMethod;
+import edu.uniandes.tsdl.mutapk.selector.SelectorAmountMutants;
+import edu.uniandes.tsdl.mutapk.selector.SelectorAmountMutantsMethod;
 import edu.uniandes.tsdl.mutapk.selector.SelectorConfidenceInterval;
 import edu.uniandes.tsdl.mutapk.selector.SelectorType;
 import edu.uniandes.tsdl.smali.LexerErrorInterface;
@@ -107,44 +109,50 @@ public class MutAPK {
 			operatorsDir = ".\\" + (String) jsonObject.get("DirectoryOfOperator.properties");
 			multithread = Boolean.valueOf((String) jsonObject.get("MultithreadGeneration"));
 			selectorType = (String) jsonObject.get("SelectorType");
+			
+			//Impreme valor por defecto
+			System.out.println("List of Values");
+			System.out.println("Name			Value");
+			System.out.println("apkPath 		" + apkPath);
+			System.out.println("appName 		" + appName);
+			System.out.println("mutantsFolder 		" + mutantsFolder);
+			System.out.println("extraPath 		" + extraPath);
+			System.out.println("operatorsDir 		" + operatorsDir);
+			System.out.println("multithread 		" + multithread);
+			System.out.println("selectorType 		" + selectorType);
 
 			if (!"ALL".equals(selectorType)) {
 				if ("AmountMutants".equals(selectorType)) {
 					amountMutants = Integer.parseInt((String) jsonObject.get("AmountMutants"));
+					System.out.println("amountMutants: 		" + amountMutants);
 				} else if ("ConfidenceLevel".equals(selectorType)) {
 					JSONObject jsonConfidenceLevelObject = (JSONObject) jsonObject.get("ConfidenceLevel");
 					isCIIndividual = Boolean.valueOf((String) jsonConfidenceLevelObject.get("Individual"));
 					confidenceLevel = Integer.parseInt((String) jsonConfidenceLevelObject.get("ConfidenceLevel"));
 					marginError = Integer.parseInt((String) jsonConfidenceLevelObject.get("MarginError"));
+					System.out.println("isCIIndividual: 	" + isCIIndividual);
+					System.out.println("confidenceLevel: 	" + confidenceLevel);
+					System.out.println("marginError: 		" + marginError);
 				} else if ("APKVersions".equals(selectorType)) {
 					JSONObject jsonAPKVersionsObject = (JSONObject) jsonObject.get("APKVersions");
 					apkOldPath = (String) jsonAPKVersionsObject.get("OldAPKPath");
 					apkNewPath = (String) jsonAPKVersionsObject.get("NewAPKPath");
+					System.out.println("apkOldPath: 		" + apkOldPath);
+					System.out.println("apkNewPath: 		" + apkNewPath);
+				}else {
+					throw new UnsupportedOperationException("The " + selectorType + " is not recognized, the operators available are: ALL, ConfidenceLevel and APKVersions");
 				}
 			}
-
-		} catch (ArrayIndexOutOfBoundsException aib) {
-			System.out.println("Please write a path to the json file");
+		} catch (ArrayIndexOutOfBoundsException e) {
+			throw new ArrayIndexOutOfBoundsException("Please write a valid path to the json file");
 		} catch (FileNotFoundException e) {
-			System.out.println(e.getMessage());
+			throw new FileNotFoundException("The file with path " + args[0] + " can't be found");
+		} catch(StringIndexOutOfBoundsException e) {
+			throw new StringIndexOutOfBoundsException("Please write a valid path to the json file");
 		}
 		
-		System.out.println("Nombre		Valor");
-		System.out.println("apkPath: " + apkPath);
-		System.out.println("appName: " + appName);
-		System.out.println("mutantsFolder: " + mutantsFolder);
-		System.out.println("extraPath: " + extraPath);
-		System.out.println("operatorsDir: " + operatorsDir);
-		System.out.println("multithread: " + multithread);
-		System.out.println("selectorType: " + selectorType);
-		System.out.println("amountMutants: " + amountMutants);
-		System.out.println("isCIIndividual: " + isCIIndividual);
-		System.out.println("confidenceLevel: " + confidenceLevel);
-		System.out.println("marginError: " + marginError);
-		System.out.println("apkOldPath: " + apkOldPath);
-		System.out.println("apkNewPath: " + apkNewPath);
-
-
+		System.out.println("--------------------------------------------------------------");
+	
 		// Fix params based in OS
 		String os = System.getProperty("os.name").toLowerCase();
 		if (os.indexOf("win") >= 0) {
@@ -213,7 +221,9 @@ public class MutAPK {
 			if ("AmountMutants".equals(selectorType)) {
 				if (amountMutants > 0) {
 					System.out.println("Amount of mutants");
-					mutationLocationList = selectMutants(amountMutants, locations);
+					SelectorAmountMutantsMethod selectorAmountMutantsMethod = new SelectorAmountMutantsMethod();
+					SelectorAmountMutants selectorAmountMutants = new SelectorAmountMutants(false, false, totalMutants, amountMutants);
+					mutationLocationList = selectorAmountMutantsMethod.mutantSelector(locations, selectorAmountMutants);
 				} else {
 					throw new IllegalArgumentException("Amount Mutants should be greater than 0 ");
 				}
@@ -226,7 +236,7 @@ public class MutAPK {
 				System.out.println("Confidencel Level: " + confidenceLevel + " Margin Error: " + marginError);
 				SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false,
 						totalMutants, isCIIndividual, confidenceLevel, marginError);
-				ConfidenceIntervalSelector CIMS = new ConfidenceIntervalSelector();
+				SelectorConfidenceIntervalMethod CIMS = new SelectorConfidenceIntervalMethod();
 				mutationLocationList = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 
 			} else if ("APKVersions".equals(selectorType)) {
@@ -246,36 +256,6 @@ public class MutAPK {
 			mProcessor.process(mutationLocationList, extraPath, apkName);
 		}
 
-	}
-
-	static List<MutationLocation> selectMutants(int amountMutants,
-			HashMap<MutationType, List<MutationLocation>> locations) {
-
-		HashMap<MutationType, List<MutationLocation>> newLocations = new HashMap<MutationType, List<MutationLocation>>();
-		HashMap<MutationType, List<MutationLocation>> tempLocations = locations;
-		int newAmountMutants = amountMutants;
-
-		for (MutationType key : tempLocations.keySet()) {
-			if (tempLocations.get(key).size() > 0) {
-				int selectedMutantNumber = (int) Math.random() * tempLocations.get(key).size();
-				MutationLocation selectedMutant = tempLocations.get(key).get(selectedMutantNumber);
-				ArrayList temp = new ArrayList<MutationLocation>();
-				temp.add(selectedMutant);
-				newLocations.put(key, temp);
-				tempLocations.get(key).remove(selectedMutantNumber);
-				newAmountMutants--;
-			}
-		}
-		List<MutationLocation> mutationLocationList = MutationLocationListBuilder.buildList(tempLocations);
-		List<MutationLocation> newMutationLocationList = MutationLocationListBuilder.buildList(newLocations);
-
-		for (int i = 0; i < newAmountMutants; i++) {
-			int selectedMutantNumber = (int) Math.random() * mutationLocationList.size();
-			MutationLocation selectedMutant = mutationLocationList.get(selectedMutantNumber);
-			newMutationLocationList.add(selectedMutant);
-			mutationLocationList.remove(selectedMutantNumber);
-		}
-		return newMutationLocationList;
 	}
 
 	private static void printLocationList(List<MutationLocation> mutationLocationList, String mutantsFolder,
