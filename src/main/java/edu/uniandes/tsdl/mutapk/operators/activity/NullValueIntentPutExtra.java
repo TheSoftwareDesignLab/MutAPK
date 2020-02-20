@@ -15,6 +15,7 @@ import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 
 public class NullValueIntentPutExtra implements MutationOperator{
 
+	@SuppressWarnings("unchecked")
 	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException {
 		
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;

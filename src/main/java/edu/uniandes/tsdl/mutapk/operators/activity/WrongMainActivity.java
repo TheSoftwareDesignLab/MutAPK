@@ -1,8 +1,13 @@
 package edu.uniandes.tsdl.mutapk.operators.activity;
 
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
 
 import edu.uniandes.tsdl.mutapk.helper.FileHelper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
@@ -13,7 +18,7 @@ import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 public class WrongMainActivity  implements MutationOperator{
 
 	@Override
-	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception{
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws ParserConfigurationException, SAXException, IOException {
 		
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());

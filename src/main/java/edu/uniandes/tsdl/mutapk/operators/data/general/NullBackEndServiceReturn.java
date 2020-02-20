@@ -1,6 +1,7 @@
 package edu.uniandes.tsdl.mutapk.operators.data.general;
 
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +10,6 @@ import org.antlr.runtime.tree.CommonTree;
 import edu.uniandes.tsdl.mutapk.helper.ASTHelper;
 import edu.uniandes.tsdl.mutapk.helper.FileHelper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
-import edu.uniandes.tsdl.mutapk.helper.HexadecimalGenerator;
 import edu.uniandes.tsdl.mutapk.model.location.ASTMutationLocation;
 import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
 import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
@@ -39,7 +39,7 @@ public class NullBackEndServiceReturn implements MutationOperator {
 		return true;
 	}
 
-	private void performMutationVariable(CommonTree tree, MutationLocation location, List<String> newLines, List<String> lines) {
+	private void performMutationVariable(CommonTree tree, MutationLocation location, List<String> newLines, List<String> lines) throws IOException {
 		// TODO Auto-generated method stub
 		
 		String varName = tree.getChild(0).toString();
@@ -58,7 +58,7 @@ public class NullBackEndServiceReturn implements MutationOperator {
 		FileHelper.writeLines(location.getFilePath(), newLines);
 	}
 
-	private void performMutationParam(CommonTree tree, MutationLocation location, List<String> newLines, List<String> lines) {
+	private void performMutationParam(CommonTree tree, MutationLocation location, List<String> newLines, List<String> lines) throws IOException {
 		// TODO Auto-generated method stub
 		
 		CommonTree brother = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT11x, "move-result-object", tree);

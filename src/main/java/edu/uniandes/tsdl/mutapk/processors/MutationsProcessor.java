@@ -42,7 +42,7 @@ public class MutationsProcessor {
 
 	}
 
-	public void process(List<MutationLocation> locations, String extraPath, String apkName) throws IOException {
+	public void process(List<MutationLocation> locations, String extraPath, String apkName) throws IOException, Exception {
 		MutationOperatorFactory factory = MutationOperatorFactory.getInstance();
 		MutationOperator operator = null;
 		int mutantIndex = 1;
@@ -87,7 +87,7 @@ public class MutationsProcessor {
 			} catch (Exception e) {
 				Logger.getLogger(MutationsProcessor.class.getName())
 						.warning("- Error generating mutant  " + mutantIndex);
-				e.printStackTrace();
+				throw new Exception("- Error generating mutant  " + mutantIndex);
 			}
 			mutantIndex++;
 		}
@@ -126,7 +126,7 @@ public class MutationsProcessor {
 			wwriter.flush();
 			results.add(executor.submit(new Callable<String>() {
 
-				public String call() {
+				public String call() throws NullPointerException, Exception {
 					try {
 						// Select operator
 						Long mutationIni = System.currentTimeMillis();
@@ -158,10 +158,12 @@ public class MutationsProcessor {
 						wwriter.flush();
 						// writer.close();
 
+					}catch (NullPointerException e) {
+						throw new NullPointerException("It is not possible to find the file");
 					} catch (Exception e) {
 						Logger.getLogger(MutationsProcessor.class.getName())
 								.warning("- Error generating mutant  " + currentMutationIndex);
-						e.printStackTrace();
+						throw new Exception("- Error generating mutant  " + currentMutationIndex);
 					}
 
 					return "";

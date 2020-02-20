@@ -1,6 +1,7 @@
 package edu.uniandes.tsdl.mutapk.operators.gui.android;
 
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,10 +17,11 @@ import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 public class ViewComponentNotVisible implements MutationOperator {
 
 	@Override
-	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception {
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException  {
 
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
+		@SuppressWarnings("unchecked")
 		List<CommonTree> hijos = (List<CommonTree>)parent.getChildren();
 		String constVarName = hijos.get(1).getChild(1).getText();
 		CommonTree selTree = ASTHelper.hasIPutAndIGet(mLocation.getTree());

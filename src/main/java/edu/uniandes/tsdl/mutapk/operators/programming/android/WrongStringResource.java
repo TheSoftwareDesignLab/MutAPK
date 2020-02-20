@@ -14,7 +14,7 @@ import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 public class WrongStringResource implements MutationOperator{
 
 	@Override
-	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception {
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException  {
 
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());

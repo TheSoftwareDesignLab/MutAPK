@@ -3,16 +3,19 @@ package edu.uniandes.tsdl.mutapk.detectors.xml;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import edu.uniandes.tsdl.mutapk.detectors.TextBasedDetector;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
@@ -26,7 +29,7 @@ public class SDKVersionDetector extends TextBasedDetector {
 	}
 
 	@Override
-	public List<MutationLocation> analyzeApp(String rootPath) throws Exception {
+	public List<MutationLocation> analyzeApp(String rootPath) throws ParserConfigurationException, SAXException, IOException {
 		List<MutationLocation> locations = new ArrayList<MutationLocation>();
 		List<String> sdkVersion = new ArrayList<String>();
 

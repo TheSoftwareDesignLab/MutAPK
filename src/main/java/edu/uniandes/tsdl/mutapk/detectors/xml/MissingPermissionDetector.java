@@ -3,6 +3,7 @@ package edu.uniandes.tsdl.mutapk.detectors.xml;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -20,7 +21,7 @@ public class MissingPermissionDetector extends TextBasedDetector {
 	}
 	
 	@Override
-	public List<MutationLocation> analyzeApp(String rootPath) throws Exception {
+	public List<MutationLocation> analyzeApp(String rootPath) throws IOException  {
 		Stack<String> stack = new Stack<>();
 		List<MutationLocation> locations = new ArrayList<MutationLocation>();
 	

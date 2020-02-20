@@ -1,6 +1,7 @@
 package edu.uniandes.tsdl.mutapk.operators.db.general;
 
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +16,7 @@ import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 public class InvalidIndexQueryParameter implements MutationOperator {
 
 	@Override
-	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception {
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException  {
 
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		CommonTree tree = mLocation.getTree();

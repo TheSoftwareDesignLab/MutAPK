@@ -3,6 +3,7 @@ package edu.uniandes.tsdl.mutapk.detectors.xml;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map.Entry;
@@ -10,10 +11,12 @@ import java.util.AbstractMap.SimpleEntry;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import edu.uniandes.tsdl.mutapk.detectors.TextBasedDetector;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
@@ -28,7 +31,7 @@ public class InvalidColorDetector extends TextBasedDetector {
 	}
 
 	@Override
-	public List<MutationLocation> analyzeApp(String rootPath) throws Exception {
+	public List<MutationLocation> analyzeApp(String rootPath) throws ParserConfigurationException, SAXException, IOException {
 		List<MutationLocation> locations = new ArrayList<MutationLocation>();
 		List<Entry<String,String>> colorHex = new ArrayList<Entry<String,String>>();
 

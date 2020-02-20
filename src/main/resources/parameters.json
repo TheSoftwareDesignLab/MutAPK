@@ -5,13 +5,13 @@
 	"BinariesPath": "extra",
 	"DirectoryOfOperator.properties": "",
 	"MultithreadGeneration": "true",
-	"SelectorType": "All",
-	"AmountMutants":"5",
+	"SelectorType": "ConfidenceLevel",
+	"AmountMutants":"1",
 	"ConfidenceLevel":{
 		"Individual":"false",
 		"ConfidenceLevel":"85",
 		"MarginError":"10"
-	}
+	},
 	"APKVersions":{
 		"OldAPKPath":"1",
 		"NewAPKPath":"1"

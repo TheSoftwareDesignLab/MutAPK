@@ -29,9 +29,4 @@ public abstract class MutationLocationDetector {
 		this.type = type;
 	}
 
-	
-	
-	
-	
-
 }

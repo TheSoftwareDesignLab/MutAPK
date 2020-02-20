@@ -1,13 +1,9 @@
 package edu.uniandes.tsdl.mutapk.detectors.code.visitors;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 
 import org.eclipse.jdt.core.dom.ASTVisitor;
-import org.eclipse.jdt.core.dom.AnonymousClassDeclaration;
 import org.eclipse.jdt.core.dom.ClassInstanceCreation;
-import org.eclipse.jdt.core.dom.IMethodBinding;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 

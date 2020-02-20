@@ -32,11 +32,11 @@ import edu.uniandes.tsdl.mutapk.operators.OperatorBundle;
 
 public class SourceCodeProcessor {
 
-	private HashSet<String> targetApis ;
-	private HashSet<String> targetDeclarations ;
+	private HashSet<String> targetApis;
+	private HashSet<String> targetDeclarations;
 
-	private HashMap<String, List<Integer>> targetApisAndMutypes ;
-	private HashMap<String, List<Integer>> targeDeclarationsAndMutypes ;
+	private HashMap<String, List<Integer>> targetApisAndMutypes;
+	private HashMap<String, List<Integer>> targeDeclarationsAndMutypes;
 
 	private List<String> activities;
 	private List<String> serializableClasses;

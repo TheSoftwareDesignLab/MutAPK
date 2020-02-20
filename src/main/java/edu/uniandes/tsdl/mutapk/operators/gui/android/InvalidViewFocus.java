@@ -1,6 +1,7 @@
 package edu.uniandes.tsdl.mutapk.operators.gui.android;
 
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +10,6 @@ import org.antlr.runtime.tree.CommonTree;
 import edu.uniandes.tsdl.mutapk.helper.ASTHelper;
 import edu.uniandes.tsdl.mutapk.helper.FileHelper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
-import edu.uniandes.tsdl.mutapk.helper.HexadecimalGenerator;
 import edu.uniandes.tsdl.mutapk.model.location.ASTMutationLocation;
 import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
 import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
@@ -18,7 +18,7 @@ import edu.uniandes.tsdl.antlr.smaliParser;
 public class InvalidViewFocus implements MutationOperator {
 
 	@Override
-	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception {
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException {
 		
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();

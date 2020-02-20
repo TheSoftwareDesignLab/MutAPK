@@ -1,12 +1,12 @@
 package edu.uniandes.tsdl.mutapk.operators.backend;
 
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.antlr.runtime.tree.CommonTree;
 
-import edu.uniandes.tsdl.mutapk.helper.ASTHelper;
 import edu.uniandes.tsdl.mutapk.helper.FileHelper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
 import edu.uniandes.tsdl.mutapk.model.location.ASTMutationLocation;
@@ -17,15 +17,13 @@ import edu.uniandes.tsdl.antlr.smaliParser;
 public class LengthyBackEndService implements MutationOperator {
 
 	@Override
-	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception {
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException {
 
 		
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		CommonTree method = (CommonTree) mLocation.getTree().getAncestor(smaliParser.I_METHOD);
-		CommonTree classs = (CommonTree) ((CommonTree) mLocation.getTree().getAncestors().get(0)).getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR);
-		
 		for(int i=0; i < method.getLine()-1; i++){
 			newLines.add(lines.get(i));
 		}

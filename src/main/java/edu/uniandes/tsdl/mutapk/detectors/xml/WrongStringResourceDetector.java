@@ -3,6 +3,7 @@ package edu.uniandes.tsdl.mutapk.detectors.xml;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class WrongStringResourceDetector extends TextBasedDetector {
 	}
 	
 	@Override
-	public List<MutationLocation> analyzeApp(String rootPath) throws Exception {
+	public List<MutationLocation> analyzeApp(String rootPath) throws IOException {
 		List<MutationLocation> locations = new ArrayList<MutationLocation>();
 	
 		String path = rootPath+File.separator+"res"+File.separator+"values"+File.separator+Helper.STRINGS;

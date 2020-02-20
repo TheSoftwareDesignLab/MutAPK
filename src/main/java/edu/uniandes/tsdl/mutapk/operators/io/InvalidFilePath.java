@@ -1,12 +1,10 @@
 package edu.uniandes.tsdl.mutapk.operators.io;
 
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.antlr.runtime.tree.CommonTree;
-
-import edu.uniandes.tsdl.mutapk.helper.ASTHelper;
 import edu.uniandes.tsdl.mutapk.helper.FileHelper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
 import edu.uniandes.tsdl.mutapk.helper.StringGenerator;
@@ -17,7 +15,7 @@ import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 public class InvalidFilePath implements MutationOperator{
 
 	@Override
-	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception {
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException  {
 		
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		String paramName = mLocation.getTree().getChild(1).getChild(1).toStringTree();

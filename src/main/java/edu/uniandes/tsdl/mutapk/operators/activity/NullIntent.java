@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.antlr.runtime.tree.CommonTree;
-
 import edu.uniandes.tsdl.mutapk.helper.FileHelper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
 import edu.uniandes.tsdl.mutapk.model.location.ASTMutationLocation;
@@ -15,13 +13,10 @@ import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 
 public class NullIntent implements MutationOperator{
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException {
 		
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
-		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
-		List<CommonTree> hijos = (List<CommonTree>)parent.getChildren();
 		String intentInstanceLineVar = mLocation.getTree().getChild(1).getChild(0).toString();
 		
 		List<String> newLines = new ArrayList<String>();

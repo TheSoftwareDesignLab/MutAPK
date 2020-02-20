@@ -49,11 +49,8 @@ public class MutAPK {
 			// System.out.println(finalTime);
 			// System.out.println(finalTime-initialTime);
 
-		} catch (NumberFormatException e) {
-			System.out.println("Amount of mutants parameter is not a number!");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 	}
 
@@ -143,12 +140,14 @@ public class MutAPK {
 					throw new UnsupportedOperationException("The " + selectorType + " is not recognized, the operators available are: ALL, ConfidenceLevel and APKVersions");
 				}
 			}
+		}catch (NumberFormatException e) {
+			throw new NumberFormatException("Amount of mutants parameter is not a number!");
 		} catch (ArrayIndexOutOfBoundsException e) {
 			throw new ArrayIndexOutOfBoundsException("Please write a valid path to the json file");
 		} catch (FileNotFoundException e) {
 			throw new FileNotFoundException("The file with path " + args[0] + " can't be found");
 		} catch(StringIndexOutOfBoundsException e) {
-			throw new StringIndexOutOfBoundsException("Please write a valid path to the json file");
+			throw new StringIndexOutOfBoundsException("Please write a path to the json file");
 		}
 		
 		System.out.println("--------------------------------------------------------------");
@@ -240,7 +239,6 @@ public class MutAPK {
 				mutationLocationList = CIMS.mutantSelector(locations, selectorConfidenceInterval);
 
 			} else if ("APKVersions".equals(selectorType)) {
-				//TODO
 				throw new UnsupportedOperationException("The " + selectorType + " is not implemented, yet");
 			} else {
 				throw new UnsupportedOperationException("The " + selectorType + " is not recognized, the operators available are: ALL, ConfidenceLevel and APKVersions");
@@ -259,9 +257,8 @@ public class MutAPK {
 	}
 
 	private static void printLocationList(List<MutationLocation> mutationLocationList, String mutantsFolder,
-			String appName) {
+			String appName) throws IOException {
 
-		try {
 			BufferedWriter writer = new BufferedWriter(
 					new FileWriter( mutantsFolder + File.separator + appName + "-locations.json"));
 			writer.write("{");
@@ -297,11 +294,6 @@ public class MutAPK {
 			writer.newLine();
 			writer.flush();
 			writer.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
 	}
 
 }

@@ -1,6 +1,7 @@
 package edu.uniandes.tsdl.mutapk.operators.programming.android;
 
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 public class MissingPermissionManifest implements MutationOperator{
 
 	@Override
-	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception {
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException  {
 
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());

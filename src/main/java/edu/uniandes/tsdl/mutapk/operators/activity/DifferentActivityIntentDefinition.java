@@ -12,7 +12,6 @@ import org.xml.sax.SAXException;
 
 import edu.uniandes.tsdl.mutapk.helper.FileHelper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
-import edu.uniandes.tsdl.mutapk.helper.StringGenerator;
 import edu.uniandes.tsdl.mutapk.model.location.ASTMutationLocation;
 import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
 import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
@@ -26,13 +25,15 @@ public class DifferentActivityIntentDefinition  implements MutationOperator{
 		Helper h = Helper.getInstance();
 		List<String> activities = h.getActivities();
 		CommonTree parent = (CommonTree) mLocation.getTree().getParent();
-		List hijos = (List<CommonTree>)parent.getChildren();
+		@SuppressWarnings("unchecked")
+		List<CommonTree> hijos = (List<CommonTree>)parent.getChildren();
 		boolean founded = false;
 		String toMutate = "";
 		String mutatedString = "";
 		int realLine = 0;
 		for (int i = mLocation.getTree().getChildIndex(); i > 0 && !founded; i--) {
 			CommonTree temp = (CommonTree) hijos.get(i);
+			@SuppressWarnings("unchecked")
 			List<CommonTree> hijoss = (List<CommonTree>) temp.getChildren();
 			if(temp.getType()==142 
 					&& hijoss.get(0).getText().equals("const-class")){

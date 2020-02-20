@@ -21,7 +21,8 @@ public class InvalidKeyIntentPutExtra implements MutationOperator{
 		
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
         CommonTree parent = (CommonTree) mLocation.getTree().getParent();
-        List<CommonTree> hijos = (List<CommonTree>)parent.getChildren();
+        @SuppressWarnings("unchecked")
+		List<CommonTree> hijos = (List<CommonTree>)parent.getChildren();
         String extraKeyVar = hijos.get(1).getChild(1).toString();
         CommonTree method = (CommonTree) parent.getParent();
         int putExtraPos = parent.getChildIndex();
