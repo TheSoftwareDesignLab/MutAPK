@@ -2,25 +2,17 @@ package edu.uniandes.tsdl.mutapk;
 
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
-import org.antlr.runtime.CommonTokenStream;
-import org.antlr.runtime.TokenSource;
-import org.antlr.runtime.tree.CommonTree;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import edu.uniandes.tsdl.antlr.smaliParser;
-import edu.uniandes.tsdl.jflex.smaliFlexLexer;
 import edu.uniandes.tsdl.mutapk.detectors.MutationLocationDetector;
 import edu.uniandes.tsdl.mutapk.detectors.MutationLocationListBuilder;
 import edu.uniandes.tsdl.mutapk.helper.APKToolWrapper;
@@ -35,8 +27,6 @@ import edu.uniandes.tsdl.mutapk.selector.SelectorConfidenceIntervalMethod;
 import edu.uniandes.tsdl.mutapk.selector.SelectorAmountMutants;
 import edu.uniandes.tsdl.mutapk.selector.SelectorAmountMutantsMethod;
 import edu.uniandes.tsdl.mutapk.selector.SelectorConfidenceInterval;
-import edu.uniandes.tsdl.mutapk.selector.SelectorType;
-import edu.uniandes.tsdl.smali.LexerErrorInterface;
 
 public class MutAPK {
 
@@ -51,6 +41,7 @@ public class MutAPK {
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+			e.printStackTrace();
 		}
 	}
 
@@ -99,13 +90,13 @@ public class MutAPK {
 			// A JSON object. Key value pairs are unordered. JSONObject supports
 			// java.util.Map interface.
 			JSONObject jsonObject = (JSONObject) obj;
-			apkPath = ".\\" + (String) jsonObject.get("APKPath");
-			appName = ".\\" + (String) jsonObject.get("PackageName");
-			mutantsFolder = ".\\" + (String) jsonObject.get("MutanPath");
-			extraPath = ".\\" + (String) jsonObject.get("BinariesPath");
-			operatorsDir = ".\\" + (String) jsonObject.get("DirectoryOfOperator.properties");
-			multithread = Boolean.valueOf((String) jsonObject.get("MultithreadGeneration"));
-			selectorType = (String) jsonObject.get("SelectorType");
+			apkPath = getVariableValuesString(jsonObject, "APKPath");
+			appName = getVariableValuesString(jsonObject, "PackageName");
+			mutantsFolder = getVariableValuesString(jsonObject, "MutanPath");
+			extraPath = getVariableValuesString(jsonObject, "BinariesPath");
+			operatorsDir = getVariableValuesString(jsonObject, "DirectoryOfOperator.properties");
+			multithread = Boolean.valueOf(getVariableValuesString(jsonObject,"MultithreadGeneration"));
+			selectorType = getVariableValues(jsonObject,"SelectorType");
 			
 			//Impreme valor por defecto
 			System.out.println("List of Values");
@@ -120,20 +111,20 @@ public class MutAPK {
 
 			if (!"ALL".equals(selectorType)) {
 				if ("AmountMutants".equals(selectorType)) {
-					amountMutants = Integer.parseInt((String) jsonObject.get("AmountMutants"));
+					amountMutants = Integer.parseInt(getVariableValues(jsonObject,"AmountMutants"));
 					System.out.println("amountMutants: 		" + amountMutants);
 				} else if ("ConfidenceLevel".equals(selectorType)) {
 					JSONObject jsonConfidenceLevelObject = (JSONObject) jsonObject.get("ConfidenceLevel");
-					isCIIndividual = Boolean.valueOf((String) jsonConfidenceLevelObject.get("Individual"));
-					confidenceLevel = Integer.parseInt((String) jsonConfidenceLevelObject.get("ConfidenceLevel"));
-					marginError = Integer.parseInt((String) jsonConfidenceLevelObject.get("MarginError"));
+					isCIIndividual = Boolean.valueOf(getVariableValues(jsonConfidenceLevelObject, "Individual"));
+					confidenceLevel = Integer.parseInt(getVariableValues(jsonConfidenceLevelObject, "ConfidenceLevel"));
+					marginError = Integer.parseInt(getVariableValues(jsonConfidenceLevelObject, "MarginError"));
 					System.out.println("isCIIndividual: 	" + isCIIndividual);
 					System.out.println("confidenceLevel: 	" + confidenceLevel);
 					System.out.println("marginError: 		" + marginError);
 				} else if ("APKVersions".equals(selectorType)) {
 					JSONObject jsonAPKVersionsObject = (JSONObject) jsonObject.get("APKVersions");
-					apkOldPath = (String) jsonAPKVersionsObject.get("OldAPKPath");
-					apkNewPath = (String) jsonAPKVersionsObject.get("NewAPKPath");
+					apkOldPath = getVariableValues(jsonAPKVersionsObject, "OldAPKPath");
+					apkNewPath = getVariableValues(jsonAPKVersionsObject, "NewAPKPath");
 					System.out.println("apkOldPath: 		" + apkOldPath);
 					System.out.println("apkNewPath: 		" + apkNewPath);
 				}else {
@@ -166,9 +157,9 @@ public class MutAPK {
 		OperatorBundle operatorBundle = new OperatorBundle(operatorsDir);
 		System.out.println(operatorBundle.printSelectedOperators());
 
-//		if(amountmutants>0 && operatorbundle.getamountofselectedoperators()>amountmutants) {
-//			throw new exception("you must select as many mutants as selected operators, right now you select "+operatorbundle.getamountofselectedoperators()+" operators but only ask for "+amountmutants+" mutants");
-//		}
+		if(amountMutants>0 && operatorBundle.getAmountOfSelectedOperators() > amountMutants) {
+			throw new Exception("you must select as many mutants as selected operators, right now you select "+ operatorBundle.getAmountOfSelectedOperators() +" operators but only ask for "+ amountMutants +" mutants");
+		}
 
 		Helper.getInstance();
 		Helper.setPackageName(appName);
@@ -254,6 +245,24 @@ public class MutAPK {
 			mProcessor.process(mutationLocationList, extraPath, apkName);
 		}
 
+	}
+
+	private static String getVariableValues(JSONObject jsonObject, String name) {
+		String temp = (String) jsonObject.get(name);
+		if(temp != null) {
+			return temp;
+		}else {
+			throw new IllegalArgumentException("It's neccesary a value for the variable with name: " + name);
+		}
+	}
+
+	private static String getVariableValuesString(JSONObject jsonObject, String name) {
+		String temp = (String) jsonObject.get(name);
+		if(temp != null) {
+			return ".\\" + temp;
+		}else {
+			throw new IllegalArgumentException("It's neccesary a path for the " + name);
+		}
 	}
 
 	private static void printLocationList(List<MutationLocation> mutationLocationList, String mutantsFolder,
