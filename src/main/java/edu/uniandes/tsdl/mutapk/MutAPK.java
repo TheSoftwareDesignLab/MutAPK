@@ -164,7 +164,27 @@ public class MutAPK {
 		Helper.getInstance();
 		Helper.setPackageName(appName);
 		// Decode the APK
-		APKToolWrapper.openAPK(apkPath, extraPath);
+		String apkAbsolutePath = APKToolWrapper.openAPK(apkPath, extraPath);
+		File apkFile = new File(apkAbsolutePath);
+		System.out.println("APK FATHER: " +apkFile.getAbsolutePath());
+		String[] names = apkFile.list();
+		for (int i = 0; i < names.length; i++) {
+			System.out.println("File " + i + " " +  names[i]);
+		}
+		
+		File smali = new File(apkAbsolutePath + "/smali");
+		System.out.println("SMALI: " + smali.getAbsolutePath()); 
+		String[] namesSmali = smali.list();
+		for (int i = 0; i < namesSmali.length; i++) {
+			System.out.println("Smali File " + i + " " +  namesSmali[i]);
+		}
+		
+		File manifest = new File(apkAbsolutePath + "/AndroidManifest.xml");
+		System.out.println("Manifest: " + manifest.getAbsolutePath()); 
+		
+		File resource = new File(apkAbsolutePath + "/res");
+		System.out.println("Resource: " + resource.getAbsolutePath()); 
+		
 
 		// Text-Based operators selected
 		List<MutationLocationDetector> textBasedDetectors = operatorBundle.getTextBasedDetectors();
