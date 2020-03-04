@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -15,6 +16,9 @@ import org.json.simple.parser.JSONParser;
 
 import edu.uniandes.tsdl.mutapk.detectors.MutationLocationDetector;
 import edu.uniandes.tsdl.mutapk.detectors.MutationLocationListBuilder;
+import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHash;
+import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashSeparator;
+import edu.uniandes.tsdl.mutapk.hashfunction.sha3.Sha3;
 import edu.uniandes.tsdl.mutapk.helper.APKToolWrapper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
 import edu.uniandes.tsdl.mutapk.model.MutationType;
@@ -85,8 +89,7 @@ public class MutAPK {
 
 		JSONParser parser = new JSONParser();
 		try {
-			Object obj = parser
-					.parse(new FileReader(args[0]));
+			Object obj = parser.parse(new FileReader(args[0]));
 			// A JSON object. Key value pairs are unordered. JSONObject supports
 			// java.util.Map interface.
 			JSONObject jsonObject = (JSONObject) obj;
@@ -95,10 +98,10 @@ public class MutAPK {
 			mutantsFolder = getVariableValuesString(jsonObject, "MutanPath");
 			extraPath = getVariableValuesString(jsonObject, "BinariesPath");
 			operatorsDir = getVariableValuesString(jsonObject, "DirectoryOfOperator.properties");
-			multithread = Boolean.valueOf(getVariableValuesString(jsonObject,"MultithreadGeneration"));
-			selectorType = getVariableValues(jsonObject,"SelectorType");
-			
-			//Impreme valor por defecto
+			multithread = Boolean.valueOf(getVariableValuesString(jsonObject, "MultithreadGeneration"));
+			selectorType = getVariableValues(jsonObject, "SelectorType");
+
+			// Impreme valor por defecto
 			System.out.println("List of Values");
 			System.out.println("Name			Value");
 			System.out.println("apkPath 		" + apkPath);
@@ -111,7 +114,7 @@ public class MutAPK {
 
 			if (!"ALL".equals(selectorType)) {
 				if ("AmountMutants".equals(selectorType)) {
-					amountMutants = Integer.parseInt(getVariableValues(jsonObject,"AmountMutants"));
+					amountMutants = Integer.parseInt(getVariableValues(jsonObject, "AmountMutants"));
 					System.out.println("amountMutants: 		" + amountMutants);
 				} else if ("ConfidenceLevel".equals(selectorType)) {
 					JSONObject jsonConfidenceLevelObject = (JSONObject) jsonObject.get("ConfidenceLevel");
@@ -127,22 +130,23 @@ public class MutAPK {
 					apkNewPath = getVariableValues(jsonAPKVersionsObject, "NewAPKPath");
 					System.out.println("apkOldPath: 		" + apkOldPath);
 					System.out.println("apkNewPath: 		" + apkNewPath);
-				}else {
-					throw new UnsupportedOperationException("The " + selectorType + " is not recognized, the operators available are: ALL, ConfidenceLevel and APKVersions");
+				} else {
+					throw new UnsupportedOperationException("The " + selectorType
+							+ " is not recognized, the operators available are: ALL, ConfidenceLevel and APKVersions");
 				}
 			}
-		}catch (NumberFormatException e) {
+		} catch (NumberFormatException e) {
 			throw new NumberFormatException("Amount of mutants parameter is not a number!");
 		} catch (ArrayIndexOutOfBoundsException e) {
 			throw new ArrayIndexOutOfBoundsException("Please write a valid path to the json file");
 		} catch (FileNotFoundException e) {
 			throw new FileNotFoundException("The file with path " + args[0] + " can't be found");
-		} catch(StringIndexOutOfBoundsException e) {
+		} catch (StringIndexOutOfBoundsException e) {
 			throw new StringIndexOutOfBoundsException("Please write a path to the json file");
 		}
-		
+
 		System.out.println("--------------------------------------------------------------");
-	
+
 		// Fix params based in OS
 		String os = System.getProperty("os.name").toLowerCase();
 		if (os.indexOf("win") >= 0) {
@@ -157,8 +161,10 @@ public class MutAPK {
 		OperatorBundle operatorBundle = new OperatorBundle(operatorsDir);
 		System.out.println(operatorBundle.printSelectedOperators());
 
-		if(amountMutants>0 && operatorBundle.getAmountOfSelectedOperators() > amountMutants) {
-			throw new Exception("you must select as many mutants as selected operators, right now you select "+ operatorBundle.getAmountOfSelectedOperators() +" operators but only ask for "+ amountMutants +" mutants");
+		if (amountMutants > 0 && operatorBundle.getAmountOfSelectedOperators() > amountMutants) {
+			throw new Exception("you must select as many mutants as selected operators, right now you select "
+					+ operatorBundle.getAmountOfSelectedOperators() + " operators but only ask for " + amountMutants
+					+ " mutants");
 		}
 
 		Helper.getInstance();
@@ -166,26 +172,59 @@ public class MutAPK {
 		// Decode the APK
 		String apkAbsolutePath = APKToolWrapper.openAPK(apkPath, extraPath);
 		File apkFile = new File(apkAbsolutePath);
-		System.out.println("APK FATHER: " +apkFile.getAbsolutePath());
+		System.out.println("APK FATHER: " + apkFile.getAbsolutePath());
 		String[] names = apkFile.list();
 		for (int i = 0; i < names.length; i++) {
-			System.out.println("File " + i + " " +  names[i]);
+			System.out.println("File " + i + " " + names[i]);
 		}
-		
+
 		File smali = new File(apkAbsolutePath + "/smali");
-		System.out.println("SMALI: " + smali.getAbsolutePath()); 
+		System.out.println("SMALI: " + smali.getAbsolutePath());
 		String[] namesSmali = smali.list();
 		for (int i = 0; i < namesSmali.length; i++) {
-			System.out.println("Smali File " + i + " " +  namesSmali[i]);
+			System.out.println("Smali File " + i + " " + namesSmali[i]);
 		}
-		
-		File manifest = new File(apkAbsolutePath + "/AndroidManifest.xml");
-		System.out.println("Manifest: " + manifest.getAbsolutePath()); 
-		
-		File resource = new File(apkAbsolutePath + "/res");
-		System.out.println("Resource: " + resource.getAbsolutePath()); 
-		
 
+		File manifest = new File(apkAbsolutePath + "/AndroidManifest.xml");
+		System.out.println("Manifest: " + manifest.getAbsolutePath());
+
+		File resource = new File(apkAbsolutePath + "/res");
+		System.out.println("Resource: " + resource.getAbsolutePath());
+
+		//Normal hash
+		String hashManifest = Sha3.sha384File(manifest);
+		System.out.println("hashManifest " + hashManifest);
+		System.out.println("---------------------------------------------------");
+		String hashSmali = Sha3.sha384File(smali);
+		System.out.println("hashSmali " + hashSmali);
+		System.out.println("Sin Separador");
+		System.out.println("---------------------------------------------------");
+		String hashResource = Sha3.sha384File(resource);
+		System.out.println("hashResourceNormalito " + hashResource);
+		System.out.println("---------------------------------------------------");
+		
+		//hash with separator |
+		System.out.println();
+		String hashSmaliConSeperado = Sha3.sha384FileSeparte(smali);
+		System.out.println("hashSamaliConSeparador " + hashSmaliConSeperado);
+		System.out.println("---------------------------------------------------");
+		String hashResourceConSeperado = Sha3.sha384FileSeparte(resource);
+		System.out.println("hashSamaliConSeparador " + hashResourceConSeperado);
+		System.out.println("---------------------------------------------------");
+		
+		//Create hashSet
+		Set<ApkHash> apkHashes = new HashSet<ApkHash>();
+		Set<ApkHashSeparator> apkHashesSeparator = new HashSet<ApkHashSeparator>();
+		
+		//Create clases
+		ApkHash apkHash = new ApkHash.Builder(hashManifest, hashSmali, hashResource).build();
+		ApkHashSeparator apkHashSeparator = new ApkHashSeparator.Builder(hashManifest, hashSmaliConSeperado, hashResourceConSeperado).build();
+		
+		apkHashes.add(apkHash);
+		apkHashesSeparator.add(apkHashSeparator);
+		
+		
+		
 		// Text-Based operators selected
 		List<MutationLocationDetector> textBasedDetectors = operatorBundle.getTextBasedDetectors();
 
@@ -232,7 +271,8 @@ public class MutAPK {
 				if (amountMutants > 0) {
 					System.out.println("Amount of mutants");
 					SelectorAmountMutantsMethod selectorAmountMutantsMethod = new SelectorAmountMutantsMethod();
-					SelectorAmountMutants selectorAmountMutants = new SelectorAmountMutants(false, false, totalMutants, amountMutants);
+					SelectorAmountMutants selectorAmountMutants = new SelectorAmountMutants(false, false, totalMutants,
+							amountMutants);
 					mutationLocationList = selectorAmountMutantsMethod.mutantSelector(locations, selectorAmountMutants);
 				} else {
 					throw new IllegalArgumentException("Amount Mutants should be greater than 0 ");
@@ -252,7 +292,8 @@ public class MutAPK {
 			} else if ("APKVersions".equals(selectorType)) {
 				throw new UnsupportedOperationException("The " + selectorType + " is not implemented, yet");
 			} else {
-				throw new UnsupportedOperationException("The " + selectorType + " is not recognized, the operators available are: ALL, ConfidenceLevel and APKVersions");
+				throw new UnsupportedOperationException("The " + selectorType
+						+ " is not recognized, the operators available are: ALL, ConfidenceLevel and APKVersions");
 			}
 		}
 
@@ -269,18 +310,18 @@ public class MutAPK {
 
 	private static String getVariableValues(JSONObject jsonObject, String name) {
 		String temp = (String) jsonObject.get(name);
-		if(temp != null) {
+		if (temp != null) {
 			return temp;
-		}else {
+		} else {
 			throw new IllegalArgumentException("It's neccesary a value for the variable with name: " + name);
 		}
 	}
 
 	private static String getVariableValuesString(JSONObject jsonObject, String name) {
 		String temp = (String) jsonObject.get(name);
-		if(temp != null) {
+		if (temp != null) {
 			return ".\\" + temp;
-		}else {
+		} else {
 			throw new IllegalArgumentException("It's neccesary a path for the " + name);
 		}
 	}
@@ -288,41 +329,41 @@ public class MutAPK {
 	private static void printLocationList(List<MutationLocation> mutationLocationList, String mutantsFolder,
 			String appName) throws IOException {
 
-			BufferedWriter writer = new BufferedWriter(
-					new FileWriter( mutantsFolder + File.separator + appName + "-locations.json"));
-			writer.write("{");
+		BufferedWriter writer = new BufferedWriter(
+				new FileWriter(mutantsFolder + File.separator + appName + "-locations.json"));
+		writer.write("{");
+		writer.newLine();
+		writer.flush();
+		for (int i = 0; i < mutationLocationList.size(); i++) {
+			MutationLocation temp = mutationLocationList.get(i);
+			writer.write("	\"" + (i + 1) + "\":{");
+			writer.newLine();
+			writer.write("		\"mutationTypeID\":\"" + temp.getType().getId() + "\",");
+			writer.newLine();
+			writer.write("		\"mutationTypeName\":\"" + temp.getType().getName() + "\",");
+			writer.newLine();
+			writer.write("		\"filePath\":\"" + temp.getFilePath() + "\",");
+			writer.newLine();
+			writer.write("		\"line\":\"" + temp.getLine() + "\",");
+			writer.newLine();
+			writer.write("		\"startLine\":\"" + temp.getStartLine() + "\",");
+			writer.newLine();
+			writer.write("		\"endLine\":\"" + temp.getEndLine() + "\",");
+			writer.newLine();
+			writer.write("		\"startColumn\":\"" + temp.getStartColumn() + "\",");
+			writer.newLine();
+			writer.write("		\"endColumn\":\"" + temp.getEndColumn() + "\",");
+			writer.newLine();
+			writer.write("		\"length\":\"" + temp.getLength() + "\"");
+			writer.newLine();
+			writer.write((i == mutationLocationList.size() - 1) ? "	}" : "	},");
 			writer.newLine();
 			writer.flush();
-			for (int i = 0; i < mutationLocationList.size(); i++) {
-				MutationLocation temp = mutationLocationList.get(i);
-				writer.write("	\"" + (i + 1) + "\":{");
-				writer.newLine();
-				writer.write("		\"mutationTypeID\":\"" + temp.getType().getId() + "\",");
-				writer.newLine();
-				writer.write("		\"mutationTypeName\":\"" + temp.getType().getName() + "\",");
-				writer.newLine();
-				writer.write("		\"filePath\":\"" + temp.getFilePath() + "\",");
-				writer.newLine();
-				writer.write("		\"line\":\"" + temp.getLine() + "\",");
-				writer.newLine();
-				writer.write("		\"startLine\":\"" + temp.getStartLine() + "\",");
-				writer.newLine();
-				writer.write("		\"endLine\":\"" + temp.getEndLine() + "\",");
-				writer.newLine();
-				writer.write("		\"startColumn\":\"" + temp.getStartColumn() + "\",");
-				writer.newLine();
-				writer.write("		\"endColumn\":\"" + temp.getEndColumn() + "\",");
-				writer.newLine();
-				writer.write("		\"length\":\"" + temp.getLength() + "\"");
-				writer.newLine();
-				writer.write((i == mutationLocationList.size() - 1) ? "	}" : "	},");
-				writer.newLine();
-				writer.flush();
-			}
-			writer.write("}");
-			writer.newLine();
-			writer.flush();
-			writer.close();
+		}
+		writer.write("}");
+		writer.newLine();
+		writer.flush();
+		writer.close();
 	}
 
 }
