@@ -16,7 +16,7 @@ public class Sha3 {
 	private Sha3() {
 	}
 
-	public static String sha384File(final File file) throws IOException {
+	public static String sha384File(final File file) throws FileNotFoundException, IOException {
 		final DigestSHA3 sha3 = new DigestSHA3(384);
 		byte[] hash = hashFile(file, sha3);
 		return hashToString(hash);
@@ -35,7 +35,7 @@ public class Sha3 {
 		}
 	}
 
-	public static String sha384FileSeparte(final File file) throws IOException {
+	public static String sha384FileSeparte(final File file) throws FileNotFoundException, IOException {
 		String hash = hashFileSeparator(file);
 		return hash.substring(0, hash.length() - 1);
 	}
