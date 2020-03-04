@@ -223,7 +223,7 @@ public class MutAPK {
 		apkHashes.add(apkHash);
 		apkHashesSeparator.add(apkHashSeparator);
 		
-		
+		//TODO agregar los otros apks 
 		
 		// Text-Based operators selected
 		List<MutationLocationDetector> textBasedDetectors = operatorBundle.getTextBasedDetectors();
