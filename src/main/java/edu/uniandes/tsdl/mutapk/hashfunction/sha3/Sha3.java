@@ -5,8 +5,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Collection;
+import java.util.StringJoiner;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.bouncycastle.jcajce.provider.digest.SHA3.DigestSHA3;
+
 
 public class Sha3 {
 
@@ -16,46 +21,39 @@ public class Sha3 {
 	private Sha3() {
 	}
 
-	public static String sha384File(final File file) throws FileNotFoundException, IOException {
-		final DigestSHA3 sha3 = new DigestSHA3(384);
-		byte[] hash = hashFile(file, sha3);
-		return hashToString(hash);
-	}
-
-	private static byte[] hashFile(final File file, DigestSHA3 sha3) throws FileNotFoundException, IOException {
+	public static String sha512File(final File file)
+			throws FileNotFoundException, IOException {
+		final DigestSHA3 sha3 = new DigestSHA3(512);
 		if (file.isFile()) {
-			return fileHash(file);
+			sha3.update(fileHash(file));
 		} else {
-			File[] files = file.listFiles();
-			for (File file2 : files) {
-				byte[] hash = hashFile(file2, sha3);
-				sha3.update(hash);
+			Collection<File> files = FileUtils.listFiles(new File(file.getAbsolutePath()), TrueFileFilter.INSTANCE,
+					TrueFileFilter.INSTANCE);
+			for (File fileHash : files) {
+				sha3.update(fileHash(fileHash));
 			}
-			return sha3.digest();
 		}
+		return hashToString(sha3.digest());
 	}
 
-	public static String sha384FileSeparte(final File file) throws FileNotFoundException, IOException {
-		String hash = hashFileSeparator(file);
-		return hash.substring(0, hash.length() - 1);
-	}
-
-	private static String hashFileSeparator(final File file) throws FileNotFoundException, IOException {
+	public static String sha512FileSeparte(final File file)
+			throws FileNotFoundException, IOException {
 		if (file.isFile()) {
-			String hash = hashToString(fileHash(file)) + "|";
-			return hash;
+			return hashToString(fileHash(file));
 		} else {
-			File[] files = file.listFiles();
-			String hash = "";
-			for (File file2 : files) {
-				hash += hashFileSeparator(file2);
+			StringJoiner hashes = new StringJoiner("|");
+			Collection<File> files = FileUtils.listFiles(new File(file.getAbsolutePath()), TrueFileFilter.INSTANCE,
+					TrueFileFilter.INSTANCE);
+			for (File fileHash : files) {
+				String string = hashToString(fileHash(fileHash)); 
+				hashes.add(string);
 			}
-			return hash;
+			return hashes.toString();
 		}
 	}
 
 	private static byte[] fileHash(final File file) throws FileNotFoundException, IOException {
-		final DigestSHA3 sha3 = new DigestSHA3(384);
+		final DigestSHA3 sha3 = new DigestSHA3(512);
 		InputStream fis = new FileInputStream(file);
 		int n = 0;
 		byte[] buffer = new byte[8192];
@@ -69,7 +67,7 @@ public class Sha3 {
 		fis.close();
 		return hash;
 	}
-	
+
 	private static String hashToString(byte[] hash) {
 		StringBuffer buff = new StringBuffer();
 		for (byte b : hash) {

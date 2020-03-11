@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.json.simple.JSONObject;
@@ -17,6 +18,7 @@ import org.json.simple.parser.JSONParser;
 import edu.uniandes.tsdl.mutapk.detectors.MutationLocationDetector;
 import edu.uniandes.tsdl.mutapk.detectors.MutationLocationListBuilder;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHash;
+import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashOrder;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashSeparator;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.Sha3;
 import edu.uniandes.tsdl.mutapk.helper.APKToolWrapper;
@@ -169,62 +171,10 @@ public class MutAPK {
 
 		Helper.getInstance();
 		Helper.setPackageName(appName);
+		
 		// Decode the APK
 		String apkAbsolutePath = APKToolWrapper.openAPK(apkPath, extraPath);
-		File apkFile = new File(apkAbsolutePath);
-		System.out.println("APK FATHER: " + apkFile.getAbsolutePath());
-		String[] names = apkFile.list();
-		for (int i = 0; i < names.length; i++) {
-			System.out.println("File " + i + " " + names[i]);
-		}
 
-		File smali = new File(apkAbsolutePath + "/smali");
-		System.out.println("SMALI: " + smali.getAbsolutePath());
-		String[] namesSmali = smali.list();
-		for (int i = 0; i < namesSmali.length; i++) {
-			System.out.println("Smali File " + i + " " + namesSmali[i]);
-		}
-
-		File manifest = new File(apkAbsolutePath + "/AndroidManifest.xml");
-		System.out.println("Manifest: " + manifest.getAbsolutePath());
-
-		File resource = new File(apkAbsolutePath + "/res");
-		System.out.println("Resource: " + resource.getAbsolutePath());
-
-		//Normal hash
-		String hashManifest = Sha3.sha384File(manifest);
-		System.out.println("hashManifest " + hashManifest);
-		System.out.println("---------------------------------------------------");
-		String hashSmali = Sha3.sha384File(smali);
-		System.out.println("hashSmali " + hashSmali);
-		System.out.println("Sin Separador");
-		System.out.println("---------------------------------------------------");
-		String hashResource = Sha3.sha384File(resource);
-		System.out.println("hashResourceNormalito " + hashResource);
-		System.out.println("---------------------------------------------------");
-		
-		//hash with separator |
-		System.out.println();
-		String hashSmaliConSeperado = Sha3.sha384FileSeparte(smali);
-		System.out.println("hashSamaliConSeparador " + hashSmaliConSeperado);
-		System.out.println("---------------------------------------------------");
-		String hashResourceConSeperado = Sha3.sha384FileSeparte(resource);
-		System.out.println("hashSamaliConSeparador " + hashResourceConSeperado);
-		System.out.println("---------------------------------------------------");
-		
-		//Create hashSet
-		Set<ApkHash> apkHashes = new HashSet<ApkHash>();
-		Set<ApkHashSeparator> apkHashesSeparator = new HashSet<ApkHashSeparator>();
-		
-		//Create clases
-		ApkHash apkHash = new ApkHash.Builder(hashManifest, hashSmali, hashResource).build();
-		ApkHashSeparator apkHashSeparator = new ApkHashSeparator.Builder(hashManifest, hashSmaliConSeperado, hashResourceConSeperado).build();
-		
-		apkHashes.add(apkHash);
-		apkHashesSeparator.add(apkHashSeparator);
-		
-		//TODO agregar los otros apks 
-		
 		// Text-Based operators selected
 		List<MutationLocationDetector> textBasedDetectors = operatorBundle.getTextBasedDetectors();
 
@@ -299,7 +249,28 @@ public class MutAPK {
 
 		// 3. Run mutation phase
 		MutationsProcessor mProcessor = new MutationsProcessor("temp", appName, mutantsFolder);
+		
+		
+		//Create de apkhash for the normal folder
+		File manifest = new File(apkAbsolutePath + File.separator + "AndroidManifest.xml");
+		System.out.println("Manifest: " + manifest.getAbsolutePath());
+		
+		File smali = new File(apkAbsolutePath + File.separator + "smali");
+		System.out.println("SMALI: " + smali.getAbsolutePath());
+		String[] namesSmali = smali.list();
+		for (int i = 0; i < namesSmali.length; i++) {
+			System.out.println("Smali File " + i + " " + namesSmali[i]);
+		}
 
+		File resource = new File(apkAbsolutePath + File.separator + "res");
+		System.out.println("Resource: " + resource.getAbsolutePath());
+	
+
+		// Create ApkHashSeparator
+		ApkHashSeparator apkHashSeparator = mProcessor.generateApkHashSeparator(manifest, smali, resource);
+		// Add the base apkHashSeparator
+		ApkHashOrder.getInstance().setApkHashSeparator(apkHashSeparator);
+		
 		if (multithread) {
 			mProcessor.processMultithreaded(mutationLocationList, extraPath, apkName);
 		} else {

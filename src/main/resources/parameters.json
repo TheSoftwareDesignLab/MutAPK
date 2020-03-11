@@ -4,8 +4,8 @@
 	"MutanPath": "mutants", 
 	"BinariesPath": "extra",
 	"DirectoryOfOperator.properties": "",
-	"MultithreadGeneration": "true",
-	"SelectorType": "ConfidenceLevel",
+	"MultithreadGeneration": "false",
+	"SelectorType": "ALL",
 	"AmountMutants":"60",
 	"ConfidenceLevel":{
 		"Individual":"false",
