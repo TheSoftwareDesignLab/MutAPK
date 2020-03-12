@@ -29,7 +29,6 @@ public class MutationsProcessor {
 	private String appName;
 	private String mutantsRootFolder;
 	private String mutantRootFolder;
-	private int duplicate = 0;
 
 	public MutationsProcessor(String appFolder, String appName, String mutantsRootFolder) {
 		super();
@@ -90,7 +89,8 @@ public class MutationsProcessor {
 			mutantIndex++;
 		}
 		System.out.println("------------------------------------------------------------------------------------");
-		System.out.println("The number of duplicates are: " + duplicate);
+		System.out.println("The maximum id is : " + ApkHashOrder.getInstance().getId());
+		System.out.println("The length of hasmap is: " + ApkHashOrder.getInstance().getLength());
 		System.out.println("------------------------------------------------------------------------------------");
 		writer.close();
 		wwriter.close();
@@ -108,7 +108,6 @@ public class MutationsProcessor {
 				.setApkHashSeparator(apkHashSeparator);
 		System.out.println("AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		if (apkHashSeparatorDuplicate != null) {
-			duplicate++;
 			System.out.println("El mutante con id: " + apkHashSeparator.getId()
 					+ " es duplicado del mutante con id: " + apkHashSeparatorDuplicate.getId());
 			wwriter.write(
@@ -139,6 +138,7 @@ public class MutationsProcessor {
 				+ buildingTime);
 		wwriter.newLine();
 		wwriter.flush();
+		wwriter.close();
 	}
 
 	public ApkHashSeparator generateApkHashSeparator(File manifest, File smali, File resource)
@@ -146,8 +146,7 @@ public class MutationsProcessor {
 		String hashManifest = Sha3.sha512FileSeparte(manifest);
 		String hashSmaliConSeperado = Sha3.sha512FileSeparte(smali);
 		String hashResourceConSeperado = Sha3.sha512FileSeparte(resource);
-		ApkHashSeparator apkHashSeparator = new ApkHashSeparator.Builder(ApkHashOrder.getInstance().getNextId(),
-				hashManifest, hashSmaliConSeperado, hashResourceConSeperado).build();
+		ApkHashSeparator apkHashSeparator = new ApkHashSeparator.Builder(hashManifest, hashSmaliConSeperado, hashResourceConSeperado).build();
 		return apkHashSeparator;
 	}
 
@@ -194,27 +193,12 @@ public class MutationsProcessor {
 						String newMutationPath = mutationLocation.getFilePath().replace(appFolder, mutantFolder);
 						mutationLocation.setFilePath(newMutationPath);
 
-						// Perform mutation
 						operator.performMutation(mutationLocation, writer, currentMutationIndex);
 						Long mutationEnd = System.currentTimeMillis();
-						boolean result = APKToolWrapper.buildAPK(mutantRootFolder, extraPath, apkName,
-								currentMutationIndex);
-						File mutatedFile = new File(newMutationPath);
-						String fileName = (new File(newMutationPath)).getName();
-						File mutantRootFolderDir = new File(mutantRootFolder + fileName);
-						FileUtils.copyFile(mutatedFile, mutantRootFolderDir);
-						File srcFolder = new File(mutantFolder);
-						if (result) {
-							FileUtils.deleteDirectory(srcFolder);
-						}
-						Long buildEnd = System.currentTimeMillis();
 						Long mutationTime = mutationEnd - mutationIni;
-						Long buildingTime = buildEnd - mutationEnd;
-						wwriter.write(currentMutationIndex + ";" + mutationLocation.getType().getId() + ";0;"
-								+ mutationTime + ";" + buildingTime);
-						wwriter.newLine();
-						wwriter.flush();
-						// writer.close();
+						
+						// Perform mutation
+						verifyDuplicateMutants(extraPath, apkName, currentMutationIndex, mutantFolder, newMutationPath, wwriter, mutationLocation, mutationEnd, mutationTime);
 
 					} catch (NullPointerException e) {
 						throw new NullPointerException("It is not possible to find the file");
@@ -228,6 +212,10 @@ public class MutationsProcessor {
 				}
 			}));
 		}
+		
+		System.out.println("------------------------------------------------------------------------------------");
+		System.out.println("The length of hasmap is: " + ApkHashOrder.getInstance().getLength());
+		System.out.println("------------------------------------------------------------------------------------");
 
 		// If more output for single operator is needed
 		// FileOutputStream out = new

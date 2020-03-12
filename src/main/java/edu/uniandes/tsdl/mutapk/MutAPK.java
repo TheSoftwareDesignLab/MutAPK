@@ -290,9 +290,10 @@ public class MutAPK {
 
 	private static String getVariableValuesString(JSONObject jsonObject, String name) {
 		String temp = (String) jsonObject.get(name);
-		if (temp != null) {
-			return ".\\" + temp;
-		} else {
+		if (temp != null && !temp.equals("") && !temp.equals(" ")) {
+			return temp;
+		} 
+		else {
 			throw new IllegalArgumentException("It's neccesary a path for the " + name);
 		}
 	}

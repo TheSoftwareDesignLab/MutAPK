@@ -16,19 +16,20 @@ public final class ApkHashOrder {
 	 * memory. Also, it ensure visibility change to variables across threads.
 	 */
 	private static volatile ApkHashOrder instance;
-	
+
 	private int id = 0;
-	private Map<ApkHashSeparator, ApkHashSeparator> apkHashesSeparator = new HashMap<ApkHashSeparator, ApkHashSeparator>(); 
-	
+	private Map<ApkHashSeparator, ApkHashSeparator> apkHashesSeparator = new HashMap<ApkHashSeparator, ApkHashSeparator>();
+
 	/**
 	 * Enforce private constructor
 	 */
-	private ApkHashOrder() {}
-	
+	private ApkHashOrder() {
+	}
+
 	public static ApkHashOrder getInstance() {
 		if (instance == null) {
-			synchronized(ApkHashOrder.class) {
-				if(instance == null) {
+			synchronized (ApkHashOrder.class) {
+				if (instance == null) {
 					instance = new ApkHashOrder();
 				}
 			}
@@ -36,21 +37,26 @@ public final class ApkHashOrder {
 		return instance;
 	}
 
-	public synchronized int getNextId() {
-		return id++;
-	}
-	
 	public synchronized ApkHashSeparator setApkHashSeparator(ApkHashSeparator nuevoApkHashSeparator) {
 		boolean isInCollection = apkHashesSeparator.containsKey(nuevoApkHashSeparator);
 		ApkHashSeparator apkHashSeparatorDuplicate = null;
 		if (isInCollection) {
 			apkHashSeparatorDuplicate = apkHashesSeparator.get(nuevoApkHashSeparator);
-		}else {
+		} 
+		if(apkHashSeparatorDuplicate == null){
+			nuevoApkHashSeparator.setId(id);
 			apkHashesSeparator.put(nuevoApkHashSeparator, nuevoApkHashSeparator);
+			id++;
 		}
 		return apkHashSeparatorDuplicate;
 	}
-
-
 	
+	public synchronized int getId() {
+		return id;
+	}
+
+	public synchronized int getLength() {
+		return apkHashesSeparator.size();
+	}
+
 }
