@@ -1,8 +1,8 @@
 {
-	"APKPath": ".\\test\\apk\\com.evancharlton.mileage_3110.apk",
+	"APKPath": ".\\apk\\com.evancharlton.mileage_3110.apk",
 	"PackageName": "com.evancharlton.mileage",
-	"MutanPath": "mutants", 
-	"BinariesPath": "extra",
+	"MutanPath": ".\\mutants", 
+	"BinariesPath": ".\\extra",
 	"DirectoryOfOperator.properties": ".\\",
 	"MultithreadGeneration": "true",
 	"SelectorType": "ALL",

@@ -18,6 +18,7 @@ public class APKToolWrapper {
 			tempFolder.delete();
 		}
 		tempFolder.mkdirs();
+		System.out.println(Paths.get(decodedPath,extraPath,"apktool.jar").toAbsolutePath().toString());
 		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",Paths.get(decodedPath,extraPath,"apktool.jar").toAbsolutePath().toString(),"d",Paths.get(decodedPath,path).toAbsolutePath().toString(),"-o",Paths.get(decodedPath,"temp").toAbsolutePath().toString(),"-f"});
 		System.out.println("Processing your APK...");
 		ps.waitFor();
