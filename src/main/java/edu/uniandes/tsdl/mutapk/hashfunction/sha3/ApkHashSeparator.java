@@ -2,7 +2,7 @@ package edu.uniandes.tsdl.mutapk.hashfunction.sha3;
 
 public class ApkHashSeparator {
 
-	private int id;
+	private int id = -1;
 	private final String hashManifest;
 	private final String hashSmali;
 	private final String hashResource;

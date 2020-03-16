@@ -253,18 +253,8 @@ public class MutAPK {
 		
 		//Create de apkhash for the normal folder
 		File manifest = new File(apkAbsolutePath + File.separator + "AndroidManifest.xml");
-		System.out.println("Manifest: " + manifest.getAbsolutePath());
-		
 		File smali = new File(apkAbsolutePath + File.separator + "smali");
-		System.out.println("SMALI: " + smali.getAbsolutePath());
-		String[] namesSmali = smali.list();
-		for (int i = 0; i < namesSmali.length; i++) {
-			System.out.println("Smali File " + i + " " + namesSmali[i]);
-		}
-
 		File resource = new File(apkAbsolutePath + File.separator + "res");
-		System.out.println("Resource: " + resource.getAbsolutePath());
-	
 
 		// Create ApkHashSeparator
 		ApkHashSeparator apkHashSeparator = mProcessor.generateApkHashSeparator(manifest, smali, resource);
