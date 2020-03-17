@@ -141,7 +141,6 @@ public class MutationsProcessor {
 				+ buildingTime);
 		wwriter.newLine();
 		wwriter.flush();
-		wwriter.close();
 	}
 
 	public ApkHashSeparator generateApkHashSeparator(File manifest, File smali, File resource)
