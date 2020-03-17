@@ -19,6 +19,7 @@ import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashOrder;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashSeparator;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.Sha3;
 import edu.uniandes.tsdl.mutapk.helper.APKToolWrapper;
+import edu.uniandes.tsdl.mutapk.model.MutationType;
 import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
 import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 import edu.uniandes.tsdl.mutapk.operators.MutationOperatorFactory;
@@ -96,7 +97,7 @@ public class MutationsProcessor {
 		wwriter.close();
 	}
 
-	private synchronized void verifyDuplicateMutants(String extraPath, String apkName, int mutantIndex, String mutantFolder,
+	private void verifyDuplicateMutants(String extraPath, String apkName, int mutantIndex, String mutantFolder,
 			String newMutationPath, BufferedWriter wwriter, MutationLocation mutationLocation, Long mutationEnd,
 			Long mutationTime) throws FileNotFoundException, IOException, InterruptedException {
 		File manifest = new File(mutantFolder + File.separator + "AndroidManifest.xml");
@@ -108,8 +109,15 @@ public class MutationsProcessor {
 				.setApkHashSeparator(apkHashSeparator);
 		System.out.println("AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		if (apkHashSeparatorDuplicate != null) {
+			System.out.println("El operado es: " + mutationLocation.getType().toString());
+			int compare = apkHashSeparatorDuplicate.getId();
+			if(compare == 0) {
+				System.out.println("El mutante es redudante");
+			}else {
+				System.out.println("El mutante es equivalente");
+			}
 			System.out.println("El mutante con id: " + apkHashSeparator.getId()
-					+ " es duplicado del mutante con id: " + apkHashSeparatorDuplicate.getId());
+					+ " es duplicado del mutante con id: " + compare);
 			wwriter.write(
 					mutantIndex + ";" + mutationLocation.getType().getId() + ";" + mutationTime + ";" + -1);
 		} else {
