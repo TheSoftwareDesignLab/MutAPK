@@ -92,7 +92,7 @@ public class MutationsProcessor {
 		wwriter.close();
 	}
 
-	private void verifyDuplicateMutants(String extraPath, String apkName, int mutantIndex, String mutantFolder,
+	private synchronized void verifyDuplicateMutants(String extraPath, String apkName, int mutantIndex, String mutantFolder,
 			String newMutationPath, BufferedWriter wwriter, MutationLocation mutationLocation, Long mutationEnd,
 			Long mutationTime) throws FileNotFoundException, IOException, InterruptedException {
 		File manifest = new File(mutantFolder + File.separator + "AndroidManifest.xml");
@@ -103,8 +103,8 @@ public class MutationsProcessor {
 		ApkHashSeparator apkHashSeparatorDuplicate = ApkHashOrder.getInstance()
 				.setApkHashSeparator(apkHashSeparator);
 		System.out.println("AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		System.out.println("El operado es: " + mutationLocation.getType().toString());
 		if (apkHashSeparatorDuplicate != null) {
-			System.out.println("El operado es: " + mutationLocation.getType().toString());
 			int compare = apkHashSeparatorDuplicate.getId();
 			if(compare == 0) {
 				System.out.println("El mutante es redudante");
