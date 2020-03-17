@@ -96,7 +96,7 @@ public class MutationsProcessor {
 		wwriter.close();
 	}
 
-	private void verifyDuplicateMutants(String extraPath, String apkName, int mutantIndex, String mutantFolder,
+	private synchronized void verifyDuplicateMutants(String extraPath, String apkName, int mutantIndex, String mutantFolder,
 			String newMutationPath, BufferedWriter wwriter, MutationLocation mutationLocation, Long mutationEnd,
 			Long mutationTime) throws FileNotFoundException, IOException, InterruptedException {
 		File manifest = new File(mutantFolder + File.separator + "AndroidManifest.xml");
