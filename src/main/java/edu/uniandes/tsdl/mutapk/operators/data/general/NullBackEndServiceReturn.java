@@ -18,7 +18,7 @@ import edu.uniandes.tsdl.antlr.smaliParser;
 public class NullBackEndServiceReturn implements MutationOperator {
 
 	@Override
-	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws Exception {
+	public boolean performMutation(MutationLocation location, BufferedWriter writer, int mutantIndex) throws IOException {
 
 		ASTMutationLocation mLocation = (ASTMutationLocation) location;
 		CommonTree tree = mLocation.getTree();

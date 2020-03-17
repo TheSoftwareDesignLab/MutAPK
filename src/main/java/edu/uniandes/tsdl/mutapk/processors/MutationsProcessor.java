@@ -11,15 +11,16 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.logging.Logger;
+
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.io.FileUtils;
+import org.xml.sax.SAXException;
 
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashOrder;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashSeparator;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.Sha3;
 import edu.uniandes.tsdl.mutapk.helper.APKToolWrapper;
-import edu.uniandes.tsdl.mutapk.model.MutationType;
 import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
 import edu.uniandes.tsdl.mutapk.operators.MutationOperator;
 import edu.uniandes.tsdl.mutapk.operators.MutationOperatorFactory;
@@ -48,7 +49,7 @@ public class MutationsProcessor {
 	}
 
 	public void process(List<MutationLocation> locations, String extraPath, String apkName)
-			throws IOException, Exception {
+			throws IOException, ParserConfigurationException, SAXException, InterruptedException {
 		MutationOperatorFactory factory = MutationOperatorFactory.getInstance();
 		MutationOperator operator = null;
 		int mutantIndex = 1;
@@ -62,7 +63,6 @@ public class MutationsProcessor {
 		wwriter.newLine();
 		wwriter.flush();
 		for (MutationLocation mutationLocation : locations) {
-			try {
 				Long mutationIni = System.currentTimeMillis();
 				setupMutantFolder(mutantIndex);
 				System.out.println("Mutant: " + mutantIndex + " - Type: " + mutationLocation.getType());
@@ -82,11 +82,6 @@ public class MutationsProcessor {
 				// Verify id the mutant is a duplicate
 				verifyDuplicateMutants(extraPath, apkName, mutantIndex, mutantFolder, newMutationPath, wwriter,
 						mutationLocation, mutationEnd, mutationTime);
-			} catch (Exception e) {
-				Logger.getLogger(MutationsProcessor.class.getName())
-						.warning("- Error generating mutant  " + mutantIndex);
-				throw new Exception("- Error generating mutant  " + mutantIndex);
-			}
 			mutantIndex++;
 		}
 		System.out.println("------------------------------------------------------------------------------------");
@@ -117,7 +112,7 @@ public class MutationsProcessor {
 				System.out.println("El mutante es equivalente");
 			}
 			System.out.println("El mutante con id: " + apkHashSeparator.getId()
-					+ " es duplicado del mutante con id: " + compare);
+			+ " es duplicado del mutante con id: " + compare);
 			wwriter.write(
 					mutantIndex + ";" + mutationLocation.getType().getId() + ";" + mutationTime + ";" + -1);
 		} else {
@@ -188,7 +183,6 @@ public class MutationsProcessor {
 			results.add(executor.submit(new Callable<String>() {
 
 				public String call() throws NullPointerException, Exception {
-					try {
 						// Select operator
 						Long mutationIni = System.currentTimeMillis();
 						MutationOperatorFactory factory = MutationOperatorFactory.getInstance();
@@ -204,23 +198,15 @@ public class MutationsProcessor {
 						operator.performMutation(mutationLocation, writer, currentMutationIndex);
 						Long mutationEnd = System.currentTimeMillis();
 						Long mutationTime = mutationEnd - mutationIni;
-						
+
 						// Perform mutation
 						verifyDuplicateMutants(extraPath, apkName, currentMutationIndex, mutantFolder, newMutationPath, wwriter, mutationLocation, mutationEnd, mutationTime);
-
-					} catch (NullPointerException e) {
-						throw new NullPointerException("It is not possible to find the file");
-					} catch (Exception e) {
-						Logger.getLogger(MutationsProcessor.class.getName())
-								.warning("- Error generating mutant  " + currentMutationIndex);
-						throw new Exception("- Error generating mutant  " + currentMutationIndex);
-					}
 
 					return "";
 				}
 			}));
 		}
-		
+
 		System.out.println("------------------------------------------------------------------------------------");
 		System.out.println("The length of hasmap is: " + ApkHashOrder.getInstance().getLength());
 		System.out.println("------------------------------------------------------------------------------------");
