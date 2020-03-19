@@ -74,10 +74,7 @@ public class ApkHashSeparator {
 
 	@Override
 	public int hashCode() {
-		int result = hashManifest.hashCode();
-		result = 31 * result + hashSmali.hashCode();
-		result = 31 * result + hashResource.hashCode();
-		return result;
+		return 1;
 	}
 
 	@Override
