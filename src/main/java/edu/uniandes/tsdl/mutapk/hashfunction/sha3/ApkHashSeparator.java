@@ -59,16 +59,12 @@ public class ApkHashSeparator {
 
 	@Override
 	public boolean equals(Object o) {
-		if (o == this) {
-			return true;
-		}
 		if(o == null){
 			return false;
 		}
 		if (!(o instanceof ApkHashSeparator)) {
 			return false;
 		}
-
 		ApkHashSeparator apkHashseparator = (ApkHashSeparator) o;
 		return (hashManifest.equals(apkHashseparator.getHashManifest())
 				&& hashSmali.equals(apkHashseparator.getHashSmali())
