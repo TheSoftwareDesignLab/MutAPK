@@ -5,20 +5,23 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode
 public class ApkHashSeparator {
 
-	 @EqualsAndHashCode.Exclude  private int id = -1;
+	@EqualsAndHashCode.Exclude private int id = -1;
 	private final String hashManifest;
 	private final String hashSmali;
 	private final String hashResource;
+	@EqualsAndHashCode.Exclude private final int mutanteId; 
 
 	public static class Builder {
 		private final String hashManifest;
 		private final String hashSmali;
 		private final String hashResource;
+		private final int mutanteId; 
 
-		public Builder(String hashManifest, String hashsmali, String hashResource) {
+		public Builder(String hashManifest, String hashsmali, String hashResource, int mutanteId) {
 			this.hashManifest = hashManifest;
 			this.hashSmali = hashsmali;
 			this.hashResource = hashResource;
+			this.mutanteId = mutanteId;
 		}
 
 		public ApkHashSeparator build() {
@@ -30,6 +33,7 @@ public class ApkHashSeparator {
 		this.hashManifest = builder.hashManifest;
 		this.hashSmali = builder.hashSmali;
 		this.hashResource = builder.hashResource;
+		this.mutanteId = builder.mutanteId;
 	}
 
 	public int getId() {
@@ -39,7 +43,7 @@ public class ApkHashSeparator {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
 	public String getHashManifest() {
 		return hashManifest;
 	}
@@ -52,47 +56,10 @@ public class ApkHashSeparator {
 		return hashResource;
 	}
 
-//	@Override
-//	public boolean equals(Object o) {
-//		if (o == this) {
-//			return true;
-//		} else if (!(o instanceof ApkHashSeparator)) {
-//			return false;
-//		} else {
-//			ApkHashSeparator apkHashseparator = (ApkHashSeparator) o;
-////			boolean isEqualManifest = hashManifest.equals(apkHashseparator.getHashManifest());
-////			boolean isEqualSmali = isEqual(apkHashseparator.getHashSmali(), hashSmali);
-////			boolean isEqualResource = isEqual(apkHashseparator.getHashResource(), hashResource);
-//			return hashManifest.equals(apkHashseparator.getHashManifest())
-//					&& hashSmali.equals(apkHashseparator.getHashSmali())
-//					&& hashResource.equals(apkHashseparator.getHashResource());
-//		}
-//
-//	}
-//
-////	private boolean isEqual(String hash, String compare) {
-////		if (hash.length() != compare.length()) {
-////			return false;
-////		}
-////		String[] hashes = hash.split("|");
-////		String[] compares = compare.split("|");
-////		for (int i = 0; i < hashes.length; i++) {
-////			if (!compares[i].equals(hashes[i])) {
-////				return false;
-////			}
-////		}
-////		return true;
-////	}
-//
-//	@Override
-//	public int hashCode() {
-//		int result = hashManifest.hashCode();
-//		result = 31 * result + hashSmali.hashCode();
-//		result = 31 * result + hashResource.hashCode();
-//		return result;
-//	}
-	
-	
+	public int getMutanteId() {
+		return mutanteId;
+	}
+
 	@Override
 	public String toString() {
 		return hashManifest + "|" + hashResource + "|" + hashSmali;

@@ -37,18 +37,17 @@ public final class ApkHashOrder {
 	}
 
 	public synchronized ApkHashSeparator setApkHashSeparator(ApkHashSeparator nuevoApkHashSeparator) {
-		boolean isInCollection = apkHashesSeparator.containsKey(nuevoApkHashSeparator);
-		ApkHashSeparator apkHashSeparatorDuplicate = null;
-		if (isInCollection) {
-			apkHashSeparatorDuplicate = apkHashesSeparator.get(nuevoApkHashSeparator);
+		ApkHashSeparator apkHashSeparatorDuplicate = apkHashesSeparator.get(nuevoApkHashSeparator);
+		if (apkHashSeparatorDuplicate != null && apkHashSeparatorDuplicate.equals(nuevoApkHashSeparator)) {
+			return apkHashSeparatorDuplicate;
 		} else {
 			nuevoApkHashSeparator.setId(id);
 			apkHashesSeparator.put(nuevoApkHashSeparator, nuevoApkHashSeparator);
 			id++;
+			return null;
 		}
-		return apkHashSeparatorDuplicate;
 	}
-	
+
 	public synchronized int getId() {
 		return id;
 	}

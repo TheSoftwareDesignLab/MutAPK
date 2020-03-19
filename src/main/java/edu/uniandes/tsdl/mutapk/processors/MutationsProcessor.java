@@ -98,7 +98,7 @@ public class MutationsProcessor {
 		File manifest = new File(mutantFolder + File.separator + "AndroidManifest.xml");
 		File smali = new File(mutantFolder + File.separator + "smali");
 		File resource = new File(mutantFolder + File.separator + "res");
-		ApkHashSeparator apkHashSeparator = this.generateApkHashSeparator(manifest, smali, resource);
+		ApkHashSeparator apkHashSeparator = this.generateApkHashSeparator(manifest, smali, resource, mutantIndex);
 
 		ApkHashSeparator apkHashSeparatorDuplicate = ApkHashOrder.getInstance()
 				.setApkHashSeparator(apkHashSeparator);
@@ -143,12 +143,12 @@ public class MutationsProcessor {
 		wwriter.flush();
 	}
 
-	public ApkHashSeparator generateApkHashSeparator(File manifest, File smali, File resource)
+	public ApkHashSeparator generateApkHashSeparator(File manifest, File smali, File resource, int mutanteId)
 			throws FileNotFoundException, IOException {
 		String hashManifest = Sha3.sha512FileSeparte(manifest);
 		String hashSmaliConSeperado = Sha3.sha512FileSeparte(smali);
 		String hashResourceConSeperado = Sha3.sha512FileSeparte(resource);
-		ApkHashSeparator apkHashSeparator = new ApkHashSeparator.Builder(hashManifest, hashSmaliConSeperado, hashResourceConSeperado).build();
+		ApkHashSeparator apkHashSeparator = new ApkHashSeparator.Builder(hashManifest, hashSmaliConSeperado, hashResourceConSeperado, mutanteId).build();
 		return apkHashSeparator;
 	}
 
@@ -166,7 +166,7 @@ public class MutationsProcessor {
 		final List<Future<String>> results = new LinkedList<Future<String>>();
 
 		writer.write("ThreadPool: " + Runtime.getRuntime().availableProcessors() + "\n");
-		int mutantIndex = 0;
+		int mutantIndex = 1;
 
 		for (final MutationLocation mutationLocation : locations) {
 			mutantIndex++;

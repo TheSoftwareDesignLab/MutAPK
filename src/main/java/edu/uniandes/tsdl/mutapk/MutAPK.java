@@ -257,7 +257,7 @@ public class MutAPK {
 		File resource = new File(apkAbsolutePath + File.separator + "res");
 
 		// Create ApkHashSeparator
-		ApkHashSeparator apkHashSeparator = mProcessor.generateApkHashSeparator(manifest, smali, resource);
+		ApkHashSeparator apkHashSeparator = mProcessor.generateApkHashSeparator(manifest, smali, resource, 0);
 		// Add the base apkHashSeparator
 		ApkHashOrder.getInstance().setApkHashSeparator(apkHashSeparator);
 		
