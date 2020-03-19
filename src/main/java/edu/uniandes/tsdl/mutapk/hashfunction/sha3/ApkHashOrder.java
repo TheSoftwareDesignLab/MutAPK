@@ -41,8 +41,7 @@ public final class ApkHashOrder {
 		ApkHashSeparator apkHashSeparatorDuplicate = null;
 		if (isInCollection) {
 			apkHashSeparatorDuplicate = apkHashesSeparator.get(nuevoApkHashSeparator);
-		} 
-		if(apkHashSeparatorDuplicate == null){
+		} else {
 			nuevoApkHashSeparator.setId(id);
 			apkHashesSeparator.put(nuevoApkHashSeparator, nuevoApkHashSeparator);
 			id++;
