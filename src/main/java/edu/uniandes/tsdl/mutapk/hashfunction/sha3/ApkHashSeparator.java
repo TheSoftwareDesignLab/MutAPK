@@ -5,7 +5,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode
 public class ApkHashSeparator {
 
-	@EqualsAndHashCode.Exclude private int id = -1;
+	private int id = -1;
 	private final String hashManifest;
 	private final String hashSmali;
 	private final String hashResource;
