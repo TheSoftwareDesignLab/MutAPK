@@ -1,7 +1,7 @@
 package edu.uniandes.tsdl.mutapk.hashfunction.sha3;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * University of Los Andes
@@ -18,7 +18,7 @@ public final class ApkHashOrder {
 	private static volatile ApkHashOrder instance;
 
 	private int id = 0;
-	private Map<ApkHashSeparator, ApkHashSeparator> apkHashesSeparator = new HashMap<ApkHashSeparator, ApkHashSeparator>();
+	private Set<ApkHashSeparator> apkHashesSeparator = new HashSet<ApkHashSeparator>();
 
 	/**
 	 * Enforce private constructor
@@ -37,15 +37,19 @@ public final class ApkHashOrder {
 	}
 
 	public synchronized ApkHashSeparator setApkHashSeparator(ApkHashSeparator nuevoApkHashSeparator) {
-		ApkHashSeparator apkHashSeparatorDuplicate = apkHashesSeparator.get(nuevoApkHashSeparator);
-		if(apkHashSeparatorDuplicate != null && nuevoApkHashSeparator.equals(apkHashSeparatorDuplicate)) {
-			return apkHashSeparatorDuplicate;
-		} else {
+		boolean isDuplicate = apkHashesSeparator.contains(nuevoApkHashSeparator);
+		if(isDuplicate) {
+			for(ApkHashSeparator apk : apkHashesSeparator) {
+				if(apk.equals(nuevoApkHashSeparator)) {
+					return apk;
+				}
+			}
+		}else {
 			nuevoApkHashSeparator.setId(id);
-			apkHashesSeparator.put(nuevoApkHashSeparator, nuevoApkHashSeparator);
+			apkHashesSeparator.add(nuevoApkHashSeparator);
 			id++;
-			return null;
 		}
+		return null;
 	}
 
 	public synchronized int getId() {

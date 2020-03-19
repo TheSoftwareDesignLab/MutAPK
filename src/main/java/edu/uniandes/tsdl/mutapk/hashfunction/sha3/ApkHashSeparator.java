@@ -56,25 +56,33 @@ public class ApkHashSeparator {
 	public int getMutanteId() {
 		return mutanteId;
 	}
-	
+
 	@Override
 	public boolean equals(Object o) {
 		if (o == this) {
 			return true;
-		} else if (!(o instanceof ApkHashSeparator)) {
-			return false;
-		} else {
-			ApkHashSeparator apkHashseparator = (ApkHashSeparator) o;
-			return hashManifest.equals(apkHashseparator.getHashManifest())
-					&& hashSmali.equals(apkHashseparator.getHashSmali())
-					&& hashResource.equals(apkHashseparator.getHashResource());
 		}
+		if(o == null){
+			return false;
+		}
+		if (!(o instanceof ApkHashSeparator)) {
+			return false;
+		}
+
+		ApkHashSeparator apkHashseparator = (ApkHashSeparator) o;
+		return (hashManifest.equals(apkHashseparator.getHashManifest())
+				&& hashSmali.equals(apkHashseparator.getHashSmali())
+				&& hashResource.equals(apkHashseparator.getHashResource()));
 
 	}
 
 	@Override
 	public int hashCode() {
-		return 1;
+		int hash = 7;
+        hash = 31 * hash + hashManifest.hashCode();
+        hash = 31 * hash + hashSmali.hashCode();
+        hash = 31 * hash + hashResource.hashCode();
+        return hash;
 	}
 
 	@Override
