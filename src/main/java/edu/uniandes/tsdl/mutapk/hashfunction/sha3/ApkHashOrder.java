@@ -17,14 +17,13 @@ public final class ApkHashOrder {
 	 */
 	private static volatile ApkHashOrder instance;
 
-	private static volatile int id = 0;
-	private static volatile Map<ApkHashSeparator, ApkHashSeparator> apkHashesSeparator = new HashMap<ApkHashSeparator, ApkHashSeparator>();
+	private int id = 0;
+	private Map<ApkHashSeparator, ApkHashSeparator> apkHashesSeparator = new HashMap<ApkHashSeparator, ApkHashSeparator>();
 
 	/**
 	 * Enforce private constructor
 	 */
-	private ApkHashOrder() {
-	}
+	private ApkHashOrder() {	}
 
 	public static ApkHashOrder getInstance() {
 		if (instance == null) {
