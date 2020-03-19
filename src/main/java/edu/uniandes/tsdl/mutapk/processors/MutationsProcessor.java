@@ -103,8 +103,8 @@ public class MutationsProcessor {
 		ApkHashSeparator apkHashSeparatorDuplicate = ApkHashOrder.getInstance()
 				.setApkHashSeparator(apkHashSeparator);
 		System.out.println("AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-		System.out.println("El operado es: " + mutationLocation.getType().toString());
 		if (apkHashSeparatorDuplicate != null) {
+			System.out.println("El operado es: " + mutationLocation.getType().toString());
 			int compare = apkHashSeparatorDuplicate.getId();
 			if(compare == 0) {
 				System.out.println("El mutante es redudante");
