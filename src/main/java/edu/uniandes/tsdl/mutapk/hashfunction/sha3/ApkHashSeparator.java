@@ -1,15 +1,12 @@
 package edu.uniandes.tsdl.mutapk.hashfunction.sha3;
 
-import lombok.EqualsAndHashCode;
-
-@EqualsAndHashCode
 public class ApkHashSeparator {
 
-	@EqualsAndHashCode.Exclude private int id = -1;
+	private int id = -1;
 	private final String hashManifest;
 	private final String hashSmali;
 	private final String hashResource;
-	@EqualsAndHashCode.Exclude private final int mutanteId; 
+	private final int mutanteId; 
 
 	public static class Builder {
 		private final String hashManifest;
@@ -58,6 +55,29 @@ public class ApkHashSeparator {
 
 	public int getMutanteId() {
 		return mutanteId;
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if (o == this) {
+			return true;
+		} else if (!(o instanceof ApkHashSeparator)) {
+			return false;
+		} else {
+			ApkHashSeparator apkHashseparator = (ApkHashSeparator) o;
+			return hashManifest.equals(apkHashseparator.getHashManifest())
+					&& hashSmali.equals(apkHashseparator.getHashSmali())
+					&& hashResource.equals(apkHashseparator.getHashResource());
+		}
+
+	}
+
+	@Override
+	public int hashCode() {
+		int result = hashManifest.hashCode();
+		result = 31 * result + hashSmali.hashCode();
+		result = 31 * result + hashResource.hashCode();
+		return result;
 	}
 
 	@Override
