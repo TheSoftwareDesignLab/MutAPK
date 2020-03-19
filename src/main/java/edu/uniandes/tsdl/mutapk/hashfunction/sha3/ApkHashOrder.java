@@ -17,8 +17,8 @@ public final class ApkHashOrder {
 	 */
 	private static volatile ApkHashOrder instance;
 
-	private int id = 0;
-	private Map<ApkHashSeparator, ApkHashSeparator> apkHashesSeparator = new HashMap<ApkHashSeparator, ApkHashSeparator>();
+	private static volatile int id = 0;
+	private static volatile Map<ApkHashSeparator, ApkHashSeparator> apkHashesSeparator = new HashMap<ApkHashSeparator, ApkHashSeparator>();
 
 	/**
 	 * Enforce private constructor
