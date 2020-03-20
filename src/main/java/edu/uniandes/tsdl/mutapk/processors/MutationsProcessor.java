@@ -166,7 +166,7 @@ public class MutationsProcessor {
 		final List<Future<String>> results = new LinkedList<Future<String>>();
 
 		writer.write("ThreadPool: " + Runtime.getRuntime().availableProcessors() + "\n");
-		int mutantIndex = 1;
+		int mutantIndex = 0;
 
 		for (final MutationLocation mutationLocation : locations) {
 			mutantIndex++;
