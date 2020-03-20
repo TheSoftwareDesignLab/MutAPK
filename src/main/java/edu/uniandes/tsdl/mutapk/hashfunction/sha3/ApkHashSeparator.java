@@ -14,9 +14,9 @@ public class ApkHashSeparator {
 		private final String hashResource;
 		private final int mutanteId; 
 
-		public Builder(String hashManifest, String hashsmali, String hashResource, int mutanteId) {
+		public Builder(String hashManifest, String hashSmali, String hashResource, int mutanteId) {
 			this.hashManifest = hashManifest;
-			this.hashSmali = hashsmali;
+			this.hashSmali = hashSmali;
 			this.hashResource = hashResource;
 			this.mutanteId = mutanteId;
 		}
