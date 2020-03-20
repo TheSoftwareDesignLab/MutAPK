@@ -1,7 +1,9 @@
 package edu.uniandes.tsdl.mutapk.hashfunction.sha3;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * University of Los Andes
@@ -41,15 +43,16 @@ public final class ApkHashOrder {
 		if(isDuplicate) {
 			ApkHashSeparator duplicate = apkHashesSeparator.get(nuevoApkHashSeparator);
 			if(duplicate != null && nuevoApkHashSeparator.equals(duplicate)) {
-				System.out.println("ES IGUAL: " + nuevoApkHashSeparator.equals(duplicate));
-				System.out.println("ES IGUAL Nuevo: " + nuevoApkHashSeparator.getMutanteId());
-				System.out.println("ES IGUAL Nuevo Manifest: " + nuevoApkHashSeparator.getMutanteId() + " " + nuevoApkHashSeparator.getHashManifest());
-				System.out.println("ES IGUAL Nuevo Smali: " + nuevoApkHashSeparator.getMutanteId() + " " + nuevoApkHashSeparator.getHashSmali());
-				System.out.println("ES IGUAL Nuevo Resource: " + nuevoApkHashSeparator.getMutanteId() + " " + nuevoApkHashSeparator.getHashResource());
-				System.out.println("ES IGUAL Nuevo: " + nuevoApkHashSeparator.getMutanteId() + " Viejo " + duplicate.getMutanteId());
-				System.out.println("ES IGUAL Nuevo Manifest: "  + nuevoApkHashSeparator.getMutanteId() + " Viejo " + duplicate.getMutanteId() + " " + nuevoApkHashSeparator.getHashManifest());
-				System.out.println("ES IGUAL Nuevo Smali: " + nuevoApkHashSeparator.getMutanteId() + " Viejo " + duplicate.getMutanteId() + " " + nuevoApkHashSeparator.getHashSmali());
-				System.out.println("ES IGUAL Nuevo Resource: " + nuevoApkHashSeparator.getMutanteId() + " Viejo " +  duplicate.getMutanteId() + " " + nuevoApkHashSeparator.getHashResource());
+//				System.out.println("ES IGUAL: " + nuevoApkHashSeparator.equals(duplicate));
+//				System.out.println("ES IGUAL Nuevo: " + nuevoApkHashSeparator.getMutanteId());
+//				System.out.println("ES IGUAL Nuevo Manifest: " + nuevoApkHashSeparator.getMutanteId() + " " + nuevoApkHashSeparator.getHashManifest());
+//				System.out.println("ES IGUAL Nuevo Smali: " + nuevoApkHashSeparator.getMutanteId() + " " + nuevoApkHashSeparator.getHashSmali());
+//				System.out.println("ES IGUAL Nuevo Resource: " + nuevoApkHashSeparator.getMutanteId() + " " + nuevoApkHashSeparator.getHashResource());
+//				System.out.println("ES IGUAL Nuevo: " + nuevoApkHashSeparator.getMutanteId() + " Viejo " + duplicate.getMutanteId());
+//				System.out.println("ES IGUAL Nuevo Manifest: "  + nuevoApkHashSeparator.getMutanteId() + " Viejo " + duplicate.getMutanteId() + " " + nuevoApkHashSeparator.getHashManifest());
+//				System.out.println("ES IGUAL Nuevo Smali: " + nuevoApkHashSeparator.getMutanteId() + " Viejo " + duplicate.getMutanteId() + " " + nuevoApkHashSeparator.getHashSmali());
+//				System.out.println("ES IGUAL Nuevo Resource: " + nuevoApkHashSeparator.getMutanteId() + " Viejo " +  duplicate.getMutanteId() + " " + nuevoApkHashSeparator.getHashResource());
+				System.out.println("Nuevo HashCode: " + nuevoApkHashSeparator.hashCode() +  "Viejo HashCode: " +  duplicate.hashCode());
 				return duplicate;
 			}
 		}

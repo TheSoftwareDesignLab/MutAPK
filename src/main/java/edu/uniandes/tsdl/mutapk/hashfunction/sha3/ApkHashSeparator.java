@@ -86,7 +86,7 @@ public class ApkHashSeparator {
 
 	@Override
 	public String toString() {
-		return hashManifest + "|" + hashResource + "|" + hashSmali;
+		return hashManifest + "||" + hashResource + "||" + hashSmali;
 	}
 
 }
