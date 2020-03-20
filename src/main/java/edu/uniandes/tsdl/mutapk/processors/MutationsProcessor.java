@@ -148,9 +148,9 @@ public class MutationsProcessor {
 		String hashManifest = Sha3.sha512FileSeparte(manifest);
 		String hashSmaliConSeperado = Sha3.sha512FileSeparte(smali);
 		String hashResourceConSeperado = Sha3.sha512FileSeparte(resource);
-		System.out.println("ESTE ES: " + hashManifest);
-		System.out.println("ESTE ES: " + hashSmaliConSeperado);
-		System.out.println("ESTE ES: " + hashResourceConSeperado);
+		System.out.println("ESTE ES MANIFEST: " + hashManifest);
+		System.out.println("ESTE ES SMALI: " + hashSmaliConSeperado);
+		System.out.println("ESTE ES RESOURCE: " + hashResourceConSeperado);
 		ApkHashSeparator apkHashSeparator = new ApkHashSeparator.Builder(hashManifest, hashSmaliConSeperado, hashResourceConSeperado, mutanteId).build();
 		return apkHashSeparator;
 	}
