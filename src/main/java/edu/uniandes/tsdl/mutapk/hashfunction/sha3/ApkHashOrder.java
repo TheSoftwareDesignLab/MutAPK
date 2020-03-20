@@ -42,6 +42,7 @@ public final class ApkHashOrder {
 		boolean isDuplicate = apkHashesSeparator.containsKey(nuevoApkHashSeparator);
 		if(isDuplicate) {
 			ApkHashSeparator duplicate = apkHashesSeparator.get(nuevoApkHashSeparator);
+			System.out.println("HashCode: " + nuevoApkHashSeparator.hashCode() +  " duplicate: " +  duplicate.hashCode());
 			if(duplicate != null && nuevoApkHashSeparator.equals(duplicate)) {
 //				System.out.println("ES IGUAL: " + nuevoApkHashSeparator.equals(duplicate));
 //				System.out.println("ES IGUAL Nuevo: " + nuevoApkHashSeparator.getMutanteId());
@@ -52,10 +53,10 @@ public final class ApkHashOrder {
 //				System.out.println("ES IGUAL Nuevo Manifest: "  + nuevoApkHashSeparator.getMutanteId() + " Viejo " + duplicate.getMutanteId() + " " + nuevoApkHashSeparator.getHashManifest());
 //				System.out.println("ES IGUAL Nuevo Smali: " + nuevoApkHashSeparator.getMutanteId() + " Viejo " + duplicate.getMutanteId() + " " + nuevoApkHashSeparator.getHashSmali());
 //				System.out.println("ES IGUAL Nuevo Resource: " + nuevoApkHashSeparator.getMutanteId() + " Viejo " +  duplicate.getMutanteId() + " " + nuevoApkHashSeparator.getHashResource());
-				System.out.println("Nuevo HashCode: " + nuevoApkHashSeparator.hashCode() +  "Viejo HashCode: " +  duplicate.hashCode());
 				return duplicate;
 			}
 		}
+		System.out.println("HashCode: " + nuevoApkHashSeparator.hashCode());
 		nuevoApkHashSeparator.setId(id);
 		apkHashesSeparator.put(nuevoApkHashSeparator, nuevoApkHashSeparator);
 		id++;
