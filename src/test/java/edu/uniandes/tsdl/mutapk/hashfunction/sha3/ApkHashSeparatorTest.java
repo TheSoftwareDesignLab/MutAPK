@@ -6,9 +6,5 @@ import org.junit.Test;
 
 public class ApkHashSeparatorTest {
 
-	@Test
-	public void testEquals() {
-		fail("Not yet implemented");
-	}
 
 }

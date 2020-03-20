@@ -255,6 +255,7 @@ public class MutAPK {
 		File manifest = new File(apkAbsolutePath + File.separator + "AndroidManifest.xml");
 		File smali = new File(apkAbsolutePath + File.separator + "smali");
 		File resource = new File(apkAbsolutePath + File.separator + "res");
+		
 
 		// Create ApkHashSeparator
 		ApkHashSeparator apkHashSeparator = mProcessor.generateApkHashSeparator(manifest, smali, resource, 0);
