@@ -78,6 +78,7 @@ public class OperatorBundle {
 	public int getAmountOfSelectedOperators() {
 		return bundle.keySet().size();
 	}
+	
 
 	public String printSelectedOperators() {
 

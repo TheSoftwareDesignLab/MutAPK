@@ -7,9 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import org.json.simple.JSONObject;
@@ -17,10 +15,9 @@ import org.json.simple.parser.JSONParser;
 
 import edu.uniandes.tsdl.mutapk.detectors.MutationLocationDetector;
 import edu.uniandes.tsdl.mutapk.detectors.MutationLocationListBuilder;
-import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHash;
+import edu.uniandes.tsdl.mutapk.exception.MutAPKException;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashOrder;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashSeparator;
-import edu.uniandes.tsdl.mutapk.hashfunction.sha3.Sha3;
 import edu.uniandes.tsdl.mutapk.helper.APKToolWrapper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
 import edu.uniandes.tsdl.mutapk.model.MutationType;
@@ -45,10 +42,11 @@ public class MutAPK {
 			// System.out.println(finalTime);
 			// System.out.println(finalTime-initialTime);
 
-		} catch (Exception e) {
+		}catch (MutAPKException e) {
 			System.out.println(e.getMessage());
+		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		} 
 	}
 
 	public static void runMutAPK(String[] args) throws NumberFormatException, Exception {
@@ -162,9 +160,10 @@ public class MutAPK {
 		// Read selected operators
 		OperatorBundle operatorBundle = new OperatorBundle(operatorsDir);
 		System.out.println(operatorBundle.printSelectedOperators());
-
+		
+		
 		if (amountMutants > 0 && operatorBundle.getAmountOfSelectedOperators() > amountMutants) {
-			throw new Exception("you must select as many mutants as selected operators, right now you select "
+			throw new MutAPKException("you must select as many mutants as selected operators, right now you select "
 					+ operatorBundle.getAmountOfSelectedOperators() + " operators but only ask for " + amountMutants
 					+ " mutants");
 		}
@@ -210,6 +209,10 @@ public class MutAPK {
 			// }
 		}
 
+		if(totalMutants < amountMutants) {
+			throw new MutAPKException("The total of mutants need to be greater than the amount of mutants asked");
+		}
+		
 		// 3. Build MutationLocation List
 		List<MutationLocation> mutationLocationList = MutationLocationListBuilder.buildList(locations);
 		printLocationList(mutationLocationList, mutantsFolder, appName);
