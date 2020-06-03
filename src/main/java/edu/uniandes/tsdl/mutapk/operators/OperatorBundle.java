@@ -83,12 +83,14 @@ public class OperatorBundle {
 	public String printSelectedOperators() {
 
 		Set<String> ids = bundle.keySet();
-		String selectedOperators = "Selected Operators: " + ids.size() + "\n";
+		String selectedOperators = "Id 		| MutOperatorName\n";
+		selectedOperators += "----------------|--------------\n";
 
 		for (String id : ids) {
-			selectedOperators += id + " " + bundle.getString(id) + "\n";
+			selectedOperators += id + " 		| " + bundle.getString(id) + "\n";
 		}
-		selectedOperators += "------------\n";
+		selectedOperators += "\nAmount Selected Operators: 	" + ids.size() + "\n\n";
+		selectedOperators += "-------------------------------------------\n";
 
 		return selectedOperators;
 	}

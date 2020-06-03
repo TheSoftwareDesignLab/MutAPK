@@ -59,7 +59,7 @@ public class MutationsProcessor {
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-mutants.log"));
 		BufferedWriter wwriter = new BufferedWriter(
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-times.csv"));
-		wwriter.write("mutantIndex;mutantType;mutationTime;buildingTime");
+		wwriter.write("mutantIndex;mutantType;mutationTime;buildingTime;itCompiles");
 		wwriter.newLine();
 		wwriter.flush();
 		for (MutationLocation mutationLocation : locations) {
@@ -102,7 +102,6 @@ public class MutationsProcessor {
 
 		ApkHashSeparator apkHashSeparatorDuplicate = ApkHashOrder.getInstance()
 				.setApkHashSeparator(apkHashSeparator);
-		System.out.println("AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		if (apkHashSeparatorDuplicate != null) {
 			System.out.println("El operado es: " + mutationLocation.getType().toString());
 			int compare = apkHashSeparatorDuplicate.getId();
@@ -138,7 +137,7 @@ public class MutationsProcessor {
 		Long buildEnd = System.currentTimeMillis();
 		Long buildingTime = buildEnd - mutationEnd;
 		wwriter.write(mutantIndex + ";" + mutationLocation.getType().getId() + ";" + mutationTime + ";"
-				+ buildingTime);
+				+ buildingTime + ";" + (result?"1":"0"));
 		wwriter.newLine();
 		wwriter.flush();
 	}
@@ -153,7 +152,7 @@ public class MutationsProcessor {
 	}
 
 	public void processMultithreaded(List<MutationLocation> locations, final String extraPath, final String apkName)
-			throws IOException, NullPointerException, Exception {
+			throws IOException, NullPointerException {
 
 		final BufferedWriter writer = new BufferedWriter(
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-mutants.log"));
@@ -209,20 +208,6 @@ public class MutationsProcessor {
 		System.out.println("------------------------------------------------------------------------------------");
 		System.out.println("The length of hasmap is: " + ApkHashOrder.getInstance().getLength());
 		System.out.println("------------------------------------------------------------------------------------");
-
-		// If more output for single operator is needed
-		// FileOutputStream out = new
-		// FileOutputStream(getMutantsRootFolder()+File.separator+getAppName()+"-process.log");
-		// PrintStream pout = new PrintStream(out);
-		// for (Future<String> result : results) {
-		// try {
-		// pout.print(result.get());
-		// } catch (Exception e) {
-		// e.printStackTrace();
-		// }
-		// }
-		// pout.flush();
-		// pout.close();
 
 		executor.shutdown();
 		if (executor.isTerminated()) {

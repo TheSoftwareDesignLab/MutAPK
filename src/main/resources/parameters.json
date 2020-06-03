@@ -1,19 +1,16 @@
 {
-	"APKPath": ".\\apk\\com.evancharlton.mileage_3110.apk",
-	"PackageName": "com.evancharlton.mileage",
-	"MutanPath": ".\\mutants", 
-	"BinariesPath": ".\\extra",
-	"DirectoryOfOperator.properties": ".\\",
-	"MultithreadGeneration": "true",
-	"SelectorType": "ALL",
-	"AmountMutants":"60",
-	"ConfidenceLevel":{
-		"Individual":"false",
-		"ConfidenceLevel":"85",
-		"MarginError":"10"
-	},
-	"APKVersions":{
-		"OldAPKPath":"1",
-		"NewAPKPath":"1"
+	"apkPath": "./apk/com.evancharlton.mileage_3110.apk",
+	"appName": "com.evancharlton.mileage",
+	"mutantsFolder": "./mutants", 
+	"operatorsDir": "./",
+	"multithreadExec": "true",
+	"extraPath": "./extra",
+	"selectionStrategy": "all",
+	"selectionParameters":{
+		"amountMutants":"60",
+		"perOperator":"false",
+		"confidenceLevel":"85",
+		"marginError":"10",
+		"baseAPKPath":"./"
 	}
 }
