@@ -67,9 +67,6 @@ public class MutationsProcessor {
 				setupMutantFolder(mutantIndex);
 				System.out.println("Mutant: " + mutantIndex + " - Type: " + mutationLocation.getType());
 				operator = factory.getOperator(mutationLocation.getType().getId());
-				mutantRootFolder = getMutantsRootFolder() + File.separator + getAppName() + "-mutant" + mutantIndex
-						+ File.separator;
-				mutantFolder = mutantRootFolder + "src" + File.separator;
 
 				// Create mutation
 				newMutationPath = mutationLocation.getFilePath().replace(appFolder, mutantFolder);
@@ -116,6 +113,9 @@ public class MutationsProcessor {
 					mutantIndex + ";" + mutationLocation.getType().getId() + ";" + mutationTime + ";" + -1);
 		} else {
 			System.out.println("Se genero el mutante con id: " + apkHashSeparator.getId());
+			mutantRootFolder = getMutantsRootFolder() + File.separator + getAppName() + "-mutant" + mutantIndex
+					+ File.separator;
+			mutantFolder = mutantRootFolder + "src" + File.separator;
 			generateMutant(extraPath, apkName, mutantIndex, mutantFolder, newMutationPath, wwriter,
 					mutationLocation, mutationEnd, mutationTime);
 		}

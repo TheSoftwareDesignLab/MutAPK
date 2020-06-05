@@ -1,10 +1,10 @@
 {
-	"apkPath": "./apk/com.evancharlton.mileage_3110.apk",
+	"apkPath": ".\\apk\\com.evancharlton.mileage_3110.apk",
 	"appName": "com.evancharlton.mileage",
-	"mutantsFolder": "./mutants", 
-	"operatorsDir": "./",
-	"multithreadExec": "false",
-	"extraPath": "./extra",
+	"mutantsFolder": ".\\mutants", 
+	"operatorsDir": ".\\",
+	"multithreadExec": "true",
+	"extraPath": ".\\extra",
 	"selectionStrategy": "amountMutants",
 	"selectionParameters":{
 		"amountMutants":"34",
