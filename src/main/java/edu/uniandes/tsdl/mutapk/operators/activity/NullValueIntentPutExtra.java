@@ -42,18 +42,11 @@ public class NullValueIntentPutExtra implements MutationOperator{
 		newLines.add("");
 		String invoke = lines.get(location.getLine()-1);//.replace(extraNamePos, "v9");
 		String newInvoke = invoke.substring(0, extraTypePos)+"[Landroid/os/Parcelable;"+invoke.substring(extraTypePos+extraTypeText.length());
-//		System.out.println(newInvoke);
 		newLines.add(newInvoke);
 		for(int i=location.getLine(); i < lines.size() ; i++){
 			newLines.add(lines.get(i));
 		}
-//		
-//		int[] mutatedlines = new int[]{intentInstanceLine, contextInstanceLine, classComponentLine, mLocation.getLine()};
-//		String mutatedLines = "{ ";
-//		for (int i = 0; i < mutatedlines.length; i++) {
-//			mutatedLines += mutatedlines[i]+", ";
-//		}
-//		mutatedLines = mutatedLines.substring(0,mutatedLines.length()-2)+" }";
+
 		FileHelper.writeLines(location.getFilePath(), newLines);
 		Helper.mutationSuccess(mutantIndex);
 		Helper.writeBasicLogInfo(mutantIndex, location.getFilePath(), location.getType().getName(), new int[] {location.getStartLine()}, writer);

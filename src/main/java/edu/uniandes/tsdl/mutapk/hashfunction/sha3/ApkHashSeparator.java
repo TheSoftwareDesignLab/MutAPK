@@ -6,19 +6,19 @@ public class ApkHashSeparator {
 	private final String hashManifest;
 	private final String hashSmali;
 	private final String hashResource;
-	private final int mutanteId; 
+	private final int mutantId; 
 
 	public static class Builder {
 		private final String hashManifest;
 		private final String hashSmali;
 		private final String hashResource;
-		private final int mutanteId; 
+		private final int mutantId; 
 
-		public Builder(String hashManifest, String hashSmali, String hashResource, int mutanteId) {
+		public Builder(String hashManifest, String hashSmali, String hashResource, int mutantId) {
 			this.hashManifest = hashManifest;
 			this.hashSmali = hashSmali;
 			this.hashResource = hashResource;
-			this.mutanteId = mutanteId;
+			this.mutantId = mutantId;
 		}
 
 		public ApkHashSeparator build() {
@@ -30,7 +30,7 @@ public class ApkHashSeparator {
 		this.hashManifest = builder.hashManifest;
 		this.hashSmali = builder.hashSmali;
 		this.hashResource = builder.hashResource;
-		this.mutanteId = builder.mutanteId;
+		this.mutantId = builder.mutantId;
 	}
 
 	public int getId() {
@@ -53,8 +53,8 @@ public class ApkHashSeparator {
 		return hashResource;
 	}
 
-	public int getMutanteId() {
-		return mutanteId;
+	public int getMutantId() {
+		return mutantId;
 	}
 
 	@Override

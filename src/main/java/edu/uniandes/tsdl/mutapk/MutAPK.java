@@ -248,12 +248,12 @@ public class MutAPK {
 		// Preprocess paths to fit to OS filsesystem format
 		String os = System.getProperty("os.name").toLowerCase();
 		if (os.indexOf("win") >= 0) {
-			mutantsFolder = mutantsFolder.replaceFirst("/", File.separator+File.separator) + File.separator+File.separator;
+			mutantsFolder = mutantsFolder.replaceFirst("/", File.separator+File.separator) +File.separator;
 			apkPath = apkPath.replaceAll("/", File.separator+File.separator);
 			apkName = apkPath.substring(apkPath.lastIndexOf("\\"));
 			
-			extraPath = extraPath.equals("")?"":extraPath.replaceAll("/", File.separator+File.separator) + File.separator+File.separator;
-			operatorsDir = operatorsDir.equals("")?"":operatorsDir.replaceAll("/", File.separator+File.separator) + File.separator+File.separator;
+			extraPath = extraPath.equals("")?"":extraPath.replaceAll("/", File.separator+File.separator) + File.separator;
+			operatorsDir = operatorsDir.equals("")?"":operatorsDir.replaceAll("/", File.separator+File.separator) + File.separator;
 		} else {
 			apkName = apkPath.substring(apkPath.lastIndexOf("/"));
 		}

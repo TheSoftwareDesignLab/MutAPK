@@ -35,9 +35,6 @@ public class InvalidIDFindView implements MutationOperator {
 				linee = parent.getLine();
 			}
 		}
-//		System.out.println(mutantIndex+" "+parent.toStringTree());
-//		System.out.println(mutantIndex+" "+((CommonTree)parent.getParent().getChild(parent.getChildIndex()-1)).toStringTree());
-//		System.out.println(mutantIndex+" "+((CommonTree)parent.getParent().getChild(parent.getChildIndex()-2)).toStringTree());
 
 		if (uncle != null && !isParam) {
 			constVarName = uncle.getChild(1).getText();
