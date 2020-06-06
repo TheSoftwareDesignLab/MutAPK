@@ -67,7 +67,7 @@ public class MutationsProcessor {
 			setupMutantFolder(mutantIndex);
 			Long copyingEnd = System.currentTimeMillis();
 			Long copyingTime = copyingEnd - copyingIni;
-			wwriter.write(mutantIndex + ";" + mutationLocation.getType().getId() + ";" + copyingTime + ";0;0;0;0;0;0");
+			wwriter.write(mutantIndex + ";" + mutationLocation.getType().getId() + ";" + copyingTime + ";0;0;0;0;-1;0");
 			wwriter.newLine();
 			wwriter.flush();
 			Long mutationIni = System.currentTimeMillis();
@@ -112,10 +112,10 @@ public class MutationsProcessor {
 			int compare = apkHashSeparatorDuplicate.getMutantId();
 			if(compare == 0) {
 				System.out.println("The mutant with id: "+apkHashSeparator.getMutantId()+" is equivalent.");
-				wwriter.write(mutantIndex + ";" + mutationLocation.getType().getId() + ";" + mutationTime + ";" + -1 + ";1;0;"+compare+";0");
+				wwriter.write(mutantIndex + ";" + mutationLocation.getType().getId() + ";0;" + mutationTime + ";" + -1 + ";1;0;"+compare+";0");
 			} else {
 				System.out.println("The mutant with id: "+apkHashSeparator.getMutantId()+" is duplicated with mutant with id: "+compare);
-				wwriter.write(mutantIndex + ";" + mutationLocation.getType().getId() + ";" + mutationTime + ";" + -1 + ";0;1;"+compare+";0");
+				wwriter.write(mutantIndex + ";" + mutationLocation.getType().getId() + ";0;" + mutationTime + ";" + -1 + ";0;1;"+compare+";0");
 			}
 			wwriter.newLine();
 			wwriter.flush();
@@ -184,7 +184,7 @@ public class MutationsProcessor {
 			setupMutantFolder(currentMutationIndex);
 			Long copyingEnd = System.currentTimeMillis();
 			Long copyingTime = copyingEnd - copyingIni;
-			wwriter.write(currentMutationIndex + ";" + mutationLocation.getType().getId() + ";" + copyingTime + ";0;0;0;0;0;0");
+			wwriter.write(currentMutationIndex + ";" + mutationLocation.getType().getId() + ";" + copyingTime + ";0;0;0;0;-1;0");
 			wwriter.newLine();
 			wwriter.flush();
 			results.add(executor.submit(new Callable<String>() {
