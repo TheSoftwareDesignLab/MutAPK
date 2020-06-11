@@ -5,7 +5,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.FilenameFilter;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -242,7 +245,7 @@ public class MutAPK {
 		}
 	}
 
-	private static void checkAndPrepareParameters() throws MutAPKException {
+	private static void checkAndPrepareParameters() throws MutAPKException, IOException {
 		// TODO Auto-generated method stub
 
 		// Preprocess paths to fit to OS filsesystem format
@@ -260,14 +263,48 @@ public class MutAPK {
 
 		// Check general parameters
 
-		// apkPath exists and to identify if it is an absolute or a relative path
-		// appName to not be empty
+		String decodedPath = Helper.getInstance().getCurrentDirectory();
+		// apkPath exists
+		if(!(new File(Paths.get(decodedPath, apkPath).toAbsolutePath().toString())).exists()){
+			throw new MutAPKException("Path to APK is not correct. The path does not exist.");
+		}
 		// mutantsfolder exists (in case it does not exist to create it) and to identify if it is an absolute or a relative path
+		File mutantsFolderFO = new File(Paths.get(decodedPath, mutantsFolder).toAbsolutePath().toString()); 
+		if(!mutantsFolderFO.exists()){
+			mutantsFolderFO.mkdirs();
+		}
 
-
-		// operatorsDir if the folder exists, check if exists a .properties file, and if it is an absolute or relative path
+		// operatorsDir if the folder exists, check if exists a .properties file
+		File operFolderFO = new File(Paths.get(decodedPath, operatorsDir).toAbsolutePath().toString()); 
+		if(!operFolderFO.exists()){
+			throw new MutAPKException("Path to operator file is not correct. The path does not exist.");
+		}
+		System.out.println(operFolderFO.getCanonicalPath().toString());
+		File[] properties = operFolderFO.listFiles(new FilenameFilter() {
+			
+			@Override
+			public boolean accept(File dir, String name) {
+				return name.endsWith("operators.properties");
+			}
+		});
+		if(properties.length==0) {
+			throw new MutAPKException("Path to operators config file is not correct. No operators.properties file exist in folder");
+		}
 		// extraPath if it is a parameter of JSON, if the folder exists and if it is an absolute or relative path
-
+		File extraFolderFO = new File(Paths.get(decodedPath, extraPath).toAbsolutePath().toString()); 
+		if(!extraFolderFO.exists()){
+			throw new MutAPKException("Path to extra folder is not correct. The path does not exist.");
+		}
+		File[] extraFO = extraFolderFO.listFiles(new FilenameFilter() {
+			
+			@Override
+			public boolean accept(File dir, String name) {
+				return ( name.endsWith("apktool.jar") || name.endsWith("uber-apk-signer.jar") || name.endsWith("materialistic.jks"));
+			}
+		});
+		if(extraFO.length<3) {
+			throw new MutAPKException("Path to extra folder is not correct. No valid extra folder was provided.");
+		}
 
 		// Check specific selection strategy parameters
 		switch (selectionStrategy) {
