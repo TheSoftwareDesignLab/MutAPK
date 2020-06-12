@@ -10,11 +10,15 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map.Entry;
 import java.util.Set;
 
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.antlr.runtime.RecognitionException;
+import org.antlr.runtime.tree.CommonTree;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -26,8 +30,12 @@ import edu.uniandes.tsdl.mutapk.exception.MutAPKException;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashOrder;
 import edu.uniandes.tsdl.mutapk.hashfunction.sha3.ApkHashSeparator;
 import edu.uniandes.tsdl.mutapk.helper.APKToolWrapper;
+import edu.uniandes.tsdl.mutapk.helper.ASTHelper;
+import edu.uniandes.tsdl.mutapk.helper.CallGraphHelper;
 import edu.uniandes.tsdl.mutapk.helper.Helper;
+import edu.uniandes.tsdl.mutapk.model.CallGraphNode;
 import edu.uniandes.tsdl.mutapk.model.MutationType;
+import edu.uniandes.tsdl.mutapk.model.SmaliAST;
 import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
 import edu.uniandes.tsdl.mutapk.operators.OperatorBundle;
 import edu.uniandes.tsdl.mutapk.processors.MutationsProcessor;
@@ -65,6 +73,8 @@ public class MutAPK {
 
 	static OperatorBundle operatorBundle;
 
+	static HashMap<String, SmaliAST> smaliASTs = new HashMap<String, SmaliAST>();
+
 	public static void main(String[] args) {
 		try {
 			// long initialTime = System.currentTimeMillis();
@@ -83,7 +93,7 @@ public class MutAPK {
 		}
 	}
 
-	public static void runMutAPK(String[] args) throws NumberFormatException, FileNotFoundException, IOException, ParseException, MutAPKException, InterruptedException, ParserConfigurationException, SAXException {
+	public static void runMutAPK(String[] args) throws NumberFormatException, FileNotFoundException, IOException, ParseException, MutAPKException, InterruptedException, ParserConfigurationException, SAXException, RecognitionException {
 
 		// Read JSON config file
 		readConfig(args[0]);
@@ -109,77 +119,121 @@ public class MutAPK {
 		// Run detection phase for Text-based detectors
 		HashMap<MutationType, List<MutationLocation>> locations = TextBasedDetectionsProcessor.process("temp", textBasedDetectors);
 
+		//--------------------------------------------
 		// Run detection phase for AST-based detectors
-		SourceCodeProcessor scp = new SourceCodeProcessor(operatorBundle);
-		locations.putAll(scp.processFolder("temp", extraPath, appName));
+		//--------------------------------------------
 
-		// Report the statistics of the found Potential Fault Locations
-		Set<MutationType> keys = locations.keySet();
-		List<MutationLocation> list = null;
-		int totalMutants = 0;
-		System.out.println("## Amount of Potential Fault Locations per Mutation Operator\n");
-		System.out.println("Amount Mutants	| Mutation Operator");
-		System.out.println("----------------|---------------------");
-		for (MutationType mutationType : keys) {
-			list = locations.get(mutationType);
-			totalMutants += list.size();
-			System.out.println(list.size() + "		| " + mutationType);
-		}
+		// Generate HashMap with all the ASTs
+		SourceCodeProcessor scp = new SourceCodeProcessor();
+		scp.generateASTsMap(extraPath, appName, smaliASTs);
 
-		// Check if the amount of PFLocations is lower than the requested by the user
-		if(totalMutants < amountMutants) {
-			throw new MutAPKException("The total of mutants need to be greater than the amount of mutants asked");
-		}
-		System.out.println("");
+		// Generate the Call Graph
 
-		// Build MutationLocation List
-		List<MutationLocation> mutationLocationList = MutationLocationListBuilder.buildList(locations);
-		printLocationList(mutationLocationList, mutantsFolder, appName);
-		System.out.println("\nTotal Locations: " + mutationLocationList.size());
-		System.out.println();
-		System.out.println("--------------------------------------");
+		HashMap<String, HashMap<String, CallGraphNode>> callGraph = CallGraphHelper.getCallGraph(smaliASTs);
 
-		// Select Selector
-		switch (selectionStrategy) {
-		case AMOUNT_MUTANTS_SS:
-			SelectorAmountMutantsMethod selectorAmountMutantsMethod = new SelectorAmountMutantsMethod();
-			SelectorAmountMutants selectorAmountMutants = new SelectorAmountMutants(false, false, totalMutants,
-					amountMutants);
-			mutationLocationList = selectorAmountMutantsMethod.mutantSelector(locations, selectorAmountMutants);
-			break;
-		case REPRESENTATIVE_SUBSET_SS:
-			SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false,
-					totalMutants, isRSPerOPerator, confidenceLevel, marginError);
-			SelectorConfidenceIntervalMethod CIMS = new SelectorConfidenceIntervalMethod();
-			mutationLocationList = CIMS.mutantSelector(locations, selectorConfidenceInterval);
-			break;
-		default:
-			break;
-		}
-		System.out.println("");
-		
-		System.out.println("## Mutation Process Log");
-		System.out.println();
-		System.out.println("```sh");
+//		for(Entry<String, HashMap<String, CallGraphNode>> entry : callGraph.entrySet()) {
+//			System.out.println(entry.getKey());
+//			for(Entry<String, CallGraphNode> entryy : entry.getValue().entrySet()) {
+//				CallGraphNode temp = entryy.getValue();
+//				System.out.println("	"+entryy.getKey()+" "+temp.getCallees().size()+" "+temp.getCallers().size());
+//			}
+//		}
 
-		// Execute mutation phase
-		MutationsProcessor mProcessor = new MutationsProcessor("temp", appName, mutantsFolder);
-
-		// Create de apkhash for the base folder
-		File manifest = new File(apkAbsolutePath + File.separator + "AndroidManifest.xml");
-		File smali = new File(apkAbsolutePath + File.separator + "smali");
-		File resource = new File(apkAbsolutePath + File.separator + "res");
+		// Prune ASTs
 
 
-		// Create ApkHashSeparator
-		ApkHashSeparator apkHashSeparator = mProcessor.generateApkHashSeparator(manifest, smali, resource, 0);
-		// Add the base apkHashSeparator
-		ApkHashOrder.getInstance().setApkHashSeparator(apkHashSeparator);
+		//		// Generate PFP over pruned ASTs
+		//		for(Entry<String, SmaliAST> entry : smaliASTs.entrySet()) {
+		//			SmaliAST temp = entry.getValue();
+		//
+		//			HashMap<MutationType, List<MutationLocation>> fileLocations = ASTHelper.findLocations(temp, operatorBundle);
+		//			appendLocations(fileLocations, locations);
+		//		}
+		//
+		//		// Report the statistics of the found Potential Fault Locations
+		//		Set<MutationType> keys = locations.keySet();
+		//		List<MutationLocation> list = null;
+		//		int totalMutants = 0;
+		//		System.out.println("## Amount of Potential Fault Locations per Mutation Operator\n");
+		//		System.out.println("Amount Mutants	| Mutation Operator");
+		//		System.out.println("----------------|---------------------");
+		//		for (MutationType mutationType : keys) {
+		//			list = locations.get(mutationType);
+		//			totalMutants += list.size();
+		//			System.out.println(list.size() + "		| " + mutationType);
+		//		}
+		//
+		//		// Check if the amount of PFLocations is lower than the requested by the user
+		//		if(totalMutants < amountMutants) {
+		//			throw new MutAPKException("The total of mutants need to be greater than the amount of mutants asked");
+		//		}
+		//		System.out.println("");
+		//
+		//		// Build MutationLocation List
+		//		List<MutationLocation> mutationLocationList = MutationLocationListBuilder.buildList(locations);
+		//		printLocationList(mutationLocationList, mutantsFolder, appName);
+		//		System.out.println("\nTotal Locations: " + mutationLocationList.size());
+		//		System.out.println();
+		//		System.out.println("--------------------------------------");
+		//
+		//		// Select Selector
+		//		switch (selectionStrategy) {
+		//		case AMOUNT_MUTANTS_SS:
+		//			SelectorAmountMutantsMethod selectorAmountMutantsMethod = new SelectorAmountMutantsMethod();
+		//			SelectorAmountMutants selectorAmountMutants = new SelectorAmountMutants(false, false, totalMutants,
+		//					amountMutants);
+		//			mutationLocationList = selectorAmountMutantsMethod.mutantSelector(locations, selectorAmountMutants);
+		//			break;
+		//		case REPRESENTATIVE_SUBSET_SS:
+		//			SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false,
+		//					totalMutants, isRSPerOPerator, confidenceLevel, marginError);
+		//			SelectorConfidenceIntervalMethod CIMS = new SelectorConfidenceIntervalMethod();
+		//			mutationLocationList = CIMS.mutantSelector(locations, selectorConfidenceInterval);
+		//			break;
+		//		default:
+		//			break;
+		//		}
+		//		System.out.println("");
+		//
+		//		System.out.println("## Mutation Process Log");
+		//		System.out.println();
+		//		System.out.println("```sh");
+		//
+		//		// Execute mutation phase
+		//		MutationsProcessor mProcessor = new MutationsProcessor("temp", appName, mutantsFolder);
+		//
+		//		// Create de apkhash for the base folder
+		//		File manifest = new File(apkAbsolutePath + File.separator + "AndroidManifest.xml");
+		//		File smali = new File(apkAbsolutePath + File.separator + "smali");
+		//		File resource = new File(apkAbsolutePath + File.separator + "res");
+		//
+		//
+		//		// Create ApkHashSeparator
+		//		ApkHashSeparator apkHashSeparator = mProcessor.generateApkHashSeparator(manifest, smali, resource, 0);
+		//		// Add the base apkHashSeparator
+		//		ApkHashOrder.getInstance().setApkHashSeparator(apkHashSeparator);
+		//
+		//		if (multithread) {
+		//			mProcessor.processMultithreaded(mutationLocationList, extraPath, apkName);
+		//		} else {
+		//			mProcessor.process(mutationLocationList, extraPath, apkName);
+		//		}
 
-		if (multithread) {
-			mProcessor.processMultithreaded(mutationLocationList, extraPath, apkName);
-		} else {
-			mProcessor.process(mutationLocationList, extraPath, apkName);
+	}
+
+	private static void appendLocations(HashMap<MutationType, List<MutationLocation>> source, HashMap<MutationType, List<MutationLocation>> target){
+
+		for(Entry<MutationType, List<MutationLocation>> entry : source.entrySet()){
+			List<MutationLocation> sourceLocations = source.get(entry.getKey());
+			List<MutationLocation> targetLocations = target.get(entry.getKey());
+
+			if(targetLocations != null){
+				targetLocations.addAll(sourceLocations);
+			} else {
+				targetLocations = sourceLocations;
+			}
+
+			target.put(entry.getKey(), targetLocations);
 		}
 
 	}
@@ -246,7 +300,6 @@ public class MutAPK {
 	}
 
 	private static void checkAndPrepareParameters() throws MutAPKException, IOException {
-		// TODO Auto-generated method stub
 
 		// Preprocess paths to fit to OS filsesystem format
 		String os = System.getProperty("os.name").toLowerCase();
@@ -254,7 +307,7 @@ public class MutAPK {
 			mutantsFolder = mutantsFolder.replaceFirst("/", File.separator+File.separator) +File.separator;
 			apkPath = apkPath.replaceAll("/", File.separator+File.separator);
 			apkName = apkPath.substring(apkPath.lastIndexOf("\\"));
-			
+
 			extraPath = extraPath.equals("")?"":extraPath.replaceAll("/", File.separator+File.separator) + File.separator;
 			operatorsDir = operatorsDir.equals("")?"":operatorsDir.replaceAll("/", File.separator+File.separator) + File.separator;
 		} else {
@@ -281,7 +334,7 @@ public class MutAPK {
 		}
 		System.out.println(operFolderFO.getCanonicalPath().toString());
 		File[] properties = operFolderFO.listFiles(new FilenameFilter() {
-			
+
 			@Override
 			public boolean accept(File dir, String name) {
 				return name.endsWith("operators.properties");
@@ -296,7 +349,7 @@ public class MutAPK {
 			throw new MutAPKException("Path to extra folder is not correct. The path does not exist.");
 		}
 		File[] extraFO = extraFolderFO.listFiles(new FilenameFilter() {
-			
+
 			@Override
 			public boolean accept(File dir, String name) {
 				return ( name.endsWith("apktool.jar") || name.endsWith("uber-apk-signer.jar") || name.endsWith("materialistic.jks"));

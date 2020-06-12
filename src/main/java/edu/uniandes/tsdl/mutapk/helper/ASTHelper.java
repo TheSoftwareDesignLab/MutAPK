@@ -6,7 +6,11 @@ import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.RecognitionException;
@@ -16,6 +20,13 @@ import org.antlr.runtime.tree.CommonTree;
 import edu.uniandes.tsdl.smali.LexerErrorInterface;
 import edu.uniandes.tsdl.antlr.smaliParser;
 import edu.uniandes.tsdl.jflex.smaliFlexLexer;
+import edu.uniandes.tsdl.mutapk.detectors.code.visitors.APICallVO;
+import edu.uniandes.tsdl.mutapk.detectors.code.visitors.TreeVisitorInstance;
+import edu.uniandes.tsdl.mutapk.model.MutationType;
+import edu.uniandes.tsdl.mutapk.model.SmaliAST;
+import edu.uniandes.tsdl.mutapk.model.location.ASTMutationLocation;
+import edu.uniandes.tsdl.mutapk.model.location.MutationLocation;
+import edu.uniandes.tsdl.mutapk.operators.OperatorBundle;
 
 public class ASTHelper {
 
@@ -97,14 +108,6 @@ public class ASTHelper {
 	}
 
 	public static int[] isValidLocation(CommonTree t) {
-		// if(t.getType()==159) {
-		// System.out.println(t.toStringTree());
-		// System.out.println(t.getType());
-		// System.out.println(t.getChild(2));
-		// System.out.println(t.getChild(3));
-		// System.out.println(t.getChild(2).toStringTree().equals("Ljava/net/URI;") &&
-		// t.getChild(3).toStringTree().equals("<init>") );
-		// }
 
 		if (t.getType() == smaliParser.I_STATEMENT_FORMAT35c_METHOD) {
 			ArrayList<Integer> resp = new ArrayList<Integer>();
@@ -199,9 +202,6 @@ public class ASTHelper {
 			}
 		}
 
-		// } else if(false){//View.OnClickListener
-		// return new int[]{30};
-		// }
 		return new int[] { -1 };
 	}
 
@@ -255,6 +255,55 @@ public class ASTHelper {
 			}
 		}
 		return resp;
+	}
+	
+
+	public static HashMap<MutationType, List<MutationLocation>> findLocations(SmaliAST smaliAST, OperatorBundle operatorBundle) {
+		
+		HashMap<MutationType, List<MutationLocation>> mutationLocations = new HashMap<>();
+		
+		MutationLocation location= null;
+		MutationType muType = null;
+		
+		String filePath = smaliAST.getFilePath();
+		CommonTree cu = smaliAST.getAst();
+		
+		TreeVisitorInstance ttv = new TreeVisitorInstance();
+		ttv.visit(cu, null);
+
+		HashSet<APICallVO> calls = ttv.getCalls();
+
+		Iterator<APICallVO> a = calls.iterator();
+		while(a.hasNext()){
+			APICallVO b = a.next();
+			int[] c = b.getMuTypes();
+			for (int i = 0; i < c.length; i++) {
+				if(operatorBundle.isOperatorSelected(""+c[i])){
+					muType = MutationType.valueOf(c[i]);
+//					System.out.println(muType+" - "+b.getFilePath());
+					if(muType.getId()==MutationType.NULL_METHOD_CALL_ARGUMENT.getId()) {
+						CommonTree tree = b.getTree();
+						int childs = tree.getChild(1).getChildCount();
+						for (int j = 1; j < childs; j++) {
+							location = ASTMutationLocation.buildLocation(filePath, b.getLine(), -1, j, -1, b.getLine(), -1, muType, tree);
+							if(!mutationLocations.containsKey(muType)){
+								mutationLocations.put(muType, new ArrayList<MutationLocation>());
+							}
+							mutationLocations.get(muType).add(location);
+						}
+					} else {
+						location = ASTMutationLocation.buildLocation(filePath, b.getLine(), -1, -1, -1, b.getLine(), -1, muType, b.getTree());
+						if(!mutationLocations.containsKey(muType)){
+							mutationLocations.put(muType, new ArrayList<MutationLocation>());
+						}
+						mutationLocations.get(muType).add(location);
+					}
+				}
+			}
+		}
+		
+		return mutationLocations;
+		
 	}
 
 }

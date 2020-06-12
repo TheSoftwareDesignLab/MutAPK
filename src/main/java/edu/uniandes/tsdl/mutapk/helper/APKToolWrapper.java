@@ -14,13 +14,13 @@ public class APKToolWrapper {
 		// Creates folder for decoded app
 //		System.out.println(decodedPath);
 		File tempFolder = new File(decodedPath+File.separator+"temp");
-		if(tempFolder.exists()) {
-			tempFolder.delete();
-		}
-		tempFolder.mkdirs();
-		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",Paths.get(decodedPath,extraPath,"apktool.jar").toAbsolutePath().toString(),"d",Paths.get(decodedPath,path).toAbsolutePath().toString(),"-o",Paths.get(decodedPath,"temp").toAbsolutePath().toString(),"-f"});
+//		if(tempFolder.exists()) {
+//			tempFolder.delete();
+//		}
+//		tempFolder.mkdirs();
 		System.out.println("> Processing your APK...  ");
-		ps.waitFor();
+//		Process ps = Runtime.getRuntime().exec(new String[]{"java","-jar",Paths.get(decodedPath,extraPath,"apktool.jar").toAbsolutePath().toString(),"d",Paths.get(decodedPath,path).toAbsolutePath().toString(),"-o",Paths.get(decodedPath,"temp").toAbsolutePath().toString(),"-f"});
+//		ps.waitFor();
 		System.out.println("> Wow... that was an amazing APK to proccess!!! :D");
 		System.out.println("");
 		return tempFolder.getAbsolutePath();

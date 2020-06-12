@@ -59,7 +59,7 @@ public class MutationsProcessor {
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-mutants.log"));
 		BufferedWriter wwriter = new BufferedWriter(
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-times.csv"));
-		wwriter.write("mutantIndex;mutantType;mutationTime;buildingTime;isEqu;isDup;dupID;itCompiles");
+		wwriter.write("mutantIndex;mutantType;copyingTime;mutationTime;buildingTime;isEqu;isDup;dupID;itCompiles");
 		wwriter.newLine();
 		wwriter.flush();
 		for (MutationLocation mutationLocation : locations) {

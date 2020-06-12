@@ -11,11 +11,9 @@ import edu.uniandes.tsdl.mutapk.helper.ASTHelper;
 public class TreeVisitorInstance extends TreeVisitor{
 	
 	private HashSet<APICallVO> calls;
-	String filePath;
 	
-	public TreeVisitorInstance(String filePath) {
+	public TreeVisitorInstance() {
 		calls = new HashSet<APICallVO>();
-		this.filePath = filePath;
 	}
 	
 	@Override
@@ -26,7 +24,7 @@ public class TreeVisitorInstance extends TreeVisitor{
 //			System.out.println(t.toStringTree());
 //			System.out.println(t.getChildIndex());
 //			System.out.println(t.getParent().getChild(t.getChildIndex()).toStringTree());
-			calls.add(new APICallVO(t, t.getLine(), filePath, muTypes));
+			calls.add(new APICallVO(t, t.getLine(), muTypes));
 		}
 		return super.visit(t, action);
 	}

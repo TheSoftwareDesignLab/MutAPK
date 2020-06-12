@@ -40,7 +40,6 @@ public class NullBackEndServiceReturn implements MutationOperator {
 	}
 
 	private void performMutationVariable(CommonTree tree, MutationLocation location, List<String> newLines, List<String> lines) throws IOException {
-		// TODO Auto-generated method stub
 		
 		String varName = tree.getChild(0).toString();
 		
@@ -59,7 +58,6 @@ public class NullBackEndServiceReturn implements MutationOperator {
 	}
 
 	private void performMutationParam(CommonTree tree, MutationLocation location, List<String> newLines, List<String> lines) throws IOException {
-		// TODO Auto-generated method stub
 		
 		CommonTree brother = ASTHelper.getFirstBrotherNamedOfType(smaliParser.I_STATEMENT_FORMAT11x, "move-result-object", tree);
 		String varName = brother.getChild(1).toString();
