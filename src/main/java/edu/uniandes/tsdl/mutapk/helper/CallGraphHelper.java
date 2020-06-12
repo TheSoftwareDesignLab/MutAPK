@@ -25,6 +25,7 @@ public class CallGraphHelper {
 		for(Entry<String, SmaliAST> entry : smaliASTs.entrySet()) {
 			callGraph.put(entry.getKey(), generateSmaliCGNodes(entry.getValue()));
 		}
+		int contador = 0;
 
 		for(Entry<String, HashMap<String, CallGraphNode>> entry : callGraph.entrySet()) {
 			System.out.println(entry.getKey());
@@ -44,12 +45,20 @@ public class CallGraphHelper {
 						CallGraphNode calledCGN = callGraph.get(methodCallSegments[0]).get(methodCallSegments[1]);
 						calledCGN.addCaller(cGN);
 						cGN.addCallee(calledCGN);						
-					} else if(!methodCall.startsWith("Ljava") || !methodCall.startsWith("Landroid")) {
+					} else if(!methodCall.startsWith("Ljava") 
+							&& !methodCall.startsWith("Landroid") 
+							&& !methodCallSegments[1].startsWith("findViewById")
+							&& !methodCallSegments[1].startsWith("getActivity")
+							&& !methodCallSegments[1].startsWith("getContentResolver")
+//							&& !methodCallSegments[1].startsWith("getParent")
+							) {
 						System.out.println("	###"+methodCall);
+						contador++;
 					}
 				}
 			}
 		}
+		System.out.println(contador);
 
 		return callGraph;
 	}
