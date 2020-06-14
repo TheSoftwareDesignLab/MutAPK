@@ -1,73 +1,70 @@
 package edu.uniandes.tsdl.mutapk.detectors.code.visitors;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
-import org.eclipse.jdt.core.dom.ASTVisitor;
-import org.eclipse.jdt.core.dom.ClassInstanceCreation;
-import org.eclipse.jdt.core.dom.MethodDeclaration;
-import org.eclipse.jdt.core.dom.TypeDeclaration;
+import org.antlr.runtime.tree.CommonTree;
+import org.antlr.runtime.tree.TreeVisitor;
+import org.antlr.runtime.tree.TreeVisitorAction;
 
-public class MethodDeclarationVisitor extends ASTVisitor{
+import edu.uniandes.tsdl.antlr.smaliParser;
+
+public class MethodDeclarationVisitor extends TreeVisitor{
 	
-	private HashSet<String> targetDeclarations;
-	private HashSet<MethodDeclarationVO> declarations;
-	
-	
-	public MethodDeclarationVisitor(HashSet<String> targetDeclarations){
-		this.declarations = new HashSet<>();
-		this.targetDeclarations = targetDeclarations;
-		
+	ArrayList<String> calls;
+
+	public MethodDeclarationVisitor() {
+		this.calls = new ArrayList<>();
 	}
-	public boolean visit(MethodDeclaration declaration){
-			
-		String className = null;
-		
-		String methodName = declaration.getName().getFullyQualifiedName();
-		if(declaration.getParent() instanceof TypeDeclaration){
-			TypeDeclaration type = (TypeDeclaration)declaration.getParent();
-			className = type.getName().toString();
-			
-			if(type.getSuperclassType() != null){
-				className = type.getSuperclassType().toString();
-				
-			}
-			
-		}else if(declaration.getParent() instanceof ClassInstanceCreation){
-			ClassInstanceCreation type = (ClassInstanceCreation)declaration.getParent();
-			className = type.getName().toString();
-			if(type.resolveTypeBinding().getSuperclass() != null){
-				className = type.resolveTypeBinding().getSuperclass().toString();
-				
+
+	@Override
+	public Object visit(Object tt, TreeVisitorAction action) {
+		CommonTree t = (CommonTree) tt;
+		boolean result = isValidLocation(t);
+		if(result) {
+			processNode(t);
+			return null;
+		}
+		return super.visit(t, action);
+	}
+
+	private void processNode(CommonTree t) {
+
+		String unitName = t.getFirstChildWithType(smaliParser.CLASS_DESCRIPTOR).getText();
+		String methodName = t.getFirstChildWithType(smaliParser.SIMPLE_NAME).getText();
+		CommonTree methodProt = (CommonTree) t.getFirstChildWithType(smaliParser.I_METHOD_PROTOTYPE); 
+		String returnType = methodProt.getFirstChildWithType(smaliParser.I_METHOD_RETURN_TYPE).getChild(0).getText();
+
+		List<CommonTree> parameters = (List<CommonTree>) methodProt.getChildren();
+
+		String params = "(";
+		for (Iterator<CommonTree> iterator2 = parameters.iterator(); iterator2.hasNext();) {
+			CommonTree commonTree = (CommonTree) iterator2.next();
+
+			if (commonTree.getType() != smaliParser.I_METHOD_RETURN_TYPE) {
+				params += commonTree.getText();
 			}
 		}
-		
-		StringBuilder declarationName = new StringBuilder();
-		if(className != null){
-			declarationName.append(className).append(".").append(methodName);
-			
-			if(targetDeclarations.contains(declarationName.toString())){
-				this.declarations.add(new MethodDeclarationVO(className, methodName, declaration.getStartPosition(), declaration.getLength()));
-			}
+		params += ")";
+		calls.add(unitName+"&&"+methodName+params+returnType);
+	}
+
+	private boolean isValidLocation(CommonTree t) {
+
+//			System.out.println("	"+t.getType()+ " - "+ t.getText());
+//			System.out.println("	"+t.toStringTree());
+		if (t.getType() == smaliParser.I_STATEMENT_FORMAT35c_METHOD || t.getType() == smaliParser.I_STATEMENT_FORMAT3rc_METHOD) {
+			return true;
 		}
-		
-		
-		
-		return true;
+
+		return false;
 	}
-	public HashSet<String> getTargetDeclarations() {
-		return targetDeclarations;
+
+	/**
+	 * @return the calls
+	 */
+	public ArrayList<String> getCalls() {
+		return calls;
 	}
-	public void setTargetDeclarations(HashSet<String> targetDeclarations) {
-		this.targetDeclarations = targetDeclarations;
-	}
-	public HashSet<MethodDeclarationVO> getDeclarations() {
-		return this.declarations;
-	}
-	public void setDeclarations(HashSet<MethodDeclarationVO> declarations) {
-		this.declarations = declarations;
-	}
-	
-	
-	
-	
 }

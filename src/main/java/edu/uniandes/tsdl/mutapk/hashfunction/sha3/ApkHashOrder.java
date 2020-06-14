@@ -1,9 +1,7 @@
 package edu.uniandes.tsdl.mutapk.hashfunction.sha3;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * University of Los Andes

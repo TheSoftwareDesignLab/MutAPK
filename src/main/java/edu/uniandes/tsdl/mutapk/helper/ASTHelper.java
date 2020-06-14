@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.RecognitionException;
@@ -22,6 +21,7 @@ import edu.uniandes.tsdl.antlr.smaliParser;
 import edu.uniandes.tsdl.jflex.smaliFlexLexer;
 import edu.uniandes.tsdl.mutapk.detectors.code.visitors.APICallVO;
 import edu.uniandes.tsdl.mutapk.detectors.code.visitors.TreeVisitorInstance;
+import edu.uniandes.tsdl.mutapk.model.CallGraphNode;
 import edu.uniandes.tsdl.mutapk.model.MutationType;
 import edu.uniandes.tsdl.mutapk.model.SmaliAST;
 import edu.uniandes.tsdl.mutapk.model.location.ASTMutationLocation;
@@ -304,6 +304,44 @@ public class ASTHelper {
 		
 		return mutationLocations;
 		
+	}
+
+	public static SmaliAST pruneAST(SmaliAST smaliASTNode, HashMap<String, CallGraphNode> deadCodeMethods) {
+		
+		CommonTree smaliAST = smaliASTNode.getAst();
+
+		CommonTree methodsElem = (CommonTree) smaliAST.getFirstChildWithType(smaliParser.I_METHODS);
+		List<CommonTree> methods = (List<CommonTree>) methodsElem.getChildren();
+		if( methods != null ) {
+			for (int i = methods.size()-1; i>=0; i--) {
+				CommonTree t = methods.get(i);
+
+				String methodName = t.getFirstChildWithType(smaliParser.SIMPLE_NAME).getText();
+
+				CommonTree methodPrototype = (CommonTree) t.getFirstChildWithType(smaliParser.I_METHOD_PROTOTYPE);
+				List<CommonTree> parameters = (List<CommonTree>) methodPrototype.getChildren();
+
+				String returnType = methodPrototype.getFirstChildWithType(smaliParser.I_METHOD_RETURN_TYPE).getChild(0).getText();
+
+				String params = "(";
+				for (Iterator<CommonTree> iterator2 = parameters.iterator(); iterator2.hasNext();) {
+					CommonTree commonTree = (CommonTree) iterator2.next();
+
+					if (commonTree.getType() != smaliParser.I_METHOD_RETURN_TYPE) {
+						params += commonTree.getText();
+					}
+				}
+				params += ")";
+
+				String methodID = methodName+params+returnType;
+				
+				if(deadCodeMethods.get(methodID)!=null) {
+					methodsElem.deleteChild(t.getChildIndex());
+				}
+			}
+		}
+		smaliASTNode.setAst(smaliAST);
+		return smaliASTNode;
 	}
 
 }

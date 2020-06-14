@@ -3,7 +3,8 @@
 	"appName": "com.evancharlton.mileage",
 	"mutantsFolder": "./mutants", 
 	"operatorsDir": "./",
-	"multithreadExec": "false",
+	"multithreadExec": "true",
+	"ignoreDeadCode": "true",
 	"extraPath": "./extra",
 	"selectionStrategy": "amountMutants",
 	"selectionParameters":{
