@@ -46,7 +46,15 @@ public class CallGraphHelper {
 							&& !methodCallSegments[1].startsWith("findViewById")
 							&& !methodCallSegments[1].startsWith("getActivity")
 							&& !methodCallSegments[1].startsWith("getContentResolver")
-//							&& !methodCallSegments[1].startsWith("getParent")
+							&& !methodCallSegments[1].startsWith("setContentView")
+							&& !methodCallSegments[1].startsWith("getStatus")
+							&& !methodCallSegments[1].startsWith("removeDialog")
+							&& !methodCallSegments[1].startsWith("execute")
+							&& !methodCallSegments[1].startsWith("getString")
+							&& !methodCallSegments[1].startsWith("getParent")
+							&& !methodCallSegments[1].startsWith("getId")
+							&& !methodCallSegments[1].startsWith("getText")
+							&& !methodCallSegments[1].startsWith("onSaveInstanceState")
 							) {
 //						System.out.println("	###"+methodCall);
 						contador++;

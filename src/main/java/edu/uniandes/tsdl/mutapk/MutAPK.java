@@ -69,7 +69,7 @@ public class MutAPK {
 	static int confidenceLevel = -1;
 	static int marginError = -1;
 
-	static OperatorBundle operatorBundle;
+	static OperatorBundle operatorBundle;	
 
 	static HashMap<String, SmaliAST> smaliASTs = new HashMap<String, SmaliAST>();
 
@@ -115,11 +115,6 @@ public class MutAPK {
 		String apkAbsolutePath = APKToolWrapper.openAPK(apkPath, extraPath);
 		System.out.println("--------------------------------------");
 
-		// Text-Based operators selected
-		List<MutationLocationDetector> textBasedDetectors = operatorBundle.getTextBasedDetectors();
-
-		// Run detection phase for Text-based detectors
-		HashMap<MutationType, List<MutationLocation>> locations = TextBasedDetectionsProcessor.process("temp", textBasedDetectors);
 
 		//--------------------------------------------
 		// Run detection phase for AST-based detectors
@@ -130,7 +125,7 @@ public class MutAPK {
 		if(ignoreDeadCode) {
 
 			Long initTime = System.currentTimeMillis();
-			
+
 			// Generate the Call Graph
 			System.out.println("## Call Graph Results");
 			System.out.println("");
@@ -165,12 +160,12 @@ public class MutAPK {
 
 			// Check Dead Code Methods
 
-			//		for(Entry<String, HashMap<String, CallGraphNode>> entry : deadCode.entrySet()) {
-			//			System.out.println(entry.getKey());
-			//			for(Entry<String, CallGraphNode> entryy : entry.getValue().entrySet()) {
-			//				System.out.println("	"+entryy.getKey());
-			//			}
-			//		}
+//			for(Entry<String, HashMap<String, CallGraphNode>> entry : deadCode.entrySet()) {
+//				System.out.println(entry.getKey());
+//				for(Entry<String, CallGraphNode> entryy : entry.getValue().entrySet()) {
+//					System.out.println("	"+entryy.getKey());
+//				}
+//			}
 
 			// Prune ASTs
 			for(Entry<String, SmaliAST> entry: smaliASTs.entrySet()) {
@@ -178,13 +173,20 @@ public class MutAPK {
 					smaliASTs.put(entry.getKey(), ASTHelper.pruneAST(entry.getValue(),deadCode.get(entry.getKey())));				
 				}
 			}
-			
+
 			Long duration = (System.currentTimeMillis()-initTime);
 			System.out.println("");
 			System.out.println("> It took "+duration+" miliseconds to remove dead code from APK analysis.");
 
 
 		}
+
+		// Text-Based operators selected
+		List<MutationLocationDetector> textBasedDetectors = operatorBundle.getTextBasedDetectors();
+
+		// Run detection phase for Text-based detectors
+		HashMap<MutationType, List<MutationLocation>> locations = TextBasedDetectionsProcessor.process("temp", textBasedDetectors);
+
 		// Generate PFP over pruned ASTs
 		for(Entry<String, SmaliAST> entry : smaliASTs.entrySet()) {
 			SmaliAST temp = entry.getValue();
@@ -267,20 +269,12 @@ public class MutAPK {
 	private static boolean methodIsDeadCode(CallGraphNode cGN) {
 
 		String[] exceptions = new String[] {
-				"<init>",
-				"<clinit>",
-				"init",
-				"onClick",
-				"onCreate",
-				"onOptionsItemSelected",
-				"onCreateOptionsMenu",
-				"onResume",
-				"update",
-				"query",
-				"getType",
-				"insert",
-				"doInBackground",
-				"onPostExecute"
+				"<init>","<clinit>","init","onClick","onCreate","onOptionsItemSelected","onCreateOptionsMenu","onResume","update",
+				"query","getType","insert","doInBackground","onPostExecute","delete","clone","onCreateDialog","onCancel","onRestoreInstanceState",
+				"onSaveInstanceState","onRetainNonConfigurationInstance","run","getParent","onNothingSelected","onItemSelected","onProgressUpdate",
+				"onPreExecute", "onReceive","toString","onItemClick","getUri","onPreferenceClick","onTabChanged","getDropDownView","getCount",
+				"getViewTypeCount","getView","registerDataSetObserver","saved","isEnabled","onActivityResult","unregisterDataSetObserver","attach",
+				"onChange","isIntentAvailable","onDateChanged","onContextItemSelected", "onCreateContextMenu"
 		};
 
 		if(cGN.getCallers().size()>0) {
