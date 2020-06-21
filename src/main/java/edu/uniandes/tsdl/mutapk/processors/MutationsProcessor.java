@@ -48,7 +48,7 @@ public class MutationsProcessor {
 
 	}
 
-	public void process(List<MutationLocation> locations, String extraPath, String apkName)
+	public void process(List<MutationLocation> locations, String extraPath, String apkName) 
 			throws IOException, ParserConfigurationException, SAXException, InterruptedException {
 		MutationOperatorFactory factory = MutationOperatorFactory.getInstance();
 		MutationOperator operator = null;
@@ -59,7 +59,7 @@ public class MutationsProcessor {
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-mutants.log"));
 		BufferedWriter wwriter = new BufferedWriter(
 				new FileWriter(getMutantsRootFolder() + File.separator + getAppName() + "-times.csv"));
-		wwriter.write("mutantIndex;mutantType;mutationTime;buildingTime;isEqu;isDup;dupID;itCompiles");
+		wwriter.write("mutantIndex;mutantType;copyingTime;mutationTime;buildingTime;isEqu;isDup;dupID;itCompiles");
 		wwriter.newLine();
 		wwriter.flush();
 		for (MutationLocation mutationLocation : locations) {
@@ -81,14 +81,23 @@ public class MutationsProcessor {
 			newMutationPath = mutationLocation.getFilePath().replace(appFolder, mutantFolder);
 			// System.out.println(newMutationPath);
 			mutationLocation.setFilePath(newMutationPath);
-			operator.performMutation(mutationLocation, writer, mutantIndex);
-			Long mutationEnd = System.currentTimeMillis();
-			Long mutationTime = mutationEnd - mutationIni;
-
-			// Verify id the mutant is a duplicate
-			verifyDuplicateMutants(extraPath, apkName, mutantIndex, mutantFolder, newMutationPath, wwriter,
-					mutationLocation, mutationEnd, mutationTime);
-			mutantIndex++;
+			try {
+				operator.performMutation(mutationLocation, writer, mutantIndex);
+				Long mutationEnd = System.currentTimeMillis();
+				Long mutationTime = mutationEnd - mutationIni;
+				
+				// Verify id the mutant is a duplicate
+				verifyDuplicateMutants(extraPath, apkName, mutantIndex, mutantFolder, newMutationPath, wwriter,
+						mutationLocation, mutationEnd, mutationTime);
+				mutantIndex++;
+			} catch (Exception e) {
+				wwriter.write(mutantIndex + ";" + mutationLocation.getType().getId() + ";0;0;0;0;1;0;-1");
+				wwriter.newLine();
+				wwriter.flush();
+				
+				System.out.println(e.getMessage());
+			} 
+				
 		}
 		System.out.println("------------------------------------------------------------------------------------");
 		System.out.println("The maximum id is : " + ApkHashOrder.getInstance().getId());
@@ -202,12 +211,21 @@ public class MutationsProcessor {
 					String newMutationPath = mutationLocation.getFilePath().replace(appFolder, mutantFolder);
 					mutationLocation.setFilePath(newMutationPath);
 
-					operator.performMutation(mutationLocation, writer, currentMutationIndex);
-					Long mutationEnd = System.currentTimeMillis();
-					Long mutationTime = mutationEnd - mutationIni;
-
-					// Perform mutation
-					verifyDuplicateMutants(extraPath, apkName, currentMutationIndex, mutantFolder, newMutationPath, wwriter, mutationLocation, mutationEnd, mutationTime);
+					try {
+						operator.performMutation(mutationLocation, writer, currentMutationIndex);
+						Long mutationEnd = System.currentTimeMillis();
+						Long mutationTime = mutationEnd - mutationIni;
+						
+						// Verify id the mutant is a duplicate
+						verifyDuplicateMutants(extraPath, apkName, currentMutationIndex, mutantFolder, newMutationPath, wwriter,
+								mutationLocation, mutationEnd, mutationTime);
+					} catch (InterruptedException | IOException | ParserConfigurationException | SAXException e) {
+						wwriter.write(currentMutationIndex + ";" + mutationLocation.getType().getId() + ";0;0;0;0;1;0;-1");
+						wwriter.newLine();
+						wwriter.flush();
+						
+						System.out.println(e.getMessage());
+					}
 
 					return "";
 				}

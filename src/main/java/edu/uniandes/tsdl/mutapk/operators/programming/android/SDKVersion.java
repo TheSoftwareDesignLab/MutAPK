@@ -19,7 +19,6 @@ public class SDKVersion implements MutationOperator {
 		List<String> newLines = new ArrayList<String>();
 		List<String> lines = FileHelper.readLines(location.getFilePath());
 		boolean isMinSDK = false;
-		boolean isTargetSDK = false;
 		boolean isMaxSDK = false;
 		String toMutate = "";
 		int newVersion = 0;
@@ -39,9 +38,7 @@ public class SDKVersion implements MutationOperator {
 						&& (location.getStartColumn() - currLine.indexOf(Helper.MAX_SDK_VERSION) > 0)
 						&& (location.getStartColumn() - currLine.indexOf(Helper.MAX_SDK_VERSION) < 24)) {
 					isMaxSDK = true;
-				} else {
-					isTargetSDK = true;
-				}
+				} 
 				String sub1 = currLine.substring(0, location.getStartColumn());
 				toMutate = currLine.substring(location.getStartColumn(), location.getEndColumn());
 				String sub2 = currLine.substring(location.getEndColumn());
