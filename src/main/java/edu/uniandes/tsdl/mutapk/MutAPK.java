@@ -160,12 +160,12 @@ public class MutAPK {
 
 			// Check Dead Code Methods
 
-//			for(Entry<String, HashMap<String, CallGraphNode>> entry : deadCode.entrySet()) {
-//				System.out.println(entry.getKey());
-//				for(Entry<String, CallGraphNode> entryy : entry.getValue().entrySet()) {
-//					System.out.println("	"+entryy.getKey());
-//				}
-//			}
+			//			for(Entry<String, HashMap<String, CallGraphNode>> entry : deadCode.entrySet()) {
+			//				System.out.println(entry.getKey());
+			//				for(Entry<String, CallGraphNode> entryy : entry.getValue().entrySet()) {
+			//					System.out.println("	"+entryy.getKey());
+			//				}
+			//			}
 
 			// Prune ASTs
 			for(Entry<String, SmaliAST> entry: smaliASTs.entrySet()) {
@@ -208,11 +208,6 @@ public class MutAPK {
 			System.out.println(list.size() + "		| " + mutationType);
 		}
 
-		// Check if the amount of PFLocations is lower than the requested by the user
-		if(totalMutants < amountMutants) {
-			throw new MutAPKException("The total of mutants need to be greater than the amount of mutants asked");
-		}
-		System.out.println("");
 
 		// Build MutationLocation List
 		List<MutationLocation> mutationLocationList = MutationLocationListBuilder.buildList(locations);
@@ -221,47 +216,49 @@ public class MutAPK {
 		System.out.println();
 		System.out.println("--------------------------------------");
 
-		// Select Selector
-		switch (selectionStrategy) {
-		case AMOUNT_MUTANTS_SS:
-			SelectorAmountMutantsMethod selectorAmountMutantsMethod = new SelectorAmountMutantsMethod();
-			SelectorAmountMutants selectorAmountMutants = new SelectorAmountMutants(false, false, totalMutants,
-					amountMutants);
-			mutationLocationList = selectorAmountMutantsMethod.mutantSelector(locations, selectorAmountMutants);
-			break;
-		case REPRESENTATIVE_SUBSET_SS:
-			SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false,
-					totalMutants, isRSPerOPerator, confidenceLevel, marginError);
-			SelectorConfidenceIntervalMethod CIMS = new SelectorConfidenceIntervalMethod();
-			mutationLocationList = CIMS.mutantSelector(locations, selectorConfidenceInterval);
-			break;
-		default:
-			break;
-		}
-		System.out.println("");
+		if(ignoreDeadCode) {
+			// Select Selector
+			switch (selectionStrategy) {
+			case AMOUNT_MUTANTS_SS:
+				SelectorAmountMutantsMethod selectorAmountMutantsMethod = new SelectorAmountMutantsMethod();
+				SelectorAmountMutants selectorAmountMutants = new SelectorAmountMutants(false, false, totalMutants,
+						amountMutants);
+				mutationLocationList = selectorAmountMutantsMethod.mutantSelector(locations, selectorAmountMutants);
+				break;
+			case REPRESENTATIVE_SUBSET_SS:
+				SelectorConfidenceInterval selectorConfidenceInterval = new SelectorConfidenceInterval(true, false,
+						totalMutants, isRSPerOPerator, confidenceLevel, marginError);
+				SelectorConfidenceIntervalMethod CIMS = new SelectorConfidenceIntervalMethod();
+				mutationLocationList = CIMS.mutantSelector(locations, selectorConfidenceInterval);
+				break;
+			default:
+				break;
+			}
+			System.out.println("");
 
-		System.out.println("## Mutation Process Log");
-		System.out.println();
-		System.out.println("```sh");
+			System.out.println("## Mutation Process Log");
+			System.out.println();
+			System.out.println("```sh");
 
-		// Execute mutation phase
-		MutationsProcessor mProcessor = new MutationsProcessor("temp", appName, mutantsFolder);
+			// Execute mutation phase
+			MutationsProcessor mProcessor = new MutationsProcessor("temp", appName, mutantsFolder);
 
-		// Create de apkhash for the base folder
-		File manifest = new File(apkAbsolutePath + File.separator + "AndroidManifest.xml");
-		File smali = new File(apkAbsolutePath + File.separator + "smali");
-		File resource = new File(apkAbsolutePath + File.separator + "res");
+			// Create de apkhash for the base folder
+			File manifest = new File(apkAbsolutePath + File.separator + "AndroidManifest.xml");
+			File smali = new File(apkAbsolutePath + File.separator + "smali");
+			File resource = new File(apkAbsolutePath + File.separator + "res");
 
 
-		// Create ApkHashSeparator
-		ApkHashSeparator apkHashSeparator = mProcessor.generateApkHashSeparator(manifest, smali, resource, 0);
-		// Add the base apkHashSeparator
-		ApkHashOrder.getInstance().setApkHashSeparator(apkHashSeparator);
+			// Create ApkHashSeparator
+			ApkHashSeparator apkHashSeparator = mProcessor.generateApkHashSeparator(manifest, smali, resource, 0);
+			// Add the base apkHashSeparator
+			ApkHashOrder.getInstance().setApkHashSeparator(apkHashSeparator);
 
-		if (multithread) {
-			mProcessor.processMultithreaded(mutationLocationList, extraPath, apkName);
-		} else {
-			mProcessor.process(mutationLocationList, extraPath, apkName);
+			if (multithread) {
+				mProcessor.processMultithreaded(mutationLocationList, extraPath, apkName);
+			} else {
+				mProcessor.process(mutationLocationList, extraPath, apkName);
+			}
 		}
 
 	}
