@@ -23,14 +23,37 @@ cd MutAPK
 mvn clean
 mvn package
 ```
-The generated runnable jar can be found in: ``MutAPK/target/MutAPK-0.0.1.jar``
+The generated runnable jar can be found in: ``MutAPK/target/MutAPK-2.0.0.jar``
 
 # Usage
-To run MutAPK use the following command, specifying the required arguments:
+To run MutAPK use the following command, specifying the path to the config file:
 ```
-java -jar MutAPK-0.0.1.jar <APKPath> <AppPackage> <Output> <ExtraComponentFolder> <operatorsDir> <multithread> <amountMutants>?
+java -jar MutAPK-2.0.0.jar <pathToJSONConfigFile>
 ```
-### Arguments
+
+### JSON Configuration File
+
+MutAPK uses a JSON file to define the values to be used during execution, an example of this file can be found in ```./src/main/resources/parameters.json```. Following is the structure of the JSON file:
+
+```json
+{
+    "apkPath": "./apk/com.evancharlton.mileage_3110.apk",
+    "appName": "com.evancharlton.mileage",
+    "mutantsFolder": "./mutants", 
+    "operatorsDir": "./",
+    "multithreadExec": "true",
+    "extraPath": "./extra",
+    "selectionStrategy": "all",
+    "selectionParameters":{
+        "amountMutants":"34",
+        "perOperator":"false",
+        "confidenceLevel":"85",
+        "marginError":"10",
+        "baseAPKPath":"./"
+    }
+}
+```
+
 Provide the following list of required arguments when running MutAPK:
 1. ``APK path``: relative path of the apk to mutate;
 2. ``AppPackage``: App main package name;
