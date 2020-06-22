@@ -1,6 +1,6 @@
 # Purpose
 
-This project was created by The Sofware Design Lab at the Universidad de los Andes. The major goal of the MutAPK project is to enable mutation testing over android application by third-party services that provide on-the-cloud infraestructures. This project uses APK files instead of source code to generate mutants. It is based on MDroid+ project that generates mutants from source code. MutAPK provides the 38 Android-specific mutation operators founded by MDroid+ researchers that can be easily seeded into target application due to working with compiled files. 
+This project was created by The Sofware Design Lab at the Universidad de los Andes. The major goal of the MutAPK project is to enable mutation testing over android application by third-party services that provide on-the-cloud infraestructures. This project uses APK files instead of source code to generate mutants. It is based on MDroid+ project that generates mutants from source code. MutAPK provides 35 of the 38 Android-specific mutation operators founded by MDroid+ researchers that can be easily seeded into target application due to working with compiled files. Within MutAPK features, it allows users to: omit dead code when computing the PFP, apply selection techniques to sample full mutant set, and remove Equivalent and Duplicate mutants from final result. 
 
 # Video
 
@@ -9,6 +9,7 @@ This project was created by The Sofware Design Lab at the Universidad de los And
 
 # Publications
 
+- _"Enabling Mutant Generation for Open- and Closed-Source Android Apps"_, [Camilo Escobar-Velásquez](https://caev03.github.io), [Mario Linares-Vásquez](https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/), Gabriele Bavota, Michele Tufano, Kevin Moran, Massimiliano Di Penta, Christopher Vendome, Carlos Bernal-Cárdenas, and Denys Poshyvanyk, in _IEEE Transactions on Software Engineering (TSE)_ [[DOI](https://doi.org/10.1109/TSE.2020.2982638)]
 - _"MutAPK: Source-Codeless Mutant Generation for Android Apps"_, [Camilo Escobar-Velásquez](https://caev03.github.io), [Michael Osorio-Riaño](https://MichaelOsorio2017.github.io), and  [Mario Linares-Vásquez](https://profesores.virtual.uniandes.edu.co/mlinaresv/en/inicio-en/), _The 34th IEEE/ACM International Conference on Automated Software Engineering ([ASE'19](https://2019.ase-conferences.org/))_, Demonstrations Track, San Diego, CA, USA, November 11th - 15th, 2019, to appear 4 pages (53.7% Acceptance Rate) [[pdf](/assets/pdfs/escobar2019mutapk.pdf)][[bibtex](/assets/pdfs/escobar2019mutapk.bib)]
 
 # Summary
@@ -25,7 +26,7 @@ MutAPK implements 35 mutation operators specifically for Android apps, covering 
 - I/O
 - Non-Functional Requirements
 
-The complete list of mutation operators and their specification is available at the [MutAPK website](http://thesoftwaredesignlab.github.io/MutAPK/).
+The complete list of mutation operators and their specification is available at the [Mutant Operators Section](http://thesoftwaredesignlab.github.io/MutAPK/#mutation-operators).
 Given an Android App APK, MutAPK first extracts the Potential Fault Profile (PFP) and then automatically seeds mutants generating mutated copies of the App.
 
 # Compile
@@ -36,33 +37,68 @@ cd MutAPK
 mvn clean
 mvn package
 ```
-The generated runnable jar can be found in: ``MutAPK/target/MutAPK-0.0.1.jar``
+The generated runnable jar can be found in: ``MutAPK/target/MutAPK-2.0.0.jar``
 
 # Usage
 To run MutAPK use the following command, specifying the required arguments:
 ```
-java -jar MutAPK-0.0.1.jar <APKPath> <AppPackage> <Output> <ExtraComponentFolder> <operatorsDir> <multithread> <amountMutants>?
+java -jar MutAPK-0.0.1.jar <configFilePath>
 ```
-### Arguments
+
+### JSON Configuration File properties
 Provide the following list of required arguments when running MutAPK:
-1. ``APK path``: relative path of the apk to mutate;
-2. ``AppPackage``: App main package name;
-3. ``Output``: relative path of the folder where the mutantns will be created;
-4. ``ExtraCompFolder``:  relative path of the extra component folder (``MutAPK/extra/``);
-5. ``operatorsDir``: relative path to the folder containing the operators.properties.
+1. ``apkPath``: relative path of the apk to mutate;
+2. ``appName``: App main package name;
+3. ``mutantFolder``: relative path of the folder where the mutantns will be created;
+4. ``extraPath``:  relative path of the extra component folder (``MutAPK/extra/``);
+5. ``operatorsDir``: relative path to the folder containing the operators.properties file.
 6. ``multithread`` : true or false, specifying whether the mutant generation should be multithreaded or not.
-7. ``amountOfMutants`` : Amount of mutants to be generated [OptionalParameter]
+7. ``ignoreDeadCode`` : true or false, used to trigger the omission of dead code when computing the PFP. This parameter is optional, in case it it not provided MutAPK will omit dead code.
+8. ``selectionStrategy`` : Selected technique for mutant set sampling. The accepted values are: _all_, _amountMutants_, _representativeSubset_  
+ 8.1. ``amountMutants`` :  If _amountMutants_ technique is selected before, this property defines the amount of mutants to be generated.  
+ 8.2. ``perOperator`` : If _representativeSubset_ technique is selected before, this propoerty defines if subset is computed for each mutant operator.  
+ 8.3. ``confidenceLevel`` : If _representativeSubset_ technique is selected before, this property defines the confidence level that will be used to calculate the amount of mutants required to generate a representative subset  
+ 8.4. ``marginError`` : If _representativeSubset_ technique is selected before, this property defines the margin error that will be used to calculate the amount of mutants required to generate a representative subset
 
 Mutation operators can be selected or deselected editing the ``operators.properties`` file. To deselect an operator, either comment (#) or delete the corresponding line.
+
 ### Example
 ```
 cd MutAPK
-java -jar target/MutAPK-1.0.0.jar foo.apk or.foo.app mutants/ extra/ . true
+java -jar target/MutAPK-2.0.0.jar ./parameters.json
 ```
 
 ### Output
 The output directory will contain a log file that summarise the mutant generation process and a folder for each generated mutant. 
 The mutants folders are named with the corresponding mutant ID (i.e., numerical ID). The log file contains information about the mutation process as well as the type and location of each mutant generated.
+
+# MutAPK Workflow Overview
+
+![workflow](/assets/imgs/AndroidMutation.png)
+
+## App Processing
+
+Using the APKTool library, MutAPK decodes the app's APK into a folder with all the resource files and the source files disassembled into SMALI files.
+
+## Dead Code Removal
+
+In order to identify the dead code within the app’ SMALI representation, we build the call graph of the app under analysis and identified the methods that are not called by others.
+
+## Derivation of the Potential Fault Profile (PFP)
+
+To extact the PFP, both XML and SMALI files of an app are statically analyzed searching for instructions that comply with the characteristics defined in the mutation operators. In the case of XML files, MutAPK goes through the content of XML files looking for matches between the file tags and the different  potential fault injection points. For SMALI files the process is based on the AST. The AST is obtained using the lexer and parser created by APKTool.
+
+## Mutant Selection
+
+After the PFP derivation is completed, a mapping between the mutation operators and the locations within the code identified as mutable is obtained. Using this map as input, along with the user selected technique, MutAPK generates a subset of the PFP to be used during the mutant generation process. If no selection technique is defined by the user, then, the whole set of mutants is generated.
+
+## Mutant Generation 
+
+As result of previous step, a pruned PFP is obtained. This PFP is used to start seeding the mutation in app copies, where they are analyzed to check if are equivalent or duplicated. If a mutant is tagged either as equivalent or duplicate, it is reported in the final csv file and its APK is not generated. In the other case, the mutants is functional and not equivalent or duplicated, its folder is used to generated the resultant mutated APK.
+
+## Mutant Consolidation
+
+At the end of the process, MutAPK generates a folder for each mutant, where in a positive case, contains the APK of the mutant. In the case, the mutant has being tagged as equivalent, duplicate or non-compilable, MutAPK reports the full mutated app folder for further analysis.
 
 # Mutation Operators
 
