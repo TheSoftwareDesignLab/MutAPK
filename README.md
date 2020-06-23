@@ -100,6 +100,23 @@ As result of previous step, a pruned PFP is obtained. This PFP is used to start 
 
 At the end of the process, MutAPK generates a folder for each mutant, where in a positive case, contains the APK of the mutant. In the case, the mutant has being tagged as equivalent, duplicate or non-compilable, MutAPK reports the full mutated app folder for further analysis.
 
+# Preliminar study on mutants reduction
+
+
+| App Name | Package Name | Output | Dead Code Mutants | Equivalent Mutants | Duplicated Mutants | Generated Mutants | Representative Subset (PerOperator) | Representative Subset (WholePFPSet) |
+|----------|--------------|--------|:---:|:-----:|:---:|:---:|---|---|
+| A2DP Volume | a2dp.Vol | [output](/resources/execResults/a2dp.Vol)| 362 | 3 | 6 | 2575 | 788 | 698 |
+| Quick Settings | com.bwx.bequick | [output](/resources/execResults/com.bwx.bequick)| 462 | 4|4| 1748 | 627 | 328 |
+| Book Catalogue | com.eleybourn.bookcatalogue | [output](/resources/execResults/com.eleybourn.bookcatalogue)| 1711|11|31| 6990| 1166 | 377 |
+| Mileage | com.evancharlton.mileage | [output](/resources/execResults/com.evancharlton.mileage)|921|6|29|3690|955|357|
+| Sync My Pix | com.nloko.android.syncmypix | [output](/resources/execResults/com.nloko.android.syncmypix)|499|8|44|2469|616|346|
+| Jamendo | com.teleca.jamendo | [output](/resources/execResults/com.teleca.jamendo)|478|4|10|3123|854|356|
+| Sanity | cri.sanity | [output](/resources/execResults/cri.sanity)|639|5|13|3738|802|360|
+| NetCounter | net.jaqpot.netcounter | [output](/resources/execResults/net.jaqpot.netcounter)|212|3|17|1358|454|309|
+| PasswordMaker Pro | org.passwordmaker.android | [output](/resources/execResults/org.passwordmaker.android)|180|0|7|948|435|285|
+| MyExpenses | org.totschnig.myexpenses | [output](/resources/execResults/org.totschnig.myexpenses)|282|10|0|2905|758|352|
+
+
 # Mutation Operators
 
 ## Activity/Intents

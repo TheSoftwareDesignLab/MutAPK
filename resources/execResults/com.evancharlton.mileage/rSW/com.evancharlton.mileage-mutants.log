@@ -1,0 +1,714 @@
+Mutant 1: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant1/src//smali/com/evancharlton/mileage/FillupActivity.smali; DifferentActivityIntentDefinition in line { 618 }
+	For mutant 1 component name at line 618 has been change from "Lcom/evancharlton/mileage/FieldListActivity;" to "Lcom/evancharlton/mileage/ExportActivity;"
+Mutant 2: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant2/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; DifferentActivityIntentDefinition in line { 313 }
+	For mutant 2 component name at line 313 has been change from "Lcom/evancharlton/mileage/VehicleActivity;" to "Lcom/evancharlton/mileage/VehicleStatisticsActivity;"
+Mutant 3: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant3/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; DifferentActivityIntentDefinition in line { 301 }
+	For mutant 3 component name at line 301 has been change from "Lcom/evancharlton/mileage/VehicleTypeListActivity;" to "Lcom/evancharlton/mileage/charts/MaximumVolumeChart;"
+Mutant 4: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant4/src//AndroidManifest.xml; MissingPermissionManifest in line { 1 }
+	For mutant 4 the lines between 2 and 2 have been deleted.
+Mutant 5: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant5/src//smali/com/evancharlton/mileage/dao/Fillup.smali; InvalidDate in line { 1074 }
+	For mutant 5 Date at line 1074 has been updated to 0x5f2f8e0L
+Mutant 6: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant6/src//AndroidManifest.xml; InvalidLabel in line { 13 }
+	For mutant 6 activity label at line 13 has been change from "@string/title_about" to "2a2c62f8a58a43559ee5f37d77c0075a"
+Mutant 7: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant7/src//AndroidManifest.xml; InvalidLabel in line { 17 }
+	For mutant 7 activity label at line 17 has been change from "@string/title_field" to "c7794f84845b444ea8978065fadfaacd"
+Mutant 8: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant8/src//AndroidManifest.xml; InvalidLabel in line { 15 }
+	For mutant 8 activity label at line 15 has been change from "@string/title_fillup_info" to "2c882f017d3348ef9a8b9b354a4243b1"
+Mutant 9: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant9/src//AndroidManifest.xml; InvalidLabel in line { 14 }
+	For mutant 9 activity label at line 14 has been change from "@string/title_fillup" to "3c90196ae05d45e0bf09549d73377575"
+Mutant 10: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant10/src//AndroidManifest.xml; InvalidLabel in line { 16 }
+	For mutant 10 activity label at line 16 has been change from "@string/title_fillup_list" to "e17e7024ec3c403c882f19e702487e70"
+Mutant 11: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant11/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$1.smali; ClosingNullCursor in line { 144 }
+	For mutant 11 Database cursor at line 144 has been set to null before close() call
+Mutant 12: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant12/src//smali/com/evancharlton/mileage/charts/LineChart$LineChartGenerator.smali; ClosingNullCursor in line { 158 }
+	For mutant 12 Database cursor at line 158 has been set to null before close() call
+Mutant 13: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant13/src//smali/com/evancharlton/mileage/ChartActivity.smali; FindViewByIdReturnsNull in lines { 255, 259 }
+	For mutant 13 the element retrieved at line 255 has been set to null
+Mutant 14: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant14/src//smali/com/evancharlton/mileage/FillupActivity.smali; FindViewByIdReturnsNull in lines { 836, 840 }
+	For mutant 14 the element retrieved at line 836 has been set to null
+Mutant 15: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant15/src//smali/com/evancharlton/mileage/ImportExportActivity.smali; FindViewByIdReturnsNull in lines { 99, 101 }
+	For mutant 15 the element retrieved at line 99 has been set to null
+Mutant 16: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant16/src//smali/com/evancharlton/mileage/views/DeltaView.smali; FindViewByIdReturnsNull in lines { 52, 56 }
+	For mutant 16 the element retrieved at line 52 has been set to null
+Mutant 17: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant17/src//smali/com/evancharlton/mileage/views/DeltaView.smali; FindViewByIdReturnsNull in lines { 63, 67 }
+	For mutant 17 the element retrieved at line 63 has been set to null
+Mutant 18: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant18/src//smali/com/evancharlton/mileage/ChartActivity.smali; FindViewByIdReturnsNull in lines { 266, 270 }
+	For mutant 18 the element retrieved at line 266 has been set to null
+Mutant 19: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant19/src//AndroidManifest.xml; WrongMainActivity in line { 8 }
+	For mutant 19 activity ".Mileage" at line 8 has been replaced as main activity by ".FillupActivity" at line 15
+Mutant 20: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant20/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 612 }
+	For mutant 20, 5 parameter of method add have been replaced with null
+Mutant 21: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant21/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 36 }
+	For mutant 21, 2 parameter of method setLayoutParams have been replaced with null
+Mutant 22: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant22/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 448 }
+	For mutant 22, 2 parameter of method mulZoom have been replaced with null
+Mutant 23: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant23/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 98 }
+	For mutant 23, 3 parameter of method add have been replaced with null
+Mutant 24: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant24/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1286 }
+	For mutant 24, 2 parameter of method update have been replaced with null
+Mutant 25: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant25/src//smali/com/evancharlton/mileage/provider/Statistics$LocationStatistic.smali; NullMethodCallArgument in line { 51 }
+	For mutant 25, 2 parameter of method <init> have been replaced with null
+Mutant 26: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant26/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1310 }
+	For mutant 26, 2 parameter of method <init> have been replaced with null
+Mutant 27: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant27/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 222 }
+	For mutant 27, 2 parameter of method getString have been replaced with null
+Mutant 28: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant28/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 153 }
+	For mutant 28, 3 parameter of method setDelta have been replaced with null
+Mutant 29: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant29/src//smali/com/evancharlton/mileage/FillupListActivity$4.smali; NullMethodCallArgument in line { 67 }
+	For mutant 29, 4 parameter of method delete have been replaced with null
+Mutant 30: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant30/src//smali/com/evancharlton/mileage/FillupListActivity$4.smali; NullMethodCallArgument in line { 55 }
+	For mutant 30, 2 parameter of method withAppendedId have been replaced with null
+Mutant 31: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant31/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 804 }
+	For mutant 31, 2 parameter of method getString have been replaced with null
+Mutant 32: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant32/src//smali/com/evancharlton/mileage/EmmaInstrument/InstrumentedActivity$CoverageCollector.smali; NullMethodCallArgument in line { 64 }
+	For mutant 32, 2 parameter of method get have been replaced with null
+Mutant 33: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant33/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 290 }
+	For mutant 33, 2 parameter of method onOptionsItemSelected have been replaced with null
+Mutant 34: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant34/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 25 }
+	For mutant 34, 2 parameter of method setOrientation have been replaced with null
+Mutant 35: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant35/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 286 }
+	For mutant 35, 2 parameter of method putInt have been replaced with null
+Mutant 36: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant36/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 785 }
+	For mutant 36, 2 parameter of method addView have been replaced with null
+Mutant 37: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant37/src//smali/com/evancharlton/mileage/provider/Statistics$LocationStatistic.smali; NullMethodCallArgument in line { 36 }
+	For mutant 37, 4 parameter of method <init> have been replaced with null
+Mutant 38: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant38/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 156 }
+	For mutant 38, 2 parameter of method add have been replaced with null
+Mutant 39: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant39/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 836 }
+	For mutant 39, 2 parameter of method findViewById have been replaced with null
+Mutant 40: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant40/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 275 }
+	For mutant 40, 2 parameter of method putString have been replaced with null
+Mutant 41: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant41/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 849 }
+	For mutant 41, 2 parameter of method setId have been replaced with null
+Mutant 42: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant42/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 358 }
+	For mutant 42, 2 parameter of method setOnCancelListener have been replaced with null
+Mutant 43: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant43/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 331 }
+	For mutant 43, 2 parameter of method removeDialog have been replaced with null
+Mutant 44: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant44/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 620 }
+	For mutant 44, 3 parameter of method <init> have been replaced with null
+Mutant 45: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant45/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 269 }
+	For mutant 45, 2 parameter of method loadItem have been replaced with null
+Mutant 46: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant46/src//smali/com/evancharlton/mileage/EmmaInstrument/InstrumentedActivity$CoverageCollector.smali; NullMethodCallArgument in line { 114 }
+	For mutant 46, 2 parameter of method contains have been replaced with null
+Mutant 47: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant47/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 257 }
+	For mutant 47, 2 parameter of method setText have been replaced with null
+Mutant 48: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant48/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 244 }
+	For mutant 48, 2 parameter of method append have been replaced with null
+Mutant 49: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant49/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 245 }
+	For mutant 49, 3 parameter of method add have been replaced with null
+Mutant 50: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant50/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 254 }
+	For mutant 50, 2 parameter of method onCreateOptionsMenu have been replaced with null
+Mutant 51: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant51/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 768 }
+	For mutant 51, 2 parameter of method inflate have been replaced with null
+Mutant 52: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant52/src//smali/com/evancharlton/mileage/provider/Statistics$PriceStatistic.smali; NullMethodCallArgument in line { 63 }
+	For mutant 52, 4 parameter of method <init> have been replaced with null
+Mutant 53: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant53/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 179 }
+	For mutant 53, 3 parameter of method getString have been replaced with null
+Mutant 54: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant54/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 816 }
+	For mutant 54, 2 parameter of method getLong have been replaced with null
+Mutant 55: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant55/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1029 }
+	For mutant 55, 3 parameter of method putString have been replaced with null
+Mutant 56: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant56/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 47 }
+	For mutant 56, 3 parameter of method inflate have been replaced with null
+Mutant 57: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant57/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 114 }
+	For mutant 57, 2 parameter of method put have been replaced with null
+Mutant 58: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant58/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 303 }
+	For mutant 58, 3 parameter of method <init> have been replaced with null
+Mutant 59: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant59/src//smali/com/evancharlton/mileage/provider/Statistics$PriceStatistic.smali; NullMethodCallArgument in line { 48 }
+	For mutant 59, 2 parameter of method <init> have been replaced with null
+Mutant 60: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant60/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 216 }
+	For mutant 60, 2 parameter of method setHint have been replaced with null
+Mutant 61: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant61/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 56 }
+	For mutant 61, 2 parameter of method withAppendedPath have been replaced with null
+Mutant 62: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant62/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 114 }
+	For mutant 62, 2 parameter of method setText have been replaced with null
+Mutant 63: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant63/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 315 }
+	For mutant 63, 3 parameter of method <init> have been replaced with null
+Mutant 64: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant64/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 778 }
+	For mutant 64, 2 parameter of method setText have been replaced with null
+Mutant 65: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant65/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 317 }
+	For mutant 65, 2 parameter of method startActivity have been replaced with null
+Mutant 66: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant66/src//smali/com/evancharlton/mileage/provider/Statistics$DistanceStatistic.smali; NullMethodCallArgument in line { 63 }
+	For mutant 66, 4 parameter of method <init> have been replaced with null
+Mutant 67: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant67/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 232 }
+	For mutant 67, 5 parameter of method add have been replaced with null
+Mutant 68: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant68/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 291 }
+	For mutant 68, 2 parameter of method setOnZoomInClickListener have been replaced with null
+Mutant 69: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant69/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 100 }
+	For mutant 69, 3 parameter of method <init> have been replaced with null
+Mutant 70: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant70/src//smali/com/evancharlton/mileage/EmmaInstrument/InstrumentedActivity$CoverageCollector.smali; NullMethodCallArgument in line { 122 }
+	For mutant 70, 2 parameter of method startsWith have been replaced with null
+Mutant 71: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant71/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 34 }
+	For mutant 71, 2 parameter of method <init> have been replaced with null
+Mutant 72: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant72/src//smali/com/evancharlton/mileage/FieldListActivity$1.smali; NullMethodCallArgument in line { 56 }
+	For mutant 72, 2 parameter of method startActivity have been replaced with null
+Mutant 73: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant73/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 371 }
+	For mutant 73, 2 parameter of method valueOf have been replaced with null
+Mutant 74: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant74/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 936 }
+	For mutant 74, 2 parameter of method valueOf have been replaced with null
+Mutant 75: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant75/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 357 }
+	For mutant 75, 2 parameter of method setHint have been replaced with null
+Mutant 76: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant76/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 272 }
+	For mutant 76, 2 parameter of method setText have been replaced with null
+Mutant 77: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant77/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 80 }
+	For mutant 77, 2 parameter of method unserializeData have been replaced with null
+Mutant 78: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant78/src//smali/com/evancharlton/mileage/charts/LineChart$LineChartGenerator.smali; NullMethodCallArgument in line { 155 }
+	For mutant 78, 4 parameter of method createSeries have been replaced with null
+Mutant 79: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant79/src//smali/com/evancharlton/mileage/provider/Statistics$PriceStatistic.smali; NullMethodCallArgument in line { 48 }
+	For mutant 79, 3 parameter of method <init> have been replaced with null
+Mutant 80: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant80/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 612 }
+	For mutant 80, 2 parameter of method add have been replaced with null
+Mutant 81: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant81/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 94 }
+	For mutant 81, 2 parameter of method valueOf have been replaced with null
+Mutant 82: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant82/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 149 }
+	For mutant 82, 2 parameter of method <init> have been replaced with null
+Mutant 83: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant83/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 284 }
+	For mutant 83, 2 parameter of method getVolumeUnits have been replaced with null
+Mutant 84: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant84/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 859 }
+	For mutant 84, 2 parameter of method addView have been replaced with null
+Mutant 85: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant85/src//smali/com/evancharlton/mileage/provider/Statistics$DistanceStatistic.smali; NullMethodCallArgument in line { 24 }
+	For mutant 85, 2 parameter of method <init> have been replaced with null
+Mutant 86: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant86/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 70 }
+	For mutant 86, 2 parameter of method append have been replaced with null
+Mutant 87: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant87/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 337 }
+	For mutant 87, 2 parameter of method <init> have been replaced with null
+Mutant 88: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant88/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 368 }
+	For mutant 88, 2 parameter of method setProgressStyle have been replaced with null
+Mutant 89: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant89/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 768 }
+	For mutant 89, 4 parameter of method inflate have been replaced with null
+Mutant 90: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant90/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 232 }
+	For mutant 90, 3 parameter of method add have been replaced with null
+Mutant 91: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant91/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 207 }
+	For mutant 91, 2 parameter of method append have been replaced with null
+Mutant 92: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant92/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 612 }
+	For mutant 92, 3 parameter of method add have been replaced with null
+Mutant 93: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant93/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 232 }
+	For mutant 93, 2 parameter of method add have been replaced with null
+Mutant 94: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant94/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 353 }
+	For mutant 94, 2 parameter of method setTitle have been replaced with null
+Mutant 95: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant95/src//smali/com/evancharlton/mileage/provider/Statistics$DistanceStatistic.smali; NullMethodCallArgument in line { 63 }
+	For mutant 95, 2 parameter of method <init> have been replaced with null
+Mutant 96: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant96/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1286 }
+	For mutant 96, 3 parameter of method update have been replaced with null
+Mutant 97: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant97/src//smali/com/evancharlton/mileage/EmmaInstrument/InstrumentedActivity$CoverageCollector.smali; NullMethodCallArgument in line { 136 }
+	For mutant 97, 2 parameter of method dumpIntermediateCoverage have been replaced with null
+Mutant 98: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant98/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 237 }
+	For mutant 98, 2 parameter of method setSelection have been replaced with null
+Mutant 99: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant99/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 593 }
+	For mutant 99, 3 parameter of method onCreate have been replaced with null
+Mutant 100: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant100/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 179 }
+	For mutant 100, 2 parameter of method append have been replaced with null
+Mutant 101: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant101/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 130 }
+	For mutant 101, 2 parameter of method append have been replaced with null
+Mutant 102: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant102/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 233 }
+	For mutant 102, 2 parameter of method getInt have been replaced with null
+Mutant 103: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant103/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1317 }
+	For mutant 103, 2 parameter of method onCreate have been replaced with null
+Mutant 104: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant104/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 82 }
+	For mutant 104, 2 parameter of method getString have been replaced with null
+Mutant 105: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant105/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 99 }
+	For mutant 105, 3 parameter of method loadItem have been replaced with null
+Mutant 106: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant106/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 266 }
+	For mutant 106, 2 parameter of method findViewById have been replaced with null
+Mutant 107: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant107/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 140 }
+	For mutant 107, 2 parameter of method setDelta have been replaced with null
+Mutant 108: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant108/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 353 }
+	For mutant 108, 3 parameter of method getString have been replaced with null
+Mutant 109: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant109/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 326 }
+	For mutant 109, 2 parameter of method setText have been replaced with null
+Mutant 110: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant110/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 334 }
+	For mutant 110, 2 parameter of method setHint have been replaced with null
+Mutant 111: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant111/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 481 }
+	For mutant 111, 2 parameter of method withAppendedId have been replaced with null
+Mutant 112: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant112/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 742 }
+	For mutant 112, 2 parameter of method put have been replaced with null
+Mutant 113: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant113/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 47 }
+	For mutant 113, 2 parameter of method inflate have been replaced with null
+Mutant 114: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant114/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 93 }
+	For mutant 114, 2 parameter of method <init> have been replaced with null
+Mutant 115: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant115/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 61 }
+	For mutant 115, 2 parameter of method <init> have been replaced with null
+Mutant 116: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant116/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 980 }
+	For mutant 116, 2 parameter of method setVisibility have been replaced with null
+Mutant 117: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant117/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 86 }
+	For mutant 117, 2 parameter of method setHint have been replaced with null
+Mutant 118: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant118/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 630 }
+	For mutant 118, 2 parameter of method setIcon have been replaced with null
+Mutant 119: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant119/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 993 }
+	For mutant 119, 2 parameter of method onSaveInstanceState have been replaced with null
+Mutant 120: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant120/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 75 }
+	For mutant 120, 3 parameter of method add have been replaced with null
+Mutant 121: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant121/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 215 }
+	For mutant 121, 2 parameter of method onRestoreInstanceState have been replaced with null
+Mutant 122: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant122/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1255 }
+	For mutant 122, 3 parameter of method put have been replaced with null
+Mutant 123: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant123/src//smali/com/evancharlton/mileage/charts/LineChart$LineChartGenerator.smali; NullMethodCallArgument in line { 110 }
+	For mutant 123, 2 parameter of method valueOf have been replaced with null
+Mutant 124: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant124/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 81 }
+	For mutant 124, 2 parameter of method setIcon have been replaced with null
+Mutant 125: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant125/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 114 }
+	For mutant 125, 3 parameter of method put have been replaced with null
+Mutant 126: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant126/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 100 }
+	For mutant 126, 2 parameter of method <init> have been replaced with null
+Mutant 127: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant127/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 251 }
+	For mutant 127, 2 parameter of method setIcon have been replaced with null
+Mutant 128: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant128/src//smali/com/evancharlton/mileage/charts/LineChart$LineChartGenerator.smali; NullMethodCallArgument in line { 155 }
+	For mutant 128, 2 parameter of method createSeries have been replaced with null
+Mutant 129: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant129/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 97 }
+	For mutant 129, 2 parameter of method <init> have been replaced with null
+Mutant 130: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant130/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 315 }
+	For mutant 130, 2 parameter of method <init> have been replaced with null
+Mutant 131: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant131/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 65 }
+	For mutant 131, 2 parameter of method append have been replaced with null
+Mutant 132: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant132/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 238 }
+	For mutant 132, 2 parameter of method setIcon have been replaced with null
+Mutant 133: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant133/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 235 }
+	For mutant 133, 2 parameter of method getString have been replaced with null
+Mutant 134: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant134/src//smali/com/evancharlton/mileage/BaseFormActivity$1.smali; NullMethodCallArgument in line { 95 }
+	For mutant 134, 2 parameter of method handleInvalidField have been replaced with null
+Mutant 135: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant135/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 298 }
+	For mutant 135, 2 parameter of method <init> have been replaced with null
+Mutant 136: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant136/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 828 }
+	For mutant 136, 2 parameter of method inflate have been replaced with null
+Mutant 137: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant137/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 179 }
+	For mutant 137, 2 parameter of method getString have been replaced with null
+Mutant 138: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant138/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 98 }
+	For mutant 138, 2 parameter of method add have been replaced with null
+Mutant 139: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant139/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 844 }
+	For mutant 139, 2 parameter of method setFieldId have been replaced with null
+Mutant 140: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant140/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 738 }
+	For mutant 140, 2 parameter of method valueOf have been replaced with null
+Mutant 141: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant141/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 191 }
+	For mutant 141, 2 parameter of method append have been replaced with null
+Mutant 142: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant142/src//smali/com/evancharlton/mileage/SettingsActivity$2.smali; NullMethodCallArgument in line { 55 }
+	For mutant 142, 2 parameter of method removeDialog have been replaced with null
+Mutant 143: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant143/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 239 }
+	For mutant 143, 2 parameter of method setHint have been replaced with null
+Mutant 144: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant144/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 742 }
+	For mutant 144, 3 parameter of method put have been replaced with null
+Mutant 145: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant145/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1286 }
+	For mutant 145, 5 parameter of method update have been replaced with null
+Mutant 146: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant146/src//smali/com/evancharlton/mileage/provider/Statistics$LocationStatistic.smali; NullMethodCallArgument in line { 51 }
+	For mutant 146, 3 parameter of method <init> have been replaced with null
+Mutant 147: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant147/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 74 }
+	For mutant 147, 2 parameter of method obtainStyledAttributes have been replaced with null
+Mutant 148: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant148/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 63 }
+	For mutant 148, 2 parameter of method findViewById have been replaced with null
+Mutant 149: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant149/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 286 }
+	For mutant 149, 3 parameter of method putInt have been replaced with null
+Mutant 150: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant150/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 253 }
+	For mutant 150, 2 parameter of method valueOf have been replaced with null
+Mutant 151: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant151/src//smali/com/evancharlton/mileage/charts/LineChart$LineChartGenerator.smali; NullMethodCallArgument in line { 200 }
+	For mutant 151, 2 parameter of method publishProgress have been replaced with null
+Mutant 152: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant152/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 211 }
+	For mutant 152, 2 parameter of method getParcelable have been replaced with null
+Mutant 153: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant153/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 386 }
+	For mutant 153, 2 parameter of method valueOf have been replaced with null
+Mutant 154: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant154/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 73 }
+	For mutant 154, 2 parameter of method append have been replaced with null
+Mutant 155: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant155/src//smali/com/evancharlton/mileage/charts/LineChart$LineChartGenerator.smali; NullMethodCallArgument in line { 155 }
+	For mutant 155, 3 parameter of method createSeries have been replaced with null
+Mutant 156: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant156/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 226 }
+	For mutant 156, 2 parameter of method setText have been replaced with null
+Mutant 157: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant157/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 22 }
+	For mutant 157, 2 parameter of method <init> have been replaced with null
+Mutant 158: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant158/src//smali/com/evancharlton/mileage/charts/LineChart$LineChartGenerator.smali; NullMethodCallArgument in line { 145 }
+	For mutant 158, 2 parameter of method publishProgress have been replaced with null
+Mutant 159: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant159/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 99 }
+	For mutant 159, 2 parameter of method loadItem have been replaced with null
+Mutant 160: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant160/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 653 }
+	For mutant 160, 2 parameter of method withAppendedPath have been replaced with null
+Mutant 161: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant161/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 226 }
+	For mutant 161, 2 parameter of method append have been replaced with null
+Mutant 162: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant162/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 232 }
+	For mutant 162, 4 parameter of method add have been replaced with null
+Mutant 163: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant163/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 940 }
+	For mutant 163, 2 parameter of method get have been replaced with null
+Mutant 164: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant164/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 124 }
+	For mutant 164, 3 parameter of method e have been replaced with null
+Mutant 165: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant165/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 612 }
+	For mutant 165, 4 parameter of method add have been replaced with null
+Mutant 166: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant166/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 22 }
+	For mutant 166, 3 parameter of method <init> have been replaced with null
+Mutant 167: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant167/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 260 }
+	For mutant 167, 3 parameter of method putParcelable have been replaced with null
+Mutant 168: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant168/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 75 }
+	For mutant 168, 5 parameter of method add have been replaced with null
+Mutant 169: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant169/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 75 }
+	For mutant 169, 2 parameter of method add have been replaced with null
+Mutant 170: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant170/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 232 }
+	For mutant 170, 2 parameter of method append have been replaced with null
+Mutant 171: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant171/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 124 }
+	For mutant 171, 2 parameter of method e have been replaced with null
+Mutant 172: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant172/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 99 }
+	For mutant 172, 4 parameter of method loadItem have been replaced with null
+Mutant 173: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant173/src//smali/com/evancharlton/mileage/charts/LineChart$LineChartGenerator.smali; NullMethodCallArgument in line { 56 }
+	For mutant 173, 2 parameter of method doInBackground have been replaced with null
+Mutant 174: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant174/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 363 }
+	For mutant 174, 2 parameter of method setCancelable have been replaced with null
+Mutant 175: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant175/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 107 }
+	For mutant 175, 2 parameter of method execute have been replaced with null
+Mutant 176: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant176/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 258 }
+	For mutant 176, 2 parameter of method append have been replaced with null
+Mutant 177: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant177/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 481 }
+	For mutant 177, 3 parameter of method withAppendedId have been replaced with null
+Mutant 178: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant178/src//smali/com/evancharlton/mileage/provider/Statistics$1.smali; NullMethodCallArgument in line { 28 }
+	For mutant 178, 4 parameter of method <init> have been replaced with null
+Mutant 179: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant179/src//smali/com/evancharlton/mileage/provider/Statistics$PriceStatistic.smali; NullMethodCallArgument in line { 63 }
+	For mutant 179, 3 parameter of method <init> have been replaced with null
+Mutant 180: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant180/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 375 }
+	For mutant 180, 2 parameter of method setText have been replaced with null
+Mutant 181: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant181/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 140 }
+	For mutant 181, 3 parameter of method setDelta have been replaced with null
+Mutant 182: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant182/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 269 }
+	For mutant 182, 3 parameter of method loadItem have been replaced with null
+Mutant 183: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant183/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 165 }
+	For mutant 183, 2 parameter of method add have been replaced with null
+Mutant 184: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant184/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 623 }
+	For mutant 184, 2 parameter of method setIntent have been replaced with null
+Mutant 185: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant185/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 245 }
+	For mutant 185, 5 parameter of method add have been replaced with null
+Mutant 186: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant186/src//smali/com/evancharlton/mileage/provider/Statistics$PriceStatistic.smali; NullMethodCallArgument in line { 63 }
+	For mutant 186, 2 parameter of method <init> have been replaced with null
+Mutant 187: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant187/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 293 }
+	For mutant 187, 2 parameter of method setHint have been replaced with null
+Mutant 188: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant188/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 235 }
+	For mutant 188, 3 parameter of method getString have been replaced with null
+Mutant 189: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant189/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 109 }
+	For mutant 189, 2 parameter of method loadById have been replaced with null
+Mutant 190: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant190/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 346 }
+	For mutant 190, 2 parameter of method getVolumeUnits have been replaced with null
+Mutant 191: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant191/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 390 }
+	For mutant 191, 2 parameter of method setText have been replaced with null
+Mutant 192: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant192/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 955 }
+	For mutant 192, 2 parameter of method setText have been replaced with null
+Mutant 193: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant193/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 52 }
+	For mutant 193, 2 parameter of method findViewById have been replaced with null
+Mutant 194: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant194/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 131 }
+	For mutant 194, 3 parameter of method <init> have been replaced with null
+Mutant 195: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant195/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 289 }
+	For mutant 195, 2 parameter of method <init> have been replaced with null
+Mutant 196: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant196/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 75 }
+	For mutant 196, 4 parameter of method add have been replaced with null
+Mutant 197: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant197/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 84 }
+	For mutant 197, 2 parameter of method onCreateOptionsMenu have been replaced with null
+Mutant 198: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant198/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 269 }
+	For mutant 198, 4 parameter of method loadItem have been replaced with null
+Mutant 199: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant199/src//smali/com/evancharlton/mileage/SettingsActivity$3.smali; NullMethodCallArgument in line { 55 }
+	For mutant 199, 2 parameter of method removeDialog have been replaced with null
+Mutant 200: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant200/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$1.smali; NullMethodCallArgument in line { 136 }
+	For mutant 200, 2 parameter of method getString have been replaced with null
+Mutant 201: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant201/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1029 }
+	For mutant 201, 2 parameter of method putString have been replaced with null
+Mutant 202: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant202/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 288 }
+	For mutant 202, 2 parameter of method setHint have been replaced with null
+Mutant 203: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant203/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 141 }
+	For mutant 203, 2 parameter of method append have been replaced with null
+Mutant 204: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant204/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 620 }
+	For mutant 204, 2 parameter of method <init> have been replaced with null
+Mutant 205: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant205/src//smali/com/evancharlton/mileage/FillupListActivity$4.smali; NullMethodCallArgument in line { 55 }
+	For mutant 205, 3 parameter of method withAppendedId have been replaced with null
+Mutant 206: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant206/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 245 }
+	For mutant 206, 2 parameter of method onCreate have been replaced with null
+Mutant 207: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant207/src//smali/com/evancharlton/mileage/FillupListActivity$4.smali; NullMethodCallArgument in line { 67 }
+	For mutant 207, 2 parameter of method delete have been replaced with null
+Mutant 208: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant208/src//smali/com/evancharlton/mileage/provider/Statistics$1.smali; NullMethodCallArgument in line { 28 }
+	For mutant 208, 3 parameter of method <init> have been replaced with null
+Mutant 209: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant209/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 135 }
+	For mutant 209, 2 parameter of method startActivity have been replaced with null
+Mutant 210: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant210/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 109 }
+	For mutant 210, 3 parameter of method loadById have been replaced with null
+Mutant 211: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant211/src//smali/com/evancharlton/mileage/provider/Statistics$DistanceStatistic.smali; NullMethodCallArgument in line { 63 }
+	For mutant 211, 3 parameter of method <init> have been replaced with null
+Mutant 212: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant212/src//smali/com/evancharlton/mileage/provider/Statistics$LocationStatistic.smali; NullMethodCallArgument in line { 51 }
+	For mutant 212, 4 parameter of method <init> have been replaced with null
+Mutant 213: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant213/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 212 }
+	For mutant 213, 2 parameter of method getVolumeUnits have been replaced with null
+Mutant 214: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant214/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 131 }
+	For mutant 214, 2 parameter of method <init> have been replaced with null
+Mutant 215: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant215/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 168 }
+	For mutant 215, 2 parameter of method get have been replaced with null
+Mutant 216: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant216/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 71 }
+	For mutant 216, 2 parameter of method withAppendedId have been replaced with null
+Mutant 217: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant217/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 74 }
+	For mutant 217, 3 parameter of method obtainStyledAttributes have been replaced with null
+Mutant 218: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant218/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$1.smali; NullMethodCallArgument in line { 140 }
+	For mutant 218, 2 parameter of method setText have been replaced with null
+Mutant 219: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant219/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 902 }
+	For mutant 219, 2 parameter of method getString have been replaced with null
+Mutant 220: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant220/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 307 }
+	For mutant 220, 2 parameter of method valueOf have been replaced with null
+Mutant 221: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant221/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 322 }
+	For mutant 221, 2 parameter of method valueOf have been replaced with null
+Mutant 222: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant222/src//smali/com/evancharlton/mileage/provider/Statistics$PriceStatistic.smali; NullMethodCallArgument in line { 24 }
+	For mutant 222, 2 parameter of method <init> have been replaced with null
+Mutant 223: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant223/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 255 }
+	For mutant 223, 2 parameter of method findViewById have been replaced with null
+Mutant 224: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant224/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 245 }
+	For mutant 224, 4 parameter of method add have been replaced with null
+Mutant 225: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant225/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 633 }
+	For mutant 225, 2 parameter of method onCreateOptionsMenu have been replaced with null
+Mutant 226: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant226/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 866 }
+	For mutant 226, 2 parameter of method add have been replaced with null
+Mutant 227: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant227/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 228 }
+	For mutant 227, 2 parameter of method getVolumeUnits have been replaced with null
+Mutant 228: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant228/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 434 }
+	For mutant 228, 2 parameter of method get have been replaced with null
+Mutant 229: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant229/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 87 }
+	For mutant 229, 2 parameter of method <init> have been replaced with null
+Mutant 230: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant230/src//smali/com/evancharlton/mileage/BaseFormActivity$1.smali; NullMethodCallArgument in line { 60 }
+	For mutant 230, 2 parameter of method save have been replaced with null
+Mutant 231: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant231/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 852 }
+	For mutant 231, 2 parameter of method setHint have been replaced with null
+Mutant 232: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant232/src//smali/com/evancharlton/mileage/provider/Statistics$1.smali; NullMethodCallArgument in line { 28 }
+	For mutant 232, 5 parameter of method <init> have been replaced with null
+Mutant 233: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant233/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 709 }
+	For mutant 233, 2 parameter of method getFields have been replaced with null
+Mutant 234: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant234/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 34 }
+	For mutant 234, 3 parameter of method <init> have been replaced with null
+Mutant 235: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant235/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 87 }
+	For mutant 235, 2 parameter of method attach have been replaced with null
+Mutant 236: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant236/src//smali/com/evancharlton/mileage/FillupListActivity$4.smali; NullMethodCallArgument in line { 67 }
+	For mutant 236, 3 parameter of method delete have been replaced with null
+Mutant 237: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant237/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 448 }
+	For mutant 237, 3 parameter of method mulZoom have been replaced with null
+Mutant 238: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant238/src//smali/com/evancharlton/mileage/FieldListActivity$1.smali; NullMethodCallArgument in line { 54 }
+	For mutant 238, 2 parameter of method <init> have been replaced with null
+Mutant 239: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant239/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 111 }
+	For mutant 239, 2 parameter of method setAdapter have been replaced with null
+Mutant 240: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant240/src//smali/com/evancharlton/mileage/provider/Statistics$1.smali; NullMethodCallArgument in line { 28 }
+	For mutant 240, 2 parameter of method <init> have been replaced with null
+Mutant 241: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant241/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 100 }
+	For mutant 241, 5 parameter of method <init> have been replaced with null
+Mutant 242: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant242/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 30 }
+	For mutant 242, 2 parameter of method <init> have been replaced with null
+Mutant 243: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant243/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 147 }
+	For mutant 243, 2 parameter of method setFormat have been replaced with null
+Mutant 244: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant244/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 828 }
+	For mutant 244, 3 parameter of method inflate have been replaced with null
+Mutant 245: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant245/src//smali/com/evancharlton/mileage/provider/Statistics$DistanceStatistic.smali; NullMethodCallArgument in line { 48 }
+	For mutant 245, 4 parameter of method <init> have been replaced with null
+Mutant 246: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant246/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 79 }
+	For mutant 246, 2 parameter of method append have been replaced with null
+Mutant 247: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant247/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 71 }
+	For mutant 247, 3 parameter of method withAppendedId have been replaced with null
+Mutant 248: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant248/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1279 }
+	For mutant 248, 2 parameter of method valueOf have been replaced with null
+Mutant 249: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant249/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 141 }
+	For mutant 249, 3 parameter of method append have been replaced with null
+Mutant 250: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant250/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 311 }
+	For mutant 250, 2 parameter of method setText have been replaced with null
+Mutant 251: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant251/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 919 }
+	For mutant 251, 2 parameter of method setText have been replaced with null
+Mutant 252: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant252/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 85 }
+	For mutant 252, 2 parameter of method <init> have been replaced with null
+Mutant 253: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant253/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 303 }
+	For mutant 253, 2 parameter of method <init> have been replaced with null
+Mutant 254: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant254/src//smali/com/evancharlton/mileage/provider/Statistics$LocationStatistic.smali; NullMethodCallArgument in line { 36 }
+	For mutant 254, 2 parameter of method <init> have been replaced with null
+Mutant 255: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant255/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 41 }
+	For mutant 255, 2 parameter of method doInBackground have been replaced with null
+Mutant 256: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant256/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 65 }
+	For mutant 256, 2 parameter of method withAppendedPath have been replaced with null
+Mutant 257: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant257/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 260 }
+	For mutant 257, 2 parameter of method putParcelable have been replaced with null
+Mutant 258: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant258/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 300 }
+	For mutant 258, 2 parameter of method setOnZoomOutClickListener have been replaced with null
+Mutant 259: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant259/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 250 }
+	For mutant 259, 2 parameter of method setContentView have been replaced with null
+Mutant 260: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant260/src//smali/com/evancharlton/mileage/provider/Statistics$PriceStatistic.smali; NullMethodCallArgument in line { 48 }
+	For mutant 260, 4 parameter of method <init> have been replaced with null
+Mutant 261: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant261/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$1.smali; NullMethodCallArgument in line { 64 }
+	For mutant 261, 2 parameter of method access$000 have been replaced with null
+Mutant 262: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant262/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 245 }
+	For mutant 262, 2 parameter of method add have been replaced with null
+Mutant 263: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant263/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 127 }
+	For mutant 263, 2 parameter of method setText have been replaced with null
+Mutant 264: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant264/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$1.smali; NullMethodCallArgument in line { 95 }
+	For mutant 264, 2 parameter of method valueOf have been replaced with null
+Mutant 265: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant265/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1286 }
+	For mutant 265, 4 parameter of method update have been replaced with null
+Mutant 266: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant266/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$1.smali; NullMethodCallArgument in line { 64 }
+	For mutant 266, 3 parameter of method access$000 have been replaced with null
+Mutant 267: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant267/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 268 }
+	For mutant 267, 2 parameter of method valueOf have been replaced with null
+Mutant 268: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant268/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 229 }
+	For mutant 268, 2 parameter of method cancel have been replaced with null
+Mutant 269: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant269/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 768 }
+	For mutant 269, 3 parameter of method inflate have been replaced with null
+Mutant 270: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant270/src//smali/com/evancharlton/mileage/charts/LineChart$LineChartGenerator.smali; NullMethodCallArgument in line { 155 }
+	For mutant 270, 5 parameter of method createSeries have been replaced with null
+Mutant 271: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant271/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 593 }
+	For mutant 271, 2 parameter of method onCreate have been replaced with null
+Mutant 272: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant272/src//smali/com/evancharlton/mileage/FieldListActivity.smali; NullMethodCallArgument in line { 118 }
+	For mutant 272, 2 parameter of method onOptionsItemSelected have been replaced with null
+Mutant 273: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant273/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 844 }
+	For mutant 273, 3 parameter of method setFieldId have been replaced with null
+Mutant 274: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant274/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 106 }
+	For mutant 274, 2 parameter of method setDropDownViewResource have been replaced with null
+Mutant 275: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant275/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullMethodCallArgument in line { 305 }
+	For mutant 275, 2 parameter of method startActivity have been replaced with null
+Mutant 276: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant276/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 353 }
+	For mutant 276, 2 parameter of method getString have been replaced with null
+Mutant 277: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant277/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 100 }
+	For mutant 277, 4 parameter of method <init> have been replaced with null
+Mutant 278: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant278/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 346 }
+	For mutant 278, 2 parameter of method setIndeterminate have been replaced with null
+Mutant 279: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant279/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 812 }
+	For mutant 279, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 280: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant280/src//smali/com/evancharlton/mileage/provider/Statistics$DistanceStatistic.smali; NullMethodCallArgument in line { 48 }
+	For mutant 280, 3 parameter of method <init> have been replaced with null
+Mutant 281: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant281/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 1255 }
+	For mutant 281, 2 parameter of method put have been replaced with null
+Mutant 282: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant282/src//smali/com/evancharlton/mileage/provider/tables/ContentTable$InsertBuilder.smali; NullMethodCallArgument in line { 220 }
+	For mutant 282, 2 parameter of method append have been replaced with null
+Mutant 283: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant283/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 282 }
+	For mutant 283, 2 parameter of method setPanning have been replaced with null
+Mutant 284: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant284/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 139 }
+	For mutant 284, 2 parameter of method onPostExecute have been replaced with null
+Mutant 285: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant285/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 66 }
+	For mutant 285, 2 parameter of method append have been replaced with null
+Mutant 286: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant286/src//smali/com/evancharlton/mileage/provider/Statistics$LocationStatistic.smali; NullMethodCallArgument in line { 36 }
+	For mutant 286, 3 parameter of method <init> have been replaced with null
+Mutant 287: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant287/src//smali/com/evancharlton/mileage/ServiceIntervalActivity$2.smali; NullMethodCallArgument in line { 153 }
+	For mutant 287, 2 parameter of method setDelta have been replaced with null
+Mutant 288: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant288/src//smali/com/evancharlton/mileage/views/DeltaView.smali; NullMethodCallArgument in line { 275 }
+	For mutant 288, 3 parameter of method putString have been replaced with null
+Mutant 289: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant289/src//smali/com/evancharlton/mileage/ChartActivity.smali; NullMethodCallArgument in line { 317 }
+	For mutant 289, 2 parameter of method onCreateDialog have been replaced with null
+Mutant 290: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant290/src//smali/com/evancharlton/mileage/tasks/CsvColumnReaderTask.smali; NullMethodCallArgument in line { 156 }
+	For mutant 290, 2 parameter of method setColumns have been replaced with null
+Mutant 291: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant291/src//smali/com/evancharlton/mileage/FieldListActivity$1.smali; NullMethodCallArgument in line { 54 }
+	For mutant 291, 3 parameter of method <init> have been replaced with null
+Mutant 292: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant292/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullMethodCallArgument in line { 800 }
+	For mutant 292, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 293: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant293/src//smali/com/evancharlton/mileage/provider/Statistics$DistanceStatistic.smali; NullMethodCallArgument in line { 48 }
+	For mutant 293, 2 parameter of method <init> have been replaced with null
+Mutant 294: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant294/src//smali/com/evancharlton/mileage/tasks/DbImportTask.smali; NullInputStream in line { 287 }
+	For mutant 294 Input Stream at line 287 has been set to null before calling close() method
+Mutant 295: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant295/src//res/values/strings.xml; WrongStringResource in line { 19 }
+	For mutant 295 the value of the string named "empty_fields" at line 20 has been changed from ""No additional fields have been created! Press menu or use the button below to add as many as you want!"" to "250cff54a1db4c8d818131cb07c5e8ea"
+Mutant 296: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant296/src//res/values/strings.xml; WrongStringResource in line { 11 }
+	For mutant 296 the value of the string named "add_service_interval" at line 12 has been changed from "Add service interval" to "7bb3bb98984c4120bf365c0ac0af8470"
+Mutant 297: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant297/src//res/values/strings.xml; WrongStringResource in line { 31 }
+	For mutant 297 the value of the string named "statistics" at line 32 has been changed from "Statistics" to "795fb72cec4f49acade1d98b7de51121"
+Mutant 298: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant298/src//res/values/strings.xml; WrongStringResource in line { 9 }
+	For mutant 298 the value of the string named "service_intervals" at line 10 has been changed from "Service intervals" to "72a5b7b2d38843dea4590c74d5332531"
+Mutant 299: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant299/src//res/values/strings.xml; WrongStringResource in line { 34 }
+	For mutant 299 the value of the string named "field_title" at line 35 has been changed from "Title" to "9b4b4f126bf845108325bb94140eaa1b"
+Mutant 300: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant300/src//res/values/strings.xml; WrongStringResource in line { 4 }
+	For mutant 300 the value of the string named "status_partial" at line 5 has been changed from "partial" to "8ff24a32eeae403588d182ff42d993a4"
+Mutant 301: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant301/src//res/values/strings.xml; WrongStringResource in line { 35 }
+	For mutant 301 the value of the string named "field_description" at line 36 has been changed from "Description" to "bc15b765df88476b9f304e13414c7171"
+Mutant 302: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant302/src//res/values/strings.xml; WrongStringResource in line { 22 }
+	For mutant 302 the value of the string named "toast_vehicle_set_as_default" at line 23 has been changed from "Vehicle set as default!" to "e1c62cf272de429595041007921e8505"
+Mutant 303: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant303/src//res/values/strings.xml; WrongStringResource in line { 32 }
+	For mutant 303 the value of the string named "add" at line 33 has been changed from "Add" to "19e91db52b1b43a9b266d59759d70df6"
+Mutant 304: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant304/src//res/values/strings.xml; WrongStringResource in line { 28 }
+	For mutant 304 the value of the string named "add_fillup" at line 29 has been changed from "Save Fillup" to "c1f56c139ef645e699effbf801cd89b0"
+Mutant 305: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant305/src//res/values/strings.xml; WrongStringResource in line { 15 }
+	For mutant 305 the value of the string named "empty_service_interval_templates" at line 16 has been changed from ""There are no defined templates. Press menu or use the buttons below to add some!"" to "9bc9107329914611880c0c2579c492fe"
+Mutant 306: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant306/src//res/values/strings.xml; WrongStringResource in line { 33 }
+	For mutant 306 the value of the string named "add_field" at line 34 has been changed from "Add new field" to "46c0eee1a97d4b228ad689544bafede8"
+Mutant 307: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant307/src//res/values/strings.xml; WrongStringResource in line { 7 }
+	For mutant 307 the value of the string named "cost_unit_price" at line 8 has been changed from "Total cost, unit price" to "2f4c97b066434cb6a4cd8b86cfe36b4c"
+Mutant 308: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant308/src//res/values/strings.xml; WrongStringResource in line { 23 }
+	For mutant 308 the value of the string named "previous" at line 24 has been changed from "Previous" to "0a08544df09d4f95a338650eb256a952"
+Mutant 309: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant309/src//res/values/strings.xml; WrongStringResource in line { 27 }
+	For mutant 309 the value of the string named "close" at line 28 has been changed from "Close" to "96daea9491164684b211290a9fbecbba"
+Mutant 310: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant310/src//res/values/strings.xml; WrongStringResource in line { 29 }
+	For mutant 310 the value of the string named "fillup" at line 30 has been changed from "Fillup" to "c37a08d3497d4cb6b82c966d4ea3d19c"
+Mutant 311: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant311/src//res/values/strings.xml; WrongStringResource in line { 30 }
+	For mutant 311 the value of the string named "history" at line 31 has been changed from "History" to "acda908e74444edaa9321391c104cafb"
+Mutant 312: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant312/src//res/values/strings.xml; WrongStringResource in line { 21 }
+	For mutant 312 the value of the string named "toast_calculating_avg_economy" at line 22 has been changed from "Calculating average fuel economy…" to "56cf08c448ad45b9ac4d3e9a4801f939"
+Mutant 313: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant313/src//res/values/strings.xml; WrongStringResource in line { 12 }
+	For mutant 313 the value of the string named "edit_service_interval_templates" at line 13 has been changed from "Edit templates" to "74906ac3496a4e3891e00b0a54a656c3"
+Mutant 314: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant314/src//res/values/strings.xml; WrongStringResource in line { 25 }
+	For mutant 314 the value of the string named "partial_fillup" at line 26 has been changed from "Tank was not filled to the top" to "e481f25c579d45deba6c1ea9fc97c52c"
+Mutant 315: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant315/src//res/values/strings.xml; WrongStringResource in line { 13 }
+	For mutant 315 the value of the string named "empty_service_intervals" at line 14 has been changed from ""You haven't set any service intervals! Press menu or use the buttons below to add some!"" to "c3b2feb180784db7a2e0da6d81d68e66"
+Mutant 316: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant316/src//res/values/strings.xml; WrongStringResource in line { 26 }
+	For mutant 316 the value of the string named "odometer" at line 27 has been changed from "Odometer" to "cae8eeaf2b83467d85bf839cf0dc73e7"
+Mutant 317: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant317/src//res/values/strings.xml; WrongStringResource in line { 17 }
+	For mutant 317 the value of the string named "empty_fillups" at line 18 has been changed from ""No saved fillups for this vehicle! Go fill up your tank and try again."" to "6d9aa5e7948e465088360be874a67df7"
+Mutant 318: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant318/src//res/values/strings.xml; WrongStringResource in line { 2 }
+	For mutant 318 the value of the string named "app_name" at line 3 has been changed from "Mileage" to "9c22d809d5f44c619f7648ea1bf8cdce"
+Mutant 319: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant319/src//res/values/strings.xml; WrongStringResource in line { 6 }
+	For mutant 319 the value of the string named "cost_volume" at line 7 has been changed from "Total cost, volume" to "b8f98aeeccb14368938e49661bbd7e99"
+Mutant 320: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant320/src//res/values/strings.xml; WrongStringResource in line { 5 }
+	For mutant 320 the value of the string named "unit_price_volume" at line 6 has been changed from "Unit price, volume" to "2eb6b5d80af240d389a317e933ae64a0"
+Mutant 321: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant321/src//res/values/strings.xml; WrongStringResource in line { 10 }
+	For mutant 321 the value of the string named "save_changes" at line 11 has been changed from "Save changes" to "c41bd9474be54da1b441f1ff4ccf2e09"
+Mutant 322: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant322/src//res/values/strings.xml; WrongStringResource in line { 24 }
+	For mutant 322 the value of the string named "next" at line 25 has been changed from "Next" to "b383b3b2a6e74bec923962e2b6f9665c"
+Mutant 323: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant323/src//res/values/strings.xml; WrongStringResource in line { 8 }
+	For mutant 323 the value of the string named "vehicles" at line 9 has been changed from "Vehicles" to "6e935a3deb154630babad00523cb4e4f"
+Mutant 324: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant324/src//res/values/strings.xml; WrongStringResource in line { 3 }
+	For mutant 324 the value of the string named "creating_chart" at line 4 has been changed from "Creating chart…" to "b9427fe561904b62a06aac4ac0f59a61"
+Mutant 325: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant325/src//smali/com/evancharlton/mileage/FillupActivity.smali; NullIntent in line { 620 }
+	For mutant 325 intent defined at lines 620 has been defined as null
+Mutant 326: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant326/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullIntent in line { 303 }
+	For mutant 326 intent defined at lines 303 has been defined as null
+Mutant 327: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant327/src//smali/com/evancharlton/mileage/VehicleListActivity.smali; NullIntent in line { 315 }
+	For mutant 327 intent defined at lines 315 has been defined as null
+Mutant 328: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant328/src//smali/com/evancharlton/mileage/ImportExportActivity.smali; InvalidIDFindView in line { 64 }
+	For mutant 328 the id of the element retrieved at line 99 has been set to a random value
+Mutant 329: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant329/src//smali/com/evancharlton/mileage/FillupActivity.smali; InvalidIDFindView in line { 834 }
+	For mutant 329 the id of the element retrieved at line 836 has been set to a random value
+Mutant 330: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant330/src//smali/com/evancharlton/mileage/views/DeltaView.smali; InvalidIDFindView in line { 50 }
+	For mutant 330 the id of the element retrieved at line 52 has been set to a random value
+Mutant 331: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant331/src//smali/com/evancharlton/mileage/ChartActivity.smali; InvalidIDFindView in line { 253 }
+	For mutant 331 the id of the element retrieved at line 255 has been set to a random value
+Mutant 332: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant332/src//smali/com/evancharlton/mileage/ChartActivity.smali; InvalidIDFindView in line { 264 }
+	For mutant 332 the id of the element retrieved at line 266 has been set to a random value
+Mutant 333: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant333/src//smali/com/evancharlton/mileage/views/DeltaView.smali; InvalidIDFindView in line { 61 }
+	For mutant 333 the id of the element retrieved at line 63 has been set to a random value
+Mutant 334: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant334/src//smali/com/evancharlton/mileage/BaseFormActivity$1.smali; LengthyGUIListener in line { 40 }
+	For mutant 334 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 335: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant335/src//smali/com/evancharlton/mileage/FieldListActivity$1.smali; LengthyGUIListener in line { 40 }
+	For mutant 335 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 336: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant336/src//smali/com/evancharlton/mileage/FillupInfoActivity.smali; InvalidKeyIntentPutExtra in line { 342 }
+	For mutant 336 extra key value at line 342 has been set to 9164fbf4069142ec823ea23b656e5bbb
+Mutant 337: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant337/src//smali/com/evancharlton/mileage/FillupInfoActivity.smali; InvalidKeyIntentPutExtra in line { 298 }
+	For mutant 337 extra key value at line 298 has been set to bbb431961bf5433a80837685d5f91908
+Mutant 338: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant338/src//smali/com/evancharlton/mileage/FillupInfoActivity.smali; NullValueIntentPutExtra in line { 310 }
+	For mutant 338 extra intent value at line 310 has been set to 'new Parcelable[0]'
+Mutant 339: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant339/src//smali/com/evancharlton/mileage/FillupInfoActivity.smali; NullValueIntentPutExtra in line { 354 }
+	For mutant 339 extra intent value at line 354 has been set to 'new Parcelable[0]'
+Mutant 340: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant340/src//AndroidManifest.xml; ActivityNotDefined in line { 15 }
+	For mutant 340 the lines between 16 and 16 have been deleted.
+Mutant 341: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant341/src//AndroidManifest.xml; ActivityNotDefined in line { 13 }
+	For mutant 341 the lines between 14 and 14 have been deleted.
+Mutant 342: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant342/src//AndroidManifest.xml; ActivityNotDefined in line { 16 }
+	For mutant 342 the lines between 17 and 17 have been deleted.
+Mutant 343: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant343/src//AndroidManifest.xml; ActivityNotDefined in line { 14 }
+	For mutant 343 the lines between 15 and 15 have been deleted.
+Mutant 344: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant344/src//AndroidManifest.xml; ActivityNotDefined in line { 7 }
+	For mutant 344 the lines between 8 and 13 have been deleted.
+Mutant 345: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant345/src//smali/com/evancharlton/mileage/ExportActivity$FilenameTask.smali; InvalidFilePath in line { 181 }
+	For mutant 345 the path of File at line 181 has been replaced by 1f081ecdc4a346799eb8b89f3b4c40c2
+Mutant 346: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant346/src//AndroidManifest.xml; InvalidActivityPATH in line { 13 }
+	For mutant 346 activity name at line 13 has been change from ".AboutActivity" to ".boutActivity"
+Mutant 347: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant347/src//AndroidManifest.xml; InvalidActivityPATH in line { 7 }
+	For mutant 347 activity name at line 7 has been change from ".Mileage" to ".Mile"
+Mutant 348: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant348/src//AndroidManifest.xml; InvalidActivityPATH in line { 14 }
+	For mutant 348 activity name at line 14 has been change from ".FillupActivity" to "AFillup.ctivity"
+Mutant 349: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant349/src//AndroidManifest.xml; InvalidActivityPATH in line { 16 }
+	For mutant 349 activity name at line 16 has been change from ".FillupListActivity" to ".FillupistActivity"
+Mutant 350: ./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant350/src//AndroidManifest.xml; InvalidActivityPATH in line { 15 }
+	For mutant 350 activity name at line 15 has been change from ".FillupInfoActivity" to ".FillupinfoActIvity"
+Mutant 351: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant351/src//smali/com/evancharlton/mileage/ChartActivity.smali; ViewComponentNotVisible in line { 285 }
+	For mutant 351 the visibility of element retrieved at line 266 has been set to INVISIBLE at lines: 287 and 289
+Mutant 352: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant352/src//smali/com/evancharlton/mileage/ChartActivity.smali; ViewComponentNotVisible in line { 278 }
+	For mutant 352 the visibility of element retrieved at line 255 has been set to INVISIBLE at lines: 280 and 282
+Mutant 353: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant353/src//smali/com/evancharlton/mileage/FillupActivity.smali; LengthyGUICreation in line { 585 }
+	For mutant 353 a large delay has been injected after GUI Creation at line 585
+Mutant 354: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant354/src//smali/com/evancharlton/mileage/ImportExportActivity.smali; LengthyGUICreation in line { 49 }
+	For mutant 354 a large delay has been injected after GUI Creation at line 49
+Mutant 355: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant355/src//smali/com/evancharlton/mileage/ChartActivity.smali; LengthyGUICreation in line { 239 }
+	For mutant 355 a large delay has been injected after GUI Creation at line 239
+Mutant 356: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant356/src//smali/com/evancharlton/mileage/ChartActivity.smali; InvalidViewFocus in line { 272 }
+	For mutant 356 focus has been requested for the element found at line 266
+Mutant 357: /home/estudiante/test/./mutants/com.evancharlton.mileage/rSW/com.evancharlton.mileage-mutant357/src//smali/com/evancharlton/mileage/ChartActivity.smali; InvalidViewFocus in line { 261 }
+	For mutant 357 focus has been requested for the element found at line 255

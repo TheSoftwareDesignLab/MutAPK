@@ -1,0 +1,902 @@
+Mutant 1: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant1/src//AndroidManifest.xml; ActivityNotDefined in line { 8 }
+	For mutant 1 the lines between 9 and 14 have been deleted.
+Mutant 2: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant2/src//AndroidManifest.xml; InvalidLabel in line { 8 }
+	For mutant 2 activity label at line 8 has been change from "@string/appName" to "dbfed490fa764a8fadddb75330fbb2fc"
+Mutant 3: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant3/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; DifferentActivityIntentDefinition in line { 44 }
+	For mutant 3 component name at line 44 has been change from "Lnet/jaqpot/netcounter/service/OnAlarmReceiver;" to "Lnet/jaqpot/netcounter/activity/NetCounterPreferences;"
+Mutant 4: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant4/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity.smali; InvalidIDFindView in line { 353 }
+	For mutant 4 the id of the element retrieved at line 355 has been set to a random value
+Mutant 5: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant5/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullOutputStream in line { 1412 }
+	For mutant 5 Output Stream at line 1412 has been set to null before calling close() method
+Mutant 6: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant6/src//smali/net/jaqpot/netcounter/EmmaInstrument/EmmaInstrumentation.smali; LengthyGUICreation in line { 515 }
+	For mutant 6 a large delay has been injected after GUI Creation at line 515
+Mutant 7: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant7/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity.smali; ViewComponentNotVisible in line { 375 }
+	For mutant 7 the visibility of element retrieved at line 355 has been set to INVISIBLE at lines: 377 and 379
+Mutant 8: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant8/src//smali/net/jaqpot/netcounter/EmmaInstrument/EmmaInstrumentation.smali; InvalidFilePath in line { 81 }
+	For mutant 8 the path of File at line 81 has been replaced by d4e25f838b2046be80dd0e97b69358d8
+Mutant 9: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant9/src//res/values/strings.xml; WrongStringResource in line { 2 }
+	For mutant 9 the value of the string named "appName" at line 3 has been changed from "NetCounter" to "16cc21711ff8470b813a160d3fe5cb48"
+Mutant 10: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant10/src//AndroidManifest.xml; InvalidActivityPATH in line { 8 }
+	For mutant 10 activity name at line 8 has been change from ".activity.NetCounterActivity" to ".activity.NetCouterActivity"
+Mutant 11: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant11/src//smali/net/jaqpot/netcounter/activity/ListAdapter.smali; NullMethodCallArgument in line { 62 }
+	For mutant 11, 2 parameter of method get have been replaced with null
+Mutant 12: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant12/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; ClosingNullCursor in line { 843 }
+	For mutant 12 Database cursor at line 843 has been set to null before close() call
+Mutant 13: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant13/src//AndroidManifest.xml; MissingPermissionManifest in line { 1 }
+	For mutant 13 the lines between 2 and 2 have been deleted.
+Mutant 14: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant14/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullIntent in line { 46 }
+	For mutant 14 intent defined at lines 46 has been defined as null
+Mutant 15: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant15/src//AndroidManifest.xml; WrongMainActivity in line { 9 }
+	For mutant 15 activity ".activity.NetCounterActivity" at line 9 has been replaced as main activity by "net.jaqpot.netcounter.EmmaInstrument.InstrumentedActivity" at line 29
+Mutant 16: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant16/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity.smali; NullValueIntentPutExtra in line { 923 }
+	For mutant 16 extra intent value at line 923 has been set to 'new Parcelable[0]'
+Mutant 17: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant17/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity.smali; InvalidViewFocus in line { 361 }
+	For mutant 17 focus has been requested for the element found at line 355
+Mutant 18: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant18/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity.smali; InvalidKeyIntentPutExtra in line { 917 }
+	For mutant 18 extra key value at line 917 has been set to 4ef2116c368b4cb08f6390389fcd0d80
+Mutant 19: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant19/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity.smali; FindViewByIdReturnsNull in lines { 355, 359 }
+	For mutant 19 the element retrieved at line 355 has been set to null
+Mutant 20: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant1/src//AndroidManifest.xml; ActivityNotDefined in line { 8 }
+	For mutant 20 the lines between 9 and 14 have been deleted.
+Mutant 21: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant21/src//AndroidManifest.xml; ActivityNotDefined in line { 14 }
+	For mutant 21 the lines between 15 and 15 have been deleted.
+Mutant 22: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant22/src//AndroidManifest.xml; ActivityNotDefined in line { 15 }
+	For mutant 22 the lines between 16 and 16 have been deleted.
+Mutant 23: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant23/src//AndroidManifest.xml; ActivityNotDefined in line { 28 }
+	For mutant 23 the lines between 29 and 29 have been deleted.
+Mutant 24: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant2/src//AndroidManifest.xml; InvalidLabel in line { 8 }
+	For mutant 24 activity label at line 8 has been change from "dbfed490fa764a8" to "27c4238f9c454fc3acceb27dd9b06f70"
+Mutant 25: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant25/src//AndroidManifest.xml; InvalidLabel in line { 14 }
+	For mutant 25 activity label at line 14 has been change from "@string/appName" to "912b6d11d1fd4ef2a339522ef148ceb8"
+Mutant 26: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant26/src//AndroidManifest.xml; InvalidLabel in line { 28 }
+	For mutant 26 activity label at line 28 has been change from "EmmaInstrumentationActivity" to "bfeff122ef1d4a7a9deef317582c8cfc"
+Mutant 27: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant27/src//smali/net/jaqpot/netcounter/EmmaInstrument/EmmaInstrumentation.smali; DifferentActivityIntentDefinition in line { 581 }
+	For mutant 27 component name at line 581 has been change from "Lnet/jaqpot/netcounter/EmmaInstrument/InstrumentedActivity;" to "Lnet/jaqpot/netcounter/activity/NetCounterActivity;"
+Mutant 28: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant28/src//smali/net/jaqpot/netcounter/service/OnAlarmReceiver.smali; DifferentActivityIntentDefinition in line { 31 }
+	For mutant 28 component name at line 31 has been change from "Lnet/jaqpot/netcounter/service/NetCounterService;" to "Lnet/jaqpot/netcounter/activity/BarGraphActivity;"
+Mutant 29: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant29/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity.smali; DifferentActivityIntentDefinition in line { 1670 }
+	For mutant 29 component name at line 1670 has been change from "Lnet/jaqpot/netcounter/activity/NetCounterPreferences;" to "Lnet/jaqpot/netcounter/activity/BarGraphActivity;"
+Mutant 30: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant30/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity.smali; DifferentActivityIntentDefinition in line { 911 }
+	For mutant 30 component name at line 911 has been change from "Lnet/jaqpot/netcounter/activity/BarGraphActivity;" to "Lnet/jaqpot/netcounter/activity/NetCounterActivity;"
+Mutant 31: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant31/src//smali/net/jaqpot/netcounter/service/NetCounterService.smali; DifferentActivityIntentDefinition in line { 309 }
+	For mutant 31 component name at line 309 has been change from "Lnet/jaqpot/netcounter/activity/NetCounterActivity;" to "Lnet/jaqpot/netcounter/activity/BarGraphActivity;"
+Mutant 32: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant32/src//smali/net/jaqpot/netcounter/NetCounterApplication.smali; DifferentActivityIntentDefinition in line { 701 }
+	For mutant 32 component name at line 701 has been change from "Lnet/jaqpot/netcounter/service/NetCounterService;" to "Lnet/jaqpot/netcounter/EmmaInstrument/InstrumentedActivity;"
+Mutant 33: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant33/src//smali/net/jaqpot/netcounter/NetCounterApplication.smali; DifferentActivityIntentDefinition in line { 408 }
+	For mutant 33 component name at line 408 has been change from "Lnet/jaqpot/netcounter/activity/NetCounterActivity;" to "Lnet/jaqpot/netcounter/activity/BarGraphActivity;"
+Mutant 34: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant34/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity$1.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 34 component name at line 0 has been change from "" to ""
+Mutant 35: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant35/src//smali/net/jaqpot/netcounter/service/NetCounterAlarm.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 35 component name at line 0 has been change from "" to ""
+Mutant 36: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant36/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity$2.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 36 component name at line 0 has been change from "" to ""
+Mutant 37: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant4/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity.smali; InvalidIDFindView in line { 353 }
+	For mutant 37 the id of the element retrieved at line 355 has been set to a random value
+Mutant 38: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant38/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity.smali; InvalidIDFindView in line { 364 }
+	For mutant 38 the id of the element retrieved at line 366 has been set to a random value
+Mutant 39: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant39/src//smali/net/jaqpot/netcounter/activity/ListAdapter$GroupViewWrapper.smali; InvalidIDFindView in line { 86 }
+	For mutant 39 the id of the element retrieved at line 88 has been set to a random value
+Mutant 40: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant40/src//smali/net/jaqpot/netcounter/activity/ListAdapter$GroupViewWrapper.smali; InvalidIDFindView in line { 115 }
+	For mutant 40 the id of the element retrieved at line 117 has been set to a random value
+Mutant 41: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant41/src//smali/net/jaqpot/netcounter/activity/ListAdapter$GroupViewWrapper.smali; InvalidIDFindView in line { 57 }
+	For mutant 41 the id of the element retrieved at line 59 has been set to a random value
+Mutant 42: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant42/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity.smali; InvalidIDFindView in line { 1263 }
+	For mutant 42 the id of the element retrieved at line 1286 has been set to a random value
+Mutant 43: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant43/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity.smali; InvalidIDFindView in line { 1371 }
+	For mutant 43 the id of the element retrieved at line 1386 has been set to a random value
+Mutant 44: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant44/src//smali/net/jaqpot/netcounter/dialog/CounterAlertDialog.smali; InvalidIDFindView in line { 71 }
+	For mutant 44 the id of the element retrieved at line 73 has been set to a random value
+Mutant 45: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant45/src//smali/net/jaqpot/netcounter/dialog/CounterAlertDialog.smali; InvalidIDFindView in line { 82 }
+	For mutant 45 the id of the element retrieved at line 84 has been set to a random value
+Mutant 46: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant46/src//smali/net/jaqpot/netcounter/activity/ListAdapter$ChildViewWrapper.smali; InvalidIDFindView in line { 55 }
+	For mutant 46 the id of the element retrieved at line 57 has been set to a random value
+Mutant 47: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant47/src//smali/net/jaqpot/netcounter/activity/ListAdapter$ChildViewWrapper.smali; InvalidIDFindView in line { 84 }
+	For mutant 47 the id of the element retrieved at line 86 has been set to a random value
+Mutant 48: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant5/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullOutputStream in line { 1412 }
+	For mutant 48 Output Stream at line 1412 has been set to null before calling close() method
+Mutant 49: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant49/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullOutputStream in line { 1378 }
+	For mutant 49 Output Stream at line 1378 has been set to null before calling close() method
+Mutant 50: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant50/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullOutputStream in line { 1432 }
+	For mutant 50 Output Stream at line 1432 has been set to null before calling close() method
+Mutant 51: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant6/src//smali/net/jaqpot/netcounter/EmmaInstrument/EmmaInstrumentation.smali; LengthyGUICreation in line { 515 }
+	For mutant 51 a large delay has been injected after GUI Creation at line 515
+Mutant 52: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant52/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity.smali; LengthyGUICreation in line { 326 }
+	For mutant 52 a large delay has been injected after GUI Creation at line 326
+Mutant 53: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant53/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity.smali; LengthyGUICreation in line { 948 }
+	For mutant 53 a large delay has been injected after GUI Creation at line 948
+Mutant 54: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant54/src//smali/net/jaqpot/netcounter/activity/NetCounterPreferences.smali; LengthyGUICreation in line { 179 }
+	For mutant 54 a large delay has been injected after GUI Creation at line 179
+Mutant 55: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant7/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity.smali; ViewComponentNotVisible in line { 375 }
+	For mutant 55 the visibility of element retrieved at line 355 has been set to INVISIBLE at lines: 377 and 379
+Mutant 56: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant56/src//smali/net/jaqpot/netcounter/activity/ListAdapter$GroupViewWrapper.smali; ViewComponentNotVisible in line { 98 }
+	For mutant 56 the visibility of element retrieved at line 88 has been set to INVISIBLE at lines: 100 and 102
+Mutant 57: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant57/src//smali/net/jaqpot/netcounter/activity/ListAdapter$GroupViewWrapper.smali; ViewComponentNotVisible in line { 127 }
+	For mutant 57 the visibility of element retrieved at line 117 has been set to INVISIBLE at lines: 129 and 131
+Mutant 58: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant58/src//smali/net/jaqpot/netcounter/activity/ListAdapter$GroupViewWrapper.smali; ViewComponentNotVisible in line { 69 }
+	For mutant 58 the visibility of element retrieved at line 59 has been set to INVISIBLE at lines: 71 and 73
+Mutant 59: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant59/src//smali/net/jaqpot/netcounter/activity/ListAdapter$ChildViewWrapper.smali; ViewComponentNotVisible in line { 67 }
+	For mutant 59 the visibility of element retrieved at line 57 has been set to INVISIBLE at lines: 69 and 71
+Mutant 60: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant60/src//smali/net/jaqpot/netcounter/activity/ListAdapter$ChildViewWrapper.smali; ViewComponentNotVisible in line { 96 }
+	For mutant 60 the visibility of element retrieved at line 86 has been set to INVISIBLE at lines: 98 and 100
+Mutant 61: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant8/src//smali/net/jaqpot/netcounter/EmmaInstrument/EmmaInstrumentation.smali; InvalidFilePath in line { 81 }
+	For mutant 61 the path of File at line 81 has been replaced by ccff824ba2094d069455c040b8d9f84c
+Mutant 62: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant62/src//smali/net/jaqpot/netcounter/service/SysClassNet.smali; InvalidFilePath in line { 127 }
+	For mutant 62 the path of File at line 127 has been replaced by b3276a44785c48d4b47f61e21c1645e0
+Mutant 63: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant63/src//smali/net/jaqpot/netcounter/service/SysClassNet.smali; InvalidFilePath in line { 41 }
+	For mutant 63 the path of File at line 41 has been replaced by c4fd9788f98447c9b630d279dfb88052
+Mutant 64: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant9/src//res/values/strings.xml; WrongStringResource in line { 2 }
+	For mutant 64 the value of the string named "appName" at line 3 has been changed from "16cc21711ff8470b813a160d3fe5cb48" to "ee7e1405e5e2495ab1a0d250320f6d06"
+Mutant 65: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant65/src//res/values/strings.xml; WrongStringResource in line { 3 }
+	For mutant 65 the value of the string named "appDescription" at line 4 has been changed from "Network traffic counter" to "ab28195141e34d18bf74e7fdb51733b2"
+Mutant 66: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant66/src//res/values/strings.xml; WrongStringResource in line { 4 }
+	For mutant 66 the value of the string named "appAuthor" at line 5 has been changed from "by Cyril Jaquier" to "c8277fd969e44bd795ea12b20bbe102d"
+Mutant 67: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant67/src//res/values/strings.xml; WrongStringResource in line { 5 }
+	For mutant 67 the value of the string named "appLoading" at line 6 has been changed from "Loading..." to "196bac8dd0ff4493aadeb7bc475f00c1"
+Mutant 68: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant68/src//res/values/strings.xml; WrongStringResource in line { 6 }
+	For mutant 68 the value of the string named "appRefresh" at line 7 has been changed from "Refresh" to "f8e27768655c444bad8c3a4bbc300039"
+Mutant 69: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant69/src//res/values/strings.xml; WrongStringResource in line { 7 }
+	For mutant 69 the value of the string named "appWhatsNew" at line 8 has been changed from ""What's new?"" to "b2548cfee2de422f822794511fe1556b"
+Mutant 70: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant70/src//res/values/strings.xml; WrongStringResource in line { 8 }
+	For mutant 70 the value of the string named "yes" at line 9 has been changed from "Yes" to "876e040217c544899837d6cb22a05eb2"
+Mutant 71: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant71/src//res/values/strings.xml; WrongStringResource in line { 9 }
+	For mutant 71 the value of the string named "no" at line 10 has been changed from "No" to "8f23f248a83d45af86f9077c0f1270ee"
+Mutant 72: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant72/src//res/values/strings.xml; WrongStringResource in line { 10 }
+	For mutant 72 the value of the string named "ok" at line 11 has been changed from "Ok" to "5766e4c83eff403197b57734ba0d5e61"
+Mutant 73: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant73/src//res/values/strings.xml; WrongStringResource in line { 11 }
+	For mutant 73 the value of the string named "cancel" at line 12 has been changed from "Cancel" to "b7dc4b4cb2c84b3fbdc3e1ab81989a31"
+Mutant 74: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant74/src//res/values/strings.xml; WrongStringResource in line { 12 }
+	For mutant 74 the value of the string named "close" at line 13 has been changed from "Close" to "6a9b1bb703ea4958b3e57221644b7246"
+Mutant 75: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant75/src//res/values/strings.xml; WrongStringResource in line { 13 }
+	For mutant 75 the value of the string named "helpTitle" at line 14 has been changed from "Help" to "b413e6a16ffd4b89b20934b51b30a195"
+Mutant 76: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant76/src//res/values/strings.xml; WrongStringResource in line { 14 }
+	For mutant 76 the value of the string named "helpClose" at line 15 has been changed from "Close" to "49364ab938d1417ebe08979f859bad0e"
+Mutant 77: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant77/src//res/values/strings.xml; WrongStringResource in line { 15 }
+	For mutant 77 the value of the string named "helpText" at line 16 has been changed from "" NetCounter saves and updates its statistics at regular interval into a database. The service which records the data runs in the background and is automatically started if you restart your device.  Several counters can be defined for each network interface. A counter is a view over the data so you can delete and recreate counters without any lose of information.  In order to add a new counter, long click on the interface item. A context menu appears. Just select \"Add a counter\". To remove the counter, long click on it and select \"Remove counter\".  To change the type of the counter (\"Total\", \"Last days\", \"Single day\", \"Monthly\"), long click on it again and select \"Change type\".  Some counters support a duration value. E.g. the \"Single day\" counter can be used to show a \"Today\" or a \"Yesterday\" counter. Just set the duration to the appropriate value.  An alert can be defined for each counter. If the defined value is exceeded, a notification will be displayed.  To reset all data for an interface, long click on the interface and select \"Reset all\". This will erase "<b>ALL</b>" the data of the interface so think twice before you click.  It is possible to define the start date of your data plan for the \"Monthly\" counter. Currently, only the day of the month is needed and defaults to the 1th. To set another date, long click on the \"Monthly\" counter and select \"Set start date\".   "" to "4a02b088304f44a3bcc8f83cb2d1aa06"
+Mutant 78: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant78/src//res/values/strings.xml; WrongStringResource in line { 32 }
+	For mutant 78 the value of the string named "helpWhatsNew" at line 33 has been changed from "" This "<b>new release</b>" of NetCounter features the following changes:   - Improved Dutch translation. Thanks to Bram Schoenmakers.   - Updated Swedish translation. Thanks to Tibor Baranyi.   - Network interfaces should be automatically discovered now. Should work for most devices. Contact me if yours does not. Thanks to everyone who submitted a patch to support their devices (Matti, Jon, Tristan, Samuel, Bram, Marco, Thilo and many others)   Please, also "<b>visit the website</b> and <b>read the FAQ</b>". "" to "adf6673e2b0e4755b764d27f3c608594"
+Mutant 79: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant79/src//res/values/strings.xml; WrongStringResource in line { 41 }
+	For mutant 79 the value of the string named "aboutTitle" at line 42 has been changed from "About" to "b6bd7d925d2e4279ac4843cab2ea4456"
+Mutant 80: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant80/src//res/values/strings.xml; WrongStringResource in line { 42 }
+	For mutant 80 the value of the string named "aboutDonation" at line 43 has been changed from "Donate" to "2050d17ec0a84272b59aef553bab95be"
+Mutant 81: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant81/src//res/values/strings.xml; WrongStringResource in line { 43 }
+	For mutant 81 the value of the string named "aboutDonationUrl" at line 44 has been changed from "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582" to "0a9427a95da241d8b8a8637a45fc1a5b"
+Mutant 82: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant82/src//res/values/strings.xml; WrongStringResource in line { 44 }
+	For mutant 82 the value of the string named "aboutClose" at line 45 has been changed from "Close" to "9ca9fab245d5414d997374457739a2f5"
+Mutant 83: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant83/src//res/values/strings.xml; WrongStringResource in line { 45 }
+	For mutant 83 the value of the string named "aboutHomepage" at line 46 has been changed from "Homepage" to "9cbdf8ca41d84c37bb38130d40e98b23"
+Mutant 84: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant84/src//res/values/strings.xml; WrongStringResource in line { 46 }
+	For mutant 84 the value of the string named "aboutHomepageUrl" at line 47 has been changed from "http://www.jaqpot.net/netcounter/" to "81171492190f4ac98333c67286fcdaeb"
+Mutant 85: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant85/src//res/values/strings.xml; WrongStringResource in line { 47 }
+	For mutant 85 the value of the string named "aboutText" at line 48 has been changed from ""NetCounter v%1$s is a simple network traffic counter with user-configurable counters.  For further information, please visit the homepage.  Copyright (C) 2009 Cyril Jaquier  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.  The application icons are from Everaldo.com and are distributed under LGPL.  Translations  Czech: Petr Bláha &lt;pb@P3T3.org>  German: Thomas Putschbach &lt;android@tpju.de>  Italian: Fabio Bonomi Boseggia  French: Cyril Jaquier  Chinese Traditional: Bernie Garden  "" to "b3cd95b3a9694e54ae702577c438277f"
+Mutant 86: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant86/src//res/values/strings.xml; WrongStringResource in line { 65 }
+	For mutant 86 the value of the string named "exportTitle" at line 66 has been changed from "Export to .csv" to "c29df80def4744debc317a35f42ae228"
+Mutant 87: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant87/src//res/values/strings.xml; WrongStringResource in line { 66 }
+	For mutant 87 the value of the string named "exportSummary" at line 67 has been changed from "Export all data to a .csv file on the SD card" to "eb715491561844f6a6032d88e2cd9128"
+Mutant 88: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant88/src//res/values/strings.xml; WrongStringResource in line { 67 }
+	For mutant 88 the value of the string named "exportSuccessful" at line 68 has been changed from "Export to %1$s successful" to "fed7d1c8d8ab427cb80fac485d4ab541"
+Mutant 89: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant89/src//res/values/strings.xml; WrongStringResource in line { 68 }
+	For mutant 89 the value of the string named "exportFailed" at line 69 has been changed from "Export failed" to "16c761656e254f02b983575fe59a0577"
+Mutant 90: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant90/src//res/values/strings.xml; WrongStringResource in line { 69 }
+	For mutant 90 the value of the string named "exportDialogTitle" at line 70 has been changed from "Exporting..." to "39287cf1021d42a898e7fb180b3147c2"
+Mutant 91: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant91/src//res/values/strings.xml; WrongStringResource in line { 70 }
+	For mutant 91 the value of the string named "exportDialogText" at line 71 has been changed from "Please wait while exporting data" to "e5bb95615515441c8dd0f6f312299bbc"
+Mutant 92: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant92/src//res/values/strings.xml; WrongStringResource in line { 71 }
+	For mutant 92 the value of the string named "importTitle" at line 72 has been changed from "Import from .csv" to "4f49d452eaa9423593d7af54f056feaa"
+Mutant 93: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant93/src//res/values/strings.xml; WrongStringResource in line { 72 }
+	For mutant 93 the value of the string named "importSummary" at line 73 has been changed from "Import data from .csv files on the SD card" to "7a0387b5d94b488dbba4eea6e5aa104d"
+Mutant 94: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant94/src//res/values/strings.xml; WrongStringResource in line { 73 }
+	For mutant 94 the value of the string named "importSuccessful" at line 74 has been changed from "Import successful" to "bfffde2ba34048cf8bad18cd78452cf9"
+Mutant 95: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant95/src//res/values/strings.xml; WrongStringResource in line { 74 }
+	For mutant 95 the value of the string named "importFailed" at line 75 has been changed from "Import failed" to "3c0e3a9218564bd29d8fa56bf45f3eda"
+Mutant 96: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant96/src//res/values/strings.xml; WrongStringResource in line { 75 }
+	For mutant 96 the value of the string named "importDialogTitle" at line 76 has been changed from "Importing..." to "1fa1b98214604670a503cc0537802111"
+Mutant 97: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant97/src//res/values/strings.xml; WrongStringResource in line { 76 }
+	For mutant 97 the value of the string named "importDialogText" at line 77 has been changed from "Please wait while importing data" to "36ddcbfce26442c396ee8d57b571c690"
+Mutant 98: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant98/src//res/values/strings.xml; WrongStringResource in line { 77 }
+	For mutant 98 the value of the string named "importAlertText" at line 78 has been changed from "Are you sure that you want to import the data from the SD card?" to "31f29059e7624112ad7a8b855b4f3478"
+Mutant 99: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant99/src//res/values/strings.xml; WrongStringResource in line { 78 }
+	For mutant 99 the value of the string named "interfaceTypeCell" at line 79 has been changed from "Cell" to "141612acf70a4dbba5c5cf051395a06d"
+Mutant 100: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant100/src//res/values/strings.xml; WrongStringResource in line { 79 }
+	For mutant 100 the value of the string named "interfaceTypeWifi" at line 80 has been changed from "Wi-Fi" to "cc0a9f1b730e48dba83ebe27c0a4630b"
+Mutant 101: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant101/src//res/values/strings.xml; WrongStringResource in line { 80 }
+	For mutant 101 the value of the string named "interfaceTypeBluetooth" at line 81 has been changed from "Bluetooth" to "6fb67e9bc1fd4f20af2199a8c17f1716"
+Mutant 102: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant102/src//res/values/strings.xml; WrongStringResource in line { 81 }
+	For mutant 102 the value of the string named "menuInterfaceTitle" at line 82 has been changed from "Interface" to "9f767f854472499ab34cb6b954940ba9"
+Mutant 103: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant103/src//res/values/strings.xml; WrongStringResource in line { 82 }
+	For mutant 103 the value of the string named "menuInterfaceAdd" at line 83 has been changed from "Add a counter" to "74269176a3504a4a91bf862462c72f32"
+Mutant 104: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant104/src//res/values/strings.xml; WrongStringResource in line { 83 }
+	For mutant 104 the value of the string named "menuInterfaceAddDone" at line 84 has been changed from "New counter added" to "4537e029b8b5417591fb1d58a57dba0b"
+Mutant 105: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant105/src//res/values/strings.xml; WrongStringResource in line { 84 }
+	For mutant 105 the value of the string named "menuInterfaceReset" at line 85 has been changed from "Reset all" to "bb109ef3b45649bf8c89c0d92ca32971"
+Mutant 106: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant106/src//res/values/strings.xml; WrongStringResource in line { 85 }
+	For mutant 106 the value of the string named "menuInterfaceResetDone" at line 86 has been changed from "Reset done" to "0884e234812f4c1ebca3cff813747b8e"
+Mutant 107: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant107/src//res/values/strings.xml; WrongStringResource in line { 86 }
+	For mutant 107 the value of the string named "menuInterfaceGraph" at line 87 has been changed from "Show graph" to "1aabea446c84452998e4d0dbdc03be39"
+Mutant 108: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant108/src//res/values/strings.xml; WrongStringResource in line { 87 }
+	For mutant 108 the value of the string named "dialogInterfaceResetTitle" at line 88 has been changed from "Reset all" to "ee01de5f82c74fec8f4b39a422a67226"
+Mutant 109: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant109/src//res/values/strings.xml; WrongStringResource in line { 88 }
+	For mutant 109 the value of the string named "dialogInterfaceResetText" at line 89 has been changed from "Are you sure?" to "1e14adfad244401aa094d8b403ca9db7"
+Mutant 110: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant110/src//res/values/strings.xml; WrongStringResource in line { 89 }
+	For mutant 110 the value of the string named "menuCounterTitle" at line 90 has been changed from "Counter" to "c9eb9757bda84f4296a8b9e327cb7b3d"
+Mutant 111: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant111/src//res/values/strings.xml; WrongStringResource in line { 90 }
+	For mutant 111 the value of the string named "menuCounterChange" at line 91 has been changed from "Change counter type" to "62c39e3f3fa84d559ee07719ee6a4055"
+Mutant 112: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant112/src//res/values/strings.xml; WrongStringResource in line { 91 }
+	For mutant 112 the value of the string named "menuCounterChangeDone" at line 92 has been changed from "Counter type changed" to "4b5b266b35c04a879b48a55fd0b09103"
+Mutant 113: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant113/src//res/values/strings.xml; WrongStringResource in line { 92 }
+	For mutant 113 the value of the string named "menuCounterRemove" at line 93 has been changed from "Remove counter" to "ab10ab70ff3d443c8a8193aac3f0d457"
+Mutant 114: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant114/src//res/values/strings.xml; WrongStringResource in line { 93 }
+	For mutant 114 the value of the string named "menuCounterRemoveDone" at line 94 has been changed from "Counter removed" to "2456d1b5af4d466d977e589111968bf2"
+Mutant 115: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant115/src//res/values/strings.xml; WrongStringResource in line { 94 }
+	For mutant 115 the value of the string named "menuCounterStartDate" at line 95 has been changed from "Set start date" to "f727983df2b140d387bddd6033799667"
+Mutant 116: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant116/src//res/values/strings.xml; WrongStringResource in line { 95 }
+	For mutant 116 the value of the string named "menuCounterStartDay" at line 96 has been changed from "Set start day" to "6d00e98c393948bc83fd0eda7c4235b3"
+Mutant 117: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant117/src//res/values/strings.xml; WrongStringResource in line { 96 }
+	For mutant 117 the value of the string named "menuCounterSetDuration" at line 97 has been changed from "Set duration" to "c449c448d8f44f67a52255d29231670b"
+Mutant 118: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant118/src//res/values/strings.xml; WrongStringResource in line { 97 }
+	For mutant 118 the value of the string named "menuCounterSetAlert" at line 98 has been changed from "Set data alert" to "e1a31f240e964fe49bbff00168c8e3e2"
+Mutant 119: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant119/src//res/values/strings.xml; WrongStringResource in line { 98 }
+	For mutant 119 the value of the string named "dialogCounterTypeTitle" at line 99 has been changed from "Select counter type" to "d2cfa005a6e847ee909f5004f9c9eb53"
+Mutant 120: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant120/src//res/values/strings.xml; WrongStringResource in line { 99 }
+	For mutant 120 the value of the string named "dialogCounterDurationTitle" at line 100 has been changed from "Select counter duration" to "f0ca584214344ea3b0c799b4b5e0a03a"
+Mutant 121: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant121/src//res/values/strings.xml; WrongStringResource in line { 100 }
+	For mutant 121 the value of the string named "dialogCounterMonthlyTitle" at line 101 has been changed from "Select the reset date" to "47b991ba00344c77b1028925ef7ef493"
+Mutant 122: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant122/src//res/values/strings.xml; WrongStringResource in line { 101 }
+	For mutant 122 the value of the string named "dialogCounterMonthlyChanged" at line 102 has been changed from "Date changed" to "66e1865fac504d35aebc18073fa2f036"
+Mutant 123: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant123/src//res/values/strings.xml; WrongStringResource in line { 102 }
+	For mutant 123 the value of the string named "dialogCounterWeeklyTitle" at line 103 has been changed from "Select the reset day" to "743d6c4f60f7464586270f139bb7618b"
+Mutant 124: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant124/src//res/values/strings.xml; WrongStringResource in line { 103 }
+	For mutant 124 the value of the string named "dialogCounterWeeklyChanged" at line 104 has been changed from "Day changed" to "ed8e47aca1644452b31de18a1b43cc07"
+Mutant 125: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant125/src//res/values/strings.xml; WrongStringResource in line { 104 }
+	For mutant 125 the value of the string named "dialogCounterLimitTitle" at line 105 has been changed from "Set notification value" to "3ad6ceab01764a2aa5af10e4f830bf44"
+Mutant 126: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant126/src//res/values/strings.xml; WrongStringResource in line { 105 }
+	For mutant 126 the value of the string named "dialogCounterLimitText" at line 106 has been changed from "Set the notification limit. To disable notification, just erase the value or set it to 0." to "18698dbca526488582aa0061a4baa366"
+Mutant 127: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant127/src//res/values/strings.xml; WrongStringResource in line { 106 }
+	For mutant 127 the value of the string named "dialogCounterLimitWrong" at line 107 has been changed from "Wrong number format" to "918787cc16b44966beaa18d24c24a9a1"
+Mutant 128: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant128/src//res/values/strings.xml; WrongStringResource in line { 107 }
+	For mutant 128 the value of the string named "dialogDetailsStartDate" at line 108 has been changed from "Start date:" to "d9b761c1110f4b0ebd2e36e8a044b15f"
+Mutant 129: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant129/src//res/values/strings.xml; WrongStringResource in line { 108 }
+	For mutant 129 the value of the string named "dialogDetailsEndDate" at line 109 has been changed from "End date:" to "1fcf3b64f5274421a3bdc0758ecebf9c"
+Mutant 130: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant130/src//res/values/strings.xml; WrongStringResource in line { 109 }
+	For mutant 130 the value of the string named "dialogDetailsReceived" at line 110 has been changed from "Received:" to "c016d1f2fd904fc697f1b0182a46e0e9"
+Mutant 131: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant131/src//res/values/strings.xml; WrongStringResource in line { 110 }
+	For mutant 131 the value of the string named "dialogDetailsSent" at line 111 has been changed from "Sent:" to "dd6d769ee1c44a3da6c64d7f7271ec02"
+Mutant 132: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant132/src//res/values/strings.xml; WrongStringResource in line { 111 }
+	For mutant 132 the value of the string named "dialogDetailsTotal" at line 112 has been changed from "Total:" to "97c1c9b00877467c8a1371253a30d395"
+Mutant 133: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant133/src//res/values/strings.xml; WrongStringResource in line { 112 }
+	For mutant 133 the value of the string named "dialogDetailsAlert" at line 113 has been changed from "Alert:" to "a708d646624f408da329a5314ee9eaf5"
+Mutant 134: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant134/src//res/values/strings.xml; WrongStringResource in line { 113 }
+	For mutant 134 the value of the string named "dialogDetailsByte" at line 114 has been changed from "%1$s (%2$s%%)" to "bafc90936fcd456e8d089fb86f540cf2"
+Mutant 135: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant135/src//res/values/strings.xml; WrongStringResource in line { 114 }
+	For mutant 135 the value of the string named "dialogDetailsNoAlert" at line 115 has been changed from "no alert defined" to "a3b940deea8f4d76838ecc3edc0f70c6"
+Mutant 136: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant136/src//res/values/strings.xml; WrongStringResource in line { 115 }
+	For mutant 136 the value of the string named "notifyExceed" at line 116 has been changed from "%1$s exceeds the limit of %2$s %3$s for %4$s" to "929fd9a6f55840f5af8194844d282e57"
+Mutant 137: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant137/src//res/values/strings.xml; WrongStringResource in line { 116 }
+	For mutant 137 the value of the string named "notifyExceedTitle" at line 117 has been changed from "%1$s exceeds the defined limit" to "0df9ff74552a4f4ca35a5851a765fd26"
+Mutant 138: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant138/src//res/values/strings.xml; WrongStringResource in line { 117 }
+	For mutant 138 the value of the string named "preferences" at line 118 has been changed from "Preferences" to "3d49c803a79248089e6407968307cf55"
+Mutant 139: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant139/src//res/values/strings.xml; WrongStringResource in line { 118 }
+	For mutant 139 the value of the string named "prefsCategoryAdvancedTitle" at line 119 has been changed from "Advanced preferences" to "97f0eb54e8bc487c945009769b032a3a"
+Mutant 140: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant140/src//res/values/strings.xml; WrongStringResource in line { 119 }
+	For mutant 140 the value of the string named "prefsCatImportExportTitle" at line 120 has been changed from "Import/Export" to "ade7920a755146a1a824ae51a3dbc6af"
+Mutant 141: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant141/src//res/values/strings.xml; WrongStringResource in line { 120 }
+	For mutant 141 the value of the string named "prefsCatImportExportSummary" at line 121 has been changed from "Import and export data to and from the SD card" to "be22d542c69a4fada839c01b473a0d46"
+Mutant 142: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant142/src//res/values/strings.xml; WrongStringResource in line { 121 }
+	For mutant 142 the value of the string named "prefsWifiUpdateTitle" at line 122 has been changed from "WiFi slow update rate" to "8449acc75d044077a3318a9c578c8477"
+Mutant 143: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant143/src//res/values/strings.xml; WrongStringResource in line { 122 }
+	For mutant 143 the value of the string named "prefsWifiUpdateSummaryOn" at line 123 has been changed from "Update every hour. Require less power but less accurate" to "4d1d378bff0041dfb2742262d8db21ae"
+Mutant 144: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant144/src//res/values/strings.xml; WrongStringResource in line { 123 }
+	For mutant 144 the value of the string named "prefsWifiUpdateSummaryOff" at line 124 has been changed from "Update every 30 seconds. Require more power but more accurate" to "eebdf50827b445cebe1bbda495f1b1ae"
+Mutant 145: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant145/src//res/values/strings.xml; WrongStringResource in line { 124 }
+	For mutant 145 the value of the string named "prefsDebugTitle" at line 125 has been changed from "Debug" to "cd7b722ff9b94842b23806bfc91cff02"
+Mutant 146: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant146/src//res/values/strings.xml; WrongStringResource in line { 125 }
+	For mutant 146 the value of the string named "prefsDebugSummary" at line 126 has been changed from "Show debug information in the notification area" to "f48e59167311451581cfb3c3f2e29be7"
+Mutant 147: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant147/src//res/values/strings.xml; WrongStringResource in line { 126 }
+	For mutant 147 the value of the string named "graphReceivedLabel" at line 127 has been changed from "Received" to "5198f923c4e84e5cb15ee3508ab46bbf"
+Mutant 148: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant148/src//res/values/strings.xml; WrongStringResource in line { 127 }
+	For mutant 148 the value of the string named "graphSentLabel" at line 128 has been changed from "Sent" to "65981df608da42508dba152be2042a9a"
+Mutant 149: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant149/src//res/values/strings.xml; WrongStringResource in line { 128 }
+	For mutant 149 the value of the string named "graphYTitle" at line 129 has been changed from "kBytes" to "e321ead3a65246679cf85487f8002382"
+Mutant 150: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant10/src//AndroidManifest.xml; InvalidActivityPATH in line { 8 }
+	For mutant 150 activity name at line 8 has been change from ".activity.NetCouterActivity"" to ".activity.NetCouterActivity""
+Mutant 151: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant151/src//AndroidManifest.xml; InvalidActivityPATH in line { 14 }
+	For mutant 151 activity name at line 14 has been change from ".activity.NetCounterPreferences" to ".tctivity.NeaCounterPreferences"
+Mutant 152: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant152/src//AndroidManifest.xml; InvalidActivityPATH in line { 15 }
+	For mutant 152 activity name at line 15 has been change from ".activity.BarGraphActivity" to ".ativity.BarGraphActivity"
+Mutant 153: ./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant153/src//AndroidManifest.xml; InvalidActivityPATH in line { 28 }
+	For mutant 153 activity name at line 28 has been change from "net.jaqpot.netcounter.EmmaInstrument.InstrumentedActivity" to "net.jaqpot.neteountcr.EmmaInstrument.InstrumentedActivity"
+Mutant 154: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant11/src//smali/net/jaqpot/netcounter/activity/ListAdapter.smali; NullMethodCallArgument in line { 62 }
+	For mutant 154, 2 parameter of method get have been replaced with null
+Mutant 155: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant155/src//smali/net/jaqpot/netcounter/activity/ListAdapter.smali; NullMethodCallArgument in line { 202 }
+	For mutant 155, 2 parameter of method get have been replaced with null
+Mutant 156: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant156/src//smali/net/jaqpot/netcounter/activity/ListAdapter.smali; NullMethodCallArgument in line { 50 }
+	For mutant 156, 2 parameter of method getGroup have been replaced with null
+Mutant 157: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant157/src//smali/net/jaqpot/netcounter/model/DiscoverableDevice.smali; NullMethodCallArgument in line { 158 }
+	For mutant 157, 2 parameter of method append have been replaced with null
+Mutant 158: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant158/src//smali/net/jaqpot/netcounter/model/DiscoverableDevice.smali; NullMethodCallArgument in line { 559 }
+	For mutant 158, 2 parameter of method append have been replaced with null
+Mutant 159: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant159/src//smali/net/jaqpot/netcounter/model/DiscoverableDevice.smali; NullMethodCallArgument in line { 166 }
+	For mutant 159, 2 parameter of method i have been replaced with null
+Mutant 160: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant160/src//smali/net/jaqpot/netcounter/model/DiscoverableDevice.smali; NullMethodCallArgument in line { 563 }
+	For mutant 160, 2 parameter of method append have been replaced with null
+Mutant 161: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant161/src//smali/net/jaqpot/netcounter/model/DiscoverableDevice.smali; NullMethodCallArgument in line { 154 }
+	For mutant 161, 2 parameter of method append have been replaced with null
+Mutant 162: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant162/src//smali/net/jaqpot/netcounter/model/DiscoverableDevice.smali; NullMethodCallArgument in line { 571 }
+	For mutant 162, 2 parameter of method i have been replaced with null
+Mutant 163: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant163/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 27 }
+	For mutant 163, 2 parameter of method setTitle have been replaced with null
+Mutant 164: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant164/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 32 }
+	For mutant 164, 2 parameter of method getAdapter have been replaced with null
+Mutant 165: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant165/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 22 }
+	For mutant 165, 2 parameter of method <init> have been replaced with null
+Mutant 166: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant166/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 22 }
+	For mutant 166, 3 parameter of method <init> have been replaced with null
+Mutant 167: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant167/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 22 }
+	For mutant 167, 4 parameter of method <init> have been replaced with null
+Mutant 168: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant168/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 112 }
+	For mutant 168, 2 parameter of method toast have been replaced with null
+Mutant 169: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant169/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 43 }
+	For mutant 169, 2 parameter of method getAdapter have been replaced with null
+Mutant 170: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant170/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 101 }
+	For mutant 170, 2 parameter of method <init> have been replaced with null
+Mutant 171: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant171/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 101 }
+	For mutant 171, 3 parameter of method <init> have been replaced with null
+Mutant 172: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant172/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 101 }
+	For mutant 172, 4 parameter of method <init> have been replaced with null
+Mutant 173: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant173/src//smali/net/jaqpot/netcounter/dialog/CounterTypeDialog.smali; NullMethodCallArgument in line { 103 }
+	For mutant 173, 2 parameter of method post have been replaced with null
+Mutant 174: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant174/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 180 }
+	For mutant 174, 2 parameter of method post have been replaced with null
+Mutant 175: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant175/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 30 }
+	For mutant 175, 2 parameter of method getAdapter have been replaced with null
+Mutant 176: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant176/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 160 }
+	For mutant 176, 2 parameter of method append have been replaced with null
+Mutant 177: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant177/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 140 }
+	For mutant 177, 2 parameter of method append have been replaced with null
+Mutant 178: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant178/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 189 }
+	For mutant 178, 2 parameter of method toast have been replaced with null
+Mutant 179: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant179/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 69 }
+	For mutant 179, 2 parameter of method getText have been replaced with null
+Mutant 180: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant180/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 52 }
+	For mutant 180, 2 parameter of method setTitle have been replaced with null
+Mutant 181: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant181/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 57 }
+	For mutant 181, 2 parameter of method <init> have been replaced with null
+Mutant 182: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant182/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 73 }
+	For mutant 182, 2 parameter of method setButton have been replaced with null
+Mutant 183: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant183/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 73 }
+	For mutant 183, 3 parameter of method setButton have been replaced with null
+Mutant 184: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant184/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 178 }
+	For mutant 184, 2 parameter of method <init> have been replaced with null
+Mutant 185: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant185/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 178 }
+	For mutant 185, 3 parameter of method <init> have been replaced with null
+Mutant 186: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant186/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 64 }
+	For mutant 186, 2 parameter of method setView have been replaced with null
+Mutant 187: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant187/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 156 }
+	For mutant 187, 2 parameter of method append have been replaced with null
+Mutant 188: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant188/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 78 }
+	For mutant 188, 2 parameter of method getText have been replaced with null
+Mutant 189: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant189/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 150 }
+	For mutant 189, 2 parameter of method append have been replaced with null
+Mutant 190: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant190/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 41 }
+	For mutant 190, 2 parameter of method getAdapter have been replaced with null
+Mutant 191: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant191/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 25 }
+	For mutant 191, 2 parameter of method <init> have been replaced with null
+Mutant 192: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant192/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 25 }
+	For mutant 192, 3 parameter of method <init> have been replaced with null
+Mutant 193: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant193/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 86 }
+	For mutant 193, 2 parameter of method setButton2 have been replaced with null
+Mutant 194: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant194/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 86 }
+	For mutant 194, 3 parameter of method setButton2 have been replaced with null
+Mutant 195: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant195/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog.smali; NullMethodCallArgument in line { 146 }
+	For mutant 195, 2 parameter of method append have been replaced with null
+Mutant 196: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant196/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 357 }
+	For mutant 196, 2 parameter of method update have been replaced with null
+Mutant 197: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant197/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 687 }
+	For mutant 197, 2 parameter of method append have been replaced with null
+Mutant 198: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant198/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1731 }
+	For mutant 198, 2 parameter of method put have been replaced with null
+Mutant 199: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant199/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1731 }
+	For mutant 199, 3 parameter of method put have been replaced with null
+Mutant 200: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant200/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 961 }
+	For mutant 200, 2 parameter of method <init> have been replaced with null
+Mutant 201: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant201/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 970 }
+	For mutant 201, 2 parameter of method <init> have been replaced with null
+Mutant 202: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant202/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1641 }
+	For mutant 202, 2 parameter of method put have been replaced with null
+Mutant 203: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant203/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1641 }
+	For mutant 203, 3 parameter of method put have been replaced with null
+Mutant 204: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant204/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1022 }
+	For mutant 204, 2 parameter of method <init> have been replaced with null
+Mutant 205: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant205/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1234 }
+	For mutant 205, 2 parameter of method setTables have been replaced with null
+Mutant 206: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant206/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1875 }
+	For mutant 206, 2 parameter of method modelChanged have been replaced with null
+Mutant 207: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant207/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1119 }
+	For mutant 207, 2 parameter of method append have been replaced with null
+Mutant 208: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant208/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 819 }
+	For mutant 208, 2 parameter of method append have been replaced with null
+Mutant 209: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant209/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 482 }
+	For mutant 209, 2 parameter of method append have been replaced with null
+Mutant 210: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant210/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1253 }
+	For mutant 210, 2 parameter of method append have been replaced with null
+Mutant 211: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant211/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 793 }
+	For mutant 211, 2 parameter of method append have been replaced with null
+Mutant 212: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant212/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1672 }
+	For mutant 212, 2 parameter of method insert have been replaced with null
+Mutant 213: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant213/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1672 }
+	For mutant 213, 3 parameter of method insert have been replaced with null
+Mutant 214: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant214/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1672 }
+	For mutant 214, 4 parameter of method insert have been replaced with null
+Mutant 215: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant215/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 429 }
+	For mutant 215, 2 parameter of method setNew have been replaced with null
+Mutant 216: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant216/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 680 }
+	For mutant 216, 2 parameter of method append have been replaced with null
+Mutant 217: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant217/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1177 }
+	For mutant 217, 2 parameter of method appendWhere have been replaced with null
+Mutant 218: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant218/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 400 }
+	For mutant 218, 2 parameter of method load have been replaced with null
+Mutant 219: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant219/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 379 }
+	For mutant 219, 2 parameter of method e have been replaced with null
+Mutant 220: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant220/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 379 }
+	For mutant 220, 3 parameter of method e have been replaced with null
+Mutant 221: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant221/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 330 }
+	For mutant 221, 2 parameter of method setNew have been replaced with null
+Mutant 222: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant222/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 782 }
+	For mutant 222, 2 parameter of method append have been replaced with null
+Mutant 223: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant223/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1630 }
+	For mutant 223, 2 parameter of method put have been replaced with null
+Mutant 224: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant224/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1630 }
+	For mutant 224, 3 parameter of method put have been replaced with null
+Mutant 225: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant225/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1524 }
+	For mutant 225, 2 parameter of method append have been replaced with null
+Mutant 226: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant226/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 693 }
+	For mutant 226, 2 parameter of method append have been replaced with null
+Mutant 227: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant227/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 661 }
+	For mutant 227, 2 parameter of method append have been replaced with null
+Mutant 228: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant228/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 116 }
+	For mutant 228, 2 parameter of method modelChanged have been replaced with null
+Mutant 229: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant229/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 616 }
+	For mutant 229, 2 parameter of method setTables have been replaced with null
+Mutant 230: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant230/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1261 }
+	For mutant 230, 2 parameter of method appendWhere have been replaced with null
+Mutant 231: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant231/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1294 }
+	For mutant 231, 2 parameter of method append have been replaced with null
+Mutant 232: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant232/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 105 }
+	For mutant 232, 2 parameter of method setNew have been replaced with null
+Mutant 233: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant233/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1115 }
+	For mutant 233, 2 parameter of method append have been replaced with null
+Mutant 234: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant234/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1308 }
+	For mutant 234, 2 parameter of method appendWhere have been replaced with null
+Mutant 235: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant235/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1436 }
+	For mutant 235, 2 parameter of method <init> have been replaced with null
+Mutant 236: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant236/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 477 }
+	For mutant 236, 2 parameter of method append have been replaced with null
+Mutant 237: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant237/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 394 }
+	For mutant 237, 2 parameter of method remove have been replaced with null
+Mutant 238: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant238/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1169 }
+	For mutant 238, 2 parameter of method append have been replaced with null
+Mutant 239: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant239/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1547 }
+	For mutant 239, 2 parameter of method append have been replaced with null
+Mutant 240: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant240/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1286 }
+	For mutant 240, 2 parameter of method append have been replaced with null
+Mutant 241: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant241/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 946 }
+	For mutant 241, 2 parameter of method equals have been replaced with null
+Mutant 242: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant242/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1988 }
+	For mutant 242, 2 parameter of method add have been replaced with null
+Mutant 243: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant243/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 654 }
+	For mutant 243, 2 parameter of method append have been replaced with null
+Mutant 244: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant244/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1247 }
+	For mutant 244, 2 parameter of method append have been replaced with null
+Mutant 245: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant245/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 965 }
+	For mutant 245, 2 parameter of method addInterface have been replaced with null
+Mutant 246: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant246/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1396 }
+	For mutant 246, 2 parameter of method listFiles have been replaced with null
+Mutant 247: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant247/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1277 }
+	For mutant 247, 2 parameter of method add have been replaced with null
+Mutant 248: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant248/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1277 }
+	For mutant 248, 3 parameter of method add have been replaced with null
+Mutant 249: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant249/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1563 }
+	For mutant 249, 2 parameter of method append have been replaced with null
+Mutant 250: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant250/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1155 }
+	For mutant 250, 2 parameter of method append have been replaced with null
+Mutant 251: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant251/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 518 }
+	For mutant 251, 2 parameter of method exportDataToCsv have been replaced with null
+Mutant 252: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant252/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1016 }
+	For mutant 252, 2 parameter of method addCounter have been replaced with null
+Mutant 253: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant253/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1753 }
+	For mutant 253, 2 parameter of method put have been replaced with null
+Mutant 254: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant254/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1753 }
+	For mutant 254, 3 parameter of method put have been replaced with null
+Mutant 255: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant255/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 787 }
+	For mutant 255, 2 parameter of method append have been replaced with null
+Mutant 256: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant256/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1038 }
+	For mutant 256, 2 parameter of method addCounter have been replaced with null
+Mutant 257: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant257/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 648 }
+	For mutant 257, 2 parameter of method append have been replaced with null
+Mutant 258: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant258/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 489 }
+	For mutant 258, 2 parameter of method append have been replaced with null
+Mutant 259: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant259/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 489 }
+	For mutant 259, 3 parameter of method append have been replaced with null
+Mutant 260: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant260/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1663 }
+	For mutant 260, 2 parameter of method put have been replaced with null
+Mutant 261: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant261/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1663 }
+	For mutant 261, 3 parameter of method put have been replaced with null
+Mutant 262: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant262/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 2025 }
+	For mutant 262, 2 parameter of method remove have been replaced with null
+Mutant 263: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant263/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 306 }
+	For mutant 263, 2 parameter of method insert have been replaced with null
+Mutant 264: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant264/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 985 }
+	For mutant 264, 2 parameter of method <init> have been replaced with null
+Mutant 265: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant265/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1492 }
+	For mutant 265, 2 parameter of method split have been replaced with null
+Mutant 266: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant266/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1035 }
+	For mutant 266, 2 parameter of method setProperty have been replaced with null
+Mutant 267: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant267/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1035 }
+	For mutant 267, 3 parameter of method setProperty have been replaced with null
+Mutant 268: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant268/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 733 }
+	For mutant 268, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 269: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant269/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 269 }
+	For mutant 269, 2 parameter of method <init> have been replaced with null
+Mutant 270: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant270/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1581 }
+	For mutant 270, 2 parameter of method setTables have been replaced with null
+Mutant 271: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant271/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1243 }
+	For mutant 271, 2 parameter of method append have been replaced with null
+Mutant 272: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant272/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1501 }
+	For mutant 272, 2 parameter of method equals have been replaced with null
+Mutant 273: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant273/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1013 }
+	For mutant 273, 2 parameter of method setProperty have been replaced with null
+Mutant 274: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant274/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1013 }
+	For mutant 274, 3 parameter of method setProperty have been replaced with null
+Mutant 275: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant275/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 113 }
+	For mutant 275, 2 parameter of method addModelListener have been replaced with null
+Mutant 276: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant276/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 674 }
+	For mutant 276, 2 parameter of method append have been replaced with null
+Mutant 277: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant277/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1006 }
+	For mutant 277, 2 parameter of method setType have been replaced with null
+Mutant 278: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant278/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 828 }
+	For mutant 278, 2 parameter of method append have been replaced with null
+Mutant 279: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant279/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 976 }
+	For mutant 279, 2 parameter of method setType have been replaced with null
+Mutant 280: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant280/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1652 }
+	For mutant 280, 2 parameter of method put have been replaced with null
+Mutant 281: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant281/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1652 }
+	For mutant 281, 3 parameter of method put have been replaced with null
+Mutant 282: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant282/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 806 }
+	For mutant 282, 2 parameter of method append have been replaced with null
+Mutant 283: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant283/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1588 }
+	For mutant 283, 2 parameter of method appendWhere have been replaced with null
+Mutant 284: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant284/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 721 }
+	For mutant 284, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 285: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant285/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1125 }
+	For mutant 285, 2 parameter of method append have been replaced with null
+Mutant 286: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant286/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1742 }
+	For mutant 286, 2 parameter of method put have been replaced with null
+Mutant 287: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant287/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1742 }
+	For mutant 287, 3 parameter of method put have been replaced with null
+Mutant 288: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant288/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1272 }
+	For mutant 288, 2 parameter of method set have been replaced with null
+Mutant 289: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant289/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1272 }
+	For mutant 289, 3 parameter of method set have been replaced with null
+Mutant 290: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant290/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1106 }
+	For mutant 290, 2 parameter of method setTables have been replaced with null
+Mutant 291: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant291/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 761 }
+	For mutant 291, 2 parameter of method getLong have been replaced with null
+Mutant 292: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant292/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 510 }
+	For mutant 292, 2 parameter of method <init> have been replaced with null
+Mutant 293: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant293/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 725 }
+	For mutant 293, 2 parameter of method getString have been replaced with null
+Mutant 294: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant294/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 757 }
+	For mutant 294, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 295: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant295/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1392 }
+	For mutant 295, 2 parameter of method <init> have been replaced with null
+Mutant 296: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant296/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1028 }
+	For mutant 296, 2 parameter of method setType have been replaced with null
+Mutant 297: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant297/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 737 }
+	For mutant 297, 2 parameter of method getString have been replaced with null
+Mutant 298: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant298/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 991 }
+	For mutant 298, 2 parameter of method setType have been replaced with null
+Mutant 299: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant299/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1000 }
+	For mutant 299, 2 parameter of method <init> have been replaced with null
+Mutant 300: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant300/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1540 }
+	For mutant 300, 2 parameter of method append have been replaced with null
+Mutant 301: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant301/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1781 }
+	For mutant 301, 2 parameter of method update have been replaced with null
+Mutant 302: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant302/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1781 }
+	For mutant 302, 3 parameter of method update have been replaced with null
+Mutant 303: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant303/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1781 }
+	For mutant 303, 4 parameter of method update have been replaced with null
+Mutant 304: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant304/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1781 }
+	For mutant 304, 5 parameter of method update have been replaced with null
+Mutant 305: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant305/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1133 }
+	For mutant 305, 2 parameter of method appendWhere have been replaced with null
+Mutant 306: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant306/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1300 }
+	For mutant 306, 2 parameter of method append have been replaced with null
+Mutant 307: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant307/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1570 }
+	For mutant 307, 2 parameter of method append have been replaced with null
+Mutant 308: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant308/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 979 }
+	For mutant 308, 2 parameter of method addCounter have been replaced with null
+Mutant 309: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant309/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1533 }
+	For mutant 309, 2 parameter of method append have been replaced with null
+Mutant 310: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant310/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1146 }
+	For mutant 310, 2 parameter of method add have been replaced with null
+Mutant 311: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant311/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1146 }
+	For mutant 311, 3 parameter of method add have been replaced with null
+Mutant 312: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant312/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 416 }
+	For mutant 312, 2 parameter of method setDirty have been replaced with null
+Mutant 313: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant313/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 776 }
+	For mutant 313, 2 parameter of method append have been replaced with null
+Mutant 314: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant314/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 667 }
+	For mutant 314, 2 parameter of method append have been replaced with null
+Mutant 315: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant315/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 702 }
+	For mutant 315, 2 parameter of method append have been replaced with null
+Mutant 316: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant316/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 76 }
+	For mutant 316, 2 parameter of method <init> have been replaced with null
+Mutant 317: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant317/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 749 }
+	For mutant 317, 2 parameter of method getLong have been replaced with null
+Mutant 318: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant318/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 800 }
+	For mutant 318, 2 parameter of method append have been replaced with null
+Mutant 319: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant319/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 800 }
+	For mutant 319, 3 parameter of method append have been replaced with null
+Mutant 320: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant320/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1764 }
+	For mutant 320, 2 parameter of method put have been replaced with null
+Mutant 321: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant321/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1764 }
+	For mutant 321, 3 parameter of method put have been replaced with null
+Mutant 322: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant322/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 494 }
+	For mutant 322, 2 parameter of method append have been replaced with null
+Mutant 323: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant323/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1438 }
+	For mutant 323, 2 parameter of method <init> have been replaced with null
+Mutant 324: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant324/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 994 }
+	For mutant 324, 2 parameter of method addCounter have been replaced with null
+Mutant 325: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant325/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1517 }
+	For mutant 325, 2 parameter of method append have been replaced with null
+Mutant 326: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant326/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1554 }
+	For mutant 326, 2 parameter of method append have been replaced with null
+Mutant 327: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant327/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 813 }
+	For mutant 327, 2 parameter of method append have been replaced with null
+Mutant 328: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant328/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 813 }
+	For mutant 328, 3 parameter of method append have been replaced with null
+Mutant 329: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant329/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 110 }
+	For mutant 329, 2 parameter of method add have been replaced with null
+Mutant 330: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant330/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 227 }
+	For mutant 330, 2 parameter of method add have been replaced with null
+Mutant 331: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant331/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 1163 }
+	For mutant 331, 2 parameter of method append have been replaced with null
+Mutant 332: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant332/src//smali/net/jaqpot/netcounter/model/NetCounterModel.smali; NullMethodCallArgument in line { 745 }
+	For mutant 332, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 333: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant333/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog$1.smali; NullMethodCallArgument in line { 59 }
+	For mutant 333, 2 parameter of method setProperty have been replaced with null
+Mutant 334: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant334/src//smali/net/jaqpot/netcounter/dialog/CounterMonthlyDialog$1.smali; NullMethodCallArgument in line { 59 }
+	For mutant 334, 3 parameter of method setProperty have been replaced with null
+Mutant 335: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant335/src//smali/net/jaqpot/netcounter/service/NetCounterAlarm$State.smali; NullMethodCallArgument in line { 48 }
+	For mutant 335, 2 parameter of method <init> have been replaced with null
+Mutant 336: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant336/src//smali/net/jaqpot/netcounter/service/NetCounterAlarm$State.smali; NullMethodCallArgument in line { 48 }
+	For mutant 336, 3 parameter of method <init> have been replaced with null
+Mutant 337: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant337/src//smali/net/jaqpot/netcounter/service/NetCounterAlarm$State.smali; NullMethodCallArgument in line { 56 }
+	For mutant 337, 2 parameter of method <init> have been replaced with null
+Mutant 338: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant338/src//smali/net/jaqpot/netcounter/service/NetCounterAlarm$State.smali; NullMethodCallArgument in line { 56 }
+	For mutant 338, 3 parameter of method <init> have been replaced with null
+Mutant 339: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant339/src//smali/net/jaqpot/netcounter/service/NetCounterAlarm$State.smali; NullMethodCallArgument in line { 88 }
+	For mutant 339, 2 parameter of method <init> have been replaced with null
+Mutant 340: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant340/src//smali/net/jaqpot/netcounter/service/NetCounterAlarm$State.smali; NullMethodCallArgument in line { 88 }
+	For mutant 340, 3 parameter of method <init> have been replaced with null
+Mutant 341: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant341/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity$3.smali; NullMethodCallArgument in line { 59 }
+	For mutant 341, 2 parameter of method addCounter have been replaced with null
+Mutant 342: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant342/src//smali/net/jaqpot/netcounter/activity/NetCounterActivity$3.smali; NullMethodCallArgument in line { 53 }
+	For mutant 342, 2 parameter of method <init> have been replaced with null
+Mutant 343: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant343/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 102 }
+	For mutant 343, 2 parameter of method <init> have been replaced with null
+Mutant 344: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant344/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 102 }
+	For mutant 344, 3 parameter of method <init> have been replaced with null
+Mutant 345: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant345/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 102 }
+	For mutant 345, 4 parameter of method <init> have been replaced with null
+Mutant 346: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant346/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 102 }
+	For mutant 346, 5 parameter of method <init> have been replaced with null
+Mutant 347: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant347/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 54 }
+	For mutant 347, 2 parameter of method setOnItemClickListener have been replaced with null
+Mutant 348: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant348/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 108 }
+	For mutant 348, 2 parameter of method setAdapter have been replaced with null
+Mutant 349: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant349/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 65 }
+	For mutant 349, 2 parameter of method setView have been replaced with null
+Mutant 350: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant350/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 57 }
+	For mutant 350, 2 parameter of method setArray have been replaced with null
+Mutant 351: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant351/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 86 }
+	For mutant 351, 2 parameter of method getTextArray have been replaced with null
+Mutant 352: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant352/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 34 }
+	For mutant 352, 2 parameter of method inflate have been replaced with null
+Mutant 353: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant353/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 34 }
+	For mutant 353, 3 parameter of method inflate have been replaced with null
+Mutant 354: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant354/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 21 }
+	For mutant 354, 2 parameter of method <init> have been replaced with null
+Mutant 355: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant355/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 21 }
+	For mutant 355, 3 parameter of method <init> have been replaced with null
+Mutant 356: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant356/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 60 }
+	For mutant 356, 2 parameter of method setInverseBackgroundForced have been replaced with null
+Mutant 357: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant357/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 52 }
+	For mutant 357, 2 parameter of method <init> have been replaced with null
+Mutant 358: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant358/src//smali/net/jaqpot/netcounter/dialog/CounterSingleChoiceDialog.smali; NullMethodCallArgument in line { 45 }
+	For mutant 358, 2 parameter of method setChoiceMode have been replaced with null
+Mutant 359: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant359/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 46 }
+	For mutant 359, 2 parameter of method <init> have been replaced with null
+Mutant 360: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant360/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 46 }
+	For mutant 360, 3 parameter of method <init> have been replaced with null
+Mutant 361: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant361/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 34 }
+	For mutant 361, 2 parameter of method getSystemService have been replaced with null
+Mutant 362: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant362/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 50 }
+	For mutant 362, 2 parameter of method getBroadcast have been replaced with null
+Mutant 363: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant363/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 50 }
+	For mutant 363, 3 parameter of method getBroadcast have been replaced with null
+Mutant 364: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant364/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 50 }
+	For mutant 364, 4 parameter of method getBroadcast have been replaced with null
+Mutant 365: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant365/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 68 }
+	For mutant 365, 2 parameter of method set have been replaced with null
+Mutant 366: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant366/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 68 }
+	For mutant 366, 3 parameter of method set have been replaced with null
+Mutant 367: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant367/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 68 }
+	For mutant 367, 4 parameter of method set have been replaced with null
+Mutant 368: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant368/src//smali/net/jaqpot/netcounter/service/OnBootReceiver.smali; NullMethodCallArgument in line { 68 }
+	For mutant 368, 5 parameter of method set have been replaced with null
+Mutant 369: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant369/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 230 }
+	For mutant 369, 2 parameter of method setDisplayedChild have been replaced with null
+Mutant 370: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant370/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 161 }
+	For mutant 370, 2 parameter of method setXAxisMax have been replaced with null
+Mutant 371: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant371/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 161 }
+	For mutant 371, 3 parameter of method setXAxisMax have been replaced with null
+Mutant 372: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant372/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 52 }
+	For mutant 372, 2 parameter of method <init> have been replaced with null
+Mutant 373: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant373/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 89 }
+	For mutant 373, 2 parameter of method buildBarDataset have been replaced with null
+Mutant 374: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant374/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 109 }
+	For mutant 374, 2 parameter of method getSeriesAt have been replaced with null
+Mutant 375: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant375/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 273 }
+	For mutant 375, 2 parameter of method removeViewAt have been replaced with null
+Mutant 376: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant376/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 251 }
+	For mutant 376, 2 parameter of method setDisplayedChild have been replaced with null
+Mutant 377: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant377/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 103 }
+	For mutant 377, 2 parameter of method buildBarRenderer have been replaced with null
+Mutant 378: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant378/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 202 }
+	For mutant 378, 2 parameter of method onPostExecute have been replaced with null
+Mutant 379: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant379/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 66 }
+	For mutant 379, 2 parameter of method doInBackground have been replaced with null
+Mutant 380: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant380/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 168 }
+	For mutant 380, 2 parameter of method getTimeBarChartView have been replaced with null
+Mutant 381: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant381/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 168 }
+	For mutant 381, 3 parameter of method getTimeBarChartView have been replaced with null
+Mutant 382: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant382/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 168 }
+	For mutant 382, 4 parameter of method getTimeBarChartView have been replaced with null
+Mutant 383: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant383/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 168 }
+	For mutant 383, 5 parameter of method getTimeBarChartView have been replaced with null
+Mutant 384: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant384/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 152 }
+	For mutant 384, 2 parameter of method setXAxisMin have been replaced with null
+Mutant 385: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant385/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 152 }
+	For mutant 385, 3 parameter of method setXAxisMin have been replaced with null
+Mutant 386: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant386/src//smali/net/jaqpot/netcounter/activity/BarGraphActivity$GraphWorker.smali; NullMethodCallArgument in line { 219 }
+	For mutant 386, 2 parameter of method addView have been replaced with null
+Mutant 387: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant387/src//smali/net/jaqpot/netcounter/dialog/CounterDetailsDialog.smali; NullMethodCallArgument in line { 58 }
+	For mutant 387, 2 parameter of method setButton have been replaced with null
+Mutant 388: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant388/src//smali/net/jaqpot/netcounter/dialog/CounterDetailsDialog.smali; NullMethodCallArgument in line { 58 }
+	For mutant 388, 3 parameter of method setButton have been replaced with null
+Mutant 389: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant389/src//smali/net/jaqpot/netcounter/dialog/CounterDetailsDialog.smali; NullMethodCallArgument in line { 24 }
+	For mutant 389, 2 parameter of method <init> have been replaced with null
+Mutant 390: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant390/src//smali/net/jaqpot/netcounter/dialog/CounterDetailsDialog.smali; NullMethodCallArgument in line { 24 }
+	For mutant 390, 3 parameter of method <init> have been replaced with null
+Mutant 391: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant391/src//smali/net/jaqpot/netcounter/dialog/CounterDetailsDialog.smali; NullMethodCallArgument in line { 38 }
+	For mutant 391, 2 parameter of method inflate have been replaced with null
+Mutant 392: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant392/src//smali/net/jaqpot/netcounter/dialog/CounterDetailsDialog.smali; NullMethodCallArgument in line { 38 }
+	For mutant 392, 3 parameter of method inflate have been replaced with null
+Mutant 393: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant393/src//smali/net/jaqpot/netcounter/dialog/CounterDetailsDialog.smali; NullMethodCallArgument in line { 29 }
+	For mutant 393, 2 parameter of method setTitle have been replaced with null
+Mutant 394: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant394/src//smali/net/jaqpot/netcounter/dialog/CounterDetailsDialog.smali; NullMethodCallArgument in line { 47 }
+	For mutant 394, 2 parameter of method setView have been replaced with null
+Mutant 395: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant395/src//smali/net/jaqpot/netcounter/dialog/CounterDetailsDialog.smali; NullMethodCallArgument in line { 52 }
+	For mutant 395, 2 parameter of method getText have been replaced with null
+Mutant 396: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant396/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1073 }
+	For mutant 396, 2 parameter of method getProperty have been replaced with null
+Mutant 397: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant397/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1073 }
+	For mutant 397, 3 parameter of method getProperty have been replaced with null
+Mutant 398: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant398/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 643 }
+	For mutant 398, 2 parameter of method add have been replaced with null
+Mutant 399: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant399/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 643 }
+	For mutant 399, 3 parameter of method add have been replaced with null
+Mutant 400: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant400/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 656 }
+	For mutant 400, 2 parameter of method set have been replaced with null
+Mutant 401: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant401/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 656 }
+	For mutant 401, 3 parameter of method set have been replaced with null
+Mutant 402: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant402/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 374 }
+	For mutant 402, 2 parameter of method getInterfaceBytes have been replaced with null
+Mutant 403: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant403/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 374 }
+	For mutant 403, 3 parameter of method getInterfaceBytes have been replaced with null
+Mutant 404: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant404/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 374 }
+	For mutant 404, 4 parameter of method getInterfaceBytes have been replaced with null
+Mutant 405: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant405/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 501 }
+	For mutant 405, 2 parameter of method set have been replaced with null
+Mutant 406: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant406/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 501 }
+	For mutant 406, 3 parameter of method set have been replaced with null
+Mutant 407: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant407/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1712 }
+	For mutant 407, 2 parameter of method getProperty have been replaced with null
+Mutant 408: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant408/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 594 }
+	For mutant 408, 2 parameter of method split have been replaced with null
+Mutant 409: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant409/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 2234 }
+	For mutant 409, 2 parameter of method remove have been replaced with null
+Mutant 410: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant410/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 2173 }
+	For mutant 410, 2 parameter of method equals have been replaced with null
+Mutant 411: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant411/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 2248 }
+	For mutant 411, 2 parameter of method remove have been replaced with null
+Mutant 412: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant412/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 205 }
+	For mutant 412, 2 parameter of method getInterfaceBytes have been replaced with null
+Mutant 413: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant413/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 205 }
+	For mutant 413, 3 parameter of method getInterfaceBytes have been replaced with null
+Mutant 414: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant414/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 205 }
+	For mutant 414, 4 parameter of method getInterfaceBytes have been replaced with null
+Mutant 415: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant415/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 663 }
+	For mutant 415, 2 parameter of method getInterfaceBytes have been replaced with null
+Mutant 416: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant416/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 663 }
+	For mutant 416, 3 parameter of method getInterfaceBytes have been replaced with null
+Mutant 417: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant417/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 663 }
+	For mutant 417, 4 parameter of method getInterfaceBytes have been replaced with null
+Mutant 418: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant418/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 508 }
+	For mutant 418, 2 parameter of method setTimeInMillis have been replaced with null
+Mutant 419: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant419/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 508 }
+	For mutant 419, 3 parameter of method setTimeInMillis have been replaced with null
+Mutant 420: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant420/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1362 }
+	For mutant 420, 2 parameter of method store have been replaced with null
+Mutant 421: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant421/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1362 }
+	For mutant 421, 3 parameter of method store have been replaced with null
+Mutant 422: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant422/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 923 }
+	For mutant 422, 2 parameter of method format have been replaced with null
+Mutant 423: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant423/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 287 }
+	For mutant 423, 2 parameter of method setBytes have been replaced with null
+Mutant 424: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant424/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 413 }
+	For mutant 424, 2 parameter of method getProperty have been replaced with null
+Mutant 425: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant425/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 413 }
+	For mutant 425, 3 parameter of method getProperty have been replaced with null
+Mutant 426: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant426/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 423 }
+	For mutant 426, 2 parameter of method getProperty have been replaced with null
+Mutant 427: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant427/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 423 }
+	For mutant 427, 3 parameter of method getProperty have been replaced with null
+Mutant 428: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant428/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 999 }
+	For mutant 428, 2 parameter of method format have been replaced with null
+Mutant 429: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant429/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 965 }
+	For mutant 429, 2 parameter of method append have been replaced with null
+Mutant 430: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant430/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1908 }
+	For mutant 430, 2 parameter of method put have been replaced with null
+Mutant 431: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant431/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1908 }
+	For mutant 431, 3 parameter of method put have been replaced with null
+Mutant 432: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant432/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 276 }
+	For mutant 432, 2 parameter of method add have been replaced with null
+Mutant 433: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant433/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 276 }
+	For mutant 433, 3 parameter of method add have been replaced with null
+Mutant 434: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant434/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 62 }
+	For mutant 434, 2 parameter of method <init> have been replaced with null
+Mutant 435: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant435/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1317 }
+	For mutant 435, 2 parameter of method append have been replaced with null
+Mutant 436: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant436/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 917 }
+	For mutant 436, 2 parameter of method valueOf have been replaced with null
+Mutant 437: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant437/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 2275 }
+	For mutant 437, 2 parameter of method setDirty have been replaced with null
+Mutant 438: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant438/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1024 }
+	For mutant 438, 2 parameter of method valueOf have been replaced with null
+Mutant 439: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant439/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 2241 }
+	For mutant 439, 2 parameter of method remove have been replaced with null
+Mutant 440: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant440/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 798 }
+	For mutant 440, 2 parameter of method setBytes have been replaced with null
+Mutant 441: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant441/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1301 }
+	For mutant 441, 2 parameter of method append have been replaced with null
+Mutant 442: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant442/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 477 }
+	For mutant 442, 2 parameter of method before have been replaced with null
+Mutant 443: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant443/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1034 }
+	For mutant 443, 2 parameter of method append have been replaced with null
+Mutant 444: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant444/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 772 }
+	For mutant 444, 2 parameter of method add have been replaced with null
+Mutant 445: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant445/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 772 }
+	For mutant 445, 3 parameter of method add have been replaced with null
+Mutant 446: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant446/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1220 }
+	For mutant 446, 2 parameter of method append have been replaced with null
+Mutant 447: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant447/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 369 }
+	For mutant 447, 2 parameter of method add have been replaced with null
+Mutant 448: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant448/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 369 }
+	For mutant 448, 3 parameter of method add have been replaced with null
+Mutant 449: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant449/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1311 }
+	For mutant 449, 2 parameter of method append have been replaced with null
+Mutant 450: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant450/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 1622 }
+	For mutant 450, 2 parameter of method prettyBytes have been replaced with null
+Mutant 451: /home/estudiante/test/./mutants/net.jaqpot.netcounter/aM/net.jaqpot.netcounter-mutant451/src//smali/net/jaqpot/netcounter/model/Counter.smali; NullMethodCallArgument in line { 527 }
+	For mutant 451, 2 parameter of method getInterfaceBytes have been replaced with null

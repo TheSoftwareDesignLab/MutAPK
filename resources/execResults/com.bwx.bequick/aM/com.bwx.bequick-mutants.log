@@ -1,0 +1,1164 @@
+Mutant 1: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant1/src//AndroidManifest.xml; MissingPermissionManifest in line { 44 }
+	For mutant 1 the lines between 45 and 45 have been deleted.
+Mutant 2: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant2/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 237 }
+	For mutant 2, 2 parameter of method getInt have been replaced with null
+Mutant 3: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant3/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; ClosingNullCursor in line { 349 }
+	For mutant 3 Database cursor at line 349 has been set to null before close() call
+Mutant 4: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant4/src//smali/com/bwx/bequick/MainSettingsActivity.smali; InvalidViewFocus in line { 802 }
+	For mutant 4 focus has been requested for the element found at line 796
+Mutant 5: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant5/src//AndroidManifest.xml; ActivityNotDefined in line { 3 }
+	For mutant 5 the lines between 4 and 13 have been deleted.
+Mutant 6: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant6/src//AndroidManifest.xml; InvalidLabel in line { 3 }
+	For mutant 6 activity label at line 3 has been change from "Quick Settings" to "69f52a7783d94cecb4e0c0c5912c77b0"
+Mutant 7: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant7/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; InvalidIDFindView in line { 160 }
+	For mutant 7 the id of the element retrieved at line 162 has been set to a random value
+Mutant 8: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant8/src//smali/com/bwx/bequick/SettingsApplication.smali; InvalidKeyIntentPutExtra in line { 343 }
+	For mutant 8 extra key value at line 343 has been set to 3d40deb1ded34e8dbac175834fd04e0c
+Mutant 9: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant9/src//AndroidManifest.xml; WrongMainActivity in line { 4 }
+	For mutant 9 activity ".ShowSettingsActivity" at line 4 has been replaced as main activity by ".preferences.CommonPrefs" at line 17
+Mutant 10: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant10/src//smali/com/bwx/bequick/LayoutSettingsActivity.smali; LengthyGUICreation in line { 25 }
+	For mutant 10 a large delay has been injected after GUI Creation at line 25
+Mutant 11: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant11/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 11 component name at line 0 has been change from "" to ""
+Mutant 12: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant12/src//smali/com/bwx/bequick/flashlight/HtcLedFlashlight.smali; InvalidFilePath in line { 36 }
+	For mutant 12 the path of File at line 36 has been replaced by a5ee0089d62841889b81fa65be061876
+Mutant 13: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant13/src//res/values/strings.xml; WrongStringResource in line { 2 }
+	For mutant 13 the value of the string named "txt_quick_settings" at line 3 has been changed from "Quick Settings" to "a0f3b5944ad64b19a4686928954838eb"
+Mutant 14: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant14/src//smali/com/bwx/bequick/handlers/BluetoothSettingHandler$BluetoothControl20.smali; NullBluetoothAdapter in lines { 38, 40 }
+	For mutant 14 Bluetooth Adapter has been set to null
+Mutant 15: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant15/src//smali/com/bwx/bequick/MainSettingsActivity.smali; ViewComponentNotVisible in line { 805 }
+	For mutant 15 the visibility of element retrieved at line 796 has been set to INVISIBLE at lines: 807 and 809
+Mutant 16: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant16/src//AndroidManifest.xml; InvalidActivityPATH in line { 3 }
+	For mutant 16 activity name at line 3 has been change from ".ShowSettingsActivity" to ".ShowSettingsictAvity"
+Mutant 17: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant17/src//smali/com/bwx/bequick/SettingsApplication.smali; NullValueIntentPutExtra in line { 349 }
+	For mutant 17 extra intent value at line 349 has been set to 'new Parcelable[0]'
+Mutant 18: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant18/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; FindViewByIdReturnsNull in lines { 162, 166 }
+	For mutant 18 the element retrieved at line 162 has been set to null
+Mutant 19: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant19/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullIntent in line { 500 }
+	For mutant 19 intent defined at lines 500 has been defined as null
+Mutant 20: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant20/src//smali/com/bwx/bequick/MainSettingsActivity$1.smali; LengthyGUIListener in line { 40 }
+	For mutant 20 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 21: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant1/src//AndroidManifest.xml; MissingPermissionManifest in line { 44 }
+	For mutant 21 the lines between 45 and 45 have been deleted.
+Mutant 22: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant22/src//AndroidManifest.xml; MissingPermissionManifest in line { 45 }
+	For mutant 22 the lines between 46 and 46 have been deleted.
+Mutant 23: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant23/src//AndroidManifest.xml; MissingPermissionManifest in line { 46 }
+	For mutant 23 the lines between 47 and 47 have been deleted.
+Mutant 24: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant24/src//AndroidManifest.xml; MissingPermissionManifest in line { 47 }
+	For mutant 24 the lines between 48 and 48 have been deleted.
+Mutant 25: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant25/src//AndroidManifest.xml; MissingPermissionManifest in line { 48 }
+	For mutant 25 the lines between 49 and 49 have been deleted.
+Mutant 26: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant26/src//AndroidManifest.xml; MissingPermissionManifest in line { 49 }
+	For mutant 26 the lines between 50 and 50 have been deleted.
+Mutant 27: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant27/src//AndroidManifest.xml; MissingPermissionManifest in line { 50 }
+	For mutant 27 the lines between 51 and 51 have been deleted.
+Mutant 28: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant28/src//AndroidManifest.xml; MissingPermissionManifest in line { 51 }
+	For mutant 28 the lines between 52 and 52 have been deleted.
+Mutant 29: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant29/src//AndroidManifest.xml; MissingPermissionManifest in line { 52 }
+	For mutant 29 the lines between 53 and 53 have been deleted.
+Mutant 30: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant30/src//AndroidManifest.xml; MissingPermissionManifest in line { 53 }
+	For mutant 30 the lines between 54 and 54 have been deleted.
+Mutant 31: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant31/src//AndroidManifest.xml; MissingPermissionManifest in line { 54 }
+	For mutant 31 the lines between 55 and 55 have been deleted.
+Mutant 32: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant32/src//AndroidManifest.xml; MissingPermissionManifest in line { 55 }
+	For mutant 32 the lines between 56 and 56 have been deleted.
+Mutant 33: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant33/src//AndroidManifest.xml; MissingPermissionManifest in line { 56 }
+	For mutant 33 the lines between 57 and 57 have been deleted.
+Mutant 34: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant34/src//AndroidManifest.xml; MissingPermissionManifest in line { 57 }
+	For mutant 34 the lines between 58 and 58 have been deleted.
+Mutant 35: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant35/src//AndroidManifest.xml; MissingPermissionManifest in line { 58 }
+	For mutant 35 the lines between 59 and 59 have been deleted.
+Mutant 36: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant36/src//AndroidManifest.xml; MissingPermissionManifest in line { 59 }
+	For mutant 36 the lines between 60 and 60 have been deleted.
+Mutant 37: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant37/src//AndroidManifest.xml; MissingPermissionManifest in line { 60 }
+	For mutant 37 the lines between 61 and 61 have been deleted.
+Mutant 38: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant38/src//AndroidManifest.xml; MissingPermissionManifest in line { 61 }
+	For mutant 38 the lines between 62 and 62 have been deleted.
+Mutant 39: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant39/src//AndroidManifest.xml; MissingPermissionManifest in line { 62 }
+	For mutant 39 the lines between 63 and 63 have been deleted.
+Mutant 40: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant40/src//AndroidManifest.xml; MissingPermissionManifest in line { 63 }
+	For mutant 40 the lines between 64 and 64 have been deleted.
+Mutant 41: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant41/src//AndroidManifest.xml; MissingPermissionManifest in line { 64 }
+	For mutant 41 the lines between 65 and 65 have been deleted.
+Mutant 42: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant42/src//AndroidManifest.xml; MissingPermissionManifest in line { 65 }
+	For mutant 42 the lines between 66 and 66 have been deleted.
+Mutant 43: ./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant43/src//AndroidManifest.xml; MissingPermissionManifest in line { 72 }
+	For mutant 43 the lines between 73 and 73 have been deleted.
+Mutant 44: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant2/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 237 }
+	For mutant 44, 2 parameter of method getInt have been replaced with null
+Mutant 45: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant45/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 237 }
+	For mutant 45, 3 parameter of method getInt have been replaced with null
+Mutant 46: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant46/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 349 }
+	For mutant 46, 2 parameter of method putExtra have been replaced with null
+Mutant 47: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant47/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 349 }
+	For mutant 47, 3 parameter of method putExtra have been replaced with null
+Mutant 48: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant48/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 245 }
+	For mutant 48, 2 parameter of method createSetting have been replaced with null
+Mutant 49: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant49/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 245 }
+	For mutant 49, 3 parameter of method createSetting have been replaced with null
+Mutant 50: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant50/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 245 }
+	For mutant 50, 4 parameter of method createSetting have been replaced with null
+Mutant 51: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant51/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 379 }
+	For mutant 51, 2 parameter of method getString have been replaced with null
+Mutant 52: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant52/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 379 }
+	For mutant 52, 3 parameter of method getString have been replaced with null
+Mutant 53: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant53/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 463 }
+	For mutant 53, 2 parameter of method get have been replaced with null
+Mutant 54: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant54/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 255 }
+	For mutant 54, 2 parameter of method add have been replaced with null
+Mutant 55: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant55/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 356 }
+	For mutant 55, 2 parameter of method putExtra have been replaced with null
+Mutant 56: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant56/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 356 }
+	For mutant 56, 3 parameter of method putExtra have been replaced with null
+Mutant 57: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant57/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 479 }
+	For mutant 57, 2 parameter of method putInt have been replaced with null
+Mutant 58: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant58/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 479 }
+	For mutant 58, 3 parameter of method putInt have been replaced with null
+Mutant 59: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant59/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 280 }
+	For mutant 59, 2 parameter of method sort have been replaced with null
+Mutant 60: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant60/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 327 }
+	For mutant 60, 2 parameter of method getBoolean have been replaced with null
+Mutant 61: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant61/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 327 }
+	For mutant 61, 3 parameter of method getBoolean have been replaced with null
+Mutant 62: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant62/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 291 }
+	For mutant 62, 2 parameter of method getString have been replaced with null
+Mutant 63: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant63/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 291 }
+	For mutant 63, 3 parameter of method getString have been replaced with null
+Mutant 64: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant64/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 274 }
+	For mutant 64, 2 parameter of method <init> have been replaced with null
+Mutant 65: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant65/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 420 }
+	For mutant 65, 2 parameter of method putString have been replaced with null
+Mutant 66: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant66/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 420 }
+	For mutant 66, 3 parameter of method putString have been replaced with null
+Mutant 67: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant67/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 109 }
+	For mutant 67, 2 parameter of method get have been replaced with null
+Mutant 68: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant68/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 190 }
+	For mutant 68, 2 parameter of method getSharedPreferences have been replaced with null
+Mutant 69: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant69/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 190 }
+	For mutant 69, 3 parameter of method getSharedPreferences have been replaced with null
+Mutant 70: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant70/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 309 }
+	For mutant 70, 2 parameter of method getString have been replaced with null
+Mutant 71: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant71/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 309 }
+	For mutant 71, 3 parameter of method getString have been replaced with null
+Mutant 72: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant72/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 410 }
+	For mutant 72, 2 parameter of method putBoolean have been replaced with null
+Mutant 73: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant73/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 410 }
+	For mutant 73, 3 parameter of method putBoolean have been replaced with null
+Mutant 74: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant74/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 339 }
+	For mutant 74, 2 parameter of method <init> have been replaced with null
+Mutant 75: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant75/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 368 }
+	For mutant 75, 2 parameter of method sendBroadcast have been replaced with null
+Mutant 76: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant76/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 363 }
+	For mutant 76, 2 parameter of method putExtra have been replaced with null
+Mutant 77: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant77/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 363 }
+	For mutant 77, 3 parameter of method putExtra have been replaced with null
+Mutant 78: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant78/src//smali/com/bwx/bequick/SettingsApplication.smali; NullMethodCallArgument in line { 174 }
+	For mutant 78, 2 parameter of method getString have been replaced with null
+Mutant 79: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant79/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 238 }
+	For mutant 79, 2 parameter of method updateState have been replaced with null
+Mutant 80: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant80/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 185 }
+	For mutant 80, 2 parameter of method setMobileDataEnabled have been replaced with null
+Mutant 81: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant81/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 135 }
+	For mutant 81, 2 parameter of method getSystemService have been replaced with null
+Mutant 82: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant82/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 220 }
+	For mutant 82, 2 parameter of method onSelected have been replaced with null
+Mutant 83: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant83/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 64 }
+	For mutant 83, 2 parameter of method getInt have been replaced with null
+Mutant 84: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant84/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 64 }
+	For mutant 84, 3 parameter of method getInt have been replaced with null
+Mutant 85: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant85/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 91 }
+	For mutant 85, 2 parameter of method onSelected have been replaced with null
+Mutant 86: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant86/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 256 }
+	For mutant 86, 2 parameter of method makeText have been replaced with null
+Mutant 87: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant87/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 256 }
+	For mutant 87, 3 parameter of method makeText have been replaced with null
+Mutant 88: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant88/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 353 }
+	For mutant 88, 2 parameter of method setClassName have been replaced with null
+Mutant 89: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant89/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 353 }
+	For mutant 89, 3 parameter of method setClassName have been replaced with null
+Mutant 90: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant90/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 84 }
+	For mutant 90, 2 parameter of method makeText have been replaced with null
+Mutant 91: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant91/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 84 }
+	For mutant 91, 3 parameter of method makeText have been replaced with null
+Mutant 92: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant92/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 33 }
+	For mutant 92, 2 parameter of method <init> have been replaced with null
+Mutant 93: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant93/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 206 }
+	For mutant 93, 2 parameter of method makeText have been replaced with null
+Mutant 94: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant94/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 206 }
+	For mutant 94, 3 parameter of method makeText have been replaced with null
+Mutant 95: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant95/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 38 }
+	For mutant 95, 2 parameter of method <init> have been replaced with null
+Mutant 96: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant96/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 346 }
+	For mutant 96, 2 parameter of method <init> have been replaced with null
+Mutant 97: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant97/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 143 }
+	For mutant 97, 2 parameter of method setWifiEnabled have been replaced with null
+Mutant 98: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant98/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 376 }
+	For mutant 98, 2 parameter of method startActivitiesSafely have been replaced with null
+Mutant 99: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant99/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 372 }
+	For mutant 99, 2 parameter of method <init> have been replaced with null
+Mutant 100: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant100/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 474 }
+	For mutant 100, 2 parameter of method getString have been replaced with null
+Mutant 101: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant101/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 474 }
+	For mutant 101, 3 parameter of method getString have been replaced with null
+Mutant 102: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant102/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 176 }
+	For mutant 102, 2 parameter of method setApnState have been replaced with null
+Mutant 103: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant103/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 176 }
+	For mutant 103, 3 parameter of method setApnState have been replaced with null
+Mutant 104: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant104/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2.smali; NullMethodCallArgument in line { 167 }
+	For mutant 104, 2 parameter of method getApnState have been replaced with null
+Mutant 105: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant105/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 266 }
+	For mutant 105, 2 parameter of method getString have been replaced with null
+Mutant 106: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant106/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 132 }
+	For mutant 106, 2 parameter of method put have been replaced with null
+Mutant 107: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant107/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 132 }
+	For mutant 107, 3 parameter of method put have been replaced with null
+Mutant 108: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant108/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 330 }
+	For mutant 108, 2 parameter of method getString have been replaced with null
+Mutant 109: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant109/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 330 }
+	For mutant 109, 3 parameter of method getString have been replaced with null
+Mutant 110: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant110/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 170 }
+	For mutant 110, 2 parameter of method setAdapter have been replaced with null
+Mutant 111: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant111/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 105 }
+	For mutant 111, 2 parameter of method put have been replaced with null
+Mutant 112: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant112/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 105 }
+	For mutant 112, 3 parameter of method put have been replaced with null
+Mutant 113: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant113/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 162 }
+	For mutant 113, 2 parameter of method findViewById have been replaced with null
+Mutant 114: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant114/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 564 }
+	For mutant 114, 2 parameter of method setTimeout have been replaced with null
+Mutant 115: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant115/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 108 }
+	For mutant 115, 2 parameter of method add have been replaced with null
+Mutant 116: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant116/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 67 }
+	For mutant 116, 2 parameter of method setContentView have been replaced with null
+Mutant 117: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant117/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 193 }
+	For mutant 117, 2 parameter of method getInt have been replaced with null
+Mutant 118: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant118/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 193 }
+	For mutant 118, 3 parameter of method getInt have been replaced with null
+Mutant 119: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant119/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 355 }
+	For mutant 119, 2 parameter of method getString have been replaced with null
+Mutant 120: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant120/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 355 }
+	For mutant 120, 3 parameter of method getString have been replaced with null
+Mutant 121: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant121/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 276 }
+	For mutant 121, 2 parameter of method setDescription have been replaced with null
+Mutant 122: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant122/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 276 }
+	For mutant 122, 3 parameter of method setDescription have been replaced with null
+Mutant 123: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant123/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 542 }
+	For mutant 123, 2 parameter of method getDescriptionByIndex have been replaced with null
+Mutant 124: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant124/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 301 }
+	For mutant 124, 2 parameter of method getString have been replaced with null
+Mutant 125: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant125/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 301 }
+	For mutant 125, 3 parameter of method getString have been replaced with null
+Mutant 126: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant126/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 24 }
+	For mutant 126, 2 parameter of method <init> have been replaced with null
+Mutant 127: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant127/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 101 }
+	For mutant 127, 2 parameter of method getDescriptionByIndex have been replaced with null
+Mutant 128: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant128/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 173 }
+	For mutant 128, 2 parameter of method setOnItemClickListener have been replaced with null
+Mutant 129: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant129/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 135 }
+	For mutant 129, 2 parameter of method add have been replaced with null
+Mutant 130: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant130/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 237 }
+	For mutant 130, 2 parameter of method putInt have been replaced with null
+Mutant 131: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant131/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 237 }
+	For mutant 131, 3 parameter of method putInt have been replaced with null
+Mutant 132: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant132/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 449 }
+	For mutant 132, 2 parameter of method onTimeoutSelected have been replaced with null
+Mutant 133: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant133/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 553 }
+	For mutant 133, 2 parameter of method setDescription have been replaced with null
+Mutant 134: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant134/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 553 }
+	For mutant 134, 3 parameter of method setDescription have been replaced with null
+Mutant 135: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant135/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 128 }
+	For mutant 135, 2 parameter of method getDescriptionByIndex have been replaced with null
+Mutant 136: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant136/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 558 }
+	For mutant 136, 2 parameter of method getTimeoutByIndex have been replaced with null
+Mutant 137: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant137/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 55 }
+	For mutant 137, 2 parameter of method <init> have been replaced with null
+Mutant 138: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant138/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 62 }
+	For mutant 138, 2 parameter of method setCanceledOnTouchOutside have been replaced with null
+Mutant 139: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant139/src//smali/com/bwx/bequick/handlers/ScreenTimeoutSettingHandler.smali; NullMethodCallArgument in line { 59 }
+	For mutant 139, 2 parameter of method requestWindowFeature have been replaced with null
+Mutant 140: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant140/src//smali/com/bwx/bequick/MainSettingsActivity$1.smali; NullMethodCallArgument in line { 50 }
+	For mutant 140, 2 parameter of method dismissDialog have been replaced with null
+Mutant 141: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant141/src//smali/com/bwx/bequick/handlers/ScreenTimeoutValues.smali; NullMethodCallArgument in line { 96 }
+	For mutant 141, 2 parameter of method getString have been replaced with null
+Mutant 142: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant142/src//smali/com/bwx/bequick/handlers/ScreenTimeoutValues.smali; NullMethodCallArgument in line { 124 }
+	For mutant 142, 2 parameter of method getString have been replaced with null
+Mutant 143: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant143/src//smali/com/bwx/bequick/handlers/ScreenTimeoutValues.smali; NullMethodCallArgument in line { 124 }
+	For mutant 143, 3 parameter of method getString have been replaced with null
+Mutant 144: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant144/src//smali/com/bwx/bequick/handlers/ScreenTimeoutValues.smali; NullMethodCallArgument in line { 178 }
+	For mutant 144, 2 parameter of method getString have been replaced with null
+Mutant 145: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant145/src//smali/com/bwx/bequick/handlers/ScreenTimeoutValues.smali; NullMethodCallArgument in line { 178 }
+	For mutant 145, 3 parameter of method getString have been replaced with null
+Mutant 146: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant146/src//smali/com/bwx/bequick/handlers/ScreenTimeoutValues.smali; NullMethodCallArgument in line { 151 }
+	For mutant 146, 2 parameter of method getString have been replaced with null
+Mutant 147: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant147/src//smali/com/bwx/bequick/handlers/ScreenTimeoutValues.smali; NullMethodCallArgument in line { 151 }
+	For mutant 147, 3 parameter of method getString have been replaced with null
+Mutant 148: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant148/src//smali/com/bwx/bequick/handlers/apn/MobileDataSettingHandler$2.smali; NullMethodCallArgument in line { 75 }
+	For mutant 148, 2 parameter of method access$100 have been replaced with null
+Mutant 149: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant149/src//smali/com/bwx/bequick/handlers/apn/MobileDataSettingHandler$2.smali; NullMethodCallArgument in line { 64 }
+	For mutant 149, 2 parameter of method putBoolean have been replaced with null
+Mutant 150: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant150/src//smali/com/bwx/bequick/handlers/apn/MobileDataSettingHandler$2.smali; NullMethodCallArgument in line { 64 }
+	For mutant 150, 3 parameter of method putBoolean have been replaced with null
+Mutant 151: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant151/src//smali/com/bwx/bequick/handlers/UnlockPatternSettingHandler.smali; NullMethodCallArgument in line { 46 }
+	For mutant 151, 2 parameter of method startActivity have been replaced with null
+Mutant 152: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant152/src//smali/com/bwx/bequick/handlers/UnlockPatternSettingHandler.smali; NullMethodCallArgument in line { 20 }
+	For mutant 152, 2 parameter of method <init> have been replaced with null
+Mutant 153: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant153/src//smali/com/bwx/bequick/handlers/UnlockPatternSettingHandler.smali; NullMethodCallArgument in line { 20 }
+	For mutant 153, 3 parameter of method <init> have been replaced with null
+Mutant 154: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant154/src//smali/com/bwx/bequick/handlers/UnlockPatternSettingHandler.smali; NullMethodCallArgument in line { 20 }
+	For mutant 154, 4 parameter of method <init> have been replaced with null
+Mutant 155: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant155/src//smali/com/bwx/bequick/handlers/UnlockPatternSettingHandler.smali; NullMethodCallArgument in line { 116 }
+	For mutant 155, 2 parameter of method onSwitched have been replaced with null
+Mutant 156: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant156/src//smali/com/bwx/bequick/handlers/UnlockPatternSettingHandler.smali; NullMethodCallArgument in line { 41 }
+	For mutant 156, 2 parameter of method setClassName have been replaced with null
+Mutant 157: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant157/src//smali/com/bwx/bequick/handlers/UnlockPatternSettingHandler.smali; NullMethodCallArgument in line { 41 }
+	For mutant 157, 3 parameter of method setClassName have been replaced with null
+Mutant 158: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant158/src//smali/com/bwx/bequick/handlers/UnlockPatternSettingHandler.smali; NullMethodCallArgument in line { 129 }
+	For mutant 158, 2 parameter of method onSelected have been replaced with null
+Mutant 159: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant159/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1004 }
+	For mutant 159, 2 parameter of method append have been replaced with null
+Mutant 160: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant160/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1004 }
+	For mutant 160, 3 parameter of method append have been replaced with null
+Mutant 161: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant161/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1323 }
+	For mutant 161, 2 parameter of method putLong have been replaced with null
+Mutant 162: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant162/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1323 }
+	For mutant 162, 3 parameter of method putLong have been replaced with null
+Mutant 163: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant163/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1323 }
+	For mutant 163, 4 parameter of method putLong have been replaced with null
+Mutant 164: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant164/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 848 }
+	For mutant 164, 2 parameter of method endsWith have been replaced with null
+Mutant 165: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant165/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 742 }
+	For mutant 165, 2 parameter of method startsWith have been replaced with null
+Mutant 166: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant166/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 876 }
+	For mutant 166, 2 parameter of method endsWith have been replaced with null
+Mutant 167: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant167/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1000 }
+	For mutant 167, 2 parameter of method append have been replaced with null
+Mutant 168: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant168/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 975 }
+	For mutant 168, 2 parameter of method update have been replaced with null
+Mutant 169: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant169/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 975 }
+	For mutant 169, 3 parameter of method update have been replaced with null
+Mutant 170: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant170/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 975 }
+	For mutant 170, 4 parameter of method update have been replaced with null
+Mutant 171: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant171/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 975 }
+	For mutant 171, 5 parameter of method update have been replaced with null
+Mutant 172: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant172/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 751 }
+	For mutant 172, 2 parameter of method endsWith have been replaced with null
+Mutant 173: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant173/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1338 }
+	For mutant 173, 2 parameter of method append have been replaced with null
+Mutant 174: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant174/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 760 }
+	For mutant 174, 2 parameter of method endsWith have been replaced with null
+Mutant 175: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant175/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 948 }
+	For mutant 175, 2 parameter of method d have been replaced with null
+Mutant 176: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant176/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1105 }
+	For mutant 176, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 177: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant177/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 866 }
+	For mutant 177, 2 parameter of method substring have been replaced with null
+Mutant 178: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant178/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 866 }
+	For mutant 178, 3 parameter of method substring have been replaced with null
+Mutant 179: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant179/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 122 }
+	For mutant 179, 2 parameter of method append have been replaced with null
+Mutant 180: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant180/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 894 }
+	For mutant 180, 2 parameter of method substring have been replaced with null
+Mutant 181: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant181/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 894 }
+	For mutant 181, 3 parameter of method substring have been replaced with null
+Mutant 182: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant182/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 428 }
+	For mutant 182, 2 parameter of method getString have been replaced with null
+Mutant 183: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant183/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 980 }
+	For mutant 183, 2 parameter of method valueOf have been replaced with null
+Mutant 184: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant184/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1350 }
+	For mutant 184, 2 parameter of method d have been replaced with null
+Mutant 185: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant185/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1178 }
+	For mutant 185, 2 parameter of method <init> have been replaced with null
+Mutant 186: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant186/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1231 }
+	For mutant 186, 2 parameter of method put have been replaced with null
+Mutant 187: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant187/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1231 }
+	For mutant 187, 3 parameter of method put have been replaced with null
+Mutant 188: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant188/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1121 }
+	For mutant 188, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 189: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant189/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 268 }
+	For mutant 189, 2 parameter of method getString have been replaced with null
+Mutant 190: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant190/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 443 }
+	For mutant 190, 2 parameter of method getLong have been replaced with null
+Mutant 191: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant191/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 507 }
+	For mutant 191, 2 parameter of method getLong have been replaced with null
+Mutant 192: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant192/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 507 }
+	For mutant 192, 3 parameter of method getLong have been replaced with null
+Mutant 193: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant193/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 507 }
+	For mutant 193, 4 parameter of method getLong have been replaced with null
+Mutant 194: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant194/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 833 }
+	For mutant 194, 2 parameter of method substring have been replaced with null
+Mutant 195: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant195/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1240 }
+	For mutant 195, 2 parameter of method getAdaptedValue have been replaced with null
+Mutant 196: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant196/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1240 }
+	For mutant 196, 3 parameter of method getAdaptedValue have been replaced with null
+Mutant 197: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant197/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 970 }
+	For mutant 197, 2 parameter of method putNull have been replaced with null
+Mutant 198: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant198/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1225 }
+	For mutant 198, 2 parameter of method getAdaptedValue have been replaced with null
+Mutant 199: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant199/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1225 }
+	For mutant 199, 3 parameter of method getAdaptedValue have been replaced with null
+Mutant 200: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant200/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 195 }
+	For mutant 200, 2 parameter of method addModifier have been replaced with null
+Mutant 201: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant201/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 195 }
+	For mutant 201, 3 parameter of method addModifier have been replaced with null
+Mutant 202: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant202/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1246 }
+	For mutant 202, 2 parameter of method put have been replaced with null
+Mutant 203: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant203/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1246 }
+	For mutant 203, 3 parameter of method put have been replaced with null
+Mutant 204: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant204/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 143 }
+	For mutant 204, 2 parameter of method append have been replaced with null
+Mutant 205: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant205/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 251 }
+	For mutant 205, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 206: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant206/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1049 }
+	For mutant 206, 2 parameter of method getString have been replaced with null
+Mutant 207: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant207/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1049 }
+	For mutant 207, 3 parameter of method getString have been replaced with null
+Mutant 208: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant208/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1140 }
+	For mutant 208, 2 parameter of method getString have been replaced with null
+Mutant 209: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant209/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 554 }
+	For mutant 209, 2 parameter of method append have been replaced with null
+Mutant 210: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant210/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 554 }
+	For mutant 210, 3 parameter of method append have been replaced with null
+Mutant 211: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant211/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1255 }
+	For mutant 211, 2 parameter of method update have been replaced with null
+Mutant 212: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant212/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1255 }
+	For mutant 212, 3 parameter of method update have been replaced with null
+Mutant 213: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant213/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1255 }
+	For mutant 213, 4 parameter of method update have been replaced with null
+Mutant 214: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant214/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1255 }
+	For mutant 214, 5 parameter of method update have been replaced with null
+Mutant 215: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant215/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 661 }
+	For mutant 215, 2 parameter of method getLong have been replaced with null
+Mutant 216: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant216/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 923 }
+	For mutant 216, 2 parameter of method getPreferedApnIdFromPreferences have been replaced with null
+Mutant 217: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant217/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 821 }
+	For mutant 217, 2 parameter of method startsWith have been replaced with null
+Mutant 218: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant218/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1037 }
+	For mutant 218, 2 parameter of method getBoolean have been replaced with null
+Mutant 219: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant219/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1037 }
+	For mutant 219, 3 parameter of method getBoolean have been replaced with null
+Mutant 220: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant220/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1342 }
+	For mutant 220, 2 parameter of method append have been replaced with null
+Mutant 221: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant221/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1342 }
+	For mutant 221, 3 parameter of method append have been replaced with null
+Mutant 222: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant222/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 794 }
+	For mutant 222, 2 parameter of method contains have been replaced with null
+Mutant 223: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant223/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 550 }
+	For mutant 223, 2 parameter of method append have been replaced with null
+Mutant 224: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant224/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1297 }
+	For mutant 224, 2 parameter of method getBoolean have been replaced with null
+Mutant 225: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant225/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1297 }
+	For mutant 225, 3 parameter of method getBoolean have been replaced with null
+Mutant 226: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant226/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 989 }
+	For mutant 226, 2 parameter of method update have been replaced with null
+Mutant 227: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant227/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 989 }
+	For mutant 227, 3 parameter of method update have been replaced with null
+Mutant 228: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant228/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 989 }
+	For mutant 228, 4 parameter of method update have been replaced with null
+Mutant 229: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant229/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 989 }
+	For mutant 229, 5 parameter of method update have been replaced with null
+Mutant 230: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant230/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 139 }
+	For mutant 230, 2 parameter of method append have been replaced with null
+Mutant 231: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant231/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1012 }
+	For mutant 231, 2 parameter of method d have been replaced with null
+Mutant 232: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant232/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1206 }
+	For mutant 232, 2 parameter of method getInt have been replaced with null
+Mutant 233: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant233/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 984 }
+	For mutant 233, 2 parameter of method put have been replaced with null
+Mutant 234: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant234/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 984 }
+	For mutant 234, 3 parameter of method put have been replaced with null
+Mutant 235: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant235/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1219 }
+	For mutant 235, 2 parameter of method getString have been replaced with null
+Mutant 236: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant236/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 118 }
+	For mutant 236, 2 parameter of method append have been replaced with null
+Mutant 237: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant237/src//smali/com/bwx/bequick/handlers/apn/ApnControl.smali; NullMethodCallArgument in line { 1113 }
+	For mutant 237, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 238: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant238/src//smali/com/bwx/bequick/LayoutSettingsActivity.smali; NullMethodCallArgument in line { 36 }
+	For mutant 238, 2 parameter of method setContentView have been replaced with null
+Mutant 239: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant239/src//smali/com/bwx/bequick/LayoutSettingsActivity.smali; NullMethodCallArgument in line { 63 }
+	For mutant 239, 2 parameter of method setListAdapter have been replaced with null
+Mutant 240: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant240/src//smali/com/bwx/bequick/LayoutSettingsActivity.smali; NullMethodCallArgument in line { 56 }
+	For mutant 240, 2 parameter of method <init> have been replaced with null
+Mutant 241: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant241/src//smali/com/bwx/bequick/LayoutSettingsActivity.smali; NullMethodCallArgument in line { 56 }
+	For mutant 241, 3 parameter of method <init> have been replaced with null
+Mutant 242: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant242/src//smali/com/bwx/bequick/LayoutSettingsActivity.smali; NullMethodCallArgument in line { 100 }
+	For mutant 242, 2 parameter of method setVisible have been replaced with null
+Mutant 243: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant243/src//smali/com/bwx/bequick/LayoutSettingsActivity.smali; NullMethodCallArgument in line { 31 }
+	For mutant 243, 2 parameter of method onCreate have been replaced with null
+Mutant 244: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant244/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 93 }
+	For mutant 244, 2 parameter of method <init> have been replaced with null
+Mutant 245: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant245/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 93 }
+	For mutant 245, 3 parameter of method <init> have been replaced with null
+Mutant 246: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant246/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 93 }
+	For mutant 246, 4 parameter of method <init> have been replaced with null
+Mutant 247: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant247/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 93 }
+	For mutant 247, 5 parameter of method <init> have been replaced with null
+Mutant 248: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant248/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 259 }
+	For mutant 248, 2 parameter of method <init> have been replaced with null
+Mutant 249: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant249/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 259 }
+	For mutant 249, 3 parameter of method <init> have been replaced with null
+Mutant 250: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant250/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 259 }
+	For mutant 250, 4 parameter of method <init> have been replaced with null
+Mutant 251: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant251/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 259 }
+	For mutant 251, 5 parameter of method <init> have been replaced with null
+Mutant 252: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant252/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 172 }
+	For mutant 252, 2 parameter of method <init> have been replaced with null
+Mutant 253: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant253/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 172 }
+	For mutant 253, 3 parameter of method <init> have been replaced with null
+Mutant 254: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant254/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 172 }
+	For mutant 254, 4 parameter of method <init> have been replaced with null
+Mutant 255: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant255/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 172 }
+	For mutant 255, 5 parameter of method <init> have been replaced with null
+Mutant 256: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant256/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 612 }
+	For mutant 256, 2 parameter of method <init> have been replaced with null
+Mutant 257: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant257/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 547 }
+	For mutant 257, 2 parameter of method equals have been replaced with null
+Mutant 258: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant258/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 677 }
+	For mutant 258, 2 parameter of method <init> have been replaced with null
+Mutant 259: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant259/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 47 }
+	For mutant 259, 2 parameter of method append have been replaced with null
+Mutant 260: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant260/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 426 }
+	For mutant 260, 2 parameter of method equals have been replaced with null
+Mutant 261: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant261/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 624 }
+	For mutant 261, 2 parameter of method <init> have been replaced with null
+Mutant 262: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant262/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 624 }
+	For mutant 262, 3 parameter of method <init> have been replaced with null
+Mutant 263: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant263/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 624 }
+	For mutant 263, 4 parameter of method <init> have been replaced with null
+Mutant 264: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant264/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 638 }
+	For mutant 264, 2 parameter of method <init> have been replaced with null
+Mutant 265: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant265/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 378 }
+	For mutant 265, 2 parameter of method <init> have been replaced with null
+Mutant 266: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant266/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 378 }
+	For mutant 266, 3 parameter of method <init> have been replaced with null
+Mutant 267: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant267/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 378 }
+	For mutant 267, 4 parameter of method <init> have been replaced with null
+Mutant 268: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant268/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 378 }
+	For mutant 268, 5 parameter of method <init> have been replaced with null
+Mutant 269: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant269/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 572 }
+	For mutant 269, 2 parameter of method <init> have been replaced with null
+Mutant 270: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant270/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 523 }
+	For mutant 270, 2 parameter of method <init> have been replaced with null
+Mutant 271: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant271/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 221 }
+	For mutant 271, 2 parameter of method <init> have been replaced with null
+Mutant 272: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant272/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 221 }
+	For mutant 272, 3 parameter of method <init> have been replaced with null
+Mutant 273: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant273/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 221 }
+	For mutant 273, 4 parameter of method <init> have been replaced with null
+Mutant 274: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant274/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 221 }
+	For mutant 274, 5 parameter of method <init> have been replaced with null
+Mutant 275: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant275/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 310 }
+	For mutant 275, 2 parameter of method <init> have been replaced with null
+Mutant 276: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant276/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 310 }
+	For mutant 276, 3 parameter of method <init> have been replaced with null
+Mutant 277: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant277/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 310 }
+	For mutant 277, 4 parameter of method <init> have been replaced with null
+Mutant 278: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant278/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 310 }
+	For mutant 278, 5 parameter of method <init> have been replaced with null
+Mutant 279: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant279/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 661 }
+	For mutant 279, 2 parameter of method <init> have been replaced with null
+Mutant 280: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant280/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 276 }
+	For mutant 280, 2 parameter of method <init> have been replaced with null
+Mutant 281: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant281/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 276 }
+	For mutant 281, 3 parameter of method <init> have been replaced with null
+Mutant 282: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant282/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 276 }
+	For mutant 282, 4 parameter of method <init> have been replaced with null
+Mutant 283: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant283/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 276 }
+	For mutant 283, 5 parameter of method <init> have been replaced with null
+Mutant 284: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant284/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 515 }
+	For mutant 284, 2 parameter of method <init> have been replaced with null
+Mutant 285: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant285/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 604 }
+	For mutant 285, 2 parameter of method <init> have been replaced with null
+Mutant 286: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant286/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 114 }
+	For mutant 286, 2 parameter of method <init> have been replaced with null
+Mutant 287: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant287/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 114 }
+	For mutant 287, 3 parameter of method <init> have been replaced with null
+Mutant 288: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant288/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 114 }
+	For mutant 288, 4 parameter of method <init> have been replaced with null
+Mutant 289: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant289/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 114 }
+	For mutant 289, 5 parameter of method <init> have been replaced with null
+Mutant 290: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant290/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 395 }
+	For mutant 290, 2 parameter of method <init> have been replaced with null
+Mutant 291: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant291/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 395 }
+	For mutant 291, 3 parameter of method <init> have been replaced with null
+Mutant 292: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant292/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 653 }
+	For mutant 292, 2 parameter of method <init> have been replaced with null
+Mutant 293: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant293/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 59 }
+	For mutant 293, 2 parameter of method <init> have been replaced with null
+Mutant 294: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant294/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 448 }
+	For mutant 294, 2 parameter of method equals have been replaced with null
+Mutant 295: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant295/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 531 }
+	For mutant 295, 2 parameter of method <init> have been replaced with null
+Mutant 296: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant296/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 580 }
+	For mutant 296, 2 parameter of method <init> have been replaced with null
+Mutant 297: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant297/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 596 }
+	For mutant 297, 2 parameter of method <init> have been replaced with null
+Mutant 298: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant298/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 200 }
+	For mutant 298, 2 parameter of method <init> have been replaced with null
+Mutant 299: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant299/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 200 }
+	For mutant 299, 3 parameter of method <init> have been replaced with null
+Mutant 300: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant300/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 200 }
+	For mutant 300, 4 parameter of method <init> have been replaced with null
+Mutant 301: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant301/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 200 }
+	For mutant 301, 5 parameter of method <init> have been replaced with null
+Mutant 302: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant302/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 236 }
+	For mutant 302, 2 parameter of method <init> have been replaced with null
+Mutant 303: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant303/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 236 }
+	For mutant 303, 3 parameter of method <init> have been replaced with null
+Mutant 304: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant304/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 236 }
+	For mutant 304, 4 parameter of method <init> have been replaced with null
+Mutant 305: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant305/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 236 }
+	For mutant 305, 5 parameter of method <init> have been replaced with null
+Mutant 306: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant306/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 556 }
+	For mutant 306, 2 parameter of method <init> have been replaced with null
+Mutant 307: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant307/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 51 }
+	For mutant 307, 2 parameter of method append have been replaced with null
+Mutant 308: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant308/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 713 }
+	For mutant 308, 2 parameter of method getSystemService have been replaced with null
+Mutant 309: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant309/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 645 }
+	For mutant 309, 2 parameter of method <init> have been replaced with null
+Mutant 310: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant310/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 437 }
+	For mutant 310, 2 parameter of method equals have been replaced with null
+Mutant 311: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant311/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 564 }
+	For mutant 311, 2 parameter of method <init> have been replaced with null
+Mutant 312: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant312/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 293 }
+	For mutant 312, 2 parameter of method <init> have been replaced with null
+Mutant 313: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant313/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 293 }
+	For mutant 313, 3 parameter of method <init> have been replaced with null
+Mutant 314: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant314/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 293 }
+	For mutant 314, 4 parameter of method <init> have been replaced with null
+Mutant 315: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant315/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 293 }
+	For mutant 315, 5 parameter of method <init> have been replaced with null
+Mutant 316: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant316/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 464 }
+	For mutant 316, 2 parameter of method <init> have been replaced with null
+Mutant 317: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant317/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 464 }
+	For mutant 317, 3 parameter of method <init> have been replaced with null
+Mutant 318: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant318/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 464 }
+	For mutant 318, 4 parameter of method <init> have been replaced with null
+Mutant 319: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant319/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 464 }
+	For mutant 319, 5 parameter of method <init> have been replaced with null
+Mutant 320: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant320/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 255 }
+	For mutant 320, 2 parameter of method getString have been replaced with null
+Mutant 321: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant321/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 408 }
+	For mutant 321, 2 parameter of method <init> have been replaced with null
+Mutant 322: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant322/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 408 }
+	For mutant 322, 3 parameter of method <init> have been replaced with null
+Mutant 323: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant323/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 588 }
+	For mutant 323, 2 parameter of method <init> have been replaced with null
+Mutant 324: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant324/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 669 }
+	For mutant 324, 2 parameter of method <init> have been replaced with null
+Mutant 325: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant325/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 71 }
+	For mutant 325, 2 parameter of method <init> have been replaced with null
+Mutant 326: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant326/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 71 }
+	For mutant 326, 3 parameter of method <init> have been replaced with null
+Mutant 327: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant327/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 71 }
+	For mutant 327, 4 parameter of method <init> have been replaced with null
+Mutant 328: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant328/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 71 }
+	For mutant 328, 5 parameter of method <init> have been replaced with null
+Mutant 329: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant329/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 364 }
+	For mutant 329, 2 parameter of method <init> have been replaced with null
+Mutant 330: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant330/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 364 }
+	For mutant 330, 3 parameter of method <init> have been replaced with null
+Mutant 331: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant331/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 364 }
+	For mutant 331, 4 parameter of method <init> have been replaced with null
+Mutant 332: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant332/src//smali/com/bwx/bequick/fwk/SettingsFactory.smali; NullMethodCallArgument in line { 364 }
+	For mutant 332, 5 parameter of method <init> have been replaced with null
+Mutant 333: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant333/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 156 }
+	For mutant 333, 2 parameter of method append have been replaced with null
+Mutant 334: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant334/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 115 }
+	For mutant 334, 2 parameter of method getDeclaredMethod have been replaced with null
+Mutant 335: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant335/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 115 }
+	For mutant 335, 3 parameter of method getDeclaredMethod have been replaced with null
+Mutant 336: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant336/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 69 }
+	For mutant 336, 2 parameter of method getNetworkInfo have been replaced with null
+Mutant 337: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant337/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 150 }
+	For mutant 337, 2 parameter of method append have been replaced with null
+Mutant 338: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant338/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 46 }
+	For mutant 338, 2 parameter of method getSystemService have been replaced with null
+Mutant 339: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant339/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 168 }
+	For mutant 339, 2 parameter of method getMethod have been replaced with null
+Mutant 340: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant340/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 168 }
+	For mutant 340, 3 parameter of method getMethod have been replaced with null
+Mutant 341: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant341/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 35 }
+	For mutant 341, 2 parameter of method getSystemService have been replaced with null
+Mutant 342: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant342/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 177 }
+	For mutant 342, 2 parameter of method invoke have been replaced with null
+Mutant 343: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant343/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 177 }
+	For mutant 343, 3 parameter of method invoke have been replaced with null
+Mutant 344: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant344/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 207 }
+	For mutant 344, 2 parameter of method e have been replaced with null
+Mutant 345: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant345/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 207 }
+	For mutant 345, 3 parameter of method e have been replaced with null
+Mutant 346: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant346/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 122 }
+	For mutant 346, 2 parameter of method setAccessible have been replaced with null
+Mutant 347: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant347/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 85 }
+	For mutant 347, 2 parameter of method getNetworkInfo have been replaced with null
+Mutant 348: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant348/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 131 }
+	For mutant 348, 2 parameter of method invoke have been replaced with null
+Mutant 349: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant349/src//smali/com/bwx/bequick/handlers/MobileDataSettingHandler2$TelephonyManagerExt.smali; NullMethodCallArgument in line { 131 }
+	For mutant 349, 3 parameter of method invoke have been replaced with null
+Mutant 350: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant350/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 129 }
+	For mutant 350, 2 parameter of method insert have been replaced with null
+Mutant 351: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant351/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 129 }
+	For mutant 351, 3 parameter of method insert have been replaced with null
+Mutant 352: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant352/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 233 }
+	For mutant 352, 2 parameter of method startSync have been replaced with null
+Mutant 353: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant353/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 211 }
+	For mutant 353, 2 parameter of method isEnabled have been replaced with null
+Mutant 354: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant354/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 211 }
+	For mutant 354, 3 parameter of method isEnabled have been replaced with null
+Mutant 355: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant355/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 367 }
+	For mutant 355, 2 parameter of method append have been replaced with null
+Mutant 356: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant356/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 397 }
+	For mutant 356, 2 parameter of method startSync have been replaced with null
+Mutant 357: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant357/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 397 }
+	For mutant 357, 3 parameter of method startSync have been replaced with null
+Mutant 358: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant358/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 33 }
+	For mutant 358, 2 parameter of method <init> have been replaced with null
+Mutant 359: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant359/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 33 }
+	For mutant 359, 3 parameter of method <init> have been replaced with null
+Mutant 360: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant360/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 33 }
+	For mutant 360, 4 parameter of method <init> have been replaced with null
+Mutant 361: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant361/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 33 }
+	For mutant 361, 5 parameter of method <init> have been replaced with null
+Mutant 362: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant362/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 124 }
+	For mutant 362, 2 parameter of method put have been replaced with null
+Mutant 363: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant363/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 124 }
+	For mutant 363, 3 parameter of method put have been replaced with null
+Mutant 364: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant364/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 73 }
+	For mutant 364, 2 parameter of method containsKey have been replaced with null
+Mutant 365: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant365/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 363 }
+	For mutant 365, 2 parameter of method append have been replaced with null
+Mutant 366: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant366/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 115 }
+	For mutant 366, 2 parameter of method put have been replaced with null
+Mutant 367: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant367/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 115 }
+	For mutant 367, 3 parameter of method put have been replaced with null
+Mutant 368: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant368/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 282 }
+	For mutant 368, 2 parameter of method cancelSync have been replaced with null
+Mutant 369: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant369/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 88 }
+	For mutant 369, 2 parameter of method getAsBoolean have been replaced with null
+Mutant 370: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant370/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 392 }
+	For mutant 370, 2 parameter of method putBoolean have been replaced with null
+Mutant 371: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant371/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 392 }
+	For mutant 371, 3 parameter of method putBoolean have been replaced with null
+Mutant 372: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant372/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 201 }
+	For mutant 372, 2 parameter of method get have been replaced with null
+Mutant 373: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant373/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 270 }
+	For mutant 373, 2 parameter of method append have been replaced with null
+Mutant 374: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant374/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 194 }
+	For mutant 374, 2 parameter of method startsWith have been replaced with null
+Mutant 375: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant375/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 49 }
+	For mutant 375, 2 parameter of method getValues have been replaced with null
+Mutant 376: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant376/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 326 }
+	For mutant 376, 2 parameter of method putBoolean have been replaced with null
+Mutant 377: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant377/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 326 }
+	For mutant 377, 3 parameter of method putBoolean have been replaced with null
+Mutant 378: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant378/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 326 }
+	For mutant 378, 4 parameter of method putBoolean have been replaced with null
+Mutant 379: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant379/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 55 }
+	For mutant 379, 2 parameter of method isEnabled have been replaced with null
+Mutant 380: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant380/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 55 }
+	For mutant 380, 3 parameter of method isEnabled have been replaced with null
+Mutant 381: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant381/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 239 }
+	For mutant 381, 2 parameter of method cancelSync have been replaced with null
+Mutant 382: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant382/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 224 }
+	For mutant 382, 2 parameter of method substring have been replaced with null
+Mutant 383: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant383/src//smali/com/bwx/bequick/handlers/autosync/SyncControl15.smali; NullMethodCallArgument in line { 266 }
+	For mutant 383, 2 parameter of method append have been replaced with null
+Mutant 384: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant384/src//smali/com/bwx/bequick/handlers/WifiHotspotSettingHandler$1.smali; NullMethodCallArgument in line { 52 }
+	For mutant 384, 2 parameter of method equals have been replaced with null
+Mutant 385: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant385/src//smali/com/bwx/bequick/handlers/WifiHotspotSettingHandler$1.smali; NullMethodCallArgument in line { 71 }
+	For mutant 385, 2 parameter of method access$000 have been replaced with null
+Mutant 386: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant386/src//smali/com/bwx/bequick/handlers/WifiHotspotSettingHandler$1.smali; NullMethodCallArgument in line { 63 }
+	For mutant 386, 2 parameter of method getIntExtra have been replaced with null
+Mutant 387: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant387/src//smali/com/bwx/bequick/handlers/WifiHotspotSettingHandler$1.smali; NullMethodCallArgument in line { 63 }
+	For mutant 387, 3 parameter of method getIntExtra have been replaced with null
+Mutant 388: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant388/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 591 }
+	For mutant 388, 2 parameter of method getSharedPreferences have been replaced with null
+Mutant 389: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant389/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 591 }
+	For mutant 389, 3 parameter of method getSharedPreferences have been replaced with null
+Mutant 390: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant390/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 407 }
+	For mutant 390, 2 parameter of method putInt have been replaced with null
+Mutant 391: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant391/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 407 }
+	For mutant 391, 3 parameter of method putInt have been replaced with null
+Mutant 392: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant392/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 617 }
+	For mutant 392, 2 parameter of method putInt have been replaced with null
+Mutant 393: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant393/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 617 }
+	For mutant 393, 3 parameter of method putInt have been replaced with null
+Mutant 394: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant394/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 376 }
+	For mutant 394, 2 parameter of method sendBroadcast have been replaced with null
+Mutant 395: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant395/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 811 }
+	For mutant 395, 2 parameter of method getSystemService have been replaced with null
+Mutant 396: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant396/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 724 }
+	For mutant 396, 2 parameter of method vibrate have been replaced with null
+Mutant 397: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant397/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 724 }
+	For mutant 397, 3 parameter of method vibrate have been replaced with null
+Mutant 398: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant398/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 761 }
+	For mutant 398, 2 parameter of method getBoolean have been replaced with null
+Mutant 399: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant399/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 712 }
+	For mutant 399, 2 parameter of method getSystemService have been replaced with null
+Mutant 400: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant400/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 845 }
+	For mutant 400, 2 parameter of method isOn have been replaced with null
+Mutant 401: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant401/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 393 }
+	For mutant 401, 2 parameter of method getSharedPreferences have been replaced with null
+Mutant 402: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant402/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 393 }
+	For mutant 402, 3 parameter of method getSharedPreferences have been replaced with null
+Mutant 403: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant403/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 784 }
+	For mutant 403, 2 parameter of method isOn have been replaced with null
+Mutant 404: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant404/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 574 }
+	For mutant 404, 2 parameter of method getBroadcast have been replaced with null
+Mutant 405: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant405/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 574 }
+	For mutant 405, 3 parameter of method getBroadcast have been replaced with null
+Mutant 406: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant406/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 574 }
+	For mutant 406, 4 parameter of method getBroadcast have been replaced with null
+Mutant 407: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant407/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 280 }
+	For mutant 407, 2 parameter of method isSupported have been replaced with null
+Mutant 408: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant408/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 72 }
+	For mutant 408, 2 parameter of method e have been replaced with null
+Mutant 409: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant409/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 72 }
+	For mutant 409, 3 parameter of method e have been replaced with null
+Mutant 410: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant410/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 228 }
+	For mutant 410, 2 parameter of method equals have been replaced with null
+Mutant 411: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant411/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 748 }
+	For mutant 411, 2 parameter of method equals have been replaced with null
+Mutant 412: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant412/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 698 }
+	For mutant 412, 2 parameter of method set have been replaced with null
+Mutant 413: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant413/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 698 }
+	For mutant 413, 3 parameter of method set have been replaced with null
+Mutant 414: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant414/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 698 }
+	For mutant 414, 4 parameter of method set have been replaced with null
+Mutant 415: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant415/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 698 }
+	For mutant 415, 5 parameter of method set have been replaced with null
+Mutant 416: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant416/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 189 }
+	For mutant 416, 2 parameter of method equals have been replaced with null
+Mutant 417: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant417/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 127 }
+	For mutant 417, 2 parameter of method getSharedPreferences have been replaced with null
+Mutant 418: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant418/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 127 }
+	For mutant 418, 3 parameter of method getSharedPreferences have been replaced with null
+Mutant 419: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant419/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 365 }
+	For mutant 419, 2 parameter of method setOn have been replaced with null
+Mutant 420: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant420/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 365 }
+	For mutant 420, 3 parameter of method setOn have been replaced with null
+Mutant 421: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant421/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 454 }
+	For mutant 421, 2 parameter of method getInt have been replaced with null
+Mutant 422: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant422/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 454 }
+	For mutant 422, 3 parameter of method getInt have been replaced with null
+Mutant 423: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant423/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 865 }
+	For mutant 423, 2 parameter of method enableFlashlight have been replaced with null
+Mutant 424: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant424/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 819 }
+	For mutant 424, 2 parameter of method cancel have been replaced with null
+Mutant 425: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant425/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 830 }
+	For mutant 425, 2 parameter of method equals have been replaced with null
+Mutant 426: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant426/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 218 }
+	For mutant 426, 2 parameter of method equals have been replaced with null
+Mutant 427: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant427/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 372 }
+	For mutant 427, 2 parameter of method <init> have been replaced with null
+Mutant 428: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant428/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 680 }
+	For mutant 428, 2 parameter of method getSystemService have been replaced with null
+Mutant 429: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant429/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 767 }
+	For mutant 429, 2 parameter of method enableFlashlight have been replaced with null
+Mutant 430: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant430/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 143 }
+	For mutant 430, 2 parameter of method putInt have been replaced with null
+Mutant 431: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant431/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 143 }
+	For mutant 431, 3 parameter of method putInt have been replaced with null
+Mutant 432: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant432/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 167 }
+	For mutant 432, 2 parameter of method equals have been replaced with null
+Mutant 433: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant433/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 649 }
+	For mutant 433, 2 parameter of method isOn have been replaced with null
+Mutant 434: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant434/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 178 }
+	For mutant 434, 2 parameter of method equals have been replaced with null
+Mutant 435: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant435/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 300 }
+	For mutant 435, 2 parameter of method getSharedPreferences have been replaced with null
+Mutant 436: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant436/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 300 }
+	For mutant 436, 3 parameter of method getSharedPreferences have been replaced with null
+Mutant 437: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant437/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 312 }
+	For mutant 437, 2 parameter of method putInt have been replaced with null
+Mutant 438: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant438/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 312 }
+	For mutant 438, 3 parameter of method putInt have been replaced with null
+Mutant 439: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant439/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 601 }
+	For mutant 439, 2 parameter of method getInt have been replaced with null
+Mutant 440: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant440/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 601 }
+	For mutant 440, 3 parameter of method getInt have been replaced with null
+Mutant 441: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant441/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 566 }
+	For mutant 441, 2 parameter of method <init> have been replaced with null
+Mutant 442: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant442/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 444 }
+	For mutant 442, 2 parameter of method getSharedPreferences have been replaced with null
+Mutant 443: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant443/src//smali/com/bwx/bequick/flashlight/LedFlashlightReceiver.smali; NullMethodCallArgument in line { 444 }
+	For mutant 443, 3 parameter of method getSharedPreferences have been replaced with null
+Mutant 444: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant444/src//smali/com/bwx/bequick/fwk/SettingHandler.smali; NullMethodCallArgument in line { 25 }
+	For mutant 444, 2 parameter of method assignHandler have been replaced with null
+Mutant 445: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant445/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 155 }
+	For mutant 445, 2 parameter of method putInt have been replaced with null
+Mutant 446: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant446/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 155 }
+	For mutant 446, 3 parameter of method putInt have been replaced with null
+Mutant 447: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant447/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 21 }
+	For mutant 447, 2 parameter of method <init> have been replaced with null
+Mutant 448: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant448/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 59 }
+	For mutant 448, 2 parameter of method getInt have been replaced with null
+Mutant 449: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant449/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 70 }
+	For mutant 449, 2 parameter of method updateSetting have been replaced with null
+Mutant 450: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant450/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 70 }
+	For mutant 450, 3 parameter of method updateSetting have been replaced with null
+Mutant 451: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant451/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 70 }
+	For mutant 451, 4 parameter of method updateSetting have been replaced with null
+Mutant 452: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant452/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 127 }
+	For mutant 452, 2 parameter of method e have been replaced with null
+Mutant 453: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant453/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 127 }
+	For mutant 453, 3 parameter of method e have been replaced with null
+Mutant 454: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant454/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 108 }
+	For mutant 454, 2 parameter of method startActivity have been replaced with null
+Mutant 455: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant455/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 208 }
+	For mutant 455, 2 parameter of method getString have been replaced with null
+Mutant 456: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant456/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 102 }
+	For mutant 456, 2 parameter of method <init> have been replaced with null
+Mutant 457: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant457/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 158 }
+	For mutant 457, 2 parameter of method updateSetting have been replaced with null
+Mutant 458: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant458/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 158 }
+	For mutant 458, 3 parameter of method updateSetting have been replaced with null
+Mutant 459: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant459/src//smali/com/bwx/bequick/handlers/SystemPropertySettingHandler.smali; NullMethodCallArgument in line { 158 }
+	For mutant 459, 4 parameter of method updateSetting have been replaced with null
+Mutant 460: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant460/src//smali/com/bwx/bequick/fwk/RangeSetting.smali; NullMethodCallArgument in line { 31 }
+	For mutant 460, 2 parameter of method <init> have been replaced with null
+Mutant 461: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant461/src//smali/com/bwx/bequick/fwk/RangeSetting.smali; NullMethodCallArgument in line { 31 }
+	For mutant 461, 3 parameter of method <init> have been replaced with null
+Mutant 462: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant462/src//smali/com/bwx/bequick/fwk/RangeSetting.smali; NullMethodCallArgument in line { 31 }
+	For mutant 462, 4 parameter of method <init> have been replaced with null
+Mutant 463: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant463/src//smali/com/bwx/bequick/fwk/RangeSetting.smali; NullMethodCallArgument in line { 31 }
+	For mutant 463, 5 parameter of method <init> have been replaced with null
+Mutant 464: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant464/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 57 }
+	For mutant 464, 2 parameter of method <init> have been replaced with null
+Mutant 465: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant465/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 431 }
+	For mutant 465, 2 parameter of method setNegativeButton have been replaced with null
+Mutant 466: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant466/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 431 }
+	For mutant 466, 3 parameter of method setNegativeButton have been replaced with null
+Mutant 467: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant467/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 280 }
+	For mutant 467, 2 parameter of method sendBroadcast have been replaced with null
+Mutant 468: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant468/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 31 }
+	For mutant 468, 2 parameter of method findPreference have been replaced with null
+Mutant 469: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant469/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 41 }
+	For mutant 469, 2 parameter of method setValue have been replaced with null
+Mutant 470: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant470/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 18 }
+	For mutant 470, 2 parameter of method <init> have been replaced with null
+Mutant 471: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant471/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 336 }
+	For mutant 471, 2 parameter of method findPreference have been replaced with null
+Mutant 472: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant472/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 237 }
+	For mutant 472, 2 parameter of method getString have been replaced with null
+Mutant 473: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant473/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 237 }
+	For mutant 473, 3 parameter of method getString have been replaced with null
+Mutant 474: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant474/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 500 }
+	For mutant 474, 2 parameter of method <init> have been replaced with null
+Mutant 475: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant475/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 500 }
+	For mutant 475, 3 parameter of method <init> have been replaced with null
+Mutant 476: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant476/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 363 }
+	For mutant 476, 2 parameter of method setIcon have been replaced with null
+Mutant 477: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant477/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 277 }
+	For mutant 477, 2 parameter of method putExtra have been replaced with null
+Mutant 478: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant478/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 277 }
+	For mutant 478, 3 parameter of method putExtra have been replaced with null
+Mutant 479: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant479/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 251 }
+	For mutant 479, 2 parameter of method getBoolean have been replaced with null
+Mutant 480: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant480/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 251 }
+	For mutant 480, 3 parameter of method getBoolean have been replaced with null
+Mutant 481: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant481/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 483 }
+	For mutant 481, 2 parameter of method equals have been replaced with null
+Mutant 482: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant482/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 223 }
+	For mutant 482, 2 parameter of method getString have been replaced with null
+Mutant 483: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant483/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 223 }
+	For mutant 483, 3 parameter of method getString have been replaced with null
+Mutant 484: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant484/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 313 }
+	For mutant 484, 2 parameter of method onCreate have been replaced with null
+Mutant 485: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant485/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 122 }
+	For mutant 485, 2 parameter of method getPackageInfo have been replaced with null
+Mutant 486: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant486/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 122 }
+	For mutant 486, 3 parameter of method getPackageInfo have been replaced with null
+Mutant 487: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant487/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 61 }
+	For mutant 487, 2 parameter of method setIcon have been replaced with null
+Mutant 488: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant488/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 521 }
+	For mutant 488, 2 parameter of method equals have been replaced with null
+Mutant 489: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant489/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 369 }
+	For mutant 489, 2 parameter of method setTitle have been replaced with null
+Mutant 490: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant490/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 419 }
+	For mutant 490, 2 parameter of method setText have been replaced with null
+Mutant 491: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant491/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 504 }
+	For mutant 491, 2 parameter of method startActivity have been replaced with null
+Mutant 492: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant492/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 179 }
+	For mutant 492, 2 parameter of method startActivity have been replaced with null
+Mutant 493: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant493/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 86 }
+	For mutant 493, 2 parameter of method setNegativeButton have been replaced with null
+Mutant 494: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant494/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 86 }
+	For mutant 494, 3 parameter of method setNegativeButton have been replaced with null
+Mutant 495: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant495/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 469 }
+	For mutant 495, 2 parameter of method showDialog have been replaced with null
+Mutant 496: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant496/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 318 }
+	For mutant 496, 2 parameter of method findPreference have been replaced with null
+Mutant 497: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant497/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 261 }
+	For mutant 497, 2 parameter of method <init> have been replaced with null
+Mutant 498: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant498/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 267 }
+	For mutant 498, 2 parameter of method putExtra have been replaced with null
+Mutant 499: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant499/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 267 }
+	For mutant 499, 3 parameter of method putExtra have been replaced with null
+Mutant 500: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant500/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 340 }
+	For mutant 500, 2 parameter of method setOnPreferenceClickListener have been replaced with null
+Mutant 501: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant501/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 429 }
+	For mutant 501, 2 parameter of method <init> have been replaced with null
+Mutant 502: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant502/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 422 }
+	For mutant 502, 2 parameter of method setView have been replaced with null
+Mutant 503: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant503/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 322 }
+	For mutant 503, 2 parameter of method setOnPreferenceClickListener have been replaced with null
+Mutant 504: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant504/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 272 }
+	For mutant 504, 2 parameter of method putExtra have been replaced with null
+Mutant 505: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant505/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 272 }
+	For mutant 505, 3 parameter of method putExtra have been replaced with null
+Mutant 506: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant506/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 81 }
+	For mutant 506, 2 parameter of method setPositiveButton have been replaced with null
+Mutant 507: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant507/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 81 }
+	For mutant 507, 3 parameter of method setPositiveButton have been replaced with null
+Mutant 508: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant508/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 327 }
+	For mutant 508, 2 parameter of method findPreference have been replaced with null
+Mutant 509: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant509/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 204 }
+	For mutant 509, 2 parameter of method <init> have been replaced with null
+Mutant 510: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant510/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 204 }
+	For mutant 510, 3 parameter of method <init> have been replaced with null
+Mutant 511: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant511/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 389 }
+	For mutant 511, 2 parameter of method findViewById have been replaced with null
+Mutant 512: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant512/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 65 }
+	For mutant 512, 2 parameter of method setTitle have been replaced with null
+Mutant 513: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant513/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 175 }
+	For mutant 513, 2 parameter of method <init> have been replaced with null
+Mutant 514: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant514/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 175 }
+	For mutant 514, 3 parameter of method <init> have been replaced with null
+Mutant 515: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant515/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 359 }
+	For mutant 515, 2 parameter of method <init> have been replaced with null
+Mutant 516: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant516/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 381 }
+	For mutant 516, 2 parameter of method inflate have been replaced with null
+Mutant 517: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant517/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 381 }
+	For mutant 517, 3 parameter of method inflate have been replaced with null
+Mutant 518: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant518/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 100 }
+	For mutant 518, 2 parameter of method setNeutralButton have been replaced with null
+Mutant 519: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant519/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 100 }
+	For mutant 519, 3 parameter of method setNeutralButton have been replaced with null
+Mutant 520: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant520/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 331 }
+	For mutant 520, 2 parameter of method setOnPreferenceClickListener have been replaced with null
+Mutant 521: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant521/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 462 }
+	For mutant 521, 2 parameter of method equals have been replaced with null
+Mutant 522: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant522/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 70 }
+	For mutant 522, 2 parameter of method setMessage have been replaced with null
+Mutant 523: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant523/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 411 }
+	For mutant 523, 2 parameter of method getString have been replaced with null
+Mutant 524: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant524/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 411 }
+	For mutant 524, 3 parameter of method getString have been replaced with null
+Mutant 525: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant525/src//smali/com/bwx/bequick/preferences/CommonPrefs.smali; NullMethodCallArgument in line { 208 }
+	For mutant 525, 2 parameter of method startActivity have been replaced with null
+Mutant 526: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant526/src//smali/com/bwx/bequick/flashlight/DelaySwitchDetector.smali; NullMethodCallArgument in line { 22 }
+	For mutant 526, 2 parameter of method <init> have been replaced with null
+Mutant 527: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant527/src//smali/com/bwx/bequick/flashlight/DelaySwitchDetector.smali; NullMethodCallArgument in line { 22 }
+	For mutant 527, 3 parameter of method <init> have been replaced with null
+Mutant 528: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant528/src//smali/com/bwx/bequick/flashlight/DelaySwitchDetector.smali; NullMethodCallArgument in line { 82 }
+	For mutant 528, 2 parameter of method switchLight have been replaced with null
+Mutant 529: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant529/src//smali/com/bwx/bequick/handlers/apn/MobileDataSettingHandler$3.smali; NullMethodCallArgument in line { 61 }
+	For mutant 529, 2 parameter of method putBoolean have been replaced with null
+Mutant 530: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant530/src//smali/com/bwx/bequick/handlers/apn/MobileDataSettingHandler$3.smali; NullMethodCallArgument in line { 61 }
+	For mutant 530, 3 parameter of method putBoolean have been replaced with null
+Mutant 531: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant531/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 265 }
+	For mutant 531, 2 parameter of method <init> have been replaced with null
+Mutant 532: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant532/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 94 }
+	For mutant 532, 2 parameter of method getIntExtra have been replaced with null
+Mutant 533: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant533/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 94 }
+	For mutant 533, 3 parameter of method getIntExtra have been replaced with null
+Mutant 534: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant534/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 203 }
+	For mutant 534, 2 parameter of method setTypeface have been replaced with null
+Mutant 535: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant535/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 219 }
+	For mutant 535, 2 parameter of method access$302 have been replaced with null
+Mutant 536: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant536/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 258 }
+	For mutant 536, 2 parameter of method copy have been replaced with null
+Mutant 537: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant537/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 258 }
+	For mutant 537, 3 parameter of method copy have been replaced with null
+Mutant 538: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant538/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 186 }
+	For mutant 538, 2 parameter of method access$202 have been replaced with null
+Mutant 539: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant539/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 294 }
+	For mutant 539, 2 parameter of method findViewById have been replaced with null
+Mutant 540: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant540/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 253 }
+	For mutant 540, 2 parameter of method access$402 have been replaced with null
+Mutant 541: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant541/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 196 }
+	For mutant 541, 2 parameter of method setFlags have been replaced with null
+Mutant 542: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant542/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 84 }
+	For mutant 542, 2 parameter of method getIntExtra have been replaced with null
+Mutant 543: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant543/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 84 }
+	For mutant 543, 3 parameter of method getIntExtra have been replaced with null
+Mutant 544: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant544/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 171 }
+	For mutant 544, 2 parameter of method decodeResource have been replaced with null
+Mutant 545: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant545/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 285 }
+	For mutant 545, 2 parameter of method drawText have been replaced with null
+Mutant 546: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant546/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 285 }
+	For mutant 546, 3 parameter of method drawText have been replaced with null
+Mutant 547: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant547/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 285 }
+	For mutant 547, 4 parameter of method drawText have been replaced with null
+Mutant 548: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant548/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 285 }
+	For mutant 548, 5 parameter of method drawText have been replaced with null
+Mutant 549: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant549/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 175 }
+	For mutant 549, 2 parameter of method access$102 have been replaced with null
+Mutant 550: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant550/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 210 }
+	For mutant 550, 2 parameter of method setTextSize have been replaced with null
+Mutant 551: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant551/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 302 }
+	For mutant 551, 2 parameter of method setImageBitmap have been replaced with null
+Mutant 552: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant552/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 133 }
+	For mutant 552, 2 parameter of method getMetrics have been replaced with null
+Mutant 553: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant553/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 61 }
+	For mutant 553, 2 parameter of method equals have been replaced with null
+Mutant 554: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant554/src//smali/com/bwx/bequick/MainSettingsActivity$CommonIntentReceiver$1.smali; NullMethodCallArgument in line { 193 }
+	For mutant 554, 2 parameter of method setColor have been replaced with null
+Mutant 555: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant555/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 339 }
+	For mutant 555, 2 parameter of method putInt have been replaced with null
+Mutant 556: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant556/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 339 }
+	For mutant 556, 3 parameter of method putInt have been replaced with null
+Mutant 557: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant557/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 182 }
+	For mutant 557, 2 parameter of method findPreference have been replaced with null
+Mutant 558: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant558/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 266 }
+	For mutant 558, 2 parameter of method setPositiveButton have been replaced with null
+Mutant 559: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant559/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 266 }
+	For mutant 559, 3 parameter of method setPositiveButton have been replaced with null
+Mutant 560: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant560/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 324 }
+	For mutant 560, 2 parameter of method getInt have been replaced with null
+Mutant 561: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant561/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 324 }
+	For mutant 561, 3 parameter of method getInt have been replaced with null
+Mutant 562: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant562/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 297 }
+	For mutant 562, 2 parameter of method getSetting have been replaced with null
+Mutant 563: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant563/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 134 }
+	For mutant 563, 2 parameter of method findPreference have been replaced with null
+Mutant 564: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant564/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 177 }
+	For mutant 564, 2 parameter of method addPreferencesFromResource have been replaced with null
+Mutant 565: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant565/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 259 }
+	For mutant 565, 2 parameter of method setMessage have been replaced with null
+Mutant 566: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant566/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 144 }
+	For mutant 566, 2 parameter of method setChecked have been replaced with null
+Mutant 567: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant567/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 245 }
+	For mutant 567, 2 parameter of method setIcon have been replaced with null
+Mutant 568: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant568/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 273 }
+	For mutant 568, 2 parameter of method setNegativeButton have been replaced with null
+Mutant 569: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant569/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 273 }
+	For mutant 569, 3 parameter of method setNegativeButton have been replaced with null
+Mutant 570: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant570/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 32 }
+	For mutant 570, 2 parameter of method getSetting have been replaced with null
+Mutant 571: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant571/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 161 }
+	For mutant 571, 2 parameter of method onCreate have been replaced with null
+Mutant 572: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant572/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 240 }
+	For mutant 572, 2 parameter of method <init> have been replaced with null
+Mutant 573: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant573/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 172 }
+	For mutant 573, 2 parameter of method setSharedPreferencesName have been replaced with null
+Mutant 574: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant574/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 235 }
+	For mutant 574, 2 parameter of method setChecked have been replaced with null
+Mutant 575: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant575/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 88 }
+	For mutant 575, 2 parameter of method getSensorList have been replaced with null
+Mutant 576: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant576/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 190 }
+	For mutant 576, 2 parameter of method setOnPreferenceClickListener have been replaced with null
+Mutant 577: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant577/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 75 }
+	For mutant 577, 2 parameter of method getSystemService have been replaced with null
+Mutant 578: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant578/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 252 }
+	For mutant 578, 2 parameter of method setTitle have been replaced with null
+Mutant 579: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant579/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 344 }
+	For mutant 579, 2 parameter of method makeText have been replaced with null
+Mutant 580: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant580/src//smali/com/bwx/bequick/preferences/BrightnessPrefs.smali; NullMethodCallArgument in line { 344 }
+	For mutant 580, 3 parameter of method makeText have been replaced with null
+Mutant 581: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant581/src//smali/com/bwx/bequick/flashlight/Droid22Flashlight.smali; NullMethodCallArgument in line { 318 }
+	For mutant 581, 2 parameter of method getMethod have been replaced with null
+Mutant 582: /home/estudiante/test/./mutants/com.bwx.bequick/aM/com.bwx.bequick-mutant582/src//smali/com/bwx/bequick/flashlight/Droid22Flashlight.smali; NullMethodCallArgument in line { 318 }
+	For mutant 582, 3 parameter of method getMethod have been replaced with null

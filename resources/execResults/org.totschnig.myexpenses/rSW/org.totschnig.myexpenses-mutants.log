@@ -1,0 +1,704 @@
+Mutant 1: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant1/src//smali/org/totschnig/myexpenses/MyApplication.smali; InvalidFilePath in line { 595 }
+	For mutant 1 the path of File at line 595 has been replaced by c1c6c65087ee44f3bd515c7569dfc5d6
+Mutant 2: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant2/src//smali/org/totschnig/myexpenses/ExpenseEdit$1.smali; LengthyGUIListener in line { 40 }
+	For mutant 2 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 3: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant3/src//smali/org/totschnig/myexpenses/MyExpenses.smali; LengthyGUIListener in line { 3829 }
+	For mutant 3 a large delay has been injected after GUI Listener Creation at line 3829
+Mutant 4: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant4/src//smali/org/totschnig/myexpenses/SelectCategory$1.smali; LengthyGUIListener in line { 40 }
+	For mutant 4 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 5: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant5/src//smali/org/totschnig/myexpenses/MyExpenses.smali; ClosingNullCursor in line { 1489 }
+	For mutant 5 Database cursor at line 1489 has been set to null before close() call
+Mutant 6: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant6/src//smali/org/totschnig/myexpenses/MyExpenses.smali; ClosingNullCursor in line { 1868 }
+	For mutant 6 Database cursor at line 1868 has been set to null before close() call
+Mutant 7: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant7/src//smali/org/totschnig/myexpenses/MyExpenses.smali; ClosingNullCursor in line { 467 }
+	For mutant 7 Database cursor at line 467 has been set to null before close() call
+Mutant 8: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant8/src//smali/org/totschnig/myexpenses/MyExpenses.smali; FindViewByIdReturnsNull in lines { 4509, 4513 }
+	For mutant 8 the element retrieved at line 4509 has been set to null
+Mutant 9: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant9/src//smali/org/totschnig/myexpenses/MyExpenses.smali; FindViewByIdReturnsNull in lines { 4724, 4728 }
+	For mutant 9 the element retrieved at line 4724 has been set to null
+Mutant 10: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant10/src//smali/org/totschnig/myexpenses/MyExpenses.smali; FindViewByIdReturnsNull in lines { 4957, 4961 }
+	For mutant 10 the element retrieved at line 4957 has been set to null
+Mutant 11: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant11/src//smali/org/totschnig/myexpenses/MyExpenses.smali; FindViewByIdReturnsNull in lines { 4896, 4900 }
+	For mutant 11 the element retrieved at line 4896 has been set to null
+Mutant 12: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant12/src//smali/org/totschnig/myexpenses/MyExpenses.smali; FindViewByIdReturnsNull in lines { 4350, 4354 }
+	For mutant 12 the element retrieved at line 4350 has been set to null
+Mutant 13: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant13/src//smali/org/totschnig/myexpenses/MyExpenses.smali; FindViewByIdReturnsNull in lines { 4739, 4743 }
+	For mutant 13 the element retrieved at line 4739 has been set to null
+Mutant 14: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant14/src//smali/org/totschnig/myexpenses/MyExpenses.smali; ViewComponentNotVisible in line { 4364 }
+	For mutant 14 the visibility of element retrieved at line 4350 has been set to INVISIBLE at lines: 4366 and 4368
+Mutant 15: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant15/src//smali/org/totschnig/myexpenses/ManageAccounts.smali; ViewComponentNotVisible in line { 354 }
+	For mutant 15 the visibility of element retrieved at line 345 has been set to INVISIBLE at lines: 356 and 358
+Mutant 16: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant16/src//smali/org/totschnig/myexpenses/ManageAccounts.smali; InvalidViewFocus in line { 351 }
+	For mutant 16 focus has been requested for the element found at line 345
+Mutant 17: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant17/src//smali/org/totschnig/myexpenses/MyExpenses.smali; InvalidViewFocus in line { 4356 }
+	For mutant 17 focus has been requested for the element found at line 4350
+Mutant 18: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant18/src//smali/org/totschnig/myexpenses/Utils.smali; NullInputStream in line { 110 }
+	For mutant 18 Input Stream at line 110 has been set to null before calling close() method
+Mutant 19: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant19/src//AndroidManifest.xml; InvalidActivityPATH in line { 9 }
+	For mutant 19 activity name at line 9 has been change from ".ExpenseEdit" to ".ExpneseEdit"
+Mutant 20: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant20/src//AndroidManifest.xml; InvalidActivityPATH in line { 3 }
+	For mutant 20 activity name at line 3 has been change from ".MyExpenses" to ".MyExpen"
+Mutant 21: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant21/src//AndroidManifest.xml; ActivityNotDefined in line { 3 }
+	For mutant 21 the lines between 4 and 9 have been deleted.
+Mutant 22: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant22/src//AndroidManifest.xml; ActivityNotDefined in line { 9 }
+	For mutant 22 the lines between 10 and 10 have been deleted.
+Mutant 23: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant23/src//AndroidManifest.xml; MissingPermissionManifest in line { 1 }
+	For mutant 23 the lines between 2 and 2 have been deleted.
+Mutant 24: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant24/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullValueIntentPutExtra in line { 2619 }
+	For mutant 24 extra intent value at line 2619 has been set to 'new Parcelable[0]'
+Mutant 25: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant25/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullValueIntentPutExtra in line { 2281 }
+	For mutant 25 extra intent value at line 2281 has been set to 'new Parcelable[0]'
+Mutant 26: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant26/src//smali/org/totschnig/myexpenses/Utils.smali; InvalidURI in line { 651 }
+	For mutant 26 URI location has been set to 1447ec92ed454f50b41fe4b1742b922b at line 651
+Mutant 27: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant27/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 597 }
+	For mutant 27, 2 parameter of method parse have been replaced with null
+Mutant 28: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant28/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 3006 }
+	For mutant 28, 2 parameter of method showDialog have been replaced with null
+Mutant 29: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant29/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 97 }
+	For mutant 29, 2 parameter of method <init> have been replaced with null
+Mutant 30: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant30/src//smali/org/totschnig/myexpenses/Utils$2.smali; NullMethodCallArgument in line { 76 }
+	For mutant 30, 2 parameter of method <init> have been replaced with null
+Mutant 31: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant31/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 193 }
+	For mutant 31, 2 parameter of method format have been replaced with null
+Mutant 32: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant32/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 184 }
+	For mutant 32, 2 parameter of method setCurrency have been replaced with null
+Mutant 33: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant33/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 669 }
+	For mutant 33, 2 parameter of method <init> have been replaced with null
+Mutant 34: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant34/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 128 }
+	For mutant 34, 2 parameter of method setBackgroundResource have been replaced with null
+Mutant 35: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant35/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 317 }
+	For mutant 35, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 36: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant36/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 218 }
+	For mutant 36, 4 parameter of method <init> have been replaced with null
+Mutant 37: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant37/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 148 }
+	For mutant 37, 2 parameter of method addItem have been replaced with null
+Mutant 38: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant38/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 333 }
+	For mutant 38, 3 parameter of method getString have been replaced with null
+Mutant 39: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant39/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4444 }
+	For mutant 39, 4 parameter of method add have been replaced with null
+Mutant 40: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant40/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 293 }
+	For mutant 40, 2 parameter of method getLong have been replaced with null
+Mutant 41: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant41/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 218 }
+	For mutant 41, 2 parameter of method <init> have been replaced with null
+Mutant 42: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant42/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 280 }
+	For mutant 42, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 43: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant43/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 492 }
+	For mutant 43, 2 parameter of method getString have been replaced with null
+Mutant 44: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant44/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 39 }
+	For mutant 44, 2 parameter of method <init> have been replaced with null
+Mutant 45: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant45/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 544 }
+	For mutant 45, 2 parameter of method append have been replaced with null
+Mutant 46: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant46/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 178 }
+	For mutant 46, 2 parameter of method <init> have been replaced with null
+Mutant 47: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant47/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 507 }
+	For mutant 47, 2 parameter of method append have been replaced with null
+Mutant 48: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant48/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 281 }
+	For mutant 48, 2 parameter of method <init> have been replaced with null
+Mutant 49: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant49/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 543 }
+	For mutant 49, 2 parameter of method setPositiveButton have been replaced with null
+Mutant 50: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant50/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 321 }
+	For mutant 50, 2 parameter of method getLong have been replaced with null
+Mutant 51: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant51/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 356 }
+	For mutant 51, 3 parameter of method putBoolean have been replaced with null
+Mutant 52: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant52/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2189 }
+	For mutant 52, 3 parameter of method putExtra have been replaced with null
+Mutant 53: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant53/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 551 }
+	For mutant 53, 2 parameter of method <init> have been replaced with null
+Mutant 54: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant54/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 131 }
+	For mutant 54, 3 parameter of method setPadding have been replaced with null
+Mutant 55: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant55/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 559 }
+	For mutant 55, 2 parameter of method append have been replaced with null
+Mutant 56: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant56/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 428 }
+	For mutant 56, 2 parameter of method makeText have been replaced with null
+Mutant 57: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant57/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4423 }
+	For mutant 57, 2 parameter of method onCreateContextMenu have been replaced with null
+Mutant 58: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant58/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4423 }
+	For mutant 58, 3 parameter of method onCreateContextMenu have been replaced with null
+Mutant 59: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant59/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 419 }
+	For mutant 59, 2 parameter of method equals have been replaced with null
+Mutant 60: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant60/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 501 }
+	For mutant 60, 2 parameter of method <init> have been replaced with null
+Mutant 61: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant61/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 1238 }
+	For mutant 61, 2 parameter of method append have been replaced with null
+Mutant 62: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant62/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5411 }
+	For mutant 62, 2 parameter of method setPositiveButton have been replaced with null
+Mutant 63: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant63/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 83 }
+	For mutant 63, 2 parameter of method <init> have been replaced with null
+Mutant 64: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant64/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 338 }
+	For mutant 64, 3 parameter of method <init> have been replaced with null
+Mutant 65: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant65/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 473 }
+	For mutant 65, 2 parameter of method setNeutralButton have been replaced with null
+Mutant 66: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant66/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 432 }
+	For mutant 66, 2 parameter of method setProgress have been replaced with null
+Mutant 67: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant67/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 1093 }
+	For mutant 67, 2 parameter of method append have been replaced with null
+Mutant 68: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant68/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 739 }
+	For mutant 68, 2 parameter of method getString have been replaced with null
+Mutant 69: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant69/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 337 }
+	For mutant 69, 3 parameter of method putString have been replaced with null
+Mutant 70: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant70/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 318 }
+	For mutant 70, 3 parameter of method getString have been replaced with null
+Mutant 71: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant71/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4166 }
+	For mutant 71, 2 parameter of method append have been replaced with null
+Mutant 72: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant72/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 131 }
+	For mutant 72, 4 parameter of method setPadding have been replaced with null
+Mutant 73: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant73/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 225 }
+	For mutant 73, 3 parameter of method getSharedPreferences have been replaced with null
+Mutant 74: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant74/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 355 }
+	For mutant 74, 2 parameter of method setWithPartiesP have been replaced with null
+Mutant 75: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant75/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 721 }
+	For mutant 75, 2 parameter of method getString have been replaced with null
+Mutant 76: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant76/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 156 }
+	For mutant 76, 2 parameter of method <init> have been replaced with null
+Mutant 77: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant77/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 123 }
+	For mutant 77, 3 parameter of method parse have been replaced with null
+Mutant 78: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant78/src//smali/org/totschnig/myexpenses/AccountEdit$7.smali; NullMethodCallArgument in line { 77 }
+	For mutant 78, 2 parameter of method dismissDialog have been replaced with null
+Mutant 79: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant79/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2487 }
+	For mutant 79, 3 parameter of method makeText have been replaced with null
+Mutant 80: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant80/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 191 }
+	For mutant 80, 2 parameter of method append have been replaced with null
+Mutant 81: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant81/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 374 }
+	For mutant 81, 2 parameter of method append have been replaced with null
+Mutant 82: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant82/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5831 }
+	For mutant 82, 2 parameter of method onCreateOptionsMenu have been replaced with null
+Mutant 83: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant83/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 66 }
+	For mutant 83, 2 parameter of method format have been replaced with null
+Mutant 84: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant84/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5298 }
+	For mutant 84, 2 parameter of method <init> have been replaced with null
+Mutant 85: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant85/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4430 }
+	For mutant 85, 4 parameter of method add have been replaced with null
+Mutant 86: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant86/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 108 }
+	For mutant 86, 2 parameter of method getInt have been replaced with null
+Mutant 87: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant87/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 218 }
+	For mutant 87, 3 parameter of method <init> have been replaced with null
+Mutant 88: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant88/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 649 }
+	For mutant 88, 2 parameter of method format have been replaced with null
+Mutant 89: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant89/src//smali/org/totschnig/myexpenses/MyExpenses$13.smali; NullMethodCallArgument in line { 50 }
+	For mutant 89, 2 parameter of method removeDialog have been replaced with null
+Mutant 90: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant90/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 352 }
+	For mutant 90, 3 parameter of method getBoolean have been replaced with null
+Mutant 91: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant91/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 437 }
+	For mutant 91, 2 parameter of method setCancelable have been replaced with null
+Mutant 92: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant92/src//smali/org/totschnig/myexpenses/ExpenseEdit$9.smali; NullMethodCallArgument in line { 74 }
+	For mutant 92, 2 parameter of method access$1302 have been replaced with null
+Mutant 93: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant93/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2487 }
+	For mutant 93, 2 parameter of method makeText have been replaced with null
+Mutant 94: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant94/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 477 }
+	For mutant 94, 2 parameter of method w have been replaced with null
+Mutant 95: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant95/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 210 }
+	For mutant 95, 3 parameter of method <init> have been replaced with null
+Mutant 96: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant96/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 588 }
+	For mutant 96, 2 parameter of method getButton have been replaced with null
+Mutant 97: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant97/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 583 }
+	For mutant 97, 2 parameter of method showDialog have been replaced with null
+Mutant 98: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant98/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4430 }
+	For mutant 98, 5 parameter of method add have been replaced with null
+Mutant 99: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant99/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 123 }
+	For mutant 99, 2 parameter of method parse have been replaced with null
+Mutant 100: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant100/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 680 }
+	For mutant 100, 2 parameter of method setProgress have been replaced with null
+Mutant 101: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant101/src//smali/org/totschnig/myexpenses/SelectCategory$1.smali; NullMethodCallArgument in line { 50 }
+	For mutant 101, 3 parameter of method createCat have been replaced with null
+Mutant 102: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant102/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 278 }
+	For mutant 102, 2 parameter of method setEnabled have been replaced with null
+Mutant 103: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant103/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 473 }
+	For mutant 103, 3 parameter of method setNeutralButton have been replaced with null
+Mutant 104: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant104/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 3715 }
+	For mutant 104, 2 parameter of method queryIntentActivities have been replaced with null
+Mutant 105: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant105/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 333 }
+	For mutant 105, 2 parameter of method getString have been replaced with null
+Mutant 106: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant106/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 592 }
+	For mutant 106, 2 parameter of method setEnabled have been replaced with null
+Mutant 107: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant107/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 508 }
+	For mutant 107, 2 parameter of method attach have been replaced with null
+Mutant 108: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant108/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5411 }
+	For mutant 108, 3 parameter of method setPositiveButton have been replaced with null
+Mutant 109: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant109/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 557 }
+	For mutant 109, 2 parameter of method updateProgress have been replaced with null
+Mutant 110: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant110/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 131 }
+	For mutant 110, 5 parameter of method setPadding have been replaced with null
+Mutant 111: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant111/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 281 }
+	For mutant 111, 4 parameter of method <init> have been replaced with null
+Mutant 112: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant112/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 326 }
+	For mutant 112, 2 parameter of method setTitle have been replaced with null
+Mutant 113: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant113/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 442 }
+	For mutant 113, 2 parameter of method <init> have been replaced with null
+Mutant 114: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant114/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 318 }
+	For mutant 114, 2 parameter of method getString have been replaced with null
+Mutant 115: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant115/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 243 }
+	For mutant 115, 2 parameter of method setBackgroundResourceKeepPadding have been replaced with null
+Mutant 116: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant116/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 627 }
+	For mutant 116, 2 parameter of method <init> have been replaced with null
+Mutant 117: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant117/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4423 }
+	For mutant 117, 4 parameter of method onCreateContextMenu have been replaced with null
+Mutant 118: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant118/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 651 }
+	For mutant 118, 2 parameter of method <init> have been replaced with null
+Mutant 119: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant119/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 210 }
+	For mutant 119, 2 parameter of method setBackgroundResourceKeepPadding have been replaced with null
+Mutant 120: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant120/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 619 }
+	For mutant 120, 2 parameter of method append have been replaced with null
+Mutant 121: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant121/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 297 }
+	For mutant 121, 2 parameter of method putLong have been replaced with null
+Mutant 122: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant122/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 58 }
+	For mutant 122, 2 parameter of method <init> have been replaced with null
+Mutant 123: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant123/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2387 }
+	For mutant 123, 3 parameter of method getBoolean have been replaced with null
+Mutant 124: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant124/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 312 }
+	For mutant 124, 2 parameter of method getInt have been replaced with null
+Mutant 125: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant125/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 400 }
+	For mutant 125, 2 parameter of method i have been replaced with null
+Mutant 126: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant126/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 1815 }
+	For mutant 126, 2 parameter of method getString have been replaced with null
+Mutant 127: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant127/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 365 }
+	For mutant 127, 2 parameter of method execute have been replaced with null
+Mutant 128: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant128/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 467 }
+	For mutant 128, 3 parameter of method <init> have been replaced with null
+Mutant 129: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant129/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4444 }
+	For mutant 129, 3 parameter of method add have been replaced with null
+Mutant 130: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant130/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 532 }
+	For mutant 130, 2 parameter of method setMessage have been replaced with null
+Mutant 131: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant131/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 210 }
+	For mutant 131, 2 parameter of method <init> have been replaced with null
+Mutant 132: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant132/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 554 }
+	For mutant 132, 3 parameter of method setNegativeButton have been replaced with null
+Mutant 133: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant133/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 1621 }
+	For mutant 133, 2 parameter of method addItem have been replaced with null
+Mutant 134: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant134/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2858 }
+	For mutant 134, 3 parameter of method startActivityForResult have been replaced with null
+Mutant 135: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant135/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 3065 }
+	For mutant 135, 3 parameter of method <init> have been replaced with null
+Mutant 136: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant136/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 380 }
+	For mutant 136, 2 parameter of method append have been replaced with null
+Mutant 137: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant137/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 3065 }
+	For mutant 137, 2 parameter of method <init> have been replaced with null
+Mutant 138: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant138/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 148 }
+	For mutant 138, 4 parameter of method addItem have been replaced with null
+Mutant 139: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant139/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 166 }
+	For mutant 139, 2 parameter of method getString have been replaced with null
+Mutant 140: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant140/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 3941 }
+	For mutant 140, 2 parameter of method getColumnIndexOrThrow have been replaced with null
+Mutant 141: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant141/src//smali/org/totschnig/myexpenses/ExpenseEdit$11.smali; NullMethodCallArgument in line { 85 }
+	For mutant 141, 2 parameter of method removeDialog have been replaced with null
+Mutant 142: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant142/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 480 }
+	For mutant 142, 2 parameter of method setPositiveButton have been replaced with null
+Mutant 143: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant143/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 136 }
+	For mutant 143, 2 parameter of method makeText have been replaced with null
+Mutant 144: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant144/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4430 }
+	For mutant 144, 3 parameter of method add have been replaced with null
+Mutant 145: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant145/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 554 }
+	For mutant 145, 2 parameter of method setNegativeButton have been replaced with null
+Mutant 146: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant146/src//smali/org/totschnig/myexpenses/Utils$2.smali; NullMethodCallArgument in line { 68 }
+	For mutant 146, 2 parameter of method showDialog have been replaced with null
+Mutant 147: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant147/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 230 }
+	For mutant 147, 3 parameter of method makeText have been replaced with null
+Mutant 148: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant148/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 467 }
+	For mutant 148, 2 parameter of method <init> have been replaced with null
+Mutant 149: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant149/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2947 }
+	For mutant 149, 2 parameter of method setData have been replaced with null
+Mutant 150: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant150/src//smali/org/totschnig/myexpenses/ExpenseEdit$11.smali; NullMethodCallArgument in line { 65 }
+	For mutant 150, 2 parameter of method access$302 have been replaced with null
+Mutant 151: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant151/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 187 }
+	For mutant 151, 2 parameter of method setMinimumFractionDigits have been replaced with null
+Mutant 152: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant152/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 155 }
+	For mutant 152, 4 parameter of method <init> have been replaced with null
+Mutant 153: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant153/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 466 }
+	For mutant 153, 3 parameter of method setNegativeButton have been replaced with null
+Mutant 154: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant154/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 199 }
+	For mutant 154, 2 parameter of method <init> have been replaced with null
+Mutant 155: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant155/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4341 }
+	For mutant 155, 2 parameter of method getBoolean have been replaced with null
+Mutant 156: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant156/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 465 }
+	For mutant 156, 2 parameter of method w have been replaced with null
+Mutant 157: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant157/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 297 }
+	For mutant 157, 4 parameter of method putLong have been replaced with null
+Mutant 158: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant158/src//smali/org/totschnig/myexpenses/AccountEdit$7.smali; NullMethodCallArgument in line { 59 }
+	For mutant 158, 2 parameter of method setText have been replaced with null
+Mutant 159: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant159/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 452 }
+	For mutant 159, 2 parameter of method setCancelable have been replaced with null
+Mutant 160: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant160/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 595 }
+	For mutant 160, 2 parameter of method <init> have been replaced with null
+Mutant 161: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant161/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 585 }
+	For mutant 161, 2 parameter of method <init> have been replaced with null
+Mutant 162: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant162/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 583 }
+	For mutant 162, 2 parameter of method append have been replaced with null
+Mutant 163: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant163/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 589 }
+	For mutant 163, 2 parameter of method setIndex have been replaced with null
+Mutant 164: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant164/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 156 }
+	For mutant 164, 3 parameter of method <init> have been replaced with null
+Mutant 165: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant165/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2619 }
+	For mutant 165, 2 parameter of method putExtra have been replaced with null
+Mutant 166: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant166/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 214 }
+	For mutant 166, 2 parameter of method copy have been replaced with null
+Mutant 167: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant167/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 421 }
+	For mutant 167, 2 parameter of method equals have been replaced with null
+Mutant 168: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant168/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 93 }
+	For mutant 168, 2 parameter of method <init> have been replaced with null
+Mutant 169: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant169/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 316 }
+	For mutant 169, 3 parameter of method putInt have been replaced with null
+Mutant 170: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant170/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 148 }
+	For mutant 170, 3 parameter of method addItem have been replaced with null
+Mutant 171: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant171/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 39 }
+	For mutant 171, 3 parameter of method <init> have been replaced with null
+Mutant 172: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant172/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 565 }
+	For mutant 172, 2 parameter of method append have been replaced with null
+Mutant 173: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant173/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2619 }
+	For mutant 173, 3 parameter of method putExtra have been replaced with null
+Mutant 174: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant174/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 488 }
+	For mutant 174, 2 parameter of method w have been replaced with null
+Mutant 175: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant175/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 218 }
+	For mutant 175, 2 parameter of method formatCurrency have been replaced with null
+Mutant 176: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant176/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 370 }
+	For mutant 176, 2 parameter of method append have been replaced with null
+Mutant 177: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant177/src//smali/org/totschnig/myexpenses/Utils$2.smali; NullMethodCallArgument in line { 128 }
+	For mutant 177, 2 parameter of method makeText have been replaced with null
+Mutant 178: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant178/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2353 }
+	For mutant 178, 2 parameter of method makeText have been replaced with null
+Mutant 179: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant179/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 382 }
+	For mutant 179, 2 parameter of method getString have been replaced with null
+Mutant 180: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant180/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 648 }
+	For mutant 180, 2 parameter of method copy have been replaced with null
+Mutant 181: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant181/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 284 }
+	For mutant 181, 2 parameter of method getButton have been replaced with null
+Mutant 182: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant182/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 312 }
+	For mutant 182, 3 parameter of method getInt have been replaced with null
+Mutant 183: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant183/src//smali/org/totschnig/myexpenses/ExpenseEdit$11.smali; NullMethodCallArgument in line { 65 }
+	For mutant 183, 3 parameter of method access$302 have been replaced with null
+Mutant 184: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant184/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 1152 }
+	For mutant 184, 2 parameter of method append have been replaced with null
+Mutant 185: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant185/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 230 }
+	For mutant 185, 2 parameter of method makeText have been replaced with null
+Mutant 186: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant186/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 447 }
+	For mutant 186, 2 parameter of method setTitle have been replaced with null
+Mutant 187: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant187/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 297 }
+	For mutant 187, 3 parameter of method putLong have been replaced with null
+Mutant 188: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant188/src//smali/org/totschnig/myexpenses/ExpenseEdit$11.smali; NullMethodCallArgument in line { 78 }
+	For mutant 188, 2 parameter of method setText have been replaced with null
+Mutant 189: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant189/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2918 }
+	For mutant 189, 2 parameter of method <init> have been replaced with null
+Mutant 190: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant190/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 577 }
+	For mutant 190, 2 parameter of method <init> have been replaced with null
+Mutant 191: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant191/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 480 }
+	For mutant 191, 3 parameter of method setPositiveButton have been replaced with null
+Mutant 192: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant192/src//smali/org/totschnig/myexpenses/SelectCategory$1.smali; NullMethodCallArgument in line { 50 }
+	For mutant 192, 2 parameter of method createCat have been replaced with null
+Mutant 193: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant193/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5324 }
+	For mutant 193, 2 parameter of method setSingleChoiceItems have been replaced with null
+Mutant 194: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant194/src//smali/org/totschnig/myexpenses/Utils$2.smali; NullMethodCallArgument in line { 97 }
+	For mutant 194, 3 parameter of method queryIntentActivities have been replaced with null
+Mutant 195: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant195/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 190 }
+	For mutant 195, 2 parameter of method setMaximumFractionDigits have been replaced with null
+Mutant 196: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant196/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 358 }
+	For mutant 196, 2 parameter of method dismissDialog have been replaced with null
+Mutant 197: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant197/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 293 }
+	For mutant 197, 3 parameter of method getLong have been replaced with null
+Mutant 198: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant198/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2935 }
+	For mutant 198, 2 parameter of method append have been replaced with null
+Mutant 199: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant199/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 139 }
+	For mutant 199, 2 parameter of method e have been replaced with null
+Mutant 200: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant200/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 428 }
+	For mutant 200, 3 parameter of method makeText have been replaced with null
+Mutant 201: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant201/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 378 }
+	For mutant 201, 2 parameter of method dismissDialog have been replaced with null
+Mutant 202: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant202/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 160 }
+	For mutant 202, 2 parameter of method e have been replaced with null
+Mutant 203: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant203/src//smali/org/totschnig/myexpenses/MyExpenses$4.smali; NullMethodCallArgument in line { 53 }
+	For mutant 203, 3 parameter of method dispatchCommand have been replaced with null
+Mutant 204: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant204/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2189 }
+	For mutant 204, 2 parameter of method putExtra have been replaced with null
+Mutant 205: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant205/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 325 }
+	For mutant 205, 2 parameter of method valueOf have been replaced with null
+Mutant 206: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant206/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 170 }
+	For mutant 206, 2 parameter of method addItem have been replaced with null
+Mutant 207: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant207/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2630 }
+	For mutant 207, 2 parameter of method append have been replaced with null
+Mutant 208: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant208/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 178 }
+	For mutant 208, 4 parameter of method <init> have been replaced with null
+Mutant 209: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant209/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 378 }
+	For mutant 209, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 210: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant210/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 543 }
+	For mutant 210, 2 parameter of method setMax have been replaced with null
+Mutant 211: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant211/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 193 }
+	For mutant 211, 2 parameter of method <init> have been replaced with null
+Mutant 212: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant212/src//smali/org/totschnig/myexpenses/AccountEdit$7.smali; NullMethodCallArgument in line { 70 }
+	For mutant 212, 2 parameter of method access$602 have been replaced with null
+Mutant 213: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant213/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 136 }
+	For mutant 213, 3 parameter of method makeText have been replaced with null
+Mutant 214: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant214/src//smali/org/totschnig/myexpenses/Utils$2.smali; NullMethodCallArgument in line { 110 }
+	For mutant 214, 2 parameter of method startActivity have been replaced with null
+Mutant 215: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant215/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 532 }
+	For mutant 215, 2 parameter of method <init> have been replaced with null
+Mutant 216: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant216/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 424 }
+	For mutant 216, 2 parameter of method getString have been replaced with null
+Mutant 217: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant217/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2858 }
+	For mutant 217, 2 parameter of method startActivityForResult have been replaced with null
+Mutant 218: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant218/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 345 }
+	For mutant 218, 2 parameter of method setTitle have been replaced with null
+Mutant 219: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant219/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 132 }
+	For mutant 219, 2 parameter of method getString have been replaced with null
+Mutant 220: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant220/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 748 }
+	For mutant 220, 2 parameter of method getString have been replaced with null
+Mutant 221: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant221/src//smali/org/totschnig/myexpenses/ExpenseEdit$9.smali; NullMethodCallArgument in line { 65 }
+	For mutant 221, 3 parameter of method access$1202 have been replaced with null
+Mutant 222: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant222/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 459 }
+	For mutant 222, 2 parameter of method setSingleChoiceItems have been replaced with null
+Mutant 223: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant223/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 3715 }
+	For mutant 223, 3 parameter of method queryIntentActivities have been replaced with null
+Mutant 224: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant224/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 185 }
+	For mutant 224, 4 parameter of method addItem have been replaced with null
+Mutant 225: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant225/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 757 }
+	For mutant 225, 2 parameter of method getString have been replaced with null
+Mutant 226: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant226/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 155 }
+	For mutant 226, 3 parameter of method <init> have been replaced with null
+Mutant 227: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant227/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 3982 }
+	For mutant 227, 2 parameter of method getLong have been replaced with null
+Mutant 228: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant228/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4430 }
+	For mutant 228, 2 parameter of method add have been replaced with null
+Mutant 229: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant229/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4341 }
+	For mutant 229, 3 parameter of method getBoolean have been replaced with null
+Mutant 230: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant230/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 222 }
+	For mutant 230, 3 parameter of method getString have been replaced with null
+Mutant 231: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant231/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 155 }
+	For mutant 231, 2 parameter of method <init> have been replaced with null
+Mutant 232: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant232/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 459 }
+	For mutant 232, 3 parameter of method setSingleChoiceItems have been replaced with null
+Mutant 233: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant233/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 520 }
+	For mutant 233, 2 parameter of method getString have been replaced with null
+Mutant 234: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant234/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4368 }
+	For mutant 234, 2 parameter of method setVisibility have been replaced with null
+Mutant 235: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant235/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 766 }
+	For mutant 235, 2 parameter of method getString have been replaced with null
+Mutant 236: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant236/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 108 }
+	For mutant 236, 3 parameter of method getInt have been replaced with null
+Mutant 237: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant237/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 131 }
+	For mutant 237, 2 parameter of method setPadding have been replaced with null
+Mutant 238: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant238/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 543 }
+	For mutant 238, 3 parameter of method setPositiveButton have been replaced with null
+Mutant 239: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant239/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 185 }
+	For mutant 239, 3 parameter of method addItem have been replaced with null
+Mutant 240: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant240/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 220 }
+	For mutant 240, 2 parameter of method add have been replaced with null
+Mutant 241: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant241/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 466 }
+	For mutant 241, 2 parameter of method setNegativeButton have been replaced with null
+Mutant 242: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant242/src//smali/org/totschnig/myexpenses/MyExpenses$4.smali; NullMethodCallArgument in line { 53 }
+	For mutant 242, 2 parameter of method dispatchCommand have been replaced with null
+Mutant 243: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant243/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 274 }
+	For mutant 243, 2 parameter of method getButton have been replaced with null
+Mutant 244: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant244/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 222 }
+	For mutant 244, 2 parameter of method getString have been replaced with null
+Mutant 245: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant245/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5043 }
+	For mutant 245, 2 parameter of method <init> have been replaced with null
+Mutant 246: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant246/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 297 }
+	For mutant 246, 2 parameter of method setEnabled have been replaced with null
+Mutant 247: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant247/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 641 }
+	For mutant 247, 2 parameter of method equals have been replaced with null
+Mutant 248: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant248/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 459 }
+	For mutant 248, 4 parameter of method setSingleChoiceItems have been replaced with null
+Mutant 249: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant249/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 392 }
+	For mutant 249, 2 parameter of method append have been replaced with null
+Mutant 250: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant250/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 316 }
+	For mutant 250, 2 parameter of method putInt have been replaced with null
+Mutant 251: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant251/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 686 }
+	For mutant 251, 2 parameter of method getString have been replaced with null
+Mutant 252: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant252/src//smali/org/totschnig/myexpenses/ExpenseEdit$9.smali; NullMethodCallArgument in line { 86 }
+	For mutant 252, 2 parameter of method dismissDialog have been replaced with null
+Mutant 253: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant253/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 178 }
+	For mutant 253, 3 parameter of method <init> have been replaced with null
+Mutant 254: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant254/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 712 }
+	For mutant 254, 2 parameter of method getString have been replaced with null
+Mutant 255: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant255/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 175 }
+	For mutant 255, 2 parameter of method append have been replaced with null
+Mutant 256: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant256/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 550 }
+	For mutant 256, 2 parameter of method append have been replaced with null
+Mutant 257: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant257/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 356 }
+	For mutant 257, 2 parameter of method putBoolean have been replaced with null
+Mutant 258: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant258/src//smali/org/totschnig/myexpenses/Utils$2.smali; NullMethodCallArgument in line { 86 }
+	For mutant 258, 2 parameter of method setData have been replaced with null
+Mutant 259: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant259/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 352 }
+	For mutant 259, 2 parameter of method getBoolean have been replaced with null
+Mutant 260: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant260/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4444 }
+	For mutant 260, 2 parameter of method add have been replaced with null
+Mutant 261: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant261/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 415 }
+	For mutant 261, 2 parameter of method onCreate have been replaced with null
+Mutant 262: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant262/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 4696 }
+	For mutant 262, 2 parameter of method setMovementMethod have been replaced with null
+Mutant 263: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant263/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 597 }
+	For mutant 263, 3 parameter of method parse have been replaced with null
+Mutant 264: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant264/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 1621 }
+	For mutant 264, 4 parameter of method addItem have been replaced with null
+Mutant 265: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant265/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5324 }
+	For mutant 265, 4 parameter of method setSingleChoiceItems have been replaced with null
+Mutant 266: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant266/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 532 }
+	For mutant 266, 2 parameter of method setTitle have been replaced with null
+Mutant 267: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant267/src//smali/org/totschnig/myexpenses/MyExpenses$5.smali; NullMethodCallArgument in line { 51 }
+	For mutant 267, 2 parameter of method showDialog have been replaced with null
+Mutant 268: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant268/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 170 }
+	For mutant 268, 4 parameter of method addItem have been replaced with null
+Mutant 269: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant269/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 337 }
+	For mutant 269, 2 parameter of method putString have been replaced with null
+Mutant 270: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant270/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 540 }
+	For mutant 270, 2 parameter of method <init> have been replaced with null
+Mutant 271: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant271/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 51 }
+	For mutant 271, 3 parameter of method <init> have been replaced with null
+Mutant 272: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant272/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 225 }
+	For mutant 272, 2 parameter of method getSharedPreferences have been replaced with null
+Mutant 273: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant273/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 185 }
+	For mutant 273, 2 parameter of method addItem have been replaced with null
+Mutant 274: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant274/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 513 }
+	For mutant 274, 2 parameter of method append have been replaced with null
+Mutant 275: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant275/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 532 }
+	For mutant 275, 3 parameter of method <init> have been replaced with null
+Mutant 276: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant276/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 587 }
+	For mutant 276, 2 parameter of method append have been replaced with null
+Mutant 277: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant277/src//smali/org/totschnig/myexpenses/Utils$2.smali; NullMethodCallArgument in line { 50 }
+	For mutant 277, 2 parameter of method dismissDialog have been replaced with null
+Mutant 278: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant278/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 669 }
+	For mutant 278, 3 parameter of method <init> have been replaced with null
+Mutant 279: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant279/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 420 }
+	For mutant 279, 2 parameter of method <init> have been replaced with null
+Mutant 280: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant280/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5162 }
+	For mutant 280, 2 parameter of method <init> have been replaced with null
+Mutant 281: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant281/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2353 }
+	For mutant 281, 3 parameter of method makeText have been replaced with null
+Mutant 282: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant282/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 669 }
+	For mutant 282, 2 parameter of method equals have been replaced with null
+Mutant 283: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant283/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 427 }
+	For mutant 283, 2 parameter of method setProgressStyle have been replaced with null
+Mutant 284: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant284/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 524 }
+	For mutant 284, 2 parameter of method append have been replaced with null
+Mutant 285: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant285/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 293 }
+	For mutant 285, 4 parameter of method getLong have been replaced with null
+Mutant 286: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant286/src//smali/org/totschnig/myexpenses/Utils$2.smali; NullMethodCallArgument in line { 97 }
+	For mutant 286, 2 parameter of method queryIntentActivities have been replaced with null
+Mutant 287: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant287/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 642 }
+	For mutant 287, 2 parameter of method e have been replaced with null
+Mutant 288: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant288/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 281 }
+	For mutant 288, 5 parameter of method <init> have been replaced with null
+Mutant 289: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant289/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5091 }
+	For mutant 289, 2 parameter of method <init> have been replaced with null
+Mutant 290: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant290/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5388 }
+	For mutant 290, 2 parameter of method setId have been replaced with null
+Mutant 291: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant291/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 2387 }
+	For mutant 291, 2 parameter of method getBoolean have been replaced with null
+Mutant 292: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant292/src//smali/org/totschnig/myexpenses/Utils.smali; NullMethodCallArgument in line { 594 }
+	For mutant 292, 2 parameter of method setParseBigDecimal have been replaced with null
+Mutant 293: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant293/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 1621 }
+	For mutant 293, 3 parameter of method addItem have been replaced with null
+Mutant 294: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant294/src//smali/org/totschnig/myexpenses/ExpenseEdit$9.smali; NullMethodCallArgument in line { 65 }
+	For mutant 294, 2 parameter of method access$1202 have been replaced with null
+Mutant 295: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant295/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 615 }
+	For mutant 295, 2 parameter of method append have been replaced with null
+Mutant 296: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant296/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 193 }
+	For mutant 296, 3 parameter of method <init> have been replaced with null
+Mutant 297: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant297/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 170 }
+	For mutant 297, 3 parameter of method addItem have been replaced with null
+Mutant 298: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant298/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 603 }
+	For mutant 298, 2 parameter of method setEnabled have been replaced with null
+Mutant 299: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant299/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 281 }
+	For mutant 299, 3 parameter of method <init> have been replaced with null
+Mutant 300: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant300/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 51 }
+	For mutant 300, 2 parameter of method <init> have been replaced with null
+Mutant 301: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant301/src//smali/org/totschnig/myexpenses/ButtonBar$MenuButton.smali; NullMethodCallArgument in line { 71 }
+	For mutant 301, 2 parameter of method setBackgroundResourceKeepPadding have been replaced with null
+Mutant 302: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant302/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullMethodCallArgument in line { 5324 }
+	For mutant 302, 3 parameter of method setSingleChoiceItems have been replaced with null
+Mutant 303: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant303/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 599 }
+	For mutant 303, 2 parameter of method getButton have been replaced with null
+Mutant 304: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant304/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 185 }
+	For mutant 304, 2 parameter of method append have been replaced with null
+Mutant 305: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant305/src//smali/org/totschnig/myexpenses/MyApplication.smali; NullMethodCallArgument in line { 730 }
+	For mutant 305, 2 parameter of method getString have been replaced with null
+Mutant 306: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant306/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; NullMethodCallArgument in line { 338 }
+	For mutant 306, 2 parameter of method <init> have been replaced with null
+Mutant 307: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant307/src//smali/org/totschnig/myexpenses/Utils$2.smali; NullMethodCallArgument in line { 128 }
+	For mutant 307, 3 parameter of method makeText have been replaced with null
+Mutant 308: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant308/src//smali/org/totschnig/myexpenses/MyExpenses.smali; LengthyGUICreation in line { 4268 }
+	For mutant 308 a large delay has been injected after GUI Creation at line 4268
+Mutant 309: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant309/src//smali/org/totschnig/myexpenses/GrisbiImport.smali; LengthyGUICreation in line { 403 }
+	For mutant 309 a large delay has been injected after GUI Creation at line 403
+Mutant 310: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant310/src//smali/org/totschnig/myexpenses/MyExpenses.smali; InvalidKeyIntentPutExtra in line { 2275 }
+	For mutant 310 extra key value at line 2275 has been set to b38745fa2ee040e9b380888ff71c454f
+Mutant 311: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant311/src//smali/org/totschnig/myexpenses/MyExpenses.smali; InvalidKeyIntentPutExtra in line { 2611 }
+	For mutant 311 extra key value at line 2611 has been set to 10077e4a3298453fa468f30ba7e7c644
+Mutant 312: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant312/src//smali/org/totschnig/myexpenses/MyExpenses.smali; InvalidIDFindView in line { 4507 }
+	For mutant 312 the id of the element retrieved at line 4509 has been set to a random value
+Mutant 313: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant313/src//smali/org/totschnig/myexpenses/MyExpenses.smali; InvalidIDFindView in line { 4955 }
+	For mutant 313 the id of the element retrieved at line 4957 has been set to a random value
+Mutant 314: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant314/src//smali/org/totschnig/myexpenses/MyExpenses.smali; InvalidIDFindView in line { 4737 }
+	For mutant 314 the id of the element retrieved at line 4739 has been set to a random value
+Mutant 315: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant315/src//smali/org/totschnig/myexpenses/MyExpenses.smali; InvalidIDFindView in line { 4894 }
+	For mutant 315 the id of the element retrieved at line 4896 has been set to a random value
+Mutant 316: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant316/src//smali/org/totschnig/myexpenses/MyExpenses.smali; InvalidIDFindView in line { 4722 }
+	For mutant 316 the id of the element retrieved at line 4724 has been set to a random value
+Mutant 317: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant317/src//smali/org/totschnig/myexpenses/MyExpenses.smali; InvalidIDFindView in line { 4348 }
+	For mutant 317 the id of the element retrieved at line 4350 has been set to a random value
+Mutant 318: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant318/src//smali/org/totschnig/myexpenses/ExpensesDbAdapter.smali; InvalidIndexQueryParameter in line { 1605 }
+	For mutant 318 params list send with SQL command have been replace with an empty String list
+Mutant 319: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant319/src//smali/org/totschnig/myexpenses/ExpensesDbAdapter.smali; InvalidIndexQueryParameter in line { 2761 }
+	For mutant 319 params list send with SQL command have been replace with an empty String list
+Mutant 320: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant320/src//AndroidManifest.xml; WrongMainActivity in line { 4 }
+	For mutant 320 activity ".MyExpenses" at line 4 has been replaced as main activity by ".ManageMethods" at line 50
+Mutant 321: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant321/src//smali/org/totschnig/myexpenses/ExpensesDbAdapter.smali; InvalidSQLQuery in line { 2761 }
+	For mutant 321 SQL command have been replace with d4845ced662048ad9be0898c47157678
+Mutant 322: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant322/src//smali/org/totschnig/myexpenses/ExpensesDbAdapter.smali; InvalidSQLQuery in line { 1605 }
+	For mutant 322 SQL command have been replace with 41b73adc264049ce94749531566fdf57
+Mutant 323: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant323/src//smali/org/totschnig/myexpenses/MyExpenses.smali; DifferentActivityIntentDefinition in line { 3063 }
+	For mutant 323 component name at line 3063 has been change from "Lorg/totschnig/myexpenses/ExpenseEdit;" to "Lorg/totschnig/myexpenses/ManageParties;"
+Mutant 324: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant324/src//smali/org/totschnig/myexpenses/MyExpenses.smali; DifferentActivityIntentDefinition in line { 2866 }
+	For mutant 324 component name at line 2866 has been change from "Lorg/totschnig/myexpenses/AccountEdit;" to "Lorg/totschnig/myexpenses/ManageAccounts;"
+Mutant 325: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant325/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullIntent in line { 2868 }
+	For mutant 325 intent defined at lines 2868 has been defined as null
+Mutant 326: /home/estudiante/test/./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant326/src//smali/org/totschnig/myexpenses/MyExpenses.smali; NullIntent in line { 3065 }
+	For mutant 326 intent defined at lines 3065 has been defined as null
+Mutant 327: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant327/src//AndroidManifest.xml; InvalidLabel in line { 3 }
+	For mutant 327 activity label at line 3 has been change from "@string/app_name" to "a3b71ec102804b17b1fd9c9c8f9a7ed5"
+Mutant 328: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant328/src//res/values/strings.xml; WrongStringResource in line { 24 }
+	For mutant 328 the value of the string named "dialog_confirm_delete_template" at line 25 has been changed from "Really delete template \"%1$s\" ?" to "6c43e5328df74b72bc2fb3acec7d5fc2"
+Mutant 329: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant329/src//res/values/strings.xml; WrongStringResource in line { 23 }
+	For mutant 329 the value of the string named "description" at line 24 has been changed from "Description" to "32c24f71f03c48c5b3f7421426610c36"
+Mutant 330: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant330/src//res/values/strings.xml; WrongStringResource in line { 18 }
+	For mutant 330 the value of the string named "currency_not_iso4217" at line 19 has been changed from "%1$s is not defined in ISO 4217" to "5fd95e27698c40f8a7a0deee557e2593"
+Mutant 331: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant331/src//res/values/strings.xml; WrongStringResource in line { 8 }
+	For mutant 331 the value of the string named "amount" at line 9 has been changed from "Amount" to "c52f8b6ec06f4fc098632488193f00e9"
+Mutant 332: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant332/src//res/values/strings.xml; WrongStringResource in line { 11 }
+	For mutant 332 the value of the string named "backup_success" at line 12 has been changed from "Database and preferences successfully written to sdcard." to "31790a15f43846c68f3bcb771b690b45"
+Mutant 333: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant333/src//res/values/strings.xml; WrongStringResource in line { 15 }
+	For mutant 333 the value of the string named "comment" at line 16 has been changed from "Notes" to "9ef17102e6444272a523919e8f68dba2"
+Mutant 334: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant334/src//res/values/strings.xml; WrongStringResource in line { 6 }
+	For mutant 334 the value of the string named "account_type_asset" at line 7 has been changed from "Asset account" to "736518712e584f83ae466acd2b526e2d"
+Mutant 335: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant335/src//res/values/strings.xml; WrongStringResource in line { 17 }
+	For mutant 335 the value of the string named "currency" at line 18 has been changed from "Currency" to "e5170759396c4082af8bd5575a185079"
+Mutant 336: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant336/src//res/values/strings.xml; WrongStringResource in line { 12 }
+	For mutant 336 the value of the string named "button_continue" at line 13 has been changed from "Continue" to "cb87e06022aa4061a02d96bfcf4f9d39"
+Mutant 337: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant337/src//res/values/strings.xml; WrongStringResource in line { 26 }
+	For mutant 337 the value of the string named "dialog_title_select_import_source" at line 27 has been changed from "Pick a source for import" to "7756ca7834ce45d6818aeb217a2b9a35"
+Mutant 338: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant338/src//res/values/strings.xml; WrongStringResource in line { 13 }
+	For mutant 338 the value of the string named "category_already_defined" at line 14 has been changed from "Category %1$s already defined" to "12f9f3da402c4b118e2518ae06adcc21"
+Mutant 339: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant339/src//res/values/strings.xml; WrongStringResource in line { 10 }
+	For mutant 339 the value of the string named "backup_failure" at line 11 has been changed from "Backup to sdcard failed." to "61d9419df2ca45bb8289c1d5c2712bb0"
+Mutant 340: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant340/src//res/values/strings.xml; WrongStringResource in line { 9 }
+	For mutant 340 the value of the string named "app_name" at line 10 has been changed from "My Expenses" to "21fead4ed583454b99c5d407ca5e3e79"
+Mutant 341: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant341/src//res/values/strings.xml; WrongStringResource in line { 20 }
+	For mutant 341 the value of the string named "date" at line 21 has been changed from "Date" to "d0fd06672cdc4274a131be5f2dc2ecd9"
+Mutant 342: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant342/src//res/values/strings.xml; WrongStringResource in line { 21 }
+	For mutant 342 the value of the string named "date_time" at line 22 has been changed from "Date / Time" to "4e3223b49cec4dbb98df592ae35f753d"
+Mutant 343: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant343/src//res/values/strings.xml; WrongStringResource in line { 5 }
+	For mutant 343 the value of the string named "account_type_ccard" at line 6 has been changed from "Credit card" to "f0ef4c2478f94a09b39e5776326cb714"
+Mutant 344: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant344/src//res/values/strings.xml; WrongStringResource in line { 22 }
+	For mutant 344 the value of the string named "default_account_description" at line 23 has been changed from "This account was set up automatically during installation" to "11a903478f9b4e6aa8f25a8463149bb0"
+Mutant 345: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant345/src//res/values/strings.xml; WrongStringResource in line { 7 }
+	For mutant 345 the value of the string named "account_type_liability" at line 8 has been changed from "Liabilities account" to "4cbdc22e6d6e40efb9a833068bf880f3"
+Mutant 346: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant346/src//res/values/strings.xml; WrongStringResource in line { 3 }
+	For mutant 346 the value of the string named "account_type_cash" at line 4 has been changed from "Cash account" to "4595a103f5f64c00a0028e091ba720a8"
+Mutant 347: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant347/src//res/values/strings.xml; WrongStringResource in line { 25 }
+	For mutant 347 the value of the string named "dialog_title_select_account" at line 26 has been changed from "Pick an account" to "0c322533256c465baaefd1a1860d1c2a"
+Mutant 348: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant348/src//res/values/strings.xml; WrongStringResource in line { 4 }
+	For mutant 348 the value of the string named "account_type_bank" at line 5 has been changed from "Bank account" to "5f991da988074fcda8a9125e396d069c"
+Mutant 349: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant349/src//res/values/strings.xml; WrongStringResource in line { 14 }
+	For mutant 349 the value of the string named "category" at line 15 has been changed from "Category" to "5cd68f4fdcbb405986583010702e466e"
+Mutant 350: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant350/src//res/values/strings.xml; WrongStringResource in line { 19 }
+	For mutant 350 the value of the string named "current_balance" at line 20 has been changed from "Current balance" to "e8f3558f22024f21b83284172babe969"
+Mutant 351: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant351/src//res/values/strings.xml; WrongStringResource in line { 16 }
+	For mutant 351 the value of the string named "create_category" at line 17 has been changed from "Create new category" to "d06f577b9dad42b88ed5b037ea7d7586"
+Mutant 352: ./mutants/org.totschnig.myexpenses/rSW/org.totschnig.myexpenses-mutant352/src//res/values/strings.xml; WrongStringResource in line { 2 }
+	For mutant 352 the value of the string named "account" at line 3 has been changed from "Account" to "2c75d3e819134497b13a8d55da2ac240"

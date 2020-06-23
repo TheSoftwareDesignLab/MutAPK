@@ -1,0 +1,720 @@
+Mutant 1: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant1/src//smali/cri/sanity/util/Alert.smali; FindViewByIdReturnsNull in lines { 1488, 1492 }
+	For mutant 1 the element retrieved at line 1488 has been set to null
+Mutant 2: ./mutants/cri.sanity/rSW/cri.sanity-mutant2/src//AndroidManifest.xml; WrongMainActivity in line { 35 }
+	For mutant 2 activity ".ShortcutActivity" at line 35 has been replaced as main activity by ".screen.BlockerActivity" at line 24
+Mutant 3: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant3/src//smali/cri/sanity/util/CallFilter.smali; ClosingNullCursor in line { 670 }
+	For mutant 3 Database cursor at line 670 has been set to null before close() call
+Mutant 4: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant4/src//smali/cri/sanity/util/Alert.smali; InvalidIDFindView in line { 1486 }
+	For mutant 4 the id of the element retrieved at line 1488 has been set to a random value
+Mutant 5: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant5/src//smali/cri/sanity/EmmaInstrument/EmmaInstrumentation.smali; InvalidFilePath in line { 81 }
+	For mutant 5 the path of File at line 81 has been replaced by be29912289214075bc5e47dc23db1440
+Mutant 6: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant6/src//smali/cri/sanity/RecService.smali; InvalidFilePath in line { 796 }
+	For mutant 6 the path of File at line 796 has been replaced by ee4578bf640f413aa0f4f046de3f1c91
+Mutant 7: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant7/src//smali/cri/sanity/screen/AboutActivity.smali; InvalidKeyIntentPutExtra in line { 176 }
+	For mutant 7 extra key value at line 176 has been set to f9a61bd9e9c049c5af4e31a9627a3d01
+Mutant 8: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant8/src//smali/cri/sanity/screen/AboutActivity.smali; InvalidKeyIntentPutExtra in line { 189 }
+	For mutant 8 extra key value at line 189 has been set to 0cd4dba0e58a454bb7ebdc11cdc16c97
+Mutant 9: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant9/src//smali/cri/sanity/screen/AboutActivity.smali; InvalidKeyIntentPutExtra in line { 198 }
+	For mutant 9 extra key value at line 198 has been set to 16a616703eda4a878ce8bdc782b34660
+Mutant 10: ./mutants/cri.sanity/rSW/cri.sanity-mutant10/src//AndroidManifest.xml; MissingPermissionManifest in line { 96 }
+	For mutant 10 the lines between 97 and 97 have been deleted.
+Mutant 11: ./mutants/cri.sanity/rSW/cri.sanity-mutant11/src//AndroidManifest.xml; MissingPermissionManifest in line { 95 }
+	For mutant 11 the lines between 96 and 96 have been deleted.
+Mutant 12: ./mutants/cri.sanity/rSW/cri.sanity-mutant12/src//AndroidManifest.xml; MissingPermissionManifest in line { 94 }
+	For mutant 12 the lines between 95 and 95 have been deleted.
+Mutant 13: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant13/src//smali/cri/sanity/A.smali; NullBluetoothAdapter in lines { 162, 164 }
+	For mutant 13 Bluetooth Adapter has been set to null
+Mutant 14: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant14/src//smali/cri/sanity/RecService.smali; NullIntent in line { 1426 }
+	For mutant 14 intent defined at lines 1426 has been defined as null
+Mutant 15: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant15/src//smali/cri/sanity/RecService.smali; NullIntent in line { 995 }
+	For mutant 15 intent defined at lines 995 has been defined as null
+Mutant 16: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant16/src//smali/cri/sanity/RecService.smali; NullIntent in line { 1535 }
+	For mutant 16 intent defined at lines 1535 has been defined as null
+Mutant 17: ./mutants/cri.sanity/rSW/cri.sanity-mutant17/src//AndroidManifest.xml; InvalidLabel in line { 34 }
+	For mutant 17 activity label at line 34 has been change from "@string/app_shortcut" to "cea86e7a94634dc485e8a41040b3a2b6"
+Mutant 18: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant18/src//smali/cri/sanity/RecService.smali; DifferentActivityIntentDefinition in line { 1424 }
+	For mutant 18 component name at line 1424 has been change from "Lcri/sanity/RecService;" to "Lcri/sanity/screen/ContactsActivity;"
+Mutant 19: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant19/src//smali/cri/sanity/RecService.smali; DifferentActivityIntentDefinition in line { 993 }
+	For mutant 19 component name at line 993 has been change from "Lcri/sanity/RecService;" to "Lcri/sanity/screen/ProfileActivity;"
+Mutant 20: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant20/src//smali/cri/sanity/RecService.smali; DifferentActivityIntentDefinition in line { 1533 }
+	For mutant 20 component name at line 1533 has been change from "Lcri/sanity/RecService;" to "Lcri/sanity/screen/ProfileActivity;"
+Mutant 21: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant21/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 236 }
+	For mutant 21, 2 parameter of method append have been replaced with null
+Mutant 22: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant22/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 268 }
+	For mutant 22, 2 parameter of method setEntryValues have been replaced with null
+Mutant 23: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant23/src//smali/cri/sanity/screen/PrefixActivity$Pref.smali; NullMethodCallArgument in line { 102 }
+	For mutant 23, 2 parameter of method setTitle have been replaced with null
+Mutant 24: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant24/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 158 }
+	For mutant 24, 2 parameter of method post have been replaced with null
+Mutant 25: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant25/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1153 }
+	For mutant 25, 3 parameter of method exec have been replaced with null
+Mutant 26: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant26/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 328 }
+	For mutant 26, 3 parameter of method disallow have been replaced with null
+Mutant 27: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant27/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 69 }
+	For mutant 27, 4 parameter of method got have been replaced with null
+Mutant 28: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant28/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 363 }
+	For mutant 28, 2 parameter of method on have been replaced with null
+Mutant 29: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant29/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 100 }
+	For mutant 29, 3 parameter of method registerReceiver have been replaced with null
+Mutant 30: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant30/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1253 }
+	For mutant 30, 2 parameter of method exec have been replaced with null
+Mutant 31: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant31/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 68 }
+	For mutant 31, 2 parameter of method <init> have been replaced with null
+Mutant 32: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant32/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 305 }
+	For mutant 32, 2 parameter of method append have been replaced with null
+Mutant 33: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant33/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 161 }
+	For mutant 33, 3 parameter of method access$700 have been replaced with null
+Mutant 34: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant34/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 228 }
+	For mutant 34, 3 parameter of method putExtra have been replaced with null
+Mutant 35: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant35/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 237 }
+	For mutant 35, 2 parameter of method equals have been replaced with null
+Mutant 36: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant36/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 158 }
+	For mutant 36, 2 parameter of method append have been replaced with null
+Mutant 37: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant37/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 352 }
+	For mutant 37, 2 parameter of method <init> have been replaced with null
+Mutant 38: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant38/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 893 }
+	For mutant 38, 3 parameter of method putc have been replaced with null
+Mutant 39: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant39/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 375 }
+	For mutant 39, 2 parameter of method setVolumeLevels have been replaced with null
+Mutant 40: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant40/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 269 }
+	For mutant 40, 3 parameter of method <init> have been replaced with null
+Mutant 41: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant41/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 228 }
+	For mutant 41, 2 parameter of method choose have been replaced with null
+Mutant 42: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant42/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 113 }
+	For mutant 42, 2 parameter of method append have been replaced with null
+Mutant 43: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant43/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 107 }
+	For mutant 43, 2 parameter of method <init> have been replaced with null
+Mutant 44: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant44/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 299 }
+	For mutant 44, 2 parameter of method disallow have been replaced with null
+Mutant 45: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant45/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 997 }
+	For mutant 45, 3 parameter of method getService have been replaced with null
+Mutant 46: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant46/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 388 }
+	For mutant 46, 2 parameter of method <init> have been replaced with null
+Mutant 47: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant47/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 404 }
+	For mutant 47, 3 parameter of method setEnabled have been replaced with null
+Mutant 48: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant48/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 51 }
+	For mutant 48, 2 parameter of method setPersistent have been replaced with null
+Mutant 49: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant49/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 261 }
+	For mutant 49, 2 parameter of method setEntries have been replaced with null
+Mutant 50: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant50/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1356 }
+	For mutant 50, 3 parameter of method <init> have been replaced with null
+Mutant 51: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant51/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 933 }
+	For mutant 51, 2 parameter of method split have been replaced with null
+Mutant 52: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant52/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 948 }
+	For mutant 52, 2 parameter of method addnum have been replaced with null
+Mutant 53: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant53/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 408 }
+	For mutant 53, 2 parameter of method append have been replaced with null
+Mutant 54: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant54/src//smali/cri/sanity/util/Alert$Edited.smali; NullMethodCallArgument in line { 40 }
+	For mutant 54, 3 parameter of method on have been replaced with null
+Mutant 55: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant55/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 223 }
+	For mutant 55, 2 parameter of method equals have been replaced with null
+Mutant 56: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant56/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 80 }
+	For mutant 56, 2 parameter of method setSummary have been replaced with null
+Mutant 57: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant57/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1153 }
+	For mutant 57, 2 parameter of method exec have been replaced with null
+Mutant 58: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant58/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 362 }
+	For mutant 58, 2 parameter of method append have been replaced with null
+Mutant 59: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant59/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 221 }
+	For mutant 59, 3 parameter of method msg have been replaced with null
+Mutant 60: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant60/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 159 }
+	For mutant 60, 2 parameter of method post have been replaced with null
+Mutant 61: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant61/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1428 }
+	For mutant 61, 2 parameter of method startService have been replaced with null
+Mutant 62: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant62/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1116 }
+	For mutant 62, 3 parameter of method setLatestEventInfo have been replaced with null
+Mutant 63: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant63/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 417 }
+	For mutant 63, 2 parameter of method setEnabled have been replaced with null
+Mutant 64: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant64/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 311 }
+	For mutant 64, 2 parameter of method append have been replaced with null
+Mutant 65: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant65/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 210 }
+	For mutant 65, 2 parameter of method append have been replaced with null
+Mutant 66: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant66/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 282 }
+	For mutant 66, 2 parameter of method post have been replaced with null
+Mutant 67: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant67/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 338 }
+	For mutant 67, 2 parameter of method format have been replaced with null
+Mutant 68: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant68/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 129 }
+	For mutant 68, 2 parameter of method setOnPreferenceClickListener have been replaced with null
+Mutant 69: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant69/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 224 }
+	For mutant 69, 2 parameter of method append have been replaced with null
+Mutant 70: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant70/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 146 }
+	For mutant 70, 2 parameter of method append have been replaced with null
+Mutant 71: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant71/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 345 }
+	For mutant 71, 2 parameter of method pref have been replaced with null
+Mutant 72: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant72/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 115 }
+	For mutant 72, 2 parameter of method append have been replaced with null
+Mutant 73: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant73/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 77 }
+	For mutant 73, 2 parameter of method replace have been replaced with null
+Mutant 74: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant74/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 199 }
+	For mutant 74, 2 parameter of method append have been replaced with null
+Mutant 75: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant75/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1116 }
+	For mutant 75, 2 parameter of method setLatestEventInfo have been replaced with null
+Mutant 76: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant76/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 171 }
+	For mutant 76, 2 parameter of method <init> have been replaced with null
+Mutant 77: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant77/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 385 }
+	For mutant 77, 3 parameter of method wait have been replaced with null
+Mutant 78: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant78/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 259 }
+	For mutant 78, 2 parameter of method exec have been replaced with null
+Mutant 79: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant79/src//smali/cri/sanity/pref/PList.smali; NullMethodCallArgument in line { 175 }
+	For mutant 79, 2 parameter of method append have been replaced with null
+Mutant 80: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant80/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 387 }
+	For mutant 80, 2 parameter of method append have been replaced with null
+Mutant 81: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant81/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 43 }
+	For mutant 81, 2 parameter of method append have been replaced with null
+Mutant 82: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant82/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 337 }
+	For mutant 82, 2 parameter of method append have been replaced with null
+Mutant 83: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant83/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 991 }
+	For mutant 83, 2 parameter of method onOptionsItemSelected have been replaced with null
+Mutant 84: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant84/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 254 }
+	For mutant 84, 3 parameter of method <init> have been replaced with null
+Mutant 85: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant85/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 354 }
+	For mutant 85, 3 parameter of method on have been replaced with null
+Mutant 86: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant86/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1069 }
+	For mutant 86, 3 parameter of method setLatestEventInfo have been replaced with null
+Mutant 87: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant87/src//smali/cri/sanity/util/Alert$Edited.smali; NullMethodCallArgument in line { 54 }
+	For mutant 87, 2 parameter of method on have been replaced with null
+Mutant 88: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant88/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 630 }
+	For mutant 88, 3 parameter of method includes have been replaced with null
+Mutant 89: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant89/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 349 }
+	For mutant 89, 4 parameter of method msg have been replaced with null
+Mutant 90: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant90/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 186 }
+	For mutant 90, 2 parameter of method putExtra have been replaced with null
+Mutant 91: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant91/src//smali/cri/sanity/util/Blocker$2.smali; NullMethodCallArgument in line { 51 }
+	For mutant 91, 3 parameter of method setStreamMute have been replaced with null
+Mutant 92: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant92/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 173 }
+	For mutant 92, 2 parameter of method setType have been replaced with null
+Mutant 93: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant93/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 397 }
+	For mutant 93, 2 parameter of method <init> have been replaced with null
+Mutant 94: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant94/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 825 }
+	For mutant 94, 2 parameter of method pref have been replaced with null
+Mutant 95: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant95/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1537 }
+	For mutant 95, 2 parameter of method stopService have been replaced with null
+Mutant 96: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant96/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 109 }
+	For mutant 96, 2 parameter of method append have been replaced with null
+Mutant 97: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant97/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 476 }
+	For mutant 97, 2 parameter of method <init> have been replaced with null
+Mutant 98: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant98/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 814 }
+	For mutant 98, 2 parameter of method screener have been replaced with null
+Mutant 99: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant99/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 851 }
+	For mutant 99, 2 parameter of method getStringExtra have been replaced with null
+Mutant 100: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant100/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 92 }
+	For mutant 100, 2 parameter of method addnum have been replaced with null
+Mutant 101: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant101/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 328 }
+	For mutant 101, 2 parameter of method append have been replaced with null
+Mutant 102: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant102/src//smali/cri/sanity/util/Blocker$2.smali; NullMethodCallArgument in line { 48 }
+	For mutant 102, 2 parameter of method setMode have been replaced with null
+Mutant 103: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant103/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 503 }
+	For mutant 103, 2 parameter of method add have been replaced with null
+Mutant 104: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant104/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 431 }
+	For mutant 104, 2 parameter of method append have been replaced with null
+Mutant 105: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant105/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 363 }
+	For mutant 105, 3 parameter of method on have been replaced with null
+Mutant 106: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant106/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1426 }
+	For mutant 106, 3 parameter of method <init> have been replaced with null
+Mutant 107: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant107/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 331 }
+	For mutant 107, 2 parameter of method append have been replaced with null
+Mutant 108: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant108/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 892 }
+	For mutant 108, 2 parameter of method append have been replaced with null
+Mutant 109: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant109/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 150 }
+	For mutant 109, 2 parameter of method edit have been replaced with null
+Mutant 110: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant110/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 187 }
+	For mutant 110, 4 parameter of method access$1300 have been replaced with null
+Mutant 111: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant111/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 349 }
+	For mutant 111, 3 parameter of method msg have been replaced with null
+Mutant 112: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant112/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 372 }
+	For mutant 112, 3 parameter of method on have been replaced with null
+Mutant 113: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant113/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 156 }
+	For mutant 113, 3 parameter of method <init> have been replaced with null
+Mutant 114: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant114/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 997 }
+	For mutant 114, 2 parameter of method getService have been replaced with null
+Mutant 115: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant115/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 247 }
+	For mutant 115, 2 parameter of method <init> have been replaced with null
+Mutant 116: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant116/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 187 }
+	For mutant 116, 2 parameter of method access$1300 have been replaced with null
+Mutant 117: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant117/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 162 }
+	For mutant 117, 2 parameter of method <init> have been replaced with null
+Mutant 118: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant118/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 417 }
+	For mutant 118, 3 parameter of method setEnabled have been replaced with null
+Mutant 119: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant119/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 354 }
+	For mutant 119, 2 parameter of method on have been replaced with null
+Mutant 120: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant120/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 191 }
+	For mutant 120, 2 parameter of method startService have been replaced with null
+Mutant 121: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant121/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 284 }
+	For mutant 121, 3 parameter of method exec have been replaced with null
+Mutant 122: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant122/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 380 }
+	For mutant 122, 2 parameter of method append have been replaced with null
+Mutant 123: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant123/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 829 }
+	For mutant 123, 2 parameter of method endsWith have been replaced with null
+Mutant 124: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant124/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 372 }
+	For mutant 124, 2 parameter of method on have been replaced with null
+Mutant 125: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant125/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 817 }
+	For mutant 125, 2 parameter of method onCreate have been replaced with null
+Mutant 126: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant126/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1535 }
+	For mutant 126, 2 parameter of method <init> have been replaced with null
+Mutant 127: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant127/src//smali/cri/sanity/screen/PrefixActivity$Pref.smali; NullMethodCallArgument in line { 42 }
+	For mutant 127, 2 parameter of method setNum have been replaced with null
+Mutant 128: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant128/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 390 }
+	For mutant 128, 3 parameter of method on have been replaced with null
+Mutant 129: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant129/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 205 }
+	For mutant 129, 2 parameter of method append have been replaced with null
+Mutant 130: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant130/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 171 }
+	For mutant 130, 3 parameter of method <init> have been replaced with null
+Mutant 131: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant131/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 308 }
+	For mutant 131, 2 parameter of method allow have been replaced with null
+Mutant 132: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant132/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 177 }
+	For mutant 132, 2 parameter of method put have been replaced with null
+Mutant 133: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant133/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 437 }
+	For mutant 133, 2 parameter of method post have been replaced with null
+Mutant 134: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant134/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1222 }
+	For mutant 134, 2 parameter of method max have been replaced with null
+Mutant 135: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant135/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 548 }
+	For mutant 135, 2 parameter of method format have been replaced with null
+Mutant 136: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant136/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1091 }
+	For mutant 136, 3 parameter of method notify have been replaced with null
+Mutant 137: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant137/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 66 }
+	For mutant 137, 2 parameter of method setDependency have been replaced with null
+Mutant 138: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant138/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 63 }
+	For mutant 138, 2 parameter of method <init> have been replaced with null
+Mutant 139: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant139/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 244 }
+	For mutant 139, 2 parameter of method setVolumeLevels have been replaced with null
+Mutant 140: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant140/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 299 }
+	For mutant 140, 3 parameter of method disallow have been replaced with null
+Mutant 141: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant141/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 893 }
+	For mutant 141, 2 parameter of method putc have been replaced with null
+Mutant 142: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant142/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 260 }
+	For mutant 142, 2 parameter of method append have been replaced with null
+Mutant 143: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant143/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 156 }
+	For mutant 143, 2 parameter of method <init> have been replaced with null
+Mutant 144: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant144/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 796 }
+	For mutant 144, 2 parameter of method <init> have been replaced with null
+Mutant 145: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant145/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 120 }
+	For mutant 145, 3 parameter of method startActivityForResult have been replaced with null
+Mutant 146: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant146/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 191 }
+	For mutant 146, 2 parameter of method setTitle have been replaced with null
+Mutant 147: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant147/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 237 }
+	For mutant 147, 2 parameter of method createChooser have been replaced with null
+Mutant 148: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant148/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 90 }
+	For mutant 148, 2 parameter of method replace have been replaced with null
+Mutant 149: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant149/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 187 }
+	For mutant 149, 3 parameter of method access$1300 have been replaced with null
+Mutant 150: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant150/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 279 }
+	For mutant 150, 2 parameter of method append have been replaced with null
+Mutant 151: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant151/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 117 }
+	For mutant 151, 2 parameter of method append have been replaced with null
+Mutant 152: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant152/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 218 }
+	For mutant 152, 2 parameter of method append have been replaced with null
+Mutant 153: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant153/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 228 }
+	For mutant 153, 3 parameter of method choose have been replaced with null
+Mutant 154: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant154/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 349 }
+	For mutant 154, 2 parameter of method msg have been replaced with null
+Mutant 155: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant155/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 630 }
+	For mutant 155, 2 parameter of method includes have been replaced with null
+Mutant 156: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant156/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1091 }
+	For mutant 156, 2 parameter of method notify have been replaced with null
+Mutant 157: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant157/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 269 }
+	For mutant 157, 2 parameter of method <init> have been replaced with null
+Mutant 158: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant158/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 284 }
+	For mutant 158, 2 parameter of method exec have been replaced with null
+Mutant 159: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant159/src//smali/cri/sanity/PhoneListener$11.smali; NullMethodCallArgument in line { 46 }
+	For mutant 159, 2 parameter of method access$800 have been replaced with null
+Mutant 160: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant160/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1069 }
+	For mutant 160, 4 parameter of method setLatestEventInfo have been replaced with null
+Mutant 161: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant161/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 273 }
+	For mutant 161, 2 parameter of method append have been replaced with null
+Mutant 162: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant162/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 380 }
+	For mutant 162, 2 parameter of method pref have been replaced with null
+Mutant 163: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant163/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 57 }
+	For mutant 163, 2 parameter of method getStreamMaxVolume have been replaced with null
+Mutant 164: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant164/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 168 }
+	For mutant 164, 2 parameter of method setFlags have been replaced with null
+Mutant 165: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant165/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 43 }
+	For mutant 165, 2 parameter of method <init> have been replaced with null
+Mutant 166: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant166/src//smali/cri/sanity/screen/PrefixActivity$Pref.smali; NullMethodCallArgument in line { 39 }
+	For mutant 166, 2 parameter of method setPersistent have been replaced with null
+Mutant 167: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant167/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 318 }
+	For mutant 167, 2 parameter of method disallow have been replaced with null
+Mutant 168: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant168/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 365 }
+	For mutant 168, 2 parameter of method pref have been replaced with null
+Mutant 169: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant169/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 399 }
+	For mutant 169, 3 parameter of method on have been replaced with null
+Mutant 170: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant170/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 997 }
+	For mutant 170, 4 parameter of method getService have been replaced with null
+Mutant 171: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant171/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 970 }
+	For mutant 171, 3 parameter of method inflate have been replaced with null
+Mutant 172: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant172/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 168 }
+	For mutant 172, 2 parameter of method append have been replaced with null
+Mutant 173: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant173/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 189 }
+	For mutant 173, 2 parameter of method <init> have been replaced with null
+Mutant 174: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant174/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1426 }
+	For mutant 174, 2 parameter of method <init> have been replaced with null
+Mutant 175: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant175/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 150 }
+	For mutant 175, 3 parameter of method edit have been replaced with null
+Mutant 176: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant176/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 263 }
+	For mutant 176, 2 parameter of method startActivity have been replaced with null
+Mutant 177: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant177/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 278 }
+	For mutant 177, 2 parameter of method setInputType have been replaced with null
+Mutant 178: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant178/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 837 }
+	For mutant 178, 2 parameter of method endsWith have been replaced with null
+Mutant 179: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant179/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1116 }
+	For mutant 179, 5 parameter of method setLatestEventInfo have been replaced with null
+Mutant 180: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant180/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 271 }
+	For mutant 180, 2 parameter of method edit have been replaced with null
+Mutant 181: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant181/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 842 }
+	For mutant 181, 2 parameter of method getStringExtra have been replaced with null
+Mutant 182: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant182/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 498 }
+	For mutant 182, 2 parameter of method setChecked have been replaced with null
+Mutant 183: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant183/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 886 }
+	For mutant 183, 2 parameter of method append have been replaced with null
+Mutant 184: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant184/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 381 }
+	For mutant 184, 2 parameter of method on have been replaced with null
+Mutant 185: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant185/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 249 }
+	For mutant 185, 2 parameter of method choose have been replaced with null
+Mutant 186: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant186/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 115 }
+	For mutant 186, 3 parameter of method setClassName have been replaced with null
+Mutant 187: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant187/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 77 }
+	For mutant 187, 3 parameter of method replace have been replaced with null
+Mutant 188: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant188/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 390 }
+	For mutant 188, 2 parameter of method setVolumeLevels have been replaced with null
+Mutant 189: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant189/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 114 }
+	For mutant 189, 2 parameter of method getAccountsByType have been replaced with null
+Mutant 190: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant190/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 269 }
+	For mutant 190, 4 parameter of method <init> have been replaced with null
+Mutant 191: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant191/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 204 }
+	For mutant 191, 2 parameter of method onCreate have been replaced with null
+Mutant 192: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant192/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 98 }
+	For mutant 192, 2 parameter of method <init> have been replaced with null
+Mutant 193: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant193/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 223 }
+	For mutant 193, 3 parameter of method exec have been replaced with null
+Mutant 194: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant194/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 70 }
+	For mutant 194, 2 parameter of method post have been replaced with null
+Mutant 195: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant195/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 490 }
+	For mutant 195, 2 parameter of method getPreference have been replaced with null
+Mutant 196: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant196/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 100 }
+	For mutant 196, 2 parameter of method registerReceiver have been replaced with null
+Mutant 197: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant197/src//smali/cri/sanity/util/Task$Pool.smali; NullMethodCallArgument in line { 25 }
+	For mutant 197, 2 parameter of method <init> have been replaced with null
+Mutant 198: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant198/src//smali/cri/sanity/screen/ContactsActivity$Async.smali; NullMethodCallArgument in line { 41 }
+	For mutant 198, 2 parameter of method <init> have been replaced with null
+Mutant 199: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant199/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 249 }
+	For mutant 199, 3 parameter of method choose have been replaced with null
+Mutant 200: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant200/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 223 }
+	For mutant 200, 2 parameter of method exec have been replaced with null
+Mutant 201: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant201/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 260 }
+	For mutant 201, 2 parameter of method setFlags have been replaced with null
+Mutant 202: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant202/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 374 }
+	For mutant 202, 2 parameter of method append have been replaced with null
+Mutant 203: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant203/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1535 }
+	For mutant 203, 3 parameter of method <init> have been replaced with null
+Mutant 204: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant204/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 182 }
+	For mutant 204, 2 parameter of method addPreference have been replaced with null
+Mutant 205: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant205/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 54 }
+	For mutant 205, 2 parameter of method setOnPreferenceClickListener have been replaced with null
+Mutant 206: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant206/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 198 }
+	For mutant 206, 2 parameter of method access$1202 have been replaced with null
+Mutant 207: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant207/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 584 }
+	For mutant 207, 2 parameter of method setChecked have been replaced with null
+Mutant 208: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant208/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1356 }
+	For mutant 208, 2 parameter of method <init> have been replaced with null
+Mutant 209: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant209/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 814 }
+	For mutant 209, 3 parameter of method screener have been replaced with null
+Mutant 210: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant210/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 221 }
+	For mutant 210, 4 parameter of method msg have been replaced with null
+Mutant 211: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant211/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 293 }
+	For mutant 211, 3 parameter of method getBooleanExtra have been replaced with null
+Mutant 212: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant212/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 378 }
+	For mutant 212, 2 parameter of method append have been replaced with null
+Mutant 213: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant213/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 120 }
+	For mutant 213, 2 parameter of method startActivityForResult have been replaced with null
+Mutant 214: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant214/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 882 }
+	For mutant 214, 2 parameter of method append have been replaced with null
+Mutant 215: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant215/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 379 }
+	For mutant 215, 2 parameter of method <init> have been replaced with null
+Mutant 216: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant216/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 441 }
+	For mutant 216, 2 parameter of method append have been replaced with null
+Mutant 217: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant217/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 404 }
+	For mutant 217, 2 parameter of method setEnabled have been replaced with null
+Mutant 218: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant218/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 69 }
+	For mutant 218, 3 parameter of method got have been replaced with null
+Mutant 219: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant219/src//smali/cri/sanity/util/Blocker$2.smali; NullMethodCallArgument in line { 51 }
+	For mutant 219, 2 parameter of method setStreamMute have been replaced with null
+Mutant 220: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant220/src//smali/cri/sanity/A$Async.smali; NullMethodCallArgument in line { 48 }
+	For mutant 220, 2 parameter of method doInBackground have been replaced with null
+Mutant 221: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant221/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 216 }
+	For mutant 221, 2 parameter of method append have been replaced with null
+Mutant 222: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant222/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 267 }
+	For mutant 222, 3 parameter of method exec have been replaced with null
+Mutant 223: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant223/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1069 }
+	For mutant 223, 2 parameter of method setLatestEventInfo have been replaced with null
+Mutant 224: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant224/src//smali/cri/sanity/screen/PrefixActivity$Pref.smali; NullMethodCallArgument in line { 34 }
+	For mutant 224, 2 parameter of method <init> have been replaced with null
+Mutant 225: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant225/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 186 }
+	For mutant 225, 3 parameter of method putExtra have been replaced with null
+Mutant 226: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant226/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 121 }
+	For mutant 226, 2 parameter of method append have been replaced with null
+Mutant 227: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant227/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 297 }
+	For mutant 227, 2 parameter of method append have been replaced with null
+Mutant 228: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant228/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 247 }
+	For mutant 228, 3 parameter of method <init> have been replaced with null
+Mutant 229: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant229/src//smali/cri/sanity/util/Blocker$2.smali; NullMethodCallArgument in line { 56 }
+	For mutant 229, 2 parameter of method setStreamSolo have been replaced with null
+Mutant 230: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant230/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 385 }
+	For mutant 230, 2 parameter of method wait have been replaced with null
+Mutant 231: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant231/src//smali/cri/sanity/util/Blocker$2.smali; NullMethodCallArgument in line { 59 }
+	For mutant 231, 2 parameter of method setMicrophoneMute have been replaced with null
+Mutant 232: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant232/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 995 }
+	For mutant 232, 3 parameter of method <init> have been replaced with null
+Mutant 233: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant233/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 381 }
+	For mutant 233, 3 parameter of method on have been replaced with null
+Mutant 234: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant234/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 435 }
+	For mutant 234, 2 parameter of method append have been replaced with null
+Mutant 235: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant235/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 970 }
+	For mutant 235, 2 parameter of method inflate have been replaced with null
+Mutant 236: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant236/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 115 }
+	For mutant 236, 2 parameter of method setClassName have been replaced with null
+Mutant 237: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant237/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 398 }
+	For mutant 237, 2 parameter of method unregisterReceiver have been replaced with null
+Mutant 238: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant238/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 345 }
+	For mutant 238, 2 parameter of method <init> have been replaced with null
+Mutant 239: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant239/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 230 }
+	For mutant 239, 2 parameter of method append have been replaced with null
+Mutant 240: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant240/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 399 }
+	For mutant 240, 2 parameter of method on have been replaced with null
+Mutant 241: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant241/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 532 }
+	For mutant 241, 2 parameter of method append have been replaced with null
+Mutant 242: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant242/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1116 }
+	For mutant 242, 4 parameter of method setLatestEventInfo have been replaced with null
+Mutant 243: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant243/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 322 }
+	For mutant 243, 2 parameter of method append have been replaced with null
+Mutant 244: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant244/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 291 }
+	For mutant 244, 2 parameter of method onCreate have been replaced with null
+Mutant 245: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant245/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 370 }
+	For mutant 245, 2 parameter of method <init> have been replaced with null
+Mutant 246: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant246/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 821 }
+	For mutant 246, 2 parameter of method startsWith have been replaced with null
+Mutant 247: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant247/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 221 }
+	For mutant 247, 2 parameter of method msg have been replaced with null
+Mutant 248: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant248/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 177 }
+	For mutant 248, 3 parameter of method put have been replaced with null
+Mutant 249: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant249/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 259 }
+	For mutant 249, 3 parameter of method exec have been replaced with null
+Mutant 250: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant250/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 876 }
+	For mutant 250, 2 parameter of method append have been replaced with null
+Mutant 251: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant251/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 46 }
+	For mutant 251, 2 parameter of method <init> have been replaced with null
+Mutant 252: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant252/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 214 }
+	For mutant 252, 2 parameter of method <init> have been replaced with null
+Mutant 253: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant253/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 900 }
+	For mutant 253, 2 parameter of method setTitle have been replaced with null
+Mutant 254: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant254/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1069 }
+	For mutant 254, 5 parameter of method setLatestEventInfo have been replaced with null
+Mutant 255: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant255/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 351 }
+	For mutant 255, 2 parameter of method setVolumeLevels have been replaced with null
+Mutant 256: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant256/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 374 }
+	For mutant 256, 2 parameter of method append have been replaced with null
+Mutant 257: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant257/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 271 }
+	For mutant 257, 3 parameter of method edit have been replaced with null
+Mutant 258: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant258/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 69 }
+	For mutant 258, 2 parameter of method got have been replaced with null
+Mutant 259: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant259/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 1253 }
+	For mutant 259, 3 parameter of method exec have been replaced with null
+Mutant 260: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant260/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 267 }
+	For mutant 260, 2 parameter of method exec have been replaced with null
+Mutant 261: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant261/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 90 }
+	For mutant 261, 3 parameter of method replace have been replaced with null
+Mutant 262: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant262/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 328 }
+	For mutant 262, 2 parameter of method disallow have been replaced with null
+Mutant 263: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant263/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 226 }
+	For mutant 263, 2 parameter of method <init> have been replaced with null
+Mutant 264: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant264/src//smali/cri/sanity/util/License.smali; NullMethodCallArgument in line { 318 }
+	For mutant 264, 3 parameter of method disallow have been replaced with null
+Mutant 265: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant265/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 228 }
+	For mutant 265, 2 parameter of method putExtra have been replaced with null
+Mutant 266: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant266/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 37 }
+	For mutant 266, 2 parameter of method append have been replaced with null
+Mutant 267: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant267/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 161 }
+	For mutant 267, 4 parameter of method access$700 have been replaced with null
+Mutant 268: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant268/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 131 }
+	For mutant 268, 2 parameter of method append have been replaced with null
+Mutant 269: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant269/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 291 }
+	For mutant 269, 2 parameter of method append have been replaced with null
+Mutant 270: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant270/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 144 }
+	For mutant 270, 2 parameter of method add have been replaced with null
+Mutant 271: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant271/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 152 }
+	For mutant 271, 2 parameter of method append have been replaced with null
+Mutant 272: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant272/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 538 }
+	For mutant 272, 2 parameter of method append have been replaced with null
+Mutant 273: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant273/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 161 }
+	For mutant 273, 2 parameter of method access$700 have been replaced with null
+Mutant 274: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant274/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 345 }
+	For mutant 274, 2 parameter of method onCreate have been replaced with null
+Mutant 275: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant275/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 61 }
+	For mutant 275, 2 parameter of method addPreference have been replaced with null
+Mutant 276: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant276/src//smali/cri/sanity/screen/VolumeActivity.smali; NullMethodCallArgument in line { 431 }
+	For mutant 276, 2 parameter of method fullOnly have been replaced with null
+Mutant 277: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant277/src//smali/cri/sanity/screen/PrefixActivity$Pref.smali; NullMethodCallArgument in line { 71 }
+	For mutant 277, 2 parameter of method setNum have been replaced with null
+Mutant 278: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant278/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 148 }
+	For mutant 278, 2 parameter of method <init> have been replaced with null
+Mutant 279: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant279/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 107 }
+	For mutant 279, 2 parameter of method append have been replaced with null
+Mutant 280: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant280/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 77 }
+	For mutant 280, 2 parameter of method setTitle have been replaced with null
+Mutant 281: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant281/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 195 }
+	For mutant 281, 3 parameter of method putExtra have been replaced with null
+Mutant 282: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant282/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 293 }
+	For mutant 282, 2 parameter of method getBooleanExtra have been replaced with null
+Mutant 283: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant283/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 361 }
+	For mutant 283, 2 parameter of method <init> have been replaced with null
+Mutant 284: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant284/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 254 }
+	For mutant 284, 2 parameter of method <init> have been replaced with null
+Mutant 285: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant285/src//smali/cri/sanity/util/Blocker$2.smali; NullMethodCallArgument in line { 56 }
+	For mutant 285, 3 parameter of method setStreamSolo have been replaced with null
+Mutant 286: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant286/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 332 }
+	For mutant 286, 2 parameter of method enable have been replaced with null
+Mutant 287: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant287/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 316 }
+	For mutant 287, 2 parameter of method getIntExtra have been replaced with null
+Mutant 288: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant288/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 157 }
+	For mutant 288, 2 parameter of method setInputType have been replaced with null
+Mutant 289: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant289/src//smali/cri/sanity/util/WifiTracker.smali; NullMethodCallArgument in line { 316 }
+	For mutant 289, 3 parameter of method getIntExtra have been replaced with null
+Mutant 290: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant290/src//smali/cri/sanity/screen/PrefixActivity$Pref.smali; NullMethodCallArgument in line { 45 }
+	For mutant 290, 2 parameter of method setOnPreferenceChangeListener have been replaced with null
+Mutant 291: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant291/src//smali/cri/sanity/screen/PrefixActivity.smali; NullMethodCallArgument in line { 402 }
+	For mutant 291, 2 parameter of method append have been replaced with null
+Mutant 292: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant292/src//smali/cri/sanity/screen/CallHistoryActivity$Pref.smali; NullMethodCallArgument in line { 89 }
+	For mutant 292, 2 parameter of method setSelectable have been replaced with null
+Mutant 293: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant293/src//smali/cri/sanity/util/Alert$Edited.smali; NullMethodCallArgument in line { 40 }
+	For mutant 293, 2 parameter of method on have been replaced with null
+Mutant 294: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant294/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 995 }
+	For mutant 294, 2 parameter of method <init> have been replaced with null
+Mutant 295: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant295/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 241 }
+	For mutant 295, 2 parameter of method startActivity have been replaced with null
+Mutant 296: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant296/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 390 }
+	For mutant 296, 2 parameter of method on have been replaced with null
+Mutant 297: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant297/src//smali/cri/sanity/RecService.smali; NullMethodCallArgument in line { 630 }
+	For mutant 297, 4 parameter of method includes have been replaced with null
+Mutant 298: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant298/src//smali/cri/sanity/BlankActivity.smali; NullMethodCallArgument in line { 478 }
+	For mutant 298, 2 parameter of method post have been replaced with null
+Mutant 299: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant299/src//smali/cri/sanity/screen/AboutActivity.smali; NullMethodCallArgument in line { 195 }
+	For mutant 299, 2 parameter of method putExtra have been replaced with null
+Mutant 300: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant300/src//smali/cri/sanity/screen/DateTimeActivity$Pref.smali; NullMethodCallArgument in line { 69 }
+	For mutant 300, 5 parameter of method got have been replaced with null
+Mutant 301: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant301/src//smali/cri/sanity/screen/PrefixActivity.smali; LengthyGUICreation in line { 795 }
+	For mutant 301 a large delay has been injected after GUI Creation at line 795
+Mutant 302: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant302/src//smali/cri/sanity/screen/VolumeActivity.smali; LengthyGUICreation in line { 279 }
+	For mutant 302 a large delay has been injected after GUI Creation at line 279
+Mutant 303: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant303/src//smali/cri/sanity/screen/AboutActivity.smali; LengthyGUICreation in line { 329 }
+	For mutant 303 a large delay has been injected after GUI Creation at line 329
+Mutant 304: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant304/src//smali/cri/sanity/screen/AboutActivity.smali; NullValueIntentPutExtra in line { 195 }
+	For mutant 304 extra intent value at line 195 has been set to 'new Parcelable[0]'
+Mutant 305: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant305/src//smali/cri/sanity/screen/AboutActivity.smali; NullValueIntentPutExtra in line { 186 }
+	For mutant 305 extra intent value at line 186 has been set to 'new Parcelable[0]'
+Mutant 306: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant306/src//smali/cri/sanity/screen/AboutActivity.smali; NullValueIntentPutExtra in line { 228 }
+	For mutant 306 extra intent value at line 228 has been set to 'new Parcelable[0]'
+Mutant 307: ./mutants/cri.sanity/rSW/cri.sanity-mutant307/src//AndroidManifest.xml; ActivityNotDefined in line { 8 }
+	For mutant 307 the lines between 9 and 9 have been deleted.
+Mutant 308: ./mutants/cri.sanity/rSW/cri.sanity-mutant308/src//AndroidManifest.xml; ActivityNotDefined in line { 2 }
+	For mutant 308 the lines between 3 and 8 have been deleted.
+Mutant 309: ./mutants/cri.sanity/rSW/cri.sanity-mutant309/src//AndroidManifest.xml; ActivityNotDefined in line { 9 }
+	For mutant 309 the lines between 10 and 10 have been deleted.
+Mutant 310: ./mutants/cri.sanity/rSW/cri.sanity-mutant310/src//AndroidManifest.xml; InvalidActivityPATH in line { 8 }
+	For mutant 310 activity name at line 8 has been change from ".screen.GeneralActivity" to ".scren.GeneralActivity"
+Mutant 311: ./mutants/cri.sanity/rSW/cri.sanity-mutant311/src//AndroidManifest.xml; InvalidActivityPATH in line { 2 }
+	For mutant 311 activity name at line 2 has been change from ".MainActivity" to ".MainActiivty"
+Mutant 312: ./mutants/cri.sanity/rSW/cri.sanity-mutant312/src//AndroidManifest.xml; InvalidActivityPATH in line { 9 }
+	For mutant 312 activity name at line 9 has been change from ".screen.DevicesActivity" to ".scrDen.eevicesActivity"
+Mutant 313: ./mutants/cri.sanity/rSW/cri.sanity-mutant313/src//res/values/strings.xml; WrongStringResource in line { 33 }
+	For mutant 313 the value of the string named "backup" at line 34 has been changed from "Backup" to "03204326d0744a7fb8c7ade495813626"
+Mutant 314: ./mutants/cri.sanity/rSW/cri.sanity-mutant314/src//res/values/strings.xml; WrongStringResource in line { 18 }
+	For mutant 314 the value of the string named "addnew" at line 19 has been changed from "New" to "367e7ea2cd654c629ee7295c44546908"
+Mutant 315: ./mutants/cri.sanity/rSW/cri.sanity-mutant315/src//res/values/strings.xml; WrongStringResource in line { 8 }
+	For mutant 315 the value of the string named "no" at line 9 has been changed from "No" to "40a2439237fa48edaabba9bffdd212b9"
+Mutant 316: ./mutants/cri.sanity/rSW/cri.sanity-mutant316/src//res/values/strings.xml; WrongStringResource in line { 31 }
+	For mutant 316 the value of the string named "search" at line 32 has been changed from "Search" to "941169a13597448ebf17873010bbf1a4"
+Mutant 317: ./mutants/cri.sanity/rSW/cri.sanity-mutant317/src//res/values/strings.xml; WrongStringResource in line { 48 }
+	For mutant 317 the value of the string named "view_contact" at line 49 has been changed from "View contact" to "75914f6095b049988566073dfdca7615"
+Mutant 318: ./mutants/cri.sanity/rSW/cri.sanity-mutant318/src//res/values/strings.xml; WrongStringResource in line { 32 }
+	For mutant 318 the value of the string named "help" at line 33 has been changed from "Help" to "ff638ee49d454c3e8a5cdd44dbb91359"
+Mutant 319: ./mutants/cri.sanity/rSW/cri.sanity-mutant319/src//res/values/strings.xml; WrongStringResource in line { 43 }
+	For mutant 319 the value of the string named "callog" at line 44 has been changed from "Call Log" to "0110433cbeac4a7ab3268424b4325da1"
+Mutant 320: ./mutants/cri.sanity/rSW/cri.sanity-mutant320/src//res/values/strings.xml; WrongStringResource in line { 14 }
+	For mutant 320 the value of the string named "err" at line 15 has been changed from "Error" to "323b1c4dbdeb485b82173dab6570f9ee"
+Mutant 321: ./mutants/cri.sanity/rSW/cri.sanity-mutant321/src//res/values/strings.xml; WrongStringResource in line { 47 }
+	For mutant 321 the value of the string named "contact" at line 48 has been changed from "Contact" to "336fde44696c4bd496c304d1c864151a"
+Mutant 322: ./mutants/cri.sanity/rSW/cri.sanity-mutant322/src//res/values/strings.xml; WrongStringResource in line { 20 }
+	For mutant 322 the value of the string named "open" at line 21 has been changed from "Open" to "176277f3b0624896b998b20bdef4ddce"
+Mutant 323: ./mutants/cri.sanity/rSW/cri.sanity-mutant323/src//res/values/strings.xml; WrongStringResource in line { 42 }
+	For mutant 323 the value of the string named "announce" at line 43 has been changed from "Announcement" to "e997f0f336d74b769a699df8c9313407"
+Mutant 324: ./mutants/cri.sanity/rSW/cri.sanity-mutant324/src//res/values/strings.xml; WrongStringResource in line { 27 }
+	For mutant 324 the value of the string named "call_in" at line 28 has been changed from "incoming" to "034e55a4e1b349ffbad2f8830cb7708c"
+Mutant 325: ./mutants/cri.sanity/rSW/cri.sanity-mutant325/src//res/values/strings.xml; WrongStringResource in line { 17 }
+	For mutant 325 the value of the string named "active_prf" at line 18 has been changed from "ACTIVE Profile" to "9a077b40db7f4717ba706f7a9336c9bf"
+Mutant 326: ./mutants/cri.sanity/rSW/cri.sanity-mutant326/src//res/values/strings.xml; WrongStringResource in line { 23 }
+	For mutant 326 the value of the string named "del" at line 24 has been changed from "Delete" to "917d4446f67d4c618d88b50a2493c73d"
+Mutant 327: ./mutants/cri.sanity/rSW/cri.sanity-mutant327/src//res/values/strings.xml; WrongStringResource in line { 4 }
+	For mutant 327 the value of the string named "app_shortcut" at line 5 has been changed from "Sanity - Shortcut" to "cac9d41a1cb74d66b075932dccdd1d1a"
+Mutant 328: ./mutants/cri.sanity/rSW/cri.sanity-mutant328/src//res/values/strings.xml; WrongStringResource in line { 10 }
+	For mutant 328 the value of the string named "min" at line 11 has been changed from "Minimum" to "3bee3321b1a44b6bbceb8b4fc43727fe"
+Mutant 329: ./mutants/cri.sanity/rSW/cri.sanity-mutant329/src//res/values/strings.xml; WrongStringResource in line { 38 }
+	For mutant 329 the value of the string named "prefix" at line 39 has been changed from "Prefix" to "2004d5018b21483d92587c15b71d34d3"
+Mutant 330: ./mutants/cri.sanity/rSW/cri.sanity-mutant330/src//res/values/strings.xml; WrongStringResource in line { 6 }
+	For mutant 330 the value of the string named "canc" at line 7 has been changed from "Cancel" to "3eecca6239d347db8445e7cc73a08f9c"
+Mutant 331: ./mutants/cri.sanity/rSW/cri.sanity-mutant331/src//res/values/strings.xml; WrongStringResource in line { 39 }
+	For mutant 331 the value of the string named "suffix" at line 40 has been changed from "Suffix" to "033b8894cd314d69b722295d34d3c1f8"
+Mutant 332: ./mutants/cri.sanity/rSW/cri.sanity-mutant332/src//res/values/strings.xml; WrongStringResource in line { 35 }
+	For mutant 332 the value of the string named "show" at line 36 has been changed from "Show" to "ed14fbd66af0464683609c7ac707bebb"
+Mutant 333: ./mutants/cri.sanity/rSW/cri.sanity-mutant333/src//res/values/strings.xml; WrongStringResource in line { 24 }
+	For mutant 333 the value of the string named "selall" at line 25 has been changed from "Select all" to "ee0c859663fd4035bbdfd1dd78fecee8"
+Mutant 334: ./mutants/cri.sanity/rSW/cri.sanity-mutant334/src//res/values/strings.xml; WrongStringResource in line { 26 }
+	For mutant 334 the value of the string named "full_only" at line 27 has been changed from "Available only in the Donate version" to "9d8717f2e2d54c2593d131ae0098f308"
+Mutant 335: ./mutants/cri.sanity/rSW/cri.sanity-mutant335/src//res/values/strings.xml; WrongStringResource in line { 34 }
+	For mutant 335 the value of the string named "restore" at line 35 has been changed from "Restore" to "7fc72b23ae3643c5bf5f673307824af3"
+Mutant 336: ./mutants/cri.sanity/rSW/cri.sanity-mutant336/src//res/values/strings.xml; WrongStringResource in line { 19 }
+	For mutant 336 the value of the string named "rename" at line 20 has been changed from "Rename" to "4f5f5e27e69045e09d0e8a8502850025"
+Mutant 337: ./mutants/cri.sanity/rSW/cri.sanity-mutant337/src//res/values/strings.xml; WrongStringResource in line { 12 }
+	For mutant 337 the value of the string named "level" at line 13 has been changed from "Level" to "35ee1a794a2a49e79fd6111d655db517"
+Mutant 338: ./mutants/cri.sanity/rSW/cri.sanity-mutant338/src//res/values/strings.xml; WrongStringResource in line { 41 }
+	For mutant 338 the value of the string named "sysgroup" at line 42 has been changed from "system group" to "6c6396b77239433ba109de95d6f336e4"
+Mutant 339: ./mutants/cri.sanity/rSW/cri.sanity-mutant339/src//res/values/strings.xml; WrongStringResource in line { 45 }
+	For mutant 339 the value of the string named "call" at line 46 has been changed from "Call" to "d725f22586a143e68a06e32403c06ef1"
+Mutant 340: ./mutants/cri.sanity/rSW/cri.sanity-mutant340/src//res/values/strings.xml; WrongStringResource in line { 3 }
+	For mutant 340 the value of the string named "app_desc" at line 4 has been changed from "Personal assistant during phone calls." to "4fd5f5d9b7544b019bd98f764a4526fe"
+Mutant 341: ./mutants/cri.sanity/rSW/cri.sanity-mutant341/src//res/values/strings.xml; WrongStringResource in line { 5 }
+	For mutant 341 the value of the string named "ok" at line 6 has been changed from "Ok" to "54121a21c92c432b80679f2790cc68bf"
+Mutant 342: ./mutants/cri.sanity/rSW/cri.sanity-mutant342/src//res/values/strings.xml; WrongStringResource in line { 7 }
+	For mutant 342 the value of the string named "yes" at line 8 has been changed from "Yes" to "cabd8163a9754b4c9e0f2edda18ab004"
+Mutant 343: ./mutants/cri.sanity/rSW/cri.sanity-mutant343/src//res/values/strings.xml; WrongStringResource in line { 9 }
+	For mutant 343 the value of the string named "full" at line 10 has been changed from "Full" to "47bff0f86a43482a87f336ab020b23c4"
+Mutant 344: ./mutants/cri.sanity/rSW/cri.sanity-mutant344/src//res/values/strings.xml; WrongStringResource in line { 40 }
+	For mutant 344 the value of the string named "starred" at line 41 has been changed from "Favourite" to "5ecbf916422c48bbb4ff3dabb141475e"
+Mutant 345: ./mutants/cri.sanity/rSW/cri.sanity-mutant345/src//res/values/strings.xml; WrongStringResource in line { 28 }
+	For mutant 345 the value of the string named "call_out" at line 29 has been changed from "outgoing" to "3e4097f08ceb4a9bb2a8b6104b5d300f"
+Mutant 346: ./mutants/cri.sanity/rSW/cri.sanity-mutant346/src//res/values/strings.xml; WrongStringResource in line { 37 }
+	For mutant 346 the value of the string named "inactive" at line 38 has been changed from "Inactive" to "46dc85630f9247298f5fce52028c4c67"
+Mutant 347: ./mutants/cri.sanity/rSW/cri.sanity-mutant347/src//res/values/strings.xml; WrongStringResource in line { 15 }
+	For mutant 347 the value of the string named "empty" at line 16 has been changed from "Empty" to "c3963bf32f6e4f87a2cb5963d4c44741"
+Mutant 348: ./mutants/cri.sanity/rSW/cri.sanity-mutant348/src//res/values/strings.xml; WrongStringResource in line { 16 }
+	For mutant 348 the value of the string named "activate" at line 17 has been changed from "Activate" to "70df76c5565d4ef3a4ac13314882b203"
+Mutant 349: ./mutants/cri.sanity/rSW/cri.sanity-mutant349/src//res/values/strings.xml; WrongStringResource in line { 21 }
+	For mutant 349 the value of the string named "saveas" at line 22 has been changed from "Save" to "68b699efd4ed47319546fb7d25435ded"
+Mutant 350: ./mutants/cri.sanity/rSW/cri.sanity-mutant350/src//res/values/strings.xml; WrongStringResource in line { 30 }
+	For mutant 350 the value of the string named "anonymous" at line 31 has been changed from "Anonymous" to "36c7116f374049dbb8c33e0b0c6babeb"
+Mutant 351: ./mutants/cri.sanity/rSW/cri.sanity-mutant351/src//res/values/strings.xml; WrongStringResource in line { 22 }
+	For mutant 351 the value of the string named "change" at line 23 has been changed from "Modify" to "2cfc9221738047c794beb5d9a193be40"
+Mutant 352: ./mutants/cri.sanity/rSW/cri.sanity-mutant352/src//res/values/strings.xml; WrongStringResource in line { 2 }
+	For mutant 352 the value of the string named "app" at line 3 has been changed from "Sanity" to "d918a371344a46b8b4883afcc630739a"
+Mutant 353: ./mutants/cri.sanity/rSW/cri.sanity-mutant353/src//res/values/strings.xml; WrongStringResource in line { 44 }
+	For mutant 353 the value of the string named "history" at line 45 has been changed from "History" to "3e0ca52a602c47ca9bf69283cf24f9cf"
+Mutant 354: ./mutants/cri.sanity/rSW/cri.sanity-mutant354/src//res/values/strings.xml; WrongStringResource in line { 36 }
+	For mutant 354 the value of the string named "active" at line 37 has been changed from "Active" to "0020747a5b3842f7904c58620fb00229"
+Mutant 355: ./mutants/cri.sanity/rSW/cri.sanity-mutant355/src//res/values/strings.xml; WrongStringResource in line { 13 }
+	For mutant 355 the value of the string named "nochange" at line 14 has been changed from "Do not change" to "cb181ff4735c45c18e4005ce87b92611"
+Mutant 356: ./mutants/cri.sanity/rSW/cri.sanity-mutant356/src//res/values/strings.xml; WrongStringResource in line { 29 }
+	For mutant 356 the value of the string named "unknown" at line 30 has been changed from "Unknown" to "534abaeb570943518d8457a43bfa62b9"
+Mutant 357: ./mutants/cri.sanity/rSW/cri.sanity-mutant357/src//res/values/strings.xml; WrongStringResource in line { 46 }
+	For mutant 357 the value of the string named "send_sms" at line 47 has been changed from "Send SMS" to "4d6255f738434073adb4e41ae66539cb"
+Mutant 358: ./mutants/cri.sanity/rSW/cri.sanity-mutant358/src//res/values/strings.xml; WrongStringResource in line { 25 }
+	For mutant 358 the value of the string named "selnone" at line 26 has been changed from "Deselect all" to "1f7b8b2ba30449babd5a0cdae62a0e3a"
+Mutant 359: ./mutants/cri.sanity/rSW/cri.sanity-mutant359/src//res/values/strings.xml; WrongStringResource in line { 11 }
+	For mutant 359 the value of the string named "max" at line 12 has been changed from "Maximum" to "18306c3fd3ea4cb6a0d0c138914a2f81"
+Mutant 360: /home/estudiante/test/./mutants/cri.sanity/rSW/cri.sanity-mutant360/src//smali/cri/sanity/A.smali; NullInputStream in line { 1629 }
+	For mutant 360 Input Stream at line 1629 has been set to null before calling close() method

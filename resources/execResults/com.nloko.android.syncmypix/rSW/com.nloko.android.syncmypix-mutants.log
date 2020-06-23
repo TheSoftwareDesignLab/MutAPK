@@ -1,0 +1,692 @@
+Mutant 1: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant1/src//AndroidManifest.xml; ActivityNotDefined in line { 14 }
+	For mutant 1 the lines between 15 and 20 have been deleted.
+Mutant 2: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant2/src//AndroidManifest.xml; ActivityNotDefined in line { 20 }
+	For mutant 2 the lines between 21 and 21 have been deleted.
+Mutant 3: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant3/src//smali/com/nloko/android/syncmypix/SyncProgressActivity$1.smali; LengthyGUIListener in line { 40 }
+	For mutant 3 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 4: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant4/src//smali/com/nloko/android/syncmypix/MainActivity$4.smali; LengthyGUIListener in line { 40 }
+	For mutant 4 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 5: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant5/src//smali/com/nloko/android/syncmypix/SyncResultsActivity$8.smali; LengthyGUIListener in line { 40 }
+	For mutant 5 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 6: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant6/src//AndroidManifest.xml; InvalidLabel in line { 20 }
+	For mutant 6 activity label at line 20 has been change from "@string/main.settingsButton" to "1b11162079bb4d1b8e6eaf18589b36b3"
+Mutant 7: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant7/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; InvalidViewFocus in line { 314 }
+	For mutant 7 focus has been requested for the element found at line 308
+Mutant 8: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant8/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; InvalidViewFocus in line { 334 }
+	For mutant 8 focus has been requested for the element found at line 328
+Mutant 9: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant9/src//smali/com/nloko/android/syncmypix/SyncResultsActivity$9.smali; NullInputStream in line { 126 }
+	For mutant 9 Input Stream at line 126 has been set to null before calling close() method
+Mutant 10: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant10/src//smali/com/nloko/android/syncmypix/SyncResultsActivity.smali; NullValueIntentPutExtra in line { 426 }
+	For mutant 10 extra intent value at line 426 has been set to 'new Parcelable[0]'
+Mutant 11: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant11/src//smali/com/nloko/android/syncmypix/graphics/CropImage$3$1.smali; NullOutputStream in line { 154 }
+	For mutant 11 Output Stream at line 154 has been set to null before calling close() method
+Mutant 12: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant12/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; ViewComponentNotVisible in line { 317 }
+	For mutant 12 the visibility of element retrieved at line 308 has been set to INVISIBLE at lines: 319 and 321
+Mutant 13: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant13/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; ViewComponentNotVisible in line { 337 }
+	For mutant 13 the visibility of element retrieved at line 328 has been set to INVISIBLE at lines: 339 and 341
+Mutant 14: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant14/src//AndroidManifest.xml; InvalidActivityPATH in line { 14 }
+	For mutant 14 activity name at line 14 has been change from ".MainActivity" to ".aMinActivity"
+Mutant 15: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant15/src//AndroidManifest.xml; InvalidActivityPATH in line { 20 }
+	For mutant 15 activity name at line 20 has been change from ".SettingsActivity" to ".SevtingsActitity"
+Mutant 16: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant16/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; InvalidIDFindView in line { 273 }
+	For mutant 16 the id of the element retrieved at line 275 has been set to a random value
+Mutant 17: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant17/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; InvalidIDFindView in line { 326 }
+	For mutant 17 the id of the element retrieved at line 328 has been set to a random value
+Mutant 18: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant18/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; InvalidIDFindView in line { 295 }
+	For mutant 18 the id of the element retrieved at line 297 has been set to a random value
+Mutant 19: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant19/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; InvalidIDFindView in line { 251 }
+	For mutant 19 the id of the element retrieved at line 253 has been set to a random value
+Mutant 20: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant20/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; InvalidIDFindView in line { 284 }
+	For mutant 20 the id of the element retrieved at line 286 has been set to a random value
+Mutant 21: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant21/src//AndroidManifest.xml; MissingPermissionManifest in line { 40 }
+	For mutant 21 the lines between 41 and 41 have been deleted.
+Mutant 22: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant22/src//AndroidManifest.xml; MissingPermissionManifest in line { 39 }
+	For mutant 22 the lines between 40 and 40 have been deleted.
+Mutant 23: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant23/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1082 }
+	For mutant 23, 2 parameter of method <init> have been replaced with null
+Mutant 24: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant24/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 680 }
+	For mutant 24, 2 parameter of method delete have been replaced with null
+Mutant 25: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant25/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1312 }
+	For mutant 25, 2 parameter of method append have been replaced with null
+Mutant 26: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant26/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 630 }
+	For mutant 26, 4 parameter of method delete have been replaced with null
+Mutant 27: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant27/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 160 }
+	For mutant 27, 4 parameter of method addURI have been replaced with null
+Mutant 28: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant28/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1058 }
+	For mutant 28, 2 parameter of method append have been replaced with null
+Mutant 29: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant29/src//smali/com/nloko/android/syncmypix/SyncProgressActivity$1.smali; NullMethodCallArgument in line { 56 }
+	For mutant 29, 2 parameter of method <init> have been replaced with null
+Mutant 30: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant30/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 813 }
+	For mutant 30, 2 parameter of method match have been replaced with null
+Mutant 31: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant31/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 71 }
+	For mutant 31, 5 parameter of method show have been replaced with null
+Mutant 32: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant32/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1016 }
+	For mutant 32, 3 parameter of method notifyChange have been replaced with null
+Mutant 33: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant33/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 116 }
+	For mutant 33, 2 parameter of method <init> have been replaced with null
+Mutant 34: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant34/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 300 }
+	For mutant 34, 2 parameter of method put have been replaced with null
+Mutant 35: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant35/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 668 }
+	For mutant 35, 2 parameter of method append have been replaced with null
+Mutant 36: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant36/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1509 }
+	For mutant 36, 4 parameter of method update have been replaced with null
+Mutant 37: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant37/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 291 }
+	For mutant 37, 3 parameter of method put have been replaced with null
+Mutant 38: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant38/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 86 }
+	For mutant 38, 2 parameter of method setImageBitmapResetBase have been replaced with null
+Mutant 39: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant39/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 852 }
+	For mutant 39, 2 parameter of method append have been replaced with null
+Mutant 40: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant40/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 75 }
+	For mutant 40, 2 parameter of method append have been replaced with null
+Mutant 41: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant41/src//smali/com/nloko/android/syncmypix/SyncProgressActivity$1.smali; NullMethodCallArgument in line { 56 }
+	For mutant 41, 3 parameter of method <init> have been replaced with null
+Mutant 42: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant42/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1298 }
+	For mutant 42, 2 parameter of method append have been replaced with null
+Mutant 43: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant43/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 151 }
+	For mutant 43, 2 parameter of method append have been replaced with null
+Mutant 44: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant44/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1409 }
+	For mutant 44, 2 parameter of method <init> have been replaced with null
+Mutant 45: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant45/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1705 }
+	For mutant 45, 5 parameter of method update have been replaced with null
+Mutant 46: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant46/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1320 }
+	For mutant 46, 2 parameter of method appendWhere have been replaced with null
+Mutant 47: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant47/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 755 }
+	For mutant 47, 2 parameter of method append have been replaced with null
+Mutant 48: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant48/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 397 }
+	For mutant 48, 3 parameter of method put have been replaced with null
+Mutant 49: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant49/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1487 }
+	For mutant 49, 2 parameter of method append have been replaced with null
+Mutant 50: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant50/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 987 }
+	For mutant 50, 4 parameter of method insert have been replaced with null
+Mutant 51: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant51/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1114 }
+	For mutant 51, 2 parameter of method match have been replaced with null
+Mutant 52: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant52/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 370 }
+	For mutant 52, 2 parameter of method put have been replaced with null
+Mutant 53: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant53/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 946 }
+	For mutant 53, 2 parameter of method match have been replaced with null
+Mutant 54: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant54/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 264 }
+	For mutant 54, 3 parameter of method put have been replaced with null
+Mutant 55: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant55/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 230 }
+	For mutant 55, 3 parameter of method put have been replaced with null
+Mutant 56: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant56/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 71 }
+	For mutant 56, 2 parameter of method show have been replaced with null
+Mutant 57: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant57/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 177 }
+	For mutant 57, 2 parameter of method setPadding have been replaced with null
+Mutant 58: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant58/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 113 }
+	For mutant 58, 2 parameter of method append have been replaced with null
+Mutant 59: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant59/src//smali/com/nloko/android/syncmypix/SyncService$SyncServiceStatus.smali; NullMethodCallArgument in line { 70 }
+	For mutant 59, 3 parameter of method <init> have been replaced with null
+Mutant 60: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant60/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1509 }
+	For mutant 60, 2 parameter of method update have been replaced with null
+Mutant 61: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant61/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 122 }
+	For mutant 61, 2 parameter of method translateBool have been replaced with null
+Mutant 62: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant62/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 176 }
+	For mutant 62, 2 parameter of method put have been replaced with null
+Mutant 63: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant63/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1000 }
+	For mutant 63, 2 parameter of method withAppendedId have been replaced with null
+Mutant 64: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant64/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1581 }
+	For mutant 64, 2 parameter of method append have been replaced with null
+Mutant 65: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant65/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1529 }
+	For mutant 65, 5 parameter of method update have been replaced with null
+Mutant 66: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant66/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 182 }
+	For mutant 66, 2 parameter of method setTextSize have been replaced with null
+Mutant 67: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant67/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 406 }
+	For mutant 67, 3 parameter of method put have been replaced with null
+Mutant 68: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant68/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 610 }
+	For mutant 68, 4 parameter of method delete have been replaced with null
+Mutant 69: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant69/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 86 }
+	For mutant 69, 3 parameter of method setImageBitmapResetBase have been replaced with null
+Mutant 70: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant70/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 300 }
+	For mutant 70, 3 parameter of method put have been replaced with null
+Mutant 71: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant71/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 545 }
+	For mutant 71, 2 parameter of method get have been replaced with null
+Mutant 72: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant72/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 361 }
+	For mutant 72, 2 parameter of method put have been replaced with null
+Mutant 73: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant73/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1215 }
+	For mutant 73, 2 parameter of method setTables have been replaced with null
+Mutant 74: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant74/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1220 }
+	For mutant 74, 2 parameter of method setProjectionMap have been replaced with null
+Mutant 75: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant75/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 706 }
+	For mutant 75, 3 parameter of method delete have been replaced with null
+Mutant 76: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant76/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1154 }
+	For mutant 76, 2 parameter of method setProjectionMap have been replaced with null
+Mutant 77: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant77/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 71 }
+	For mutant 77, 4 parameter of method show have been replaced with null
+Mutant 78: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant78/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 88 }
+	For mutant 78, 2 parameter of method append have been replaced with null
+Mutant 79: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant79/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 582 }
+	For mutant 79, 2 parameter of method append have been replaced with null
+Mutant 80: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant80/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 198 }
+	For mutant 80, 2 parameter of method setCancelable have been replaced with null
+Mutant 81: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant81/src//smali/com/nloko/android/syncmypix/SyncService$SyncServiceStatus.smali; NullMethodCallArgument in line { 52 }
+	For mutant 81, 2 parameter of method <init> have been replaced with null
+Mutant 82: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant82/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 71 }
+	For mutant 82, 3 parameter of method show have been replaced with null
+Mutant 83: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant83/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 652 }
+	For mutant 83, 2 parameter of method get have been replaced with null
+Mutant 84: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant84/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 672 }
+	For mutant 84, 2 parameter of method append have been replaced with null
+Mutant 85: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant85/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1491 }
+	For mutant 85, 2 parameter of method append have been replaced with null
+Mutant 86: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant86/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 16 }
+	For mutant 86, 2 parameter of method initialize have been replaced with null
+Mutant 87: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant87/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1627 }
+	For mutant 87, 4 parameter of method update have been replaced with null
+Mutant 88: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant88/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 282 }
+	For mutant 88, 2 parameter of method put have been replaced with null
+Mutant 89: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant89/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 482 }
+	For mutant 89, 2 parameter of method match have been replaced with null
+Mutant 90: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant90/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 896 }
+	For mutant 90, 2 parameter of method valueOf have been replaced with null
+Mutant 91: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant91/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 610 }
+	For mutant 91, 3 parameter of method delete have been replaced with null
+Mutant 92: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant92/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1627 }
+	For mutant 92, 2 parameter of method update have been replaced with null
+Mutant 93: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant93/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 397 }
+	For mutant 93, 2 parameter of method put have been replaced with null
+Mutant 94: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant94/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 638 }
+	For mutant 94, 3 parameter of method delete have been replaced with null
+Mutant 95: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant95/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 388 }
+	For mutant 95, 2 parameter of method put have been replaced with null
+Mutant 96: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant96/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 406 }
+	For mutant 96, 2 parameter of method put have been replaced with null
+Mutant 97: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant97/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 638 }
+	For mutant 97, 2 parameter of method delete have been replaced with null
+Mutant 98: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant98/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1696 }
+	For mutant 98, 2 parameter of method append have been replaced with null
+Mutant 99: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant99/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 379 }
+	For mutant 99, 3 parameter of method put have been replaced with null
+Mutant 100: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant100/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 706 }
+	For mutant 100, 2 parameter of method delete have been replaced with null
+Mutant 101: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant101/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 316 }
+	For mutant 101, 3 parameter of method put have been replaced with null
+Mutant 102: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant102/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 255 }
+	For mutant 102, 3 parameter of method put have been replaced with null
+Mutant 103: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant103/src//smali/com/nloko/android/syncmypix/SyncService$SyncServiceStatus.smali; NullMethodCallArgument in line { 61 }
+	For mutant 103, 3 parameter of method <init> have been replaced with null
+Mutant 104: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant104/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1000 }
+	For mutant 104, 3 parameter of method withAppendedId have been replaced with null
+Mutant 105: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant105/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 698 }
+	For mutant 105, 2 parameter of method append have been replaced with null
+Mutant 106: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant106/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1509 }
+	For mutant 106, 5 parameter of method update have been replaced with null
+Mutant 107: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant107/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 69 }
+	For mutant 107, 2 parameter of method append have been replaced with null
+Mutant 108: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant108/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1589 }
+	For mutant 108, 2 parameter of method append have been replaced with null
+Mutant 109: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant109/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 127 }
+	For mutant 109, 3 parameter of method addURI have been replaced with null
+Mutant 110: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant110/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 925 }
+	For mutant 110, 2 parameter of method match have been replaced with null
+Mutant 111: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant111/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 177 }
+	For mutant 111, 5 parameter of method setPadding have been replaced with null
+Mutant 112: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant112/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 442 }
+	For mutant 112, 3 parameter of method put have been replaced with null
+Mutant 113: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant113/src//smali/com/nloko/android/syncmypix/SyncProgressActivity$1.smali; NullMethodCallArgument in line { 62 }
+	For mutant 113, 2 parameter of method addFlags have been replaced with null
+Mutant 114: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant114/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1705 }
+	For mutant 114, 4 parameter of method update have been replaced with null
+Mutant 115: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant115/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 601 }
+	For mutant 115, 2 parameter of method append have been replaced with null
+Mutant 116: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant116/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1627 }
+	For mutant 116, 5 parameter of method update have been replaced with null
+Mutant 117: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant117/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1016 }
+	For mutant 117, 2 parameter of method notifyChange have been replaced with null
+Mutant 118: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant118/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 65 }
+	For mutant 118, 2 parameter of method translateBool have been replaced with null
+Mutant 119: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant119/src//smali/com/nloko/android/syncmypix/SyncService$SyncServiceStatus.smali; NullMethodCallArgument in line { 106 }
+	For mutant 119, 3 parameter of method <init> have been replaced with null
+Mutant 120: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant120/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1417 }
+	For mutant 120, 4 parameter of method update have been replaced with null
+Mutant 121: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant121/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 103 }
+	For mutant 121, 2 parameter of method translateBool have been replaced with null
+Mutant 122: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant122/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 533 }
+	For mutant 122, 2 parameter of method notifyChange have been replaced with null
+Mutant 123: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant123/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1243 }
+	For mutant 123, 2 parameter of method append have been replaced with null
+Mutant 124: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant124/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 160 }
+	For mutant 124, 2 parameter of method addURI have been replaced with null
+Mutant 125: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant125/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1607 }
+	For mutant 125, 4 parameter of method update have been replaced with null
+Mutant 126: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant126/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 251 }
+	For mutant 126, 4 parameter of method setButton have been replaced with null
+Mutant 127: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant127/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 379 }
+	For mutant 127, 2 parameter of method put have been replaced with null
+Mutant 128: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant128/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 498 }
+	For mutant 128, 2 parameter of method append have been replaced with null
+Mutant 129: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant129/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 415 }
+	For mutant 129, 3 parameter of method put have been replaced with null
+Mutant 130: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant130/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1462 }
+	For mutant 130, 2 parameter of method append have been replaced with null
+Mutant 131: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant131/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1683 }
+	For mutant 131, 2 parameter of method append have been replaced with null
+Mutant 132: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant132/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 149 }
+	For mutant 132, 4 parameter of method addURI have been replaced with null
+Mutant 133: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant133/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 185 }
+	For mutant 133, 2 parameter of method put have been replaced with null
+Mutant 134: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant134/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1334 }
+	For mutant 134, 2 parameter of method setTables have been replaced with null
+Mutant 135: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant135/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 194 }
+	For mutant 135, 2 parameter of method put have been replaced with null
+Mutant 136: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant136/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 273 }
+	For mutant 136, 3 parameter of method put have been replaced with null
+Mutant 137: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant137/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 94 }
+	For mutant 137, 2 parameter of method append have been replaced with null
+Mutant 138: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant138/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 246 }
+	For mutant 138, 2 parameter of method put have been replaced with null
+Mutant 139: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant139/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 108 }
+	For mutant 139, 2 parameter of method center have been replaced with null
+Mutant 140: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant140/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1434 }
+	For mutant 140, 2 parameter of method notifyChange have been replaced with null
+Mutant 141: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant141/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider$DatabaseHelper.smali; NullMethodCallArgument in line { 51 }
+	For mutant 141, 2 parameter of method execSQL have been replaced with null
+Mutant 142: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant142/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1509 }
+	For mutant 142, 3 parameter of method update have been replaced with null
+Mutant 143: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant143/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 132 }
+	For mutant 143, 2 parameter of method append have been replaced with null
+Mutant 144: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant144/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1054 }
+	For mutant 144, 2 parameter of method append have been replaced with null
+Mutant 145: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant145/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1564 }
+	For mutant 145, 2 parameter of method append have been replaced with null
+Mutant 146: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant146/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 203 }
+	For mutant 146, 3 parameter of method put have been replaced with null
+Mutant 147: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant147/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 138 }
+	For mutant 147, 3 parameter of method addURI have been replaced with null
+Mutant 148: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant148/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 13 }
+	For mutant 148, 2 parameter of method <init> have been replaced with null
+Mutant 149: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant149/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 105 }
+	For mutant 149, 3 parameter of method addURI have been replaced with null
+Mutant 150: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant150/src//smali/com/nloko/android/syncmypix/graphics/CropImage$CropImageView.smali; NullMethodCallArgument in line { 404 }
+	For mutant 150, 2 parameter of method setFocus have been replaced with null
+Mutant 151: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant151/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 177 }
+	For mutant 151, 4 parameter of method setPadding have been replaced with null
+Mutant 152: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant152/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 518 }
+	For mutant 152, 4 parameter of method delete have been replaced with null
+Mutant 153: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant153/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1382 }
+	For mutant 153, 2 parameter of method match have been replaced with null
+Mutant 154: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant154/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1417 }
+	For mutant 154, 2 parameter of method update have been replaced with null
+Mutant 155: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant155/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 212 }
+	For mutant 155, 3 parameter of method put have been replaced with null
+Mutant 156: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant156/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1658 }
+	For mutant 156, 2 parameter of method append have been replaced with null
+Mutant 157: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant157/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1529 }
+	For mutant 157, 2 parameter of method update have been replaced with null
+Mutant 158: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant158/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1149 }
+	For mutant 158, 2 parameter of method setTables have been replaced with null
+Mutant 159: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant159/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 424 }
+	For mutant 159, 3 parameter of method put have been replaced with null
+Mutant 160: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant160/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 502 }
+	For mutant 160, 2 parameter of method append have been replaced with null
+Mutant 161: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant161/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 533 }
+	For mutant 161, 3 parameter of method notifyChange have been replaced with null
+Mutant 162: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant162/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 149 }
+	For mutant 162, 3 parameter of method addURI have been replaced with null
+Mutant 163: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant163/src//smali/com/nloko/android/syncmypix/SyncProgressActivity$1.smali; NullMethodCallArgument in line { 67 }
+	For mutant 163, 2 parameter of method startActivity have been replaced with null
+Mutant 164: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant164/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 105 }
+	For mutant 164, 4 parameter of method addURI have been replaced with null
+Mutant 165: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant165/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 138 }
+	For mutant 165, 4 parameter of method addURI have been replaced with null
+Mutant 166: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant166/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 86 }
+	For mutant 166, 4 parameter of method setImageBitmapResetBase have been replaced with null
+Mutant 167: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant167/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 291 }
+	For mutant 167, 2 parameter of method put have been replaced with null
+Mutant 168: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant168/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 246 }
+	For mutant 168, 3 parameter of method put have been replaced with null
+Mutant 169: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant169/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 32 }
+	For mutant 169, 2 parameter of method <init> have been replaced with null
+Mutant 170: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant170/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 334 }
+	For mutant 170, 3 parameter of method put have been replaced with null
+Mutant 171: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant171/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1133 }
+	For mutant 171, 2 parameter of method append have been replaced with null
+Mutant 172: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant172/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1560 }
+	For mutant 172, 2 parameter of method append have been replaced with null
+Mutant 173: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant173/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 116 }
+	For mutant 173, 4 parameter of method addURI have been replaced with null
+Mutant 174: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant174/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 518 }
+	For mutant 174, 2 parameter of method delete have been replaced with null
+Mutant 175: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant175/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 50 }
+	For mutant 175, 2 parameter of method append have been replaced with null
+Mutant 176: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant176/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 141 }
+	For mutant 176, 2 parameter of method translateBool have been replaced with null
+Mutant 177: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant177/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1705 }
+	For mutant 177, 3 parameter of method update have been replaced with null
+Mutant 178: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant178/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1270 }
+	For mutant 178, 2 parameter of method setTables have been replaced with null
+Mutant 179: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant179/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1417 }
+	For mutant 179, 5 parameter of method update have been replaced with null
+Mutant 180: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant180/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1607 }
+	For mutant 180, 2 parameter of method update have been replaced with null
+Mutant 181: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant181/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1662 }
+	For mutant 181, 2 parameter of method append have been replaced with null
+Mutant 182: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant182/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 630 }
+	For mutant 182, 2 parameter of method delete have been replaced with null
+Mutant 183: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant183/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 235 }
+	For mutant 183, 4 parameter of method setButton have been replaced with null
+Mutant 184: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant184/src//smali/com/nloko/android/syncmypix/SyncService$SyncServiceStatus.smali; NullMethodCallArgument in line { 106 }
+	For mutant 184, 2 parameter of method <init> have been replaced with null
+Mutant 185: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant185/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 706 }
+	For mutant 185, 4 parameter of method delete have been replaced with null
+Mutant 186: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant186/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1466 }
+	For mutant 186, 2 parameter of method append have been replaced with null
+Mutant 187: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant187/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 751 }
+	For mutant 187, 2 parameter of method append have been replaced with null
+Mutant 188: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant188/src//smali/com/nloko/android/syncmypix/SyncResultsActivity$8.smali; NullMethodCallArgument in line { 50 }
+	For mutant 188, 2 parameter of method showDialog have been replaced with null
+Mutant 189: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant189/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 433 }
+	For mutant 189, 3 parameter of method put have been replaced with null
+Mutant 190: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant190/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 126 }
+	For mutant 190, 2 parameter of method append have been replaced with null
+Mutant 191: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant191/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 160 }
+	For mutant 191, 3 parameter of method addURI have been replaced with null
+Mutant 192: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant192/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 680 }
+	For mutant 192, 4 parameter of method delete have been replaced with null
+Mutant 193: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant193/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 235 }
+	For mutant 193, 2 parameter of method setButton have been replaced with null
+Mutant 194: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant194/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1598 }
+	For mutant 194, 2 parameter of method append have been replaced with null
+Mutant 195: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant195/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 108 }
+	For mutant 195, 4 parameter of method center have been replaced with null
+Mutant 196: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant196/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 149 }
+	For mutant 196, 2 parameter of method addURI have been replaced with null
+Mutant 197: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant197/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 116 }
+	For mutant 197, 2 parameter of method addURI have been replaced with null
+Mutant 198: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant198/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 875 }
+	For mutant 198, 2 parameter of method <init> have been replaced with null
+Mutant 199: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant199/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 518 }
+	For mutant 199, 3 parameter of method delete have been replaced with null
+Mutant 200: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant200/src//smali/com/nloko/android/syncmypix/graphics/CropImage$CropImageView.smali; NullMethodCallArgument in line { 225 }
+	For mutant 200, 2 parameter of method mapPoints have been replaced with null
+Mutant 201: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant201/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 864 }
+	For mutant 201, 2 parameter of method <init> have been replaced with null
+Mutant 202: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant202/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1397 }
+	For mutant 202, 2 parameter of method append have been replaced with null
+Mutant 203: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant203/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 193 }
+	For mutant 203, 2 parameter of method setView have been replaced with null
+Mutant 204: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant204/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 176 }
+	For mutant 204, 3 parameter of method put have been replaced with null
+Mutant 205: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant205/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 203 }
+	For mutant 205, 2 parameter of method put have been replaced with null
+Mutant 206: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant206/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 255 }
+	For mutant 206, 2 parameter of method put have been replaced with null
+Mutant 207: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant207/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1434 }
+	For mutant 207, 3 parameter of method notifyChange have been replaced with null
+Mutant 208: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant208/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1607 }
+	For mutant 208, 3 parameter of method update have been replaced with null
+Mutant 209: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant209/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1529 }
+	For mutant 209, 4 parameter of method update have been replaced with null
+Mutant 210: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant210/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1203 }
+	For mutant 210, 3 parameter of method setNotificationUri have been replaced with null
+Mutant 211: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant211/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 388 }
+	For mutant 211, 3 parameter of method put have been replaced with null
+Mutant 212: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant212/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 735 }
+	For mutant 212, 2 parameter of method match have been replaced with null
+Mutant 213: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant213/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1544 }
+	For mutant 213, 2 parameter of method get have been replaced with null
+Mutant 214: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant214/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 610 }
+	For mutant 214, 2 parameter of method delete have been replaced with null
+Mutant 215: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant215/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 352 }
+	For mutant 215, 2 parameter of method put have been replaced with null
+Mutant 216: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant216/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 221 }
+	For mutant 216, 2 parameter of method put have been replaced with null
+Mutant 217: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant217/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 127 }
+	For mutant 217, 4 parameter of method addURI have been replaced with null
+Mutant 218: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant218/src//smali/com/nloko/android/syncmypix/SyncService$SyncServiceStatus.smali; NullMethodCallArgument in line { 70 }
+	For mutant 218, 2 parameter of method <init> have been replaced with null
+Mutant 219: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant219/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1251 }
+	For mutant 219, 2 parameter of method appendWhere have been replaced with null
+Mutant 220: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant220/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1679 }
+	For mutant 220, 2 parameter of method append have been replaced with null
+Mutant 221: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant221/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 116 }
+	For mutant 221, 3 parameter of method addURI have been replaced with null
+Mutant 222: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant222/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1401 }
+	For mutant 222, 2 parameter of method append have been replaced with null
+Mutant 223: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant223/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1237 }
+	For mutant 223, 2 parameter of method get have been replaced with null
+Mutant 224: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant224/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 316 }
+	For mutant 224, 2 parameter of method put have been replaced with null
+Mutant 225: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant225/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1446 }
+	For mutant 225, 2 parameter of method get have been replaced with null
+Mutant 226: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant226/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 212 }
+	For mutant 226, 2 parameter of method put have been replaced with null
+Mutant 227: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant227/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 105 }
+	For mutant 227, 2 parameter of method addURI have been replaced with null
+Mutant 228: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant228/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 638 }
+	For mutant 228, 4 parameter of method delete have been replaced with null
+Mutant 229: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant229/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1066 }
+	For mutant 229, 2 parameter of method <init> have been replaced with null
+Mutant 230: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant230/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 190 }
+	For mutant 230, 2 parameter of method setText have been replaced with null
+Mutant 231: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant231/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 264 }
+	For mutant 231, 2 parameter of method put have been replaced with null
+Mutant 232: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant232/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider$DatabaseHelper.smali; NullMethodCallArgument in line { 56 }
+	For mutant 232, 2 parameter of method execSQL have been replaced with null
+Mutant 233: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant233/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1289 }
+	For mutant 233, 2 parameter of method setTables have been replaced with null
+Mutant 234: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant234/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 177 }
+	For mutant 234, 3 parameter of method setPadding have been replaced with null
+Mutant 235: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant235/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 694 }
+	For mutant 235, 2 parameter of method append have been replaced with null
+Mutant 236: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant236/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 904 }
+	For mutant 236, 2 parameter of method match have been replaced with null
+Mutant 237: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant237/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1529 }
+	For mutant 237, 3 parameter of method update have been replaced with null
+Mutant 238: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant238/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider$DatabaseHelper.smali; NullMethodCallArgument in line { 30 }
+	For mutant 238, 2 parameter of method <init> have been replaced with null
+Mutant 239: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant239/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 75 }
+	For mutant 239, 2 parameter of method access$202 have been replaced with null
+Mutant 240: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant240/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1229 }
+	For mutant 240, 2 parameter of method append have been replaced with null
+Mutant 241: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant241/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 187 }
+	For mutant 241, 2 parameter of method setTextColor have been replaced with null
+Mutant 242: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant242/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 586 }
+	For mutant 242, 2 parameter of method append have been replaced with null
+Mutant 243: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant243/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 343 }
+	For mutant 243, 2 parameter of method put have been replaced with null
+Mutant 244: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant244/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 361 }
+	For mutant 244, 3 parameter of method put have been replaced with null
+Mutant 245: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant245/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 987 }
+	For mutant 245, 2 parameter of method insert have been replaced with null
+Mutant 246: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant246/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 415 }
+	For mutant 246, 2 parameter of method put have been replaced with null
+Mutant 247: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant247/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1141 }
+	For mutant 247, 2 parameter of method <init> have been replaced with null
+Mutant 248: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant248/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1705 }
+	For mutant 248, 2 parameter of method update have been replaced with null
+Mutant 249: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant249/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 42 }
+	For mutant 249, 2 parameter of method append have been replaced with null
+Mutant 250: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant250/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 343 }
+	For mutant 250, 3 parameter of method put have been replaced with null
+Mutant 251: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant251/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider$DatabaseHelper.smali; NullMethodCallArgument in line { 30 }
+	For mutant 251, 3 parameter of method <init> have been replaced with null
+Mutant 252: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant252/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 424 }
+	For mutant 252, 2 parameter of method put have been replaced with null
+Mutant 253: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant253/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 433 }
+	For mutant 253, 2 parameter of method put have been replaced with null
+Mutant 254: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant254/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 325 }
+	For mutant 254, 3 parameter of method put have been replaced with null
+Mutant 255: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant255/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 630 }
+	For mutant 255, 3 parameter of method delete have been replaced with null
+Mutant 256: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant256/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1339 }
+	For mutant 256, 2 parameter of method setProjectionMap have been replaced with null
+Mutant 257: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant257/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 334 }
+	For mutant 257, 2 parameter of method put have been replaced with null
+Mutant 258: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant258/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 282 }
+	For mutant 258, 3 parameter of method put have been replaced with null
+Mutant 259: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant259/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1687 }
+	For mutant 259, 2 parameter of method append have been replaced with null
+Mutant 260: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant260/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 173 }
+	For mutant 260, 2 parameter of method <init> have been replaced with null
+Mutant 261: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant261/src//smali/com/nloko/android/syncmypix/MainActivity$4.smali; NullMethodCallArgument in line { 50 }
+	For mutant 261, 2 parameter of method showDialog have been replaced with null
+Mutant 262: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant262/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 145 }
+	For mutant 262, 2 parameter of method append have been replaced with null
+Mutant 263: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant263/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 221 }
+	For mutant 263, 3 parameter of method put have been replaced with null
+Mutant 264: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant264/src//smali/com/nloko/android/syncmypix/SyncService$SyncServiceStatus.smali; NullMethodCallArgument in line { 61 }
+	For mutant 264, 2 parameter of method <init> have been replaced with null
+Mutant 265: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant265/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 352 }
+	For mutant 265, 3 parameter of method put have been replaced with null
+Mutant 266: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant266/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 561 }
+	For mutant 266, 2 parameter of method append have been replaced with null
+Mutant 267: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant267/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 680 }
+	For mutant 267, 3 parameter of method delete have been replaced with null
+Mutant 268: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant268/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1265 }
+	For mutant 268, 2 parameter of method setProjectionMap have been replaced with null
+Mutant 269: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant269/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1203 }
+	For mutant 269, 2 parameter of method setNotificationUri have been replaced with null
+Mutant 270: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant270/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 325 }
+	For mutant 270, 2 parameter of method put have been replaced with null
+Mutant 271: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant271/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 592 }
+	For mutant 271, 2 parameter of method append have been replaced with null
+Mutant 272: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant272/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider$DatabaseHelper.smali; NullMethodCallArgument in line { 30 }
+	For mutant 272, 5 parameter of method <init> have been replaced with null
+Mutant 273: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant273/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 975 }
+	For mutant 273, 2 parameter of method put have been replaced with null
+Mutant 274: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant274/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1642 }
+	For mutant 274, 2 parameter of method get have been replaced with null
+Mutant 275: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant275/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1500 }
+	For mutant 275, 2 parameter of method append have been replaced with null
+Mutant 276: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant276/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 127 }
+	For mutant 276, 2 parameter of method addURI have been replaced with null
+Mutant 277: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant277/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 108 }
+	For mutant 277, 3 parameter of method center have been replaced with null
+Mutant 278: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant278/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 370 }
+	For mutant 278, 3 parameter of method put have been replaced with null
+Mutant 279: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant279/src//smali/com/nloko/android/syncmypix/SyncService$SyncServiceStatus.smali; NullMethodCallArgument in line { 52 }
+	For mutant 279, 3 parameter of method <init> have been replaced with null
+Mutant 280: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant280/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 763 }
+	For mutant 280, 2 parameter of method <init> have been replaced with null
+Mutant 281: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant281/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 442 }
+	For mutant 281, 2 parameter of method put have been replaced with null
+Mutant 282: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant282/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 56 }
+	For mutant 282, 2 parameter of method append have been replaced with null
+Mutant 283: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant283/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 975 }
+	For mutant 283, 3 parameter of method put have been replaced with null
+Mutant 284: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant284/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 138 }
+	For mutant 284, 2 parameter of method addURI have been replaced with null
+Mutant 285: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant285/src//smali/com/nloko/android/syncmypix/graphics/CropImage$1.smali; NullMethodCallArgument in line { 118 }
+	For mutant 285, 2 parameter of method <init> have been replaced with null
+Mutant 286: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant286/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 235 }
+	For mutant 286, 3 parameter of method setButton have been replaced with null
+Mutant 287: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant287/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1284 }
+	For mutant 287, 2 parameter of method setProjectionMap have been replaced with null
+Mutant 288: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant288/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1417 }
+	For mutant 288, 3 parameter of method update have been replaced with null
+Mutant 289: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant289/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 510 }
+	For mutant 289, 2 parameter of method <init> have been replaced with null
+Mutant 290: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant290/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 856 }
+	For mutant 290, 2 parameter of method append have been replaced with null
+Mutant 291: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant291/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 84 }
+	For mutant 291, 2 parameter of method translateBool have been replaced with null
+Mutant 292: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant292/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 273 }
+	For mutant 292, 2 parameter of method put have been replaced with null
+Mutant 293: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant293/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 194 }
+	For mutant 293, 3 parameter of method put have been replaced with null
+Mutant 294: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant294/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 230 }
+	For mutant 294, 2 parameter of method put have been replaced with null
+Mutant 295: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant295/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1129 }
+	For mutant 295, 2 parameter of method append have been replaced with null
+Mutant 296: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant296/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1607 }
+	For mutant 296, 5 parameter of method update have been replaced with null
+Mutant 297: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant297/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 824 }
+	For mutant 297, 2 parameter of method match have been replaced with null
+Mutant 298: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant298/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 565 }
+	For mutant 298, 2 parameter of method append have been replaced with null
+Mutant 299: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant299/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider$DatabaseHelper.smali; NullMethodCallArgument in line { 30 }
+	For mutant 299, 4 parameter of method <init> have been replaced with null
+Mutant 300: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant300/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1627 }
+	For mutant 300, 3 parameter of method update have been replaced with null
+Mutant 301: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant301/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 163 }
+	For mutant 301, 2 parameter of method setTitle have been replaced with null
+Mutant 302: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant302/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 987 }
+	For mutant 302, 3 parameter of method insert have been replaced with null
+Mutant 303: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant303/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 185 }
+	For mutant 303, 3 parameter of method put have been replaced with null
+Mutant 304: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant304/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 92 }
+	For mutant 304, 2 parameter of method <init> have been replaced with null
+Mutant 305: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant305/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1483 }
+	For mutant 305, 2 parameter of method append have been replaced with null
+Mutant 306: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant306/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1585 }
+	For mutant 306, 2 parameter of method append have been replaced with null
+Mutant 307: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant307/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 835 }
+	For mutant 307, 2 parameter of method match have been replaced with null
+Mutant 308: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant308/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider$DatabaseHelper.smali; NullMethodCallArgument in line { 46 }
+	For mutant 308, 2 parameter of method execSQL have been replaced with null
+Mutant 309: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant309/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 168 }
+	For mutant 309, 2 parameter of method setIcon have been replaced with null
+Mutant 310: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant310/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 251 }
+	For mutant 310, 2 parameter of method setButton have been replaced with null
+Mutant 311: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant311/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 1306 }
+	For mutant 311, 2 parameter of method get have been replaced with null
+Mutant 312: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant312/src//smali/com/nloko/android/syncmypix/SyncMyPixProvider.smali; NullMethodCallArgument in line { 966 }
+	For mutant 312, 2 parameter of method containsKey have been replaced with null
+Mutant 313: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant313/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 107 }
+	For mutant 313, 2 parameter of method append have been replaced with null
+Mutant 314: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant314/src//smali/com/nloko/android/syncmypix/views/ConfirmSyncDialog.smali; NullMethodCallArgument in line { 251 }
+	For mutant 314, 3 parameter of method setButton have been replaced with null
+Mutant 315: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant315/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; LengthyGUICreation in line { 226 }
+	For mutant 315 a large delay has been injected after GUI Creation at line 226
+Mutant 316: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant316/src//smali/com/nloko/android/syncmypix/SettingsActivity.smali; LengthyGUICreation in line { 226 }
+	For mutant 316 a large delay has been injected after GUI Creation at line 226
+Mutant 317: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant317/src//AndroidManifest.xml; WrongMainActivity in line { 15 }
+	For mutant 317 activity ".MainActivity" at line 15 has been replaced as main activity by "com.nloko.android.syncmypix.graphics.CropImage" at line 25
+Mutant 318: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant318/src//smali/com/nloko/android/syncmypix/SyncMyPixBroadcastReceiver.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 318 component name at line 0 has been change from "" to ""
+Mutant 319: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant319/src//smali/com/nloko/android/syncmypix/SyncResultsActivity$7.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 319 component name at line 0 has been change from "" to ""
+Mutant 320: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant320/src//smali/com/nloko/android/syncmypix/SyncProgressActivity$1.smali; DifferentActivityIntentDefinition in line { 54 }
+	For mutant 320 component name at line 54 has been change from "Lcom/nloko/android/syncmypix/MainActivity;" to "Lcom/nloko/android/syncmypix/DonateActivity;"
+Mutant 321: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant321/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; FindViewByIdReturnsNull in lines { 275, 279 }
+	For mutant 321 the element retrieved at line 275 has been set to null
+Mutant 322: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant322/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; FindViewByIdReturnsNull in lines { 297, 301 }
+	For mutant 322 the element retrieved at line 297 has been set to null
+Mutant 323: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant323/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; FindViewByIdReturnsNull in lines { 328, 332 }
+	For mutant 323 the element retrieved at line 328 has been set to null
+Mutant 324: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant324/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; FindViewByIdReturnsNull in lines { 253, 257 }
+	For mutant 324 the element retrieved at line 253 has been set to null
+Mutant 325: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant325/src//smali/com/nloko/android/syncmypix/SyncProgressActivity.smali; FindViewByIdReturnsNull in lines { 286, 290 }
+	For mutant 325 the element retrieved at line 286 has been set to null
+Mutant 326: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant326/src//smali/com/nloko/android/syncmypix/SyncResultsActivity.smali; InvalidKeyIntentPutExtra in line { 424 }
+	For mutant 326 extra key value at line 424 has been set to 3f42434971f54f91ad36b3ca2345f5bb
+Mutant 327: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant327/src//res/values/strings.xml; WrongStringResource in line { 12 }
+	For mutant 327 the value of the string named "preferences.schedule" at line 13 has been changed from "Schedule" to "9bcf190e28f24f209937e2de3e3ad9cb"
+Mutant 328: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant328/src//res/values/strings.xml; WrongStringResource in line { 6 }
+	For mutant 328 the value of the string named "preferences.cropsquare.summary" at line 7 has been changed from "Crop a 96px square using midpoint of downloaded picture" to "05da08448c0b4158875975d4b09f6703"
+Mutant 329: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant329/src//res/values/strings.xml; WrongStringResource in line { 5 }
+	For mutant 329 the value of the string named "preferences.cropsquare" at line 6 has been changed from "Crop" to "8867fcde27d64766981b9d97cea7f33f"
+Mutant 330: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant330/src//res/values/strings.xml; WrongStringResource in line { 4 }
+	For mutant 330 the value of the string named "preferences.maxquality.summary" at line 5 has been changed from "Download maximum resolution / size" to "300ce31980db4cd4a2cbea9c6f38c5dc"
+Mutant 331: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant331/src//res/values/strings.xml; WrongStringResource in line { 2 }
+	For mutant 331 the value of the string named "preferences.picturesHeader" at line 3 has been changed from "Pictures" to "1049529636e945d2a3dbe43aaac2f589"
+Mutant 332: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant332/src//res/values/strings.xml; WrongStringResource in line { 14 }
+	For mutant 332 the value of the string named "preferences.matchingHeader" at line 15 has been changed from "Matching" to "3def603b1fdd462d88061e30d6c5db89"
+Mutant 333: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant333/src//res/values/strings.xml; WrongStringResource in line { 10 }
+	For mutant 333 the value of the string named "preferences.source" at line 11 has been changed from "Social Network" to "3cd9b957b49c414883ba2b1e0588e1e8"
+Mutant 334: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant334/src//res/values/strings.xml; WrongStringResource in line { 9 }
+	For mutant 334 the value of the string named "preferences.sourceHeader" at line 10 has been changed from "Sync Source" to "9f9fe7b3938741eea304b1e41dbf9514"
+Mutant 335: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant335/src//res/values/strings.xml; WrongStringResource in line { 7 }
+	For mutant 335 the value of the string named "preferences.cache" at line 8 has been changed from "Cache to SD Card" to "507eb75470a644378fabb142f02773c8"
+Mutant 336: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant336/src//res/values/strings.xml; WrongStringResource in line { 11 }
+	For mutant 336 the value of the string named "preferences.source.summary" at line 12 has been changed from "Select the social network you wish to sync contact pictures from" to "742069f64e3a4e228b4f0f95d692d180"
+Mutant 337: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant337/src//res/values/strings.xml; WrongStringResource in line { 3 }
+	For mutant 337 the value of the string named "preferences.maxquality" at line 4 has been changed from "Maximum Quality" to "2d87d7967f0c452a841744269901be58"
+Mutant 338: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant338/src//res/values/strings.xml; WrongStringResource in line { 8 }
+	For mutant 338 the value of the string named "preferences.cache.summary" at line 9 has been changed from "Cache up to 5Mb of pictures to SD card to save data usage" to "b893fe5f16334abb922fe65458f07737"
+Mutant 339: ./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant339/src//res/values/strings.xml; WrongStringResource in line { 13 }
+	For mutant 339 the value of the string named "preferences.schedule.summary" at line 14 has been changed from "Select a frequency for scheduling" to "9f233dd85ffb48dfaee97a5d3db3ebb8"
+Mutant 340: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant340/src//smali/com/nloko/android/syncmypix/SyncMyPixBroadcastReceiver.smali; NullIntent in line { 312 }
+	For mutant 340 intent defined at lines 312 has been defined as null
+Mutant 341: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant341/src//smali/com/nloko/android/syncmypix/SyncProgressActivity$1.smali; NullIntent in line { 56 }
+	For mutant 341 intent defined at lines 56 has been defined as null
+Mutant 342: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant342/src//smali/com/nloko/android/syncmypix/SyncResultsActivity$7.smali; NullIntent in line { 62 }
+	For mutant 342 intent defined at lines 62 has been defined as null
+Mutant 343: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant343/src//smali/com/nloko/android/syncmypix/contactutils/ContactProxy2.smali; ClosingNullCursor in line { 341 }
+	For mutant 343 Database cursor at line 341 has been set to null before close() call
+Mutant 344: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant344/src//smali/com/nloko/android/syncmypix/SyncMyPixDbHelper.smali; ClosingNullCursor in line { 1604 }
+	For mutant 344 Database cursor at line 1604 has been set to null before close() call
+Mutant 345: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant345/src//smali/com/nloko/android/syncmypix/contactutils/ContactProxy2.smali; ClosingNullCursor in line { 328 }
+	For mutant 345 Database cursor at line 328 has been set to null before close() call
+Mutant 346: /home/estudiante/test/./mutants/com.nloko.android.syncmypix/rSW/com.nloko.android.syncmypix-mutant346/src//smali/com/nloko/android/syncmypix/EmmaInstrument/EmmaInstrumentation.smali; InvalidFilePath in line { 81 }
+	For mutant 346 the path of File at line 81 has been replaced by 57cb4272351c4670b8c0a1b1fd8e4626

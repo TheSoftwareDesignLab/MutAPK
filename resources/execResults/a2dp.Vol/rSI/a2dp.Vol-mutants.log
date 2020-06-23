@@ -1,0 +1,1576 @@
+Mutant 1: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant1/src//res/values/strings.xml; WrongStringResource in line { 31 }
+	For mutant 1 the value of the string named "PrefsToasts" at line 32 has been changed from "Show Pop-ups?" to "466ddc23c12747c3ad1aca3c26371f07"
+Mutant 2: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant2/src//res/values/strings.xml; WrongStringResource in line { 27 }
+	For mutant 2 the value of the string named "PrefsCatGen" at line 28 has been changed from "General Settings" to "c53dfc8e322b4f11a13ec2f83bf37ae9"
+Mutant 3: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant3/src//res/values/strings.xml; WrongStringResource in line { 12 }
+	For mutant 3 the value of the string named "ExportDB" at line 13 has been changed from "Export Database to SD card" to "3adce440b45e43748e79c2698e12da34"
+Mutant 4: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant4/src//res/values/strings.xml; WrongStringResource in line { 81 }
+	For mutant 4 the value of the string named "PrefsHeadset" at line 82 has been changed from "Respond to Audio Jack?" to "857bc0c9727f470ea0eff65457b61ac1"
+Mutant 5: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant5/src//res/values/strings.xml; WrongStringResource in line { 61 }
+	For mutant 5 the value of the string named "getLoc" at line 62 has been changed from "Capture location on disconnect?" to "2316fef7b7604671a1ec444c43ea276b"
+Mutant 6: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant6/src//res/values/strings.xml; WrongStringResource in line { 2 }
+	For mutant 6 the value of the string named "app_name" at line 3 has been changed from "A2DP Volume" to "c93a92b4c38442d99eaf7189bca544b3"
+Mutant 7: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant7/src//res/values/strings.xml; WrongStringResource in line { 5 }
+	For mutant 7 the value of the string named "CapLocationButton" at line 6 has been changed from "Capture Location" to "f268d59b4fa0412baaa7f30b2b452d97"
+Mutant 8: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant8/src//res/values/strings.xml; WrongStringResource in line { 20 }
+	For mutant 8 the value of the string named "PrefsGPSTimeout" at line 21 has been changed from "The maximum time the GPS listener will be allowed to run looking for a better GPS location after bluetooth disconnect." to "8420e53fa8e64750956c8c0a2a7dfb37"
+Mutant 9: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant9/src//res/values/strings.xml; WrongStringResource in line { 59 }
+	For mutant 9 the value of the string named "app_not_found" at line 60 has been changed from "Application Not Found" to "ca0e38b5b99b4fa08741b5cc47a1d76c"
+Mutant 10: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant10/src//res/values/strings.xml; WrongStringResource in line { 74 }
+	For mutant 10 the value of the string named "ae_stop_app_warning_title" at line 75 has been changed from "What app is this?" to "ef490ee2c4f846658ec8ac47f2bf7973"
+Mutant 11: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant11/src//res/values/strings.xml; WrongStringResource in line { 73 }
+	For mutant 11 the value of the string named "ea_ti_app" at line 74 has been changed from "App To Launch" to "126f169b5e1a49ffbbf1c217719f973d"
+Mutant 12: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant12/src//res/values/strings.xml; WrongStringResource in line { 62 }
+	For mutant 12 the value of the string named "setVol" at line 63 has been changed from "Set media volume on connect?" to "271362f5b4024d479e234c8920007eda"
+Mutant 13: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant13/src//res/values/strings.xml; WrongStringResource in line { 3 }
+	For mutant 13 the value of the string named "ListName" at line 4 has been changed from "Bluetooth Devices" to "33ed9beafe2f41fa80eb63e014c2be14"
+Mutant 14: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant14/src//res/values/strings.xml; WrongStringResource in line { 44 }
+	For mutant 14 the value of the string named "Delete" at line 45 has been changed from "Delete" to "5cabf138277940c2aa3e37f7a8df3150"
+Mutant 15: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant15/src//res/values/strings.xml; WrongStringResource in line { 36 }
+	For mutant 15 the value of the string named "MenumanageData" at line 37 has been changed from "Manage Data" to "c437a399259541478e8200ce4a9a4fbd"
+Mutant 16: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant16/src//res/values/strings.xml; WrongStringResource in line { 65 }
+	For mutant 16 the value of the string named "wifiDisconnect" at line 66 has been changed from "Disconnect WIFI when bluetooth connects?" to "0a92d83edd2d406e872428df7b455029"
+Mutant 17: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant17/src//res/values/strings.xml; WrongStringResource in line { 22 }
+	For mutant 17 the value of the string named "PrefsGPSInaccuracy" at line 23 has been changed from "GPS maximum inaccuracy in meters before listener will stop looking for a better value." to "593e8365fca34dbebf0f60b30bec7e31"
+Mutant 18: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant18/src//res/values/strings.xml; WrongStringResource in line { 45 }
+	For mutant 18 the value of the string named "Edit" at line 46 has been changed from "Edit" to "1227f30fe30b4336a7c78a259bb62427"
+Mutant 19: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant19/src//res/values/strings.xml; WrongStringResource in line { 87 }
+	For mutant 19 the value of the string named "needTTS" at line 88 has been changed from "TTS data missing. Install it now?" to "2c8cbf1212b0400e88530b8d1e86b70d"
+Mutant 20: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant20/src//res/values/strings.xml; WrongStringResource in line { 60 }
+	For mutant 20 the value of the string named "deviceName" at line 61 has been changed from "Enter a name for this device" to "ecce54e21e1149ec8799d3f0408f795b"
+Mutant 21: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant21/src//res/values/strings.xml; WrongStringResource in line { 40 }
+	For mutant 21 the value of the string named "DeleteDataMsg" at line 41 has been changed from "Do you really want to delete all the device data from A2DP Volume?" to "b137ba5ee6ef4a55ab6aa2acc9f02391"
+Mutant 22: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant22/src//res/values/strings.xml; WrongStringResource in line { 72 }
+	For mutant 22 the value of the string named "PrefsHomeDockON" at line 73 has been changed from "Respond to Home Dock" to "4eb5adff284346c8a66a80fed8074eec"
+Mutant 23: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant23/src//res/values/strings.xml; WrongStringResource in line { 67 }
+	For mutant 23 the value of the string named "PrefsUseLocatStorageON" at line 68 has been changed from "Use device file storage" to "a0b16f1c96eb4db093123e629f5ab3c2"
+Mutant 24: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant24/src//res/values/strings.xml; WrongStringResource in line { 23 }
+	For mutant 24 the value of the string named "PrefsCarModeON" at line 24 has been changed from "Respond to Car Mode" to "2a3158f25b144a62bd2bb424f5cb63dc"
+Mutant 25: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant25/src//res/values/strings.xml; WrongStringResource in line { 58 }
+	For mutant 25 the value of the string named "btNotOn" at line 59 has been changed from "Device information is not available" to "6c2d6abf226a4f56a709dc2aa8669790"
+Mutant 26: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant26/src//res/values/strings.xml; WrongStringResource in line { 54 }
+	For mutant 26 the value of the string named "useNetworkTitle" at line 55 has been changed from "Use Network Locations" to "f0c7e40eac2245b78ff80810fcc33da6"
+Mutant 27: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant27/src//res/values/strings.xml; WrongStringResource in line { 28 }
+	For mutant 27 the value of the string named "PrefsBootstart" at line 29 has been changed from "Start at Boot?" to "810862cd1c214b7fa064980089865466"
+Mutant 28: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant28/src//res/values/strings.xml; WrongStringResource in line { 84 }
+	For mutant 28 the value of the string named "PrefsTTS" at line 85 has been changed from "Enable Reading Text Messages?" to "edaa8f031c01473aaa48261391f20528"
+Mutant 29: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant29/src//res/values/strings.xml; WrongStringResource in line { 66 }
+	For mutant 29 the value of the string named "save" at line 67 has been changed from "Save" to "a3f6ca8c797b4f8688b2ca116cea314b"
+Mutant 30: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant30/src//res/values/strings.xml; WrongStringResource in line { 4 }
+	For mutant 30 the value of the string named "GetLocButtonString" at line 5 has been changed from "Stored Location" to "46ddfe93284f4fdfb20d2b004503d357"
+Mutant 31: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant31/src//res/values/strings.xml; WrongStringResource in line { 30 }
+	For mutant 31 the value of the string named "PrefsBootstartOFF" at line 31 has been changed from "The service will not start at boot." to "268baa60e9f2422c99dc6c449fba7ff9"
+Mutant 32: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant32/src//res/values/strings.xml; WrongStringResource in line { 64 }
+	For mutant 32 the value of the string named "startApp" at line 65 has been changed from "Start app on connect" to "a22cbb9f362f45d8a2d14205d0a98f56"
+Mutant 33: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant33/src//res/values/strings.xml; WrongStringResource in line { 49 }
+	For mutant 33 the value of the string named "NobtSupport" at line 50 has been changed from "Your device does not appear to support bluetooth." to "07467a3f386a457aab33b83e41c47fba"
+Mutant 34: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant34/src//res/values/strings.xml; WrongStringResource in line { 13 }
+	For mutant 34 the value of the string named "ExportXML" at line 14 has been changed from "Export Database as XML to SD card" to "1484a204019247259ffae329bea37247"
+Mutant 35: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant35/src//res/values/strings.xml; WrongStringResource in line { 55 }
+	For mutant 35 the value of the string named "useNetworkON" at line 56 has been changed from "Also use network location listener" to "e6332fbda2a54f9f893019cb2a908ee4"
+Mutant 36: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant36/src//res/values/strings.xml; WrongStringResource in line { 38 }
+	For mutant 36 the value of the string named "MenuPrefs" at line 39 has been changed from "Preferences" to "f45b7b6def794b3c81f16afe21936d6a"
+Mutant 37: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant37/src//res/values/strings.xml; WrongStringResource in line { 92 }
+	For mutant 37 the value of the string named "homeDockName" at line 93 has been changed from "Home Dock" to "f091e2c3a8934184a0ad2d3cd7209962"
+Mutant 38: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant38/src//res/values/strings.xml; WrongStringResource in line { 34 }
+	For mutant 38 the value of the string named "PrefsToastsSummary" at line 35 has been changed from "Should the pop-up messages show when the service has started or stopped?" to "4b7233c2151c416689d913d024632ec4"
+Mutant 39: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant39/src//res/values/strings.xml; WrongStringResource in line { 6 }
+	For mutant 39 the value of the string named "StartService" at line 7 has been changed from "Start Service" to "9d44d9906c644028b4be6f33b267172f"
+Mutant 40: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant40/src//res/values/strings.xml; WrongStringResource in line { 32 }
+	For mutant 40 the value of the string named "PrefsToastsON" at line 33 has been changed from "Pop-up messages are shown when the service starts or stops." to "0978b48372424e50ab6c3f77c767a5d0"
+Mutant 41: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant41/src//res/values/strings.xml; WrongStringResource in line { 50 }
+	For mutant 41 the value of the string named "btEnableFail" at line 51 has been changed from "Failed to enable bluetooth" to "b069d5b0636a4cd18cf93fc7eda400d7"
+Mutant 42: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant42/src//res/values/strings.xml; WrongStringResource in line { 8 }
+	For mutant 42 the value of the string named "FindDevices" at line 9 has been changed from "Find Devices" to "d488bdb2a0b94981b4856d01be85ea16"
+Mutant 43: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant43/src//res/values/strings.xml; WrongStringResource in line { 57 }
+	For mutant 43 the value of the string named "LocationString" at line 58 has been changed from "Location" to "ca16f07cd6f246f28a0a9c6b88c134d3"
+Mutant 44: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant44/src//res/values/strings.xml; WrongStringResource in line { 11 }
+	For mutant 44 the value of the string named "ServiceStopped" at line 12 has been changed from "A2DP Volume Service Stopped" to "231c9bfbb11d428191e8fe6bc0447b4a"
+Mutant 45: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant45/src//res/values/strings.xml; WrongStringResource in line { 7 }
+	For mutant 45 the value of the string named "StopService" at line 8 has been changed from "Stop Service" to "69feeb23a91143ec880e9acea33d03ac"
+Mutant 46: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant46/src//res/values/strings.xml; WrongStringResource in line { 19 }
+	For mutant 46 the value of the string named "PrefsGPSTimeoutTitle" at line 20 has been changed from "GPS Listener Timeout" to "7a2062da7abb4422a901dce8c471a6c3"
+Mutant 47: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant47/src//res/values/strings.xml; WrongStringResource in line { 89 }
+	For mutant 47 the value of the string named "TTSready" at line 90 has been changed from "TTS Ready" to "9a44a4e7cad544b7ab95f461da97102b"
+Mutant 48: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant48/src//res/values/strings.xml; WrongStringResource in line { 80 }
+	For mutant 48 the value of the string named "PrefsHeadsetON" at line 81 has been changed from "Respond to Audio Jack" to "1c463296963f41a2adebeb18fa526104"
+Mutant 49: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant49/src//res/values/strings.xml; WrongStringResource in line { 33 }
+	For mutant 49 the value of the string named "PrefsToastsOFF" at line 34 has been changed from "Pop-up messages are not shown when the service starts or stops." to "b7e38e2c901e4d4391fc188ee7d655e9"
+Mutant 50: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant50/src//res/values/strings.xml; WrongStringResource in line { 86 }
+	For mutant 50 the value of the string named "audioJackName" at line 87 has been changed from "Audio Jack" to "97e2af34a79f49fcbbabbc48b304ecda"
+Mutant 51: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant51/src//res/values/strings.xml; WrongStringResource in line { 17 }
+	For mutant 51 the value of the string named "PrefsNotifySummaryOFF" at line 18 has been changed from "The service will start but it will be a background task with no icon on the notification bar." to "d696f9462b4e4e19ac39dd334ca19503"
+Mutant 52: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant52/src//res/values/strings.xml; WrongStringResource in line { 51 }
+	For mutant 52 the value of the string named "usePassiveOff" at line 52 has been changed from "Do not use passive location listener" to "46630882e3fd427d95e773e87b408314"
+Mutant 53: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant53/src//res/values/strings.xml; WrongStringResource in line { 43 }
+	For mutant 53 the value of the string named "OK" at line 44 has been changed from "OK" to "c5abbf8506644623bad03f3c3766ca00"
+Mutant 54: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant54/src//res/values/strings.xml; WrongStringResource in line { 46 }
+	For mutant 54 the value of the string named "NoData" at line 47 has been changed from "No Data" to "b280b3a8333d4c1ebce33329346ede3d"
+Mutant 55: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant55/src//res/values/strings.xml; WrongStringResource in line { 39 }
+	For mutant 55 the value of the string named "MenuHelp" at line 40 has been changed from "Help" to "c062f539947145d889228193ef969c3f"
+Mutant 56: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant56/src//res/values/strings.xml; WrongStringResource in line { 41 }
+	For mutant 56 the value of the string named "Yes" at line 42 has been changed from "Yes" to "052b7ebd436446189ee12267b045e1c5"
+Mutant 57: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant57/src//res/values/strings.xml; WrongStringResource in line { 83 }
+	For mutant 57 the value of the string named "PrefsTTSON" at line 84 has been changed from "Text messages can be read when device is connected" to "328653f85e0a47dd890a8516b4f82865"
+Mutant 58: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant58/src//res/values/strings.xml; WrongStringResource in line { 68 }
+	For mutant 58 the value of the string named "PrefsUseLocalStorageOFF" at line 69 has been changed from "Use SD Card file storage" to "45ef76e1cdd34d2cbe6fc555cc009f0a"
+Mutant 59: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant59/src//res/values/strings.xml; WrongStringResource in line { 26 }
+	For mutant 59 the value of the string named "PrefsCatGPS" at line 27 has been changed from "Location Capture Settings" to "0d5d845aee974cd69ad54fef4c77e348"
+Mutant 60: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant60/src//res/values/strings.xml; WrongStringResource in line { 85 }
+	For mutant 60 the value of the string named "PrefsTTSOFF" at line 86 has been changed from "Text messages will not be read" to "ce40476cce1244cfb06a2aefb1117532"
+Mutant 61: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant61/src//res/values/strings.xml; WrongStringResource in line { 75 }
+	For mutant 61 the value of the string named "ae_stop_app_warning_message" at line 76 has been changed from "Intents without a package name can not be stopped by A2DP Volume" to "51d634b6b7a74b6080ab72859ce5c1ca"
+Mutant 62: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant62/src//res/values/strings.xml; WrongStringResource in line { 48 }
+	For mutant 62 the value of the string named "ImportCompletedText" at line 49 has been changed from "Import Succesful" to "2a38f63a04224d56aef756c6ceb6c91a"
+Mutant 63: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant63/src//res/values/strings.xml; WrongStringResource in line { 47 }
+	For mutant 63 the value of the string named "ServRunning" at line 48 has been changed from "A2DP Volume Service Running" to "633229ae5db24fb1b7f7670d8b17dd98"
+Mutant 64: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant64/src//res/values/strings.xml; WrongStringResource in line { 14 }
+	For mutant 64 the value of the string named "ImportDB" at line 15 has been changed from "Import Database from SD card" to "c764e1cc0337499b9fb20d441b3048f0"
+Mutant 65: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant65/src//res/values/strings.xml; WrongStringResource in line { 90 }
+	For mutant 65 the value of the string named "TTSNotReady" at line 91 has been changed from "TTS Not ready" to "3bad3cd18d9348fabb4343fbb0e00451"
+Mutant 66: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant66/src//res/values/strings.xml; WrongStringResource in line { 15 }
+	For mutant 66 the value of the string named "ExportLocation" at line 16 has been changed from "Export Last Location Data" to "01f0282f923446f495d1131de04f3f3d"
+Mutant 67: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant67/src//res/values/strings.xml; WrongStringResource in line { 21 }
+	For mutant 67 the value of the string named "PrefsGPSInaccuracyTitle" at line 22 has been changed from "GPS Max Inaccuracy" to "302dcb41c2de4247a126ec67a8469b62"
+Mutant 68: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant68/src//res/values/strings.xml; WrongStringResource in line { 77 }
+	For mutant 68 the value of the string named "PrefsCatOther" at line 78 has been changed from "Other Settings" to "cb1d973d9e5f426986392a6bf0ad4962"
+Mutant 69: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant69/src//res/values/strings.xml; WrongStringResource in line { 29 }
+	For mutant 69 the value of the string named "PrefsBootstartON" at line 30 has been changed from "The service will start at boot." to "ac9a01f5548c40dcadc4616b018678b7"
+Mutant 70: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant70/src//res/values/strings.xml; WrongStringResource in line { 88 }
+	For mutant 70 the value of the string named "msgTemplate" at line 89 has been changed from "... Message From: {0} .. {1}" to "5c1f1093015741708a5424ef8b33374a"
+Mutant 71: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant71/src//res/values/strings.xml; WrongStringResource in line { 18 }
+	For mutant 71 the value of the string named "PrefsNotify" at line 19 has been changed from "Notify in Foreground?" to "6645c18255e1443394933cb1f44dd026"
+Mutant 72: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant72/src//res/values/strings.xml; WrongStringResource in line { 37 }
+	For mutant 72 the value of the string named "MenuDeleteData" at line 38 has been changed from "Delete All Data" to "9160cc9d65e844cfa701286d8197f37b"
+Mutant 73: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant73/src//res/values/strings.xml; WrongStringResource in line { 91 }
+	For mutant 73 the value of the string named "carDockName" at line 92 has been changed from "Car Dock" to "27312e5bb4854aa49ce2aac9acff654c"
+Mutant 74: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant74/src//res/values/strings.xml; WrongStringResource in line { 16 }
+	For mutant 74 the value of the string named "PrefsNotifySummaryON" at line 17 has been changed from "The service will start as a foreground task with an icon on the notification bar." to "2e2e781e521545459408be46ee56cdc1"
+Mutant 75: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant75/src//res/values/strings.xml; WrongStringResource in line { 82 }
+	For mutant 75 the value of the string named "PrefsHeadsetOFF" at line 83 has been changed from "Do not respond to Audio Jack" to "9677e112bfcc4a189f7861c9d5d7c2a5"
+Mutant 76: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant76/src//res/values/strings.xml; WrongStringResource in line { 71 }
+	For mutant 76 the value of the string named "PrefsHomeDock" at line 72 has been changed from "Respond to Home Dock?" to "5ef15edf10554edb8e0fa6dc06394589"
+Mutant 77: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant77/src//res/values/strings.xml; WrongStringResource in line { 56 }
+	For mutant 77 the value of the string named "useNetworkOFF" at line 57 has been changed from "Do not use network location listener" to "0e97ec105a704031ad98f1c89cbef9c2"
+Mutant 78: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant78/src//res/values/strings.xml; WrongStringResource in line { 70 }
+	For mutant 78 the value of the string named "PrefsHomeDockOFF" at line 71 has been changed from "Do not respond to Home Dock" to "d3cfcabd22844a4e810018d34bf06da4"
+Mutant 79: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant79/src//res/values/strings.xml; WrongStringResource in line { 79 }
+	For mutant 79 the value of the string named "app_restart" at line 80 has been changed from "Force App Restart?" to "bee7ef76fdd041919307c763ba191c50"
+Mutant 80: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant80/src//res/values/strings.xml; WrongStringResource in line { 10 }
+	For mutant 80 the value of the string named "ServiceStarted" at line 11 has been changed from "A2DP Volume Service Started" to "c31c27cbc4544d0f9e516f5a5d384da2"
+Mutant 81: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant81/src//res/values/strings.xml; WrongStringResource in line { 24 }
+	For mutant 81 the value of the string named "PrefsCarModeOFF" at line 25 has been changed from "Does not respond to Car Mode." to "cf704dfb9f564027aaaa91b23fdb7b0b"
+Mutant 82: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant82/src//res/values/strings.xml; WrongStringResource in line { 42 }
+	For mutant 82 the value of the string named "No" at line 43 has been changed from "No" to "36977978133442938d021de65d60b3a7"
+Mutant 83: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant83/src//res/values/strings.xml; WrongStringResource in line { 78 }
+	For mutant 83 the value of the string named "PrefsOtherConnectedIcon" at line 79 has been changed from "Connected Icon" to "9f1f95cec00941a987a6989115af3fc0"
+Mutant 84: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant84/src//res/values/strings.xml; WrongStringResource in line { 25 }
+	For mutant 84 the value of the string named "PrefsCarMode" at line 26 has been changed from "Respond to Car Mode?" to "467230513eaf4397a2cdd5fea4eacd6d"
+Mutant 85: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant85/src//res/values/strings.xml; WrongStringResource in line { 9 }
+	For mutant 85 the value of the string named "MediaVolume" at line 10 has been changed from "Media Volume" to "e533624a02b84c50815d0e278568b021"
+Mutant 86: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant86/src//res/values/strings.xml; WrongStringResource in line { 69 }
+	For mutant 86 the value of the string named "PrefsUseLocalStorage" at line 70 has been changed from "Use Local File Storage?" to "5eb4846cd338433f86a472aba407c0f2"
+Mutant 87: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant87/src//res/values/strings.xml; WrongStringResource in line { 52 }
+	For mutant 87 the value of the string named "usePassiveOn" at line 53 has been changed from "Also use passive location listener" to "d2bd1d3642914bb79e8db95e0f5c6148"
+Mutant 88: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant88/src//res/values/strings.xml; WrongStringResource in line { 76 }
+	For mutant 88 the value of the string named "connectedTo" at line 77 has been changed from "Connected to" to "f4628021a87941f2ae678cc1dd1a8fc6"
+Mutant 89: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant89/src//res/values/strings.xml; WrongStringResource in line { 35 }
+	For mutant 89 the value of the string named "MenuExit" at line 36 has been changed from "Exit" to "2b5b303da5854d45a94e2d29dd658992"
+Mutant 90: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant90/src//res/values/strings.xml; WrongStringResource in line { 63 }
+	For mutant 90 the value of the string named "connectBT" at line 64 has been changed from "Also connect to bluetooth device" to "33eede50af4640f0a683f3733dc6e2e4"
+Mutant 91: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant91/src//res/values/strings.xml; WrongStringResource in line { 53 }
+	For mutant 91 the value of the string named "usePassiveTitle" at line 54 has been changed from "Use Passive Locations?" to "8f549cabd07c4186a87a08939cc73ff6"
+Mutant 92: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant92/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; LengthyGUIListener in line { 40 }
+	For mutant 92 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 93: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant93/src//smali/a2dp/Vol/AppChooser$2.smali; LengthyGUIListener in line { 40 }
+	For mutant 93 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 94: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant94/src//smali/a2dp/Vol/CustomIntentMaker$1.smali; LengthyGUIListener in line { 40 }
+	For mutant 94 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 95: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant95/src//smali/a2dp/Vol/main$8.smali; LengthyGUIListener in line { 40 }
+	For mutant 95 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 96: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant96/src//smali/a2dp/Vol/EditDevice$7.smali; LengthyGUIListener in line { 40 }
+	For mutant 96 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 97: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant97/src//smali/a2dp/Vol/EditDevice$8.smali; LengthyGUIListener in line { 40 }
+	For mutant 97 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 98: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant98/src//smali/a2dp/Vol/ManageData$2.smali; LengthyGUIListener in line { 40 }
+	For mutant 98 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 99: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant99/src//smali/a2dp/Vol/EditDevice$5.smali; LengthyGUIListener in line { 40 }
+	For mutant 99 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 100: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant100/src//smali/a2dp/Vol/CustomIntentMaker$2.smali; LengthyGUIListener in line { 40 }
+	For mutant 100 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 101: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant101/src//smali/a2dp/Vol/main$3.smali; LengthyGUIListener in line { 40 }
+	For mutant 101 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 102: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant102/src//smali/a2dp/Vol/EditDevice$4.smali; LengthyGUIListener in line { 40 }
+	For mutant 102 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 103: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant103/src//smali/a2dp/Vol/AppChooser$1.smali; LengthyGUIListener in line { 40 }
+	For mutant 103 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 104: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant104/src//smali/a2dp/Vol/ManageData$3.smali; LengthyGUIListener in line { 40 }
+	For mutant 104 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 105: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant105/src//smali/a2dp/Vol/ManageData$1.smali; LengthyGUIListener in line { 40 }
+	For mutant 105 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 106: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant106/src//smali/a2dp/Vol/ManageData$4.smali; LengthyGUIListener in line { 40 }
+	For mutant 106 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 107: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant107/src//smali/a2dp/Vol/main$6.smali; LengthyGUIListener in line { 40 }
+	For mutant 107 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 108: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant108/src//smali/a2dp/Vol/ALauncher.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 108 component name at line 0 has been change from "" to ""
+Mutant 109: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant109/src//smali/a2dp/Vol/service.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 109 component name at line 0 has been change from "" to ""
+Mutant 110: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant110/src//smali/a2dp/Vol/service.smali; DifferentActivityIntentDefinition in line { 2832 }
+	For mutant 110 component name at line 2832 has been change from "La2dp/Vol/StoreLoc;" to "La2dp/Vol/Preferences;"
+Mutant 111: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant111/src//smali/a2dp/Vol/main$8.smali; DifferentActivityIntentDefinition in line { 59 }
+	For mutant 111 component name at line 59 has been change from "La2dp/Vol/service;" to "La2dp/Vol/Preferences;"
+Mutant 112: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant112/src//smali/a2dp/Vol/main$5$2.smali; DifferentActivityIntentDefinition in line { 57 }
+	For mutant 112 component name at line 57 has been change from "La2dp/Vol/EditDevice;" to "La2dp/Vol/Preferences;"
+Mutant 113: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant113/src//smali/a2dp/Vol/main.smali; DifferentActivityIntentDefinition in line { 4705 }
+	For mutant 113 component name at line 4705 has been change from "La2dp/Vol/ManageData;" to "La2dp/Vol/ProviderList;"
+Mutant 114: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant114/src//smali/a2dp/Vol/EditDevice$11.smali; DifferentActivityIntentDefinition in line { 65 }
+	For mutant 114 component name at line 65 has been change from "La2dp/Vol/AppChooser;" to "La2dp/Vol/ProviderList;"
+Mutant 115: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant115/src//smali/a2dp/Vol/main.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 115 component name at line 0 has been change from "" to ""
+Mutant 116: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant116/src//smali/a2dp/Vol/EmmaInstrument/EmmaInstrumentation.smali; DifferentActivityIntentDefinition in line { 581 }
+	For mutant 116 component name at line 581 has been change from "La2dp/Vol/EmmaInstrument/InstrumentedActivity;" to "La2dp/Vol/ProviderList;"
+Mutant 117: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant117/src//smali/a2dp/Vol/main.smali; DifferentActivityIntentDefinition in line { 4722 }
+	For mutant 117 component name at line 4722 has been change from "La2dp/Vol/service;" to "La2dp/Vol/main;"
+Mutant 118: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant118/src//smali/a2dp/Vol/EditDevice$11.smali; DifferentActivityIntentDefinition in line { 187 }
+	For mutant 118 component name at line 187 has been change from "La2dp/Vol/CustomIntentMaker;" to "La2dp/Vol/Preferences;"
+Mutant 119: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant119/src//smali/a2dp/Vol/EditDevice$11.smali; DifferentActivityIntentDefinition in line { 127 }
+	For mutant 119 component name at line 127 has been change from "La2dp/Vol/ProviderList;" to "La2dp/Vol/CustomIntentMaker;"
+Mutant 120: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant120/src//smali/a2dp/Vol/EditDevice$11.smali; DifferentActivityIntentDefinition in line { 157 }
+	For mutant 120 component name at line 157 has been change from "La2dp/Vol/ProviderList;" to "La2dp/Vol/CustomIntentMaker;"
+Mutant 121: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant121/src//smali/a2dp/Vol/service.smali; DifferentActivityIntentDefinition in line { 1834 }
+	For mutant 121 component name at line 1834 has been change from "La2dp/Vol/main;" to "La2dp/Vol/ProviderList;"
+Mutant 122: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant122/src//smali/a2dp/Vol/service.smali; DifferentActivityIntentDefinition in line { 3692 }
+	For mutant 122 component name at line 3692 has been change from "La2dp/Vol/main;" to "La2dp/Vol/ProviderList;"
+Mutant 123: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant123/src//smali/a2dp/Vol/main$8.smali; DifferentActivityIntentDefinition in line { 77 }
+	For mutant 123 component name at line 77 has been change from "La2dp/Vol/service;" to "La2dp/Vol/ManageData;"
+Mutant 124: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant124/src//smali/a2dp/Vol/main.smali; DifferentActivityIntentDefinition in line { 4236 }
+	For mutant 124 component name at line 4236 has been change from "La2dp/Vol/service;" to "La2dp/Vol/main;"
+Mutant 125: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant125/src//smali/a2dp/Vol/main.smali; DifferentActivityIntentDefinition in line { 4737 }
+	For mutant 125 component name at line 4737 has been change from "La2dp/Vol/Preferences;" to "La2dp/Vol/AppChooser;"
+Mutant 126: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant126/src//smali/a2dp/Vol/EditDevice$12.smali; DifferentActivityIntentDefinition in line { 55 }
+	For mutant 126 component name at line 55 has been change from "La2dp/Vol/AppChooser;" to "La2dp/Vol/EmmaInstrument/InstrumentedActivity;"
+Mutant 127: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant127/src//smali/a2dp/Vol/main.smali; DifferentActivityIntentDefinition in line { 4737 }
+	For mutant 127 component name at line 4737 has been change from "La2dp/Vol/Preferences;" to "La2dp/Vol/EditDevice;"
+Mutant 128: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant128/src//smali/a2dp/Vol/DataXmlExporter.smali; InvalidIndexQueryParameter in line { 114 }
+	For mutant 128 params list send with SQL command have been replace with an empty String list
+Mutant 129: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant129/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; InvalidIndexQueryParameter in line { 90 }
+	For mutant 129 params list send with SQL command have been replace with an empty String list
+Mutant 130: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant130/src//smali/a2dp/Vol/DataXmlExporter.smali; InvalidIndexQueryParameter in line { 317 }
+	For mutant 130 params list send with SQL command have been replace with an empty String list
+Mutant 131: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant131/src//AndroidManifest.xml; ActivityNotDefined in line { 46 }
+	For mutant 131 the lines between 47 and 47 have been deleted.
+Mutant 132: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant132/src//AndroidManifest.xml; ActivityNotDefined in line { 30 }
+	For mutant 132 the lines between 31 and 31 have been deleted.
+Mutant 133: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant133/src//AndroidManifest.xml; ActivityNotDefined in line { 47 }
+	For mutant 133 the lines between 48 and 48 have been deleted.
+Mutant 134: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant134/src//AndroidManifest.xml; ActivityNotDefined in line { 22 }
+	For mutant 134 the lines between 23 and 28 have been deleted.
+Mutant 135: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant135/src//AndroidManifest.xml; ActivityNotDefined in line { 56 }
+	For mutant 135 the lines between 57 and 57 have been deleted.
+Mutant 136: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant136/src//AndroidManifest.xml; ActivityNotDefined in line { 45 }
+	For mutant 136 the lines between 46 and 46 have been deleted.
+Mutant 137: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant137/src//AndroidManifest.xml; ActivityNotDefined in line { 44 }
+	For mutant 137 the lines between 45 and 45 have been deleted.
+Mutant 138: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant138/src//AndroidManifest.xml; ActivityNotDefined in line { 48 }
+	For mutant 138 the lines between 49 and 49 have been deleted.
+Mutant 139: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant139/src//AndroidManifest.xml; ActivityNotDefined in line { 29 }
+	For mutant 139 the lines between 30 and 30 have been deleted.
+Mutant 140: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant140/src//AndroidManifest.xml; InvalidActivityPATH in line { 46 }
+	For mutant 140 activity name at line 46 has been change from "AppChooser" to "AppChoser"
+Mutant 141: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant141/src//AndroidManifest.xml; InvalidActivityPATH in line { 22 }
+	For mutant 141 activity name at line 22 has been change from ".main" to ".ain"
+Mutant 142: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant142/src//AndroidManifest.xml; InvalidActivityPATH in line { 30 }
+	For mutant 142 activity name at line 30 has been change from "Preferences" to "Pnefererces"
+Mutant 143: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant143/src//AndroidManifest.xml; InvalidActivityPATH in line { 44 }
+	For mutant 143 activity name at line 44 has been change from ".EditDevice" to ".EdtDevice"
+Mutant 144: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant144/src//AndroidManifest.xml; InvalidActivityPATH in line { 56 }
+	For mutant 144 activity name at line 56 has been change from "a2dp.Vol.EmmaInstrument.InstrumentedActivity" to "a2tp.Vol.EmmaInstrumend.InstrumentedActivity"
+Mutant 145: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant145/src//AndroidManifest.xml; InvalidActivityPATH in line { 29 }
+	For mutant 145 activity name at line 29 has been change from "ManageData" to "Manageata"
+Mutant 146: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant146/src//AndroidManifest.xml; InvalidActivityPATH in line { 48 }
+	For mutant 146 activity name at line 48 has been change from "ProviderList" to "ProviderL"
+Mutant 147: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant147/src//AndroidManifest.xml; InvalidActivityPATH in line { 45 }
+	For mutant 147 activity name at line 45 has been change from ".ListViewer" to ".eistViLwer"
+Mutant 148: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant148/src//AndroidManifest.xml; InvalidActivityPATH in line { 47 }
+	For mutant 148 activity name at line 47 has been change from "CustomIntentMaker" to "CustmoIntentMaker"
+Mutant 149: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant149/src//smali/a2dp/Vol/ProviderList.smali; LengthyGUICreation in line { 730 }
+	For mutant 149 a large delay has been injected after GUI Creation at line 730
+Mutant 150: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant150/src//smali/a2dp/Vol/EditDevice.smali; LengthyGUICreation in line { 1839 }
+	For mutant 150 a large delay has been injected after GUI Creation at line 1839
+Mutant 151: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant151/src//smali/a2dp/Vol/Preferences.smali; LengthyGUICreation in line { 47 }
+	For mutant 151 a large delay has been injected after GUI Creation at line 47
+Mutant 152: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant152/src//smali/a2dp/Vol/CustomIntentMaker.smali; LengthyGUICreation in line { 247 }
+	For mutant 152 a large delay has been injected after GUI Creation at line 247
+Mutant 153: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant153/src//smali/a2dp/Vol/AppChooser.smali; LengthyGUICreation in line { 525 }
+	For mutant 153 a large delay has been injected after GUI Creation at line 525
+Mutant 154: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant154/src//smali/a2dp/Vol/EmmaInstrument/EmmaInstrumentation.smali; LengthyGUICreation in line { 515 }
+	For mutant 154 a large delay has been injected after GUI Creation at line 515
+Mutant 155: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant155/src//smali/a2dp/Vol/main.smali; LengthyGUICreation in line { 3701 }
+	For mutant 155 a large delay has been injected after GUI Creation at line 3701
+Mutant 156: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant156/src//smali/a2dp/Vol/ManageData.smali; LengthyGUICreation in line { 174 }
+	For mutant 156 a large delay has been injected after GUI Creation at line 174
+Mutant 157: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant157/src//smali/a2dp/Vol/DataXmlExporter.smali; InvalidSQLQuery in line { 114 }
+	For mutant 157 SQL command have been replace with f7ef375a9ed2480f9399e2ff2f355c15
+Mutant 158: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant158/src//smali/a2dp/Vol/DataXmlExporter.smali; InvalidSQLQuery in line { 317 }
+	For mutant 158 SQL command have been replace with c35ad7063b194674a42e2d0a3b65f19f
+Mutant 159: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant159/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; InvalidSQLQuery in line { 90 }
+	For mutant 159 SQL command have been replace with 9b853a4b4a57406883d818431235e2c4
+Mutant 160: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant160/src//smali/a2dp/Vol/main.smali; NullBluetoothAdapter in lines { 2426, 2428 }
+	For mutant 160 Bluetooth Adapter has been set to null
+Mutant 161: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant161/src//smali/a2dp/Vol/service$ConnectBt.smali; NullBluetoothAdapter in lines { 270, 272 }
+	For mutant 161 Bluetooth Adapter has been set to null
+Mutant 162: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant162/src//smali/a2dp/Vol/service$ConnectBt.smali; NullBluetoothAdapter in lines { 45, 47 }
+	For mutant 162 Bluetooth Adapter has been set to null
+Mutant 163: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant163/src//smali/a2dp/Vol/service$1.smali; NullBluetoothAdapter in lines { 56, 58 }
+	For mutant 163 Bluetooth Adapter has been set to null
+Mutant 164: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant164/src//smali/a2dp/Vol/service.smali; NullBluetoothAdapter in lines { 2267, 2269 }
+	For mutant 164 Bluetooth Adapter has been set to null
+Mutant 165: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant165/src//smali/a2dp/Vol/service.smali; NullBluetoothAdapter in lines { 3202, 3204 }
+	For mutant 165 Bluetooth Adapter has been set to null
+Mutant 166: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant166/src//AndroidManifest.xml; InvalidLabel in line { 22 }
+	For mutant 166 activity label at line 22 has been change from "@string/app_name" to "91f175800c594474a75a98a25e13c578"
+Mutant 167: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant167/src//AndroidManifest.xml; InvalidLabel in line { 29 }
+	For mutant 167 activity label at line 29 has been change from "@string/app_name" to "a58028c4774c452dbf8f7e6de98f016b"
+Mutant 168: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant168/src//AndroidManifest.xml; InvalidLabel in line { 30 }
+	For mutant 168 activity label at line 30 has been change from "@xml/preferences" to "c756bdf4493d4bca95f403a1bda58e88"
+Mutant 169: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant169/src//AndroidManifest.xml; InvalidLabel in line { 56 }
+	For mutant 169 activity label at line 56 has been change from "EmmaInstrumentationActivity" to "e493c26d9a1641bcb41de7c6f98c0ef9"
+Mutant 170: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant170/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2295 }
+	For mutant 170 the id of the element retrieved at line 2297 has been set to a random value
+Mutant 171: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant171/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1942 }
+	For mutant 171 the id of the element retrieved at line 1944 has been set to a random value
+Mutant 172: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant172/src//smali/a2dp/Vol/CustomIntentMaker.smali; InvalidIDFindView in line { 136 }
+	For mutant 172 the id of the element retrieved at line 138 has been set to a random value
+Mutant 173: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant173/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2141 }
+	For mutant 173 the id of the element retrieved at line 2143 has been set to a random value
+Mutant 174: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant174/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2042 }
+	For mutant 174 the id of the element retrieved at line 2044 has been set to a random value
+Mutant 175: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant175/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2218 }
+	For mutant 175 the id of the element retrieved at line 2220 has been set to a random value
+Mutant 176: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant176/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2251 }
+	For mutant 176 the id of the element retrieved at line 2253 has been set to a random value
+Mutant 177: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant177/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2240 }
+	For mutant 177 the id of the element retrieved at line 2242 has been set to a random value
+Mutant 178: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant178/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2284 }
+	For mutant 178 the id of the element retrieved at line 2286 has been set to a random value
+Mutant 179: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant179/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1887 }
+	For mutant 179 the id of the element retrieved at line 1889 has been set to a random value
+Mutant 180: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant180/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2339 }
+	For mutant 180 the id of the element retrieved at line 2341 has been set to a random value
+Mutant 181: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant181/src//smali/a2dp/Vol/CustomIntentMaker.smali; InvalidIDFindView in line { 147 }
+	For mutant 181 the id of the element retrieved at line 149 has been set to a random value
+Mutant 182: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant182/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1975 }
+	For mutant 182 the id of the element retrieved at line 1977 has been set to a random value
+Mutant 183: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant183/src//smali/a2dp/Vol/ManageData.smali; InvalidIDFindView in line { 222 }
+	For mutant 183 the id of the element retrieved at line 224 has been set to a random value
+Mutant 184: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant184/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2174 }
+	For mutant 184 the id of the element retrieved at line 2176 has been set to a random value
+Mutant 185: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant185/src//smali/a2dp/Vol/ManageData.smali; InvalidIDFindView in line { 299 }
+	For mutant 185 the id of the element retrieved at line 301 has been set to a random value
+Mutant 186: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant186/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1909 }
+	For mutant 186 the id of the element retrieved at line 1911 has been set to a random value
+Mutant 187: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant187/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2196 }
+	For mutant 187 the id of the element retrieved at line 2198 has been set to a random value
+Mutant 188: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant188/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2031 }
+	For mutant 188 the id of the element retrieved at line 2033 has been set to a random value
+Mutant 189: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant189/src//smali/a2dp/Vol/ManageData.smali; InvalidIDFindView in line { 278 }
+	For mutant 189 the id of the element retrieved at line 281 has been set to a random value
+Mutant 190: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant190/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2097 }
+	For mutant 190 the id of the element retrieved at line 2099 has been set to a random value
+Mutant 191: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant191/src//smali/a2dp/Vol/AppChooser$PackageListAdapter.smali; InvalidIDFindView in line { 96 }
+	For mutant 191 the id of the element retrieved at line 98 has been set to a random value
+Mutant 192: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant192/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2317 }
+	For mutant 192 the id of the element retrieved at line 2319 has been set to a random value
+Mutant 193: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant193/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2108 }
+	For mutant 193 the id of the element retrieved at line 2110 has been set to a random value
+Mutant 194: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant194/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1998 }
+	For mutant 194 the id of the element retrieved at line 2000 has been set to a random value
+Mutant 195: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant195/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1986 }
+	For mutant 195 the id of the element retrieved at line 1989 has been set to a random value
+Mutant 196: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant196/src//smali/a2dp/Vol/CustomIntentMaker.smali; InvalidIDFindView in line { 191 }
+	For mutant 196 the id of the element retrieved at line 193 has been set to a random value
+Mutant 197: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant197/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1953 }
+	For mutant 197 the id of the element retrieved at line 1955 has been set to a random value
+Mutant 198: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant198/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1931 }
+	For mutant 198 the id of the element retrieved at line 1933 has been set to a random value
+Mutant 199: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant199/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2119 }
+	For mutant 199 the id of the element retrieved at line 2121 has been set to a random value
+Mutant 200: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant200/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2229 }
+	For mutant 200 the id of the element retrieved at line 2231 has been set to a random value
+Mutant 201: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant201/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2130 }
+	For mutant 201 the id of the element retrieved at line 2132 has been set to a random value
+Mutant 202: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant202/src//smali/a2dp/Vol/CustomIntentMaker.smali; InvalidIDFindView in line { 169 }
+	For mutant 202 the id of the element retrieved at line 171 has been set to a random value
+Mutant 203: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant203/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2262 }
+	For mutant 203 the id of the element retrieved at line 2264 has been set to a random value
+Mutant 204: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant204/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2009 }
+	For mutant 204 the id of the element retrieved at line 2011 has been set to a random value
+Mutant 205: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant205/src//smali/a2dp/Vol/ManageData.smali; InvalidIDFindView in line { 233 }
+	For mutant 205 the id of the element retrieved at line 235 has been set to a random value
+Mutant 206: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant206/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2152 }
+	For mutant 206 the id of the element retrieved at line 2154 has been set to a random value
+Mutant 207: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant207/src//smali/a2dp/Vol/ManageData.smali; InvalidIDFindView in line { 257 }
+	For mutant 207 the id of the element retrieved at line 260 has been set to a random value
+Mutant 208: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant208/src//smali/a2dp/Vol/ManageData.smali; InvalidIDFindView in line { 319 }
+	For mutant 208 the id of the element retrieved at line 321 has been set to a random value
+Mutant 209: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant209/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2064 }
+	For mutant 209 the id of the element retrieved at line 2066 has been set to a random value
+Mutant 210: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant210/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2163 }
+	For mutant 210 the id of the element retrieved at line 2165 has been set to a random value
+Mutant 211: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant211/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1898 }
+	For mutant 211 the id of the element retrieved at line 1900 has been set to a random value
+Mutant 212: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant212/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1920 }
+	For mutant 212 the id of the element retrieved at line 1922 has been set to a random value
+Mutant 213: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant213/src//smali/a2dp/Vol/CustomIntentMaker.smali; InvalidIDFindView in line { 180 }
+	For mutant 213 the id of the element retrieved at line 182 has been set to a random value
+Mutant 214: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant214/src//smali/a2dp/Vol/CustomIntentMaker.smali; InvalidIDFindView in line { 158 }
+	For mutant 214 the id of the element retrieved at line 160 has been set to a random value
+Mutant 215: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant215/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2328 }
+	For mutant 215 the id of the element retrieved at line 2330 has been set to a random value
+Mutant 216: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant216/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2207 }
+	For mutant 216 the id of the element retrieved at line 2209 has been set to a random value
+Mutant 217: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant217/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2273 }
+	For mutant 217 the id of the element retrieved at line 2275 has been set to a random value
+Mutant 218: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant218/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2306 }
+	For mutant 218 the id of the element retrieved at line 2308 has been set to a random value
+Mutant 219: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant219/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 1964 }
+	For mutant 219 the id of the element retrieved at line 1966 has been set to a random value
+Mutant 220: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant220/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2020 }
+	For mutant 220 the id of the element retrieved at line 2022 has been set to a random value
+Mutant 221: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant221/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2086 }
+	For mutant 221 the id of the element retrieved at line 2088 has been set to a random value
+Mutant 222: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant222/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2053 }
+	For mutant 222 the id of the element retrieved at line 2055 has been set to a random value
+Mutant 223: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant223/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2185 }
+	For mutant 223 the id of the element retrieved at line 2187 has been set to a random value
+Mutant 224: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant224/src//smali/a2dp/Vol/EditDevice.smali; InvalidIDFindView in line { 2075 }
+	For mutant 224 the id of the element retrieved at line 2077 has been set to a random value
+Mutant 225: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant225/src//smali/a2dp/Vol/service.smali; NullValueIntentPutExtra in line { 2729 }
+	For mutant 225 extra intent value at line 2729 has been set to 'new Parcelable[0]'
+Mutant 226: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant226/src//smali/a2dp/Vol/EditDevice$11.smali; NullValueIntentPutExtra in line { 212 }
+	For mutant 226 extra intent value at line 212 has been set to 'new Parcelable[0]'
+Mutant 227: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant227/src//smali/a2dp/Vol/EditDevice$11.smali; NullValueIntentPutExtra in line { 223 }
+	For mutant 227 extra intent value at line 223 has been set to 'new Parcelable[0]'
+Mutant 228: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant228/src//smali/a2dp/Vol/EditDevice$11.smali; NullValueIntentPutExtra in line { 167 }
+	For mutant 228 extra intent value at line 167 has been set to 'new Parcelable[0]'
+Mutant 229: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant229/src//smali/a2dp/Vol/EditDevice$11.smali; NullValueIntentPutExtra in line { 234 }
+	For mutant 229 extra intent value at line 234 has been set to 'new Parcelable[0]'
+Mutant 230: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant230/src//smali/a2dp/Vol/ManageData$ImportDatabaseFileTask.smali; NullValueIntentPutExtra in line { 359 }
+	For mutant 230 extra intent value at line 359 has been set to 'new Parcelable[0]'
+Mutant 231: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant231/src//smali/a2dp/Vol/EditDevice.smali; NullValueIntentPutExtra in line { 570 }
+	For mutant 231 extra intent value at line 570 has been set to 'new Parcelable[0]'
+Mutant 232: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant232/src//smali/a2dp/Vol/main$5$2.smali; NullValueIntentPutExtra in line { 69 }
+	For mutant 232 extra intent value at line 69 has been set to 'new Parcelable[0]'
+Mutant 233: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant233/src//smali/a2dp/Vol/EditDevice$11.smali; NullValueIntentPutExtra in line { 105 }
+	For mutant 233 extra intent value at line 105 has been set to 'new Parcelable[0]'
+Mutant 234: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant234/src//smali/a2dp/Vol/EditDevice$11.smali; NullValueIntentPutExtra in line { 137 }
+	For mutant 234 extra intent value at line 137 has been set to 'new Parcelable[0]'
+Mutant 235: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant235/src//smali/a2dp/Vol/AppChooser$5.smali; NullValueIntentPutExtra in line { 82 }
+	For mutant 235 extra intent value at line 82 has been set to 'new Parcelable[0]'
+Mutant 236: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant236/src//smali/a2dp/Vol/service.smali; NullValueIntentPutExtra in line { 2432 }
+	For mutant 236 extra intent value at line 2432 has been set to 'new Parcelable[0]'
+Mutant 237: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant237/src//smali/a2dp/Vol/EditDevice$11.smali; NullValueIntentPutExtra in line { 98 }
+	For mutant 237 extra intent value at line 98 has been set to 'new Parcelable[0]'
+Mutant 238: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant238/src//smali/a2dp/Vol/service$1.smali; NullValueIntentPutExtra in line { 280 }
+	For mutant 238 extra intent value at line 280 has been set to 'new Parcelable[0]'
+Mutant 239: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant239/src//smali/a2dp/Vol/service.smali; NullValueIntentPutExtra in line { 3277 }
+	For mutant 239 extra intent value at line 3277 has been set to 'new Parcelable[0]'
+Mutant 240: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant240/src//smali/a2dp/Vol/EditDevice$11.smali; NullValueIntentPutExtra in line { 201 }
+	For mutant 240 extra intent value at line 201 has been set to 'new Parcelable[0]'
+Mutant 241: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant241/src//smali/a2dp/Vol/service.smali; NullValueIntentPutExtra in line { 2850 }
+	For mutant 241 extra intent value at line 2850 has been set to 'new Parcelable[0]'
+Mutant 242: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant242/src//smali/a2dp/Vol/service.smali; NullValueIntentPutExtra in line { 2659 }
+	For mutant 242 extra intent value at line 2659 has been set to 'new Parcelable[0]'
+Mutant 243: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant243/src//smali/a2dp/Vol/service.smali; NullValueIntentPutExtra in line { 2685 }
+	For mutant 243 extra intent value at line 2685 has been set to 'new Parcelable[0]'
+Mutant 244: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant244/src//smali/a2dp/Vol/StoreLoc.smali; NullOutputStream in line { 2461 }
+	For mutant 244 Output Stream at line 2461 has been set to null before calling close() method
+Mutant 245: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant245/src//smali/a2dp/Vol/StoreLoc.smali; NullOutputStream in line { 1062 }
+	For mutant 245 Output Stream at line 1062 has been set to null before calling close() method
+Mutant 246: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant246/src//smali/a2dp/Vol/StoreLoc.smali; NullOutputStream in line { 1688 }
+	For mutant 246 Output Stream at line 1688 has been set to null before calling close() method
+Mutant 247: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant247/src//smali/a2dp/Vol/StoreLoc.smali; NullOutputStream in line { 2693 }
+	For mutant 247 Output Stream at line 2693 has been set to null before calling close() method
+Mutant 248: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant248/src//smali/a2dp/Vol/EditDevice$11.smali; InvalidKeyIntentPutExtra in line { 101 }
+	For mutant 248 extra key value at line 101 has been set to 37ba81b5153e4ebcb27805f5fb58463c
+Mutant 249: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant249/src//smali/a2dp/Vol/EditDevice$11.smali; InvalidKeyIntentPutExtra in line { 215 }
+	For mutant 249 extra key value at line 215 has been set to 439bcb0bd9ab4592a7ee65c9d6eadc67
+Mutant 250: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant250/src//smali/a2dp/Vol/service$1.smali; InvalidKeyIntentPutExtra in line { 278 }
+	For mutant 250 extra key value at line 278 has been set to d27deabb4c4c4fbf8316cf8473cbd2fa
+Mutant 251: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant251/src//smali/a2dp/Vol/EditDevice$11.smali; InvalidKeyIntentPutExtra in line { 101 }
+	For mutant 251 extra key value at line 101 has been set to c51a7b1f4c83475e975ddce7aa810e68
+Mutant 252: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant252/src//smali/a2dp/Vol/EditDevice$11.smali; InvalidKeyIntentPutExtra in line { 226 }
+	For mutant 252 extra key value at line 226 has been set to e69c0e178e374bfe9df71ccb5e571123
+Mutant 253: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant253/src//smali/a2dp/Vol/ManageData$ImportDatabaseFileTask.smali; InvalidKeyIntentPutExtra in line { 355 }
+	For mutant 253 extra key value at line 355 has been set to aac43e28d9cc4d9dadd25a47e9108515
+Mutant 254: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant254/src//smali/a2dp/Vol/EditDevice$11.smali; InvalidKeyIntentPutExtra in line { 101 }
+	For mutant 254 extra key value at line 101 has been set to 0b598acc371c4fd3934b515b1a70b7ee
+Mutant 255: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant255/src//smali/a2dp/Vol/AppChooser$5.smali; InvalidKeyIntentPutExtra in line { 64 }
+	For mutant 255 extra key value at line 64 has been set to c7ec9fd1afee4209bec6cdc1528a4700
+Mutant 256: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant256/src//smali/a2dp/Vol/service.smali; InvalidKeyIntentPutExtra in line { 2653 }
+	For mutant 256 extra key value at line 2653 has been set to a90ad6f3e53646f790e560bc8951c0a7
+Mutant 257: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant257/src//smali/a2dp/Vol/EditDevice$11.smali; InvalidKeyIntentPutExtra in line { 204 }
+	For mutant 257 extra key value at line 204 has been set to 13d5ace8b0314a9f80de8610b8d5af2c
+Mutant 258: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant258/src//smali/a2dp/Vol/EditDevice$11.smali; InvalidKeyIntentPutExtra in line { 90 }
+	For mutant 258 extra key value at line 90 has been set to 6c1a999f1a624002b0eb9128233a2b92
+Mutant 259: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant259/src//smali/a2dp/Vol/EditDevice$11.smali; InvalidKeyIntentPutExtra in line { 193 }
+	For mutant 259 extra key value at line 193 has been set to db1ad1dd74f34ff6b94c3229e6e2c468
+Mutant 260: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant260/src//smali/a2dp/Vol/service.smali; InvalidKeyIntentPutExtra in line { 2723 }
+	For mutant 260 extra key value at line 2723 has been set to 1ccbe0721d4c43f883bf13a593b89d77
+Mutant 261: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant261/src//smali/a2dp/Vol/service.smali; InvalidKeyIntentPutExtra in line { 2679 }
+	For mutant 261 extra key value at line 2679 has been set to 91de643841a34019b6b1264c26c62cba
+Mutant 262: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant262/src//smali/a2dp/Vol/service.smali; InvalidKeyIntentPutExtra in line { 3269 }
+	For mutant 262 extra key value at line 3269 has been set to 0cb59a67f5654b86ae4d9b50dcd9a602
+Mutant 263: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant263/src//smali/a2dp/Vol/service.smali; InvalidKeyIntentPutExtra in line { 2842 }
+	For mutant 263 extra key value at line 2842 has been set to 63bc0a0f556b497ca6bc19ad48a54da1
+Mutant 264: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant264/src//smali/a2dp/Vol/main$5$2.smali; InvalidKeyIntentPutExtra in line { 63 }
+	For mutant 264 extra key value at line 63 has been set to 1bab05e8d32c4a3eb53512a9c53c8ddd
+Mutant 265: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant265/src//smali/a2dp/Vol/service.smali; InvalidKeyIntentPutExtra in line { 2424 }
+	For mutant 265 extra key value at line 2424 has been set to 58f4941850a54184bee85d7bd6dbaa46
+Mutant 266: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant266/src//smali/a2dp/Vol/EditDevice.smali; InvalidKeyIntentPutExtra in line { 566 }
+	For mutant 266 extra key value at line 566 has been set to da05dda3b9a3470890b8ca6a0626e555
+Mutant 267: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant267/src//smali/a2dp/Vol/StoreLoc.smali; NullGPSLocation in line { 1886 }
+	For mutant 267 GPS Location object has been set to null
+Mutant 268: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant268/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2404 }
+	For mutant 268 the visibility of element retrieved at line 1944 has been set to INVISIBLE at lines: 2406 and 2408
+Mutant 269: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant269/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2849 }
+	For mutant 269 the visibility of element retrieved at line 2132 has been set to INVISIBLE at lines: 2851 and 2853
+Mutant 270: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant270/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2784 }
+	For mutant 270 the visibility of element retrieved at line 2242 has been set to INVISIBLE at lines: 2786 and 2788
+Mutant 271: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant271/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2769 }
+	For mutant 271 the visibility of element retrieved at line 2176 has been set to INVISIBLE at lines: 2771 and 2773
+Mutant 272: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant272/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2930 }
+	For mutant 272 the visibility of element retrieved at line 2209 has been set to INVISIBLE at lines: 2932 and 2934
+Mutant 273: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant273/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2749 }
+	For mutant 273 the visibility of element retrieved at line 2066 has been set to INVISIBLE at lines: 2751 and 2753
+Mutant 274: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant274/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2457 }
+	For mutant 274 the visibility of element retrieved at line 2011 has been set to INVISIBLE at lines: 2459 and 2461
+Mutant 275: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant275/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2938 }
+	For mutant 275 the visibility of element retrieved at line 2220 has been set to INVISIBLE at lines: 2940 and 2942
+Mutant 276: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant276/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2962 }
+	For mutant 276 the visibility of element retrieved at line 2264 has been set to INVISIBLE at lines: 2964 and 2966
+Mutant 277: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant277/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2866 }
+	For mutant 277 the visibility of element retrieved at line 1900 has been set to INVISIBLE at lines: 2868 and 2870
+Mutant 278: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant278/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2954 }
+	For mutant 278 the visibility of element retrieved at line 2253 has been set to INVISIBLE at lines: 2956 and 2958
+Mutant 279: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant279/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2738 }
+	For mutant 279 the visibility of element retrieved at line 2154 has been set to INVISIBLE at lines: 2740 and 2742
+Mutant 280: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant280/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2914 }
+	For mutant 280 the visibility of element retrieved at line 2187 has been set to INVISIBLE at lines: 2916 and 2918
+Mutant 281: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant281/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2585 }
+	For mutant 281 the visibility of element retrieved at line 2044 has been set to INVISIBLE at lines: 2587 and 2589
+Mutant 282: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant282/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2689 }
+	For mutant 282 the visibility of element retrieved at line 2121 has been set to INVISIBLE at lines: 2691 and 2693
+Mutant 283: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant283/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2596 }
+	For mutant 283 the visibility of element retrieved at line 2055 has been set to INVISIBLE at lines: 2598 and 2600
+Mutant 284: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant284/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2564 }
+	For mutant 284 the visibility of element retrieved at line 1989 has been set to INVISIBLE at lines: 2566 and 2568
+Mutant 285: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant285/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2426 }
+	For mutant 285 the visibility of element retrieved at line 1966 has been set to INVISIBLE at lines: 2428 and 2430
+Mutant 286: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant286/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2922 }
+	For mutant 286 the visibility of element retrieved at line 2198 has been set to INVISIBLE at lines: 2924 and 2926
+Mutant 287: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant287/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2495 }
+	For mutant 287 the visibility of element retrieved at line 1922 has been set to INVISIBLE at lines: 2497 and 2499
+Mutant 288: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant288/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2639 }
+	For mutant 288 the visibility of element retrieved at line 2099 has been set to INVISIBLE at lines: 2641 and 2643
+Mutant 289: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant289/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2446 }
+	For mutant 289 the visibility of element retrieved at line 1977 has been set to INVISIBLE at lines: 2448 and 2450
+Mutant 290: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant290/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2875 }
+	For mutant 290 the visibility of element retrieved at line 1911 has been set to INVISIBLE at lines: 2877 and 2879
+Mutant 291: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant291/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2727 }
+	For mutant 291 the visibility of element retrieved at line 2143 has been set to INVISIBLE at lines: 2729 and 2731
+Mutant 292: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant292/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2857 }
+	For mutant 292 the visibility of element retrieved at line 1889 has been set to INVISIBLE at lines: 2859 and 2861
+Mutant 293: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant293/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2395 }
+	For mutant 293 the visibility of element retrieved at line 1933 has been set to INVISIBLE at lines: 2397 and 2399
+Mutant 294: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant294/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2479 }
+	For mutant 294 the visibility of element retrieved at line 2033 has been set to INVISIBLE at lines: 2481 and 2483
+Mutant 295: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant295/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2571 }
+	For mutant 295 the visibility of element retrieved at line 2000 has been set to INVISIBLE at lines: 2573 and 2575
+Mutant 296: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant296/src//smali/a2dp/Vol/ManageData.smali; ViewComponentNotVisible in line { 290 }
+	For mutant 296 the visibility of element retrieved at line 281 has been set to INVISIBLE at lines: 292 and 294
+Mutant 297: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant297/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2627 }
+	For mutant 297 the visibility of element retrieved at line 2088 has been set to INVISIBLE at lines: 2629 and 2631
+Mutant 298: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant298/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2415 }
+	For mutant 298 the visibility of element retrieved at line 1955 has been set to INVISIBLE at lines: 2417 and 2419
+Mutant 299: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant299/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2468 }
+	For mutant 299 the visibility of element retrieved at line 2022 has been set to INVISIBLE at lines: 2470 and 2472
+Mutant 300: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant300/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2607 }
+	For mutant 300 the visibility of element retrieved at line 2077 has been set to INVISIBLE at lines: 2609 and 2611
+Mutant 301: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant301/src//smali/a2dp/Vol/EditDevice.smali; ViewComponentNotVisible in line { 2677 }
+	For mutant 301 the visibility of element retrieved at line 2110 has been set to INVISIBLE at lines: 2679 and 2681
+Mutant 302: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant302/src//smali/a2dp/Vol/main.smali; InvalidFilePath in line { 3868 }
+	For mutant 302 the path of File at line 3868 has been replaced by 4590ef400e4f48e0b6caef9b1167dc86
+Mutant 303: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant303/src//smali/a2dp/Vol/ManageData$ExportDatabaseFileTask.smali; InvalidFilePath in line { 186 }
+	For mutant 303 the path of File at line 186 has been replaced by 5eb5e2124d3f456b8fa37964f5bf4c3a
+Mutant 304: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant304/src//smali/a2dp/Vol/ManageData$ExportDatabaseFileTask.smali; InvalidFilePath in line { 176 }
+	For mutant 304 the path of File at line 176 has been replaced by 21e25f60b40349c7ad587a653e3a5dac
+Mutant 305: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant305/src//smali/a2dp/Vol/ManageData$ImportDatabaseFileTask.smali; InvalidFilePath in line { 176 }
+	For mutant 305 the path of File at line 176 has been replaced by e78ddb413a874684bd0f0609d40512d3
+Mutant 306: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant306/src//smali/a2dp/Vol/ManageData$ExportLocationTask.smali; InvalidFilePath in line { 178 }
+	For mutant 306 the path of File at line 178 has been replaced by 7748d92163b14e5380c5adb84f416d27
+Mutant 307: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant307/src//smali/a2dp/Vol/EmmaInstrument/EmmaInstrumentation.smali; InvalidFilePath in line { 81 }
+	For mutant 307 the path of File at line 81 has been replaced by 36967722244543f984ff1f58be8d5cee
+Mutant 308: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant308/src//smali/a2dp/Vol/DataXmlExporter.smali; InvalidFilePath in line { 209 }
+	For mutant 308 the path of File at line 209 has been replaced by bf415b7efe1141f6a31f32b686b8bd6a
+Mutant 309: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant309/src//smali/a2dp/Vol/StoreLoc.smali; InvalidFilePath in line { 201 }
+	For mutant 309 the path of File at line 201 has been replaced by 687679c8cdf343e68f411911b21df4b0
+Mutant 310: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant310/src//smali/a2dp/Vol/ManageData$ImportDatabaseFileTask.smali; InvalidFilePath in line { 186 }
+	For mutant 310 the path of File at line 186 has been replaced by 04a42a42758e467c8e194db55936aafb
+Mutant 311: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant311/src//smali/a2dp/Vol/main$4$1.smali; InvalidFilePath in line { 61 }
+	For mutant 311 the path of File at line 61 has been replaced by ed212c3d7bea43818b0bd27694bfe47b
+Mutant 312: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant312/src//smali/a2dp/Vol/main$12.smali; InvalidFilePath in line { 198 }
+	For mutant 312 the path of File at line 198 has been replaced by 509b009ed92a452fb476ce3f7e232639
+Mutant 313: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant313/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2497 }
+	For mutant 313, 2 parameter of method setEnabled have been replaced with null
+Mutant 314: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant314/src//smali/a2dp/Vol/MyApplication.smali; NullMethodCallArgument in line { 55 }
+	For mutant 314, 2 parameter of method <init> have been replaced with null
+Mutant 315: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant315/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1768 }
+	For mutant 315, 2 parameter of method processShortcut have been replaced with null
+Mutant 316: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant316/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2604 }
+	For mutant 316, 2 parameter of method setChecked have been replaced with null
+Mutant 317: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant317/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1136 }
+	For mutant 317, 2 parameter of method getStringExtra have been replaced with null
+Mutant 318: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant318/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2908 }
+	For mutant 318, 2 parameter of method setChecked have been replaced with null
+Mutant 319: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant319/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 37 }
+	For mutant 319, 2 parameter of method <init> have been replaced with null
+Mutant 320: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant320/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2430 }
+	For mutant 320, 2 parameter of method getStreamMaxVolume have been replaced with null
+Mutant 321: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant321/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 270 }
+	For mutant 321, 2 parameter of method equals have been replaced with null
+Mutant 322: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant322/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 169 }
+	For mutant 322, 3 parameter of method setNegativeButton have been replaced with null
+Mutant 323: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant323/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2575 }
+	For mutant 323, 2 parameter of method setChecked have been replaced with null
+Mutant 324: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant324/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2674 }
+	For mutant 324, 2 parameter of method setProgress have been replaced with null
+Mutant 325: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant325/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 44 }
+	For mutant 325, 2 parameter of method append have been replaced with null
+Mutant 326: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant326/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 629 }
+	For mutant 326, 2 parameter of method setIcon have been replaced with null
+Mutant 327: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant327/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 160 }
+	For mutant 327, 2 parameter of method findViewById have been replaced with null
+Mutant 328: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant328/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2831 }
+	For mutant 328, 2 parameter of method setOnCheckedChangeListener have been replaced with null
+Mutant 329: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant329/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2735 }
+	For mutant 329, 2 parameter of method setChecked have been replaced with null
+Mutant 330: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant330/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 169 }
+	For mutant 330, 2 parameter of method setClassName have been replaced with null
+Mutant 331: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant331/src//smali/a2dp/Vol/service$4.smali; NullMethodCallArgument in line { 36 }
+	For mutant 331, 5 parameter of method <init> have been replaced with null
+Mutant 332: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant332/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 216 }
+	For mutant 332, 2 parameter of method get have been replaced with null
+Mutant 333: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant333/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 244 }
+	For mutant 333, 2 parameter of method setAction have been replaced with null
+Mutant 334: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant334/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 157 }
+	For mutant 334, 2 parameter of method setAction have been replaced with null
+Mutant 335: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant335/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2609 }
+	For mutant 335, 2 parameter of method getStreamMaxVolume have been replaced with null
+Mutant 336: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant336/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 169 }
+	For mutant 336, 2 parameter of method setNegativeButton have been replaced with null
+Mutant 337: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant337/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 30 }
+	For mutant 337, 5 parameter of method <init> have been replaced with null
+Mutant 338: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant338/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 67 }
+	For mutant 338, 2 parameter of method get have been replaced with null
+Mutant 339: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant339/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 183 }
+	For mutant 339, 2 parameter of method setStreamVolume have been replaced with null
+Mutant 340: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant340/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1664 }
+	For mutant 340, 2 parameter of method getStringExtra have been replaced with null
+Mutant 341: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant341/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 130 }
+	For mutant 341, 2 parameter of method <init> have been replaced with null
+Mutant 342: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant342/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2613 }
+	For mutant 342, 2 parameter of method setMax have been replaced with null
+Mutant 343: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant343/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3092 }
+	For mutant 343, 2 parameter of method setNegativeButton have been replaced with null
+Mutant 344: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant344/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 57 }
+	For mutant 344, 2 parameter of method access$1502 have been replaced with null
+Mutant 345: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant345/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 121 }
+	For mutant 345, 2 parameter of method access$1502 have been replaced with null
+Mutant 346: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant346/src//smali/a2dp/Vol/Preferences.smali; NullMethodCallArgument in line { 53 }
+	For mutant 346, 2 parameter of method onCreate have been replaced with null
+Mutant 347: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant347/src//smali/a2dp/Vol/ManageData$2.smali; NullMethodCallArgument in line { 93 }
+	For mutant 347, 2 parameter of method makeText have been replaced with null
+Mutant 348: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant348/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 389 }
+	For mutant 348, 2 parameter of method setAppkill have been replaced with null
+Mutant 349: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant349/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 94 }
+	For mutant 349, 2 parameter of method getBTD have been replaced with null
+Mutant 350: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant350/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 167 }
+	For mutant 350, 3 parameter of method <init> have been replaced with null
+Mutant 351: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant351/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1109 }
+	For mutant 351, 2 parameter of method getStringExtra have been replaced with null
+Mutant 352: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant352/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2264 }
+	For mutant 352, 2 parameter of method findViewById have been replaced with null
+Mutant 353: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant353/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 51 }
+	For mutant 353, 2 parameter of method <init> have been replaced with null
+Mutant 354: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant354/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 94 }
+	For mutant 354, 2 parameter of method append have been replaced with null
+Mutant 355: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant355/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 121 }
+	For mutant 355, 2 parameter of method append have been replaced with null
+Mutant 356: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant356/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1682 }
+	For mutant 356, 2 parameter of method getStringExtra have been replaced with null
+Mutant 357: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant357/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3023 }
+	For mutant 357, 2 parameter of method setItems have been replaced with null
+Mutant 358: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant358/src//smali/a2dp/Vol/ManageData$3.smali; NullMethodCallArgument in line { 63 }
+	For mutant 358, 2 parameter of method <init> have been replaced with null
+Mutant 359: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant359/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 182 }
+	For mutant 359, 2 parameter of method findViewById have been replaced with null
+Mutant 360: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant360/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 297 }
+	For mutant 360, 2 parameter of method <init> have been replaced with null
+Mutant 361: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant361/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1100 }
+	For mutant 361, 2 parameter of method hasExtra have been replaced with null
+Mutant 362: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant362/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1280 }
+	For mutant 362, 2 parameter of method setVisibility have been replaced with null
+Mutant 363: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant363/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2568 }
+	For mutant 363, 2 parameter of method setChecked have been replaced with null
+Mutant 364: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant364/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1944 }
+	For mutant 364, 2 parameter of method findViewById have been replaced with null
+Mutant 365: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant365/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1977 }
+	For mutant 365, 2 parameter of method findViewById have been replaced with null
+Mutant 366: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant366/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 570 }
+	For mutant 366, 3 parameter of method putExtra have been replaced with null
+Mutant 367: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant367/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1463 }
+	For mutant 367, 2 parameter of method setApptype have been replaced with null
+Mutant 368: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant368/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1521 }
+	For mutant 368, 2 parameter of method setText have been replaced with null
+Mutant 369: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant369/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 91 }
+	For mutant 369, 2 parameter of method append have been replaced with null
+Mutant 370: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant370/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2077 }
+	For mutant 370, 2 parameter of method findViewById have been replaced with null
+Mutant 371: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant371/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 258 }
+	For mutant 371, 2 parameter of method setContentView have been replaced with null
+Mutant 372: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant372/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2829 }
+	For mutant 372, 2 parameter of method <init> have been replaced with null
+Mutant 373: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant373/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 167 }
+	For mutant 373, 2 parameter of method equalsIgnoreCase have been replaced with null
+Mutant 374: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant374/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2434 }
+	For mutant 374, 2 parameter of method setMax have been replaced with null
+Mutant 375: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant375/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1210 }
+	For mutant 375, 2 parameter of method setVisibility have been replaced with null
+Mutant 376: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant376/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 118 }
+	For mutant 376, 2 parameter of method append have been replaced with null
+Mutant 377: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant377/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3083 }
+	For mutant 377, 2 parameter of method setPositiveButton have been replaced with null
+Mutant 378: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant378/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2861 }
+	For mutant 378, 2 parameter of method <init> have been replaced with null
+Mutant 379: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant379/src//smali/a2dp/Vol/Preferences.smali; NullMethodCallArgument in line { 58 }
+	For mutant 379, 2 parameter of method addPreferencesFromResource have been replaced with null
+Mutant 380: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant380/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 171 }
+	For mutant 380, 2 parameter of method findViewById have been replaced with null
+Mutant 381: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant381/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 471 }
+	For mutant 381, 2 parameter of method setAutovol have been replaced with null
+Mutant 382: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant382/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 149 }
+	For mutant 382, 2 parameter of method findViewById have been replaced with null
+Mutant 383: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant383/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 158 }
+	For mutant 383, 3 parameter of method addColumn have been replaced with null
+Mutant 384: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant384/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 114 }
+	For mutant 384, 2 parameter of method rawQuery have been replaced with null
+Mutant 385: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant385/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3081 }
+	For mutant 385, 2 parameter of method <init> have been replaced with null
+Mutant 386: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant386/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 215 }
+	For mutant 386, 2 parameter of method <init> have been replaced with null
+Mutant 387: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant387/src//smali/a2dp/Vol/service$4.smali; NullMethodCallArgument in line { 36 }
+	For mutant 387, 4 parameter of method <init> have been replaced with null
+Mutant 388: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant388/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1793 }
+	For mutant 388, 2 parameter of method showDialog have been replaced with null
+Mutant 389: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant389/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 78 }
+	For mutant 389, 2 parameter of method get have been replaced with null
+Mutant 390: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant390/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 83 }
+	For mutant 390, 2 parameter of method append have been replaced with null
+Mutant 391: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant391/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 292 }
+	For mutant 391, 2 parameter of method setGetLoc have been replaced with null
+Mutant 392: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant392/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 167 }
+	For mutant 392, 2 parameter of method <init> have been replaced with null
+Mutant 393: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant393/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 411 }
+	For mutant 393, 2 parameter of method append have been replaced with null
+Mutant 394: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant394/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1325 }
+	For mutant 394, 2 parameter of method setVisibility have been replaced with null
+Mutant 395: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant395/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2888 }
+	For mutant 395, 2 parameter of method <init> have been replaced with null
+Mutant 396: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant396/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3010 }
+	For mutant 396, 2 parameter of method <init> have been replaced with null
+Mutant 397: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant397/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1320 }
+	For mutant 397, 2 parameter of method setVisibility have been replaced with null
+Mutant 398: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant398/src//smali/a2dp/Vol/ManageData$2.smali; NullMethodCallArgument in line { 93 }
+	For mutant 398, 3 parameter of method makeText have been replaced with null
+Mutant 399: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant399/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3051 }
+	For mutant 399, 2 parameter of method setCancelable have been replaced with null
+Mutant 400: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant400/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 570 }
+	For mutant 400, 2 parameter of method putExtra have been replaced with null
+Mutant 401: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant401/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 317 }
+	For mutant 401, 2 parameter of method rawQuery have been replaced with null
+Mutant 402: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant402/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2713 }
+	For mutant 402, 2 parameter of method setText have been replaced with null
+Mutant 403: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant403/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3060 }
+	For mutant 403, 2 parameter of method <init> have been replaced with null
+Mutant 404: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant404/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 240 }
+	For mutant 404, 2 parameter of method getBTD have been replaced with null
+Mutant 405: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant405/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1955 }
+	For mutant 405, 2 parameter of method findViewById have been replaced with null
+Mutant 406: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant406/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2624 }
+	For mutant 406, 2 parameter of method setProgress have been replaced with null
+Mutant 407: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant407/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2209 }
+	For mutant 407, 2 parameter of method findViewById have been replaced with null
+Mutant 408: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant408/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 38 }
+	For mutant 408, 2 parameter of method append have been replaced with null
+Mutant 409: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant409/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 337 }
+	For mutant 409, 2 parameter of method getString have been replaced with null
+Mutant 410: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant410/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3071 }
+	For mutant 410, 2 parameter of method setMessage have been replaced with null
+Mutant 411: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant411/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2799 }
+	For mutant 411, 2 parameter of method setChecked have been replaced with null
+Mutant 412: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant412/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 227 }
+	For mutant 412, 2 parameter of method contains have been replaced with null
+Mutant 413: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant413/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 127 }
+	For mutant 413, 2 parameter of method append have been replaced with null
+Mutant 414: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant414/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 336 }
+	For mutant 414, 2 parameter of method setEnablegps have been replaced with null
+Mutant 415: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant415/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 30 }
+	For mutant 415, 2 parameter of method <init> have been replaced with null
+Mutant 416: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant416/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 212 }
+	For mutant 416, 2 parameter of method append have been replaced with null
+Mutant 417: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant417/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1922 }
+	For mutant 417, 2 parameter of method findViewById have been replaced with null
+Mutant 418: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant418/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 114 }
+	For mutant 418, 3 parameter of method rawQuery have been replaced with null
+Mutant 419: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant419/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1584 }
+	For mutant 419, 2 parameter of method onActivityResult have been replaced with null
+Mutant 420: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant420/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1310 }
+	For mutant 420, 2 parameter of method setVisibility have been replaced with null
+Mutant 421: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant421/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2454 }
+	For mutant 421, 2 parameter of method setText have been replaced with null
+Mutant 422: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant422/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 263 }
+	For mutant 422, 2 parameter of method setTitle have been replaced with null
+Mutant 423: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant423/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 379 }
+	For mutant 423, 2 parameter of method exportTable have been replaced with null
+Mutant 424: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant424/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 416 }
+	For mutant 424, 2 parameter of method setSetpv have been replaced with null
+Mutant 425: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant425/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1449 }
+	For mutant 425, 2 parameter of method setAppaction have been replaced with null
+Mutant 426: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant426/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 659 }
+	For mutant 426, 2 parameter of method setSmsstream have been replaced with null
+Mutant 427: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant427/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2330 }
+	For mutant 427, 2 parameter of method findViewById have been replaced with null
+Mutant 428: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant428/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 30 }
+	For mutant 428, 4 parameter of method <init> have been replaced with null
+Mutant 429: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant429/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2220 }
+	For mutant 429, 2 parameter of method findViewById have been replaced with null
+Mutant 430: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant430/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2377 }
+	For mutant 430, 2 parameter of method getStringExtra have been replaced with null
+Mutant 431: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant431/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1556 }
+	For mutant 431, 2 parameter of method setText have been replaced with null
+Mutant 432: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant432/src//smali/a2dp/Vol/ManageData$3.smali; NullMethodCallArgument in line { 81 }
+	For mutant 432, 2 parameter of method execute have been replaced with null
+Mutant 433: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant433/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 133 }
+	For mutant 433, 2 parameter of method append have been replaced with null
+Mutant 434: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant434/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2806 }
+	For mutant 434, 2 parameter of method setVisibility have been replaced with null
+Mutant 435: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant435/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 98 }
+	For mutant 435, 2 parameter of method getBTD have been replaced with null
+Mutant 436: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant436/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2412 }
+	For mutant 436, 2 parameter of method setChecked have been replaced with null
+Mutant 437: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant437/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2724 }
+	For mutant 437, 2 parameter of method setProgress have been replaced with null
+Mutant 438: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant438/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 125 }
+	For mutant 438, 2 parameter of method setOnClickListener have been replaced with null
+Mutant 439: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant439/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1240 }
+	For mutant 439, 2 parameter of method setVisibility have been replaced with null
+Mutant 440: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant440/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2487 }
+	For mutant 440, 2 parameter of method setChecked have been replaced with null
+Mutant 441: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant441/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3092 }
+	For mutant 441, 3 parameter of method setNegativeButton have been replaced with null
+Mutant 442: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant442/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 153 }
+	For mutant 442, 2 parameter of method getString have been replaced with null
+Mutant 443: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant443/src//smali/a2dp/Vol/ManageData$3.smali; NullMethodCallArgument in line { 94 }
+	For mutant 443, 3 parameter of method makeText have been replaced with null
+Mutant 444: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant444/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 191 }
+	For mutant 444, 2 parameter of method startActivity have been replaced with null
+Mutant 445: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant445/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2242 }
+	For mutant 445, 2 parameter of method findViewById have been replaced with null
+Mutant 446: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant446/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 160 }
+	For mutant 446, 2 parameter of method setPositiveButton have been replaced with null
+Mutant 447: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant447/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1900 }
+	For mutant 447, 2 parameter of method findViewById have been replaced with null
+Mutant 448: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant448/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 287 }
+	For mutant 448, 2 parameter of method e have been replaced with null
+Mutant 449: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant449/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1911 }
+	For mutant 449, 2 parameter of method findViewById have been replaced with null
+Mutant 450: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant450/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2423 }
+	For mutant 450, 2 parameter of method setChecked have been replaced with null
+Mutant 451: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant451/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 314 }
+	For mutant 451, 2 parameter of method setBdevice have been replaced with null
+Mutant 452: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant452/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 317 }
+	For mutant 452, 3 parameter of method rawQuery have been replaced with null
+Mutant 453: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant453/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 85 }
+	For mutant 453, 2 parameter of method openTable have been replaced with null
+Mutant 454: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant454/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 61 }
+	For mutant 454, 2 parameter of method <init> have been replaced with null
+Mutant 455: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant455/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1083 }
+	For mutant 455, 2 parameter of method getParcelableExtra have been replaced with null
+Mutant 456: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant456/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 112 }
+	For mutant 456, 2 parameter of method append have been replaced with null
+Mutant 457: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant457/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 138 }
+	For mutant 457, 2 parameter of method findViewById have been replaced with null
+Mutant 458: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant458/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 343 }
+	For mutant 458, 2 parameter of method setAppaction have been replaced with null
+Mutant 459: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant459/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2948 }
+	For mutant 459, 2 parameter of method setChecked have been replaced with null
+Mutant 460: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant460/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 304 }
+	For mutant 460, 2 parameter of method start have been replaced with null
+Mutant 461: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant461/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 262 }
+	For mutant 461, 2 parameter of method setData have been replaced with null
+Mutant 462: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant462/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 80 }
+	For mutant 462, 2 parameter of method append have been replaced with null
+Mutant 463: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant463/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 153 }
+	For mutant 463, 2 parameter of method setMessage have been replaced with null
+Mutant 464: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant464/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 152 }
+	For mutant 464, 2 parameter of method addFlags have been replaced with null
+Mutant 465: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant465/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2088 }
+	For mutant 465, 2 parameter of method findViewById have been replaced with null
+Mutant 466: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant466/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2655 }
+	For mutant 466, 2 parameter of method append have been replaced with null
+Mutant 467: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant467/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2033 }
+	For mutant 467, 2 parameter of method findViewById have been replaced with null
+Mutant 468: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant468/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2771 }
+	For mutant 468, 2 parameter of method setChecked have been replaced with null
+Mutant 469: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant469/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 162 }
+	For mutant 469, 2 parameter of method setDataAndType have been replaced with null
+Mutant 470: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant470/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1034 }
+	For mutant 470, 2 parameter of method getInt have been replaced with null
+Mutant 471: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant471/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2000 }
+	For mutant 471, 2 parameter of method findViewById have been replaced with null
+Mutant 472: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant472/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 148 }
+	For mutant 472, 2 parameter of method getColumnName have been replaced with null
+Mutant 473: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant473/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1011 }
+	For mutant 473, 3 parameter of method getMethod have been replaced with null
+Mutant 474: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant474/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1350 }
+	For mutant 474, 2 parameter of method setVisibility have been replaced with null
+Mutant 475: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant475/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2916 }
+	For mutant 475, 2 parameter of method setChecked have been replaced with null
+Mutant 476: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant476/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 279 }
+	For mutant 476, 2 parameter of method append have been replaced with null
+Mutant 477: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant477/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1400 }
+	For mutant 477, 2 parameter of method setVisibility have been replaced with null
+Mutant 478: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant478/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2890 }
+	For mutant 478, 2 parameter of method setOnClickListener have been replaced with null
+Mutant 479: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant479/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 248 }
+	For mutant 479, 2 parameter of method execSQL have been replaced with null
+Mutant 480: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant480/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2819 }
+	For mutant 480, 2 parameter of method setOnCheckedChangeListener have been replaced with null
+Mutant 481: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant481/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1872 }
+	For mutant 481, 2 parameter of method <init> have been replaced with null
+Mutant 482: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant482/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1651 }
+	For mutant 482, 2 parameter of method processShortcut have been replaced with null
+Mutant 483: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant483/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 160 }
+	For mutant 483, 3 parameter of method setPositiveButton have been replaced with null
+Mutant 484: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant484/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1315 }
+	For mutant 484, 2 parameter of method setVisibility have been replaced with null
+Mutant 485: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant485/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 226 }
+	For mutant 485, 2 parameter of method <init> have been replaced with null
+Mutant 486: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant486/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 299 }
+	For mutant 486, 2 parameter of method setPname have been replaced with null
+Mutant 487: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant487/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 178 }
+	For mutant 487, 3 parameter of method setNeutralButton have been replaced with null
+Mutant 488: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant488/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2176 }
+	For mutant 488, 2 parameter of method findViewById have been replaced with null
+Mutant 489: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant489/src//smali/a2dp/Vol/ManageData$2.smali; NullMethodCallArgument in line { 63 }
+	For mutant 489, 2 parameter of method <init> have been replaced with null
+Mutant 490: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant490/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 142 }
+	For mutant 490, 3 parameter of method v have been replaced with null
+Mutant 491: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant491/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 145 }
+	For mutant 491, 2 parameter of method append have been replaced with null
+Mutant 492: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant492/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 179 }
+	For mutant 492, 2 parameter of method getStreamMaxVolume have been replaced with null
+Mutant 493: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant493/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 70 }
+	For mutant 493, 2 parameter of method append have been replaced with null
+Mutant 494: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant494/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 253 }
+	For mutant 494, 2 parameter of method onCreate have been replaced with null
+Mutant 495: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant495/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2841 }
+	For mutant 495, 2 parameter of method <init> have been replaced with null
+Mutant 496: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant496/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2629 }
+	For mutant 496, 2 parameter of method setMax have been replaced with null
+Mutant 497: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant497/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2297 }
+	For mutant 497, 2 parameter of method findViewById have been replaced with null
+Mutant 498: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant498/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 176 }
+	For mutant 498, 3 parameter of method <init> have been replaced with null
+Mutant 499: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant499/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1425 }
+	For mutant 499, 2 parameter of method setVisibility have been replaced with null
+Mutant 500: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant500/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 373 }
+	For mutant 500, 2 parameter of method setApprestart have been replaced with null
+Mutant 501: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant501/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2308 }
+	For mutant 501, 2 parameter of method findViewById have been replaced with null
+Mutant 502: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant502/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 111 }
+	For mutant 502, 2 parameter of method setOnClickListener have been replaced with null
+Mutant 503: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant503/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3048 }
+	For mutant 503, 2 parameter of method setMessage have been replaced with null
+Mutant 504: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant504/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3037 }
+	For mutant 504, 2 parameter of method <init> have been replaced with null
+Mutant 505: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant505/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 108 }
+	For mutant 505, 2 parameter of method <init> have been replaced with null
+Mutant 506: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant506/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2705 }
+	For mutant 506, 2 parameter of method append have been replaced with null
+Mutant 507: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant507/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 277 }
+	For mutant 507, 2 parameter of method setType have been replaced with null
+Mutant 508: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant508/src//smali/a2dp/Vol/service$4.smali; NullMethodCallArgument in line { 36 }
+	For mutant 508, 2 parameter of method <init> have been replaced with null
+Mutant 509: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant509/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 325 }
+	For mutant 509, 2 parameter of method setWifi have been replaced with null
+Mutant 510: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant510/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2066 }
+	For mutant 510, 2 parameter of method findViewById have been replaced with null
+Mutant 511: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant511/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2679 }
+	For mutant 511, 2 parameter of method setMax have been replaced with null
+Mutant 512: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant512/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1584 }
+	For mutant 512, 3 parameter of method onActivityResult have been replaced with null
+Mutant 513: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant513/src//smali/a2dp/Vol/service$4.smali; NullMethodCallArgument in line { 36 }
+	For mutant 513, 3 parameter of method <init> have been replaced with null
+Mutant 514: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant514/src//smali/a2dp/Vol/ManageData$2.smali; NullMethodCallArgument in line { 80 }
+	For mutant 514, 2 parameter of method execute have been replaced with null
+Mutant 515: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant515/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2932 }
+	For mutant 515, 2 parameter of method setChecked have been replaced with null
+Mutant 516: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant516/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1673 }
+	For mutant 516, 2 parameter of method getStringExtra have been replaced with null
+Mutant 517: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant517/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1011 }
+	For mutant 517, 2 parameter of method getMethod have been replaced with null
+Mutant 518: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant518/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2022 }
+	For mutant 518, 2 parameter of method findViewById have been replaced with null
+Mutant 519: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant519/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2786 }
+	For mutant 519, 2 parameter of method setChecked have been replaced with null
+Mutant 520: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant520/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 225 }
+	For mutant 520, 2 parameter of method equalsIgnoreCase have been replaced with null
+Mutant 521: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant521/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 142 }
+	For mutant 521, 2 parameter of method v have been replaced with null
+Mutant 522: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant522/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2011 }
+	For mutant 522, 2 parameter of method findViewById have been replaced with null
+Mutant 523: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant523/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1762 }
+	For mutant 523, 2 parameter of method startActivityForResult have been replaced with null
+Mutant 524: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant524/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 177 }
+	For mutant 524, 2 parameter of method startActivity have been replaced with null
+Mutant 525: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant525/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1584 }
+	For mutant 525, 4 parameter of method onActivityResult have been replaced with null
+Mutant 526: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant526/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2044 }
+	For mutant 526, 2 parameter of method findViewById have been replaced with null
+Mutant 527: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant527/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1623 }
+	For mutant 527, 2 parameter of method getStringExtra have been replaced with null
+Mutant 528: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant528/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2940 }
+	For mutant 528, 2 parameter of method setChecked have been replaced with null
+Mutant 529: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant529/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 193 }
+	For mutant 529, 2 parameter of method findViewById have been replaced with null
+Mutant 530: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant530/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 90 }
+	For mutant 530, 2 parameter of method rawQuery have been replaced with null
+Mutant 531: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant531/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 250 }
+	For mutant 531, 2 parameter of method equals have been replaced with null
+Mutant 532: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant532/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1546 }
+	For mutant 532, 2 parameter of method setText have been replaced with null
+Mutant 533: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant533/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 182 }
+	For mutant 533, 2 parameter of method getBTD have been replaced with null
+Mutant 534: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant534/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 104 }
+	For mutant 534, 2 parameter of method <init> have been replaced with null
+Mutant 535: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant535/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1270 }
+	For mutant 535, 2 parameter of method setVisibility have been replaced with null
+Mutant 536: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant536/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2881 }
+	For mutant 536, 2 parameter of method setOnLongClickListener have been replaced with null
+Mutant 537: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant537/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1536 }
+	For mutant 537, 2 parameter of method setText have been replaced with null
+Mutant 538: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant538/src//smali/a2dp/Vol/EmmaInstrument/SMSInstrumentedReceiver.smali; NullMethodCallArgument in line { 59 }
+	For mutant 538, 2 parameter of method dumpIntermediateCoverage have been replaced with null
+Mutant 539: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant539/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 158 }
+	For mutant 539, 2 parameter of method addColumn have been replaced with null
+Mutant 540: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant540/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2699 }
+	For mutant 540, 2 parameter of method append have been replaced with null
+Mutant 541: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant541/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2231 }
+	For mutant 541, 2 parameter of method findViewById have been replaced with null
+Mutant 542: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant542/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 176 }
+	For mutant 542, 2 parameter of method <init> have been replaced with null
+Mutant 543: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant543/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 98 }
+	For mutant 543, 2 parameter of method append have been replaced with null
+Mutant 544: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant544/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1215 }
+	For mutant 544, 2 parameter of method setVisibility have been replaced with null
+Mutant 545: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant545/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1045 }
+	For mutant 545, 2 parameter of method invoke have been replaced with null
+Mutant 546: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant546/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3066 }
+	For mutant 546, 2 parameter of method setTitle have been replaced with null
+Mutant 547: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant547/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 419 }
+	For mutant 547, 3 parameter of method writeToFile have been replaced with null
+Mutant 548: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant548/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 112 }
+	For mutant 548, 2 parameter of method setTitle have been replaced with null
+Mutant 549: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant549/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2817 }
+	For mutant 549, 2 parameter of method <init> have been replaced with null
+Mutant 550: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant550/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3083 }
+	For mutant 550, 3 parameter of method setPositiveButton have been replaced with null
+Mutant 551: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant551/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2649 }
+	For mutant 551, 2 parameter of method append have been replaced with null
+Mutant 552: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant552/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 276 }
+	For mutant 552, 2 parameter of method setEnabled have been replaced with null
+Mutant 553: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant553/src//smali/a2dp/Vol/ManageData$3.smali; NullMethodCallArgument in line { 94 }
+	For mutant 553, 2 parameter of method makeText have been replaced with null
+Mutant 554: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant554/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2132 }
+	For mutant 554, 2 parameter of method findViewById have been replaced with null
+Mutant 555: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant555/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2465 }
+	For mutant 555, 2 parameter of method setText have been replaced with null
+Mutant 556: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant556/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 357 }
+	For mutant 556, 2 parameter of method setApptype have been replaced with null
+Mutant 557: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant557/src//smali/a2dp/Vol/MyApplication.smali; NullMethodCallArgument in line { 49 }
+	For mutant 557, 2 parameter of method d have been replaced with null
+Mutant 558: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant558/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 354 }
+	For mutant 558, 2 parameter of method equals have been replaced with null
+Mutant 559: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant559/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 169 }
+	For mutant 559, 3 parameter of method setClassName have been replaced with null
+Mutant 560: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant560/src//smali/a2dp/Vol/ManageData$2.smali; NullMethodCallArgument in line { 63 }
+	For mutant 560, 3 parameter of method <init> have been replaced with null
+Mutant 561: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant561/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 163 }
+	For mutant 561, 2 parameter of method getSystemService have been replaced with null
+Mutant 562: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant562/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1762 }
+	For mutant 562, 3 parameter of method startActivityForResult have been replaced with null
+Mutant 563: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant563/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 419 }
+	For mutant 563, 2 parameter of method writeToFile have been replaced with null
+Mutant 564: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant564/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 245 }
+	For mutant 564, 2 parameter of method <init> have been replaced with null
+Mutant 565: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant565/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 118 }
+	For mutant 565, 2 parameter of method setOnClickListener have been replaced with null
+Mutant 566: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant566/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 296 }
+	For mutant 566, 2 parameter of method DoConnected have been replaced with null
+Mutant 567: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant567/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3016 }
+	For mutant 567, 2 parameter of method setTitle have been replaced with null
+Mutant 568: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant568/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1593 }
+	For mutant 568, 2 parameter of method getStringExtra have been replaced with null
+Mutant 569: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant569/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 196 }
+	For mutant 569, 2 parameter of method equalsIgnoreCase have been replaced with null
+Mutant 570: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant570/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1856 }
+	For mutant 570, 2 parameter of method setContentView have been replaced with null
+Mutant 571: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant571/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 108 }
+	For mutant 571, 2 parameter of method replaceAll have been replaced with null
+Mutant 572: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant572/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 667 }
+	For mutant 572, 2 parameter of method setSmsstream have been replaced with null
+Mutant 573: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant573/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 427 }
+	For mutant 573, 2 parameter of method setPhonev have been replaced with null
+Mutant 574: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant574/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 254 }
+	For mutant 574, 2 parameter of method write have been replaced with null
+Mutant 575: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant575/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 90 }
+	For mutant 575, 3 parameter of method rawQuery have been replaced with null
+Mutant 576: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant576/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 271 }
+	For mutant 576, 2 parameter of method append have been replaced with null
+Mutant 577: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant577/src//smali/a2dp/Vol/MyApplication.smali; NullMethodCallArgument in line { 78 }
+	For mutant 577, 2 parameter of method e have been replaced with null
+Mutant 578: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant578/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 139 }
+	For mutant 578, 2 parameter of method append have been replaced with null
+Mutant 579: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant579/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2476 }
+	For mutant 579, 2 parameter of method setChecked have been replaced with null
+Mutant 580: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant580/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 350 }
+	For mutant 580, 2 parameter of method setAppdata have been replaced with null
+Mutant 581: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant581/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 74 }
+	For mutant 581, 2 parameter of method append have been replaced with null
+Mutant 582: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant582/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 44 }
+	For mutant 582, 2 parameter of method <init> have been replaced with null
+Mutant 583: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant583/src//smali/a2dp/Vol/CustomIntentMaker.smali; NullMethodCallArgument in line { 219 }
+	For mutant 583, 2 parameter of method startsWith have been replaced with null
+Mutant 584: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant584/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1470 }
+	For mutant 584, 2 parameter of method setPname have been replaced with null
+Mutant 585: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant585/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 575 }
+	For mutant 585, 2 parameter of method sendBroadcast have been replaced with null
+Mutant 586: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant586/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2663 }
+	For mutant 586, 2 parameter of method setText have been replaced with null
+Mutant 587: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant587/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1370 }
+	For mutant 587, 2 parameter of method setVisibility have been replaced with null
+Mutant 588: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant588/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 333 }
+	For mutant 588, 2 parameter of method getColumnIndex have been replaced with null
+Mutant 589: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant589/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 226 }
+	For mutant 589, 3 parameter of method <init> have been replaced with null
+Mutant 590: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant590/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 222 }
+	For mutant 590, 2 parameter of method append have been replaced with null
+Mutant 591: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant591/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 460 }
+	For mutant 591, 2 parameter of method setVolramp have been replaced with null
+Mutant 592: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant592/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 162 }
+	For mutant 592, 3 parameter of method setDataAndType have been replaced with null
+Mutant 593: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant593/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 363 }
+	For mutant 593, 2 parameter of method startsWith have been replaced with null
+Mutant 594: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant594/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3090 }
+	For mutant 594, 2 parameter of method <init> have been replaced with null
+Mutant 595: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant595/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 345 }
+	For mutant 595, 2 parameter of method equals have been replaced with null
+Mutant 596: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant596/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 183 }
+	For mutant 596, 4 parameter of method setStreamVolume have been replaced with null
+Mutant 597: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant597/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 3023 }
+	For mutant 597, 3 parameter of method setItems have been replaced with null
+Mutant 598: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant598/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 372 }
+	For mutant 598, 2 parameter of method startsWith have been replaced with null
+Mutant 599: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant599/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1285 }
+	For mutant 599, 2 parameter of method setVisibility have been replaced with null
+Mutant 600: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant600/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2154 }
+	For mutant 600, 2 parameter of method findViewById have been replaced with null
+Mutant 601: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant601/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2341 }
+	For mutant 601, 2 parameter of method findViewById have been replaced with null
+Mutant 602: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant602/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1966 }
+	For mutant 602, 2 parameter of method findViewById have been replaced with null
+Mutant 603: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant603/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2582 }
+	For mutant 603, 2 parameter of method setChecked have been replaced with null
+Mutant 604: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant604/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2187 }
+	For mutant 604, 2 parameter of method findViewById have been replaced with null
+Mutant 605: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant605/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 176 }
+	For mutant 605, 2 parameter of method setSpeakerphoneOn have been replaced with null
+Mutant 606: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant606/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1889 }
+	For mutant 606, 2 parameter of method findViewById have been replaced with null
+Mutant 607: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant607/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1851 }
+	For mutant 607, 2 parameter of method onCreate have been replaced with null
+Mutant 608: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant608/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1405 }
+	For mutant 608, 2 parameter of method setVisibility have been replaced with null
+Mutant 609: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant609/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 183 }
+	For mutant 609, 3 parameter of method setStreamVolume have been replaced with null
+Mutant 610: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant610/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1235 }
+	For mutant 610, 2 parameter of method setVisibility have been replaced with null
+Mutant 611: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant611/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 222 }
+	For mutant 611, 2 parameter of method <init> have been replaced with null
+Mutant 612: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant612/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 405 }
+	For mutant 612, 2 parameter of method append have been replaced with null
+Mutant 613: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant613/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 237 }
+	For mutant 613, 2 parameter of method equals have been replaced with null
+Mutant 614: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant614/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 97 }
+	For mutant 614, 2 parameter of method append have been replaced with null
+Mutant 615: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant615/src//smali/a2dp/Vol/ManageData$3.smali; NullMethodCallArgument in line { 63 }
+	For mutant 615, 3 parameter of method <init> have been replaced with null
+Mutant 616: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant616/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; NullMethodCallArgument in line { 30 }
+	For mutant 616, 3 parameter of method <init> have been replaced with null
+Mutant 617: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant617/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 203 }
+	For mutant 617, 2 parameter of method makeText have been replaced with null
+Mutant 618: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant618/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 202 }
+	For mutant 618, 2 parameter of method setEnabled have been replaced with null
+Mutant 619: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant619/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1456 }
+	For mutant 619, 2 parameter of method setAppdata have been replaced with null
+Mutant 620: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant620/src//smali/a2dp/Vol/DataXmlExporter.smali; NullMethodCallArgument in line { 209 }
+	For mutant 620, 2 parameter of method <init> have been replaced with null
+Mutant 621: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant621/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 173 }
+	For mutant 621, 2 parameter of method setMode have been replaced with null
+Mutant 622: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant622/src//smali/a2dp/Vol/AppChooser$2.smali; NullMethodCallArgument in line { 54 }
+	For mutant 622, 2 parameter of method setText have been replaced with null
+Mutant 623: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant623/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1783 }
+	For mutant 623, 2 parameter of method equalsIgnoreCase have been replaced with null
+Mutant 624: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant624/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2956 }
+	For mutant 624, 2 parameter of method setChecked have been replaced with null
+Mutant 625: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant625/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1045 }
+	For mutant 625, 3 parameter of method invoke have been replaced with null
+Mutant 626: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant626/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 2686 }
+	For mutant 626, 2 parameter of method setOnSeekBarChangeListener have been replaced with null
+Mutant 627: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant627/src//smali/a2dp/Vol/service$3.smali; NullMethodCallArgument in line { 211 }
+	For mutant 627, 2 parameter of method getBTD have been replaced with null
+Mutant 628: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant628/src//smali/a2dp/Vol/CustomIntentMaker$3.smali; NullMethodCallArgument in line { 148 }
+	For mutant 628, 2 parameter of method equals have been replaced with null
+Mutant 629: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant629/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1638 }
+	For mutant 629, 2 parameter of method getStringExtra have been replaced with null
+Mutant 630: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant630/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1435 }
+	For mutant 630, 2 parameter of method setVisibility have been replaced with null
+Mutant 631: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant631/src//smali/a2dp/Vol/AppChooser$AppInfoCache.smali; NullMethodCallArgument in line { 97 }
+	For mutant 631, 2 parameter of method getApplicationIcon have been replaced with null
+Mutant 632: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant632/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 203 }
+	For mutant 632, 3 parameter of method makeText have been replaced with null
+Mutant 633: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant633/src//smali/a2dp/Vol/main$5.smali; NullMethodCallArgument in line { 178 }
+	For mutant 633, 2 parameter of method setNeutralButton have been replaced with null
+Mutant 634: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant634/src//smali/a2dp/Vol/main$4$1.smali; NullMethodCallArgument in line { 108 }
+	For mutant 634, 3 parameter of method replaceAll have been replaced with null
+Mutant 635: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant635/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 563 }
+	For mutant 635, 2 parameter of method setAction have been replaced with null
+Mutant 636: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant636/src//smali/a2dp/Vol/EditDevice.smali; NullMethodCallArgument in line { 1028 }
+	For mutant 636, 2 parameter of method getField have been replaced with null
+Mutant 637: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant637/src//smali/a2dp/Vol/DataXmlExporter.smali; ClosingNullCursor in line { 182 }
+	For mutant 637 Database cursor at line 182 has been set to null before close() call
+Mutant 638: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant638/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; ClosingNullCursor in line { 153 }
+	For mutant 638 Database cursor at line 153 has been set to null before close() call
+Mutant 639: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant639/src//smali/a2dp/Vol/DeviceDB.smali; ClosingNullCursor in line { 945 }
+	For mutant 639 Database cursor at line 945 has been set to null before close() call
+Mutant 640: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant640/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; ClosingNullCursor in line { 165 }
+	For mutant 640 Database cursor at line 165 has been set to null before close() call
+Mutant 641: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant641/src//smali/a2dp/Vol/DeviceDB.smali; ClosingNullCursor in line { 434 }
+	For mutant 641 Database cursor at line 434 has been set to null before close() call
+Mutant 642: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant642/src//smali/a2dp/Vol/DeviceDB.smali; ClosingNullCursor in line { 1428 }
+	For mutant 642 Database cursor at line 1428 has been set to null before close() call
+Mutant 643: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant643/src//smali/a2dp/Vol/DeviceDB$OpenHelper.smali; ClosingNullCursor in line { 124 }
+	For mutant 643 Database cursor at line 124 has been set to null before close() call
+Mutant 644: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant644/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2242, 2246 }
+	For mutant 644 the element retrieved at line 2242 has been set to null
+Mutant 645: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant645/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2110, 2114 }
+	For mutant 645 the element retrieved at line 2110 has been set to null
+Mutant 646: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant646/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2132, 2136 }
+	For mutant 646 the element retrieved at line 2132 has been set to null
+Mutant 647: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant647/src//smali/a2dp/Vol/ManageData.smali; FindViewByIdReturnsNull in lines { 301, 305 }
+	For mutant 647 the element retrieved at line 301 has been set to null
+Mutant 648: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant648/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2000, 2004 }
+	For mutant 648 the element retrieved at line 2000 has been set to null
+Mutant 649: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant649/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1922, 1926 }
+	For mutant 649 the element retrieved at line 1922 has been set to null
+Mutant 650: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant650/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1900, 1904 }
+	For mutant 650 the element retrieved at line 1900 has been set to null
+Mutant 651: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant651/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2330, 2334 }
+	For mutant 651 the element retrieved at line 2330 has been set to null
+Mutant 652: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant652/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2341, 2345 }
+	For mutant 652 the element retrieved at line 2341 has been set to null
+Mutant 653: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant653/src//smali/a2dp/Vol/AppChooser$PackageListAdapter.smali; FindViewByIdReturnsNull in lines { 98, 102 }
+	For mutant 653 the element retrieved at line 98 has been set to null
+Mutant 654: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant654/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2220, 2224 }
+	For mutant 654 the element retrieved at line 2220 has been set to null
+Mutant 655: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant655/src//smali/a2dp/Vol/ManageData.smali; FindViewByIdReturnsNull in lines { 321, 325 }
+	For mutant 655 the element retrieved at line 321 has been set to null
+Mutant 656: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant656/src//smali/a2dp/Vol/CustomIntentMaker.smali; FindViewByIdReturnsNull in lines { 193, 197 }
+	For mutant 656 the element retrieved at line 193 has been set to null
+Mutant 657: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant657/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1989, 1993 }
+	For mutant 657 the element retrieved at line 1989 has been set to null
+Mutant 658: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant658/src//smali/a2dp/Vol/CustomIntentMaker.smali; FindViewByIdReturnsNull in lines { 149, 153 }
+	For mutant 658 the element retrieved at line 149 has been set to null
+Mutant 659: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant659/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2088, 2092 }
+	For mutant 659 the element retrieved at line 2088 has been set to null
+Mutant 660: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant660/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1944, 1948 }
+	For mutant 660 the element retrieved at line 1944 has been set to null
+Mutant 661: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant661/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2187, 2191 }
+	For mutant 661 the element retrieved at line 2187 has been set to null
+Mutant 662: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant662/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2231, 2235 }
+	For mutant 662 the element retrieved at line 2231 has been set to null
+Mutant 663: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant663/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2264, 2268 }
+	For mutant 663 the element retrieved at line 2264 has been set to null
+Mutant 664: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant664/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2033, 2037 }
+	For mutant 664 the element retrieved at line 2033 has been set to null
+Mutant 665: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant665/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2077, 2081 }
+	For mutant 665 the element retrieved at line 2077 has been set to null
+Mutant 666: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant666/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2099, 2103 }
+	For mutant 666 the element retrieved at line 2099 has been set to null
+Mutant 667: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant667/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2209, 2213 }
+	For mutant 667 the element retrieved at line 2209 has been set to null
+Mutant 668: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant668/src//smali/a2dp/Vol/ManageData.smali; FindViewByIdReturnsNull in lines { 260, 264 }
+	For mutant 668 the element retrieved at line 260 has been set to null
+Mutant 669: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant669/src//smali/a2dp/Vol/ManageData.smali; FindViewByIdReturnsNull in lines { 281, 285 }
+	For mutant 669 the element retrieved at line 281 has been set to null
+Mutant 670: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant670/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2066, 2070 }
+	For mutant 670 the element retrieved at line 2066 has been set to null
+Mutant 671: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant671/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2143, 2147 }
+	For mutant 671 the element retrieved at line 2143 has been set to null
+Mutant 672: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant672/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2055, 2059 }
+	For mutant 672 the element retrieved at line 2055 has been set to null
+Mutant 673: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant673/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1933, 1937 }
+	For mutant 673 the element retrieved at line 1933 has been set to null
+Mutant 674: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant674/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1889, 1893 }
+	For mutant 674 the element retrieved at line 1889 has been set to null
+Mutant 675: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant675/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2154, 2158 }
+	For mutant 675 the element retrieved at line 2154 has been set to null
+Mutant 676: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant676/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1955, 1959 }
+	For mutant 676 the element retrieved at line 1955 has been set to null
+Mutant 677: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant677/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2176, 2180 }
+	For mutant 677 the element retrieved at line 2176 has been set to null
+Mutant 678: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant678/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2297, 2301 }
+	For mutant 678 the element retrieved at line 2297 has been set to null
+Mutant 679: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant679/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2165, 2169 }
+	For mutant 679 the element retrieved at line 2165 has been set to null
+Mutant 680: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant680/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1966, 1970 }
+	For mutant 680 the element retrieved at line 1966 has been set to null
+Mutant 681: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant681/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2044, 2048 }
+	For mutant 681 the element retrieved at line 2044 has been set to null
+Mutant 682: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant682/src//smali/a2dp/Vol/ManageData.smali; FindViewByIdReturnsNull in lines { 224, 228 }
+	For mutant 682 the element retrieved at line 224 has been set to null
+Mutant 683: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant683/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1911, 1915 }
+	For mutant 683 the element retrieved at line 1911 has been set to null
+Mutant 684: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant684/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2286, 2290 }
+	For mutant 684 the element retrieved at line 2286 has been set to null
+Mutant 685: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant685/src//smali/a2dp/Vol/CustomIntentMaker.smali; FindViewByIdReturnsNull in lines { 171, 175 }
+	For mutant 685 the element retrieved at line 171 has been set to null
+Mutant 686: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant686/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 1977, 1981 }
+	For mutant 686 the element retrieved at line 1977 has been set to null
+Mutant 687: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant687/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2198, 2202 }
+	For mutant 687 the element retrieved at line 2198 has been set to null
+Mutant 688: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant688/src//smali/a2dp/Vol/CustomIntentMaker.smali; FindViewByIdReturnsNull in lines { 160, 164 }
+	For mutant 688 the element retrieved at line 160 has been set to null
+Mutant 689: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant689/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2308, 2312 }
+	For mutant 689 the element retrieved at line 2308 has been set to null
+Mutant 690: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant690/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2275, 2279 }
+	For mutant 690 the element retrieved at line 2275 has been set to null
+Mutant 691: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant691/src//smali/a2dp/Vol/ManageData.smali; FindViewByIdReturnsNull in lines { 235, 239 }
+	For mutant 691 the element retrieved at line 235 has been set to null
+Mutant 692: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant692/src//smali/a2dp/Vol/CustomIntentMaker.smali; FindViewByIdReturnsNull in lines { 182, 186 }
+	For mutant 692 the element retrieved at line 182 has been set to null
+Mutant 693: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant693/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2319, 2323 }
+	For mutant 693 the element retrieved at line 2319 has been set to null
+Mutant 694: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant694/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2253, 2257 }
+	For mutant 694 the element retrieved at line 2253 has been set to null
+Mutant 695: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant695/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2121, 2125 }
+	For mutant 695 the element retrieved at line 2121 has been set to null
+Mutant 696: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant696/src//smali/a2dp/Vol/CustomIntentMaker.smali; FindViewByIdReturnsNull in lines { 138, 142 }
+	For mutant 696 the element retrieved at line 138 has been set to null
+Mutant 697: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant697/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2011, 2015 }
+	For mutant 697 the element retrieved at line 2011 has been set to null
+Mutant 698: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant698/src//smali/a2dp/Vol/EditDevice.smali; FindViewByIdReturnsNull in lines { 2022, 2026 }
+	For mutant 698 the element retrieved at line 2022 has been set to null
+Mutant 699: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant699/src//AndroidManifest.xml; MissingPermissionManifest in line { 4 }
+	For mutant 699 the lines between 5 and 5 have been deleted.
+Mutant 700: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant700/src//AndroidManifest.xml; MissingPermissionManifest in line { 6 }
+	For mutant 700 the lines between 7 and 7 have been deleted.
+Mutant 701: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant701/src//AndroidManifest.xml; MissingPermissionManifest in line { 5 }
+	For mutant 701 the lines between 6 and 6 have been deleted.
+Mutant 702: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant702/src//AndroidManifest.xml; MissingPermissionManifest in line { 20 }
+	For mutant 702 the lines between 21 and 21 have been deleted.
+Mutant 703: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant703/src//AndroidManifest.xml; MissingPermissionManifest in line { 13 }
+	For mutant 703 the lines between 14 and 14 have been deleted.
+Mutant 704: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant704/src//AndroidManifest.xml; MissingPermissionManifest in line { 10 }
+	For mutant 704 the lines between 11 and 11 have been deleted.
+Mutant 705: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant705/src//AndroidManifest.xml; MissingPermissionManifest in line { 17 }
+	For mutant 705 the lines between 18 and 18 have been deleted.
+Mutant 706: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant706/src//AndroidManifest.xml; MissingPermissionManifest in line { 1 }
+	For mutant 706 the lines between 2 and 2 have been deleted.
+Mutant 707: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant707/src//AndroidManifest.xml; MissingPermissionManifest in line { 11 }
+	For mutant 707 the lines between 12 and 12 have been deleted.
+Mutant 708: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant708/src//AndroidManifest.xml; MissingPermissionManifest in line { 2 }
+	For mutant 708 the lines between 3 and 3 have been deleted.
+Mutant 709: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant709/src//AndroidManifest.xml; MissingPermissionManifest in line { 16 }
+	For mutant 709 the lines between 17 and 17 have been deleted.
+Mutant 710: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant710/src//AndroidManifest.xml; MissingPermissionManifest in line { 15 }
+	For mutant 710 the lines between 16 and 16 have been deleted.
+Mutant 711: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant711/src//AndroidManifest.xml; MissingPermissionManifest in line { 18 }
+	For mutant 711 the lines between 19 and 19 have been deleted.
+Mutant 712: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant712/src//AndroidManifest.xml; MissingPermissionManifest in line { 19 }
+	For mutant 712 the lines between 20 and 20 have been deleted.
+Mutant 713: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant713/src//AndroidManifest.xml; MissingPermissionManifest in line { 14 }
+	For mutant 713 the lines between 15 and 15 have been deleted.
+Mutant 714: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant714/src//AndroidManifest.xml; MissingPermissionManifest in line { 8 }
+	For mutant 714 the lines between 9 and 9 have been deleted.
+Mutant 715: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant715/src//AndroidManifest.xml; MissingPermissionManifest in line { 3 }
+	For mutant 715 the lines between 4 and 4 have been deleted.
+Mutant 716: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant716/src//AndroidManifest.xml; MissingPermissionManifest in line { 12 }
+	For mutant 716 the lines between 13 and 13 have been deleted.
+Mutant 717: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant717/src//AndroidManifest.xml; MissingPermissionManifest in line { 59 }
+	For mutant 717 the lines between 60 and 60 have been deleted.
+Mutant 718: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant718/src//AndroidManifest.xml; MissingPermissionManifest in line { 7 }
+	For mutant 718 the lines between 8 and 8 have been deleted.
+Mutant 719: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant719/src//smali/a2dp/Vol/EditDevice$11.smali; NullIntent in line { 67 }
+	For mutant 719 intent defined at lines 67 has been defined as null
+Mutant 720: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant720/src//smali/a2dp/Vol/service.smali; NullIntent in line { 2838 }
+	For mutant 720 intent defined at lines 2838 has been defined as null
+Mutant 721: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant721/src//smali/a2dp/Vol/main.smali; NullIntent in line { 3363 }
+	For mutant 721 intent defined at lines 3363 has been defined as null
+Mutant 722: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant722/src//smali/a2dp/Vol/main.smali; NullIntent in line { 4739 }
+	For mutant 722 intent defined at lines 4739 has been defined as null
+Mutant 723: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant723/src//smali/a2dp/Vol/EditDevice$12.smali; NullIntent in line { 57 }
+	For mutant 723 intent defined at lines 57 has been defined as null
+Mutant 724: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant724/src//smali/a2dp/Vol/EditDevice$11.smali; NullIntent in line { 189 }
+	For mutant 724 intent defined at lines 189 has been defined as null
+Mutant 725: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant725/src//smali/a2dp/Vol/main$8.smali; NullIntent in line { 61 }
+	For mutant 725 intent defined at lines 61 has been defined as null
+Mutant 726: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant726/src//smali/a2dp/Vol/ALauncher.smali; NullIntent in line { 76 }
+	For mutant 726 intent defined at lines 76 has been defined as null
+Mutant 727: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant727/src//smali/a2dp/Vol/EditDevice$11.smali; NullIntent in line { 129 }
+	For mutant 727 intent defined at lines 129 has been defined as null
+Mutant 728: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant728/src//smali/a2dp/Vol/main$8.smali; NullIntent in line { 79 }
+	For mutant 728 intent defined at lines 79 has been defined as null
+Mutant 729: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant729/src//smali/a2dp/Vol/main.smali; NullIntent in line { 4814 }
+	For mutant 729 intent defined at lines 4814 has been defined as null
+Mutant 730: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant730/src//smali/a2dp/Vol/service.smali; NullIntent in line { 3694 }
+	For mutant 730 intent defined at lines 3694 has been defined as null
+Mutant 731: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant731/src//smali/a2dp/Vol/main$5$2.smali; NullIntent in line { 59 }
+	For mutant 731 intent defined at lines 59 has been defined as null
+Mutant 732: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant732/src//smali/a2dp/Vol/service.smali; NullIntent in line { 1836 }
+	For mutant 732 intent defined at lines 1836 has been defined as null
+Mutant 733: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant733/src//smali/a2dp/Vol/main.smali; NullIntent in line { 4724 }
+	For mutant 733 intent defined at lines 4724 has been defined as null
+Mutant 734: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant734/src//smali/a2dp/Vol/EmmaInstrument/EmmaInstrumentation.smali; NullIntent in line { 583 }
+	For mutant 734 intent defined at lines 583 has been defined as null
+Mutant 735: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant735/src//smali/a2dp/Vol/EditDevice$11.smali; NullIntent in line { 159 }
+	For mutant 735 intent defined at lines 159 has been defined as null
+Mutant 736: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant736/src//smali/a2dp/Vol/main.smali; NullIntent in line { 4240 }
+	For mutant 736 intent defined at lines 4240 has been defined as null
+Mutant 737: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant737/src//smali/a2dp/Vol/service.smali; NullIntent in line { 2707 }
+	For mutant 737 intent defined at lines 2707 has been defined as null
+Mutant 738: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant738/src//smali/a2dp/Vol/main.smali; NullIntent in line { 4707 }
+	For mutant 738 intent defined at lines 4707 has been defined as null
+Mutant 739: ./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant739/src//AndroidManifest.xml; WrongMainActivity in line { 23 }
+	For mutant 739 activity ".main" at line 23 has been replaced as main activity by "ProviderList" at line 49
+Mutant 740: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant740/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2094 }
+	For mutant 740 focus has been requested for the element found at line 2088
+Mutant 741: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant741/src//smali/a2dp/Vol/ManageData.smali; InvalidViewFocus in line { 287 }
+	For mutant 741 focus has been requested for the element found at line 281
+Mutant 742: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant742/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2204 }
+	For mutant 742 focus has been requested for the element found at line 2198
+Mutant 743: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant743/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2061 }
+	For mutant 743 focus has been requested for the element found at line 2055
+Mutant 744: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant744/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2259 }
+	For mutant 744 focus has been requested for the element found at line 2253
+Mutant 745: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant745/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2215 }
+	For mutant 745 focus has been requested for the element found at line 2209
+Mutant 746: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant746/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2182 }
+	For mutant 746 focus has been requested for the element found at line 2176
+Mutant 747: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant747/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2193 }
+	For mutant 747 focus has been requested for the element found at line 2187
+Mutant 748: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant748/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2072 }
+	For mutant 748 focus has been requested for the element found at line 2066
+Mutant 749: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant749/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1939 }
+	For mutant 749 focus has been requested for the element found at line 1933
+Mutant 750: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant750/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2105 }
+	For mutant 750 focus has been requested for the element found at line 2099
+Mutant 751: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant751/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2039 }
+	For mutant 751 focus has been requested for the element found at line 2033
+Mutant 752: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant752/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1906 }
+	For mutant 752 focus has been requested for the element found at line 1900
+Mutant 753: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant753/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2028 }
+	For mutant 753 focus has been requested for the element found at line 2022
+Mutant 754: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant754/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2138 }
+	For mutant 754 focus has been requested for the element found at line 2132
+Mutant 755: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant755/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1895 }
+	For mutant 755 focus has been requested for the element found at line 1889
+Mutant 756: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant756/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1983 }
+	For mutant 756 focus has been requested for the element found at line 1977
+Mutant 757: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant757/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2127 }
+	For mutant 757 focus has been requested for the element found at line 2121
+Mutant 758: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant758/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1950 }
+	For mutant 758 focus has been requested for the element found at line 1944
+Mutant 759: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant759/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2226 }
+	For mutant 759 focus has been requested for the element found at line 2220
+Mutant 760: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant760/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2149 }
+	For mutant 760 focus has been requested for the element found at line 2143
+Mutant 761: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant761/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1928 }
+	For mutant 761 focus has been requested for the element found at line 1922
+Mutant 762: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant762/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2006 }
+	For mutant 762 focus has been requested for the element found at line 2000
+Mutant 763: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant763/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1917 }
+	For mutant 763 focus has been requested for the element found at line 1911
+Mutant 764: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant764/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1972 }
+	For mutant 764 focus has been requested for the element found at line 1966
+Mutant 765: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant765/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2160 }
+	For mutant 765 focus has been requested for the element found at line 2154
+Mutant 766: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant766/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1961 }
+	For mutant 766 focus has been requested for the element found at line 1955
+Mutant 767: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant767/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2017 }
+	For mutant 767 focus has been requested for the element found at line 2011
+Mutant 768: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant768/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 1995 }
+	For mutant 768 focus has been requested for the element found at line 1989
+Mutant 769: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant769/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2050 }
+	For mutant 769 focus has been requested for the element found at line 2044
+Mutant 770: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant770/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2270 }
+	For mutant 770 focus has been requested for the element found at line 2264
+Mutant 771: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant771/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2116 }
+	For mutant 771 focus has been requested for the element found at line 2110
+Mutant 772: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant772/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2083 }
+	For mutant 772 focus has been requested for the element found at line 2077
+Mutant 773: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant773/src//smali/a2dp/Vol/EditDevice.smali; InvalidViewFocus in line { 2248 }
+	For mutant 773 focus has been requested for the element found at line 2242
+Mutant 774: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant774/src//smali/a2dp/Vol/service.smali; BluetoothAdapterAlwaysEnabled in lines { 3210, 3214 }
+	For mutant 774 Bluetooth Adapter state validation has been set to true
+Mutant 775: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant775/src//smali/a2dp/Vol/DataXmlExporter.smali; NullInputStream in line { 262 }
+	For mutant 775 Input Stream at line 262 has been set to null before calling close() method
+Mutant 776: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant776/src//smali/a2dp/Vol/ManageData$ImportDatabaseFileTask.smali; NullInputStream in line { 124 }
+	For mutant 776 Input Stream at line 124 has been set to null before calling close() method
+Mutant 777: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant777/src//smali/a2dp/Vol/ManageData$ImportDatabaseFileTask.smali; NullInputStream in line { 117 }
+	For mutant 777 Input Stream at line 117 has been set to null before calling close() method
+Mutant 778: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant778/src//smali/a2dp/Vol/ManageData$ExportDatabaseFileTask.smali; NullInputStream in line { 124 }
+	For mutant 778 Input Stream at line 124 has been set to null before calling close() method
+Mutant 779: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant779/src//smali/a2dp/Vol/ManageData$ImportDatabaseFileTask.smali; NullInputStream in line { 144 }
+	For mutant 779 Input Stream at line 144 has been set to null before calling close() method
+Mutant 780: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant780/src//smali/a2dp/Vol/ManageData$ExportLocationTask.smali; NullInputStream in line { 124 }
+	For mutant 780 Input Stream at line 124 has been set to null before calling close() method
+Mutant 781: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant781/src//smali/a2dp/Vol/ManageData$ExportDatabaseFileTask.smali; NullInputStream in line { 137 }
+	For mutant 781 Input Stream at line 137 has been set to null before calling close() method
+Mutant 782: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant782/src//smali/a2dp/Vol/ManageData$ExportLocationTask.smali; NullInputStream in line { 144 }
+	For mutant 782 Input Stream at line 144 has been set to null before calling close() method
+Mutant 783: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant783/src//smali/a2dp/Vol/DataXmlExporter.smali; NullInputStream in line { 275 }
+	For mutant 783 Input Stream at line 275 has been set to null before calling close() method
+Mutant 784: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant784/src//smali/a2dp/Vol/ManageData$ExportLocationTask.smali; NullInputStream in line { 137 }
+	For mutant 784 Input Stream at line 137 has been set to null before calling close() method
+Mutant 785: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant785/src//smali/a2dp/Vol/ManageData$ExportLocationTask.smali; NullInputStream in line { 117 }
+	For mutant 785 Input Stream at line 117 has been set to null before calling close() method
+Mutant 786: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant786/src//smali/a2dp/Vol/ManageData$ExportDatabaseFileTask.smali; NullInputStream in line { 144 }
+	For mutant 786 Input Stream at line 144 has been set to null before calling close() method
+Mutant 787: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant787/src//smali/a2dp/Vol/ManageData$ImportDatabaseFileTask.smali; NullInputStream in line { 137 }
+	For mutant 787 Input Stream at line 137 has been set to null before calling close() method
+Mutant 788: /home/estudiante/test/./mutants/a2dp.Vol/rSI/a2dp.Vol-mutant788/src//smali/a2dp/Vol/ManageData$ExportDatabaseFileTask.smali; NullInputStream in line { 117 }
+	For mutant 788 Input Stream at line 117 has been set to null before calling close() method

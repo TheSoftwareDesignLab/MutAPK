@@ -1,0 +1,754 @@
+Mutant 1: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant1/src//smali/com/eleybourn/bookcatalogue/CatalogueDBAdapter$DatabaseHelper.smali; InvalidFilePath in line { 281 }
+	For mutant 1 the path of File at line 281 has been replaced by 98cc35bf672b488b8fac9a104cc39ac5
+Mutant 2: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant2/src//smali/com/eleybourn/bookcatalogue/CatalogueDBAdapter$DatabaseHelper.smali; InvalidFilePath in line { 309 }
+	For mutant 2 the path of File at line 309 has been replaced by 552935529d4f45a8adf57fcf3ed05b36
+Mutant 3: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant3/src//smali/com/eleybourn/bookcatalogue/BookCatalogue.smali; ClosingNullCursor in line { 665 }
+	For mutant 3 Database cursor at line 665 has been set to null before close() call
+Mutant 4: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant4/src//smali/com/eleybourn/bookcatalogue/BookEditLoaned.smali; ClosingNullCursor in line { 658 }
+	For mutant 4 Database cursor at line 658 has been set to null before close() call
+Mutant 5: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant5/src//smali/com/eleybourn/bookcatalogue/BookEditLoaned.smali; ClosingNullCursor in line { 694 }
+	For mutant 5 Database cursor at line 694 has been set to null before close() call
+Mutant 6: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant6/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$2.smali; NullIntent in line { 66 }
+	For mutant 6 intent defined at lines 66 has been defined as null
+Mutant 7: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant7/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate$1.smali; NullIntent in line { 56 }
+	For mutant 7 intent defined at lines 56 has been defined as null
+Mutant 8: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant8/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate$1.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 8 component name at line 0 has been change from "" to ""
+Mutant 9: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant9/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$2.smali; DifferentActivityIntentDefinition in line { 0 }
+	For mutant 9 component name at line 0 has been change from "" to ""
+Mutant 10: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant10/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; FindViewByIdReturnsNull in lines { 118, 120 }
+	For mutant 10 the element retrieved at line 118 has been set to null
+Mutant 11: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant11/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; FindViewByIdReturnsNull in lines { 457, 461 }
+	For mutant 11 the element retrieved at line 457 has been set to null
+Mutant 12: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant12/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; FindViewByIdReturnsNull in lines { 60, 64 }
+	For mutant 12 the element retrieved at line 60 has been set to null
+Mutant 13: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant13/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; FindViewByIdReturnsNull in lines { 77, 81 }
+	For mutant 13 the element retrieved at line 77 has been set to null
+Mutant 14: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant14/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; FindViewByIdReturnsNull in lines { 437, 441 }
+	For mutant 14 the element retrieved at line 437 has been set to null
+Mutant 15: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant15/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; FindViewByIdReturnsNull in lines { 382, 384 }
+	For mutant 15 the element retrieved at line 382 has been set to null
+Mutant 16: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant16/src//smali/com/eleybourn/bookcatalogue/EditAuthorList$5.smali; FindViewByIdReturnsNull in lines { 62, 64 }
+	For mutant 16 the element retrieved at line 62 has been set to null
+Mutant 17: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant17/src//AndroidManifest.xml; WrongMainActivity in line { 4 }
+	For mutant 17 activity ".BookCatalogue" at line 4 has been replaced as main activity by ".UpdateFromInternet" at line 32
+Mutant 18: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant18/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullOutputStream in line { 167 }
+	For mutant 18 Output Stream at line 167 has been set to null before calling close() method
+Mutant 19: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant19/src//smali/com/eleybourn/bookcatalogue/BookEditFields.smali; NullInputStream in line { 415 }
+	For mutant 19 Input Stream at line 415 has been set to null before calling close() method
+Mutant 20: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant20/src//AndroidManifest.xml; ActivityNotDefined in line { 3 }
+	For mutant 20 the lines between 4 and 14 have been deleted.
+Mutant 21: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant21/src//AndroidManifest.xml; ActivityNotDefined in line { 14 }
+	For mutant 21 the lines between 15 and 15 have been deleted.
+Mutant 22: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant22/src//smali/com/eleybourn/bookcatalogue/CatalogueDBAdapter$DatabaseHelper.smali; InvalidIndexQueryParameter in line { 50 }
+	For mutant 22 params list send with SQL command have been replace with an empty String list
+Mutant 23: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant23/src//smali/com/eleybourn/bookcatalogue/CatalogueDBAdapter.smali; InvalidIndexQueryParameter in line { 8902 }
+	For mutant 23 params list send with SQL command have been replace with an empty String list
+Mutant 24: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant24/src//smali/com/eleybourn/bookcatalogue/CatalogueDBAdapter$TableInfo.smali; InvalidIndexQueryParameter in line { 134 }
+	For mutant 24 params list send with SQL command have been replace with an empty String list
+Mutant 25: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant25/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 438 }
+	For mutant 25, 2 parameter of method equals have been replaced with null
+Mutant 26: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant26/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 650 }
+	For mutant 26, 3 parameter of method putString have been replaced with null
+Mutant 27: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant27/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 858 }
+	For mutant 27, 2 parameter of method getChildAt have been replaced with null
+Mutant 28: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant28/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 75 }
+	For mutant 28, 2 parameter of method setIcon have been replaced with null
+Mutant 29: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant29/src//smali/com/eleybourn/bookcatalogue/Series$1.smali; NullMethodCallArgument in line { 53 }
+	For mutant 29, 3 parameter of method <init> have been replaced with null
+Mutant 30: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant30/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 504 }
+	For mutant 30, 4 parameter of method <init> have been replaced with null
+Mutant 31: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant31/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 492 }
+	For mutant 31, 3 parameter of method putString have been replaced with null
+Mutant 32: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant32/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; NullMethodCallArgument in line { 31 }
+	For mutant 32, 2 parameter of method setContentView have been replaced with null
+Mutant 33: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant33/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 82 }
+	For mutant 33, 3 parameter of method putExtra have been replaced with null
+Mutant 34: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant34/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 166 }
+	For mutant 34, 2 parameter of method append have been replaced with null
+Mutant 35: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant35/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 893 }
+	For mutant 35, 3 parameter of method setSelectionFromTop have been replaced with null
+Mutant 36: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant36/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 412 }
+	For mutant 36, 4 parameter of method access$200 have been replaced with null
+Mutant 37: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant37/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 188 }
+	For mutant 37, 2 parameter of method getSharedPreferences have been replaced with null
+Mutant 38: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant38/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 113 }
+	For mutant 38, 2 parameter of method setButton2 have been replaced with null
+Mutant 39: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant39/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 566 }
+	For mutant 39, 2 parameter of method accumulateData have been replaced with null
+Mutant 40: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant40/src//smali/com/eleybourn/bookcatalogue/BookCatalogue$1.smali; NullMethodCallArgument in line { 53 }
+	For mutant 40, 2 parameter of method access$000 have been replaced with null
+Mutant 41: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant41/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 61 }
+	For mutant 41, 2 parameter of method setType have been replaced with null
+Mutant 42: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant42/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 385 }
+	For mutant 42, 2 parameter of method getCoverImageUrl have been replaced with null
+Mutant 43: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant43/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 362 }
+	For mutant 43, 4 parameter of method appendData have been replaced with null
+Mutant 44: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant44/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 150 }
+	For mutant 44, 2 parameter of method getDimensionPixelSize have been replaced with null
+Mutant 45: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant45/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 630 }
+	For mutant 45, 2 parameter of method contains have been replaced with null
+Mutant 46: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant46/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 790 }
+	For mutant 46, 2 parameter of method logError have been replaced with null
+Mutant 47: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant47/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 752 }
+	For mutant 47, 2 parameter of method doProperCase have been replaced with null
+Mutant 48: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant48/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 407 }
+	For mutant 48, 2 parameter of method setLayoutParams have been replaced with null
+Mutant 49: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant49/src//smali/com/eleybourn/bookcatalogue/EditAuthorList$5.smali; NullMethodCallArgument in line { 55 }
+	For mutant 49, 2 parameter of method setText have been replaced with null
+Mutant 50: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant50/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 1031 }
+	For mutant 50, 2 parameter of method findViewById have been replaced with null
+Mutant 51: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant51/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 91 }
+	For mutant 51, 2 parameter of method append have been replaced with null
+Mutant 52: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant52/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 711 }
+	For mutant 52, 2 parameter of method onSearchFinished have been replaced with null
+Mutant 53: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant53/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 697 }
+	For mutant 53, 2 parameter of method putParcelableArrayList have been replaced with null
+Mutant 54: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant54/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 109 }
+	For mutant 54, 2 parameter of method append have been replaced with null
+Mutant 55: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant55/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 92 }
+	For mutant 55, 2 parameter of method <init> have been replaced with null
+Mutant 56: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant56/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 1136 }
+	For mutant 56, 2 parameter of method onSearchFinished have been replaced with null
+Mutant 57: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant57/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 358 }
+	For mutant 57, 2 parameter of method getChildAt have been replaced with null
+Mutant 58: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant58/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 347 }
+	For mutant 58, 2 parameter of method getChildAt have been replaced with null
+Mutant 59: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant59/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 345 }
+	For mutant 59, 2 parameter of method putString have been replaced with null
+Mutant 60: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant60/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 745 }
+	For mutant 60, 2 parameter of method doProperCase have been replaced with null
+Mutant 61: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant61/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 390 }
+	For mutant 61, 3 parameter of method setButton have been replaced with null
+Mutant 62: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant62/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 412 }
+	For mutant 62, 3 parameter of method access$200 have been replaced with null
+Mutant 63: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant63/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 759 }
+	For mutant 63, 4 parameter of method decodeList have been replaced with null
+Mutant 64: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant64/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 765 }
+	For mutant 64, 2 parameter of method logError have been replaced with null
+Mutant 65: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant65/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 1050 }
+	For mutant 65, 2 parameter of method equals have been replaced with null
+Mutant 66: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant66/src//smali/com/eleybourn/bookcatalogue/TaskManager$MessageHandler.smali; NullMethodCallArgument in line { 41 }
+	For mutant 66, 2 parameter of method <init> have been replaced with null
+Mutant 67: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant67/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 370 }
+	For mutant 67, 2 parameter of method equals have been replaced with null
+Mutant 68: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant68/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 48 }
+	For mutant 68, 3 parameter of method <init> have been replaced with null
+Mutant 69: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant69/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 346 }
+	For mutant 69, 2 parameter of method sleep have been replaced with null
+Mutant 70: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant70/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 801 }
+	For mutant 70, 3 parameter of method putParcelableArrayList have been replaced with null
+Mutant 71: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant71/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 439 }
+	For mutant 71, 2 parameter of method append have been replaced with null
+Mutant 72: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant72/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 858 }
+	For mutant 72, 2 parameter of method editSeries have been replaced with null
+Mutant 73: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant73/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 801 }
+	For mutant 73, 2 parameter of method putParcelableArrayList have been replaced with null
+Mutant 74: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant74/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 385 }
+	For mutant 74, 3 parameter of method getCoverImageUrl have been replaced with null
+Mutant 75: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant75/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 97 }
+	For mutant 75, 2 parameter of method compareTo have been replaced with null
+Mutant 76: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant76/src//smali/com/eleybourn/bookcatalogue/BookEditNotes$2.smali; NullMethodCallArgument in line { 50 }
+	For mutant 76, 2 parameter of method showDialog have been replaced with null
+Mutant 77: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant77/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 54 }
+	For mutant 77, 2 parameter of method <init> have been replaced with null
+Mutant 78: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant78/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 132 }
+	For mutant 78, 2 parameter of method startActivity have been replaced with null
+Mutant 79: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant79/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 230 }
+	For mutant 79, 2 parameter of method <init> have been replaced with null
+Mutant 80: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant80/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 687 }
+	For mutant 80, 2 parameter of method decodeList have been replaced with null
+Mutant 81: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant81/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 472 }
+	For mutant 81, 2 parameter of method <init> have been replaced with null
+Mutant 82: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant82/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 176 }
+	For mutant 82, 2 parameter of method getBoolean have been replaced with null
+Mutant 83: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant83/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 76 }
+	For mutant 83, 2 parameter of method getString have been replaced with null
+Mutant 84: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant84/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 466 }
+	For mutant 84, 3 parameter of method set have been replaced with null
+Mutant 85: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant85/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 179 }
+	For mutant 85, 3 parameter of method getColor have been replaced with null
+Mutant 86: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant86/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 586 }
+	For mutant 86, 2 parameter of method equals have been replaced with null
+Mutant 87: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant87/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 621 }
+	For mutant 87, 2 parameter of method getChildAt have been replaced with null
+Mutant 88: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant88/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 453 }
+	For mutant 88, 2 parameter of method <init> have been replaced with null
+Mutant 89: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant89/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 335 }
+	For mutant 89, 2 parameter of method access$300 have been replaced with null
+Mutant 90: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant90/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 307 }
+	For mutant 90, 2 parameter of method containsKey have been replaced with null
+Mutant 91: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant91/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 251 }
+	For mutant 91, 2 parameter of method <init> have been replaced with null
+Mutant 92: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant92/src//smali/com/eleybourn/bookcatalogue/Base64$InputStream.smali; NullMethodCallArgument in line { 317 }
+	For mutant 92, 5 parameter of method access$200 have been replaced with null
+Mutant 93: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant93/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 243 }
+	For mutant 93, 2 parameter of method pruneList have been replaced with null
+Mutant 94: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant94/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 121 }
+	For mutant 94, 2 parameter of method putExtra have been replaced with null
+Mutant 95: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant95/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 188 }
+	For mutant 95, 3 parameter of method getInt have been replaced with null
+Mutant 96: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant96/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 731 }
+	For mutant 96, 2 parameter of method doProperCase have been replaced with null
+Mutant 97: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant97/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 592 }
+	For mutant 97, 2 parameter of method getString have been replaced with null
+Mutant 98: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant98/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 98 }
+	For mutant 98, 2 parameter of method <init> have been replaced with null
+Mutant 99: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant99/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 422 }
+	For mutant 99, 3 parameter of method write have been replaced with null
+Mutant 100: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant100/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 198 }
+	For mutant 100, 2 parameter of method getString have been replaced with null
+Mutant 101: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant101/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 69 }
+	For mutant 101, 2 parameter of method valueOf have been replaced with null
+Mutant 102: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant102/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 711 }
+	For mutant 102, 3 parameter of method onSearchFinished have been replaced with null
+Mutant 103: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant103/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 161 }
+	For mutant 103, 3 parameter of method getDimensionPixelSize have been replaced with null
+Mutant 104: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant104/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 76 }
+	For mutant 104, 2 parameter of method compareTo have been replaced with null
+Mutant 105: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant105/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 400 }
+	For mutant 105, 2 parameter of method append have been replaced with null
+Mutant 106: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant106/src//smali/com/eleybourn/bookcatalogue/Series$1.smali; NullMethodCallArgument in line { 53 }
+	For mutant 106, 2 parameter of method <init> have been replaced with null
+Mutant 107: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant107/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 659 }
+	For mutant 107, 3 parameter of method putString have been replaced with null
+Mutant 108: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant108/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 678 }
+	For mutant 108, 3 parameter of method putParcelableArrayList have been replaced with null
+Mutant 109: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant109/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 893 }
+	For mutant 109, 2 parameter of method setSelectionFromTop have been replaced with null
+Mutant 110: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant110/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 466 }
+	For mutant 110, 2 parameter of method set have been replaced with null
+Mutant 111: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant111/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 81 }
+	For mutant 111, 2 parameter of method <init> have been replaced with null
+Mutant 112: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant112/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 48 }
+	For mutant 112, 2 parameter of method <init> have been replaced with null
+Mutant 113: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant113/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 428 }
+	For mutant 113, 3 parameter of method putString have been replaced with null
+Mutant 114: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant114/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; NullMethodCallArgument in line { 77 }
+	For mutant 114, 2 parameter of method findViewById have been replaced with null
+Mutant 115: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant115/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 111 }
+	For mutant 115, 2 parameter of method <init> have been replaced with null
+Mutant 116: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant116/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 472 }
+	For mutant 116, 2 parameter of method findViewById have been replaced with null
+Mutant 117: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant117/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 504 }
+	For mutant 117, 2 parameter of method <init> have been replaced with null
+Mutant 118: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant118/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 55 }
+	For mutant 118, 2 parameter of method <init> have been replaced with null
+Mutant 119: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant119/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 777 }
+	For mutant 119, 2 parameter of method getString have been replaced with null
+Mutant 120: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant120/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 394 }
+	For mutant 120, 2 parameter of method getString have been replaced with null
+Mutant 121: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant121/src//smali/com/eleybourn/bookcatalogue/Base64$InputStream.smali; NullMethodCallArgument in line { 317 }
+	For mutant 121, 2 parameter of method access$200 have been replaced with null
+Mutant 122: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant122/src//smali/com/eleybourn/bookcatalogue/Fields$FloatValidator.smali; NullMethodCallArgument in line { 35 }
+	For mutant 122, 2 parameter of method <init> have been replaced with null
+Mutant 123: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant123/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 566 }
+	For mutant 123, 2 parameter of method myPointToPosition have been replaced with null
+Mutant 124: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant124/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 668 }
+	For mutant 124, 4 parameter of method decodeList have been replaced with null
+Mutant 125: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant125/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$2.smali; NullMethodCallArgument in line { 66 }
+	For mutant 125, 3 parameter of method <init> have been replaced with null
+Mutant 126: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant126/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 505 }
+	For mutant 126, 2 parameter of method addOnTaskEndedListener have been replaced with null
+Mutant 127: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant127/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 445 }
+	For mutant 127, 2 parameter of method <init> have been replaced with null
+Mutant 128: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant128/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; NullMethodCallArgument in line { 89 }
+	For mutant 128, 2 parameter of method setOnClickListener have been replaced with null
+Mutant 129: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant129/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 506 }
+	For mutant 129, 2 parameter of method format have been replaced with null
+Mutant 130: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant130/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 150 }
+	For mutant 130, 3 parameter of method getDimensionPixelSize have been replaced with null
+Mutant 131: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant131/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 478 }
+	For mutant 131, 2 parameter of method setTextOrHideView have been replaced with null
+Mutant 132: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant132/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 113 }
+	For mutant 132, 3 parameter of method setButton2 have been replaced with null
+Mutant 133: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant133/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 412 }
+	For mutant 133, 2 parameter of method access$200 have been replaced with null
+Mutant 134: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant134/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 627 }
+	For mutant 134, 2 parameter of method getHitRect have been replaced with null
+Mutant 135: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant135/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 128 }
+	For mutant 135, 2 parameter of method createChooser have been replaced with null
+Mutant 136: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant136/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 769 }
+	For mutant 136, 2 parameter of method putParcelableArrayList have been replaced with null
+Mutant 137: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant137/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 98 }
+	For mutant 137, 4 parameter of method <init> have been replaced with null
+Mutant 138: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant138/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 198 }
+	For mutant 138, 3 parameter of method getString have been replaced with null
+Mutant 139: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant139/src//smali/com/eleybourn/bookcatalogue/StandardDialogs$2.smali; NullMethodCallArgument in line { 76 }
+	For mutant 139, 2 parameter of method putBoolean have been replaced with null
+Mutant 140: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant140/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 427 }
+	For mutant 140, 2 parameter of method setContentView have been replaced with null
+Mutant 141: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant141/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 422 }
+	For mutant 141, 2 parameter of method write have been replaced with null
+Mutant 142: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant142/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 1136 }
+	For mutant 142, 3 parameter of method onSearchFinished have been replaced with null
+Mutant 143: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant143/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 86 }
+	For mutant 143, 2 parameter of method getString have been replaced with null
+Mutant 144: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant144/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 778 }
+	For mutant 144, 3 parameter of method addView have been replaced with null
+Mutant 145: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant145/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 339 }
+	For mutant 145, 2 parameter of method write have been replaced with null
+Mutant 146: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant146/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 108 }
+	For mutant 146, 2 parameter of method <init> have been replaced with null
+Mutant 147: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant147/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 411 }
+	For mutant 147, 2 parameter of method set have been replaced with null
+Mutant 148: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant148/src//smali/com/eleybourn/bookcatalogue/StandardDialogs$2.smali; NullMethodCallArgument in line { 76 }
+	For mutant 148, 3 parameter of method putBoolean have been replaced with null
+Mutant 149: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant149/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 769 }
+	For mutant 149, 3 parameter of method putParcelableArrayList have been replaced with null
+Mutant 150: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant150/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 232 }
+	For mutant 150, 2 parameter of method format have been replaced with null
+Mutant 151: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant151/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$8.smali; NullMethodCallArgument in line { 61 }
+	For mutant 151, 3 parameter of method makeText have been replaced with null
+Mutant 152: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant152/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 890 }
+	For mutant 152, 2 parameter of method setAdapter have been replaced with null
+Mutant 153: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant153/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 144 }
+	For mutant 153, 5 parameter of method obtainStyledAttributes have been replaced with null
+Mutant 154: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant154/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 433 }
+	For mutant 154, 2 parameter of method append have been replaced with null
+Mutant 155: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant155/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 375 }
+	For mutant 155, 2 parameter of method setIcon have been replaced with null
+Mutant 156: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant156/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 875 }
+	For mutant 156, 2 parameter of method startOne have been replaced with null
+Mutant 157: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant157/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 478 }
+	For mutant 157, 3 parameter of method setTextOrHideView have been replaced with null
+Mutant 158: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant158/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 284 }
+	For mutant 158, 3 parameter of method extract have been replaced with null
+Mutant 159: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant159/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 958 }
+	For mutant 159, 2 parameter of method startOne have been replaced with null
+Mutant 160: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant160/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 94 }
+	For mutant 160, 2 parameter of method setButton have been replaced with null
+Mutant 161: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant161/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 482 }
+	For mutant 161, 2 parameter of method append have been replaced with null
+Mutant 162: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant162/src//smali/com/eleybourn/bookcatalogue/Base64$InputStream.smali; NullMethodCallArgument in line { 356 }
+	For mutant 162, 2 parameter of method <init> have been replaced with null
+Mutant 163: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant163/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 688 }
+	For mutant 163, 2 parameter of method getCoverImage have been replaced with null
+Mutant 164: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant164/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 902 }
+	For mutant 164, 2 parameter of method getChildAt have been replaced with null
+Mutant 165: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant165/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 170 }
+	For mutant 165, 2 parameter of method getResourceId have been replaced with null
+Mutant 166: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant166/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 335 }
+	For mutant 166, 3 parameter of method access$300 have been replaced with null
+Mutant 167: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant167/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 353 }
+	For mutant 167, 2 parameter of method equals have been replaced with null
+Mutant 168: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant168/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 492 }
+	For mutant 168, 2 parameter of method putString have been replaced with null
+Mutant 169: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant169/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 453 }
+	For mutant 169, 3 parameter of method <init> have been replaced with null
+Mutant 170: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant170/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 80 }
+	For mutant 170, 4 parameter of method <init> have been replaced with null
+Mutant 171: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant171/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 310 }
+	For mutant 171, 2 parameter of method format have been replaced with null
+Mutant 172: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant172/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 1013 }
+	For mutant 172, 2 parameter of method add have been replaced with null
+Mutant 173: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant173/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 190 }
+	For mutant 173, 2 parameter of method setVisibility have been replaced with null
+Mutant 174: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant174/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 791 }
+	For mutant 174, 3 parameter of method decodeList have been replaced with null
+Mutant 175: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant175/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 410 }
+	For mutant 175, 2 parameter of method append have been replaced with null
+Mutant 176: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant176/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 121 }
+	For mutant 176, 3 parameter of method putExtra have been replaced with null
+Mutant 177: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant177/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 648 }
+	For mutant 177, 3 parameter of method <init> have been replaced with null
+Mutant 178: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant178/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 82 }
+	For mutant 178, 2 parameter of method putExtra have been replaced with null
+Mutant 179: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant179/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 160 }
+	For mutant 179, 2 parameter of method append have been replaced with null
+Mutant 180: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant180/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 697 }
+	For mutant 180, 3 parameter of method putParcelableArrayList have been replaced with null
+Mutant 181: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant181/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 815 }
+	For mutant 181, 2 parameter of method removeView have been replaced with null
+Mutant 182: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant182/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 439 }
+	For mutant 182, 2 parameter of method appendOrAdd have been replaced with null
+Mutant 183: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant183/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 765 }
+	For mutant 183, 2 parameter of method getSystemService have been replaced with null
+Mutant 184: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant184/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$2.smali; NullMethodCallArgument in line { 72 }
+	For mutant 184, 2 parameter of method startActivity have been replaced with null
+Mutant 185: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant185/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 439 }
+	For mutant 185, 3 parameter of method appendOrAdd have been replaced with null
+Mutant 186: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant186/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 738 }
+	For mutant 186, 2 parameter of method doProperCase have been replaced with null
+Mutant 187: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant187/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 791 }
+	For mutant 187, 4 parameter of method decodeList have been replaced with null
+Mutant 188: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant188/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 759 }
+	For mutant 188, 3 parameter of method decodeList have been replaced with null
+Mutant 189: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant189/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 310 }
+	For mutant 189, 3 parameter of method format have been replaced with null
+Mutant 190: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant190/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 605 }
+	For mutant 190, 2 parameter of method getString have been replaced with null
+Mutant 191: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant191/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 209 }
+	For mutant 191, 3 parameter of method access$300 have been replaced with null
+Mutant 192: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant192/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 390 }
+	For mutant 192, 2 parameter of method setButton have been replaced with null
+Mutant 193: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant193/src//smali/com/eleybourn/bookcatalogue/StandardDialogs$2.smali; NullMethodCallArgument in line { 60 }
+	For mutant 193, 2 parameter of method getSharedPreferences have been replaced with null
+Mutant 194: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant194/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 70 }
+	For mutant 194, 2 parameter of method setTitle have been replaced with null
+Mutant 195: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant195/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 750 }
+	For mutant 195, 2 parameter of method setBackgroundColor have been replaced with null
+Mutant 196: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant196/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 161 }
+	For mutant 196, 2 parameter of method getDimensionPixelSize have been replaced with null
+Mutant 197: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant197/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 422 }
+	For mutant 197, 4 parameter of method write have been replaced with null
+Mutant 198: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant198/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 489 }
+	For mutant 198, 2 parameter of method setTextOrHideView have been replaced with null
+Mutant 199: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant199/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 713 }
+	For mutant 199, 2 parameter of method logError have been replaced with null
+Mutant 200: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant200/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 179 }
+	For mutant 200, 2 parameter of method getColor have been replaced with null
+Mutant 201: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant201/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 278 }
+	For mutant 201, 3 parameter of method parseUrlOutput have been replaced with null
+Mutant 202: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant202/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 364 }
+	For mutant 202, 2 parameter of method write have been replaced with null
+Mutant 203: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant203/src//smali/com/eleybourn/bookcatalogue/Base64$InputStream.smali; NullMethodCallArgument in line { 46 }
+	For mutant 203, 3 parameter of method <init> have been replaced with null
+Mutant 204: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant204/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 641 }
+	For mutant 204, 2 parameter of method doToast have been replaced with null
+Mutant 205: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant205/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 410 }
+	For mutant 205, 2 parameter of method setVisibility have been replaced with null
+Mutant 206: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant206/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 447 }
+	For mutant 206, 3 parameter of method appendData have been replaced with null
+Mutant 207: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant207/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 820 }
+	For mutant 207, 2 parameter of method setImageDrawable have been replaced with null
+Mutant 208: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant208/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 101 }
+	For mutant 208, 2 parameter of method <init> have been replaced with null
+Mutant 209: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant209/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 345 }
+	For mutant 209, 3 parameter of method putString have been replaced with null
+Mutant 210: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant210/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 339 }
+	For mutant 210, 3 parameter of method get have been replaced with null
+Mutant 211: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant211/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 805 }
+	For mutant 211, 2 parameter of method getSystemService have been replaced with null
+Mutant 212: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant212/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 648 }
+	For mutant 212, 2 parameter of method <init> have been replaced with null
+Mutant 213: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant213/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 1216 }
+	For mutant 213, 2 parameter of method postToUiThread have been replaced with null
+Mutant 214: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant214/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; NullMethodCallArgument in line { 72 }
+	For mutant 214, 2 parameter of method setOnClickListener have been replaced with null
+Mutant 215: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant215/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 339 }
+	For mutant 215, 2 parameter of method get have been replaced with null
+Mutant 216: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant216/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 115 }
+	For mutant 216, 2 parameter of method <init> have been replaced with null
+Mutant 217: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant217/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 659 }
+	For mutant 217, 2 parameter of method putString have been replaced with null
+Mutant 218: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant218/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 820 }
+	For mutant 218, 2 parameter of method onSearchFinished have been replaced with null
+Mutant 219: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant219/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 672 }
+	For mutant 219, 2 parameter of method parse have been replaced with null
+Mutant 220: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant220/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 144 }
+	For mutant 220, 3 parameter of method obtainStyledAttributes have been replaced with null
+Mutant 221: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant221/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 468 }
+	For mutant 221, 2 parameter of method append have been replaced with null
+Mutant 222: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant222/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 284 }
+	For mutant 222, 2 parameter of method extract have been replaced with null
+Mutant 223: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant223/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 908 }
+	For mutant 223, 2 parameter of method startOne have been replaced with null
+Mutant 224: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant224/src//smali/com/eleybourn/bookcatalogue/Fields$IntegerValidator.smali; NullMethodCallArgument in line { 35 }
+	For mutant 224, 2 parameter of method <init> have been replaced with null
+Mutant 225: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant225/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$2.smali; NullMethodCallArgument in line { 58 }
+	For mutant 225, 2 parameter of method getString have been replaced with null
+Mutant 226: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant226/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 668 }
+	For mutant 226, 2 parameter of method decodeList have been replaced with null
+Mutant 227: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant227/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 678 }
+	For mutant 227, 2 parameter of method putParcelableArrayList have been replaced with null
+Mutant 228: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant228/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 99 }
+	For mutant 228, 2 parameter of method getString have been replaced with null
+Mutant 229: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant229/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 188 }
+	For mutant 229, 2 parameter of method getInt have been replaced with null
+Mutant 230: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant230/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 791 }
+	For mutant 230, 2 parameter of method onCreate have been replaced with null
+Mutant 231: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant231/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 778 }
+	For mutant 231, 2 parameter of method addView have been replaced with null
+Mutant 232: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant232/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 209 }
+	For mutant 232, 2 parameter of method access$300 have been replaced with null
+Mutant 233: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant233/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 461 }
+	For mutant 233, 2 parameter of method equals have been replaced with null
+Mutant 234: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant234/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 278 }
+	For mutant 234, 2 parameter of method parseUrlOutput have been replaced with null
+Mutant 235: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant235/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 467 }
+	For mutant 235, 2 parameter of method setText have been replaced with null
+Mutant 236: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant236/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 1101 }
+	For mutant 236, 2 parameter of method setText have been replaced with null
+Mutant 237: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant237/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 271 }
+	For mutant 237, 2 parameter of method <init> have been replaced with null
+Mutant 238: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant238/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 504 }
+	For mutant 238, 3 parameter of method <init> have been replaced with null
+Mutant 239: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant239/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 753 }
+	For mutant 239, 2 parameter of method setImageBitmap have been replaced with null
+Mutant 240: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant240/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 744 }
+	For mutant 240, 2 parameter of method <init> have been replaced with null
+Mutant 241: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant241/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 362 }
+	For mutant 241, 2 parameter of method appendData have been replaced with null
+Mutant 242: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant242/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 387 }
+	For mutant 242, 2 parameter of method equals have been replaced with null
+Mutant 243: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant243/src//smali/com/eleybourn/bookcatalogue/EditObjectList$5.smali; NullMethodCallArgument in line { 50 }
+	For mutant 243, 2 parameter of method access$100 have been replaced with null
+Mutant 244: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant244/src//smali/com/eleybourn/bookcatalogue/EditObjectList$5.smali; NullMethodCallArgument in line { 64 }
+	For mutant 244, 2 parameter of method remove have been replaced with null
+Mutant 245: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant245/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 925 }
+	For mutant 245, 2 parameter of method setLayoutParams have been replaced with null
+Mutant 246: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant246/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 362 }
+	For mutant 246, 3 parameter of method appendData have been replaced with null
+Mutant 247: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant247/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 176 }
+	For mutant 247, 3 parameter of method getBoolean have been replaced with null
+Mutant 248: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant248/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 428 }
+	For mutant 248, 2 parameter of method putString have been replaced with null
+Mutant 249: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant249/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 188 }
+	For mutant 249, 3 parameter of method getSharedPreferences have been replaced with null
+Mutant 250: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant250/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 759 }
+	For mutant 250, 2 parameter of method decodeList have been replaced with null
+Mutant 251: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant251/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 98 }
+	For mutant 251, 3 parameter of method <init> have been replaced with null
+Mutant 252: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant252/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 379 }
+	For mutant 252, 2 parameter of method equals have been replaced with null
+Mutant 253: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant253/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 409 }
+	For mutant 253, 2 parameter of method getString have been replaced with null
+Mutant 254: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant254/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 483 }
+	For mutant 254, 2 parameter of method findViewById have been replaced with null
+Mutant 255: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant255/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 672 }
+	For mutant 255, 3 parameter of method parse have been replaced with null
+Mutant 256: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant256/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 341 }
+	For mutant 256, 2 parameter of method getString have been replaced with null
+Mutant 257: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant257/src//smali/com/eleybourn/bookcatalogue/EditAuthorList$5.smali; NullMethodCallArgument in line { 62 }
+	For mutant 257, 2 parameter of method findViewById have been replaced with null
+Mutant 258: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant258/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 514 }
+	For mutant 258, 3 parameter of method updateViewLayout have been replaced with null
+Mutant 259: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant259/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 324 }
+	For mutant 259, 2 parameter of method get have been replaced with null
+Mutant 260: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant260/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 637 }
+	For mutant 260, 2 parameter of method getString have been replaced with null
+Mutant 261: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant261/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 928 }
+	For mutant 261, 2 parameter of method setVisibility have been replaced with null
+Mutant 262: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant262/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 1214 }
+	For mutant 262, 2 parameter of method <init> have been replaced with null
+Mutant 263: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant263/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 687 }
+	For mutant 263, 4 parameter of method decodeList have been replaced with null
+Mutant 264: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant264/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 474 }
+	For mutant 264, 2 parameter of method append have been replaced with null
+Mutant 265: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant265/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; NullMethodCallArgument in line { 70 }
+	For mutant 265, 2 parameter of method <init> have been replaced with null
+Mutant 266: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant266/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 390 }
+	For mutant 266, 4 parameter of method setButton have been replaced with null
+Mutant 267: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant267/src//smali/com/eleybourn/bookcatalogue/Base64$InputStream.smali; NullMethodCallArgument in line { 63 }
+	For mutant 267, 2 parameter of method <init> have been replaced with null
+Mutant 268: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant268/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 820 }
+	For mutant 268, 3 parameter of method onSearchFinished have been replaced with null
+Mutant 269: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant269/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 105 }
+	For mutant 269, 2 parameter of method getString have been replaced with null
+Mutant 270: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant270/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$8.smali; NullMethodCallArgument in line { 61 }
+	For mutant 270, 2 parameter of method makeText have been replaced with null
+Mutant 271: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant271/src//smali/com/eleybourn/bookcatalogue/Series$1.smali; NullMethodCallArgument in line { 86 }
+	For mutant 271, 2 parameter of method newArray have been replaced with null
+Mutant 272: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant272/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 571 }
+	For mutant 272, 2 parameter of method accumulateData have been replaced with null
+Mutant 273: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant273/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; NullMethodCallArgument in line { 87 }
+	For mutant 273, 2 parameter of method <init> have been replaced with null
+Mutant 274: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant274/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 617 }
+	For mutant 274, 2 parameter of method format have been replaced with null
+Mutant 275: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant275/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 67 }
+	For mutant 275, 2 parameter of method <init> have been replaced with null
+Mutant 276: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant276/src//smali/com/eleybourn/bookcatalogue/BookCatalogue$1.smali; NullMethodCallArgument in line { 53 }
+	For mutant 276, 3 parameter of method access$000 have been replaced with null
+Mutant 277: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant277/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 170 }
+	For mutant 277, 3 parameter of method getResourceId have been replaced with null
+Mutant 278: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant278/src//smali/com/eleybourn/bookcatalogue/StandardDialogs$2.smali; NullMethodCallArgument in line { 60 }
+	For mutant 278, 3 parameter of method getSharedPreferences have been replaced with null
+Mutant 279: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant279/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 791 }
+	For mutant 279, 2 parameter of method decodeList have been replaced with null
+Mutant 280: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant280/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 80 }
+	For mutant 280, 3 parameter of method <init> have been replaced with null
+Mutant 281: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant281/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 382 }
+	For mutant 281, 2 parameter of method findViewById have been replaced with null
+Mutant 282: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant282/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 412 }
+	For mutant 282, 5 parameter of method access$200 have been replaced with null
+Mutant 283: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant283/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 688 }
+	For mutant 283, 4 parameter of method getCoverImage have been replaced with null
+Mutant 284: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant284/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 240 }
+	For mutant 284, 2 parameter of method equals have been replaced with null
+Mutant 285: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant285/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; NullMethodCallArgument in line { 60 }
+	For mutant 285, 2 parameter of method findViewById have been replaced with null
+Mutant 286: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant286/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 876 }
+	For mutant 286, 2 parameter of method getChildAt have been replaced with null
+Mutant 287: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant287/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 265 }
+	For mutant 287, 2 parameter of method unExpandViews have been replaced with null
+Mutant 288: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant288/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 625 }
+	For mutant 288, 2 parameter of method equals have been replaced with null
+Mutant 289: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant289/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 291 }
+	For mutant 289, 2 parameter of method write have been replaced with null
+Mutant 290: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant290/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 511 }
+	For mutant 290, 2 parameter of method findViewById have been replaced with null
+Mutant 291: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant291/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullMethodCallArgument in line { 103 }
+	For mutant 291, 2 parameter of method append have been replaced with null
+Mutant 292: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant292/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 209 }
+	For mutant 292, 4 parameter of method access$300 have been replaced with null
+Mutant 293: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant293/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 80 }
+	For mutant 293, 2 parameter of method <init> have been replaced with null
+Mutant 294: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant294/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 650 }
+	For mutant 294, 2 parameter of method putString have been replaced with null
+Mutant 295: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant295/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 566 }
+	For mutant 295, 3 parameter of method myPointToPosition have been replaced with null
+Mutant 296: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant296/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 56 }
+	For mutant 296, 3 parameter of method confirmEditSeries have been replaced with null
+Mutant 297: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant297/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 379 }
+	For mutant 297, 2 parameter of method appendData have been replaced with null
+Mutant 298: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant298/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 315 }
+	For mutant 298, 2 parameter of method getString have been replaced with null
+Mutant 299: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant299/src//smali/com/eleybourn/bookcatalogue/Base64$InputStream.smali; NullMethodCallArgument in line { 317 }
+	For mutant 299, 3 parameter of method access$200 have been replaced with null
+Mutant 300: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant300/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 379 }
+	For mutant 300, 4 parameter of method appendData have been replaced with null
+Mutant 301: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant301/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 561 }
+	For mutant 301, 2 parameter of method accumulateData have been replaced with null
+Mutant 302: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant302/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 597 }
+	For mutant 302, 2 parameter of method <init> have been replaced with null
+Mutant 303: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant303/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 687 }
+	For mutant 303, 3 parameter of method decodeList have been replaced with null
+Mutant 304: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant304/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 464 }
+	For mutant 304, 2 parameter of method getString have been replaced with null
+Mutant 305: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant305/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 655 }
+	For mutant 305, 2 parameter of method <init> have been replaced with null
+Mutant 306: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant306/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 58 }
+	For mutant 306, 2 parameter of method setMessage have been replaced with null
+Mutant 307: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant307/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 668 }
+	For mutant 307, 3 parameter of method decodeList have been replaced with null
+Mutant 308: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant308/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 56 }
+	For mutant 308, 2 parameter of method confirmEditSeries have been replaced with null
+Mutant 309: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant309/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 411 }
+	For mutant 309, 3 parameter of method set have been replaced with null
+Mutant 310: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant310/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 514 }
+	For mutant 310, 2 parameter of method updateViewLayout have been replaced with null
+Mutant 311: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant311/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$2.smali; NullMethodCallArgument in line { 66 }
+	For mutant 311, 2 parameter of method <init> have been replaced with null
+Mutant 312: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant312/src//smali/com/eleybourn/bookcatalogue/Base64$InputStream.smali; NullMethodCallArgument in line { 46 }
+	For mutant 312, 2 parameter of method <init> have been replaced with null
+Mutant 313: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant313/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 414 }
+	For mutant 313, 2 parameter of method append have been replaced with null
+Mutant 314: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant314/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 445 }
+	For mutant 314, 2 parameter of method append have been replaced with null
+Mutant 315: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant315/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 323 }
+	For mutant 315, 2 parameter of method getString have been replaced with null
+Mutant 316: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant316/src//smali/com/eleybourn/bookcatalogue/Base64$InputStream.smali; NullMethodCallArgument in line { 429 }
+	For mutant 316, 2 parameter of method <init> have been replaced with null
+Mutant 317: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant317/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 144 }
+	For mutant 317, 4 parameter of method obtainStyledAttributes have been replaced with null
+Mutant 318: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant318/src//smali/com/eleybourn/bookcatalogue/Base64$InputStream.smali; NullMethodCallArgument in line { 317 }
+	For mutant 318, 4 parameter of method access$200 have been replaced with null
+Mutant 319: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant319/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 447 }
+	For mutant 319, 2 parameter of method appendData have been replaced with null
+Mutant 320: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant320/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 1066 }
+	For mutant 320, 2 parameter of method findViewById have been replaced with null
+Mutant 321: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant321/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 688 }
+	For mutant 321, 3 parameter of method getCoverImage have been replaced with null
+Mutant 322: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant322/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 213 }
+	For mutant 322, 2 parameter of method write have been replaced with null
+Mutant 323: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant323/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 328 }
+	For mutant 323, 2 parameter of method valueOf have been replaced with null
+Mutant 324: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant324/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; NullMethodCallArgument in line { 94 }
+	For mutant 324, 3 parameter of method setButton have been replaced with null
+Mutant 325: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant325/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 404 }
+	For mutant 325, 2 parameter of method append have been replaced with null
+Mutant 326: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant326/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 422 }
+	For mutant 326, 2 parameter of method saveThumbnailFromUrl have been replaced with null
+Mutant 327: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant327/src//smali/com/eleybourn/bookcatalogue/LibraryThingManager.smali; NullMethodCallArgument in line { 738 }
+	For mutant 327, 2 parameter of method logError have been replaced with null
+Mutant 328: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant328/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; NullMethodCallArgument in line { 494 }
+	For mutant 328, 2 parameter of method findViewById have been replaced with null
+Mutant 329: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant329/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 144 }
+	For mutant 329, 2 parameter of method obtainStyledAttributes have been replaced with null
+Mutant 330: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant330/src//smali/com/eleybourn/bookcatalogue/Base64$OutputStream.smali; NullMethodCallArgument in line { 335 }
+	For mutant 330, 4 parameter of method access$300 have been replaced with null
+Mutant 331: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant331/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 478 }
+	For mutant 331, 2 parameter of method getString have been replaced with null
+Mutant 332: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant332/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; NullMethodCallArgument in line { 118 }
+	For mutant 332, 2 parameter of method findViewById have been replaced with null
+Mutant 333: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant333/src//smali/com/eleybourn/bookcatalogue/TouchListView.smali; NullMethodCallArgument in line { 630 }
+	For mutant 333, 3 parameter of method contains have been replaced with null
+Mutant 334: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant334/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 379 }
+	For mutant 334, 3 parameter of method appendData have been replaced with null
+Mutant 335: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant335/src//smali/com/eleybourn/bookcatalogue/SearchManager.smali; NullMethodCallArgument in line { 447 }
+	For mutant 335, 4 parameter of method appendData have been replaced with null
+Mutant 336: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant336/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; NullMethodCallArgument in line { 26 }
+	For mutant 336, 2 parameter of method onCreate have been replaced with null
+Mutant 337: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant337/src//AndroidManifest.xml; MissingPermissionManifest in line { 42 }
+	For mutant 337 the lines between 43 and 43 have been deleted.
+Mutant 338: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant338/src//res/values/strings.xml; WrongStringResource in line { 13 }
+	For mutant 338 the value of the string named "read" at line 14 has been changed from "Have you read this book?" to "6d9a891c8129442ab4af8e26aa5d1197"
+Mutant 339: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant339/src//res/values/strings.xml; WrongStringResource in line { 2 }
+	For mutant 339 the value of the string named "app_name" at line 3 has been changed from "Book Catalogue" to "57745b8bdcd34f5696d0ed2cecf50fb4"
+Mutant 340: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant340/src//res/values/strings.xml; WrongStringResource in line { 8 }
+	For mutant 340 the value of the string named "isbn" at line 9 has been changed from "ISBN" to "263f363f0b6c435eb0f87864c8129443"
+Mutant 341: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant341/src//res/values/strings.xml; WrongStringResource in line { 14 }
+	For mutant 341 the value of the string named "series" at line 15 has been changed from "Series" to "708036274f5243d99d8408d12d8c4b83"
+Mutant 342: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant342/src//res/values/strings.xml; WrongStringResource in line { 11 }
+	For mutant 342 the value of the string named "rating" at line 12 has been changed from "Rating" to "18d89a65af4049b2a9d68c878abe3779"
+Mutant 343: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant343/src//res/values/strings.xml; WrongStringResource in line { 5 }
+	For mutant 343 the value of the string named "menu_delete" at line 6 has been changed from "Delete Book" to "322b983c71b34ce892eea60b435318c1"
+Mutant 344: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant344/src//res/values/strings.xml; WrongStringResource in line { 6 }
+	For mutant 344 the value of the string named "author" at line 7 has been changed from "Author" to "3128954efa6a41d3804c1c2771ad17ab"
+Mutant 345: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant345/src//res/values/strings.xml; WrongStringResource in line { 4 }
+	For mutant 345 the value of the string named "menu_insert" at line 5 has been changed from "Add Book" to "0d7d5b028f604d3e911ef423a5e01322"
+Mutant 346: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant346/src//res/values/strings.xml; WrongStringResource in line { 10 }
+	For mutant 346 the value of the string named "date_published" at line 11 has been changed from "Date Published" to "79b84fd78142476c98ccc8dc7d77d325"
+Mutant 347: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant347/src//res/values/strings.xml; WrongStringResource in line { 12 }
+	For mutant 347 the value of the string named "bookshelf" at line 13 has been changed from "Bookshelf" to "82d42b048ca34178ac2610d506a5977c"
+Mutant 348: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant348/src//res/values/strings.xml; WrongStringResource in line { 15 }
+	For mutant 348 the value of the string named "pages" at line 16 has been changed from "Pages" to "5e1301e6f4cd48579390da46877e05c9"
+Mutant 349: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant349/src//res/values/strings.xml; WrongStringResource in line { 9 }
+	For mutant 349 the value of the string named "publisher" at line 10 has been changed from "Publisher" to "e245c6a90a55459fb5a117d4cd894231"
+Mutant 350: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant350/src//res/values/strings.xml; WrongStringResource in line { 7 }
+	For mutant 350 the value of the string named "title" at line 8 has been changed from "Title" to "1580d59f94d046d794a9e5e4254bcf95"
+Mutant 351: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant351/src//res/values/strings.xml; WrongStringResource in line { 3 }
+	For mutant 351 the value of the string named "system_app_name" at line 4 has been changed from "Book Catalogue" to "c784488e2ad6453c9a52fd66141f82bc"
+Mutant 352: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant352/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$8.smali; LengthyGUIListener in line { 40 }
+	For mutant 352 a large delay has been injected after GUI Listener Creation at line 40
+Mutant 353: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant353/src//smali/com/eleybourn/bookcatalogue/EditObjectList$5.smali; LengthyGUIListener in line { 41 }
+	For mutant 353 a large delay has been injected after GUI Listener Creation at line 41
+Mutant 354: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant354/src//smali/com/eleybourn/bookcatalogue/AdministrationFunctions$7.smali; LengthyGUIListener in line { 44 }
+	For mutant 354 a large delay has been injected after GUI Listener Creation at line 44
+Mutant 355: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant355/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$2.smali; LengthyGUIListener in line { 44 }
+	For mutant 355 a large delay has been injected after GUI Listener Creation at line 44
+Mutant 356: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant356/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; LengthyGUIListener in line { 44 }
+	For mutant 356 a large delay has been injected after GUI Listener Creation at line 44
+Mutant 357: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant357/src//smali/com/eleybourn/bookcatalogue/CatalogueDBAdapter$TableInfo.smali; InvalidSQLQuery in line { 134 }
+	For mutant 357 SQL command have been replace with b4e4d047274c449d8a5f111d097e114e
+Mutant 358: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant358/src//smali/com/eleybourn/bookcatalogue/CatalogueDBAdapter$DatabaseHelper.smali; InvalidSQLQuery in line { 50 }
+	For mutant 358 SQL command have been replace with 003c6647cce646bda5b9e1e5d50c2e0f
+Mutant 359: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant359/src//smali/com/eleybourn/bookcatalogue/CatalogueDBAdapter.smali; InvalidSQLQuery in line { 8902 }
+	For mutant 359 SQL command have been replace with 1b37da25f3454c128876e1c30abafd58
+Mutant 360: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant360/src//smali/com/eleybourn/bookcatalogue/BookshelfEdit.smali; InvalidViewFocus in line { 240 }
+	For mutant 360 focus has been requested for the element found at line 234
+Mutant 361: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant361/src//AndroidManifest.xml; InvalidActivityPATH in line { 14 }
+	For mutant 361 activity name at line 14 has been change from ".BookEdit" to "oB.okEdit"
+Mutant 362: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant362/src//AndroidManifest.xml; InvalidActivityPATH in line { 3 }
+	For mutant 362 activity name at line 3 has been change from ".BookCatalogue" to ".ookCatalogue"
+Mutant 363: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant363/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullValueIntentPutExtra in line { 121 }
+	For mutant 363 extra intent value at line 121 has been set to 'new Parcelable[0]'
+Mutant 364: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant364/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; NullValueIntentPutExtra in line { 82 }
+	For mutant 364 extra intent value at line 82 has been set to 'new Parcelable[0]'
+Mutant 365: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant365/src//smali/com/eleybourn/bookcatalogue/BookshelfEdit.smali; ViewComponentNotVisible in line { 304 }
+	For mutant 365 the visibility of element retrieved at line 234 has been set to INVISIBLE at lines: 306 and 308
+Mutant 366: ./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant366/src//AndroidManifest.xml; InvalidLabel in line { 3 }
+	For mutant 366 activity label at line 3 has been change from "@string/app_name" to "f3cc81ae26c74881bc359241a586257e"
+Mutant 367: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant367/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; InvalidIDFindView in line { 455 }
+	For mutant 367 the id of the element retrieved at line 457 has been set to a random value
+Mutant 368: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant368/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; InvalidIDFindView in line { 58 }
+	For mutant 368 the id of the element retrieved at line 60 has been set to a random value
+Mutant 369: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant369/src//smali/com/eleybourn/bookcatalogue/EditAuthorList$5.smali; InvalidIDFindView in line { 60 }
+	For mutant 369 the id of the element retrieved at line 62 has been set to a random value
+Mutant 370: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant370/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; InvalidIDFindView in line { 118 }
+	For mutant 370 the id of the element retrieved at line 118 has been set to a random value
+Mutant 371: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant371/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; InvalidIDFindView in line { 435 }
+	For mutant 371 the id of the element retrieved at line 437 has been set to a random value
+Mutant 372: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant372/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; InvalidIDFindView in line { 75 }
+	For mutant 372 the id of the element retrieved at line 77 has been set to a random value
+Mutant 373: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant373/src//smali/com/eleybourn/bookcatalogue/Fields$Field.smali; InvalidIDFindView in line { 382 }
+	For mutant 373 the id of the element retrieved at line 382 has been set to a random value
+Mutant 374: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant374/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; InvalidKeyIntentPutExtra in line { 64 }
+	For mutant 374 extra key value at line 64 has been set to f00477470d2240419681b5eda3bd4a6d
+Mutant 375: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant375/src//smali/com/eleybourn/bookcatalogue/AdministrationAbout$3.smali; InvalidKeyIntentPutExtra in line { 119 }
+	For mutant 375 extra key value at line 119 has been set to e4aeb9b9f8a8499984df78086c60dad5
+Mutant 376: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant376/src//smali/com/eleybourn/bookcatalogue/AdministrationDonate.smali; LengthyGUICreation in line { 19 }
+	For mutant 376 a large delay has been injected after GUI Creation at line 19
+Mutant 377: /home/estudiante/test/./mutants/com.eleybourn.bookcatalogue/rSW/com.eleybourn.bookcatalogue-mutant377/src//smali/com/eleybourn/bookcatalogue/EditSeriesList.smali; LengthyGUICreation in line { 785 }
+	For mutant 377 a large delay has been injected after GUI Creation at line 785
