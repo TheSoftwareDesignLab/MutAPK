@@ -5,7 +5,7 @@ This project was created by The Sofware Design Lab at the Universidad de los And
 # Video
 
 <p align="center">
-<iframe width="500" height="282" src="https://www.youtube.com/embed/Pa448bHXKxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<iframe width="500" height="282" src="https://www.youtube.com/embed/p-ll9PlT0MY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 # Publications
 
@@ -102,20 +102,39 @@ At the end of the process, MutAPK generates a folder for each mutant, where in a
 
 # Preliminar study on mutants reduction
 
+## App List
+---
 
-| App Name | Package Name | Output | Dead Code Mutants | Equivalent Mutants | Duplicated Mutants | Generated Mutants | Representative Subset (PerOperator) | Representative Subset (WholePFPSet) |
-|----------|--------------|--------|:---:|:-----:|:---:|:---:|---|---|
-| A2DP Volume | a2dp.Vol | [output](/resources/execResults/a2dp.Vol)| 362 | 3 | 6 | 2575 | 788 | 698 |
-| Quick Settings | com.bwx.bequick | [output](/resources/execResults/com.bwx.bequick)| 462 | 4|4| 1748 | 627 | 328 |
-| Book Catalogue | com.eleybourn.bookcatalogue | [output](/resources/execResults/com.eleybourn.bookcatalogue)| 1711|11|31| 6990| 1166 | 377 |
-| Mileage | com.evancharlton.mileage | [output](/resources/execResults/com.evancharlton.mileage)|921|6|29|3690|955|357|
-| Sync My Pix | com.nloko.android.syncmypix | [output](/resources/execResults/com.nloko.android.syncmypix)|499|8|44|2469|616|346|
-| Jamendo | com.teleca.jamendo | [output](/resources/execResults/com.teleca.jamendo)|478|4|10|3123|854|356|
-| Sanity | cri.sanity | [output](/resources/execResults/cri.sanity)|639|5|13|3738|802|360|
-| NetCounter | net.jaqpot.netcounter | [output](/resources/execResults/net.jaqpot.netcounter)|212|3|17|1358|454|309|
-| PasswordMaker Pro | org.passwordmaker.android | [output](/resources/execResults/org.passwordmaker.android)|180|0|7|948|435|285|
-| MyExpenses | org.totschnig.myexpenses | [output](/resources/execResults/org.totschnig.myexpenses)|282|10|0|2905|758|352|
+| App Name | Package Name | MutAPK Output* | 
+|----------|--------------|--------|
+| A2DP Volume | a2dp.Vol | [output](/resources/execResults/a2dp.Vol)| 
+| Quick Settings | com.bwx.bequick | [output](/resources/execResults/com.bwx.bequick)|
+| Book Catalogue | com.eleybourn.bookcatalogue | [output](/resources/execResults/com.eleybourn.bookcatalogue)| 
+| Mileage | com.evancharlton.mileage | [output](/resources/execResults/com.evancharlton.mileage)|
+| Sync My Pix | com.nloko.android.syncmypix | [output](/resources/execResults/com.nloko.android.syncmypix)|
+| Jamendo | com.teleca.jamendo | [output](/resources/execResults/com.teleca.jamendo)|
+| Sanity | cri.sanity | [output](/resources/execResults/cri.sanity)|
+| NetCounter | net.jaqpot.netcounter | [output](/resources/execResults/net.jaqpot.netcounter)|
+| PasswordMaker Pro | org.passwordmaker.android | [output](/resources/execResults/org.passwordmaker.android)|
+| MyExpenses | org.totschnig.myexpenses | [output](/resources/execResults/org.totschnig.myexpenses)|
 
+*Results contain the complementary files along with a copy of the console output
+
+## Study results
+---
+
+| App Name | Dead Code Mutants | Equivalent Mutants | Duplicated Mutants | Generated Mutants | Representative Subset (PerOperator) | Representative Subset (WholePFPSet) |
+|----------|:---:|:-----:|:---:|:---:|---|---|
+| A2DP Volume |362 | 3 | 6 | 2575 | 788 | 698 |
+| Quick Settings |462 | 4|4| 1748 | 627 | 328 |
+| Book Catalogue |1711|11|31| 6990| 1166 | 377 |
+| Mileage |921|6|29|3690|955|357|
+| Sync My Pix |499|8|44|2469|616|346|
+| Jamendo |478|4|10|3123|854|356|
+| Sanity |639|5|13|3738|802|360|
+| NetCounter |212|3|17|1358|454|309|
+| PasswordMaker Pro |180|0|7|948|435|285|
+| MyExpenses |282|10|0|2905|758|352|
 
 # Mutation Operators
 
