@@ -107,16 +107,16 @@ At the end of the process, MutAPK generates a folder for each mutant, where in a
 
 | App Name | Package Name | MutAPK Output* | 
 |----------|--------------|--------|
-| A2DP Volume | a2dp.Vol | [output](/resources/execResults/a2dp.Vol)| 
-| Quick Settings | com.bwx.bequick | [output](/resources/execResults/com.bwx.bequick)|
-| Book Catalogue | com.eleybourn.bookcatalogue | [output](/resources/execResults/com.eleybourn.bookcatalogue)| 
-| Mileage | com.evancharlton.mileage | [output](/resources/execResults/com.evancharlton.mileage)|
-| Sync My Pix | com.nloko.android.syncmypix | [output](/resources/execResults/com.nloko.android.syncmypix)|
-| Jamendo | com.teleca.jamendo | [output](/resources/execResults/com.teleca.jamendo)|
-| Sanity | cri.sanity | [output](/resources/execResults/cri.sanity)|
-| NetCounter | net.jaqpot.netcounter | [output](/resources/execResults/net.jaqpot.netcounter)|
-| PasswordMaker Pro | org.passwordmaker.android | [output](/resources/execResults/org.passwordmaker.android)|
-| MyExpenses | org.totschnig.myexpenses | [output](/resources/execResults/org.totschnig.myexpenses)|
+| A2DP Volume | a2dp.Vol | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/a2dp.Vol)| 
+| Quick Settings | com.bwx.bequick | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/com.bwx.bequick)|
+| Book Catalogue | com.eleybourn.bookcatalogue | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/com.eleybourn.bookcatalogue)| 
+| Mileage | com.evancharlton.mileage | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/com.evancharlton.mileage)|
+| Sync My Pix | com.nloko.android.syncmypix | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/com.nloko.android.syncmypix)|
+| Jamendo | com.teleca.jamendo | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/com.teleca.jamendo)|
+| Sanity | cri.sanity | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/cri.sanity)|
+| NetCounter | net.jaqpot.netcounter | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/net.jaqpot.netcounter)|
+| PasswordMaker Pro | org.passwordmaker.android | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/org.passwordmaker.android)|
+| MyExpenses | org.totschnig.myexpenses | [output](https://github.com/TheSoftwareDesignLab/MutAPK/tree/gh-pages/resources/execResults/org.totschnig.myexpenses)|
 
 *Results contain the complementary files along with a copy of the console output
 
